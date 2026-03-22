@@ -6,7 +6,7 @@ const siteUrl = "https://townmedialabs.com";
 export const metadata: Metadata = {
   title: "About TML Agency | Leading Digital Marketing Agency in Chandigarh",
   description:
-    "Discover TML Agency — Chandigarh's top digital marketing, branding & web development agency. 200+ clients, 50+ experts, 8+ years delivering SEO, social media & creative solutions.",
+    "Discover TML Agency — Chandigarh's top digital marketing, branding & web development agency. 500+ clients, 50+ experts, 8+ years delivering SEO, social media & creative solutions.",
   keywords: [
     "about tml",
     "digital marketing agency chandigarh",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About TML Agency | Leading Digital Marketing Agency in Chandigarh",
     description:
-      "Chandigarh's leading digital marketing agency — 200+ clients, 50+ team members, 8+ years of branding, SEO, web development & social media marketing excellence.",
+      "Chandigarh's leading digital marketing agency — 500+ clients, 50+ team members, 8+ years of branding, SEO, web development & social media marketing excellence.",
     url: `${siteUrl}/about`,
     siteName: "TML Agency",
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About TML Agency | Leading Digital Marketing Agency in Chandigarh",
     description:
-      "Chandigarh's leading digital marketing agency — 200+ clients, 50+ team members, 8+ years of branding, SEO & web development excellence.",
+      "Chandigarh's leading digital marketing agency — 500+ clients, 50+ team members, 8+ years of branding, SEO & web development excellence.",
     images: ["/og-image.png"],
   },
 };
@@ -53,7 +53,7 @@ const aboutPageJsonLd = {
   "@type": "AboutPage",
   name: "About TML Agency",
   description:
-    "TML Agency is a leading digital marketing and branding agency based in Chandigarh, India. With 8+ years of experience, 50+ team members, and 200+ clients served, we deliver measurable results through creative digital strategies including SEO, social media marketing, web development, and performance marketing.",
+    "TML Agency is a leading digital marketing and branding agency based in Chandigarh, India. With 8+ years of experience, 50+ team members, and 500+ clients served, we deliver measurable results through creative digital strategies including SEO, social media marketing, web development, and performance marketing.",
   url: `${siteUrl}/about`,
   mainEntity: {
     "@type": "Organization",

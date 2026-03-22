@@ -89,7 +89,7 @@ export const servicePages: Record<string, ServicePageData> = {
         heading: "Branding for Startups vs Established Businesses",
         paragraphs: [
           "Startups need brand identities that are flexible enough to evolve as the business pivots, yet distinctive enough to create immediate recognition in a crowded market. We design startup brands with scalable systems — modular logo marks, adaptable colour palettes, and minimal but memorable visual elements that work across a pitch deck, a mobile app, and a trade show booth. Our startup branding packages are structured to deliver maximum impact within tighter budgets, typically completing in three to four weeks.",
-          "Established businesses face a different challenge: evolving their brand without alienating existing customers. Our rebranding process for established companies includes a brand equity audit to identify which elements carry the most recognition and goodwill, ensuring we preserve what works while modernising what does not. We have managed rebrands for companies with 10+ years of market presence, transitioning them to contemporary identities that attract new audiences while retaining loyal customers.",
+          "Established businesses face a different challenge: evolving their brand without alienating existing customers. Our rebranding process for established companies includes a brand equity audit to identify which elements carry the most recognition and goodwill, ensuring we preserve what works while modernising what does not. We have managed rebrands for companies with 15+ years of market presence, transitioning them to contemporary identities that attract new audiences while retaining loyal customers.",
           "Whether you are pre-revenue or doing ₹100 crore annually, the branding fundamentals remain the same: clarity of positioning, consistency of execution, and authenticity of expression. The difference is in scope, complexity, and stakeholder management — and TML has the experience to navigate all of it.",
         ],
       },
@@ -111,10 +111,10 @@ export const servicePages: Record<string, ServicePageData> = {
       { step: "05", title: "Deliver", description: "Hand over complete brand guidelines and assets ready for implementation across all channels." },
     ],
     stats: [
-      { label: "Brands Built", value: "200+" },
+      { label: "Brands Built", value: "500+" },
       { label: "Client Retention", value: "98%" },
       { label: "Industries Served", value: "25+" },
-      { label: "Years Experience", value: "10+" },
+      { label: "Years Experience", value: "15+" },
     ],
     faqs: [
       { q: "How long does a complete branding project take?", a: "A full branding project typically takes 4-6 weeks from discovery to final delivery, depending on the scope and complexity." },
@@ -596,7 +596,7 @@ export const servicePages: Record<string, ServicePageData> = {
       { label: "Leads Generated", value: "50K+" },
       { label: "Avg Cost Per Lead", value: "-40%" },
       { label: "Conversion Rate", value: "12%" },
-      { label: "Funnels Built", value: "200+" },
+      { label: "Funnels Built", value: "500+" },
     ],
     faqs: [
       { q: "What types of leads can you generate?", a: "We generate B2B and B2C leads across industries — from real estate and education to SaaS, healthcare, and e-commerce." },
@@ -812,7 +812,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     stats: [
       { label: "Designs Created", value: "10K+" },
-      { label: "Brands Served", value: "200+" },
+      { label: "Brands Served", value: "500+" },
       { label: "On-Time Delivery", value: "99%" },
       { label: "Design Awards", value: "15+" },
     ],

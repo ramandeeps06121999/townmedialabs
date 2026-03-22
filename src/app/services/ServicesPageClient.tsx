@@ -33,9 +33,9 @@ const serviceCategories = [
 
 const stats = [
   { label: "Services", value: "12+" },
-  { label: "Brands Served", value: "200+" },
-  { label: "Team Members", value: "50+" },
-  { label: "Years Experience", value: "10+" },
+  { label: "Brands Served", value: "500+" },
+  { label: "Team Members", value: "70+" },
+  { label: "Years Experience", value: "15+" },
 ];
 
 export default function ServicesPageClient() {

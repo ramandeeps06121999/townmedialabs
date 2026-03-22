@@ -20,7 +20,7 @@ import { FooterHome2 } from "@/components/sections/FooterHome2";
 export const metadata: Metadata = {
   title: "TML Agency | #1 Digital Marketing Agency in Chandigarh | SEO, Branding & Ads",
   description:
-    "TML Agency is Chandigarh's top digital marketing agency. SEO, Google Ads, branding, web development & social media marketing. 200+ brands scaled. Get a free audit.",
+    "TML Agency is Chandigarh's top digital marketing agency. SEO, Google Ads, branding, web development & social media marketing. 500+ brands scaled. Get a free audit.",
   keywords: [
     "digital marketing agency Chandigarh",
     "SEO agency Chandigarh",

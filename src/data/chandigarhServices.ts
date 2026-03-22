@@ -21,12 +21,12 @@ export const chandigarhServices: Record<string, ChandigarhServiceData> = {
     h1: "Best Branding Agency in Chandigarh",
     tagline: "Build a brand Chandigarh remembers.",
     metaTitle: "Best Branding Agency in Chandigarh | TML Agency",
-    metaDescription: "TML is Chandigarh's top branding agency offering logo design, brand identity, brand strategy, and guidelines. 200+ brands built. Get a free consultation.",
+    metaDescription: "TML is Chandigarh's top branding agency offering logo design, brand identity, brand strategy, and guidelines. 500+ brands built. Get a free consultation.",
     keywords: ["branding agency chandigarh", "logo design chandigarh", "brand identity chandigarh", "branding company chandigarh"],
     heroDescription: "Looking for a branding agency in Chandigarh? TML has helped 200+ businesses in Chandigarh, Mohali, and Panchkula build powerful brand identities that stand out. From logo design to complete brand systems — we create brands that your customers remember.",
     whyChoose: [
       { title: "Deep Local Understanding", description: "We understand Chandigarh's market dynamics, consumer behavior, and what resonates with the tricity audience." },
-      { title: "200+ Brands Built", description: "From startups in IT Park to established businesses in Sector 17 — we've branded them all." },
+      { title: "500+ Brands Built", description: "From startups in IT Park to established businesses in Sector 17 — we've branded them all." },
       { title: "Complete Brand Systems", description: "Logo, visual identity, brand guidelines, stationery, messaging — everything under one roof." },
       { title: "Strategy-First Approach", description: "We don't just design logos — we build strategic brand foundations that drive business growth." },
     ],
@@ -313,7 +313,7 @@ export const chandigarhServices: Record<string, ChandigarhServiceData> = {
     metaTitle: "Best Graphic Design Agency in Chandigarh | TML Agency",
     metaDescription: "TML is Chandigarh's top graphic design agency. 10K+ designs created. Social media, print, presentations, ads. Fast turnaround. Get a quote.",
     keywords: ["graphic design chandigarh", "graphic design agency chandigarh", "design company chandigarh", "creative agency chandigarh"],
-    heroDescription: "TML is Chandigarh's most prolific graphic design agency with 10K+ designs created for 200+ brands. From social media creatives to print materials, presentations to ad campaigns — we deliver designs that communicate, engage, and convert.",
+    heroDescription: "TML is Chandigarh's most prolific graphic design agency with 10K+ designs created for 500+ brands. From social media creatives to print materials, presentations to ad campaigns — we deliver designs that communicate, engage, and convert.",
     whyChoose: [
       { title: "10K+ Designs Created", description: "Massive portfolio covering every type of design — social media, print, digital, packaging, and more." },
       { title: "Fast Turnaround", description: "24-48 hour delivery for standard designs. Same-day available for urgent requests." },

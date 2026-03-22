@@ -7,8 +7,8 @@ import { motion } from "motion/react";
 const ease = [0.23, 1, 0.32, 1] as const;
 
 const trustStats = [
-  { value: "200+", label: "Brands Scaled" },
-  { value: "10+", label: "Years Experience" },
+  { value: "500+", label: "Brands Scaled" },
+  { value: "15+", label: "Years Experience" },
   { value: "98%", label: "Client Retention" },
   { value: "4.9/5", label: "Rating" },
 ];

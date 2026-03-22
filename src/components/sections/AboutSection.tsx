@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
   { value: 100, suffix: "+", label: "Businesses Scaled" },
-  { value: 10, suffix: "+", label: "Years of Experience" },
+  { value: 15, suffix: "+", label: "Years of Experience" },
   { value: 12, suffix: "", label: "Services Offered" },
 ];
 

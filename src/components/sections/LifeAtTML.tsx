@@ -80,7 +80,7 @@ const ratings = [
 ] as const;
 
 const cultureStats = [
-  { value: "50+", label: "Team Members" },
+  { value: "70+", label: "Team Members" },
   { value: "4.9", label: "Avg Rating" },
   { value: "92%", label: "Stay 2+ Years" },
 ] as const;

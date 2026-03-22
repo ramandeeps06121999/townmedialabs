@@ -14,8 +14,8 @@ const ease = [0.23, 1, 0.32, 1] as const;
 /* ── Data ── */
 
 const whyChooseStats = [
-  { value: 200, suffix: "+", label: "Clients Served", description: "Trusted by over 200 brands across India and internationally" },
-  { value: 50, suffix: "+", label: "Team Members", description: "Designers, developers, strategists & marketers under one roof" },
+  { value: 500, suffix: "+", label: "Clients Served", description: "Trusted by over 500 brands across India and internationally" },
+  { value: 70, suffix: "+", label: "Team Members", description: "Designers, developers, strategists & marketers under one roof" },
   { value: 8, suffix: "+", label: "Years Experience", description: "Delivering digital marketing excellence since 2015" },
   { value: 500, suffix: "+", label: "Projects Delivered", description: "From branding to full-scale digital campaigns" },
   { value: 100, suffix: "%", label: "Google Partner Certified", description: "Recognised for expertise in Google Ads & search marketing" },

@@ -5,7 +5,7 @@ export const faqs = [
   },
   {
     q: "What makes TML different from other agencies?",
-    a: "We combine branding expertise with performance marketing. Most agencies do one or the other — we do both under one roof. Our team has 10+ years of experience, we use an omni-channel approach, and we provide constant, proactive communication so you always know what's happening.",
+    a: "We combine branding expertise with performance marketing. Most agencies do one or the other — we do both under one roof. Our team has 15+ years of experience, we use an omni-channel approach, and we provide constant, proactive communication so you always know what's happening.",
   },
   {
     q: "How long does it take to see results?",

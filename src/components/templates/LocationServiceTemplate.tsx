@@ -15,6 +15,24 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
+function convertPriceRange(range: string, country: string): string {
+  if (country === "India") return range;
+  // Convert INR amounts to country currency (approximate: ₹100 ≈ $1.20)
+  const currencyMap: Record<string, { symbol: string; rate: number }> = {
+    "New Zealand": { symbol: "NZ$", rate: 0.02 },
+    "United Kingdom": { symbol: "£", rate: 0.0095 },
+    "United States": { symbol: "$", rate: 0.012 },
+    "Australia": { symbol: "A$", rate: 0.018 },
+    "UAE": { symbol: "AED", rate: 0.044 },
+  };
+  const curr = currencyMap[country] || { symbol: "$", rate: 0.012 };
+  return range.replace(/₹([\d,]+)/g, (_, num) => {
+    const val = parseInt(num.replace(/,/g, ""), 10);
+    const converted = Math.round(val * curr.rate);
+    return `${curr.symbol}${converted.toLocaleString()}`;
+  });
+}
+
 function SectionDivider() {
   return (
     <div className="mx-auto max-w-5xl px-6 lg:px-12">
@@ -564,7 +582,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                         className="p-5 rounded-xl border border-white/[0.08] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors"
                       >
                         <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-2">{tier.tier}</p>
-                        <p className="text-lg font-bold text-white mb-3">{tier.range}</p>
+                        <p className="text-lg font-bold text-white mb-3">{convertPriceRange(tier.range, location.country)}</p>
                         <p className="text-xs text-white/35 leading-relaxed">{tier.includes}</p>
                       </motion.div>
                     ))}

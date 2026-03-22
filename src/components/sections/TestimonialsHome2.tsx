@@ -460,7 +460,7 @@ export function TestimonialsHome2() {
               "@type": "AggregateRating",
               ratingValue: "4.9",
               bestRating: "5",
-              ratingCount: "200",
+              ratingCount: "500",
               reviewCount: String(testimonials.length),
             },
             review: testimonials.map((t) => ({

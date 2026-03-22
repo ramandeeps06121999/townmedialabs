@@ -11,5 +11,5 @@ export const comparisonTml = [
   "Omni channel approach",
   "Tailored best-fit solutions",
   "Provides industry specific expertise",
-  "Experts with 10+ years of experience",
+  "Experts with 15+ years of experience",
 ];

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | TML Agency",
   },
   description:
-    "TML is a full-service branding and digital marketing agency with 10+ years of experience. We specialize in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 200+ brands scaled, 98% client retention.",
+    "TML is a full-service branding and digital marketing agency with 15+ years of experience. We specialize in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 500+ brands scaled, 98% client retention.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TML Agency | Full-Service Branding & Digital Marketing",
     description:
-      "Full-service branding and digital marketing agency with 10+ years of experience. 200+ brands scaled, 98% client retention. Branding, web development, SEO, Google Ads & more.",
+      "Full-service branding and digital marketing agency with 15+ years of experience. 500+ brands scaled, 98% client retention. Branding, web development, SEO, Google Ads & more.",
     url: siteUrl,
     siteName: "TML Agency",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TML Agency | Full-Service Branding & Digital Marketing",
     description:
-      "Full-service branding and digital marketing agency with 10+ years of experience. 200+ brands scaled, 98% client retention.",
+      "Full-service branding and digital marketing agency with 15+ years of experience. 500+ brands scaled, 98% client retention.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -107,7 +107,7 @@ const organizationJsonLd = {
   logo: `${siteUrl}/logo.png`,
   email: "info@townmedialabs.com",
   description:
-    "Full-service branding and digital marketing agency for ambitious businesses. 10+ years of experience, 200+ brands scaled, 98% client retention.",
+    "Full-service branding and digital marketing agency for ambitious businesses. 15+ years of experience, 500+ brands scaled, 98% client retention.",
   sameAs: [
     "https://www.facebook.com/Town.media.labs",
     "https://www.instagram.com/townmedialabs/",
@@ -128,7 +128,7 @@ const localBusinessJsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "200",
+    reviewCount: "500",
     bestRating: "5",
   },
   knowsAbout: [
