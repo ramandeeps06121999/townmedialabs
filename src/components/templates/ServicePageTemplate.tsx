@@ -5,6 +5,9 @@ import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import type { ServicePageData } from "@/data/servicePages";
 import { servicePages } from "@/data/servicePages";
+import { blogArticles } from "@/data/blogArticles";
+import { industries, industryPages } from "@/data/industries";
+import { serviceRelatedBlogs, serviceRelatedIndustries } from "@/lib/internalLinks";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
@@ -29,7 +32,7 @@ function FeatureCard({ feature, index }: { feature: { title: string; description
         <div className="w-2 h-2 rounded-full bg-[#ff4500]" />
       </div>
       <h3 className="text-lg font-semibold text-white mb-3">{feature.title}</h3>
-      <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
+      <p className="text-sm text-white/90 leading-relaxed">{feature.description}</p>
     </motion.div>
   );
 }
@@ -55,7 +58,7 @@ function ProcessStep({ step, index, total }: { step: { step: string; title: stri
           <div className="lg:hidden flex-1 h-[1px] bg-white/[0.06]" />
         </div>
         <h3 className="text-xl font-semibold text-white mb-2">{step.title}</h3>
-        <p className="text-sm text-white/50 leading-relaxed">{step.description}</p>
+        <p className="text-sm text-white/90 leading-relaxed">{step.description}</p>
       </div>
     </motion.div>
   );
@@ -77,7 +80,7 @@ function FAQItem({ faq, index }: { faq: { q: string; a: string }; index: number 
         <span className="pr-4">{faq.q}</span>
         <span className="text-white/30 text-xl transition-transform duration-300 group-open:rotate-45 flex-shrink-0">+</span>
       </summary>
-      <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm text-white/50 leading-relaxed border-t border-white/[0.04] pt-4">
+      <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm text-white/90 leading-relaxed border-t border-white/[0.04] pt-4">
         {faq.a}
       </div>
     </motion.details>
@@ -318,7 +321,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="w-8 h-[2px] bg-[#ff4500]/40 rounded-full mb-5 group-hover:w-12 transition-all duration-500" />
-                  <p className="text-sm text-white/50 leading-relaxed">{paragraph}</p>
+                  <p className="text-sm text-white/90 leading-relaxed">{paragraph}</p>
                 </motion.div>
               ))}
             </div>
@@ -576,6 +579,135 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           </div>
         </section>
       )}
+
+      {/* Related Articles */}
+      {(() => {
+        const blogSlugs = serviceRelatedBlogs[data.slug] || [];
+        const relatedBlogs = blogSlugs
+          .map((slug) => ({ slug, article: blogArticles[slug] }))
+          .filter((b) => b.article);
+        if (relatedBlogs.length === 0) return null;
+        return (
+          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
+            <div className="relative mx-auto max-w-7xl">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+              >
+                From Our Blog
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                Related Articles
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {relatedBlogs.map(({ slug, article }, i) => (
+                  <motion.div
+                    key={slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                  >
+                    <Link
+                      href={`/blog/${slug}`}
+                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
+                    >
+                      <span className="inline-block text-[10px] tracking-wider uppercase bg-[#ff4500]/10 text-[#ff4500] rounded-full px-3 py-1 font-semibold mb-4">
+                        {article.category}
+                      </span>
+                      <h3 className="text-base font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors leading-snug">
+                        {article.title}
+                      </h3>
+                      <p className="text-sm text-white/35 leading-relaxed mb-4 line-clamp-2">
+                        {article.metaDescription}
+                      </p>
+                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                        Read Article &rarr;
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Related Industries */}
+      {(() => {
+        const industrySlugs = serviceRelatedIndustries[data.slug] || [];
+        const relatedIndustryData = industrySlugs
+          .map((slug) => {
+            const legacy = industries[slug];
+            const v2 = industryPages[slug];
+            if (v2) return { slug, name: v2.name, description: v2.metaDescription };
+            if (legacy) return { slug, name: legacy.name, description: legacy.description };
+            return null;
+          })
+          .filter(Boolean) as { slug: string; name: string; description: string }[];
+        if (relatedIndustryData.length === 0) return null;
+        return (
+          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
+            <div className="relative mx-auto max-w-7xl">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+              >
+                Industries We Serve
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                {data.title} for Your Industry
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {relatedIndustryData.map((ind, i) => (
+                  <motion.div
+                    key={ind.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                  >
+                    <Link
+                      href={`/industries/${ind.slug}`}
+                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
+                    >
+                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
+                        {ind.name}
+                      </h3>
+                      <p className="text-sm text-white/40 leading-relaxed mb-4 line-clamp-3">
+                        {ind.description}
+                      </p>
+                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                        View Industry &rarr;
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       <FooterHome2 />
     </main>

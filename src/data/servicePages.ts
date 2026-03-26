@@ -1044,6 +1044,550 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     relatedServices: ["seo", "link-building", "content-writing"],
   },
+
+  "content-marketing": {
+    slug: "content-marketing",
+    title: "Content Marketing",
+    tagline: "Attract. Engage. Convert.",
+    description: "Strategic content marketing services that build brand authority, drive organic traffic, and generate qualified leads. Our content marketing team in Chandigarh develops comprehensive content strategies, creates high-value assets, and distributes them across the right channels to grow your audience and convert readers into customers across India and beyond.",
+    heroDescription: "We build content engines that attract your ideal customers at every stage of the buying journey. From blog strategies and lead magnets to video content and case studies, we create content that earns attention, builds trust, and drives measurable business growth.",
+    metaTitle: "Content Marketing Services Chandigarh | TML Agency",
+    metaDescription: "Strategic content marketing services in Chandigarh. TML Agency builds content strategies, creates high-value assets, and grows organic audiences that convert to revenue.",
+    metaKeywords: ["content marketing services", "content marketing agency Chandigarh", "content strategy India", "blog marketing", "inbound marketing", "thought leadership content", "content distribution"],
+    seoContent: [
+      "Content marketing generates three times more leads than outbound marketing while costing 62% less. At TML Agency in Chandigarh, we build data-driven content marketing programs that attract your ideal customers through genuinely useful, well-optimised content. We go beyond writing blog posts to create complete content ecosystems that support every stage of your customer's journey from awareness to purchase.",
+      "Our content marketing approach starts with deep audience research and competitive analysis. We identify the questions your customers are asking, the content formats they prefer, and the channels where they spend time. From this intelligence, we build content strategies that systematically close content gaps, establish topical authority on Google, and position your brand as the trusted expert in your space.",
+      "Content marketing is a compounding investment — every piece of high-quality content you publish continues working for months and years after publication. Our clients across India consistently see 40-80% increases in organic traffic within 6 months of implementing a structured content marketing strategy, with ongoing gains as their content library grows and their domain authority strengthens.",
+    ],
+    deepContent: [
+      {
+        heading: "What Content Marketing Actually Involves Beyond Blog Posts",
+        paragraphs: [
+          "Most businesses think content marketing means writing a few blog posts per month. In reality, a comprehensive content marketing strategy encompasses blog articles, long-form guides and whitepapers, video content, podcasts, case studies, email newsletters, social media content, infographics, webinars, and interactive tools like calculators and quizzes. The right content mix depends on your audience's preferences, your sales cycle, and where your competitors have gaps you can exploit.",
+          "At TML, we map content formats to funnel stages. Top-of-funnel content (blog posts, social media, videos) attracts new audiences who are not yet aware of your brand or solutions. Middle-of-funnel content (guides, case studies, comparison pages, webinars) nurtures those who are aware of their problem and evaluating options. Bottom-of-funnel content (testimonials, detailed service pages, ROI calculators, free trials) converts warm prospects into customers. Most businesses over-invest in top-of-funnel content and neglect the middle and bottom, which is where buyers actually make decisions.",
+          "Measuring content marketing ROI requires tracking metrics at each funnel stage. We use Google Analytics 4 for organic traffic and conversion tracking, Google Search Console for keyword rankings and impressions, and CRM integration to track which content pieces influenced leads and deals. Monthly reports show not just traffic numbers but the actual revenue contribution of your content program — making content marketing a defensible line item in your marketing budget rather than a vague brand investment.",
+        ],
+      },
+      {
+        heading: "Building Topical Authority: The Modern SEO Content Strategy",
+        paragraphs: [
+          "Google's Helpful Content System now strongly rewards websites that demonstrate comprehensive expertise on a topic rather than those that publish isolated articles targeting individual keywords. Topical authority means your website covers a subject thoroughly across multiple interconnected pieces — a pillar page covering the broad topic with multiple supporting cluster articles addressing specific sub-questions. This architecture signals expertise to Google and dramatically improves rankings across your entire topic area.",
+          "At TML, we build topical authority through structured content clusters. For example, a B2B SaaS client in the project management space might have a pillar page on 'project management software', supported by 15-20 cluster articles on topics like 'how to run effective sprints', 'project management for remote teams', 'project budget tracking methods', and 'Gantt chart templates'. Each cluster article links back to the pillar, and the pillar links out to all cluster articles, creating a semantic web that Google rewards with category-level authority.",
+          "The content planning tool we use is SEMrush's topic research combined with Ahrefs keyword explorer and Google's People Also Ask data. We map every cluster article to specific keywords with measurable search volume, set target word counts based on the top-ranking competitors for each topic, and include a content brief with required entities, questions to answer, and internal linking opportunities. This removes guesswork and ensures every piece of content is built on a foundation of real search demand.",
+        ],
+      },
+      {
+        heading: "Content Distribution: Why Creation Is Only Half the Battle",
+        paragraphs: [
+          "Most content marketing fails not because of poor content quality but because of poor distribution. Publishing a blog post and waiting for Google to rank it is a strategy that works only in exceptionally low-competition niches. In most industries, your content needs active promotion to gain the initial traction that leads to organic rankings. We follow the 40-60 rule: spend 40% of your content budget on creation and 60% on distribution.",
+          "Our content distribution framework covers five channels. SEO distribution involves technical optimisation, internal linking, and submitting to Search Console for rapid indexing. Email distribution sends new content to your subscriber list and content-specific segments with personalised messaging. Social distribution involves creating platform-specific derivative content for LinkedIn, Instagram, and Twitter from each piece — a blog post becomes a LinkedIn article, a carousel, and five individual social posts. PR distribution pitches data-driven and thought leadership content to journalists and industry publications for editorial backlinks. Paid distribution uses small content promotion budgets on LinkedIn and Facebook to accelerate initial engagement and signal quality to Google.",
+          "The compounding benefit of active distribution is that early engagement — social shares, comments, backlinks, click-throughs from emails — generates the authority signals that accelerate organic ranking. Content that earns 10 early backlinks and 500 social engagements in its first two weeks will rank faster and higher than identical content that receives no promotion. Distribution is not optional for competitive content marketing — it is the mechanism that unlocks the return on your content investment.",
+        ],
+      },
+      {
+        heading: "Content Marketing for Different Business Models",
+        paragraphs: [
+          "B2B content marketing focuses on education, thought leadership, and supporting long, multi-stakeholder sales cycles. The most effective B2B content formats are in-depth guides, original research reports, case studies with specific ROI metrics, comparison and evaluation content, and expert webinars. B2B buyers consume 13 pieces of content on average before making a purchase decision, making consistent content production essential. LinkedIn is the primary distribution channel for B2B content, supplemented by email newsletters and industry publications.",
+          "B2C content marketing focuses on inspiration, entertainment, and shortening the path to purchase. Video content and visually rich formats perform best, distributed primarily on Instagram, YouTube, and TikTok. User-generated content (reviews, testimonials, customer photos) is among the most effective B2C content because it provides social proof from real customers. E-commerce content strategies often combine SEO-focused blog content for upper-funnel traffic with high-production video and influencer content for social channels.",
+          "For local service businesses in Chandigarh and across India, content marketing focuses on local authority building. This means creating location-specific content that targets city + service keywords, publishing case studies featuring local clients, building content around regional industry events and news, and contributing expert commentary to local business media. This hyper-local content approach complements local SEO efforts and positions the business as the dominant expert in its category within the target geography.",
+        ],
+      },
+    ],
+    pricingNote: "Content marketing at TML starts at ₹30,000/month for a starter plan including strategy, 4 blog posts per month, social media content repurposing, and monthly reporting. Growth plans at ₹60,000-₹1,00,000/month include higher content volume, long-form assets, email newsletter production, and distribution support. Enterprise content programs start at ₹1,50,000/month and include full content strategy, multiple content formats, active link building, and dedicated account management. Free content audit and competitive analysis available for new clients.",
+    features: [
+      { title: "Content Strategy", description: "Data-driven content strategies built on keyword research, competitor gap analysis, and audience insights to systematically grow your organic presence and establish topical authority in your industry." },
+      { title: "Blog & Article Writing", description: "SEO-optimised, thoroughly researched blog posts and articles that rank on Google and genuinely inform your target audience. Every piece is structured for readability, engagement, and conversion." },
+      { title: "Long-Form Content", description: "In-depth guides, whitepapers, e-books, and research reports that generate leads, earn backlinks, and position your brand as the definitive authority on the topics that matter to your customers." },
+      { title: "Case Studies & Testimonials", description: "Compelling case studies that showcase real client results with specific metrics, turning your success stories into powerful conversion tools for your sales and marketing teams." },
+      { title: "Content Distribution", description: "Multi-channel distribution across SEO, email, social media, and PR to amplify every piece of content and generate the early engagement signals that accelerate organic ranking growth." },
+      { title: "Performance Tracking", description: "Comprehensive analytics tracking organic traffic, keyword rankings, lead generation, and revenue attribution so you can see the exact business impact of every content investment." },
+    ],
+    process: [
+      { step: "01", title: "Research", description: "Deep audience research, competitor analysis, and keyword mapping to identify the highest-value content opportunities for your brand." },
+      { step: "02", title: "Strategy", description: "Build a content strategy with topic clusters, content calendar, format mix, and distribution plan aligned to your business goals." },
+      { step: "03", title: "Create", description: "Produce high-quality content across formats — written, visual, and video — following detailed briefs for consistency and SEO alignment." },
+      { step: "04", title: "Distribute", description: "Amplify each piece across SEO, email, social, and PR channels to maximize reach and generate early authority signals." },
+      { step: "05", title: "Analyse & Optimise", description: "Track performance, identify top-performing content, update and refresh existing pieces, and continuously refine strategy for compounding growth." },
+    ],
+    stats: [
+      { label: "Content Pieces Created", value: "10K+" },
+      { label: "Avg Traffic Increase", value: "70%" },
+      { label: "Leads Generated", value: "50K+" },
+      { label: "Industries Served", value: "25+" },
+    ],
+    faqs: [
+      { q: "How long before content marketing shows results?", a: "Content marketing is a long-term strategy. You'll typically see early ranking movements in months 2-3, with significant traffic growth between months 6-12 as your content library and domain authority compound." },
+      { q: "How many pieces of content do I need per month?", a: "For meaningful results, we recommend a minimum of 4-8 pieces per month. More competitive industries benefit from 12-20 pieces monthly to build topical authority faster." },
+      { q: "Do you handle the entire content process?", a: "Yes — from strategy and keyword research to writing, editing, SEO optimisation, publishing, and performance reporting. We can also handle distribution and promotion." },
+      { q: "What industries do you write content for?", a: "We have specialist writers across SaaS, fintech, healthcare, real estate, e-commerce, education, legal, and many more. We match writers with industry experience to every project." },
+      { q: "How do you ensure content quality?", a: "Every piece goes through a four-stage process: expert writing, SEO review, editorial editing, and client approval. We maintain brand voice guides and detailed content briefs for every account." },
+    ],
+    relatedServices: ["seo", "content-writing", "social-media"],
+  },
+
+  "email-marketing": {
+    slug: "email-marketing",
+    title: "Email Marketing",
+    tagline: "The highest ROI channel in digital marketing.",
+    description: "Strategic email marketing services that nurture leads, retain customers, and drive revenue on autopilot. Our email marketing team in Chandigarh designs, builds, and optimises email campaigns and automation flows that deliver an average 42:1 ROI for businesses across India and internationally.",
+    heroDescription: "Email marketing delivers ₹42 in revenue for every ₹1 spent — the highest ROI of any digital marketing channel. We build and manage email programs that turn subscribers into loyal customers through strategic campaigns, automation sequences, and rigorous performance optimisation.",
+    metaTitle: "Email Marketing Services Chandigarh | TML Agency",
+    metaDescription: "Professional email marketing services in Chandigarh. Email campaigns, automation, list building, and strategy by TML Agency — delivering 42:1 ROI for businesses across India.",
+    metaKeywords: ["email marketing services", "email marketing agency Chandigarh", "email automation India", "email campaign management", "drip email campaigns", "newsletter marketing", "email list building"],
+    seoContent: [
+      "Email marketing consistently delivers the highest return on investment of any digital marketing channel — averaging ₹42 in revenue for every ₹1 invested. At TML Agency in Chandigarh, we design and manage email marketing programs that turn your subscriber list into a predictable revenue engine. From welcome sequences and nurture flows to promotional campaigns and retention programmes, we handle every aspect of email marketing strategy and execution.",
+      "Our email marketing services are built around three principles: relevance, timing, and deliverability. We segment your audience based on behaviour, purchase history, and engagement level to ensure every subscriber receives content that is relevant to them. We use behavioural triggers to send emails at the moments of highest intent. And we maintain technical best practices — SPF, DKIM, DMARC, and list hygiene — to ensure your emails land in inboxes, not spam folders.",
+      "Whether you are starting from zero with a small list or managing an established database of thousands, TML Agency builds email programs that grow with your business. Our clients across e-commerce, SaaS, education, and professional services sectors typically see 25-60% increases in email revenue within the first 90 days of working with us.",
+    ],
+    deepContent: [
+      {
+        heading: "Email Marketing Automation: Earning Revenue While You Sleep",
+        paragraphs: [
+          "Automated email sequences are the most powerful component of any email marketing program because they generate revenue continuously without manual effort. A well-designed welcome sequence alone typically drives 3-5x more revenue per subscriber than broadcast campaigns because it catches subscribers at their peak engagement — the first 48 hours after signing up. At TML, we build welcome sequences that introduce your brand, demonstrate value, address common objections, and guide new subscribers toward a first purchase or conversion over a 7-10 day window.",
+          "Abandoned cart automation is the single highest-ROI automation for e-commerce businesses. On average, 70% of shoppers abandon their cart before completing a purchase. A three-email abandoned cart sequence — sent at 1 hour, 24 hours, and 72 hours after abandonment — typically recovers 5-15% of those abandoned carts, representing significant revenue with no additional ad spend. Our cart recovery emails combine urgency, social proof, and sometimes a small incentive to bring shoppers back to complete their purchase.",
+          "For B2B businesses, lead nurture automation turns cold leads into warm prospects over weeks or months. We build sequences that educate leads about their problem, introduce your solution, provide proof through case studies, address likely objections, and time conversion attempts based on engagement signals. Using tags and conditional logic in platforms like Klaviyo, HubSpot, and Mailchimp, we create dynamic flows where each subscriber's experience adapts based on how they interact with earlier emails — ensuring highly relevant communication regardless of where each lead is in their buyer journey.",
+        ],
+      },
+      {
+        heading: "List Building: Growing a High-Quality Subscriber Base",
+        paragraphs: [
+          "An email list is only as valuable as its quality. A list of 5,000 highly engaged, genuinely interested subscribers will outperform a list of 50,000 unengaged contacts acquired through shortcuts. At TML, we build list growth strategies focused on attracting subscribers with genuine interest in your brand — using lead magnets, content upgrades, webinar registrations, free tools, and optimised opt-in forms positioned at high-intent moments throughout your website and marketing funnels.",
+          "Lead magnets are the most effective list building tool when matched to your audience's specific needs. A SaaS company might offer a free template or tool. A consultancy might offer a detailed guide or checklist. An e-commerce brand might offer a first-purchase discount code. The key is that the lead magnet provides immediate, tangible value that makes giving an email address feel like an obvious trade. We research what your competitors offer, identify gaps, and design lead magnets that consistently convert at 20-40% of visitors who encounter them.",
+          "List hygiene is as important as list growth. Inactive subscribers damage your deliverability by lowering your engagement rates — a key metric ISPs use to decide if your emails go to inbox or spam. We implement re-engagement campaigns for subscribers who have not opened in 90 days, and sunset (unsubscribe) those who do not respond to re-engagement. This keeps your list lean and your deliverability strong, ensuring your emails consistently reach the inbox for your active, engaged subscribers who are actually worth marketing to.",
+        ],
+      },
+      {
+        heading: "Email Deliverability: The Technical Foundation of Email Success",
+        paragraphs: [
+          "You can have the best email strategy and most compelling copy in the world, but if your emails land in spam, none of it matters. Deliverability is the technical discipline of ensuring your emails reach the inbox, and it is where many email programs fail silently — marketers assume their emails are being read when in reality 20-30% are being filtered to spam. At TML, we audit and fix every technical element of your email infrastructure before launching any campaign.",
+          "The key deliverability factors we manage include: sender reputation (monitoring your domain's reputation scores across Sender Score, Google Postmaster Tools, and Microsoft SNDS), email authentication (configuring SPF, DKIM, and DMARC records that verify your emails are legitimately sent from your domain), IP warmup protocols (gradually increasing send volume from new IPs to establish positive sending history), and bounce and complaint rate monitoring (staying below the 2% hard bounce and 0.1% spam complaint thresholds that trigger ISP penalties).",
+          "Content and sending practices also affect deliverability. Spam filters are sophisticated machine learning systems that evaluate over 200 signals — from subject line patterns and HTML structure to link domains and image-to-text ratios. We follow inbox-optimised email production standards: clean HTML, appropriate image ratios, clear unsubscribe links, personalised subject lines that avoid spam trigger words, and list segmentation that ensures every email is sent only to subscribers likely to engage with it. The result is consistent inbox placement rates of 95%+ for our managed accounts.",
+        ],
+      },
+      {
+        heading: "Email Marketing for E-Commerce: Flows That Drive Revenue",
+        paragraphs: [
+          "E-commerce email marketing is the most systematised use case for email automation. At TML, we implement a core set of revenue-driving flows for every e-commerce client: welcome series (5-7 emails over 14 days introducing the brand and driving first purchase), abandoned cart (3 emails recovering lost sales), browse abandonment (2 emails re-engaging visitors who viewed products but did not add to cart), post-purchase (3-5 emails including order confirmation, shipping updates, product education, review request, and upsell), win-back (3 emails for lapsed customers who have not purchased in 90+ days), and VIP (exclusive offers and early access for your top 10% of customers by lifetime value).",
+          "For fashion, beauty, and lifestyle brands, personalised product recommendation emails — triggered by purchase history or browsing behaviour — are among the highest-performing campaigns in the portfolio. Using Klaviyo's predictive analytics or Shopify's email integration, we build recommendation emails that show each subscriber products relevant to their specific tastes and purchase history. These emails typically generate 4-6x higher revenue per recipient than generic promotional emails.",
+          "Seasonal campaign planning is essential for e-commerce brands to maximise revenue during peak periods. We build 90-day email calendars that map campaigns to key shopping events — Diwali, New Year, Valentine's Day, summer sales, and brand-specific anniversaries — with campaign briefs, send schedules, subject line testing plans, and design templates prepared in advance. Planning ahead ensures campaigns are executed with quality and delivered on time, rather than rushed last-minute sends that underperform.",
+        ],
+      },
+    ],
+    pricingNote: "Email marketing management at TML starts at ₹20,000/month for a starter plan covering up to 3 automated flows, 2 broadcast campaigns per month, basic list segmentation, and monthly reporting. Growth plans at ₹40,000-₹75,000/month include full automation build-out, weekly campaigns, advanced segmentation, and A/B testing. Enterprise plans for large lists or complex automation requirements start at ₹1,00,000/month. Platform fees (Klaviyo, Mailchimp, etc.) are billed separately. We offer a free email program audit and deliverability check for businesses with existing email marketing in place.",
+    features: [
+      { title: "Email Strategy & Planning", description: "Full email program strategy including audience segmentation, automation roadmap, campaign calendar, and KPI targets aligned to your revenue goals and customer lifecycle." },
+      { title: "Automation & Flows", description: "Revenue-driving automated sequences for welcome, abandoned cart, post-purchase, win-back, and custom lifecycle flows that earn revenue continuously without manual effort." },
+      { title: "Campaign Design & Copywriting", description: "Professionally designed email templates and persuasive copy that reflects your brand voice, communicates value clearly, and drives recipients to take action with every send." },
+      { title: "List Building & Management", description: "Strategic list growth through lead magnets and opt-in optimization, paired with regular list hygiene to maintain deliverability and keep your subscriber database healthy and engaged." },
+      { title: "Segmentation & Personalisation", description: "Advanced audience segmentation by behavior, purchase history, and engagement level to ensure every subscriber receives relevant, timely content that increases open rates and conversions." },
+      { title: "Analytics & Reporting", description: "Comprehensive performance reporting including open rates, click rates, revenue attribution, list growth, and A/B test results with actionable recommendations each month." },
+    ],
+    process: [
+      { step: "01", title: "Audit", description: "Review your current email program, list health, deliverability, and automation flows to identify gaps and quick wins." },
+      { step: "02", title: "Strategy", description: "Build your email program strategy including automation roadmap, segmentation plan, and campaign calendar." },
+      { step: "03", title: "Build", description: "Design and build email templates, automation flows, and segmentation logic in your email platform." },
+      { step: "04", title: "Launch", description: "Deploy campaigns and automations with proper testing, deliverability checks, and tracking in place." },
+      { step: "05", title: "Optimise", description: "A/B test subject lines, content, and send times. Analyse performance data and continuously improve every element of the program." },
+    ],
+    stats: [
+      { label: "Emails Sent", value: "50M+" },
+      { label: "Avg Open Rate", value: "32%" },
+      { label: "Average ROI", value: "42x" },
+      { label: "Client Retention", value: "98%" },
+    ],
+    faqs: [
+      { q: "Which email marketing platform do you use?", a: "We work with Klaviyo, Mailchimp, HubSpot, ActiveCampaign, and Brevo depending on your business type and budget. We recommend Klaviyo for e-commerce and HubSpot or ActiveCampaign for B2B." },
+      { q: "What's a good open rate to aim for?", a: "Industry averages vary by sector, but a healthy open rate is 25-35%. Well-segmented, permission-based lists regularly achieve 35-45%. Our managed accounts average 32%." },
+      { q: "How do you grow an email list from scratch?", a: "We build list growth strategies using lead magnets, content upgrades, pop-ups, landing pages, and cross-channel promotion to attract highly qualified subscribers at consistent monthly volumes." },
+      { q: "Can you migrate us from one platform to another?", a: "Yes, we handle complete platform migrations including subscriber list export/import, template rebuilding, automation recreation, and deliverability warmup on the new platform." },
+      { q: "Do you write the email copy too?", a: "Yes, our email copywriters create all subject lines, preview text, body copy, and CTAs. We develop a brand voice guide and maintain it consistently across every send." },
+    ],
+    relatedServices: ["content-marketing", "lead-generation", "social-media"],
+  },
+
+  "influencer-marketing": {
+    slug: "influencer-marketing",
+    title: "Influencer Marketing",
+    tagline: "Amplify your brand through authentic voices.",
+    description: "Strategic influencer marketing campaigns that connect your brand with the right creators to reach engaged, targeted audiences at scale. Our influencer marketing team in Chandigarh identifies, vets, briefs, and manages influencer partnerships across Instagram, YouTube, and emerging platforms to drive awareness, conversions, and genuine brand affinity for businesses across India.",
+    heroDescription: "We connect brands with the right influencers to create authentic, high-impact campaigns that reach new audiences and drive real results. From micro-influencer campaigns to celebrity partnerships, we manage the entire process — discovery, briefing, contracting, content approval, and performance reporting.",
+    metaTitle: "Influencer Marketing Agency Chandigarh | TML Agency",
+    metaDescription: "Influencer marketing services in Chandigarh. TML Agency identifies, manages, and measures influencer campaigns across Instagram and YouTube for brands across India.",
+    metaKeywords: ["influencer marketing agency", "influencer marketing Chandigarh", "Instagram influencer campaigns", "YouTube influencer marketing", "brand influencer collaboration India", "micro influencer marketing", "influencer management agency"],
+    seoContent: [
+      "92% of consumers trust recommendations from individuals over brands — and influencer marketing harnesses this trust at scale. At TML Agency in Chandigarh, we build influencer marketing campaigns that connect your brand with creators whose audiences match your target customers. Our data-driven approach to influencer selection, campaign management, and performance measurement ensures every partnership delivers genuine business results beyond vanity metrics.",
+      "The influencer landscape in India is among the most dynamic in the world, with over 750,000 active influencers across Instagram, YouTube, and emerging platforms. The key to influencer marketing success is not finding the biggest creator — it is finding the right creator whose audience engagement, follower demographics, and content style align with your brand. Our proprietary influencer vetting process analyses real audience data, not follower counts, to identify creators who will actually move the needle for your business.",
+      "From campaign concept to content delivery and performance reporting, TML Agency manages every aspect of influencer marketing. We handle creator discovery, outreach, negotiation, contracts, briefing, content review, usage rights, payment processing, and post-campaign analytics. Our clients include FMCG brands, lifestyle companies, fintech startups, and retail brands across India who trust us to represent their brand professionally in the creator economy.",
+    ],
+    deepContent: [
+      {
+        heading: "Choosing the Right Influencers: Data Over Follower Counts",
+        paragraphs: [
+          "The most common influencer marketing mistake is selecting creators based on follower count alone. A creator with 500,000 followers but 1% engagement rate and a fake-heavy audience will underperform a creator with 50,000 followers, 8% engagement, and an audience that genuinely trusts their recommendations. At TML, we evaluate influencers across seven criteria: real audience size (removing estimated fake followers), engagement rate versus category benchmarks, audience demographic alignment with your target customer, content quality and brand safety, past brand partnership performance, platform algorithm standing, and cost per engaged impression.",
+          "We use a combination of tools — Social Blade for growth pattern analysis, HypeAuditor for fake follower detection, Creator.co for demographic data, and Brandwatch for sentiment analysis — alongside manual evaluation of recent content and comment quality. Red flags we screen for include sudden follower spikes (indicating purchased followers), generic, low-effort comment patterns (indicating engagement pods), dramatic engagement rate fluctuations, and audience geographic mismatches for brands targeting specific regions.",
+          "Creator tier selection depends on your campaign objectives. Mega-influencers (1M+ followers) deliver massive reach and brand association for awareness campaigns but at premium cost and lower engagement rates. Macro-influencers (100K–1M) balance reach with credibility. Micro-influencers (10K–100K) typically deliver the highest engagement rates and the strongest purchase intent among their audiences — they are perceived as friends rather than celebrities, which drives genuine product consideration. Nano-influencers (1K–10K) are most effective for hyper-local campaigns or brands targeting very specific niches where these creators have deep authority.",
+        ],
+      },
+      {
+        heading: "Campaign Structure: From Brief to Published Content",
+        paragraphs: [
+          "A well-structured influencer brief is the difference between content that resonates and content that misses the mark. Our briefs provide creators with clear context about your brand's values and positioning, the specific campaign message and key talking points, mandatory disclosures (required by ASCI guidelines in India), content format requirements (story frames, reel duration, YouTube integration type), and visual references — but critically, we leave creative execution to the creator. Overly prescriptive briefs produce robotic, inauthentic content that audiences recognise and tune out. The best influencer content feels native to the creator's style.",
+          "Content approval workflows are essential for brand safety without stifling authenticity. We recommend a two-step review: first reviewing the content concept or script before production to catch any fundamental misalignments early, then reviewing final content before publishing for factual accuracy, brand guideline compliance, and disclosure verification. Most creators respond well to this process when it is communicated with respect for their creative autonomy. We manage all review communication on behalf of brands, maintaining professional creator relationships throughout.",
+          "Usage rights negotiation is often overlooked but critical for maximising campaign value. Standard influencer agreements typically cover the creator's platform for a defined time period. But if you want to use influencer content in your own paid social ads, website, or out-of-home advertising, you need explicit usage rights negotiated upfront. Repurposing high-performing influencer content as paid social ads (known as influencer whitelisting or darkposting) is one of the highest-performing paid social strategies available — and it starts with the right contract terms.",
+        ],
+      },
+      {
+        heading: "Measuring Influencer Marketing ROI",
+        paragraphs: [
+          "Measuring influencer marketing ROI requires tracking beyond reach and impressions. We use unique discount codes and UTM-tagged links for every influencer to attribute website traffic, sign-ups, and sales directly to each creator. For awareness campaigns, we measure reach, video views, and story views alongside brand lift surveys that quantify changes in brand awareness and purchase intent. For conversion campaigns, we track cost per click, cost per acquisition, and ROAS compared against other paid channels.",
+          "Earned media value (EMV) is a secondary metric we track — it calculates the equivalent cost of generating the same content impressions through paid advertising. While not a direct revenue measure, EMV contextualises the value of influencer-generated content and helps justify campaign budgets to stakeholders who are accustomed to paid media CPM comparisons. A campaign that generates ₹50 lakh in EMV from a ₹5 lakh investment demonstrates clear value even before counting direct conversion revenue.",
+          "Long-term influencer relationship metrics are also important. Repeat campaign performance, audience sentiment analysis, and brand mention tracking over time show whether influencer partnerships are building genuine brand affinity or merely generating one-time spikes. Our reporting includes 30-day and 90-day post-campaign tracking to capture the full tail of influencer content performance, since Instagram Reels and YouTube videos continue generating views and referrals for months after publication.",
+        ],
+      },
+    ],
+    pricingNote: "Influencer marketing at TML is priced by campaign scope. A micro-influencer campaign (5-10 creators, one platform, one month) typically costs ₹1,50,000–₹3,00,000 including agency fees and influencer compensation. Mid-tier campaigns (10-25 creators, multi-platform) range from ₹3,00,000–₹8,00,000. Large-scale campaigns with macro and mega influencers are scoped individually. Our management fee covers strategy, influencer discovery, outreach, negotiation, briefing, content review, and reporting. Influencer fees are passed through at net cost with full transparency.",
+    features: [
+      { title: "Influencer Discovery & Vetting", description: "Data-driven creator identification using audience authenticity analysis, demographic alignment, and engagement quality scoring across Instagram, YouTube, and other platforms to find creators who genuinely reach your target customers." },
+      { title: "Campaign Strategy", description: "Complete campaign planning including platform selection, creator tier mix, content format strategy, messaging frameworks, and campaign timeline aligned to your brand objectives and target audience." },
+      { title: "Outreach & Negotiation", description: "Professional outreach, rate negotiation, and contract management to secure the best partnerships at fair market rates while protecting your brand interests through proper legal agreements." },
+      { title: "Creative Briefing", description: "Detailed, creator-friendly briefs that communicate your brand requirements clearly while giving creators the creative freedom to produce authentic content that resonates with their audiences." },
+      { title: "Content Review & Approvals", description: "Structured content review workflow ensuring brand safety, ASCI compliance, and quality standards without stifling the natural creator voice that makes influencer content effective." },
+      { title: "Performance Reporting", description: "Comprehensive post-campaign analytics with reach, engagement, traffic attribution, conversion tracking, EMV calculation, and actionable recommendations for future campaigns." },
+    ],
+    process: [
+      { step: "01", title: "Strategy", description: "Define campaign objectives, target audience, creator tier mix, platform focus, and success metrics." },
+      { step: "02", title: "Discovery", description: "Identify and vet creators using data tools and manual evaluation to build a shortlist of ideal brand partners." },
+      { step: "03", title: "Outreach", description: "Conduct professional outreach, negotiate rates, and finalise contracts with selected creators." },
+      { step: "04", title: "Brief & Create", description: "Provide detailed creative briefs, review content drafts, and approve final pieces for publishing." },
+      { step: "05", title: "Measure", description: "Track campaign performance with UTM links and discount codes, and deliver comprehensive post-campaign reporting." },
+    ],
+    stats: [
+      { label: "Campaigns Managed", value: "300+" },
+      { label: "Influencers Partnered", value: "2000+" },
+      { label: "Avg Engagement Rate", value: "6.8%" },
+      { label: "Brands Served", value: "150+" },
+    ],
+    faqs: [
+      { q: "How do you ensure influencer content is authentic?", a: "We select creators based on genuine audience alignment, provide briefs that allow creative freedom, and avoid over-scripting. The best influencer content feels native — and we brief accordingly." },
+      { q: "Do you handle the payment to influencers?", a: "Yes, we manage all influencer payments including invoicing, GST compliance, and timely disbursement. Influencer fees are fully transparent and passed through at net cost." },
+      { q: "How do you measure campaign ROI?", a: "We use unique discount codes, UTM-tagged links, and post-campaign surveys to attribute traffic, sign-ups, and sales directly to each creator, plus track reach, engagement, and earned media value." },
+      { q: "What platforms do you manage campaigns on?", a: "Primarily Instagram and YouTube, but also LinkedIn for B2B campaigns, Twitter/X for tech and finance, and emerging platforms like Threads and LinkedIn newsletters depending on your audience." },
+      { q: "Can you run ongoing influencer programmes?", a: "Yes, we build always-on influencer programmes with retained creator partnerships that deliver consistent brand exposure and content production at better rates than one-off campaigns." },
+    ],
+    relatedServices: ["social-media", "content-marketing", "meta-ads"],
+  },
+
+  "ppc-management": {
+    slug: "ppc-management",
+    title: "PPC Management",
+    tagline: "Every click. Every rupee. Maximised.",
+    description: "Comprehensive pay-per-click management across Google, Meta, LinkedIn, and programmatic platforms that maximises your advertising ROI. Our certified PPC specialists in Chandigarh manage multi-platform ad campaigns with a data-driven approach to bidding, creative, and targeting that consistently delivers above-average returns for businesses across India and internationally.",
+    heroDescription: "We manage your entire paid advertising portfolio across every platform — Google, Meta, LinkedIn, YouTube, and more. Our certified PPC specialists combine strategic planning with relentless optimisation to squeeze maximum ROI from every rupee of your ad budget.",
+    metaTitle: "PPC Management Agency Chandigarh | TML Agency",
+    metaDescription: "Expert PPC management across Google, Meta, LinkedIn, and YouTube. TML Agency in Chandigarh delivers data-driven paid advertising that maximises your ROI across all platforms.",
+    metaKeywords: ["PPC management agency", "pay per click management Chandigarh", "paid advertising India", "multi-platform PPC", "Google Ads management", "Meta ads management", "PPC agency India"],
+    seoContent: [
+      "Pay-per-click advertising is the fastest way to place your business in front of high-intent customers, but without expert management, it is also the fastest way to burn through budget with little to show for it. At TML Agency in Chandigarh, our PPC management service covers your entire paid advertising portfolio — Google Ads, Meta Ads, LinkedIn Ads, YouTube, Bing, and programmatic — with a unified strategy designed to maximize ROI across every platform.",
+      "Our PPC management philosophy is built on three pillars: rigorous data analysis, continuous creative testing, and strategic budget allocation. We analyse performance at the granular level — by keyword, ad group, audience segment, device, location, and time of day — to identify exactly where your budget is generating returns and where it is being wasted. We then reallocate and optimise relentlessly, compounding performance improvements month over month.",
+      "With over ₹55 crore in total ad spend managed across platforms, our PPC specialists have the cross-platform expertise and statistical foundation to manage complex multi-channel campaigns. Our clients in e-commerce, real estate, education, and professional services consistently achieve 20-40% improvements in cost per acquisition within the first 90 days of transitioning to TML's management.",
+    ],
+    deepContent: [
+      {
+        heading: "Multi-Platform PPC Strategy: Matching Platforms to Objectives",
+        paragraphs: [
+          "Different advertising platforms serve different customer journey stages and audience mindsets. Google Search targets active intent — people who are actively searching for what you offer. This makes it ideal for capturing demand that already exists. Meta Ads (Facebook and Instagram) target interest and demographic profiles, making them powerful for creating demand among audiences who are not yet actively searching but match your ideal customer profile. LinkedIn Ads reach professional decision-makers with high household incomes and B2B purchase authority. YouTube reaches video content consumers in a lean-back, receptive mindset. A sophisticated PPC strategy deploys each platform where it excels.",
+          "Budget allocation across platforms should follow a demand waterfall. First, fully capture existing search demand on Google — these are your highest-intent prospects, and leaving search impression share on the table is the most expensive mistake in PPC. Once search is fully captured, expand to Meta and YouTube to create demand and fill your upper funnel with future buyers. For B2B companies, LinkedIn Ads are typically more expensive per click but generate higher-quality leads that convert into larger deal sizes, often justifying a significant budget allocation despite lower click volumes.",
+          "Audience synchronisation across platforms multiplies your PPC effectiveness. We upload your customer lists and website visitor audiences to every platform, creating consistent retargeting coverage across the web. A prospect who clicks your Google Search ad, visits your website, and then sees a tailored Meta retargeting ad featuring a case study relevant to their industry, then a YouTube pre-roll with a client testimonial, and finally a LinkedIn Sponsored Message with a free consultation offer — experiences a coordinated sequence that converts at dramatically higher rates than any single-channel approach.",
+        ],
+      },
+      {
+        heading: "Bid Strategy Selection: Smart Bidding vs Manual Control",
+        paragraphs: [
+          "Google's Smart Bidding algorithms — Target CPA, Target ROAS, Maximise Conversions, and Enhanced CPC — use machine learning to set bids at auction time based on hundreds of contextual signals including device, location, time of day, search query characteristics, and audience attributes. When fed sufficient conversion data (typically 30-50 conversions per month per campaign), Smart Bidding consistently outperforms manual bidding by 15-30% on cost efficiency metrics. However, the key phrase is 'sufficient conversion data' — poorly set up accounts with low conversion volumes often see Smart Bidding strategies overspend without delivering results.",
+          "Our approach matches bid strategy to account maturity and conversion volume. New campaigns and low-volume accounts start with Maximise Clicks (for data gathering) or manual CPC with enhanced bidding, transitioning to Smart Bidding only after accumulating 60-90 days of quality conversion data. Established accounts with strong data foundations typically run Target ROAS for e-commerce or Target CPA for lead generation, with regular strategy reviews to ensure algorithms are optimising toward the right goals. We also use portfolio bidding strategies that pool conversion data across related campaigns to accelerate machine learning where individual campaigns have insufficient volume.",
+          "Bid adjustments remain an important complement to Smart Bidding for controlling spend allocation by device, location, audience, and schedule. We analyse conversion rate data and implement bid modifiers that override algorithmic defaults where human pattern recognition identifies clear performance trends the algorithm has not yet captured. For example, a home renovation service that sees 60% of its weekend conversions come from Saturday morning searches would benefit from an aggressive weekend morning bid adjustment regardless of what the algorithm recommends.",
+        ],
+      },
+      {
+        heading: "Creative Testing in PPC: A Systematic Approach",
+        paragraphs: [
+          "Ad creative is the single largest performance variable in Meta Ads and YouTube — and a significant factor in Google Ads Quality Score. Most agencies update ad creatives quarterly; we run continuous creative testing with new variations every two to four weeks. Our testing framework follows a structured hierarchy: test the offer first (what you are promising), then the hook (how you capture attention in the first three seconds), then the format (static vs video vs carousel), then messaging (different pain points and benefits), and finally aesthetics (visual style, color palette, talent).",
+          "For Google Ads, Responsive Search Ads allow us to test up to 15 headlines and 4 descriptions simultaneously, with Google's algorithms serving the best combinations. We analyse asset performance ratings weekly and replace any asset rated 'Low' with new variations. For Display and YouTube, we test different creative concepts over two to three week cycles with minimum impression thresholds for statistical significance, graduating winners and eliminating losers through a defined kill criteria based on cost per view or click-through rate benchmarks.",
+          "Creative fatigue is a real phenomenon, particularly on Meta Ads where users see the same ad multiple times per week. We monitor frequency metrics (impressions per unique user) and implement automatic creative rotation or pause rules that trigger when frequency exceeds 3x per week for awareness content or 5x per week for retargeting. Fresh creative keeps your CPMs competitive and prevents the engagement decay that drives cost increases for stale campaigns.",
+        ],
+      },
+    ],
+    pricingNote: "PPC management at TML starts at ₹20,000/month for single-platform management (Google or Meta) for ad spend up to ₹1,00,000/month. Multi-platform management ranges from ₹35,000-₹75,000/month depending on the number of platforms and campaign complexity. Enterprise accounts with ₹5,00,000+ monthly ad spend are scoped individually with dedicated account management. Management fees are separate from ad spend budgets. We offer a free PPC audit identifying wasted spend and optimisation opportunities in your existing campaigns.",
+    features: [
+      { title: "Cross-Platform Strategy", description: "Unified paid advertising strategy across Google, Meta, LinkedIn, YouTube, and programmatic platforms — with budget allocation and messaging optimised for each platform's unique audience and user intent." },
+      { title: "Keyword Research & Management", description: "Comprehensive keyword research, match type strategy, and ongoing negative keyword management to target high-intent searches while eliminating irrelevant clicks that waste your budget." },
+      { title: "Bid Management", description: "Expert bid strategy selection and ongoing optimisation using Smart Bidding algorithms where data supports it, and manual control where precision is required — always focused on maximising your return." },
+      { title: "Ad Creative Production", description: "Compelling ad copy for search, visually engaging creative for display and social, and video ad scripts and production for YouTube — all tested continuously for performance improvement." },
+      { title: "Landing Page Optimisation", description: "Conversion rate optimisation for your PPC landing pages, ensuring the full funnel from ad click to conversion is as efficient as possible and that ad spend generates maximum return." },
+      { title: "Reporting & Attribution", description: "Advanced conversion tracking, cross-channel attribution modelling, and clear performance reporting that shows exactly which campaigns, ads, and keywords are generating revenue for your business." },
+    ],
+    process: [
+      { step: "01", title: "Audit", description: "Comprehensive audit of existing campaigns across all platforms to identify wasted spend and quick-win optimisations." },
+      { step: "02", title: "Strategy", description: "Build a unified multi-platform strategy with budget allocation, campaign structure, and creative direction." },
+      { step: "03", title: "Build", description: "Set up or restructure campaigns with optimised keyword targeting, audience lists, and creative assets." },
+      { step: "04", title: "Optimise", description: "Continuous bid management, A/B testing, negative keyword expansion, and performance improvement across all campaigns." },
+      { step: "05", title: "Scale", description: "Identify top-performing campaigns and channels, increase budgets strategically, and expand into new targeting and creative opportunities." },
+    ],
+    stats: [
+      { label: "Ad Spend Managed", value: "₹55Cr+" },
+      { label: "Platforms Managed", value: "6+" },
+      { label: "Avg CPA Reduction", value: "32%" },
+      { label: "Client Retention", value: "98%" },
+    ],
+    faqs: [
+      { q: "What is included in your PPC management service?", a: "Full campaign management including strategy, setup or restructuring, keyword research, bid management, ad creative, landing page recommendations, conversion tracking, and monthly performance reporting." },
+      { q: "Which platforms do you manage?", a: "Google Ads, Meta Ads (Facebook/Instagram), LinkedIn Ads, YouTube Ads, Microsoft Advertising (Bing), and programmatic display platforms." },
+      { q: "Do you require long-term contracts?", a: "We work on monthly rolling agreements. We earn your continued business through results, not contractual lock-in." },
+      { q: "How do you report on performance?", a: "Monthly detailed reports plus access to a live Looker Studio dashboard showing real-time campaign performance across all platforms." },
+      { q: "Can you take over management of existing campaigns?", a: "Yes, we take over campaigns from in-house teams or other agencies. We always start with a thorough audit before making changes to understand what's working and what isn't." },
+    ],
+    relatedServices: ["google-ads", "meta-ads", "lead-generation"],
+  },
+
+  "online-reputation-management": {
+    slug: "online-reputation-management",
+    title: "Online Reputation Management",
+    tagline: "Protect, build, and control your digital narrative.",
+    description: "Comprehensive online reputation management (ORM) services that protect your brand from negative content, build positive sentiment, and give you control over what appears when people search for your business. Our ORM specialists in Chandigarh monitor, manage, and improve the digital reputation of businesses and individuals across India and globally.",
+    heroDescription: "Your online reputation is your most valuable business asset — and your most vulnerable. We monitor, protect, and build your digital reputation through proactive content strategies, review management, crisis response, and search result suppression that ensures your brand story is told on your terms.",
+    metaTitle: "Online Reputation Management Services India | TML Agency",
+    metaDescription: "Expert ORM services to protect and build your online reputation. TML Agency monitors, manages, and improves brand sentiment, reviews, and search results for businesses across India.",
+    metaKeywords: ["online reputation management", "ORM services India", "brand reputation management", "reputation management agency Chandigarh", "negative content removal", "review management", "crisis PR"],
+    seoContent: [
+      "93% of consumers read online reviews before making a purchase, and 94% say a negative review has convinced them to avoid a business. Your online reputation is no longer just a PR concern — it directly impacts revenue, recruitment, investor relations, and long-term business sustainability. At TML Agency, our ORM services help businesses take control of their digital narrative and build the online reputation they deserve.",
+      "Online reputation management is a complex discipline that spans review monitoring and response, search result management, social media sentiment tracking, crisis communications, and proactive positive content creation. Our ORM specialists in Chandigarh use a combination of monitoring technology, SEO strategies, content production, and stakeholder engagement to build reputations that are robust, authentic, and resilient to attack.",
+      "Whether you are dealing with a current reputation crisis, suppressing damaging search results, managing negative reviews, or proactively building a stronger digital presence, TML Agency has the expertise and tools to deliver results. Our ORM clients span businesses of all sizes — from individual professionals and local businesses to regional enterprises and listed companies.",
+    ],
+    deepContent: [
+      {
+        heading: "The Three Pillars of Online Reputation Management",
+        paragraphs: [
+          "Effective ORM operates across three interconnected pillars. Monitoring is the foundation — you cannot manage what you cannot see. We implement 24/7 monitoring across Google Search results, review platforms (Google, TripAdvisor, Justdial, AmbitionBox, Glassdoor), news media, social media, and forums using a combination of Google Alerts, Mention, Brandwatch, and custom monitoring setups. We alert you to new mentions within hours of publication, with severity ratings that distinguish between routine feedback and potential reputation threats requiring immediate response.",
+          "Response management is the active layer — how you engage with the online conversation about your brand. For reviews, we develop platform-specific response frameworks that acknowledge feedback, demonstrate empathy, offer resolution paths, and signal to prospective customers that your business takes quality seriously. Professional, thoughtful responses to negative reviews are one of the highest-ROI ORM investments available — research shows that responding to negative reviews increases purchase consideration by up to 67% among people who read both the review and the response. We manage review responses across all major platforms on your behalf.",
+          "Proactive content strategy is the long-term pillar — systematically building a body of positive, authentic online content about your brand that defines how you appear in search results and across the web. This includes creating and optimising your Google Business Profile, LinkedIn presence, and corporate website; publishing positive news and thought leadership content to high-authority platforms; earning coverage in industry publications; building a review generation program; and ensuring your brand's owned channels outrank any negative third-party content in Google search results.",
+        ],
+      },
+      {
+        heading: "Search Result Management: Controlling Your Google Presence",
+        paragraphs: [
+          "When someone searches your name or brand on Google, the first page results form the core of your online reputation. Studies show 75% of users never scroll past page one, meaning whatever Google shows in the top 10 results effectively defines your brand image to the majority of people researching you. Search result management involves using SEO to ensure your owned properties, positive coverage, and authoritative profiles dominate the first page for your brand name searches.",
+          "We optimise the content you control — your website, Google Business Profile, LinkedIn company and personal profiles, YouTube channel, Crunchbase listing, and other owned assets — for brand name search terms. We then build content on high-authority third-party platforms (Forbes Councils, industry association websites, PR coverage, guest posts) that rank for your brand terms and occupy additional page-one positions. When necessary, we suppress negative content by outranking it with higher-quality positive or neutral content from more authoritative sources.",
+          "True content removal — asking a website to take down defamatory or false information — is possible in some cases but difficult and slow. The faster, more reliable strategy is suppression: creating enough high-quality content on authoritative domains that negative results are pushed off page one, where 75% of searchers will never find them. Our suppression campaigns typically achieve measurable first-page changes within 90-120 days for most brand name searches.",
+        ],
+      },
+      {
+        heading: "Review Management: Turning Feedback Into a Competitive Asset",
+        paragraphs: [
+          "A business with 4.8 stars and 200 reviews outperforms a competitor with 4.9 stars and 20 reviews — because volume signals trustworthiness. Most businesses have far fewer reviews than they deserve because the happy customer majority never leaves a review, while the small dissatisfied minority is highly motivated to do so. This asymmetry systematically skews ratings negative unless actively counteracted with a review generation program.",
+          "We implement systematic review generation programs that make it frictionless for satisfied customers to share their experience. This includes post-service SMS and email follow-ups with direct review links, QR code cards at physical locations, staff training and incentive programs for asking for reviews, and website widgets directing happy visitors to review platforms. Our clients typically increase their monthly review volume by 3-5x within the first 60 days of implementing our review generation system.",
+          "Negative review response is both a retention and acquisition tool. When you respond professionally to a negative review — acknowledging the issue, apologising where warranted, offering a resolution path, and inviting the customer back — you often convert a dissatisfied customer into a loyal one. More importantly, your response is read by every future customer who views that review. A graceful, professional response to a negative review demonstrates exactly the kind of customer care that instills confidence in prospective buyers. We train your team and manage responses to ensure every reply reflects well on your brand.",
+        ],
+      },
+      {
+        heading: "Reputation Crisis Management: When You Need Immediate Action",
+        paragraphs: [
+          "A reputation crisis can strike any business without warning — a viral negative post, a defamatory news article, a coordinated negative review campaign, or an employee dispute that spills into public view. The first 48 hours of a reputation crisis are critical: how quickly and appropriately you respond determines whether the issue is contained or escalates into sustained reputational damage. At TML, we provide crisis ORM support including emergency monitoring setup, immediate response strategy, stakeholder communication frameworks, and rapid content deployment to counteract damaging narratives.",
+          "Our crisis response protocol begins with situation assessment: determining the source and severity of the issue, evaluating the credibility and reach of negative content, identifying who is affected and what they are saying, and recommending an appropriate response level. We distinguish between crises that require public response (where silence is interpreted as admission of guilt) and situations where engagement would amplify a small problem into a larger one. Crisis communications is a strategic discipline — not every negative post deserves a response, and the wrong response can make a minor issue catastrophic.",
+          "Post-crisis reputation rebuilding is a medium-term program that systematically restores positive sentiment after the immediate crisis is managed. This involves increased positive content production, proactive outreach to stakeholders who were affected, earned media coverage highlighting positive developments, and a structured review generation push to dilute the negative review impact. We have managed reputational crises for businesses across Chandigarh and across India, helping them navigate difficult periods and emerge with stronger, more resilient brand reputations.",
+        ],
+      },
+    ],
+    pricingNote: "ORM services at TML start at ₹25,000/month for monitoring and review management for small businesses (single location, up to 3 review platforms). Reputation building programs for businesses with moderate challenges range from ₹50,000-₹1,00,000/month. Active suppression campaigns and crisis management are scoped individually based on the volume of negative content and target search terms. Enterprise ORM for large brands or public figures starts at ₹1,50,000/month. We offer a free reputation audit showing your current online presence across review platforms, search results, and social media.",
+    features: [
+      { title: "Reputation Monitoring", description: "24/7 monitoring across Google, review platforms, social media, news sites, and forums with real-time alerts for brand mentions requiring prompt attention or response." },
+      { title: "Review Management", description: "Strategic review generation programs to increase positive review volume, and professional response management across Google, Justdial, AmbitionBox, TripAdvisor, and all relevant platforms." },
+      { title: "Search Result Management", description: "SEO-driven strategy to ensure your owned and positive third-party content dominates the first page of Google results for brand name and leadership searches." },
+      { title: "Negative Content Suppression", description: "Systematic suppression of damaging search results through high-authority positive content placement that pushes negative results off page one over a 90-120 day timeframe." },
+      { title: "Crisis Response Management", description: "Rapid crisis assessment, response strategy, stakeholder communication, and content deployment to contain reputation crises and minimise long-term brand damage." },
+      { title: "Proactive Brand Building", description: "Ongoing positive content creation across owned channels, PR outreach, and thought leadership positioning that builds a robust, resilient reputation that withstands future challenges." },
+    ],
+    process: [
+      { step: "01", title: "Audit", description: "Comprehensive reputation audit across search results, review platforms, social media, and news coverage to establish your current baseline." },
+      { step: "02", title: "Strategy", description: "Develop a customised ORM strategy with prioritised actions for monitoring, response, content creation, and search result improvement." },
+      { step: "03", title: "Monitor", description: "Set up 24/7 monitoring with severity-rated alerts across all relevant platforms and channels." },
+      { step: "04", title: "Build & Suppress", description: "Execute proactive content strategy and suppress negative search results through high-authority positive content placement." },
+      { step: "05", title: "Report & Refine", description: "Monthly reporting on sentiment trends, review growth, search result changes, and adjustments to strategy based on performance data." },
+    ],
+    stats: [
+      { label: "Brands Protected", value: "200+" },
+      { label: "Negative Results Suppressed", value: "500+" },
+      { label: "Review Rating Improvement", value: "0.8★ avg" },
+      { label: "Crisis Cases Managed", value: "50+" },
+    ],
+    faqs: [
+      { q: "How long does it take to suppress negative search results?", a: "Most suppression campaigns show measurable first-page changes within 90-120 days. Complex cases involving high-authority negative content may take 6-12 months for significant movement." },
+      { q: "Can you remove negative reviews from Google?", a: "Google only removes reviews that violate their policies (spam, fake reviews, off-topic content). We help identify policy-violating reviews for removal requests. For valid negative reviews, we focus on response management and generating new positive reviews." },
+      { q: "Do you handle reputation management for individuals as well as businesses?", a: "Yes, we manage ORM for business owners, executives, public figures, and professionals who need to control their personal search results and online narrative." },
+      { q: "What happens when a new negative article appears?", a: "Our monitoring system alerts us within hours. We assess severity, recommend a response strategy, and begin deploying counter-content if suppression is needed." },
+      { q: "How do I know ORM is working?", a: "We provide monthly reports tracking review ratings and volume, search result rankings for brand terms, sentiment analysis scores, and mentions across all monitored channels." },
+    ],
+    relatedServices: ["seo", "social-media", "content-marketing"],
+  },
+
+  "conversion-rate-optimization": {
+    slug: "conversion-rate-optimization",
+    title: "Conversion Rate Optimization",
+    tagline: "More revenue from the traffic you already have.",
+    description: "Data-driven conversion rate optimization (CRO) services that turn more of your existing website visitors into paying customers. Our CRO specialists in Chandigarh use user research, behavioural analytics, and structured A/B testing to systematically identify and remove the friction points costing your business revenue — without spending an additional rupee on traffic.",
+    heroDescription: "Doubling your conversion rate is mathematically equivalent to doubling your traffic — but far cheaper. We identify exactly why visitors leave without converting and fix it through research-backed testing. Our CRO process delivers consistent, measurable improvements to your conversion rates, average order values, and revenue per visitor.",
+    metaTitle: "Conversion Rate Optimization Services | CRO Agency | TML",
+    metaDescription: "Expert CRO services in Chandigarh. TML Agency uses data, user research, and A/B testing to improve conversion rates and generate more revenue from your existing traffic.",
+    metaKeywords: ["conversion rate optimization", "CRO services India", "A/B testing agency", "CRO agency Chandigarh", "website conversion optimization", "landing page optimization", "user experience optimization"],
+    seoContent: [
+      "The average website converts only 2-3% of visitors. That means 97% of the people who visit your website — people you have spent money attracting through SEO, PPC, or social media — leave without taking the action you need them to take. Conversion rate optimization is the process of systematically improving that percentage through research, testing, and data-driven iteration. At TML Agency, our CRO specialists identify the specific barriers preventing visitors from converting and eliminate them.",
+      "CRO is one of the highest-leverage investments in digital marketing because it multiplies the value of every other marketing channel. If you are spending ₹1,00,000/month on Google Ads and converting at 2%, improving your conversion rate to 4% doubles your lead volume without increasing your ad budget. Apply that improvement across all your traffic sources, and the compounding financial impact becomes substantial — which is why our CRO clients typically see 3-5x returns on their CRO investment within the first year.",
+      "Our CRO approach is grounded in evidence, not opinion. We use a structured research phase — quantitative analytics, heatmaps, session recordings, user surveys, and usability testing — to understand exactly how real users behave on your website before forming any hypotheses about what to test. This research-first methodology ensures we are solving real conversion barriers, not redesigning pages based on aesthetic preferences.",
+    ],
+    deepContent: [
+      {
+        heading: "The CRO Research Phase: Understanding Why Visitors Don't Convert",
+        paragraphs: [
+          "Most CRO agencies jump straight to A/B testing without adequate research. This produces random test results — sometimes a win, sometimes a loss, with no understanding of why. At TML, we spend two to three weeks in a structured research phase before proposing a single test. This phase uses four types of research to build a comprehensive picture of your conversion barriers: quantitative analysis, qualitative research, user testing, and expert review.",
+          "Quantitative analysis uses Google Analytics 4 to map the conversion funnel in detail — where traffic enters, which pages generate the most exits, where drop-off occurs in multi-step flows, which traffic sources and audience segments convert best, and which device types have the largest conversion rate gaps. We use Hotjar or Microsoft Clarity for heatmaps (showing where visitors click and scroll) and session recordings (showing exactly how individual real users navigate your site). These tools reveal patterns invisible in aggregate analytics — such as a form field that confuses users, a CTA button that is below the fold on mobile, or a pricing page that causes visitors to exit rather than progress.",
+          "Qualitative research adds the 'why' behind the numbers. We analyse on-site survey responses (asking visitors who are about to exit why they are leaving), customer interview transcripts, sales call recordings, and live chat transcripts to understand the objections, confusions, and anxieties that prevent conversion. This qualitative data generates hypotheses that are both specific and testable. For example, if 40% of survey respondents say they left without converting because they were unsure about delivery timelines, the hypothesis is clear: adding prominent delivery timeline information to product pages should improve conversion rate.",
+        ],
+      },
+      {
+        heading: "A/B Testing Methodology: Running Tests That Produce Reliable Results",
+        paragraphs: [
+          "The majority of A/B tests run by marketing teams are statistically invalid — either run with insufficient traffic for statistical significance, stopped when a 'winner' appears rather than after the pre-determined test duration, or run on pages without consistent traffic patterns. Invalid tests produce false winners that, when fully implemented, either produce no improvement or actively reduce conversion rates. At TML, we follow a rigorous testing methodology that produces reliable, replicable results.",
+          "Every test we run starts with a documented hypothesis derived from research insights, a clear success metric, a minimum detectable effect calculation to determine the traffic required for significance, and a pre-set test duration (minimum two weeks to account for day-of-week variation). We use Google Optimize or VWO for A/B testing, with a pre-set significance threshold of 95% statistical confidence before declaring a winner. All tests are monitored for novelty effect — the tendency for new experiences to perform well briefly before reverting to baseline — and we validate winner performance over a post-test monitoring period before full implementation.",
+          "Our testing prioritisation framework evaluates each test opportunity across three dimensions: expected impact (how much could this test move the conversion needle if the hypothesis is correct), confidence (how strong is the research evidence behind this hypothesis), and ease of implementation (how much development effort is required). This PIE framework ensures our testing roadmap maximises expected improvement per unit of development effort, producing the fastest path to measurable conversion gains.",
+        ],
+      },
+      {
+        heading: "CRO for Landing Pages: The Highest-Leverage Optimisation Target",
+        paragraphs: [
+          "Landing pages are the highest-leverage CRO target for businesses running paid advertising because every percentage point of conversion improvement directly reduces your cost per acquisition. A landing page converting at 2% that you improve to 4% halves your CPA — equivalent to negotiating a 50% reduction in your ad spend bill. This is why we recommend that businesses invest in landing page CRO before scaling any paid advertising channel.",
+          "High-converting landing pages share predictable characteristics. They have a single, clear objective with all elements on the page supporting that one action. The headline directly matches the ad that drove the click, maintaining message match that prevents the cognitive dissonance of landing on a page that seems disconnected from the ad. They establish credibility early with trust signals — client logos, review ratings, specific statistics, or certification badges — that answer the implicit question 'why should I trust this company?'. They reduce friction by minimising form fields to only what is truly necessary and offering multiple contact methods. And they create urgency without manufacturing false scarcity.",
+          "We test landing page elements in a structured hierarchy. First, the offer — does changing what you are asking visitors to commit to (free consultation vs free audit vs free trial) change conversion rate? Then the headline — does leading with a different benefit or pain point improve engagement? Then the social proof — do testimonials with specific results outperform generic praise? Then the CTA — does button colour, copy, placement, or size affect clicks? Then the form — does removing one field increase submissions? This hierarchy prevents testing inconsequential elements while ignoring the high-impact structural changes that move conversion metrics significantly.",
+        ],
+      },
+      {
+        heading: "CRO for E-Commerce: Optimising the Path to Purchase",
+        paragraphs: [
+          "E-commerce CRO focuses on optimising the critical path from product discovery to completed purchase. The average e-commerce checkout abandonment rate is 70% — meaning 7 out of 10 shoppers who start the checkout process do not complete it. The most common causes are unexpected shipping costs revealed at checkout, forced account creation requirements, complicated or too-long checkout forms, lack of preferred payment options, and insufficient trust signals at the point of payment commitment.",
+          "Checkout optimisation is consistently the highest-ROI CRO project for e-commerce businesses. Key improvements include: enabling guest checkout (this alone typically increases checkout completion by 20-30%), displaying shipping costs on product pages (eliminating the unpleasant surprise that causes abandonment), reducing form fields to the minimum required, adding multiple payment options including UPI, wallet, EMI, and Buy Now Pay Later options, and displaying security badges and payment provider logos prominently. We have implemented checkout optimisations for e-commerce clients that improved checkout completion rates from 28% to 47% — a 68% improvement in purchase rate from the same traffic volume.",
+          "Product page optimisation is the second major opportunity. High-converting product pages typically feature multiple high-quality images (including lifestyle photography and video), clearly stated benefits before technical specifications, visible stock levels that create natural urgency, social proof through review summaries and specific testimonials, clear shipping and return policies displayed without requiring navigation away from the page, and size guides or product selection tools that reduce the fear of ordering the wrong variant. We use session recordings and heatmaps to identify exactly what information shoppers seek on your product pages and ensure it is prominent and easily found.",
+        ],
+      },
+    ],
+    pricingNote: "CRO engagements at TML start at ₹40,000/month for the research and testing program, which includes the initial research phase, ongoing A/B testing using our managed testing platform, implementation support, and monthly performance reporting. Minimum commitment is 3 months to allow sufficient time for the research phase and initial test results. Enterprise CRO programs for high-traffic websites with complex conversion funnels are scoped individually. We offer a free CRO audit identifying your top five conversion opportunities and their estimated revenue impact.",
+    features: [
+      { title: "CRO Audit & Research", description: "In-depth quantitative and qualitative research using analytics, heatmaps, session recordings, user surveys, and expert review to identify your specific conversion barriers and build evidence-based test hypotheses." },
+      { title: "A/B & Multivariate Testing", description: "Rigorous testing methodology using VWO or Google Optimize with proper statistical significance thresholds and documented hypotheses — producing reliable, replicable results you can confidently implement." },
+      { title: "Landing Page Optimisation", description: "Data-driven landing page improvements targeting message match, trust building, friction reduction, and CTA optimisation that directly reduce your cost per acquisition from paid advertising campaigns." },
+      { title: "Checkout Optimisation", description: "E-commerce checkout flow analysis and testing targeting the abandonment points responsible for losing 70% of shoppers before purchase completion — the highest-ROI CRO project for any online store." },
+      { title: "User Experience Design", description: "UX improvements informed by real user research — not designer preferences — that reduce cognitive load, improve navigation clarity, and create smoother paths to conversion across all devices." },
+      { title: "Conversion Analytics", description: "Advanced funnel tracking setup in GA4, conversion event configuration, and custom dashboards that give you continuous visibility into conversion performance across all pages, segments, and traffic sources." },
+    ],
+    process: [
+      { step: "01", title: "Research", description: "Quantitative analysis, heatmaps, session recordings, and user surveys to map conversion barriers across your website." },
+      { step: "02", title: "Hypothesise", description: "Develop evidence-based test hypotheses prioritised by expected impact, research confidence, and implementation ease." },
+      { step: "03", title: "Test", description: "Design and launch A/B tests using proper statistical methodology with pre-set significance thresholds and test durations." },
+      { step: "04", title: "Analyse", description: "Analyse test results at 95%+ statistical confidence, validate winners, and document learnings for future tests." },
+      { step: "05", title: "Implement & Iterate", description: "Implement validated winners, monitor post-test performance, and feed insights into the next testing cycle for continuous improvement." },
+    ],
+    stats: [
+      { label: "Tests Run", value: "1000+" },
+      { label: "Avg Conversion Lift", value: "35%" },
+      { label: "Revenue Generated", value: "₹100Cr+" },
+      { label: "Client Retention", value: "98%" },
+    ],
+    faqs: [
+      { q: "How much traffic do I need for CRO to work?", a: "For reliable A/B testing, you need at least 1,000 monthly visitors to the pages you want to test. Lower-traffic sites can still benefit from CRO research and UX improvements even without statistically significant tests." },
+      { q: "How long does a CRO project take?", a: "The research phase takes 2-3 weeks. Each A/B test requires 2-4 weeks for sufficient data. We typically run multiple tests simultaneously across different pages, with meaningful results emerging within 60-90 days." },
+      { q: "Will CRO changes break my website design?", a: "No. We implement changes using testing tools that run alongside your existing site, and only push winning changes to your permanent codebase after validation — always coordinating with your development team." },
+      { q: "Do you work with our development team?", a: "Yes. We can provide implementation specifications for your developers or implement directly if you give us appropriate access. We adapt to your team's workflow and technical setup." },
+      { q: "What's the difference between CRO and UX design?", a: "CRO is research-driven and hypothesis-based — every change is validated through testing and evidence. UX design is often based on best practices and designer judgment. Great CRO incorporates good UX principles but validates them empirically before committing to changes." },
+    ],
+    relatedServices: ["website-development", "google-ads", "ppc-management"],
+  },
+
+  "ecommerce-marketing": {
+    slug: "ecommerce-marketing",
+    title: "E-Commerce Marketing",
+    tagline: "Grow your online store. Scale your revenue.",
+    description: "End-to-end e-commerce marketing services that drive traffic, improve conversion rates, and build customer lifetime value for online stores. Our e-commerce specialists in Chandigarh manage the complete growth stack for Shopify, WooCommerce, and custom e-commerce businesses — from paid ads and SEO to email marketing and CRO — delivering sustainable revenue growth across India and internationally.",
+    heroDescription: "We grow e-commerce brands with a full-funnel marketing approach. From acquiring new customers through Google Shopping and Meta Ads to converting them with optimised product pages, retaining them through email flows, and maximising their lifetime value — we manage the complete e-commerce growth engine.",
+    metaTitle: "E-Commerce Marketing Services India | TML Agency",
+    metaDescription: "Comprehensive e-commerce marketing services for Shopify and WooCommerce stores. TML Agency drives traffic, improves conversion rates, and builds customer retention for online stores across India.",
+    metaKeywords: ["e-commerce marketing agency", "Shopify marketing India", "WooCommerce marketing", "e-commerce growth agency Chandigarh", "online store marketing", "e-commerce SEO", "e-commerce advertising"],
+    seoContent: [
+      "E-commerce is one of the most competitive and complex marketing environments in digital — success requires excellence across multiple channels simultaneously, from paid acquisition and SEO to email retention and conversion optimisation. At TML Agency in Chandigarh, we provide integrated e-commerce marketing services that manage your entire growth stack, ensuring every channel works together to acquire, convert, and retain customers profitably.",
+      "Our e-commerce marketing model is built around three phases of the customer lifecycle. Acquisition brings new customers to your store through Google Shopping, Meta Ads, SEO, influencer marketing, and affiliate programs. Conversion ensures those visitors purchase through optimised product pages, seamless checkout flows, and intelligent upsell and cross-sell mechanics. Retention builds customer lifetime value through post-purchase email flows, loyalty programs, and win-back campaigns that turn one-time buyers into repeat customers who cost nothing to acquire.",
+      "The businesses that win in e-commerce are those that optimise for customer lifetime value (LTV), not just first purchase ROAS. A customer acquired at a 2x first-purchase ROAS who buys three times over the next year delivers 6x total ROAS — but this only happens with intentional retention programs. TML builds e-commerce marketing programs that maximise LTV from day one, creating compounding growth that outpaces businesses focused only on acquisition.",
+    ],
+    deepContent: [
+      {
+        heading: "E-Commerce Acquisition: Profitable Growth Across Paid and Organic Channels",
+        paragraphs: [
+          "Google Shopping is the highest-converting paid acquisition channel for most e-commerce businesses because it shows product images, prices, and reviews in search results — filtering out window shoppers before they click, meaning the traffic you pay for is inherently more qualified. At TML, we optimise Google Merchant Center feeds at the SKU level, structure Shopping campaigns by product margin and conversion rate, and layer Performance Max campaigns over standard Shopping for maximum coverage. Our e-commerce clients on Google Shopping average 5-12x ROAS depending on product category and pricing competitiveness.",
+          "Meta Ads (Facebook and Instagram) are essential for e-commerce brands in categories where visual appeal drives discovery and desire — fashion, beauty, home decor, food, and lifestyle products. The keys to profitable Meta acquisition for e-commerce are: high-quality visual and video creative that stops the scroll and showcases the product compellingly, accurate custom audience creation from your customer lists and website visitors, and Advantage+ Shopping Campaigns that leverage Meta's AI for broad audience targeting. We also manage influencer and user-generated content (UGC) integration with paid social, using authentic creator content as high-performing ad creative.",
+          "E-commerce SEO is an often-underutilised acquisition channel that delivers sustainable low-cost traffic. The primary SEO opportunities for e-commerce are: product page optimisation targeting specific product search queries, category page SEO for broad category terms (which have the highest search volumes), blog content targeting informational queries that capture users earlier in the buying journey, and technical SEO ensuring product pages are crawled, indexed, and structured with proper product schema for rich search results. SEO traffic costs nothing per click and compounds in value over time, making it the highest-margin acquisition channel for established stores.",
+        ],
+      },
+      {
+        heading: "E-Commerce Conversion: Turning Traffic Into Revenue",
+        paragraphs: [
+          "The industry-average e-commerce conversion rate is 1.5-3%. Our CRO work consistently pushes clients to 4-6%, with top performers reaching 8-12% in niches with strong brand trust and clear purchase intent. Every percentage point of conversion improvement multiplies the value of your entire marketing budget — and the most impactful improvements typically come from a handful of high-leverage changes rather than incremental micro-optimisations.",
+          "Product page optimisation is the most impactful conversion lever for most stores. The essential elements of a high-converting product page include multiple high-resolution images from multiple angles, lifestyle photography showing the product in use, a clear and benefit-led product title and description, prominently displayed pricing with any savings or offers clearly shown, visible stock levels when low (creating natural urgency), comprehensive reviews with a summary rating and the ability to filter by rating or attribute, clear shipping timelines and return policy on the product page (not requiring navigation to a separate page), and an add-to-cart button that is immediately visible without scrolling on mobile.",
+          "Checkout optimisation is where most e-commerce revenue is lost — 70% of shoppers who start checkout abandon it before completing. The highest-impact checkout improvements are: enabling guest checkout, displaying shipping costs from the cart rather than revealing them at checkout, reducing form fields to only what is necessary for fulfillment, adding UPI and wallet payment options (which account for 40%+ of online payments in India), and displaying security badges and trust signals at the payment step. We have improved checkout completion rates by 20-40% for clients through these structural changes alone.",
+        ],
+      },
+      {
+        heading: "E-Commerce Retention: Maximising Customer Lifetime Value",
+        paragraphs: [
+          "Acquiring a new customer costs 5-7 times more than retaining an existing one, yet most e-commerce brands invest the vast majority of their marketing budget in acquisition while neglecting retention. The businesses with the highest LTV-to-CAC ratios — and therefore the most sustainable unit economics — invest heavily in retention programs that ensure every acquired customer buys again, spends more per transaction over time, and refers new customers.",
+          "Email marketing is the most cost-effective retention channel, delivering 42:1 average ROI. A complete e-commerce email retention program includes a post-purchase sequence that delivers order confirmation, shipping updates, product education content, and a review request; a replenishment reminder sequence for consumable products; a cross-sell sequence recommending complementary products based on purchase history; a win-back sequence for customers who have not purchased in 60-90 days; and a VIP program delivering exclusive benefits and early access to top customers by lifetime value.",
+          "Loyalty programs are the structural retention tool for stores with competitive pricing where differentiation is otherwise difficult. A points-based loyalty program increases repeat purchase rates by 20-30% and average order value by 15-25% on average — because customers are motivated to accumulate points and redeem rewards. We design and implement loyalty programs in Shopify (using LoyaltyLion or Smile.io) and WooCommerce that are simple enough to understand at a glance but compelling enough to change purchasing behaviour. The key is making the value proposition of the loyalty program genuinely attractive — not a token 1% cashback, but meaningful rewards that create real incentive for repeat purchase.",
+        ],
+      },
+      {
+        heading: "E-Commerce Analytics: Measuring What Actually Matters",
+        paragraphs: [
+          "The metrics that matter most in e-commerce are: Customer Acquisition Cost (CAC) by channel, Customer Lifetime Value (LTV) by acquisition source and cohort, LTV:CAC ratio (healthy is 3:1 or above), Repeat Purchase Rate (what percentage of customers buy more than once), Average Order Value, and contribution margin per order. Most e-commerce dashboards are built around vanity metrics like total revenue and ROAS, which obscure the unit economics that determine whether a business is actually profitable and sustainable.",
+          "Cohort analysis is the most powerful analytical tool for understanding e-commerce health. By grouping customers by their first purchase month and tracking their purchasing behaviour over subsequent months, cohort analysis reveals whether customer quality is improving or deteriorating, how quickly customers make repeat purchases, and the long-term revenue value of different acquisition channels. We build cohort analyses for our e-commerce clients that reveal which traffic sources and campaigns generate the highest-LTV customers — intelligence that fundamentally changes budget allocation decisions.",
+          "Attribution modelling is increasingly complex in a world where customers interact with multiple touchpoints before purchasing. Last-click attribution (the default in most platforms) gives all credit to the final touchpoint before conversion, systematically undervaluing awareness channels like Meta and influencer marketing that initiate the purchase consideration. We implement data-driven attribution models in GA4 that distribute credit across the full customer journey, giving our clients an accurate picture of which channels are truly driving revenue and informing budget allocation decisions that improve overall portfolio efficiency.",
+        ],
+      },
+    ],
+    pricingNote: "E-commerce marketing at TML is structured as integrated growth programs rather than siloed services. Starter programs (suitable for stores doing ₹5-30 lakh/month) start at ₹60,000/month covering paid ads management, email flows, and monthly reporting. Growth programs (₹30 lakh-₹1 crore/month revenue) range from ₹1,00,000-₹2,00,000/month and include full acquisition channel management, CRO, email, and retention programs. Scale programs for stores above ₹1 crore/month are scoped individually with dedicated account management. Ad spend budgets are separate. Free e-commerce marketing audit available for all stores.",
+    features: [
+      { title: "Paid Acquisition", description: "Google Shopping, Meta Ads, and Performance Max campaigns managed for maximum ROAS, with feed optimisation, audience building, and continuous creative testing to profitably acquire new customers at scale." },
+      { title: "E-Commerce SEO", description: "Product page optimisation, category SEO, technical fixes, and content marketing that builds sustainable organic traffic and reduces long-term customer acquisition costs from search." },
+      { title: "Email & SMS Marketing", description: "Revenue-driving automation flows and broadcast campaigns using Klaviyo or your existing platform — welcome series, abandoned cart, post-purchase, and retention sequences that compound in value over time." },
+      { title: "Conversion Rate Optimisation", description: "Data-driven product page, category page, and checkout optimisation using heatmaps, session recordings, and A/B testing to improve the percentage of visitors who complete a purchase." },
+      { title: "Retention & Loyalty", description: "Repeat purchase programs, loyalty scheme design and implementation, VIP customer programs, and win-back campaigns that maximise customer lifetime value from your existing customer base." },
+      { title: "E-Commerce Analytics", description: "Advanced GA4 setup, cohort analysis, LTV tracking, and multi-channel attribution reporting that gives you accurate visibility into unit economics and informs smarter budget allocation decisions." },
+    ],
+    process: [
+      { step: "01", title: "Audit", description: "Comprehensive review of your store's current performance across acquisition, conversion, retention, and analytics to identify the highest-impact growth opportunities." },
+      { step: "02", title: "Strategy", description: "Build an integrated e-commerce growth strategy with channel mix, budget allocation, retention program design, and 90-day quick-win roadmap." },
+      { step: "03", title: "Implement", description: "Set up campaigns, email flows, tracking, and analytics infrastructure across all channels with proper attribution and conversion measurement." },
+      { step: "04", title: "Optimise", description: "Continuous testing and optimisation across all channels — creative testing in paid, content testing in email, A/B testing on-site — compounding performance month over month." },
+      { step: "05", title: "Scale", description: "Expand budget in proven channels, launch new acquisition channels, and build retention programs that increase LTV as the customer base grows." },
+    ],
+    stats: [
+      { label: "Stores Grown", value: "150+" },
+      { label: "Avg Revenue Increase", value: "85%" },
+      { label: "E-Commerce Platforms", value: "5+" },
+      { label: "Client Retention", value: "98%" },
+    ],
+    faqs: [
+      { q: "Do you work with all e-commerce platforms?", a: "Yes, we work with Shopify, WooCommerce, Magento, BigCommerce, and custom-built stores. We recommend Shopify for most businesses starting or scaling e-commerce." },
+      { q: "What revenue level do I need to justify e-commerce marketing services?", a: "Our starter programs are designed for stores doing ₹5 lakh or more per month. Below this level, we recommend starting with a single channel (usually Google Shopping or Meta Ads) before expanding to a full-service program." },
+      { q: "How do you attribute revenue across multiple channels?", a: "We implement data-driven attribution in GA4 and use platform-specific attribution models to give you an accurate picture of each channel's revenue contribution across the full customer journey." },
+      { q: "Can you improve our existing campaigns rather than starting from scratch?", a: "Absolutely. We start with a thorough audit of your existing setup before recommending any changes. Many clients see significant improvements from optimising existing campaigns rather than rebuilding from scratch." },
+      { q: "Do you handle creative production for ads?", a: "Yes, our in-house design and video team produces all ad creatives — static product ads, carousel ads, video ads, and UGC-style content — as part of our e-commerce marketing programs." },
+    ],
+    relatedServices: ["google-ads", "meta-ads", "email-marketing"],
+  },
 };
 
 export const allServiceSlugs = Object.keys(servicePages);

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CarrerPageClient from "./CarrerPageClient";
+import CareersPageClient from "./CareersPageClient";
 
 const siteUrl = "https://townmedialabs.com";
 
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "marketing agency hiring",
   ],
   alternates: {
-    canonical: "/carrer",
+    canonical: "/careers",
   },
   openGraph: {
     title: "Careers at TML Agency | Join Our Creative Team",
     description:
       "We're hiring! Join Chandigarh's top digital marketing agency. Open roles in AI, video, design, social media & more.",
-    url: `${siteUrl}/carrer`,
+    url: `${siteUrl}/careers`,
     siteName: "TML Agency",
     type: "website",
     locale: "en_IN",
@@ -46,7 +46,7 @@ const careerJsonLd = {
   name: "Careers at TML Agency",
   description:
     "Explore open positions at TML Agency — a leading digital marketing and branding agency in Chandigarh, India.",
-  url: `${siteUrl}/carrer`,
+  url: `${siteUrl}/careers`,
   mainEntity: {
     "@type": "Organization",
     name: "TML Agency",
@@ -55,7 +55,7 @@ const careerJsonLd = {
   },
 };
 
-export default function CarrerPage() {
+export default function CareersPage() {
   return (
     <>
       <script
@@ -64,7 +64,7 @@ export default function CarrerPage() {
           __html: JSON.stringify(careerJsonLd),
         }}
       />
-      <CarrerPageClient />
+      <CareersPageClient />
     </>
   );
 }

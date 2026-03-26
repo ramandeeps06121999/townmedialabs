@@ -37,19 +37,22 @@ export const metadata: Metadata = {
     ],
   },
   keywords: [
-    "branding agency",
     "digital marketing agency",
-    "web development",
+    "branding agency",
+    "web development company",
     "SEO services",
     "Google Ads management",
-    "social media marketing",
-    "content marketing",
-    "performance marketing",
+    "social media marketing agency",
+    "lead generation agency",
+    "website development",
     "brand strategy",
     "TML Agency",
     "full-service marketing agency",
-    "graphic design",
-    "online advertising",
+    "graphic design services",
+    "digital marketing agency Chandigarh",
+    "web design agency",
+    "performance marketing",
+    "content marketing agency",
   ],
   authors: [{ name: "TML Agency", url: siteUrl }],
   creator: "TML Agency",
@@ -101,17 +104,47 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
   name: "TML Agency",
-  alternateName: "TML Branding & Digital Marketing Agency",
+  alternateName: ["Town Media Labs", "TML Branding & Digital Marketing Agency"],
   url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${siteUrl}/logo.png`,
+    width: 512,
+    height: 512,
+  },
   email: "info@townmedialabs.com",
+  telephone: "+91-98726-48209",
   description:
     "Full-service branding and digital marketing agency for ambitious businesses. 15+ years of experience, 500+ brands scaled, 98% client retention.",
+  foundingDate: "2016",
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    minValue: 70,
+    unitText: "employees",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "CO 112, Basement, Sector 34A",
+    addressLocality: "Chandigarh",
+    addressRegion: "Chandigarh",
+    postalCode: "160022",
+    addressCountry: "IN",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+91-98726-48209",
+    contactType: "customer service",
+    email: "info@townmedialabs.com",
+    availableLanguage: ["English", "Hindi"],
+  },
   sameAs: [
     "https://www.facebook.com/Town.media.labs",
     "https://www.instagram.com/townmedialabs/",
     "https://in.linkedin.com/company/townmedialabs",
+    "https://twitter.com/tmlagency",
+    "https://www.youtube.com/@tmlagency",
   ],
 };
 
@@ -121,16 +154,46 @@ const localBusinessJsonLd = {
   "@id": `${siteUrl}/#localbusiness`,
   name: "TML Agency",
   url: siteUrl,
+  telephone: "+91-98726-48209",
   email: "info@townmedialabs.com",
   image: `${siteUrl}/logo.png`,
   description:
     "Full-service branding and digital marketing agency for ambitious businesses.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "CO 112, Basement, Sector 34A",
+    addressLocality: "Chandigarh",
+    addressRegion: "Chandigarh",
+    postalCode: "160022",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "30.7281",
+    longitude: "76.7726",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "10:00",
+      closes: "19:00",
+    },
+  ],
+  priceRange: "$$",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
     reviewCount: "500",
     bestRating: "5",
   },
+  sameAs: [
+    "https://www.facebook.com/Town.media.labs",
+    "https://www.instagram.com/townmedialabs/",
+    "https://in.linkedin.com/company/townmedialabs",
+    "https://twitter.com/tmlagency",
+    "https://www.youtube.com/@tmlagency",
+  ],
   knowsAbout: [
     "Branding",
     "Web Development",
@@ -185,6 +248,28 @@ const localBusinessJsonLd = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: "TML Agency",
+  url: siteUrl,
+  description:
+    "Full-service branding and digital marketing agency with 15+ years of experience. 500+ brands scaled, 98% client retention.",
+  publisher: {
+    "@id": `${siteUrl}/#organization`,
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${siteUrl}/blog?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+  inLanguage: "en-IN",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -203,6 +288,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd),
           }}
         />
       </head>

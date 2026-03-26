@@ -166,7 +166,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1, ease }}
-              className="space-y-6 text-sm md:text-base text-white/50 leading-relaxed"
+              className="space-y-6 text-sm md:text-base text-white/90 leading-relaxed"
             >
               <p>
                 TML Agency was founded in 2016 in the heart of Chandigarh with a clear mission:
@@ -190,7 +190,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2, ease }}
-              className="space-y-6 text-sm md:text-base text-white/50 leading-relaxed"
+              className="space-y-6 text-sm md:text-base text-white/90 leading-relaxed"
             >
               <p>
                 Today, TML Agency is home to over 70 creative professionals — designers,
@@ -256,7 +256,7 @@ export default function AboutPageClient() {
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold text-white">Our Mission</h3>
               </div>
-              <p className="text-sm md:text-base text-white/50 leading-relaxed">
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 To deliver measurable, impactful results for every client through creative digital
                 marketing strategies that combine data-driven insights with bold creative execution.
                 We exist to help businesses of all sizes — from local Chandigarh startups to
@@ -282,7 +282,7 @@ export default function AboutPageClient() {
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold text-white">Our Vision</h3>
               </div>
-              <p className="text-sm md:text-base text-white/50 leading-relaxed">
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 To become India&apos;s most trusted digital marketing partner — an agency known not
                 just for creative brilliance, but for the genuine, long-term business growth we
                 create for every brand we work with. We envision a future where every ambitious

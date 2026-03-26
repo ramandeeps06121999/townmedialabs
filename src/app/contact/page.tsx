@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "contact tml",
     "digital marketing consultation",
     "chandigarh agency contact",
+    "free marketing consultation",
+    "digital marketing agency contact",
   ],
   openGraph: {
     title: "Contact TML Agency | Get a Free Consultation | Chandigarh",
@@ -16,9 +18,26 @@ export const metadata: Metadata = {
       "Get in touch with TML Agency, Chandigarh's leading digital marketing agency. Free consultation for branding, SEO, Google Ads, social media & web development.",
     type: "website",
     url: "https://townmedialabs.com/contact",
+    siteName: "TML Agency",
+    locale: "en_IN",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact TML Agency - Get a Free Consultation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact TML Agency | Get a Free Consultation | Chandigarh",
+    description:
+      "Get in touch with TML Agency, Chandigarh's leading digital marketing agency. Free consultation for branding, SEO, Google Ads, social media & web development.",
+    images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://townmedialabs.com/contact",
+    canonical: "/contact",
   },
 };
 

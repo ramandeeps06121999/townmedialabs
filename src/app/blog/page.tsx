@@ -36,6 +36,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | TML Agency — Marketing, Branding & AI Insights",
+    description:
+      "Expert insights on digital marketing, branding, SEO, AI, and ad strategy from TML Agency.",
+    images: ["/og-image.png"],
+  },
 };
 
 const blogJsonLd = {
@@ -49,8 +56,36 @@ const blogJsonLd = {
     "@type": "Organization",
     name: "TML Agency",
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/logo.png`,
+    },
   },
+  inLanguage: "en-IN",
+};
+
+const blogCollectionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "TML Agency Blog — Marketing, Branding & AI Insights",
+  description:
+    "Expert insights on digital marketing, branding, SEO, AI, and ad strategy from TML Agency — Chandigarh's leading creative agency.",
+  url: `${siteUrl}/blog`,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    name: "TML Agency",
+    url: siteUrl,
+  },
+};
+
+const blogBreadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
+  ],
 };
 
 export default function BlogPage() {
@@ -60,6 +95,18 @@ export default function BlogPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(blogJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogCollectionJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogBreadcrumbJsonLd),
         }}
       />
       <BlogPageClient />

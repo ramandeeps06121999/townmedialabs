@@ -28,7 +28,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "TML Agency",
       type: "article",
       locale: "en_IN",
+      publishedTime: article.date,
+      modifiedTime: article.date,
+      authors: ["TML Agency"],
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: article.metaDescription,
+      images: ["/og-image.png"],
     },
   };
 }
@@ -42,23 +51,48 @@ export default async function BlogSlugPage({ params }: Props) {
   const article = blogArticles[slug];
   if (!article) notFound();
 
+  const siteUrl = "https://townmedialabs.com";
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.metaDescription,
-    url: `https://townmedialabs.com/blog/${slug}`,
+    url: `${siteUrl}/blog/${slug}`,
     datePublished: article.date,
+    dateModified: article.date,
+    image: `${siteUrl}/og-image.png`,
     author: {
       "@type": "Organization",
       name: "TML Agency",
-      url: "https://townmedialabs.com",
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.png`,
+      },
     },
     publisher: {
       "@type": "Organization",
       name: "TML Agency",
-      logo: { "@type": "ImageObject", url: "https://townmedialabs.com/logo.png" },
+      logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
     },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/blog/${slug}`,
+    },
+    keywords: article.keywords?.join(", "),
+    articleSection: article.category,
+    inLanguage: "en-IN",
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${siteUrl}/blog/${slug}` },
+    ],
   };
 
   return (
@@ -66,6 +100,10 @@ export default async function BlogSlugPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <BlogArticleClient article={article} slug={slug} />
     </>

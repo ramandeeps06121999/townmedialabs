@@ -99,7 +99,7 @@ export default function BlogPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease }}
-            className="text-base sm:text-lg md:text-xl text-white/50 max-w-2xl leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed"
           >
             Marketing strategies, creative insights, and industry trends from
             the team that builds brands people remember.
@@ -238,7 +238,7 @@ export default function BlogPageClient() {
                     className={`text-xs font-medium px-4 py-2 rounded-full border transition-all duration-300 ${
                       activeCategory === cat
                         ? "bg-[#ff4500] border-[#ff4500] text-white"
-                        : "bg-white/[0.03] border-white/[0.08] text-white/50 hover:border-white/20 hover:text-white/70"
+                        : "bg-white/[0.03] border-white/[0.08] text-white/90 hover:border-white/20 hover:text-white/70"
                     }`}
                   >
                     {cat}
@@ -369,7 +369,7 @@ export default function BlogPageClient() {
             <h2 className="relative text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-white mb-4">
               Stay ahead of the curve.
             </h2>
-            <p className="relative text-sm md:text-base text-white/50 max-w-lg mx-auto mb-8 leading-relaxed">
+            <p className="relative text-sm md:text-base text-white/90 max-w-lg mx-auto mb-8 leading-relaxed">
               Get the latest marketing insights, creative strategies, and agency
               updates delivered straight to your inbox.
             </p>

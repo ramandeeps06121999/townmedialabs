@@ -316,7 +316,7 @@ export default function ChandigarhPageClient() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.04, ease }}
-                className="px-5 py-3 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/50 hover:border-[#ff4500]/20 hover:text-white/70 transition-all cursor-default"
+                className="px-5 py-3 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/90 hover:border-[#ff4500]/20 hover:text-white/70 transition-all cursor-default"
               >
                 {industry}
               </motion.span>

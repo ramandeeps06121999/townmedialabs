@@ -159,7 +159,7 @@ const perks = [
   { label: "Creative Freedom", description: "Your ideas matter from day one" },
 ];
 
-export default function CarrerPageClient() {
+export default function CareersPageClient() {
   const heroRef = useRef<HTMLElement>(null);
   const positionsRef = useRef<HTMLElement>(null);
   const heroInView = useInView(heroRef, { once: true, amount: 0.2 });
@@ -181,7 +181,7 @@ export default function CarrerPageClient() {
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
-              { label: "Careers", href: "/carrer" },
+              { label: "Careers", href: "/careers" },
             ]}
           />
 
@@ -210,7 +210,7 @@ export default function CarrerPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease }}
-            className="text-base sm:text-lg md:text-xl text-white/50 max-w-2xl leading-relaxed mb-10"
+            className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed mb-10"
           >
             Join a team of 70+ creatives, strategists, and engineers shaping how
             brands grow. If you love fast-paced work and bold ideas — you&apos;ll
@@ -316,7 +316,7 @@ export default function CarrerPageClient() {
                         {pos.title}
                       </h3>
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] tracking-wider uppercase bg-white/[0.05] border border-white/[0.08] rounded-full px-3 py-1 text-white/50 font-medium">
+                        <span className="text-[10px] tracking-wider uppercase bg-white/[0.05] border border-white/[0.08] rounded-full px-3 py-1 text-white/90 font-medium">
                           {pos.department}
                         </span>
                         <span className="text-[10px] tracking-wider uppercase bg-[#ff4500]/10 border border-[#ff4500]/20 rounded-full px-3 py-1 text-[#ff4500]/80 font-medium">
@@ -327,7 +327,7 @@ export default function CarrerPageClient() {
                     <p className="text-xs md:text-sm text-white/30 mb-3">
                       {pos.location}
                     </p>
-                    <p className="text-sm text-white/50 leading-relaxed">
+                    <p className="text-sm text-white/90 leading-relaxed">
                       {pos.description}
                     </p>
                   </div>
@@ -363,7 +363,7 @@ export default function CarrerPageClient() {
             <h2 className="relative text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-white mb-4">
               Don&apos;t see your role?
             </h2>
-            <p className="relative text-sm md:text-base text-white/50 max-w-lg mx-auto mb-8 leading-relaxed">
+            <p className="relative text-sm md:text-base text-white/90 max-w-lg mx-auto mb-8 leading-relaxed">
               We&apos;re always looking for talented people. Drop us your resume
               and we&apos;ll reach out when the right opportunity comes up.
             </p>

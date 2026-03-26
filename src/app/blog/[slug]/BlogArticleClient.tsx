@@ -7,6 +7,8 @@ import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import type { BlogArticle } from "@/data/blogArticles";
+import { servicePages } from "@/data/servicePages";
+import { blogRelatedServices } from "@/lib/internalLinks";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -66,7 +68,7 @@ function FloatingTOC({ items }: { items: string[] }) {
               href={`#${id}`}
               className={`block text-[11px] leading-relaxed py-1 pl-3 border-l-2 transition-all duration-300 ${
                 isActive
-                  ? "border-[#ff4500] text-white/80 font-medium"
+                  ? "border-[#ff4500] text-white/90 font-medium"
                   : "border-white/[0.06] text-white/25 hover:text-white/50 hover:border-white/20"
               }`}
             >
@@ -227,7 +229,7 @@ export default function BlogArticleClient({
                 TML
               </div>
               <div>
-                <p className="text-sm font-semibold text-white/80">TML Agency</p>
+                <p className="text-sm font-semibold text-white/90">TML Agency</p>
                 <p className="text-[11px] text-white/30">India&apos;s #1 Branding Agency</p>
               </div>
             </div>
@@ -281,9 +283,9 @@ export default function BlogArticleClient({
                   [&_h3]:text-white [&_h3]:mt-12 [&_h3]:mb-5
                   [&_h3]:flex [&_h3]:items-center [&_h3]:gap-3
 
-                  [&_p]:text-[15px] [&_p]:md:text-base [&_p]:text-white/50 [&_p]:leading-[1.85] [&_p]:mb-5
+                  [&_p]:text-[15px] [&_p]:md:text-base [&_p]:text-white/90 [&_p]:leading-[1.85] [&_p]:mb-5
 
-                  [&_li]:text-[15px] [&_li]:md:text-base [&_li]:text-white/50 [&_li]:leading-[1.8]
+                  [&_li]:text-[15px] [&_li]:md:text-base [&_li]:text-white/90 [&_li]:leading-[1.8]
                   [&_ul]:space-y-2.5 [&_ul]:my-6
                   [&_ul]:pl-5
 
@@ -301,7 +303,7 @@ export default function BlogArticleClient({
                   [&_th]:px-5 [&_th]:py-4 [&_th]:text-left [&_th]:text-xs [&_th]:font-bold
                   [&_th]:text-[#ff4500]/90 [&_th]:uppercase [&_th]:tracking-wider
                   [&_th]:border-b [&_th]:border-white/[0.06]
-                  [&_td]:px-5 [&_td]:py-4 [&_td]:text-sm [&_td]:text-white/50
+                  [&_td]:px-5 [&_td]:py-4 [&_td]:text-sm [&_td]:text-white/90
                   [&_td]:border-b [&_td]:border-white/[0.04]
                   [&_tr:last-child_td]:border-b-0
                   [&_tr]:transition-colors [&_tr:hover]:bg-white/[0.02]
@@ -358,6 +360,66 @@ export default function BlogArticleClient({
           </div>
         </div>
       </section>
+
+      {/* Related Services */}
+      {(() => {
+        const serviceSlugs = blogRelatedServices[slug] || [];
+        const relatedServiceData = serviceSlugs
+          .map((s) => servicePages[s])
+          .filter(Boolean);
+        if (relatedServiceData.length === 0) return null;
+        return (
+          <section className="px-6 lg:px-12 py-16 md:py-24">
+            <div className="max-w-5xl mx-auto">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+              >
+                Explore Our Services
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                Related Services
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {relatedServiceData.map((service, i) => (
+                  <motion.div
+                    key={service.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                  >
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
+                    >
+                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm text-white/40 leading-relaxed mb-4 line-clamp-2">
+                        {service.tagline}
+                      </p>
+                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                        Learn More &rarr;
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* CTA — Premium card */}
       <section className="px-6 lg:px-12 py-20 md:py-28">
