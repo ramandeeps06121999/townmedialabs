@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import InnerNavbar from "@/components/layout/InnerNavbar";
@@ -11,6 +11,33 @@ import { servicePages } from "@/data/servicePages";
 import { blogRelatedServices } from "@/lib/internalLinks";
 
 const ease = [0.23, 1, 0.32, 1] as const;
+
+/**
+ * Inject <caption> into any <table> that doesn't already have one.
+ * Derives the caption from the closest preceding heading or from column headers.
+ */
+function addTableCaptions(html: string): string {
+  // Split into segments around <table> tags
+  return html.replace(/<table>([\s\S]*?)<\/table>/g, (match, inner: string) => {
+    // If the table already has a caption, leave it alone
+    if (/<caption[\s>]/i.test(inner)) return match;
+
+    // Try to extract a caption from <th> cells
+    const thMatch = inner.match(/<th[^>]*>(.*?)<\/th>/g);
+    let captionText = "";
+    if (thMatch) {
+      const headers = thMatch.map(th => th.replace(/<[^>]+>/g, "").trim()).filter(Boolean);
+      if (headers.length > 0) {
+        captionText = "Comparison of " + headers.join(", ");
+      }
+    }
+
+    if (captionText) {
+      return `<table><caption>${captionText}</caption>${inner}</table>`;
+    }
+    return match;
+  });
+}
 
 function ReadingProgress() {
   const [progress, setProgress] = useState(0);
@@ -54,7 +81,7 @@ function FloatingTOC({ items }: { items: string[] }) {
   if (items.length === 0) return null;
 
   return (
-    <nav className="hidden xl:block sticky top-32 max-h-[70vh] overflow-y-auto pr-4">
+    <nav aria-label="Table of contents" className="hidden xl:block sticky top-32 max-h-[70vh] overflow-y-auto pr-4">
       <p className="text-[9px] tracking-[0.2em] uppercase text-white/25 font-semibold mb-4">
         On This Page
       </p>
@@ -69,7 +96,7 @@ function FloatingTOC({ items }: { items: string[] }) {
               className={`block text-[11px] leading-relaxed py-1 pl-3 border-l-2 transition-all duration-300 ${
                 isActive
                   ? "border-[#ff4500] text-white/90 font-medium"
-                  : "border-white/[0.06] text-white/25 hover:text-white/50 hover:border-white/20"
+                  : "border-white/[0.06] text-white/25 hover:text-white/90 hover:border-white/20"
               }`}
             >
               {item.length > 40 ? item.slice(0, 40) + "..." : item}
@@ -92,6 +119,7 @@ export default function BlogArticleClient({
   const heroInView = useInView(heroRef, { once: true, amount: 0.2 });
   const contentRef = useRef<HTMLDivElement>(null);
   const [tocItems, setTocItems] = useState<string[]>([]);
+  const processedContent = useMemo(() => addTableCaptions(article.content), [article.content]);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -212,7 +240,7 @@ export default function BlogArticleClient({
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="text-base md:text-lg text-white/40 leading-relaxed max-w-2xl mb-10"
+            className="text-base md:text-lg text-white/90 leading-relaxed max-w-2xl mb-10"
           >
             {article.metaDescription}
           </motion.p>
@@ -299,6 +327,8 @@ export default function BlogArticleClient({
                   [&_table]:w-full [&_table]:my-8
                   [&_table]:border [&_table]:border-white/[0.06] [&_table]:rounded-2xl [&_table]:overflow-hidden
                   [&_table]:bg-white/[0.02]
+                  [&_caption]:caption-bottom [&_caption]:text-xs [&_caption]:text-white/30
+                  [&_caption]:py-3 [&_caption]:px-5 [&_caption]:text-left
                   [&_thead]:bg-[#ff4500]/[0.08]
                   [&_th]:px-5 [&_th]:py-4 [&_th]:text-left [&_th]:text-xs [&_th]:font-bold
                   [&_th]:text-[#ff4500]/90 [&_th]:uppercase [&_th]:tracking-wider
@@ -307,7 +337,7 @@ export default function BlogArticleClient({
                   [&_td]:border-b [&_td]:border-white/[0.04]
                   [&_tr:last-child_td]:border-b-0
                   [&_tr]:transition-colors [&_tr:hover]:bg-white/[0.02]
-                  [&_td:first-child]:text-white/70 [&_td:first-child]:font-medium
+                  [&_td:first-child]:text-white/90 [&_td:first-child]:font-medium
 
                   [&_hr]:border-0 [&_hr]:h-px [&_hr]:my-16
                   [&_hr]:bg-gradient-to-r [&_hr]:from-transparent [&_hr]:via-[#ff4500]/20 [&_hr]:to-transparent
@@ -318,14 +348,14 @@ export default function BlogArticleClient({
                   [&_blockquote]:px-6 [&_blockquote]:md:px-8 [&_blockquote]:py-6
                   [&_blockquote]:my-10 [&_blockquote]:not-italic
                   [&_blockquote]:shadow-[inset_0_0_40px_rgba(255,69,0,0.03)]
-                  [&_blockquote_p]:text-white/70 [&_blockquote_p]:text-base [&_blockquote_p]:md:text-lg
+                  [&_blockquote_p]:text-white/90 [&_blockquote_p]:text-base [&_blockquote_p]:md:text-lg
                   [&_blockquote_p]:font-medium [&_blockquote_p]:leading-relaxed [&_blockquote_p]:mb-0 [&_blockquote_p]:italic
 
-                  [&_em]:text-white/60
+                  [&_em]:text-white/90
 
                   [&_img]:rounded-2xl [&_img]:border [&_img]:border-white/[0.06]
                 "
-                dangerouslySetInnerHTML={{ __html: article.content }}
+                dangerouslySetInnerHTML={{ __html: processedContent }}
               />
             </motion.div>
           </div>
@@ -339,7 +369,7 @@ export default function BlogArticleClient({
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-[10px] text-white/25 uppercase tracking-widest font-semibold mr-1">Tags</span>
               {article.keywords.slice(0, 5).map((kw) => (
-                <span key={kw} className="text-[10px] tracking-wider bg-white/[0.03] border border-white/[0.06] rounded-full px-3 py-1.5 text-white/35 font-medium hover:border-[#ff4500]/20 hover:text-white/50 transition-colors cursor-default">
+                <span key={kw} className="text-[10px] tracking-wider bg-white/[0.03] border border-white/[0.06] rounded-full px-3 py-1.5 text-white/35 font-medium hover:border-[#ff4500]/20 hover:text-white/90 transition-colors cursor-default">
                   {kw}
                 </span>
               ))}
@@ -376,7 +406,7 @@ export default function BlogArticleClient({
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 Explore Our Services
               </motion.p>
@@ -406,7 +436,7 @@ export default function BlogArticleClient({
                       <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-sm text-white/40 leading-relaxed mb-4 line-clamp-2">
+                      <p className="text-sm text-white/90 leading-relaxed mb-4 line-clamp-2">
                         {service.tagline}
                       </p>
                       <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
@@ -473,7 +503,7 @@ export default function BlogArticleClient({
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </Link>
                 <a href="tel:+919872648209"
-                  className="inline-flex items-center gap-2 border border-white/[0.08] bg-white/[0.03] text-white/60 px-10 py-4 rounded-2xl text-sm font-semibold hover:bg-white/[0.06] hover:text-white transition-all">
+                  className="inline-flex items-center gap-2 border border-white/[0.08] bg-white/[0.03] text-white/90 px-10 py-4 rounded-2xl text-sm font-semibold hover:bg-white/[0.06] hover:text-white transition-all">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                   +91 98726 48209
                 </a>

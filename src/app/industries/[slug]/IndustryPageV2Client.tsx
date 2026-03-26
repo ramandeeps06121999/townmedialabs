@@ -94,7 +94,7 @@ function ServiceCard({
         <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors">
           {service.name}
         </h3>
-        <p className="text-sm text-white/40 leading-relaxed">{service.description}</p>
+        <p className="text-sm text-white/90 leading-relaxed">{service.description}</p>
       </Link>
     </motion.div>
   );
@@ -175,7 +175,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
           >
             <Link
               href="/industries"
-              className="inline-flex items-center gap-2 text-[11px] text-white/40 tracking-[0.2em] uppercase hover:text-white/60 transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-[11px] text-white/90 tracking-[0.2em] uppercase hover:text-white/90 transition-colors mb-8"
             >
               <svg
                 width="16"
@@ -197,7 +197,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.05, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-6"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-6"
           >
             Industry Solutions
           </motion.p>
@@ -219,7 +219,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed max-w-2xl mx-auto mb-10"
+            className="text-sm md:text-base text-white/90 leading-relaxed max-w-2xl mx-auto mb-10"
           >
             {industry.heroSubtitle}
           </motion.p>
@@ -238,7 +238,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Talk to an Expert
             </a>
@@ -274,7 +274,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
                     <span className="text-white/20">&mdash;</span>
                   )}
                 </div>
-                <p className="text-xs text-white/40 tracking-wide">{stat.label}</p>
+                <p className="text-xs text-white/90 tracking-wide">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -291,7 +291,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             The Challenge
           </motion.p>
@@ -324,7 +324,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Our Services
           </motion.p>
@@ -356,7 +356,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease }}
-              className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase font-semibold"
+              className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold"
             >
               Industry Insights
             </motion.p>
@@ -388,7 +388,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             FAQ
           </motion.p>
@@ -399,7 +399,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             transition={{ duration: 0.7, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center"
           >
-            Common Questions
+            {industry.name} Marketing Questions
             <span className="text-[#ff4500]">.</span>
           </motion.h2>
 
@@ -433,7 +433,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             Let&apos;s discuss how our digital marketing expertise can help your{" "}
             {industry.name.toLowerCase()} business attract more clients, increase revenue,
@@ -454,7 +454,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>
@@ -477,7 +477,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 From Our Blog
               </motion.p>

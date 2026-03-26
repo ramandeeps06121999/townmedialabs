@@ -32,6 +32,7 @@ export function FAQSection() {
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   className="group flex w-full items-center justify-between py-6 text-left"
+                  aria-expanded={openFaq === i}
                 >
                   <span className="pr-4 text-sm font-medium text-[#ccc] transition-colors group-hover:text-white md:text-base">
                     {faq.q}
@@ -65,7 +66,7 @@ export function FAQSection() {
                       }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-6 text-sm leading-relaxed text-[#666]">
+                      <p className="pb-6 text-sm leading-relaxed text-white/90">
                         {faq.a}
                       </p>
                     </motion.div>

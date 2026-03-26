@@ -74,7 +74,7 @@ export function AboutHome2() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase font-semibold mb-8"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold mb-8"
         >
           About TML
         </motion.p>
@@ -89,7 +89,7 @@ export function AboutHome2() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-[1.06] tracking-tight text-white max-w-5xl text-balance"
           >
             We&apos;re not just another agency.{" "}
-            <span className="text-white/40">
+            <span className="text-white/90">
               We&apos;re the people behind the brands you remember.
             </span>
           </motion.h2>
@@ -120,7 +120,7 @@ export function AboutHome2() {
               transition={{ duration: 0.8, delay: 0.2, ease }}
               className="absolute left-0 top-0 bottom-0 w-[2px] origin-top bg-gradient-to-b from-[#ff4500] via-[#ff4500]/30 to-transparent"
             />
-            <p className="text-sm md:text-base lg:text-lg text-white/60 leading-relaxed">
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
               TML is a full-service branding and digital marketing agency built
               for businesses that want to move fast and look good doing it. From
               day one, we embed with your team — learning your market, your
@@ -142,7 +142,7 @@ export function AboutHome2() {
               transition={{ duration: 0.8, delay: 0.3, ease }}
               className="absolute left-0 top-0 bottom-0 w-[2px] origin-top bg-gradient-to-b from-[#ff4500] via-[#ff4500]/30 to-transparent"
             />
-            <p className="text-sm md:text-base lg:text-lg text-white/60 leading-relaxed">
+            <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
               We combine strategy, design, and performance marketing into one
               tight operation.{" "}
               <span className="text-white font-semibold">
@@ -192,7 +192,7 @@ export function AboutHome2() {
                 />
 
                 {/* Label */}
-                <p className="text-[11px] md:text-xs text-white/40 tracking-[0.15em] uppercase font-medium">
+                <p className="text-[11px] md:text-xs text-white/90 tracking-[0.15em] uppercase font-medium">
                   {stat.label}
                 </p>
               </div>

@@ -187,7 +187,7 @@ export default function ServicesPageClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-8"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-8"
           >
             Our Services
           </motion.p>
@@ -210,7 +210,7 @@ export default function ServicesPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="text-sm md:text-base text-white/40 max-w-2xl mx-auto mb-10"
+            className="text-sm md:text-base text-white/90 max-w-2xl mx-auto mb-10"
           >
             From brand strategy to AI-powered marketing — we offer a complete suite of services to help you stand out, attract customers, and scale your business.
           </motion.p>
@@ -298,7 +298,7 @@ export default function ServicesPageClient() {
                       <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-sm text-white/40 leading-relaxed mb-5">
+                      <p className="text-sm text-white/90 leading-relaxed mb-5">
                         {service.description}
                       </p>
 
@@ -398,7 +398,7 @@ export default function ServicesPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto"
           >
             Book a free strategy call and we&apos;ll audit your current digital presence and recommend the services that&apos;ll have the biggest impact.
           </motion.p>
@@ -417,7 +417,7 @@ export default function ServicesPageClient() {
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>

@@ -60,7 +60,7 @@ export function FAQHome2() {
           initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
         >
           FAQ
         </motion.p>
@@ -72,7 +72,7 @@ export function FAQHome2() {
           transition={{ duration: 0.8, delay: 0.1, ease }}
           className="text-3xl sm:text-4xl md:text-5xl font-medium leading-[1.08] tracking-tight text-white mb-16"
         >
-          Questions <span className="text-white/40">& answers.</span>
+          Questions <span className="text-white/90">& answers.</span>
         </motion.h2>
 
         {/* FAQ items */}
@@ -90,23 +90,33 @@ export function FAQHome2() {
           }}
           className="flex flex-col gap-3"
         >
-          {faqs.map((faq, i) => {
-            const isOpen = openFaq === i;
-            const num = String(i + 1).padStart(2, "0");
+          {/* Chunk FAQs into groups of 3 to reduce DOM width */}
+          {((): React.ReactNode => {
+            const chunkSize = 3;
+            const chunks: (typeof faqs)[] = [];
+            for (let c = 0; c < faqs.length; c += chunkSize) {
+              chunks.push(faqs.slice(c, c + chunkSize));
+            }
+            return chunks.map((chunk: typeof faqs, ci: number) => (
+              <div key={ci} className="contents">
+                {chunk.map((faq: (typeof faqs)[number], i: number) => {
+                  const globalIndex = ci * chunkSize + i;
+                  const isOpen = openFaq === globalIndex;
+                  const num = String(globalIndex + 1).padStart(2, "0");
 
-            return (
-              <motion.div
-                key={i}
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 0.6, ease },
-                  },
-                }}
-                className="group relative"
-              >
+                  return (
+                    <motion.div
+                      key={globalIndex}
+                      variants={{
+                        hidden: { opacity: 0, y: 20 },
+                        visible: {
+                          opacity: 1,
+                          y: 0,
+                          transition: { duration: 0.6, ease },
+                        },
+                      }}
+                      className="group relative"
+                    >
                 {/* Glass card */}
                 <motion.div
                   animate={{
@@ -134,8 +144,9 @@ export function FAQHome2() {
 
                   {/* Question button */}
                   <button
-                    onClick={() => setOpenFaq(isOpen ? null : i)}
+                    onClick={() => setOpenFaq(isOpen ? null : globalIndex)}
                     className="flex w-full items-center gap-4 md:gap-6 px-5 md:px-7 py-5 md:py-6 text-left cursor-pointer"
+                    aria-expanded={isOpen}
                   >
                     {/* Number */}
                     <span className="text-xs md:text-sm font-mono text-white/15 shrink-0 tabular-nums select-none">
@@ -143,7 +154,7 @@ export function FAQHome2() {
                     </span>
 
                     {/* Question text */}
-                    <span className="flex-1 pr-4 text-sm md:text-base font-medium text-white/80 transition-colors duration-300 group-hover:text-white">
+                    <span className="flex-1 pr-4 text-sm md:text-base font-medium text-white/90 transition-colors duration-300 group-hover:text-white">
                       {faq.q}
                     </span>
 
@@ -201,8 +212,11 @@ export function FAQHome2() {
                   </AnimatePresence>
                 </motion.div>
               </motion.div>
-            );
-          })}
+                  );
+                })}
+              </div>
+            ));
+          })()}
         </motion.div>
 
         {/* "Still have questions?" CTA */}
@@ -214,7 +228,7 @@ export function FAQHome2() {
         >
           <div className="inline-flex items-center gap-3 rounded-xl border border-white/[0.06] bg-white/[0.02] px-8 py-6 backdrop-blur-sm">
             <div>
-              <p className="text-sm md:text-base font-medium text-white/80 mb-1">
+              <p className="text-sm md:text-base font-medium text-white/90 mb-1">
                 Still have questions?
               </p>
               <p className="text-xs md:text-sm text-white/35">

@@ -171,7 +171,7 @@ export function LifeAtTML() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase font-semibold mb-6"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold mb-6"
         >
           Life at TML
         </motion.p>
@@ -271,7 +271,7 @@ export function LifeAtTML() {
               className="relative overflow-hidden rounded-2xl"
             >
               <Image
-                src="/office.png"
+                src="/office.webp"
                 alt="TML Agency modern creative workspace and office environment"
                 width={900}
                 height={600}
@@ -316,7 +316,7 @@ export function LifeAtTML() {
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-white/90">50+ Creatives</p>
-                  <p className="text-[9px] text-white/40">Building brands daily</p>
+                  <p className="text-[9px] text-white/90">Building brands daily</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -355,11 +355,11 @@ export function LifeAtTML() {
                   }}
                   className="group flex flex-col gap-2.5 rounded-xl bg-white/[0.02] border border-white/[0.06] p-4 cursor-default transition-all duration-300"
                 >
-                  <span className="text-white/40 group-hover:text-[#ff4500]/70 transition-colors duration-300">
+                  <span className="text-white/90 group-hover:text-[#ff4500]/70 transition-colors duration-300">
                     {perk.icon}
                   </span>
                   <div>
-                    <span className="text-xs text-white/60 font-semibold tracking-wide block">
+                    <span className="text-xs text-white/90 font-semibold tracking-wide block">
                       {perk.label}
                     </span>
                     <span className="text-[10px] text-white/25 leading-snug block mt-0.5">
@@ -389,7 +389,7 @@ export function LifeAtTML() {
             >
               {ratings.map((r, i) => (
                 <div key={r.platform} className="flex items-center gap-1.5">
-                  <span className="text-xs text-white/40">{r.platform}</span>
+                  <span className="text-xs text-white/90">{r.platform}</span>
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, si) => (
                       <span key={si} className="text-[#ffcc00] text-[10px]">
@@ -397,7 +397,7 @@ export function LifeAtTML() {
                       </span>
                     ))}
                   </div>
-                  <span className="text-xs text-white/50 font-semibold">
+                  <span className="text-xs text-white/90 font-semibold">
                     {r.score}
                   </span>
                   {i < ratings.length - 1 && (

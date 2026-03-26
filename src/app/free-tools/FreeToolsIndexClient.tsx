@@ -73,7 +73,7 @@ export default function FreeToolsIndexClient() {
             Free Marketing{" "}
             <span className="text-[#ff4500]">Tools</span>
           </h1>
-          <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mt-6">
+          <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mt-6">
             Powerful calculators and generators to help you make smarter marketing decisions. No signup required.
           </p>
         </motion.div>

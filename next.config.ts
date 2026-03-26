@@ -14,6 +14,27 @@ const nextConfig: NextConfig = {
         destination: "/careers",
         permanent: true,
       },
+      // Fix broken service URLs that may be indexed or linked externally
+      {
+        source: "/services/digital-marketing",
+        destination: "/services/seo",
+        permanent: true,
+      },
+      {
+        source: "/services/social-media-marketing",
+        destination: "/services/social-media",
+        permanent: true,
+      },
+      {
+        source: "/services/web-development",
+        destination: "/services/website-development",
+        permanent: true,
+      },
+      {
+        source: "/services/local-seo",
+        destination: "/services/seo",
+        permanent: true,
+      },
     ];
   },
   poweredByHeader: false,
@@ -28,8 +49,12 @@ const nextConfig: NextConfig = {
             value: "nosniff",
           },
           {
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
+          },
+          {
             key: "X-Frame-Options",
-            value: "DENY",
+            value: "SAMEORIGIN",
           },
           {
             key: "Referrer-Policy",
@@ -47,6 +72,11 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value:
               "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+          },
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://region1.google-analytics.com; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';",
           },
         ],
       },

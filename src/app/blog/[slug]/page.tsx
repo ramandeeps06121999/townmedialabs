@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
+      site: "@tmlagency",
       title: seoTitle,
       description: article.metaDescription,
       images: ["/og-image.png"],
@@ -63,13 +64,9 @@ export default async function BlogSlugPage({ params }: Props) {
     dateModified: article.date,
     image: `${siteUrl}/og-image.png`,
     author: {
-      "@type": "Organization",
-      name: "TML Agency",
-      url: siteUrl,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteUrl}/logo.png`,
-      },
+      "@type": "Person",
+      name: "TML Agency Team",
+      url: `${siteUrl}/about`,
     },
     publisher: {
       "@type": "Organization",

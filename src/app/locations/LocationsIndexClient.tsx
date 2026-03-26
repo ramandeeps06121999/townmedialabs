@@ -166,6 +166,8 @@ function CountrySection({ group, defaultOpen }: { group: CountryGroup; defaultOp
     <div className="border border-white/[0.06] rounded-2xl overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-label={`${open ? "Collapse" : "Expand"} ${countryDisplayMap[group.country] ?? group.country} locations`}
         className="w-full flex items-center justify-between p-6 md:p-8 bg-white/[0.02] hover:bg-white/[0.03] transition-colors text-left"
       >
         <div className="flex items-center gap-4">
@@ -207,7 +209,7 @@ function CountrySection({ group, defaultOpen }: { group: CountryGroup; defaultOp
 
               {stateEntries.map(([state, cities]) => (
                 <div key={state} className="mb-6 last:mb-0">
-                  <h3 className="text-xs text-white/40 tracking-[0.15em] uppercase mb-3 font-medium">
+                  <h3 className="text-xs text-white/90 tracking-[0.15em] uppercase mb-3 font-medium">
                     {state}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
@@ -254,7 +256,7 @@ export default function LocationsIndexClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-6"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-6"
           >
             Global Reach
           </motion.p>
@@ -370,7 +372,7 @@ export default function LocationsIndexClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             We work with businesses everywhere. Whether you are in a major metro or a
             growing town, our team delivers digital marketing strategies tailored to
@@ -391,7 +393,7 @@ export default function LocationsIndexClient() {
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>

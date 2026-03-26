@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@tmlagency",
     title: "Blog | TML Agency — Marketing, Branding & AI Insights",
     description:
       "Expert insights on digital marketing, branding, SEO, AI, and ad strategy from TML Agency.",

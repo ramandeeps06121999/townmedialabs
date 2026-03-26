@@ -12,7 +12,7 @@ export default function NotFound() {
           4<span className="text-[#ff4500]">0</span>4
         </h1>
 
-        <p className="text-lg text-white/50 mb-2">Page not found</p>
+        <p className="text-lg text-white/90 mb-2">Page not found</p>
         <p className="text-sm text-white/30 mb-10 max-w-sm mx-auto">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
           Let&apos;s get you back on track.
@@ -27,7 +27,7 @@ export default function NotFound() {
           </Link>
           <Link
             href="/contact"
-            className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+            className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
           >
             Contact Us
           </Link>

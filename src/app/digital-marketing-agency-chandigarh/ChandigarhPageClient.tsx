@@ -118,7 +118,7 @@ export default function ChandigarhPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed max-w-2xl mx-auto mb-10"
+            className="text-sm md:text-base text-white/90 leading-relaxed max-w-2xl mx-auto mb-10"
           >
             TML Agency is Chandigarh&apos;s leading branding and digital marketing company. From brand identity
             and website development to SEO, Google Ads, and social media — we help Chandigarh businesses
@@ -139,7 +139,7 @@ export default function ChandigarhPageClient() {
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               View Our Services
             </Link>
@@ -165,7 +165,7 @@ export default function ChandigarhPageClient() {
                     <AnimatedCounter target={stat.value} suffix={stat.suffix} duration={2} />
                   )}
                 </div>
-                <p className="text-[10px] md:text-xs text-white/40">{stat.label}</p>
+                <p className="text-[10px] md:text-xs text-white/90">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -180,7 +180,7 @@ export default function ChandigarhPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Why Choose Us
           </motion.p>
@@ -211,7 +211,7 @@ export default function ChandigarhPageClient() {
                   <div className="w-2 h-2 rounded-full bg-[#ff4500]" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-sm text-white/40 leading-relaxed">{item.description}</p>
+                <p className="text-sm text-white/90 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -226,7 +226,7 @@ export default function ChandigarhPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Our Services in Chandigarh
           </motion.p>
@@ -268,7 +268,7 @@ export default function ChandigarhPageClient() {
                     <h3 className="text-base font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-xs text-white/40 leading-relaxed">{service.description}</p>
+                    <p className="text-xs text-white/90 leading-relaxed">{service.description}</p>
                   </Link>
                 </motion.div>
               );
@@ -316,7 +316,7 @@ export default function ChandigarhPageClient() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.04, ease }}
-                className="px-5 py-3 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/90 hover:border-[#ff4500]/20 hover:text-white/70 transition-all cursor-default"
+                className="px-5 py-3 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/90 hover:border-[#ff4500]/20 hover:text-white/90 transition-all cursor-default"
               >
                 {industry}
               </motion.span>
@@ -333,7 +333,7 @@ export default function ChandigarhPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             Testimonials
           </motion.p>
@@ -365,7 +365,7 @@ export default function ChandigarhPageClient() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-sm text-white/60 leading-relaxed mb-6 italic">
+                <p className="text-sm text-white/90 leading-relaxed mb-6 italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div>
@@ -395,20 +395,20 @@ export default function ChandigarhPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1, ease }}
-            className="space-y-5 text-sm md:text-base text-white/40 leading-relaxed"
+            className="space-y-5 text-sm md:text-base text-white/90 leading-relaxed"
           >
             <p>
-              Looking for the <strong className="text-white/60">best branding and digital marketing agency in Chandigarh</strong>? TML Agency — also known as Town Media Labs — has been the go-to <strong className="text-white/60">branding company in Chandigarh</strong> since 2015, helping businesses across Chandigarh, Mohali, Panchkula, Zirakpur, and the entire tricity region build powerful brands and grow online.
+              Looking for the <strong className="text-white/90">best branding and digital marketing agency in Chandigarh</strong>? TML Agency — also known as Town Media Labs — has been the go-to <strong className="text-white/90">branding company in Chandigarh</strong> since 2015, helping businesses across Chandigarh, Mohali, Panchkula, Zirakpur, and the entire tricity region build powerful brands and grow online.
             </p>
             <p>
-              As Chandigarh&apos;s <strong className="text-white/60">leading full-service branding and marketing agency</strong>, we offer everything from brand identity design, logo design, and packaging to website development, SEO, Google Ads management, social media marketing, lead generation, and AI influencer management. Our team of 70+ in-house branding and marketing experts at our Sector 34A office ensures every project is executed with precision.
+              As Chandigarh&apos;s <strong className="text-white/90">leading full-service branding and marketing agency</strong>, we offer everything from brand identity design, logo design, and packaging to website development, SEO, Google Ads management, social media marketing, lead generation, and AI influencer management. Our team of 70+ in-house branding and marketing experts at our Sector 34A office ensures every project is executed with precision.
             </p>
             <p>
               Whether you&apos;re a startup in IT Park Chandigarh, a restaurant in Sector 17, a real estate company in Mohali, or an
-              established brand looking to dominate your market — <strong className="text-white/60">TML is the top-rated branding agency in Chandigarh</strong> with the experience, tools, and creativity to deliver measurable results. Our clients see an average of 280% increase in organic traffic and 4.2x ROAS on paid campaigns.
+              established brand looking to dominate your market — <strong className="text-white/90">TML is the top-rated branding agency in Chandigarh</strong> with the experience, tools, and creativity to deliver measurable results. Our clients see an average of 280% increase in organic traffic and 4.2x ROAS on paid campaigns.
             </p>
             <p>
-              What sets us apart from other <strong className="text-white/60">digital marketing and branding agencies in Chandigarh</strong> is our commitment to transparency, data-driven strategies, and long-term partnerships. We don&apos;t do cookie-cutter solutions — every brand strategy is tailored to your specific business goals, industry, and budget. Visit us at CO 112, Basement, Sector 34A, Chandigarh or book a <a href="https://calendly.com/townmedialabs/30min" target="_blank" rel="noopener noreferrer" className="text-[#ff4500] hover:underline">free 30-minute strategy call</a>.
+              What sets us apart from other <strong className="text-white/90">digital marketing and branding agencies in Chandigarh</strong> is our commitment to transparency, data-driven strategies, and long-term partnerships. We don&apos;t do cookie-cutter solutions — every brand strategy is tailored to your specific business goals, industry, and budget. Visit us at CO 112, Basement, Sector 34A, Chandigarh or book a <a href="https://calendly.com/townmedialabs/30min" target="_blank" rel="noopener noreferrer" className="text-[#ff4500] hover:underline">free 30-minute strategy call</a>.
             </p>
           </motion.div>
         </div>
@@ -424,7 +424,7 @@ export default function ChandigarhPageClient() {
             transition={{ duration: 0.7, ease }}
             className="text-center mb-8"
           >
-            <p className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-3">
+            <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-3">
               Visit Our Office
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-white">
@@ -449,7 +449,7 @@ export default function ChandigarhPageClient() {
               title="TML Agency Chandigarh Office Location"
             />
           </motion.div>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6 text-sm text-white/40">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6 text-sm text-white/90">
             <span>CO 112, Basement, Sector 34A, Chandigarh 160022</span>
             <a href="tel:+919872648209" className="text-[#ff4500] hover:underline">+91 98726 48209</a>
           </div>
@@ -477,7 +477,7 @@ export default function ChandigarhPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto"
           >
             Book a free 30-minute strategy call with Chandigarh&apos;s leading branding and marketing team. No obligations — just actionable insights to help your brand grow.
           </motion.p>
@@ -498,7 +498,7 @@ export default function ChandigarhPageClient() {
             </a>
             <Link
               href="/contact"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Contact Us
             </Link>

@@ -11,6 +11,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -18,17 +19,17 @@ const projects = [
   {
     title: "CB Builders",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-2.png",
+    image: "/portfolio/all-devices-black-2.webp",
   },
   {
     title: "Real Estate App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-21.png",
+    image: "/portfolio/Untitled-design-21.webp",
   },
   {
     title: "BYT Trucking",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-3.png",
+    image: "/portfolio/all-devices-black-3.webp",
   },
   {
     title: "NFT Marketplace",
@@ -38,7 +39,7 @@ const projects = [
   {
     title: "Smart Home App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-18.png",
+    image: "/portfolio/Untitled-design-18.webp",
   },
   {
     title: "Win Asset Finance",
@@ -61,7 +62,7 @@ const bottomRow = [
   {
     title: "Virtual Healthcare",
     category: "Branding & Web",
-    image: "/portfolio/ChatGPT-Image-Dec-15-2025-06_26_06-PM.png",
+    image: "/portfolio/ChatGPT-Image-Dec-15-2025-06_26_06-PM.webp",
   },
   {
     title: "Advertisement Marketing",
@@ -268,7 +269,7 @@ export function WorkHome2() {
               initial={{ opacity: 0, y: 14 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease }}
-              className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+              className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
             >
               Selected work
             </motion.p>
@@ -281,7 +282,7 @@ export function WorkHome2() {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.08] tracking-tight text-white max-w-3xl"
             >
               Work that speaks{" "}
-              <span className="text-white/40">for itself.</span>
+              <span className="text-white/90">for itself.</span>
             </motion.h2>
           </div>
 
@@ -412,7 +413,7 @@ export function WorkHome2() {
           transition={{ duration: 1.2, delay: 0.2, ease }}
           className="mt-3 md:mt-4 relative aspect-video overflow-hidden rounded-xl bg-[#111] group cursor-pointer border border-white/[0.04] hover:border-[#ff4500]/15 transition-colors duration-500"
         >
-          <video
+          <LazyVideo
             autoPlay
             muted
             loop
@@ -424,7 +425,7 @@ export function WorkHome2() {
               src="/portfolio/3476281878972467670_51343323133.mp4"
               type="video/mp4"
             />
-          </video>
+          </LazyVideo>
 
           {/* Film grain on video */}
           <div
@@ -494,7 +495,7 @@ export function WorkHome2() {
             href="#portfolio"
             whileHover={{ scale: 1.04, boxShadow: "0 0 30px rgba(255,69,0,0.12)" }}
             whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center gap-2 rounded-xl border border-[#ff4500]/20 bg-[#ff4500]/5 px-8 py-3.5 text-sm font-semibold text-white/80 hover:text-white hover:border-[#ff4500]/40 transition-colors duration-300"
+            className="inline-flex items-center gap-2 rounded-xl border border-[#ff4500]/20 bg-[#ff4500]/5 px-8 py-3.5 text-sm font-semibold text-white/90 hover:text-white hover:border-[#ff4500]/40 transition-colors duration-300"
           >
             View All Projects
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

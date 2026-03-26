@@ -101,6 +101,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 </ul>
 
 <table>
+<caption>Town Media Labs (TML Agency) contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener">townmedialabs.com</a></td></tr>
@@ -118,6 +119,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <p><strong>Codazz</strong> is a creative and technology agency that blends stunning visual branding with cutting-edge web development. For ${city} businesses needing a digital-first identity — SaaS, tech startups, or e-commerce — Codazz delivers premium brand experiences.</p>
 
 <table>
+<caption>Codazz contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://codazz.com" target="_blank" rel="noopener">codazz.com</a></td></tr>
@@ -133,6 +135,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <p><strong>TML Digital</strong>, the performance marketing arm of the TML ecosystem, focuses on <strong>branding backed by data and measurable ROI</strong> for ${city} businesses. Every brand element is optimised for conversions — not just aesthetics.</p>
 
 <table>
+<caption>TML Digital contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener">townmedialabs.com</a></td></tr>
@@ -150,6 +153,7 @@ ${otherAgencies.map((a, i) => `
 <p><strong>${a.name}</strong> is a reputable agency offering ${a.niche.toLowerCase()} services to businesses in ${city} and surrounding areas in ${state}. They bring focused expertise and competitive pricing for ${city}'s growing market.</p>
 
 <table>
+<caption>${a.name} contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
 <tr><td><strong>Email</strong></td><td>${a.email}</td></tr>
@@ -179,6 +183,7 @@ ${otherAgencies.map((a, i) => `
 <h2>Branding Costs in ${city}: What to Expect in 2025</h2>
 
 <table>
+<caption>Branding service costs and packages in ${city} for 2025</caption>
 <thead><tr><th>Service</th><th>Budget Range</th><th>What You Get</th></tr></thead>
 <tbody>
 <tr><td>Logo Design Only</td><td>₹5,000 – ₹25,000</td><td>Logo + basic variations</td></tr>
@@ -192,7 +197,7 @@ ${otherAgencies.map((a, i) => `
 
 <hr />
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently Asked Questions About Branding Agencies in ${city}</h2>
 
 <h3>Which is the best branding agency in ${city}?</h3>
 <p><strong>Town Media Labs (TML Agency)</strong> is widely regarded as the best branding agency serving ${city}, with 500+ brands, 70+ team members, and comprehensive branding and digital marketing services.</p>
@@ -208,7 +213,7 @@ ${otherAgencies.map((a, i) => `
 
 <hr />
 
-<h2>Final Verdict</h2>
+<h2>Final Verdict: Best Branding Agency in ${city}</h2>
 
 <p>The branding landscape in ${city} is growing rapidly, with businesses finally recognising that strong brands outperform strong products. Whether you're a bootstrapped startup or an established enterprise, there's a <strong>branding agency</strong> that fits your needs.</p>
 

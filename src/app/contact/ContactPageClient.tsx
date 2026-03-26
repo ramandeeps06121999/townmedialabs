@@ -177,7 +177,7 @@ export default function ContactPageClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-8"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-8"
           >
             Contact Us
           </motion.p>
@@ -198,7 +198,7 @@ export default function ContactPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="text-sm md:text-base text-white/40 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 max-w-xl mx-auto"
           >
             Ready to elevate your brand? Get a free consultation with
             Chandigarh&apos;s leading digital marketing team. We respond within
@@ -232,7 +232,7 @@ export default function ContactPageClient() {
                 <p className="text-[10px] text-white/30 tracking-[0.15em] uppercase mb-2">
                   {card.label}
                 </p>
-                <p className="text-sm text-white/70 font-medium group-hover:text-white transition-colors">
+                <p className="text-sm text-white/90 font-medium group-hover:text-white transition-colors">
                   {card.value}
                 </p>
               </motion.a>
@@ -255,6 +255,7 @@ export default function ContactPageClient() {
               transition={{ duration: 0.8, ease }}
               className="lg:col-span-3"
             >
+              <h2 className="sr-only">Send Us a Message</h2>
               {submitted ? (
                 <div className="text-center py-20">
                   <div className="w-16 h-16 rounded-full bg-[#ff4500]/10 border border-[#ff4500]/30 flex items-center justify-center mx-auto mb-6">
@@ -271,10 +272,10 @@ export default function ContactPageClient() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-3">
+                  <p className="text-2xl font-semibold text-white mb-3">
                     Message sent!
-                  </h3>
-                  <p className="text-sm text-white/40 mb-8">
+                  </p>
+                  <p className="text-sm text-white/90 mb-8">
                     We&apos;ll get back to you within 24 hours.
                   </p>
                   <button
@@ -304,7 +305,7 @@ export default function ContactPageClient() {
                     <div>
                       <label
                         htmlFor="contact-name"
-                        className="block text-xs text-white/40 tracking-wide mb-2"
+                        className="block text-xs text-white/90 tracking-wide mb-2"
                       >
                         Your Name *
                       </label>
@@ -325,7 +326,7 @@ export default function ContactPageClient() {
                     <div>
                       <label
                         htmlFor="contact-email"
-                        className="block text-xs text-white/40 tracking-wide mb-2"
+                        className="block text-xs text-white/90 tracking-wide mb-2"
                       >
                         Email *
                       </label>
@@ -349,7 +350,7 @@ export default function ContactPageClient() {
                     <div>
                       <label
                         htmlFor="contact-phone"
-                        className="block text-xs text-white/40 tracking-wide mb-2"
+                        className="block text-xs text-white/90 tracking-wide mb-2"
                       >
                         Phone
                       </label>
@@ -368,7 +369,7 @@ export default function ContactPageClient() {
                     <div>
                       <label
                         htmlFor="contact-service"
-                        className="block text-xs text-white/40 tracking-wide mb-2"
+                        className="block text-xs text-white/90 tracking-wide mb-2"
                       >
                         Service Interested In *
                       </label>
@@ -398,7 +399,7 @@ export default function ContactPageClient() {
                   <div>
                     <label
                       htmlFor="contact-budget"
-                      className="block text-xs text-white/40 tracking-wide mb-2"
+                      className="block text-xs text-white/90 tracking-wide mb-2"
                     >
                       Budget Range
                     </label>
@@ -425,7 +426,7 @@ export default function ContactPageClient() {
                   <div>
                     <label
                       htmlFor="contact-message"
-                      className="block text-xs text-white/40 tracking-wide mb-2"
+                      className="block text-xs text-white/90 tracking-wide mb-2"
                     >
                       Tell us about your project *
                     </label>
@@ -471,6 +472,7 @@ export default function ContactPageClient() {
               transition={{ duration: 0.8, delay: 0.2, ease }}
               className="lg:col-span-2 space-y-6"
             >
+              <h2 className="sr-only">Contact Details</h2>
               {/* Office Hours */}
               <div className="p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02]">
                 <div className="flex items-center gap-3 mb-4">
@@ -494,15 +496,15 @@ export default function ContactPageClient() {
                   </h3>
                 </div>
                 <div className="space-y-2 text-sm">
-                  <div className="flex justify-between text-white/40">
+                  <div className="flex justify-between text-white/90">
                     <span>Monday &ndash; Friday</span>
-                    <span className="text-white/60">10:00 AM &ndash; 7:00 PM</span>
+                    <span className="text-white/90">10:00 AM &ndash; 7:00 PM</span>
                   </div>
-                  <div className="flex justify-between text-white/40">
+                  <div className="flex justify-between text-white/90">
                     <span>Saturday</span>
-                    <span className="text-white/60">10:00 AM &ndash; 5:00 PM</span>
+                    <span className="text-white/90">10:00 AM &ndash; 5:00 PM</span>
                   </div>
-                  <div className="flex justify-between text-white/40">
+                  <div className="flex justify-between text-white/90">
                     <span>Sunday</span>
                     <span className="text-white/30">Closed</span>
                   </div>
@@ -530,7 +532,7 @@ export default function ContactPageClient() {
                     Quick Response
                   </h3>
                 </div>
-                <p className="text-sm text-white/40 leading-relaxed">
+                <p className="text-sm text-white/90 leading-relaxed">
                   We respond to every enquiry within{" "}
                   <span className="text-[#ff4500] font-semibold">
                     24 hours
@@ -556,7 +558,7 @@ export default function ContactPageClient() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between py-2 text-sm text-white/40 hover:text-white/70 transition-colors group"
+                      className="flex items-center justify-between py-2 text-sm text-white/90 hover:text-white/90 transition-colors group"
                     >
                       <span>{social.name}</span>
                       <span className="text-xs text-white/20 group-hover:text-[#ff4500] transition-colors">
@@ -581,13 +583,13 @@ export default function ContactPageClient() {
             transition={{ duration: 0.7, ease }}
             className="text-center mb-12"
           >
-            <p className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-4">
-              Common Questions
+            <p className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-4">
+              Contact & Services
             </p>
             <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">
               Frequently Asked{" "}
               <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
-                Questions
+                Contact Questions
               </span>
             </h2>
           </motion.div>
@@ -607,7 +609,7 @@ export default function ContactPageClient() {
                   className="w-full flex items-center justify-between p-5 md:p-6 text-left"
                   aria-expanded={openFaq === i}
                 >
-                  <span className="text-sm md:text-base font-medium text-white/80 pr-4">
+                  <span className="text-sm md:text-base font-medium text-white/90 pr-4">
                     {faq.question}
                   </span>
                   <span
@@ -637,7 +639,7 @@ export default function ContactPageClient() {
                     openFaq === i ? "max-h-60" : "max-h-0"
                   }`}
                 >
-                  <p className="px-5 md:px-6 pb-5 md:pb-6 text-sm text-white/40 leading-relaxed">
+                  <p className="px-5 md:px-6 pb-5 md:pb-6 text-sm text-white/90 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -680,7 +682,7 @@ export default function ContactPageClient() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease }}
           >
-            <p className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-4">
+            <p className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-4">
               Prefer to Talk?
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight mb-4">
@@ -689,7 +691,7 @@ export default function ContactPageClient() {
                 directly
               </span>
             </h2>
-            <p className="text-sm text-white/40 mb-8 max-w-md mx-auto">
+            <p className="text-sm text-white/90 mb-8 max-w-md mx-auto">
               Skip the form and speak with our team. We&apos;re available Monday
               through Saturday during business hours.
             </p>

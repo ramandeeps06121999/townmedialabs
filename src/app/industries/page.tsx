@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     url: "https://townmedialabs.com/industries",
     siteName: "TML Agency",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Industries We Serve - TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Industries We Serve | TML Agency",
+    description:
+      "Industry-specific digital marketing solutions tailored to your business. From dentists to non-profits, we build strategies that drive growth.",
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://townmedialabs.com/industries",

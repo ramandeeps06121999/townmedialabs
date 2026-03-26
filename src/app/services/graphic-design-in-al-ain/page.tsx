@@ -8,6 +8,25 @@ export const metadata: Metadata = {
   title: "Best Graphic Design Agency in Al Ain | TML Agency",
   description: "TML offers expert graphic design services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design al ain", "graphic design agency al ain", "graphic design company al ain"],
+  alternates: {
+    canonical: "https://townmedialabs.com/services/graphic-design-in-al-ain",
+  },
+  openGraph: {
+    title: "Best Graphic Design Agency in Al Ain | TML Agency",
+    description: "TML offers expert graphic design services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
+    url: "https://townmedialabs.com/services/graphic-design-in-al-ain",
+    siteName: "TML Agency",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Al Ain | TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Best Graphic Design Agency in Al Ain | TML Agency",
+    description: "TML offers expert graphic design services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function GraphicDesignInAlAinPage() {

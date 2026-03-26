@@ -114,18 +114,21 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
 
   return (
     <main className="bg-[#050505] text-white min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {/* Schema markup grouped to reduce DOM width */}
+      <div className="contents">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </div>
       <InnerNavbar />
 
       {/* Hero Section */}
@@ -149,7 +152,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           >
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-[11px] text-white/40 tracking-[0.2em] uppercase hover:text-white/60 transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-[11px] text-white/90 tracking-[0.2em] uppercase hover:text-white/90 transition-colors mb-8"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -172,7 +175,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="text-lg md:text-xl text-white/40 font-medium mb-4"
+            className="text-lg md:text-xl text-white/90 font-medium mb-4"
           >
             {data.tagline}
           </motion.p>
@@ -200,7 +203,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Talk to an Expert
             </a>
@@ -238,7 +241,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                     <span className="text-white/20">—</span>
                   )}
                 </div>
-                <p className="text-xs text-white/40 tracking-wide">{stat.label}</p>
+                <p className="text-xs text-white/90 tracking-wide">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -255,7 +258,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             What We Offer
           </motion.p>
@@ -271,12 +274,26 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {data.features.map((feature, i) => (
-              <FeatureCard key={feature.title} feature={feature} index={i} />
-            ))}
+            {(() => {
+              const chunkSize = 3;
+              const chunks: (typeof data.features)[] = [];
+              for (let c = 0; c < data.features.length; c += chunkSize) {
+                chunks.push(data.features.slice(c, c + chunkSize));
+              }
+              return chunks.map((chunk, ci) => (
+                <div key={ci} className="contents">
+                  {chunk.map((feature, i) => (
+                    <FeatureCard key={feature.title} feature={feature} index={ci * chunkSize + i} />
+                  ))}
+                </div>
+              ));
+            })()}
           </div>
         </div>
       </section>
+
+      {/* Group: SEO Content, Deep Content, Pricing, Process sections */}
+      <div className="contents">
 
       {/* SEO Content Section — card-style with accent border */}
       {data.seoContent && data.seoContent.length > 0 && (
@@ -289,7 +306,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase font-semibold"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold"
               >
                 Why {data.title}
               </motion.p>
@@ -409,7 +426,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                   </div>
                   <div className="flex-1">
                     <p className="text-[10px] text-[#ff4500]/60 tracking-[0.2em] uppercase font-semibold mb-2">Transparent Pricing</p>
-                    <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">Pricing &amp; Investment</h3>
+                    <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">{data.title} Pricing &amp; Investment</h2>
                     <p className="text-sm md:text-[15px] text-white/45 leading-[1.8] mb-6">{data.pricingNote}</p>
                     <Link
                       href="/contact"
@@ -436,7 +453,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Our Process
           </motion.p>
@@ -447,7 +464,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             transition={{ duration: 0.7, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16"
           >
-            How We Work
+            How Our {data.title} Process Works
             <span className="text-[#ff4500]">.</span>
           </motion.h2>
 
@@ -459,6 +476,11 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
         </div>
       </section>
 
+      </div>{/* End: SEO Content, Deep Content, Pricing, Process group */}
+
+      {/* Group: FAQ, CTA, Related sections */}
+      <div className="contents">
+
       {/* FAQ Section */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-3xl">
@@ -467,7 +489,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             FAQ
           </motion.p>
@@ -478,14 +500,25 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             transition={{ duration: 0.7, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center"
           >
-            Common Questions
+            {data.title} Questions Answered
             <span className="text-[#ff4500]">.</span>
           </motion.h2>
 
           <div className="space-y-3">
-            {data.faqs.map((faq, i) => (
-              <FAQItem key={i} faq={faq} index={i} />
-            ))}
+            {(() => {
+              const chunkSize = 4;
+              const chunks: (typeof data.faqs)[] = [];
+              for (let c = 0; c < data.faqs.length; c += chunkSize) {
+                chunks.push(data.faqs.slice(c, c + chunkSize));
+              }
+              return chunks.map((chunk, ci) => (
+                <div key={ci} className="space-y-3">
+                  {chunk.map((faq, i) => (
+                    <FAQItem key={ci * chunkSize + i} faq={faq} index={ci * chunkSize + i} />
+                  ))}
+                </div>
+              ));
+            })()}
           </div>
         </div>
       </section>
@@ -504,7 +537,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             transition={{ duration: 0.7, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-6"
           >
-            Ready to get started
+            Ready to elevate your {data.title.toLowerCase()}
             <span className="text-[#ff4500]">?</span>
           </motion.h2>
           <motion.p
@@ -512,7 +545,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             Let&apos;s discuss how our {data.title.toLowerCase()} services can help grow your business. Get a free consultation today.
           </motion.p>
@@ -531,7 +564,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>
@@ -550,7 +583,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
               transition={{ duration: 0.7, ease }}
               className="text-2xl sm:text-3xl font-medium text-white mb-10"
             >
-              Related Services
+              Services Related to {data.title}
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {relatedData.map((related, i) => (
@@ -568,7 +601,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                     <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
                       {related.title}
                     </h3>
-                    <p className="text-sm text-white/40 leading-relaxed mb-4">{related.description}</p>
+                    <p className="text-sm text-white/90 leading-relaxed mb-4">{related.description}</p>
                     <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
                       Learn More &rarr;
                     </span>
@@ -595,7 +628,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 From Our Blog
               </motion.p>
@@ -606,7 +639,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 transition={{ duration: 0.7, ease }}
                 className="text-2xl sm:text-3xl font-medium text-white mb-10"
               >
-                Related Articles
+                {data.title} Insights &amp; Articles
                 <span className="text-[#ff4500]">.</span>
               </motion.h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -664,7 +697,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 Industries We Serve
               </motion.p>
@@ -694,7 +727,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                       <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
                         {ind.name}
                       </h3>
-                      <p className="text-sm text-white/40 leading-relaxed mb-4 line-clamp-3">
+                      <p className="text-sm text-white/90 leading-relaxed mb-4 line-clamp-3">
                         {ind.description}
                       </p>
                       <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
@@ -708,6 +741,8 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           </section>
         );
       })()}
+
+      </div>{/* End: FAQ, CTA, Related group */}
 
       <FooterHome2 />
     </main>

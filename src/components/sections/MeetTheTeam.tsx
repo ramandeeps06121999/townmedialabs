@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "motion/react";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -24,16 +25,18 @@ export function MeetTheTeam() {
     >
       {/* Background video with parallax + desaturated treatment */}
       <motion.div className="absolute inset-0 z-0" style={{ y: bgY }}>
-        <video
+        <LazyVideo
           autoPlay
           loop
           muted
           playsInline
+          preload="none"
+          poster="/team-bg-poster.webp"
           className="absolute inset-0 w-full h-full object-cover object-center"
           style={{ filter: "brightness(0.65)" }}
         >
           <source src="/team-bg.mp4" type="video/mp4" />
-        </video>
+        </LazyVideo>
       </motion.div>
 
       {/* Slight dark overlay for text readability */}
@@ -92,9 +95,9 @@ export function MeetTheTeam() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-6"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-6"
         >
-          Since 2015 &middot; TML Agency
+          Since 2010 &middot; TML Agency
         </motion.p>
 
         {/* Big heading */}
@@ -125,7 +128,7 @@ export function MeetTheTeam() {
               <rect x="1" y="5" width="15" height="14" rx="2" fill="white" />
             </svg>
           </div>
-          <span className="text-xs font-semibold text-white/80">500+ Ads Shot</span>
+          <span className="text-xs font-semibold text-white/90">500+ Ads Shot</span>
           <motion.span
             className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"
             animate={{ opacity: [1, 0.4, 1] }}

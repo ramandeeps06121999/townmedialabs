@@ -63,7 +63,7 @@ export function AboutSection() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.2}>
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-[#777]">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white/90">
             TML is a full-service branding and digital marketing agency. We help
             businesses establish powerful brand identities and scale through
             data-driven marketing strategies. From branding and web development
@@ -94,7 +94,7 @@ export function AboutSection() {
                 suffix={stat.suffix}
                 className="text-5xl font-bold text-accent"
               />
-              <p className="mt-3 text-sm tracking-wide text-[#666]">
+              <p className="mt-3 text-sm tracking-wide text-white/90">
                 {stat.label}
               </p>
             </motion.div>

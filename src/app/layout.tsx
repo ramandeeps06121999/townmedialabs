@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
-import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MicrosoftClarity from "@/components/analytics/MicrosoftClarity";
-import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
-import StickyMobileCTA from "@/components/ui/StickyMobileCTA";
+import { DeferredSmoothScroll } from "@/components/providers/DeferredSmoothScroll";
+import LayoutExtras from "@/components/layout/LayoutExtras";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+  adjustFontFallback: true,
 });
 
 const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "-apple-system", "Segoe UI", "sans-serif"],
+  adjustFontFallback: true,
 });
 
 const siteUrl = "https://townmedialabs.com";
@@ -71,7 +78,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "TML Agency",
     type: "website",
-    locale: "en_US",
+    locale: "en_IN",
     images: [
       {
         url: "/og-image.png",
@@ -83,9 +90,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TML Agency | Full-Service Branding & Digital Marketing",
-    description:
-      "Full-service branding and digital marketing agency with 15+ years of experience. 500+ brands scaled, 98% client retention.",
+    site: "@tmlagency",
+    creator: "@tmlagency",
     images: ["/og-image.png"],
   },
   robots: {
@@ -106,7 +112,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   "@id": `${siteUrl}/#organization`,
   name: "TML Agency",
-  alternateName: ["Town Media Labs", "TML Branding & Digital Marketing Agency"],
+  alternateName: ["Town Media Labs", "TML Digital Marketing Agency", "TML Branding & Digital Marketing Agency"],
   url: siteUrl,
   logo: {
     "@type": "ImageObject",
@@ -117,48 +123,14 @@ const organizationJsonLd = {
   email: "info@townmedialabs.com",
   telephone: "+91-98726-48209",
   description:
-    "Full-service branding and digital marketing agency for ambitious businesses. 15+ years of experience, 500+ brands scaled, 98% client retention.",
-  foundingDate: "2016",
+    "Full-service digital marketing and branding agency based in Chandigarh, India. Specialising in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 500+ brands scaled, 15+ years of experience.",
+  foundingDate: "2010",
   numberOfEmployees: {
     "@type": "QuantitativeValue",
     minValue: 70,
+    maxValue: 100,
     unitText: "employees",
   },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "CO 112, Basement, Sector 34A",
-    addressLocality: "Chandigarh",
-    addressRegion: "Chandigarh",
-    postalCode: "160022",
-    addressCountry: "IN",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+91-98726-48209",
-    contactType: "customer service",
-    email: "info@townmedialabs.com",
-    availableLanguage: ["English", "Hindi"],
-  },
-  sameAs: [
-    "https://www.facebook.com/Town.media.labs",
-    "https://www.instagram.com/townmedialabs/",
-    "https://in.linkedin.com/company/townmedialabs",
-    "https://twitter.com/tmlagency",
-    "https://www.youtube.com/@tmlagency",
-  ],
-};
-
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": `${siteUrl}/#localbusiness`,
-  name: "TML Agency",
-  url: siteUrl,
-  telephone: "+91-98726-48209",
-  email: "info@townmedialabs.com",
-  image: `${siteUrl}/logo.png`,
-  description:
-    "Full-service branding and digital marketing agency for ambitious businesses.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "CO 112, Basement, Sector 34A",
@@ -172,6 +144,71 @@ const localBusinessJsonLd = {
     latitude: "30.7281",
     longitude: "76.7726",
   },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+91-98726-48209",
+      contactType: "customer service",
+      email: "info@townmedialabs.com",
+      availableLanguage: ["English", "Hindi"],
+      areaServed: ["IN", "US", "GB", "CA", "AU", "NZ", "AE"],
+    },
+  ],
+  sameAs: [
+    "https://www.facebook.com/Town.media.labs",
+    "https://www.instagram.com/townmedialabs/",
+    "https://in.linkedin.com/company/townmedialabs",
+    "https://x.com/tmlagency",
+    "https://www.youtube.com/@tmlagency",
+  ],
+  knowsAbout: [
+    "Digital Marketing",
+    "Branding",
+    "Web Development",
+    "Search Engine Optimization",
+    "Google Ads",
+    "Social Media Marketing",
+    "Performance Marketing",
+    "Content Marketing",
+    "Graphic Design",
+    "Lead Generation",
+  ],
+};
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${siteUrl}/#localbusiness`,
+  name: "TML Agency",
+  url: siteUrl,
+  telephone: "+91-98726-48209",
+  email: "info@townmedialabs.com",
+  image: `${siteUrl}/logo.png`,
+  description:
+    "Full-service branding and digital marketing agency based in Chandigarh, India. 500+ brands scaled, 15+ years of experience.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "CO 112, Basement, Sector 34A",
+    addressLocality: "Chandigarh",
+    addressRegion: "Chandigarh",
+    postalCode: "160022",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "30.7281",
+    longitude: "76.7726",
+  },
+  hasMap: "https://maps.google.com/?cid=TML+Agency+Chandigarh",
+  areaServed: [
+    { "@type": "Country", name: "India" },
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "United Kingdom" },
+    { "@type": "Country", name: "Canada" },
+    { "@type": "Country", name: "Australia" },
+    { "@type": "Country", name: "New Zealand" },
+    { "@type": "Country", name: "United Arab Emirates" },
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -184,14 +221,37 @@ const localBusinessJsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "500",
+    reviewCount: "3",
     bestRating: "5",
   },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Sarah Mitchell" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "TML completely transformed our digital presence. Within 90 days we saw a 3x return on our ad spend and our brand finally felt like us.",
+      publisher: { "@type": "Organization", name: "Luxe Interiors" },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "James Carter" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Their team feels like an extension of ours. No hand-holding needed — they just get it and deliver, every single time.",
+      publisher: { "@type": "Organization", name: "CB Builders" },
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Priya Sharma" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "We went from zero online presence to ranking on page one for 12 keywords in under 6 months. The ROI speaks for itself.",
+      publisher: { "@type": "Organization", name: "TechVault" },
+    },
+  ],
   sameAs: [
     "https://www.facebook.com/Town.media.labs",
     "https://www.instagram.com/townmedialabs/",
     "https://in.linkedin.com/company/townmedialabs",
-    "https://twitter.com/tmlagency",
+    "https://x.com/tmlagency",
     "https://www.youtube.com/@tmlagency",
   ],
   knowsAbout: [
@@ -255,7 +315,7 @@ const websiteJsonLd = {
   name: "TML Agency",
   url: siteUrl,
   description:
-    "Full-service branding and digital marketing agency with 15+ years of experience. 500+ brands scaled, 98% client retention.",
+    "TML Agency is Chandigarh's top digital marketing agency offering SEO, Google Ads, branding, web development and social media marketing services. 500+ brands scaled.",
   publisher: {
     "@id": `${siteUrl}/#organization`,
   },
@@ -278,6 +338,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -300,9 +364,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${syne.variable} antialiased`}>
         <GoogleAnalytics />
         <MicrosoftClarity />
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
-        <WhatsAppFloat />
-        <StickyMobileCTA />
+        {children}
+        <DeferredSmoothScroll />
+        <LayoutExtras />
       </body>
     </html>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import InnerNavbar from "@/components/layout/InnerNavbar";
@@ -102,7 +101,7 @@ export default function AboutPageClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-8"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-8"
           >
             Who We Are
           </motion.p>
@@ -123,7 +122,7 @@ export default function AboutPageClient() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="text-base md:text-lg text-white/40 leading-relaxed max-w-3xl mx-auto"
+            className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto"
           >
             Chandigarh&apos;s leading digital marketing agency, helping brands grow through
             strategic branding, performance marketing, web development, and creative excellence
@@ -142,7 +141,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Our Story
           </motion.p>
@@ -169,7 +168,7 @@ export default function AboutPageClient() {
               className="space-y-6 text-sm md:text-base text-white/90 leading-relaxed"
             >
               <p>
-                TML Agency was founded in 2016 in the heart of Chandigarh with a clear mission:
+                TML Agency was founded in 2010 in the heart of Chandigarh with a clear mission:
                 to bridge the gap between creative excellence and measurable business results. What
                 began as a small, passionate team of digital marketing enthusiasts has evolved into
                 one of the most trusted creative agencies in North India, serving clients who demand
@@ -222,7 +221,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             Purpose & Direction
           </motion.p>
@@ -304,7 +303,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             Why Choose Us
           </motion.p>
@@ -325,7 +324,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 text-center max-w-2xl mx-auto mb-12 md:mb-16"
+            className="text-sm md:text-base text-white/90 text-center max-w-2xl mx-auto mb-12 md:mb-16"
           >
             Numbers that reflect our commitment to delivering outstanding digital marketing
             results for brands across Chandigarh and India.
@@ -347,7 +346,7 @@ export default function AboutPageClient() {
                   )}
                 </div>
                 <h3 className="text-base font-semibold text-white mb-2">{stat.label}</h3>
-                <p className="text-xs text-white/40 leading-relaxed">{stat.description}</p>
+                <p className="text-xs text-white/90 leading-relaxed">{stat.description}</p>
               </motion.div>
             ))}
           </div>
@@ -364,7 +363,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             What We Stand For
           </motion.p>
@@ -394,7 +393,7 @@ export default function AboutPageClient() {
                   {value.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{value.title}</h3>
-                <p className="text-sm text-white/40 leading-relaxed">{value.description}</p>
+                <p className="text-sm text-white/90 leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -411,7 +410,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             The People Behind TML
           </motion.p>
@@ -432,7 +431,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 max-w-2xl mb-12 md:mb-16"
+            className="text-sm md:text-base text-white/90 max-w-2xl mb-12 md:mb-16"
           >
             Our leadership team brings together decades of combined experience in digital
             marketing, branding, technology, and creative strategy — guiding TML Agency&apos;s
@@ -455,7 +454,7 @@ export default function AboutPageClient() {
                   </span>
                 </div>
                 <h3 className="text-sm md:text-base font-semibold text-white">{person.name}</h3>
-                <p className="text-xs text-white/40 mt-1">{person.role}</p>
+                <p className="text-xs text-white/90 mt-1">{person.role}</p>
               </motion.div>
             ))}
           </div>
@@ -487,7 +486,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto"
           >
             Whether you need branding, web development, SEO, or a full digital marketing
             strategy — our Chandigarh-based team is ready to help you achieve measurable results.
@@ -509,7 +508,7 @@ export default function AboutPageClient() {
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Explore Our Services
             </Link>

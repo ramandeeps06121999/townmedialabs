@@ -83,13 +83,19 @@ function SpotlightCard({
   const cardRef = useRef<HTMLDivElement>(null);
   const [spotlightPos, setSpotlightPos] = useState({ x: 50, y: 50 });
   const [isHovered, setIsHovered] = useState(false);
+  const rafRef = useRef<number>(0);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    setSpotlightPos({ x, y });
+    if (rafRef.current) return; // throttle: skip if a frame is already queued
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = 0;
+      if (!cardRef.current) return;
+      const rect = cardRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      setSpotlightPos({ x, y });
+    });
   }, []);
 
   return (
@@ -206,7 +212,7 @@ export function TestimonialsHome2() {
 
   const quoteY = useSpring(scrollY, { stiffness: 50, damping: 20 });
 
-  // Auto-rotate indicator
+  // Auto-rotate indicator — advances every 6 seconds
   const [autoProgress, setAutoProgress] = useState(0);
 
   useEffect(() => {
@@ -217,9 +223,9 @@ export function TestimonialsHome2() {
           setActiveDot((d) => (d + 1) % testimonials.length);
           return 0;
         }
-        return p + 1;
+        return p + 2;
       });
-    }, 60);
+    }, 120);
     return () => clearInterval(interval);
   }, [inView]);
 
@@ -289,7 +295,7 @@ export function TestimonialsHome2() {
           initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
         >
           Client stories
         </motion.p>
@@ -302,14 +308,14 @@ export function TestimonialsHome2() {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.08] tracking-tight text-white max-w-4xl mb-6"
         >
           Don&apos;t take our word for it.{" "}
-          <span className="text-white/40 italic">Take theirs.</span>
+          <span className="text-white/90 italic">Take theirs.</span>
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2, ease }}
-          className="text-sm md:text-base text-white/40 max-w-lg leading-relaxed mb-16"
+          className="text-sm md:text-base text-white/90 max-w-lg leading-relaxed mb-16"
         >
           Real results from real businesses. Here&apos;s what our clients have
           to say about working with TML.
@@ -359,7 +365,7 @@ export function TestimonialsHome2() {
               </div>
 
               {/* Quote with word-by-word reveal */}
-              <p className="text-sm md:text-base text-white/70 leading-relaxed flex-1 mb-8">
+              <p className="text-sm md:text-base text-white/90 leading-relaxed flex-1 mb-8">
                 <WordReveal
                   text={t.quote}
                   inView={inView}
@@ -418,7 +424,7 @@ export function TestimonialsHome2() {
           <div className="flex items-center gap-3">
             <span className="text-3xl font-semibold text-white tracking-tight">
               <AnimatedCounter target={4} suffix="" duration={1} className="" />
-              <span className="text-white/60">.</span>
+              <span className="text-white/90">.</span>
               <AnimatedCounter target={9} suffix="" duration={1.5} className="" />
             </span>
             <div className="flex gap-0.5">
@@ -446,43 +452,6 @@ export function TestimonialsHome2() {
         }
       `}</style>
 
-      {/* JSON-LD Review / AggregateRating schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: "TML Agency Digital Marketing Services",
-            description:
-              "Full-service digital marketing, branding, SEO, and advertising solutions by TML Agency.",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              bestRating: "5",
-              ratingCount: "500",
-              reviewCount: String(testimonials.length),
-            },
-            review: testimonials.map((t) => ({
-              "@type": "Review",
-              author: {
-                "@type": "Person",
-                name: t.name,
-              },
-              reviewRating: {
-                "@type": "Rating",
-                ratingValue: String(t.rating),
-                bestRating: "5",
-              },
-              reviewBody: t.quote,
-              publisher: {
-                "@type": "Organization",
-                name: t.company,
-              },
-            })),
-          }),
-        }}
-      />
     </section>
   );
 }

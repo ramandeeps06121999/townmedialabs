@@ -41,6 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@tmlagency",
     title: "About TML Agency | Leading Digital Marketing Agency in Chandigarh",
     description:
       "Chandigarh's leading digital marketing agency — 500+ clients, 70+ team members, 15+ years of branding, SEO & web development excellence.",
@@ -63,7 +64,7 @@ const aboutPageJsonLd = {
     logo: `${siteUrl}/logo.png`,
     description:
       "Full-service digital marketing and branding agency in Chandigarh, India. Specialising in branding, web development, SEO, Google Ads, social media marketing, and performance marketing.",
-    foundingDate: "2016",
+    foundingDate: "2010",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
       minValue: 70,
@@ -77,10 +78,10 @@ const aboutPageJsonLd = {
     },
     email: "info@townmedialabs.com",
     sameAs: [
-      "https://www.facebook.com/tmlagency",
-      "https://www.instagram.com/tmlagency",
-      "https://www.linkedin.com/company/tmlagency",
-      "https://twitter.com/tmlagency",
+      "https://www.facebook.com/Town.media.labs",
+      "https://www.instagram.com/townmedialabs/",
+      "https://in.linkedin.com/company/townmedialabs",
+      "https://x.com/tmlagency",
       "https://www.youtube.com/@tmlagency",
     ],
     knowsAbout: [

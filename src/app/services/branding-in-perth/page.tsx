@@ -8,6 +8,25 @@ export const metadata: Metadata = {
   title: "Best Branding Agency in Perth | TML Agency",
   description: "TML offers expert branding services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding perth", "branding agency perth", "branding company perth"],
+  alternates: {
+    canonical: "https://townmedialabs.com/services/branding-in-perth",
+  },
+  openGraph: {
+    title: "Best Branding Agency in Perth | TML Agency",
+    description: "TML offers expert branding services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
+    url: "https://townmedialabs.com/services/branding-in-perth",
+    siteName: "TML Agency",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Perth | TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Best Branding Agency in Perth | TML Agency",
+    description: "TML offers expert branding services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function BrandingInPerthPage() {

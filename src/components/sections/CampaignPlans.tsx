@@ -161,7 +161,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
       </div>
 
       {/* Team size */}
-      <div className="flex items-center gap-2 text-white/40 text-sm mb-5">
+      <div className="flex items-center gap-2 text-white/90 text-sm mb-5">
         <TeamIcon />
         <span>Team Size: {tier.teamSize}</span>
       </div>
@@ -192,7 +192,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
               delay: 0.3 + index * 0.1 + i * 0.06,
               ease,
             }}
-            className="flex items-start gap-3 text-sm text-white/60 leading-relaxed"
+            className="flex items-start gap-3 text-sm text-white/90 leading-relaxed"
           >
             <span className="text-[#ff4500] mt-0.5">
               <CheckIcon />
@@ -210,7 +210,7 @@ function TierCard({ tier, index }: { tier: Tier; index: number }) {
         className={`mt-6 flex items-center gap-2 text-sm font-semibold tracking-wide transition-colors ${
           tier.popular
             ? "text-[#ff4500] hover:text-[#ff6a33]"
-            : "text-white/40 hover:text-white/70"
+            : "text-white/90 hover:text-white/90"
         }`}
       >
         <span>Get Started</span>
@@ -261,7 +261,7 @@ export function CampaignPlans() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.6, ease }}
-              className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-6"
+              className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-6"
             >
               Tailored strategies
             </motion.p>
@@ -284,7 +284,7 @@ export function CampaignPlans() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2, ease }}
-              className="text-base md:text-lg text-white/50 mb-8 max-w-md"
+              className="text-base md:text-lg text-white/90 mb-8 max-w-md"
             >
               Let us write a{" "}
               <span className="font-semibold text-[#ff4500]">custom plan</span>{" "}
@@ -304,7 +304,7 @@ export function CampaignPlans() {
               }}
               className="inline-flex items-center gap-3 self-start px-6 py-3.5 rounded-xl
                 bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm
-                text-white/80 text-sm font-medium tracking-wide
+                text-white/90 text-sm font-medium tracking-wide
                 hover:bg-white/[0.06] hover:border-[#ff4500]/30 hover:text-white
                 hover:shadow-[0_0_30px_rgba(255,69,0,0.1)]
                 transition-all duration-500"
@@ -313,7 +313,7 @@ export function CampaignPlans() {
                 <PhoneIcon />
               </span>
               Talk to Industry Expert
-              <span className="text-white/40 group-hover:text-white/60 transition-colors">
+              <span className="text-white/90 group-hover:text-white/90 transition-colors">
                 &rarr;
               </span>
             </motion.a>

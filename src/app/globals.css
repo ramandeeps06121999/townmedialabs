@@ -275,6 +275,48 @@ h1, h2, h3 {
   66% { transform: translateY(5px) rotate(-1deg); }
 }
 
+/* ──────────── Hero CSS animations (replaces motion.js for LCP) ──────────── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroScaleX {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes heroPulseDot {
+  0%, 100% { box-shadow: 0 0 3px rgba(255,69,0,0.4); }
+  50%      { box-shadow: 0 0 10px rgba(255,69,0,0.6); }
+}
+@keyframes heroBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
+.hero-fade-up {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.hero-scale-x {
+  transform: scaleX(0);
+  animation: heroScaleX 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.hero-pulse-dot {
+  animation: heroPulseDot 2s ease-in-out infinite;
+}
+.hero-bounce {
+  animation: heroBounce 1.5s ease-in-out infinite;
+}
+
+/* Staggered delays */
+.hero-delay-1 { animation-delay: 0.15s; }
+.hero-delay-2 { animation-delay: 0.3s; }
+.hero-delay-3 { animation-delay: 0.5s; }
+.hero-delay-4 { animation-delay: 0.7s; }
+.hero-delay-5 { animation-delay: 0.8s; }
+.hero-delay-6 { animation-delay: 0.9s; }
+.hero-delay-7 { animation-delay: 1.2s; }
+
 /* ──────────── Reduced motion ──────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -284,4 +326,6 @@ h1, h2, h3 {
   }
   .hero-glow, .corner-glow, .corner-glow-bl { animation: none; }
   .marquee-track { animation: none; }
+  .hero-fade-up, .hero-scale-x { opacity: 1; transform: none; animation: none; }
+  .hero-pulse-dot, .hero-bounce { animation: none; }
 }

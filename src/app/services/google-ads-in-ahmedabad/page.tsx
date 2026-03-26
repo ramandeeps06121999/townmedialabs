@@ -8,6 +8,25 @@ export const metadata: Metadata = {
   title: "Best Google Ads Agency in Ahmedabad | TML Agency",
   description: "TML offers expert Google Ads management services in Ahmedabad. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["Google Ads management ahmedabad", "Google Ads management agency ahmedabad", "Google Ads management company ahmedabad"],
+  alternates: {
+    canonical: "https://townmedialabs.com/services/google-ads-in-ahmedabad",
+  },
+  openGraph: {
+    title: "Best Google Ads Agency in Ahmedabad | TML Agency",
+    description: "TML offers expert Google Ads management services in Ahmedabad. Proven results for 500+ businesses. Get a free consultation today.",
+    url: "https://townmedialabs.com/services/google-ads-in-ahmedabad",
+    siteName: "TML Agency",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Google Ads Agency in Ahmedabad | TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Best Google Ads Agency in Ahmedabad | TML Agency",
+    description: "TML offers expert Google Ads management services in Ahmedabad. Proven results for 500+ businesses. Get a free consultation today.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function GoogleadsInAhmedabadPage() {

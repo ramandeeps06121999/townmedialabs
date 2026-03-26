@@ -38,6 +38,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Careers at TML Agency | Join Our Creative Team",
+    description:
+      "We're hiring! Join Chandigarh's top digital marketing agency. Open roles in AI, video, design, social media & more.",
+    images: ["/og-image.png"],
+  },
 };
 
 const careerJsonLd = {

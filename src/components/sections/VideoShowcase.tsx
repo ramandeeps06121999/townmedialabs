@@ -10,22 +10,23 @@ import {
   useMotionValue,
   useAnimationFrame,
 } from "motion/react";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
 const reels = [
-  { src: "/1.mp4", label: "Brand Motion", client: "Luxe Interiors" },
-  { src: "/2.mp4", label: "Visual Identity", client: "Nova Studios" },
-  { src: "/3.mp4", label: "Ad Creative", client: "TechVault" },
-  { src: "/4.mp4", label: "Social Content", client: "Meridian Co" },
-  { src: "/5.mp4", label: "Campaign Film", client: "Atlas Digital" },
-  { src: "/6.mp4", label: "Product Story", client: "Vero Fashion" },
+  { src: "/1.mp4", poster: "/1-poster.webp", label: "Brand Motion", client: "Luxe Interiors" },
+  { src: "/2.mp4", poster: "/2-poster.webp", label: "Visual Identity", client: "Nova Studios" },
+  { src: "/3.mp4", poster: "/3-poster.webp", label: "Ad Creative", client: "TechVault" },
+  { src: "/4.mp4", poster: "/4-poster.webp", label: "Social Content", client: "Meridian Co" },
+  { src: "/5.mp4", poster: "/5-poster.webp", label: "Campaign Film", client: "Atlas Digital" },
+  { src: "/6.mp4", poster: "/6-poster.webp", label: "Product Story", client: "Vero Fashion" },
 ];
 
 /* Floating particles background */
 function Particles() {
   const particles = useRef(
-    Array.from({ length: 30 }, (_, i) => ({
+    Array.from({ length: 8 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -158,7 +159,7 @@ export function VideoShowcase() {
             initial={{ opacity: 0, y: 14 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
           >
             Our work in motion
           </motion.p>
@@ -171,7 +172,7 @@ export function VideoShowcase() {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.08] tracking-tight text-white max-w-4xl"
             >
               Brands come alive{" "}
-              <span className="text-white/40 italic">through motion.</span>
+              <span className="text-white/90 italic">through motion.</span>
             </motion.h2>
 
             <motion.p
@@ -233,12 +234,13 @@ export function VideoShowcase() {
                 }}
                 style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
               >
-                <video
+                <LazyVideo
                   autoPlay
                   muted
                   loop
                   playsInline
                   preload="none"
+                  poster={reel.poster}
                   className={`h-full w-full object-cover transition-all duration-700 ${
                     hoveredIndex !== null && hoveredIndex !== i
                       ? "scale-[0.97] brightness-[0.3]"
@@ -246,7 +248,7 @@ export function VideoShowcase() {
                   }`}
                 >
                   <source src={reel.src} type="video/mp4" />
-                </video>
+                </LazyVideo>
 
                 {/* Film grain overlay */}
                 <div
@@ -355,7 +357,7 @@ export function VideoShowcase() {
                   >
                     <div className="w-0 h-0 border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent border-l-[12px] border-l-white ml-1" />
                   </motion.div>
-                  <p className="text-[8px] text-white/50 tracking-[0.15em] uppercase text-center mt-2 font-medium">Watch</p>
+                  <p className="text-[8px] text-white/90 tracking-[0.15em] uppercase text-center mt-2 font-medium">Watch</p>
                 </div>
 
                 {/* Top accent glow on hover */}

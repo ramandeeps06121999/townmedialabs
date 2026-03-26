@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Image from "next/image";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const stats = [
   { label: "Brands scaled", num: 500, suffix: "+", isDecimal: false, intPart: 0, decPart: 0 },
@@ -87,9 +88,9 @@ export function CTAHome2() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-4"
           >
-            Since 2015
+            Since 2010
           </motion.p>
 
           <motion.h2
@@ -107,7 +108,7 @@ export function CTAHome2() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.7, delay: 0.2, ease }}
-            className="text-xl sm:text-2xl md:text-3xl font-medium text-white/40 italic tracking-tight mb-12"
+            className="text-xl sm:text-2xl md:text-3xl font-medium text-white/90 italic tracking-tight mb-12"
           >
             Industry Titans
           </motion.p>
@@ -132,7 +133,7 @@ export function CTAHome2() {
               }}
             />
             <div className="relative rounded-xl overflow-hidden">
-              <video
+              <LazyVideo
                 autoPlay
                 muted
                 loop
@@ -142,7 +143,7 @@ export function CTAHome2() {
                 className="w-full h-auto object-cover aspect-video"
               >
                 <source src="/tml-showreel.mp4" type="video/mp4" />
-              </video>
+              </LazyVideo>
             </div>
           </motion.div>
         </div>
@@ -208,7 +209,7 @@ export function CTAHome2() {
                 className="relative overflow-hidden rounded-xl"
               >
                 <Image
-                  src="/cta-image.png"
+                  src="/cta-image.webp"
                   alt="TML Agency creative professional with dramatic lighting"
                   width={800}
                   height={1200}
@@ -253,7 +254,7 @@ export function CTAHome2() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.7, delay: 0.25, ease }}
-                className="text-sm md:text-base text-white/50 max-w-lg leading-relaxed mb-10"
+                className="text-sm md:text-base text-white/90 max-w-lg leading-relaxed mb-10"
               >
                 Book a free strategy call. We&apos;ll break down what&apos;s
                 working, what&apos;s not, and exactly how we&apos;d grow your
@@ -310,7 +311,7 @@ export function CTAHome2() {
                       )}
                       <span>{stat.suffix}</span>
                     </p>
-                    <p className="text-[10px] md:text-xs text-white/40 tracking-[0.15em] uppercase mt-1">
+                    <p className="text-[10px] md:text-xs text-white/90 tracking-[0.15em] uppercase mt-1">
                       {stat.label}
                     </p>
                   </motion.div>
@@ -360,7 +361,7 @@ export function CTAHome2() {
                   }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="inline-block rounded-xl border border-white/[0.08] bg-white/[0.03] px-10 py-4 text-sm font-semibold text-white/80 text-center backdrop-blur-sm hover:text-white"
+                  className="inline-block rounded-xl border border-white/[0.08] bg-white/[0.03] px-10 py-4 text-sm font-semibold text-white/90 text-center backdrop-blur-sm hover:text-white"
                 >
                   View Our Work
                 </motion.a>
@@ -393,8 +394,8 @@ export function CTAHome2() {
                     </motion.div>
                   ))}
                 </div>
-                <p className="text-xs text-white/40">
-                  <span className="text-white/60 font-semibold">500+</span> brands trust us
+                <p className="text-xs text-white/90">
+                  <span className="text-white/90 font-semibold">500+</span> brands trust us
                 </p>
               </motion.div>
 

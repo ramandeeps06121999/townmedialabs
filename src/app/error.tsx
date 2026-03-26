@@ -40,7 +40,7 @@ export default function Error({
           </button>
           <a
             href="/"
-            className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+            className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
           >
             Back to Home
           </a>

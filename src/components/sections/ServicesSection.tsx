@@ -68,7 +68,7 @@ export function ServicesSection() {
             </h2>
           </RevealOnScroll>
           <RevealOnScroll delay={0.2}>
-            <p className="mt-4 max-w-xl text-[#666]">
+            <p className="mt-4 max-w-xl text-white/90">
               A comprehensive suite of branding and marketing services designed
               to take your business to the next level.
             </p>
@@ -102,7 +102,7 @@ export function ServicesSection() {
             <h3 className="text-xl font-semibold text-white">
               <TextScramble text={service.title} delay={0.5 + i * 0.1} />
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#666]">
+            <p className="mt-3 text-sm leading-relaxed text-white/90">
               {service.description}
             </p>
             <div className="mt-6 h-[1px] w-0 bg-gradient-to-r from-accent to-transparent transition-all duration-700 group-hover:w-full" />

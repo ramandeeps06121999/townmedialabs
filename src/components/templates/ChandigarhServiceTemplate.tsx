@@ -77,22 +77,25 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
 
   return (
     <main className="bg-[#050505] text-white min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {/* Schema markup grouped to reduce DOM width */}
+      <div className="contents">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </div>
       <InnerNavbar />
 
       {/* Hero */}
@@ -135,7 +138,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="text-lg md:text-xl text-white/40 font-medium mb-4"
+            className="text-lg md:text-xl text-white/90 font-medium mb-4"
           >
             {data.tagline}
           </motion.p>
@@ -163,7 +166,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
             </Link>
             <Link
               href={`/services/${data.serviceSlug}`}
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               View Full Service Details
             </Link>
@@ -200,7 +203,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
                       <span className="text-white/20">—</span>
                     )}
                   </div>
-                  <p className="text-xs text-white/40">{stat.label}</p>
+                  <p className="text-xs text-white/90">{stat.label}</p>
                 </motion.div>
               ))}
             </div>
@@ -208,12 +211,15 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
         </section>
       )}
 
+      {/* Group: Core content — Why Choose, Process, Features, Industries */}
+      <div className="contents">
+
       {/* Why Choose Us */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4">Why Choose TML</motion.p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Why Choose TML</motion.p>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-            Why Chandigarh businesses choose us<span className="text-[#ff4500]">.</span>
+            Why Chandigarh Businesses Choose Our {serviceData?.title || data.title}<span className="text-[#ff4500]">.</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {data.whyChoose.map((item, i) => (
@@ -224,7 +230,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
                   <div className="w-2 h-2 rounded-full bg-[#ff4500]" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-sm text-white/40 leading-relaxed">{item.description}</p>
+                <p className="text-sm text-white/90 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -236,7 +242,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
       {/* How We Work - Process */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-5xl">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4">How We Work</motion.p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">How We Work</motion.p>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
             Our {serviceData?.title || data.title} Process in Chandigarh<span className="text-[#ff4500]">.</span>
           </motion.h2>
@@ -256,7 +262,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
                   <span className="text-xl font-bold text-[#ff4500]">{step.number}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-                <p className="text-sm text-white/40 leading-relaxed">{step.description}</p>
+                <p className="text-sm text-white/90 leading-relaxed">{step.description}</p>
               </motion.div>
             ))}
           </div>
@@ -269,20 +275,34 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
       {serviceData && (
         <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
           <div className="relative mx-auto max-w-7xl">
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4">What We Offer</motion.p>
+            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">What We Offer</motion.p>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
               Our {serviceData.title} Services in Chandigarh<span className="text-[#ff4500]">.</span>
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {serviceData.features.map((f, i) => (
-                <motion.div key={f.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.08, ease }}
-                  className="p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500"
-                >
-                  <div className="text-[10px] text-white/20 font-mono mb-4">{String(i + 1).padStart(2, "0")}</div>
-                  <h3 className="text-lg font-semibold text-white mb-3">{f.title}</h3>
-                  <p className="text-sm text-white/40 leading-relaxed">{f.description}</p>
-                </motion.div>
-              ))}
+              {(() => {
+                const chunkSize = 3;
+                const chunks: (typeof serviceData.features)[] = [];
+                for (let c = 0; c < serviceData.features.length; c += chunkSize) {
+                  chunks.push(serviceData.features.slice(c, c + chunkSize));
+                }
+                return chunks.map((chunk, ci) => (
+                  <div key={ci} className="contents">
+                    {chunk.map((f, i) => {
+                      const idx = ci * chunkSize + i;
+                      return (
+                        <motion.div key={f.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: idx * 0.08, ease }}
+                          className="p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500"
+                        >
+                          <div className="text-[10px] text-white/20 font-mono mb-4">{String(idx + 1).padStart(2, "0")}</div>
+                          <h3 className="text-lg font-semibold text-white mb-3">{f.title}</h3>
+                          <p className="text-sm text-white/90 leading-relaxed">{f.description}</p>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                ));
+              })()}
             </div>
           </div>
         </section>
@@ -293,28 +313,44 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
       {/* Industries We Serve */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-5xl text-center">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4">Who We Work With</motion.p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Who We Work With</motion.p>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-            Industries We Serve in Chandigarh<span className="text-[#ff4500]">.</span>
+            {serviceData?.title || data.title} for Chandigarh Industries<span className="text-[#ff4500]">.</span>
           </motion.h2>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            {industries.map((industry, i) => (
-              <motion.span
-                key={industry}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: i * 0.05, ease }}
-                className="px-5 py-2.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-sm text-white/60 font-medium hover:border-[#ff4500]/40 hover:bg-[#ff4500]/10 hover:text-white transition-all duration-300 cursor-default"
-              >
-                {industry}
-              </motion.span>
-            ))}
+            {(() => {
+              const chunkSize = 4;
+              const chunks: string[][] = [];
+              for (let c = 0; c < industries.length; c += chunkSize) {
+                chunks.push(industries.slice(c, c + chunkSize));
+              }
+              return chunks.map((chunk, ci) => (
+                <div key={ci} className="contents">
+                  {chunk.map((industry, i) => (
+                    <motion.span
+                      key={industry}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.4, delay: (ci * chunkSize + i) * 0.05, ease }}
+                      className="px-5 py-2.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-sm text-white/90 font-medium hover:border-[#ff4500]/40 hover:bg-[#ff4500]/10 hover:text-white transition-all duration-300 cursor-default"
+                    >
+                      {industry}
+                    </motion.span>
+                  ))}
+                </div>
+              ));
+            })()}
           </div>
         </div>
       </section>
 
+      </div>{/* End: Core content group */}
+
       <SectionDivider />
+
+      {/* Group: Local SEO, FAQ, Cross-links, CTA */}
+      <div className="contents">
 
       {/* Local SEO Content */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
@@ -322,7 +358,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12">
             {data.title} — Your Local Partner<span className="text-[#ff4500]">.</span>
           </motion.h2>
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1, ease }} className="space-y-5 text-sm md:text-base text-white/40 leading-relaxed mb-12">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1, ease }} className="space-y-5 text-sm md:text-base text-white/90 leading-relaxed mb-12">
             {data.localContent.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -334,11 +370,11 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
             <div className="p-6 md:p-8 rounded-2xl border border-[#ff4500]/10 bg-[#ff4500]/[0.03]">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                 <div className="text-3xl md:text-4xl font-bold text-[#ff4500]">67%</div>
-                <p className="text-sm text-white/50 leading-relaxed">
+                <p className="text-sm text-white/90 leading-relaxed">
                   of Chandigarh businesses have increased their digital marketing budgets in the past year, making the tricity one of North India&apos;s fastest-growing digital markets.
                 </p>
               </div>
-              <p className="text-sm text-white/40 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 With over 1.2 million internet users in the tricity and a rapidly growing startup ecosystem anchored by IT Park and Mohali&apos;s Phase 8B, Chandigarh presents massive opportunities for businesses investing in {serviceData?.title.toLowerCase() || "digital marketing"}. The city&apos;s young, tech-savvy population and high smartphone penetration make it an ideal market for forward-thinking brands.
               </p>
             </div>
@@ -350,7 +386,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
         <div className="relative mx-auto max-w-3xl">
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
-            Frequently Asked Questions<span className="text-[#ff4500]">.</span>
+            {serviceData?.title || data.title} in Chandigarh — FAQs<span className="text-[#ff4500]">.</span>
           </motion.h2>
           <div className="space-y-3">
             {data.faqs.map((faq, i) => (
@@ -361,7 +397,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
                   <h3 className="text-white font-medium text-sm md:text-base pr-4">{faq.q}</h3>
                   <span className="text-white/30 text-xl transition-transform duration-300 group-open:rotate-45 flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm text-white/50 leading-relaxed border-t border-white/[0.04] pt-4">
+                <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm text-white/90 leading-relaxed border-t border-white/[0.04] pt-4">
                   {faq.a}
                 </div>
               </motion.details>
@@ -375,7 +411,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
       {/* Also Available In - Cross-linking */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-3xl text-center">
-          <motion.h3 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-lg sm:text-xl font-medium text-white/60 mb-6">
+          <motion.h3 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-lg sm:text-xl font-medium text-white/90 mb-6">
             We also offer {serviceData?.title || data.title} in
           </motion.h3>
           <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease }} className="flex flex-wrap items-center justify-center gap-3">
@@ -383,7 +419,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
               <Link
                 key={loc.slug}
                 href={`/services/${data.serviceSlug}-in-${loc.slug}`}
-                className="px-4 py-2 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/50 hover:border-[#ff4500]/30 hover:text-white hover:bg-[#ff4500]/10 transition-all duration-300"
+                className="px-4 py-2 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/90 hover:border-[#ff4500]/30 hover:text-white hover:bg-[#ff4500]/10 transition-all duration-300"
               >
                 {loc.label}
               </Link>
@@ -401,21 +437,23 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
         </div>
         <div className="relative mx-auto max-w-3xl text-center">
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-6">
-            Ready to grow in Chandigarh<span className="text-[#ff4500]">?</span>
+            Ready to Grow Your {serviceData?.title || data.title} in Chandigarh<span className="text-[#ff4500]">?</span>
           </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease }} className="text-sm md:text-base text-white/40 mb-10 max-w-xl mx-auto">
+          <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease }} className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto">
             Get a free consultation for your {serviceData?.title.toLowerCase() || "project"} needs. No obligations — just expert advice from Chandigarh&apos;s top agency.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact" className="px-8 py-4 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_30px_rgba(255,69,0,0.3)]">
               Get Your Free Consultation
             </Link>
-            <a href="tel:+919872648209" className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors">
+            <a href="tel:+919872648209" className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors">
               Call Us Now
             </a>
           </motion.div>
         </div>
       </section>
+
+      </div>{/* End: Local SEO, FAQ, Cross-links, CTA group */}
 
       <FooterHome2 />
     </main>

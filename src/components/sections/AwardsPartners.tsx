@@ -36,7 +36,7 @@ const marqueeLogos: MarqueeLogo[] = [
   { name: "WordPress", src: "/partner/WordPress-Logo.png", width: 100, height: 100 },
   { name: "Bing Ads", src: "/partner/bing-advertising-certifications.webp", width: 100, height: 100 },
   { name: "Google Cloud", src: "/partner/Google-Partner.jpg", width: 100, height: 100 },
-  { name: "Claude AI", src: "/partner/Claude_Logo_2023-s5120.png", width: 100, height: 100 },
+  { name: "Claude AI", src: "/partner/Claude_Logo_2023-s5120.webp", width: 100, height: 100 },
   { name: "ChatGPT", src: "/partner/chatgpt-ai-chatbot-logo-design-can-use-web-mobile-app-editorial-vector-icon-277668951.webp", width: 100, height: 100 },
   { name: "Google Gemini", src: "/partner/google-gemini-new-rainbow-colours.jpg", width: 100, height: 100 },
 ];
@@ -118,14 +118,14 @@ function MarqueeLogoCard({ logo }: { logo: MarqueeLogo }) {
       <div className="relative w-[70px] h-[70px] flex items-center justify-center">
         <Image
           src={logo.src}
-          alt={`${logo.name} - TML Agency certification`}
+          alt={`${logo.name} award and certification badge - TML Agency`}
           width={logo.width}
           height={logo.height}
           loading="lazy"
           className="object-contain max-w-full max-h-full grayscale group-hover:grayscale-0 transition-all duration-500"
         />
       </div>
-      <p className="text-[10px] text-white/30 text-center leading-tight px-3 group-hover:text-white/60 transition-colors duration-300 font-medium tracking-wide">
+      <p className="text-[10px] text-white/30 text-center leading-tight px-3 group-hover:text-white/90 transition-colors duration-300 font-medium tracking-wide">
         {logo.name}
       </p>
     </motion.div>
@@ -171,7 +171,7 @@ function PartnerCard({
           <div className="relative w-12 h-12 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/[0.06] flex-shrink-0 p-2">
             <Image
               src={partner.src}
-              alt={`${partner.name} - Certified partnership badge`}
+              alt={`${partner.name} certified partnership logo`}
               width={partner.width}
               height={partner.height}
               loading="lazy"
@@ -200,7 +200,7 @@ function PartnerCard({
             </p>
           </div>
         </div>
-        <p className="text-xs text-white/35 leading-relaxed group-hover:text-white/50 transition-colors duration-300 flex-1">
+        <p className="text-xs text-white/35 leading-relaxed group-hover:text-white/90 transition-colors duration-300 flex-1">
           {partner.description}
         </p>
 
@@ -267,7 +267,7 @@ export function AwardsPartners() {
             initial={{ opacity: 0, y: 14 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
           >
             Awards &amp; Certified Partners
           </motion.p>
@@ -280,7 +280,7 @@ export function AwardsPartners() {
             className="text-3xl sm:text-4xl md:text-5xl font-medium leading-[1.08] tracking-tight text-white max-w-3xl"
           >
             Trusted by the{" "}
-            <span className="text-white/40 italic">best in industry.</span>
+            <span className="text-white/90 italic">best in industry.</span>
           </motion.h2>
         </div>
       </div>
@@ -336,7 +336,7 @@ export function AwardsPartners() {
               initial={{ opacity: 0, y: 14 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.6, ease }}
-              className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold"
+              className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold"
             >
               Certified Partners
             </motion.p>

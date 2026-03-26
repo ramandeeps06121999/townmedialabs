@@ -29,11 +29,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://townmedialabs.com/case-studies/${study.slug}`,
       siteName: "TML Agency",
       type: "article",
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${study.metaTitle} - TML Agency` }],
     },
     twitter: {
       card: "summary_large_image",
+      site: "@tmlagency",
       title: study.metaTitle,
       description: study.metaDescription,
+      images: ["/og-image.png"],
     },
     alternates: {
       canonical: `https://townmedialabs.com/case-studies/${study.slug}`,

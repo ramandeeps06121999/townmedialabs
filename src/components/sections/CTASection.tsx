@@ -53,7 +53,7 @@ export function CTASection() {
               <span className="text-gold-gradient italic">grow</span> your
               business?
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-[#777]">
+            <p className="mx-auto mt-6 max-w-xl text-white/90">
               Book a free strategy call with our team. We&apos;ll analyze your
               current marketing, identify opportunities, and show you how TML
               can help you scale.

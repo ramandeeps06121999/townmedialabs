@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@tmlagency",
     title: data.metaTitle,
     description: data.metaDescription,
     images: ["/og-image.png"],

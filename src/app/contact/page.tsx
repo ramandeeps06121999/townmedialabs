@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@tmlagency",
     title: "Contact TML Agency | Get a Free Consultation | Chandigarh",
     description:
       "Get in touch with TML Agency, Chandigarh's leading digital marketing agency. Free consultation for branding, SEO, Google Ads, social media & web development.",

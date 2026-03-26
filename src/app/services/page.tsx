@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@tmlagency",
     title: "Our Services | TML Agency — Full-Service Digital Marketing",
     description:
       "Explore TML Agency's full range of digital marketing services — Branding, SEO, Google Ads, Social Media, Web Development & more.",

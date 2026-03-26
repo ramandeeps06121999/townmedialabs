@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
 
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services", hasMega: true },
-  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Industries", href: "/industries" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -50,7 +50,6 @@ export default function NavbarHome2() {
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const megaTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const megaRef = useRef<HTMLDivElement>(null);
 
   const openMega = () => {
     if (megaTimeout.current) clearTimeout(megaTimeout.current);
@@ -81,7 +80,7 @@ export default function NavbarHome2() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-[13px] font-medium text-white/70">
+        <nav aria-label="Main navigation" className="hidden md:flex flex-1 items-center justify-center gap-6 text-[13px] font-medium text-white/70">
           {navLinks.map((link) =>
             link.hasMega ? (
               <div
@@ -136,9 +135,10 @@ export default function NavbarHome2() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-white ml-2 mr-2"
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
-          <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+          <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
             {menuOpen ? (
               <path d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -148,98 +148,95 @@ export default function NavbarHome2() {
         </button>
       </div>
 
-      {/* ── Desktop Mega Menu ── */}
-      <AnimatePresence>
-      {megaOpen && (
-        <motion.div
-          ref={megaRef}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-          onMouseEnter={openMega}
-          onMouseLeave={closeMega}
-          className="hidden md:block absolute top-full mt-3 left-1/2 -translate-x-1/2 w-[720px] max-w-[calc(100vw-2rem)]"
-        >
-          {/* Subtle connecting arrow */}
-          <div className="flex justify-center mb-0">
-            <div className="w-3 h-3 rotate-45 bg-black/80 border-l border-t border-white/10 -mb-1.5 z-10" />
+      {/* Desktop Mega Menu — CSS transition instead of motion AnimatePresence */}
+      <div
+        onMouseEnter={openMega}
+        onMouseLeave={closeMega}
+        className={`hidden md:block absolute top-full mt-3 left-1/2 -translate-x-1/2 w-[720px] max-w-[calc(100vw-2rem)] transition-all duration-200 ease-out ${
+          megaOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        {/* Subtle connecting arrow */}
+        <div className="flex justify-center mb-0">
+          <div className="w-3 h-3 rotate-45 bg-black/80 border-l border-t border-white/10 -mb-1.5 z-10" />
+        </div>
+
+        <div className="bg-black/80 backdrop-blur-2xl border border-white/10 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-5">
+            <p className="text-[10px] text-white/30 tracking-[0.2em] uppercase font-medium">Our Services</p>
+            <Link
+              href="/services"
+              onClick={() => setMegaOpen(false)}
+              className="text-[11px] text-[#ff4500] font-medium hover:underline flex items-center gap-1"
+            >
+              View All
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
 
-          <div className="bg-black/80 backdrop-blur-2xl border border-white/10 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-            {/* Header */}
-            <div className="flex items-center justify-between mb-5">
-              <p className="text-[10px] text-white/30 tracking-[0.2em] uppercase font-medium">Our Services</p>
-              <Link
-                href="/services"
-                onClick={() => setMegaOpen(false)}
-                className="text-[11px] text-[#ff4500] font-medium hover:underline flex items-center gap-1"
-              >
-                View All
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-
-            {/* Service Grid — 4 columns */}
-            <div className="grid grid-cols-4 gap-5">
-              {megaMenuServices.map((cat) => (
-                <div key={cat.category}>
-                  <p className="text-[10px] text-white/40 tracking-[0.1em] uppercase font-semibold mb-3">
-                    {cat.category}
-                  </p>
-                  <div className="space-y-1">
-                    {cat.items.map((item) => (
-                      <Link
-                        key={item.label}
-                        href={item.href}
-                        onClick={() => setMegaOpen(false)}
-                        className="group block p-2.5 -mx-2.5 rounded-lg hover:bg-white/[0.04] transition-colors"
-                      >
-                        <div className="flex items-center gap-2 mb-0.5">
-                          <div className="w-1.5 h-1.5 rounded-full bg-[#ff4500]/40 group-hover:bg-[#ff4500] transition-colors flex-shrink-0" />
-                          <span className="text-[12px] font-medium text-white/70 group-hover:text-white transition-colors">
-                            {item.label}
-                          </span>
-                        </div>
-                        <p className="text-[10px] text-white/25 group-hover:text-white/40 transition-colors ml-3.5">
-                          {item.desc}
-                        </p>
-                      </Link>
-                    ))}
-                  </div>
+          {/* Service Grid */}
+          <div className="grid grid-cols-4 gap-5">
+            {megaMenuServices.map((cat) => (
+              <div key={cat.category}>
+                <p className="text-[10px] text-white/40 tracking-[0.1em] uppercase font-semibold mb-3">
+                  {cat.category}
+                </p>
+                <div className="space-y-1">
+                  {cat.items.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      onClick={() => setMegaOpen(false)}
+                      className="group block p-2.5 -mx-2.5 rounded-lg hover:bg-white/[0.04] transition-colors"
+                    >
+                      <div className="flex items-center gap-2 mb-0.5">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#ff4500]/40 group-hover:bg-[#ff4500] transition-colors flex-shrink-0" />
+                        <span className="text-[12px] font-medium text-white/70 group-hover:text-white transition-colors">
+                          {item.label}
+                        </span>
+                      </div>
+                      <p className="text-[10px] text-white/25 group-hover:text-white/40 transition-colors ml-3.5">
+                        {item.desc}
+                      </p>
+                    </Link>
+                  ))}
                 </div>
-              ))}
-            </div>
-
-            {/* Bottom CTA bar */}
-            <div className="mt-5 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-              <p className="text-[11px] text-white/30">
-                Not sure what you need? Let us help.
-              </p>
-              <Link
-                href="/contact"
-                onClick={() => setMegaOpen(false)}
-                className="text-[11px] px-4 py-2 rounded-full bg-[#ff4500]/10 border border-[#ff4500]/20 text-[#ff4500] font-semibold hover:bg-[#ff4500]/20 transition-colors"
-              >
-                Free Consultation
-              </Link>
-            </div>
+              </div>
+            ))}
           </div>
-        </motion.div>
-      )}
-      </AnimatePresence>
 
-      {/* ── Mobile Menu ── */}
+          {/* Bottom CTA bar */}
+          <div className="mt-5 pt-4 border-t border-white/[0.06] flex items-center justify-between">
+            <p className="text-[11px] text-white/30">
+              Not sure what you need? Let us help.
+            </p>
+            <Link
+              href="/contact"
+              onClick={() => setMegaOpen(false)}
+              className="text-[11px] px-4 py-2 rounded-full bg-[#ff4500]/10 border border-[#ff4500]/20 text-[#ff4500] font-semibold hover:bg-[#ff4500]/20 transition-colors"
+            >
+              Free Consultation
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-full mt-2 left-4 right-4 bg-black/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:hidden">
+        <div role="navigation" aria-label="Mobile navigation" className="absolute top-full mt-2 left-4 right-4 bg-black/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:hidden">
           {navLinks.map((link) =>
             link.hasMega ? (
               <div key={link.label}>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   className="flex items-center justify-between w-full py-3 text-sm text-white/70 hover:text-white transition-colors"
+                  aria-label={mobileServicesOpen ? "Collapse services submenu" : "Expand services submenu"}
+                  aria-expanded={mobileServicesOpen}
                 >
                   <span>{link.label}</span>
                   <svg

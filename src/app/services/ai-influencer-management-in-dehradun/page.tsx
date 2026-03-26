@@ -8,6 +8,25 @@ export const metadata: Metadata = {
   title: "Best AI Influencer Management Agency in Dehradun | TML Agency",
   description: "TML offers expert AI influencer management services in Dehradun. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["AI influencer management dehradun", "AI influencer management agency dehradun", "AI influencer management company dehradun"],
+  alternates: {
+    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-dehradun",
+  },
+  openGraph: {
+    title: "Best AI Influencer Management Agency in Dehradun | TML Agency",
+    description: "TML offers expert AI influencer management services in Dehradun. Proven results for 500+ businesses. Get a free consultation today.",
+    url: "https://townmedialabs.com/services/ai-influencer-management-in-dehradun",
+    siteName: "TML Agency",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Dehradun | TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Best AI Influencer Management Agency in Dehradun | TML Agency",
+    description: "TML offers expert AI influencer management services in Dehradun. Proven results for 500+ businesses. Get a free consultation today.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function AiinfluencermanagementInDehradunPage() {

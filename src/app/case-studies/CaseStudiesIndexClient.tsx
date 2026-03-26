@@ -93,7 +93,7 @@ function CaseStudyCard({ slug, index }: { slug: string; index: number }) {
         {topResult && (
           <div className="mb-5 px-4 py-3 rounded-xl bg-[#ff4500]/[0.06] border border-[#ff4500]/10">
             <span className="text-2xl font-bold text-[#ff4500]">{topResult.value}</span>
-            <span className="text-xs text-white/40 ml-2">{topResult.metric}</span>
+            <span className="text-xs text-white/90 ml-2">{topResult.metric}</span>
           </div>
         )}
 
@@ -101,7 +101,7 @@ function CaseStudyCard({ slug, index }: { slug: string; index: number }) {
           {study.title}
         </h2>
         <p className="text-xs text-white/30 mb-4">{study.client} &middot; {study.industry}</p>
-        <p className="text-sm text-white/40 leading-relaxed mb-5 line-clamp-3">
+        <p className="text-sm text-white/90 leading-relaxed mb-5 line-clamp-3">
           {study.challenge}
         </p>
 
@@ -147,7 +147,7 @@ export default function CaseStudiesIndexClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-6"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-6"
           >
             Proven Results
           </motion.p>
@@ -265,7 +265,7 @@ export default function CaseStudiesIndexClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             Every case study above started with a single conversation. Tell us about your
             business, your goals, and your challenges — and we&apos;ll show you exactly how
@@ -286,7 +286,7 @@ export default function CaseStudiesIndexClient() {
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>

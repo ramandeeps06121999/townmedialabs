@@ -119,7 +119,7 @@ function FooterColumn({
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-[13px] text-white/40 hover:text-white/70 transition-colors block py-1.5"
+              className="text-[13px] text-white/90 hover:text-white/90 transition-colors block py-1.5"
             >
               {link.label}
             </Link>
@@ -169,6 +169,7 @@ export function FooterHome2() {
   return (
     <footer
       ref={footerRef}
+      aria-label="Site footer"
       className="relative w-full px-6 py-16 lg:px-12 bg-[#050505] overflow-hidden"
     >
       {/* Gradient top border */}
@@ -203,7 +204,7 @@ export function FooterHome2() {
           className="mb-14"
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <p className="text-sm text-white/50 shrink-0">
+            <p className="text-sm text-white/90 shrink-0">
               Get branding tips & growth insights straight to your inbox.
             </p>
             <div className="flex flex-col w-full sm:max-w-md gap-2">
@@ -229,6 +230,7 @@ export function FooterHome2() {
                     type="email"
                     required
                     placeholder="Your email"
+                    aria-label="Email address for newsletter"
                     value={nlEmail}
                     onChange={(e) => setNlEmail(e.target.value)}
                     onFocus={() => setEmailFocused(true)}
@@ -289,7 +291,7 @@ export function FooterHome2() {
                       <li key={city.label}>
                         <Link
                           href={city.href}
-                          className="text-[13px] text-white/40 hover:text-white/70 transition-colors block py-1"
+                          className="text-[13px] text-white/90 hover:text-white/90 transition-colors block py-1"
                         >
                           {city.label}
                         </Link>
@@ -328,7 +330,7 @@ export function FooterHome2() {
           <div className="flex items-center gap-4">
             <Link
               href="/privacy-policy"
-              className="group relative text-xs text-white/20 hover:text-white/40 transition-colors"
+              className="group relative text-xs text-white/20 hover:text-white/90 transition-colors"
             >
               Privacy Policy
               <span className="absolute left-0 -bottom-0.5 h-[1px] w-full origin-left scale-x-0 bg-white/20 transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -336,7 +338,7 @@ export function FooterHome2() {
             <span className="text-white/10">|</span>
             <Link
               href="/terms-of-service"
-              className="group relative text-xs text-white/20 hover:text-white/40 transition-colors"
+              className="group relative text-xs text-white/20 hover:text-white/90 transition-colors"
             >
               Terms of Service
               <span className="absolute left-0 -bottom-0.5 h-[1px] w-full origin-left scale-x-0 bg-white/20 transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -351,7 +353,7 @@ export function FooterHome2() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white/30 hover:text-white/70 transition-colors"
+              className="text-white/30 hover:text-white/90 transition-colors"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" />
@@ -365,7 +367,7 @@ export function FooterHome2() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-white/30 hover:text-white/70 transition-colors"
+              className="text-white/30 hover:text-white/90 transition-colors"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -377,7 +379,7 @@ export function FooterHome2() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-white/30 hover:text-white/70 transition-colors"
+              className="text-white/30 hover:text-white/90 transition-colors"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -398,7 +400,7 @@ export function FooterHome2() {
         transition={{ duration: 0.6, delay: 0.5 }}
         whileHover={{ y: -3, scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 flex h-11 w-11 md:h-10 md:w-10 items-center justify-center rounded-full border border-white/[0.08] bg-[#080808]/80 backdrop-blur-sm text-white/40 hover:text-white/70 hover:border-[#ff4500]/30 transition-colors"
+        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 flex h-11 w-11 md:h-10 md:w-10 items-center justify-center rounded-full border border-white/[0.08] bg-[#080808]/80 backdrop-blur-sm text-white/90 hover:text-white/90 hover:border-[#ff4500]/30 transition-colors"
         aria-label="Back to top"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

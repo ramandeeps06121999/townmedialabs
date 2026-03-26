@@ -22,11 +22,11 @@ export default function TermsOfServicePage() {
           <h1 className="text-4xl sm:text-5xl font-medium tracking-tight mb-4">
             Terms of Service<span className="text-[#ff4500]">.</span>
           </h1>
-          <p className="text-sm text-white/40 mb-12">
+          <p className="text-sm text-white/90 mb-12">
             Last updated: March 2026
           </p>
 
-          <div className="space-y-8 text-sm text-white/50 leading-relaxed">
+          <div className="space-y-8 text-sm text-white/90 leading-relaxed">
             <section>
               <h2 className="text-lg font-semibold text-white mb-3">
                 1. Acceptance of Terms

@@ -8,6 +8,8 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services", hasMega: true },
+  { label: "Industries", href: "/industries" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -91,7 +93,7 @@ export default function InnerNavbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-[13px] font-medium text-white/70">
+        <nav aria-label="Main navigation" className="hidden md:flex flex-1 items-center justify-center gap-6 text-[13px] font-medium text-white/70">
           {navLinks.map((link) =>
             link.hasMega ? (
               <div
@@ -146,9 +148,10 @@ export default function InnerNavbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-white ml-2 mr-2"
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
-          <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+          <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
             {menuOpen ? (
               <path d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -240,6 +243,8 @@ export default function InnerNavbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
+            role="navigation"
+            aria-label="Mobile navigation"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -252,6 +257,8 @@ export default function InnerNavbar() {
                   <button
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                     className="flex items-center justify-between w-full py-3 text-sm text-white/70 hover:text-white transition-colors"
+                    aria-label={mobileServicesOpen ? "Collapse services submenu" : "Expand services submenu"}
+                    aria-expanded={mobileServicesOpen}
                   >
                     <span>{link.label}</span>
                     <svg

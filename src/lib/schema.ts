@@ -30,7 +30,7 @@ export function generateServiceSchema(params: {
     provider: DEFAULT_PROVIDER,
     ...(params.areaServed && {
       areaServed: {
-        "@type": "Place",
+        "@type": "City",
         name: params.areaServed,
       },
     }),
@@ -45,10 +45,12 @@ export function generateLocalBusinessSchema(params: {
   city: string;
   state: string;
   services: string[];
+  country?: string;
+  areaServed?: { type: "City" | "Country" | "State"; name: string }[];
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     name: params.name,
     description: params.description,
     url: params.url,
@@ -57,7 +59,7 @@ export function generateLocalBusinessSchema(params: {
       "@type": "PostalAddress",
       addressLocality: params.city,
       addressRegion: params.state,
-      addressCountry: "IN",
+      addressCountry: params.country || "IN",
       postalCode: "160022",
     },
     geo: {
@@ -71,6 +73,12 @@ export function generateLocalBusinessSchema(params: {
       opens: "09:00",
       closes: "18:00",
     },
+    ...(params.areaServed && {
+      areaServed: params.areaServed.map((area) => ({
+        "@type": area.type,
+        name: area.name,
+      })),
+    }),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Services",

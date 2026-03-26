@@ -8,6 +8,26 @@ export const metadata: Metadata = {
   title: "Best AI Influencer Management Agency in Philadelphia | TML Agency",
   description: "TML offers expert ai influencer management services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management philadelphia", "ai influencer management agency philadelphia", "ai influencer management company philadelphia"],
+  alternates: {
+    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-philadelphia",
+  },
+  openGraph: {
+    title: "Best AI Influencer Management Agency in Philadelphia | TML Agency",
+    description: "TML offers expert ai influencer management services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
+    url: "https://townmedialabs.com/services/ai-influencer-management-in-philadelphia",
+    siteName: "TML Agency",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Philadelphia | TML Agency" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Best AI Influencer Management Agency in Philadelphia | TML Agency",
+    description: "TML offers expert ai influencer management services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
+    images: ["/og-image.png"],
+  },
+  robots: { index: false, follow: true },
 };
 
 export default function AiInfluencerManagementInPhiladelphiaPage() {

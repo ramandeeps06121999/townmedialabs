@@ -266,7 +266,7 @@ export function ServicesHome2() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease }}
-          className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-semibold mb-8"
+          className="text-[10px] md:text-xs text-white/90 tracking-[0.2em] uppercase font-semibold mb-8"
         >
           What we do
         </motion.p>
@@ -282,7 +282,7 @@ export function ServicesHome2() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.08] tracking-tight text-white max-w-3xl"
           >
             Every service you need{" "}
-            <span className="text-white/40 italic">under one roof.</span>
+            <span className="text-white/90 italic">under one roof.</span>
           </motion.h2>
 
           {/* Service count badge */}
@@ -294,7 +294,7 @@ export function ServicesHome2() {
             className="mt-6 inline-flex items-center gap-2 bg-white/[0.03] border border-white/[0.06] rounded-full px-4 py-1.5"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#ff4500]" />
-            <span className="text-xs text-white/40 font-medium tracking-wide">
+            <span className="text-xs text-white/90 font-medium tracking-wide">
               {services.length} services
             </span>
           </motion.div>
@@ -314,15 +314,27 @@ export function ServicesHome2() {
             },
           }}
         >
-          {services.map((service, i) => (
-            <Link
-              key={service.title}
-              href={serviceSlugMap[service.title] || "/services"}
-              className="block"
-            >
-              <ServiceRow service={service} index={i} />
-            </Link>
-          ))}
+          {/* Chunk services into groups of 4 to reduce DOM width */}
+          {(() => {
+            const chunkSize = 4;
+            const chunks: (typeof services)[] = [];
+            for (let c = 0; c < services.length; c += chunkSize) {
+              chunks.push(services.slice(c, c + chunkSize));
+            }
+            return chunks.map((chunk, ci) => (
+              <div key={ci} className="contents">
+                {chunk.map((service, i) => (
+                  <Link
+                    key={service.title}
+                    href={serviceSlugMap[service.title] || "/services"}
+                    className="block"
+                  >
+                    <ServiceRow service={service} index={ci * chunkSize + i} />
+                  </Link>
+                ))}
+              </div>
+            ));
+          })()}
 
           {/* Bottom shimmer divider */}
           <div className="relative h-px w-full overflow-hidden">
@@ -356,7 +368,7 @@ export function ServicesHome2() {
               position: i + 1,
               name: s.title,
               description: s.description,
-              url: `https://townmedialabs.com/services/${s.title.toLowerCase().replace(/\s+/g, "-")}`,
+              url: `https://townmedialabs.com${serviceSlugMap[s.title] || "/services"}`,
             })),
           }),
         }}

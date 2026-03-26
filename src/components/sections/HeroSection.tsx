@@ -147,7 +147,7 @@ export function HeroSection() {
           ].map((partner) => (
             <span
               key={partner}
-              className="whitespace-nowrap text-[13px] font-semibold tracking-wide text-[#666]"
+              className="whitespace-nowrap text-[13px] font-semibold tracking-wide text-white/90"
             >
               {partner}
             </span>

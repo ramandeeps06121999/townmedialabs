@@ -42,7 +42,7 @@ function ToolShell({
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-[family-name:var(--font-syne)] mt-2 leading-tight">
             {tool.name}
           </h1>
-          <p className="text-white/60 text-lg mt-4 max-w-2xl">
+          <p className="text-white/90 text-lg mt-4 max-w-2xl">
             {tool.description}
           </p>
         </motion.div>
@@ -65,7 +65,7 @@ function ToolShell({
           <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-syne)]">
             Want Professional Help?
           </h2>
-          <p className="text-white/60 mt-3 max-w-lg mx-auto">
+          <p className="text-white/90 mt-3 max-w-lg mx-auto">
             Our team of experts can help you get even better results. Let TML handle the heavy lifting while you focus on growing your business.
           </p>
           <Link
@@ -215,7 +215,7 @@ function SEOAuditChecklist() {
                       </svg>
                     )}
                   </div>
-                  <span className={`text-sm ${checked[key] ? "text-white/70 line-through" : "text-white/80"}`}>
+                  <span className={`text-sm ${checked[key] ? "text-white/90 line-through" : "text-white/90"}`}>
                     {item}
                   </span>
                 </button>
@@ -314,7 +314,7 @@ function WebsiteSpeedCalculator() {
             <p className="text-2xl font-bold text-[#ff4500] font-[family-name:var(--font-syne)] mt-1">
               {adjustedBounce.toFixed(1)}%
             </p>
-            <p className="text-xs text-white/40 mt-1">+{extraBounce.toFixed(1)}% from slow speed</p>
+            <p className="text-xs text-white/90 mt-1">+{extraBounce.toFixed(1)}% from slow speed</p>
           </div>
           <div className="p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
             <p className="text-sm text-white/90">Estimated Visitors Lost / Month</p>
@@ -327,7 +327,7 @@ function WebsiteSpeedCalculator() {
             <p className="text-2xl font-bold text-[#ff4500] font-[family-name:var(--font-syne)] mt-1">
               {lostConversions.toLocaleString()}
             </p>
-            <p className="text-xs text-white/40 mt-1">Based on 2.5% avg conversion rate</p>
+            <p className="text-xs text-white/90 mt-1">Based on 2.5% avg conversion rate</p>
           </div>
           <div className="p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
             <p className="text-sm text-white/90">Estimated Revenue Lost / Month</p>
@@ -338,7 +338,7 @@ function WebsiteSpeedCalculator() {
 
           <div className="md:col-span-2 p-5 rounded-2xl border border-[#ff4500]/20 bg-[#ff4500]/5">
             <h3 className="font-bold font-[family-name:var(--font-syne)] text-lg mb-3">Recommendations</h3>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-2 text-sm text-white/90">
               {lt > 3 && <li>-- Optimize images: compress and convert to WebP format</li>}
               {lt > 3 && <li>-- Enable browser caching and GZIP compression</li>}
               {lt > 4 && <li>-- Minimize render-blocking CSS and JavaScript</li>}
@@ -506,12 +506,12 @@ function SocialMediaPostGenerator() {
           </span>
           <button
             onClick={copy}
-            className="text-xs px-3 py-1 rounded-lg border border-white/10 hover:border-[#ff4500]/40 text-white/60 hover:text-white transition-colors"
+            className="text-xs px-3 py-1 rounded-lg border border-white/10 hover:border-[#ff4500]/40 text-white/90 hover:text-white transition-colors"
           >
             {copied ? "Copied!" : "Copy"}
           </button>
         </div>
-        <pre className="whitespace-pre-wrap text-sm text-white/80 font-sans leading-relaxed">
+        <pre className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-relaxed">
           {post}
         </pre>
       </div>
@@ -623,14 +623,14 @@ function GoogleAdsBudgetCalculator() {
             <p className="text-3xl font-bold text-[#ff4500] font-[family-name:var(--font-syne)] mt-1">
               ${monthlyBudget.toLocaleString()}
             </p>
-            <p className="text-xs text-white/40 mt-1">~${dailyBudget}/day</p>
+            <p className="text-xs text-white/90 mt-1">~${dailyBudget}/day</p>
           </div>
           <div className="p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
             <p className="text-sm text-white/90">Expected Clicks / Month</p>
             <p className="text-3xl font-bold text-white font-[family-name:var(--font-syne)] mt-1">
               {clicksNeeded.toLocaleString()}
             </p>
-            <p className="text-xs text-white/40 mt-1">at ${cpc.toFixed(2)} per click</p>
+            <p className="text-xs text-white/90 mt-1">at ${cpc.toFixed(2)} per click</p>
           </div>
           <div className="p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
             <p className="text-sm text-white/90">Estimated Cost Per Lead</p>
@@ -643,7 +643,7 @@ function GoogleAdsBudgetCalculator() {
             <p className="text-3xl font-bold text-[#22c55e] font-[family-name:var(--font-syne)] mt-1">
               {leads} leads/mo
             </p>
-            <p className="text-xs text-white/40 mt-1">at {convRate}% conversion rate</p>
+            <p className="text-xs text-white/90 mt-1">at {convRate}% conversion rate</p>
           </div>
         </div>
       )}
@@ -894,12 +894,12 @@ function MetaTagGenerator() {
           </h3>
           <button
             onClick={copy}
-            className="text-xs px-3 py-1 rounded-lg border border-white/10 hover:border-[#ff4500]/40 text-white/60 hover:text-white transition-colors"
+            className="text-xs px-3 py-1 rounded-lg border border-white/10 hover:border-[#ff4500]/40 text-white/90 hover:text-white transition-colors"
           >
             {copied ? "Copied!" : "Copy HTML"}
           </button>
         </div>
-        <pre className="p-5 rounded-2xl border border-white/10 bg-white/[0.02] overflow-x-auto text-sm text-white/70 leading-relaxed">
+        <pre className="p-5 rounded-2xl border border-white/10 bg-white/[0.02] overflow-x-auto text-sm text-white/90 leading-relaxed">
           {metaHTML}
         </pre>
       </div>

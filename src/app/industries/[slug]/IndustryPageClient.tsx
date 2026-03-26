@@ -98,7 +98,7 @@ function ServiceLink({ serviceSlug, index }: { serviceSlug: string; index: numbe
         <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
           {service.title}
         </h3>
-        <p className="text-sm text-white/40 leading-relaxed mb-4 line-clamp-2">{service.description}</p>
+        <p className="text-sm text-white/90 leading-relaxed mb-4 line-clamp-2">{service.description}</p>
         <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
           Learn More &rarr;
         </span>
@@ -137,7 +137,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
           >
             <Link
               href="/industries"
-              className="inline-flex items-center gap-2 text-[11px] text-white/40 tracking-[0.2em] uppercase hover:text-white/60 transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-[11px] text-white/90 tracking-[0.2em] uppercase hover:text-white/90 transition-colors mb-8"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -188,7 +188,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Talk to an Expert
             </a>
@@ -224,7 +224,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
                     <span className="text-white/20">&mdash;</span>
                   )}
                 </div>
-                <p className="text-xs text-white/40 tracking-wide">{stat.label}</p>
+                <p className="text-xs text-white/90 tracking-wide">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -241,7 +241,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             The Challenge
           </motion.p>
@@ -274,7 +274,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             The Solution
           </motion.p>
@@ -306,7 +306,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease }}
-              className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase font-semibold"
+              className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold"
             >
               Industry Insights
             </motion.p>
@@ -332,7 +332,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
           >
             Our Services
           </motion.p>
@@ -363,7 +363,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4 text-center"
+            className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4 text-center"
           >
             FAQ
           </motion.p>
@@ -374,7 +374,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             transition={{ duration: 0.7, ease }}
             className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center"
           >
-            Common Questions
+            {industry.name} Marketing Questions
             <span className="text-[#ff4500]">.</span>
           </motion.h2>
 
@@ -408,7 +408,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             Let&apos;s discuss how our digital marketing expertise can help your {industry.name.toLowerCase()} business attract more clients, increase revenue, and dominate your local market. Get a free consultation today.
           </motion.p>
@@ -427,7 +427,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>
@@ -450,7 +450,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white/40 tracking-[0.25em] uppercase mb-4"
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 From Our Blog
               </motion.p>

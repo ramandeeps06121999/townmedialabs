@@ -32,11 +32,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: `https://townmedialabs.com/industries/${industryV2.slug}`,
         siteName: "TML Agency",
         type: "website",
+        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${industryV2.metaTitle} - TML Agency` }],
       },
       twitter: {
         card: "summary_large_image",
+        site: "@tmlagency",
         title: industryV2.metaTitle,
         description: industryV2.metaDescription,
+        images: ["/og-image.png"],
       },
       alternates: {
         canonical: `https://townmedialabs.com/industries/${industryV2.slug}`,
@@ -60,11 +63,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://townmedialabs.com/industries/${industry.slug}`,
       siteName: "TML Agency",
       type: "website",
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${industry.metaTitle} - TML Agency` }],
     },
     twitter: {
       card: "summary_large_image",
+      site: "@tmlagency",
       title: industry.metaTitle,
       description: industry.metaDescription,
+      images: ["/og-image.png"],
     },
     alternates: {
       canonical: `https://townmedialabs.com/industries/${industry.slug}`,

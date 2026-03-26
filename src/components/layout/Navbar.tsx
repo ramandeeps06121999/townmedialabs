@@ -28,6 +28,7 @@ export function Navbar() {
 
   return (
     <motion.nav
+      aria-label="Main navigation"
       className="fixed top-0 left-0 right-0 z-50"
       style={{
         backgroundColor: navBg,
@@ -55,7 +56,7 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="animated-underline text-xs font-medium tracking-wide text-[#666] uppercase transition-colors hover:text-white"
+              className="animated-underline text-xs font-medium tracking-wide text-white/90 uppercase transition-colors hover:text-white"
             >
               {link.label}
             </a>
@@ -72,9 +73,11 @@ export function Navbar() {
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="text-white md:hidden"
-          aria-label="Toggle menu"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
         >
           <svg
+            aria-hidden="true"
             width="24"
             height="24"
             fill="none"
@@ -95,6 +98,8 @@ export function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
+            role="navigation"
+            aria-label="Mobile navigation"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -110,7 +115,7 @@ export function Navbar() {
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.06, ease: [0.23, 1, 0.32, 1] }}
-                  className="block py-3 text-sm text-[#777] transition-colors hover:text-white"
+                  className="block py-3 text-sm text-white/90 transition-colors hover:text-white"
                 >
                   {link.label}
                 </motion.a>

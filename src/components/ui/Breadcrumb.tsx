@@ -159,7 +159,7 @@ export default function Breadcrumb({
                   // Link to previous pages
                   <Link
                     href={item.url}
-                    className="text-white/50 hover:text-white/80 transition-colors duration-200 flex items-center"
+                    className="text-white/90 hover:text-white/90 transition-colors duration-200 flex items-center"
                   >
                     {isHome && <HomeIcon className="inline h-4 w-4 mr-1 -mt-0.5" />}
                     <span className="truncate max-w-[150px] sm:max-w-[200px]">

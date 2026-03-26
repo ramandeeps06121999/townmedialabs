@@ -110,7 +110,7 @@ function Tier1IndustryCard({ slug, index }: { slug: string; index: number }) {
         <h2 className="text-xl font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors">
           {industry.name}
         </h2>
-        <p className="text-sm text-white/40 leading-relaxed mb-5 line-clamp-3">
+        <p className="text-sm text-white/90 leading-relaxed mb-5 line-clamp-3">
           {industry.heroSubtitle}
         </p>
         <div className="flex flex-wrap gap-2 mb-5">
@@ -155,7 +155,7 @@ function IndustryCard({ slug, index }: { slug: string; index: number }) {
         <h2 className="text-xl font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors">
           {industry.name}
         </h2>
-        <p className="text-sm text-white/40 leading-relaxed mb-5 line-clamp-3">
+        <p className="text-sm text-white/90 leading-relaxed mb-5 line-clamp-3">
           {industry.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-5">
@@ -199,7 +199,7 @@ export default function IndustriesIndexClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease }}
-            className="text-[11px] text-white/40 tracking-[0.25em] uppercase mb-6"
+            className="text-[11px] text-white/90 tracking-[0.25em] uppercase mb-6"
           >
             Industry Expertise
           </motion.p>
@@ -319,7 +319,7 @@ export default function IndustriesIndexClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease }}
-            className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-white/90 leading-relaxed mb-10 max-w-xl mx-auto"
           >
             We work with businesses across 25+ industries. Whether you are in healthcare,
             real estate, legal, fitness, or any other sector — we have the expertise to
@@ -340,7 +340,7 @@ export default function IndustriesIndexClient() {
             </Link>
             <a
               href="mailto:info@townmedialabs.com"
-              className="px-8 py-4 rounded-full border border-white/10 text-white/70 font-semibold text-sm hover:bg-white/5 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               info@townmedialabs.com
             </a>

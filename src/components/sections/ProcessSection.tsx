@@ -129,7 +129,7 @@ export function ProcessSection() {
                   <h3 className="mt-4 text-xl font-semibold text-white">
                     <TextScramble text={item.title} delay={0.8 + i * 0.2} />
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#666]">
+                  <p className="mt-3 text-sm leading-relaxed text-white/90">
                     {item.desc}
                   </p>
                 </div>

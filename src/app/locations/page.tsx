@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     url: "https://townmedialabs.com/locations",
     siteName: "TML Agency",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "TML Agency Locations - Global Digital Marketing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tmlagency",
+    title: "Our Locations | Town Media Labs",
+    description:
+      "Serving businesses globally across 250+ cities in 7 countries with tailored digital marketing strategies.",
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://townmedialabs.com/locations",
