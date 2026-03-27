@@ -15,12 +15,12 @@ import LazyVideo from "@/components/ui/LazyVideo";
 const ease = [0.23, 1, 0.32, 1] as const;
 
 const reels = [
-  { src: "/1.mp4", poster: "/1-poster.webp", label: "Brand Motion", client: "Luxe Interiors" },
-  { src: "/2.mp4", poster: "/2-poster.webp", label: "Visual Identity", client: "Nova Studios" },
-  { src: "/3.mp4", poster: "/3-poster.webp", label: "Ad Creative", client: "TechVault" },
-  { src: "/4.mp4", poster: "/4-poster.webp", label: "Social Content", client: "Meridian Co" },
-  { src: "/5.mp4", poster: "/5-poster.webp", label: "Campaign Film", client: "Atlas Digital" },
-  { src: "/6.mp4", poster: "/6-poster.webp", label: "Product Story", client: "Vero Fashion" },
+  { src: "/brand-motion-luxe-interiors.mp4", poster: "/brand-motion-luxe-interiors-poster.webp", label: "Brand Motion", client: "Luxe Interiors" },
+  { src: "/visual-identity-nova-studios.mp4", poster: "/visual-identity-nova-studios-poster.webp", label: "Visual Identity", client: "Nova Studios" },
+  { src: "/ad-creative-techvault.mp4", poster: "/ad-creative-techvault-poster.webp", label: "Ad Creative", client: "TechVault" },
+  { src: "/social-content-meridian-co.mp4", poster: "/social-content-meridian-co-poster.webp", label: "Social Content", client: "Meridian Co" },
+  { src: "/campaign-film-atlas-digital.mp4", poster: "/campaign-film-atlas-digital-poster.webp", label: "Campaign Film", client: "Atlas Digital" },
+  { src: "/product-story-vero-fashion.mp4", poster: "/product-story-vero-fashion-poster.webp", label: "Product Story", client: "Vero Fashion" },
 ];
 
 /* Floating particles background */

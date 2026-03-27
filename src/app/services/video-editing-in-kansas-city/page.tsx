@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["kansas_city"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Kansas City | TML Agency",
   description: "TML offers expert video editing services in Kansas City. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing kansas city", "video editing agency kansas city", "video editing company kansas city"],

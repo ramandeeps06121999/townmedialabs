@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_antonio"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in San Antonio | TML Agency",
   description: "TML offers expert music release services in San Antonio. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release san antonio", "music release agency san antonio", "music release company san antonio"],

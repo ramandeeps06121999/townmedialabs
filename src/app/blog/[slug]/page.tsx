@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const siteUrl = "https://townmedialabs.com";
 
   const seoTitle = article.metaTitle || article.title;
+  const ogImage = article.image || "/og-image.png";
 
   return {
     title: seoTitle,
@@ -31,14 +32,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: article.date,
       modifiedTime: article.date,
       authors: ["TML Agency"],
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: article.title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
       card: "summary_large_image",
       site: "@tmlagency",
       title: seoTitle,
       description: article.metaDescription,
-      images: ["/og-image.png"],
+      images: [ogImage],
     },
   };
 }
@@ -62,7 +63,7 @@ export default async function BlogSlugPage({ params }: Props) {
     url: `${siteUrl}/blog/${slug}`,
     datePublished: article.date,
     dateModified: article.date,
-    image: `${siteUrl}/og-image.png`,
+    image: `${siteUrl}${article.image || "/og-image.png"}`,
     author: {
       "@type": "Person",
       name: "TML Agency Team",

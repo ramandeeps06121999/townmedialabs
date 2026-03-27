@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["gold_coast"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Gold Coast | TML Agency",
   description: "TML offers expert video editing services in Gold Coast. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing gold coast", "video editing agency gold coast", "video editing company gold coast"],

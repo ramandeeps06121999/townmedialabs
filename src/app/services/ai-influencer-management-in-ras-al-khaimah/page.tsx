@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ras_al_khaimah"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Ras Al Khaimah | TML Agency",
   description: "TML offers expert ai influencer management services in Ras Al Khaimah. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management ras al khaimah", "ai influencer management agency ras al khaimah", "ai influencer management company ras al khaimah"],

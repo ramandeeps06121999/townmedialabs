@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_jose"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in San Jose | TML Agency",
   description: "TML offers expert video editing services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing san jose", "video editing agency san jose", "video editing company san jose"],

@@ -15,7 +15,7 @@ export default function HeroHome2() {
       {/* Background Image layer */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <Image
-          src="/home2-bg-2.webp"
+          src="/hero-background.webp"
           alt="TML Agency creative team working on brand strategy"
           fill
           sizes="100vw"

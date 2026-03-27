@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ras_al_khaimah"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Ras Al Khaimah | TML Agency",
   description: "TML offers expert packaging design services in Ras Al Khaimah. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design ras al khaimah", "packaging design agency ras al khaimah", "packaging design company ras al khaimah"],

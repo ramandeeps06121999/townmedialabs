@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["sunshine_coast"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Sunshine Coast | TML Agency",
   description: "TML offers expert video editing services in Sunshine Coast. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing sunshine coast", "video editing agency sunshine coast", "video editing company sunshine coast"],

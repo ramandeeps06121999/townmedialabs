@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["umm_al_quwain"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Umm Al Quwain | TML Agency",
   description: "TML offers expert video editing services in Umm Al Quwain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing umm al quwain", "video editing agency umm al quwain", "video editing company umm al quwain"],

@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["las_vegas"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Las Vegas | TML Agency",
   description: "TML offers expert music release services in Las Vegas. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release las vegas", "music release agency las vegas", "music release company las vegas"],

@@ -7,6 +7,7 @@ import type { ServicePageData } from "@/data/servicePages";
 import { servicePages } from "@/data/servicePages";
 import { blogArticles } from "@/data/blogArticles";
 import { industries, industryPages } from "@/data/industries";
+import { locations, getLocationServiceSlug } from "@/data/locations";
 import { serviceRelatedBlogs, serviceRelatedIndustries } from "@/lib/internalLinks";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import InnerNavbar from "@/components/layout/InnerNavbar";
@@ -737,6 +738,61 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                   </motion.div>
                 ))}
               </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Available In — Top City Links */}
+      {(() => {
+        const topCitySlugs = ["delhi", "mumbai", "bangalore", "london", "new_york", "dubai", "chandigarh", "pune"];
+        const cityLinks = topCitySlugs
+          .map((slug) => {
+            const loc = locations[slug];
+            if (!loc) return null;
+            return { slug: loc.slug, name: loc.name, href: `/services/${getLocationServiceSlug(data.slug, loc.slug)}` };
+          })
+          .filter(Boolean) as { slug: string; name: string; href: string }[];
+        if (cityLinks.length === 0) return null;
+        return (
+          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
+            <div className="relative mx-auto max-w-4xl text-center">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
+              >
+                Available In
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                {data.title} Services by City
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.1, ease }}
+                className="flex flex-wrap items-center justify-center gap-3"
+              >
+                {cityLinks.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={city.href}
+                    className="px-5 py-2.5 rounded-full border border-white/[0.08] bg-white/[0.02] text-sm text-white/90 hover:text-[#ff4500] hover:border-[#ff4500]/30 hover:bg-[#ff4500]/5 transition-all duration-300"
+                  >
+                    {data.title} in {city.name}
+                  </Link>
+                ))}
+              </motion.div>
             </div>
           </section>
         );

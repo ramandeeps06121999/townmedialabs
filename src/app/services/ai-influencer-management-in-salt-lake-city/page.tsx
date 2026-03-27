@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["salt_lake_city"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Salt Lake City | TML Agency",
   description: "TML offers expert ai influencer management services in Salt Lake City. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management salt lake city", "ai influencer management agency salt lake city", "ai influencer management company salt lake city"],

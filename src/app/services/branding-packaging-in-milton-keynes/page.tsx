@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["milton_keynes"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Milton Keynes | TML Agency",
   description: "TML offers expert packaging design services in Milton Keynes. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design milton keynes", "packaging design agency milton keynes", "packaging design company milton keynes"],

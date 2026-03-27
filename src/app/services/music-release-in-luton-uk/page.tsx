@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["luton_uk"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Luton | TML Agency",
   description: "TML offers expert music release services in Luton. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release luton", "music release agency luton", "music release company luton"],

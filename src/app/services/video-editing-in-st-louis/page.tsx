@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["st_louis"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in St. Louis | TML Agency",
   description: "TML offers expert video editing services in St. Louis. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing st. louis", "video editing agency st. louis", "video editing company st. louis"],

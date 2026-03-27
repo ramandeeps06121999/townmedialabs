@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["al_ain"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Al Ain | TML Agency",
   description: "TML offers expert music release services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release al ain", "music release agency al ain", "music release company al ain"],

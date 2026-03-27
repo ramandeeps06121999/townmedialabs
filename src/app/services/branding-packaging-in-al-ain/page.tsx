@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["al_ain"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Al Ain | TML Agency",
   description: "TML offers expert packaging design services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design al ain", "packaging design agency al ain", "packaging design company al ain"],

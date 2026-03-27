@@ -36,8 +36,8 @@ const marqueeLogos: MarqueeLogo[] = [
   { name: "WordPress", src: "/partner/WordPress-Logo.png", width: 100, height: 100 },
   { name: "Bing Ads", src: "/partner/bing-advertising-certifications.webp", width: 100, height: 100 },
   { name: "Google Cloud", src: "/partner/Google-Partner.jpg", width: 100, height: 100 },
-  { name: "Claude AI", src: "/partner/Claude_Logo_2023-s5120.webp", width: 100, height: 100 },
-  { name: "ChatGPT", src: "/partner/chatgpt-ai-chatbot-logo-design-can-use-web-mobile-app-editorial-vector-icon-277668951.webp", width: 100, height: 100 },
+  { name: "Claude AI", src: "/partner/claude-ai-partner-logo.webp", width: 100, height: 100 },
+  { name: "ChatGPT", src: "/partner/chatgpt-ai-partner-logo.webp", width: 100, height: 100 },
   { name: "Google Gemini", src: "/partner/google-gemini-new-rainbow-colours.jpg", width: 100, height: 100 },
 ];
 

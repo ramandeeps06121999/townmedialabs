@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_jose"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in San Jose | TML Agency",
   description: "TML offers expert music release services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release san jose", "music release agency san jose", "music release company san jose"],

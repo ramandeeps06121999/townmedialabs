@@ -11,6 +11,9 @@ import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import { generateServiceSchema, generateLocalBusinessSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import { serviceSeoContent } from "@/data/serviceSeoContent";
+import { blogArticles } from "@/data/blogArticles";
+import { industries, industryPages } from "@/data/industries";
+import { serviceRelatedBlogs, serviceRelatedIndustries } from "@/lib/internalLinks";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { getCityServiceContent } from "@/data/cityServiceContent";
 
@@ -888,6 +891,135 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           </div>
         </div>
       </section>
+
+      {/* Related Blog Articles */}
+      {(() => {
+        const blogSlugs = (serviceRelatedBlogs[serviceSlug] || []).slice(0, 3);
+        const relatedBlogs = blogSlugs
+          .map((slug) => ({ slug, article: blogArticles[slug] }))
+          .filter((b) => b.article);
+        if (relatedBlogs.length === 0) return null;
+        return (
+          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
+            <div className="relative mx-auto max-w-7xl">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
+              >
+                Read More
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                {serviceName} Insights &amp; Articles
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {relatedBlogs.map(({ slug, article }, i) => (
+                  <motion.div
+                    key={slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                  >
+                    <Link
+                      href={`/blog/${slug}`}
+                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
+                    >
+                      <span className="inline-block text-[10px] tracking-wider uppercase bg-[#ff4500]/10 text-[#ff4500] rounded-full px-3 py-1 font-semibold mb-4">
+                        {article.category}
+                      </span>
+                      <h3 className="text-base font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors leading-snug">
+                        {article.title}
+                      </h3>
+                      <p className="text-sm text-white/35 leading-relaxed mb-4 line-clamp-2">
+                        {article.metaDescription}
+                      </p>
+                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                        Read Article &rarr;
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Industries We Serve in City */}
+      {(() => {
+        const industrySlugs = serviceRelatedIndustries[serviceSlug] || [];
+        const relatedIndustryData = industrySlugs
+          .map((slug) => {
+            const legacy = industries[slug];
+            const v2 = industryPages[slug];
+            if (v2) return { slug, name: v2.name, description: v2.metaDescription };
+            if (legacy) return { slug, name: legacy.name, description: legacy.description };
+            return null;
+          })
+          .filter(Boolean) as { slug: string; name: string; description: string }[];
+        if (relatedIndustryData.length === 0) return null;
+        return (
+          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
+            <div className="relative mx-auto max-w-7xl">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease }}
+                className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
+              >
+                Industries We Serve
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease }}
+                className="text-2xl sm:text-3xl font-medium text-white mb-10"
+              >
+                Industries We Serve in {cityName}
+                <span className="text-[#ff4500]">.</span>
+              </motion.h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {relatedIndustryData.map((ind, i) => (
+                  <motion.div
+                    key={ind.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                  >
+                    <Link
+                      href={`/industries/${ind.slug}`}
+                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
+                    >
+                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[#ff4500] transition-colors">
+                        {ind.name}
+                      </h3>
+                      <p className="text-sm text-white/90 leading-relaxed mb-4 line-clamp-3">
+                        {ind.description}
+                      </p>
+                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                        View Industry &rarr;
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       </div>{/* End: Trust, SEO, Cross-links, FAQ group */}
 

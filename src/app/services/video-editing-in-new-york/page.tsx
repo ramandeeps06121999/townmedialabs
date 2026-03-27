@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["new_york"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in New York | TML Agency",
   description: "TML offers expert video editing services in New York. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing new york", "video editing agency new york", "video editing company new york"],

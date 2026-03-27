@@ -35,6 +35,67 @@ const nextConfig: NextConfig = {
         destination: "/services/seo",
         permanent: true,
       },
+      // Old root-level Chandigarh pages that may still have Google rankings
+      {
+        source: "/instagram-marketing-agency-in-chandigarh",
+        destination: "/services/social-media-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/seo-agency-in-chandigarh",
+        destination: "/services/seo-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/social-media-marketing-agency-in-chandigarh",
+        destination: "/services/social-media-marketing-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/web-design-agency-in-chandigarh",
+        destination: "/services/website-development-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/google-ads-agency-in-chandigarh",
+        destination: "/services/google-ads-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/branding-agency-in-chandigarh",
+        destination: "/services/branding-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/graphic-design-agency-in-chandigarh",
+        destination: "/services/graphic-design-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/lead-generation-agency-in-chandigarh",
+        destination: "/services/lead-generation-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/website-development-agency-in-chandigarh",
+        destination: "/services/website-development-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/ppc-agency-in-chandigarh",
+        destination: "/services/google-ads-in-chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/content-marketing-agency-in-chandigarh",
+        destination: "/services/content-marketing",
+        permanent: true,
+      },
+      {
+        source: "/email-marketing-agency-in-chandigarh",
+        destination: "/services/email-marketing",
+        permanent: true,
+      },
     ];
   },
   poweredByHeader: false,

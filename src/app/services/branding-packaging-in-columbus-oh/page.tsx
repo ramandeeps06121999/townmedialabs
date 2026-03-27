@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["columbus_oh"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Columbus | TML Agency",
   description: "TML offers expert packaging design services in Columbus. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design columbus", "packaging design agency columbus", "packaging design company columbus"],

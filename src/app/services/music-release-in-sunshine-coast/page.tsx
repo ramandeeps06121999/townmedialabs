@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["sunshine_coast"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Sunshine Coast | TML Agency",
   description: "TML offers expert music release services in Sunshine Coast. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release sunshine coast", "music release agency sunshine coast", "music release company sunshine coast"],

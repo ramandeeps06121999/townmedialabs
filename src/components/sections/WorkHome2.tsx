@@ -19,32 +19,32 @@ const projects = [
   {
     title: "CB Builders",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-2.webp",
+    image: "/portfolio/cb-builders-web-design.webp",
   },
   {
     title: "Real Estate App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-21.webp",
+    image: "/portfolio/real-estate-app-uiux-design.webp",
   },
   {
     title: "BYT Trucking",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-3.webp",
+    image: "/portfolio/byt-trucking-web-design.webp",
   },
   {
     title: "NFT Marketplace",
     category: "Web Design",
-    image: "/portfolio/image-1877877.jpg",
+    image: "/portfolio/nft-marketplace-web-design.jpg",
   },
   {
     title: "Smart Home App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-18.webp",
+    image: "/portfolio/smart-home-app-uiux-design.webp",
   },
   {
     title: "Win Asset Finance",
     category: "Web Design",
-    image: "/portfolio/Screenshot-2024-12-06-045014.png",
+    image: "/portfolio/win-asset-finance-web-design.png",
   },
 ];
 
@@ -52,22 +52,22 @@ const bottomRow = [
   {
     title: "Custom Trucking & Baling",
     category: "Branding & Web",
-    image: "/portfolio/Group-26.jpg",
+    image: "/portfolio/custom-trucking-baling-branding.jpg",
   },
   {
     title: "Zuri Beauty Academy",
     category: "Web Design",
-    image: "/portfolio/Screenshot-2024-12-06-041946.png",
+    image: "/portfolio/zuri-beauty-academy-web-design.png",
   },
   {
     title: "Virtual Healthcare",
     category: "Branding & Web",
-    image: "/portfolio/ChatGPT-Image-Dec-15-2025-06_26_06-PM.webp",
+    image: "/portfolio/virtual-healthcare-branding.webp",
   },
   {
     title: "Advertisement Marketing",
     category: "Web Design",
-    image: "/portfolio/3-1-1.png",
+    image: "/portfolio/advertisement-marketing-web-design.png",
   },
 ];
 
@@ -422,7 +422,7 @@ export function WorkHome2() {
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
           >
             <source
-              src="/portfolio/3476281878972467670_51343323133.mp4"
+              src="/portfolio/tml-portfolio-showreel-2025.mp4"
               type="video/mp4"
             />
           </LazyVideo>

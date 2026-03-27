@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["stoke_on_trent"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Stoke-on-Trent | TML Agency",
   description: "TML offers expert packaging design services in Stoke-on-Trent. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design stoke-on-trent", "packaging design agency stoke-on-trent", "packaging design company stoke-on-trent"],

@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["umm_al_quwain"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Umm Al Quwain | TML Agency",
   description: "TML offers expert music release services in Umm Al Quwain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release umm al quwain", "music release agency umm al quwain", "music release company umm al quwain"],

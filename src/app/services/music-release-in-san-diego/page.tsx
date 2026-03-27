@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_diego"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in San Diego | TML Agency",
   description: "TML offers expert music release services in San Diego. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release san diego", "music release agency san diego", "music release company san diego"],

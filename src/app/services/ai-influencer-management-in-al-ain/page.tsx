@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["al_ain"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Al Ain | TML Agency",
   description: "TML offers expert ai influencer management services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management al ain", "ai influencer management agency al ain", "ai influencer management company al ain"],

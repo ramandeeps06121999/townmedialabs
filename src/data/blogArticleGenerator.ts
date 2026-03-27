@@ -235,7 +235,7 @@ export function generateCityBlogArticles(): Record<string, BlogArticle> {
     if (skipSlugs.has(slug)) continue;
     if (loc.country !== "India") continue;
 
-    const blogSlug = `top-10-branding-agencies-${slug}`;
+    const blogSlug = `top-10-branding-agencies-${loc.slug}`;
     const city = loc.name;
     const state = loc.state;
     const cl = city.toLowerCase();

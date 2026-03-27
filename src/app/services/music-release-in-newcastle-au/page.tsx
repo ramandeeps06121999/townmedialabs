@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["newcastle_au"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Newcastle | TML Agency",
   description: "TML offers expert music release services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release newcastle", "music release agency newcastle", "music release company newcastle"],

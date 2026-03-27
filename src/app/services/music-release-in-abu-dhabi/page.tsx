@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["abu_dhabi"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Music Release Agency in Abu Dhabi | TML Agency",
   description: "TML offers expert music release services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release abu dhabi", "music release agency abu dhabi", "music release company abu dhabi"],

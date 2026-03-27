@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["salt_lake_city"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Salt Lake City | TML Agency",
   description: "TML offers expert video editing services in Salt Lake City. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing salt lake city", "video editing agency salt lake city", "video editing company salt lake city"],

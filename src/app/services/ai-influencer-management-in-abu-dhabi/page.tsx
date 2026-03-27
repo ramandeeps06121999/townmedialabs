@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["abu_dhabi"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Abu Dhabi | TML Agency",
   description: "TML offers expert ai influencer management services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management abu dhabi", "ai influencer management agency abu dhabi", "ai influencer management company abu dhabi"],

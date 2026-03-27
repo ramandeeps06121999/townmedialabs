@@ -1,5 +1,3 @@
-"use client";
-
 import { navLinks } from "@/data/navigation";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { Marquee } from "@/components/ui/Marquee";

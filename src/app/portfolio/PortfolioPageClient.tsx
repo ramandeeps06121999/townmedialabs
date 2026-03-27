@@ -13,61 +13,61 @@ const allProjects = [
   {
     title: "CB Builders",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-2.webp",
+    image: "/portfolio/cb-builders-web-design.webp",
     description: "A clean, responsive construction company website with lead generation forms and project galleries.",
   },
   {
     title: "Real Estate App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-21.webp",
+    image: "/portfolio/real-estate-app-uiux-design.webp",
     description: "Mobile-first real estate platform with property listings, virtual tours, and agent matching.",
   },
   {
     title: "BYT Trucking",
     category: "Web Design",
-    image: "/portfolio/all-devices-black-3.webp",
+    image: "/portfolio/byt-trucking-web-design.webp",
     description: "Full-service trucking company website with quote calculator, fleet showcase, and route tracking.",
   },
   {
     title: "NFT Marketplace",
     category: "Web Design",
-    image: "/portfolio/image-1877877.jpg",
+    image: "/portfolio/nft-marketplace-web-design.jpg",
     description: "A blockchain-powered marketplace for digital art collectors with wallet integration and auctions.",
   },
   {
     title: "Smart Home App",
     category: "UI/UX Design",
-    image: "/portfolio/Untitled-design-18.webp",
+    image: "/portfolio/smart-home-app-uiux-design.webp",
     description: "IoT dashboard for controlling home devices, energy usage tracking, and automation scheduling.",
   },
   {
     title: "Win Asset Finance",
     category: "Web Design",
-    image: "/portfolio/Screenshot-2024-12-06-045014.png",
+    image: "/portfolio/win-asset-finance-web-design.png",
     description: "Financial services website with loan calculators, application forms, and compliance-ready design.",
   },
   {
     title: "Custom Trucking & Baling",
     category: "Branding & Web",
-    image: "/portfolio/Group-26.jpg",
+    image: "/portfolio/custom-trucking-baling-branding.jpg",
     description: "Complete rebrand and website for an agricultural services company, from logo to launch.",
   },
   {
     title: "Zuri Beauty Academy",
     category: "Web Design",
-    image: "/portfolio/Screenshot-2024-12-06-041946.png",
+    image: "/portfolio/zuri-beauty-academy-web-design.png",
     description: "Beauty school website with course catalog, online enrollment, and student portal.",
   },
   {
     title: "Virtual Healthcare",
     category: "Branding & Web",
-    image: "/portfolio/ChatGPT-Image-Dec-15-2025-06_26_06-PM.webp",
+    image: "/portfolio/virtual-healthcare-branding.webp",
     description: "Telemedicine platform brand identity and landing pages designed to build patient trust.",
   },
   {
     title: "Advertisement Marketing",
     category: "Web Design",
-    image: "/portfolio/3-1-1.png",
+    image: "/portfolio/advertisement-marketing-web-design.png",
     description: "Performance marketing agency site with case study showcases and campaign result dashboards.",
   },
 ];
@@ -229,7 +229,7 @@ export default function PortfolioPageClient() {
               muted
               playsInline
               className="w-full"
-              poster="/tml-her.jpg"
+              poster="/tml-showreel-poster.jpg"
             >
               <source src="/tml-showreel.mp4" type="video/mp4" />
             </video>

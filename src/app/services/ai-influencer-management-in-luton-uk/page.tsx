@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["luton_uk"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Luton | TML Agency",
   description: "TML offers expert ai influencer management services in Luton. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management luton", "ai influencer management agency luton", "ai influencer management company luton"],

@@ -139,7 +139,7 @@ export function CTAHome2() {
                 loop
                 playsInline
                 preload="none"
-                poster="/tml-her.jpg"
+                poster="/tml-showreel-poster.jpg"
                 className="w-full h-auto object-cover aspect-video"
               >
                 <source src="/tml-showreel.mp4" type="video/mp4" />

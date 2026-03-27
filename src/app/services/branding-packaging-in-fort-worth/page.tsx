@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["fort_worth"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Fort Worth | TML Agency",
   description: "TML offers expert packaging design services in Fort Worth. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design fort worth", "packaging design agency fort worth", "packaging design company fort worth"],

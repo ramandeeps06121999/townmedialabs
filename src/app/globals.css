@@ -2,7 +2,7 @@
 
 @theme inline {
   --color-background: #050505;
-  --color-foreground: #ededed;
+  --color-foreground: rgba(255, 255, 255, 0.9);
   --color-accent: #ff4500;
   --color-accent-dark: #e63e00;
   --color-accent-muted: #cc3d00;

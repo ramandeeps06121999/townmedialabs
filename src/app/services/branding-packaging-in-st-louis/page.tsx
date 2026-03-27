@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["st_louis"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in St. Louis | TML Agency",
   description: "TML offers expert packaging design services in St. Louis. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design st. louis", "packaging design agency st. louis", "packaging design company st. louis"],

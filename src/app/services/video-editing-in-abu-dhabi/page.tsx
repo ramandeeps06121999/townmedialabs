@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["abu_dhabi"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in Abu Dhabi | TML Agency",
   description: "TML offers expert video editing services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing abu dhabi", "video editing agency abu dhabi", "video editing company abu dhabi"],

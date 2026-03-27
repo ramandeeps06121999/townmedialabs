@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["los_angeles"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best AI Influencer Management Agency in Los Angeles | TML Agency",
   description: "TML offers expert ai influencer management services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management los angeles", "ai influencer management agency los angeles", "ai influencer management company los angeles"],

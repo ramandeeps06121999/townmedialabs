@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["las_vegas"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in Las Vegas | TML Agency",
   description: "TML offers expert packaging design services in Las Vegas. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design las vegas", "packaging design agency las vegas", "packaging design company las vegas"],

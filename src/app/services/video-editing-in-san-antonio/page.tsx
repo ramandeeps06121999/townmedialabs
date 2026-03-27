@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_antonio"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Video Editing Agency in San Antonio | TML Agency",
   description: "TML offers expert video editing services in San Antonio. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing san antonio", "video editing agency san antonio", "video editing company san antonio"],

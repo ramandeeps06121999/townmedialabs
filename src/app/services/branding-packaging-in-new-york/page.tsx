@@ -5,6 +5,7 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["new_york"];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Best Packaging Design Agency in New York | TML Agency",
   description: "TML offers expert packaging design services in New York. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design new york", "packaging design agency new york", "packaging design company new york"],
