@@ -106,6 +106,48 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
   };
 }
 
+export function generateArticleSchema(params: {
+  title: string;
+  description: string;
+  image?: string;
+  datePublished: string;
+  dateModified?: string;
+  slug: string;
+  keywords?: string[];
+  category?: string;
+}) {
+  const siteUrl = "https://townmedialabs.com";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: params.title,
+    description: params.description,
+    image: `${siteUrl}${params.image || "/og-image.png"}`,
+    datePublished: params.datePublished,
+    dateModified: params.dateModified || params.datePublished,
+    author: {
+      "@type": "Organization",
+      name: "TML Agency",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TML Agency",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/blog/${params.slug}`,
+    },
+    ...(params.keywords && { keywords: params.keywords.join(", ") }),
+    ...(params.category && { articleSection: params.category }),
+    inLanguage: "en-IN",
+  };
+}
+
 export function generateFAQSchema(faqs: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",

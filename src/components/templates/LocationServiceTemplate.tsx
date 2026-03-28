@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, useInView } from "motion/react";
 import type { LocationInfo } from "@/data/locations";
 import { locations, getLocationServiceSlug } from "@/data/locations";
 import { servicePages } from "@/data/servicePages";
@@ -16,8 +15,6 @@ import { industries, industryPages } from "@/data/industries";
 import { serviceRelatedBlogs, serviceRelatedIndustries } from "@/lib/internalLinks";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { getCityServiceContent } from "@/data/cityServiceContent";
-
-const ease = [0.23, 1, 0.32, 1] as const;
 
 function convertPriceRange(range: string, country: string): string {
   if (country === "India") return range;
@@ -45,6 +42,28 @@ function SectionDivider() {
   );
 }
 
+/** Simple hook: returns true once the element is in the viewport */
+function useNativeInView(threshold = 0.3) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+  return { ref, inView };
+}
+
 interface Props {
   location: LocationInfo;
   serviceSlug: string;
@@ -52,8 +71,7 @@ interface Props {
 }
 
 export default function LocationServiceTemplate({ location, serviceSlug, serviceName }: Props) {
-  const statsRef = useRef(null);
-  const statsInView = useInView(statsRef, { once: true, amount: 0.3 });
+  const { ref: statsRef, inView: statsInView } = useNativeInView(0.3);
   const serviceData = servicePages[serviceSlug];
   const cityName = location.name;
   const enrichment = getCityServiceContent(serviceSlug, location.slug);
@@ -134,21 +152,15 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[700px] rounded-full bg-[#ff4500]/[0.05] blur-[180px] pointer-events-none" />
 
         <div className="relative mx-auto max-w-5xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#ff4500]/20 bg-[#ff4500]/5 mb-8"
+          <div
+            className="hero-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#ff4500]/20 bg-[#ff4500]/5 mb-8"
           >
             <div className="w-2 h-2 rounded-full bg-[#ff4500] animate-pulse" />
             <span className="text-[11px] text-[#ff4500] tracking-wide font-medium">{enrichment?.heroBadge || `Trusted by ${cityName} Businesses`}</span>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight mb-6"
+          <h1
+            className="hero-fade-up hero-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight mb-6"
           >
             {enrichment?.h1 ? (
               <>
@@ -167,31 +179,22 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 </span>
               </>
             )}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease }}
-            className="text-lg md:text-xl text-white/90 font-medium mb-4"
+          <p
+            className="hero-fade-up hero-delay-2 text-lg md:text-xl text-white/90 font-medium mb-4"
           >
             {enrichment?.tagline || `Grow your ${cityName} business with expert ${serviceName.toLowerCase()} services.`}
-          </motion.p>
+          </p>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="text-sm md:text-base text-white/30 leading-relaxed max-w-2xl mx-auto mb-10"
+          <p
+            className="hero-fade-up hero-delay-3 text-sm md:text-base text-white/30 leading-relaxed max-w-2xl mx-auto mb-10"
           >
             {enrichment?.heroDescription || `TML is a leading ${serviceName.toLowerCase()} agency serving businesses across ${location.region}. We combine deep industry expertise with local market understanding to deliver ${serviceName.toLowerCase()} solutions that drive real results for ${cityName} businesses.`}
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          <div
+            className="hero-fade-up hero-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
               href="/contact"
@@ -205,7 +208,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
             >
               View Full Service Details
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -214,13 +217,9 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <section ref={statsRef} className="relative w-full px-6 py-12 md:py-16 lg:px-12">
           <div className="relative mx-auto max-w-5xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {serviceData.stats.map((stat, i) => (
-                <motion.div
+              {serviceData.stats.map((stat) => (
+                <div
                   key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1, ease }}
                   className="text-center p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02]"
                 >
                   <div className="text-2xl md:text-3xl font-bold text-white mb-1">
@@ -235,11 +234,11 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                         <span className="text-[#ff4500]">{stat.value}</span>
                       )
                     ) : (
-                      <span className="text-white/20">—</span>
+                      <span className="text-white/20">&mdash;</span>
                     )}
                   </div>
                   <p className="text-xs text-white/90">{stat.label}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -252,18 +251,18 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* Why Choose Us */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Why Choose TML</motion.p>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
+          <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Why Choose TML</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
             Why {cityName} businesses choose us<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {(enrichment?.whyChoose || [
               { title: `${cityName} Market Expertise`, description: `We understand ${cityName}'s market dynamics, consumer behavior, and what resonates with the local audience across ${location.region}.` },
               { title: "Proven Track Record", description: `500+ successful projects delivered for businesses in ${location.state}. Our results speak for themselves.` },
               { title: "Industry Specialization", description: `Deep experience working with ${location.industries.slice(0, 4).join(", ")} businesses — the industries that drive ${cityName}'s economy.` },
               { title: "End-to-End Solutions", description: `From strategy to execution, we handle everything so you can focus on running your ${cityName} business.` },
-            ]).map((item, i) => (
-              <motion.div key={item.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.1, ease }}
+            ]).map((item) => (
+              <div key={item.title}
                 className="group p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#ff4500]/10 flex items-center justify-center mb-5 group-hover:bg-[#ff4500]/20 transition-colors">
@@ -271,7 +270,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
                 <p className="text-sm text-white/90 leading-relaxed">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -282,18 +281,18 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* How We Work - Process Section */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Our Process</motion.p>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
+          <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Our Process</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
             Our {serviceName} Process in {cityName}<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {(enrichment?.processSteps ? enrichment.processSteps.map((s, i) => ({ step: i + 1, title: s.title, description: s.description })) : [
               { step: 1, title: "Consultation", description: `We start by understanding your ${cityName} business goals, target audience, and current ${serviceName.toLowerCase()} landscape to identify opportunities.` },
               { step: 2, title: "Planning", description: `Our team develops a tailored ${serviceName.toLowerCase()} strategy designed specifically for the ${cityName} market and your unique business needs.` },
               { step: 3, title: "Implementation", description: `We execute the plan with precision — deploying ${serviceName.toLowerCase()} campaigns and assets optimized for maximum impact in ${cityName}.` },
               { step: 4, title: "Growth", description: `We continuously monitor, analyze, and optimize your ${serviceName.toLowerCase()} performance to ensure sustained growth for your ${cityName} business.` },
-            ]).map((item, i) => (
-              <motion.div key={item.step} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.12, ease }}
+            ]).map((item) => (
+              <div key={item.step}
                 className="relative p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500"
               >
                 <div className="text-4xl md:text-5xl font-bold text-[#ff4500]/10 absolute top-4 right-4">{String(item.step).padStart(2, "0")}</div>
@@ -302,7 +301,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
                 <p className="text-sm text-white/90 leading-relaxed">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -314,10 +313,10 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {serviceData && (
         <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
           <div className="relative mx-auto max-w-7xl">
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">What We Offer</motion.p>
-            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
+            <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">What We Offer</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
               Our {serviceName} Services in {cityName}<span className="text-[#ff4500]">.</span>
-            </motion.h2>
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {(() => {
                 const chunkSize = 3;
@@ -330,13 +329,13 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     {chunk.map((f, i) => {
                       const idx = ci * chunkSize + i;
                       return (
-                        <motion.div key={f.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: idx * 0.08, ease }}
+                        <div key={f.title}
                           className="p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500"
                         >
                           <div className="text-[10px] text-white/20 font-mono mb-4">{String(idx + 1).padStart(2, "0")}</div>
                           <h3 className="text-lg font-semibold text-white mb-3">{f.title}</h3>
                           <p className="text-sm text-white/90 leading-relaxed">{f.description}</p>
-                        </motion.div>
+                        </div>
                       );
                     })}
                   </div>
@@ -352,17 +351,17 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* Our Expertise */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Our Expertise</motion.p>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
+          <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4">Our Expertise</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
             Why {cityName} Businesses Trust Our {serviceName}<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               { stat: 500, suffix: "+", label: "Projects Delivered", description: `We have successfully delivered over 500 ${serviceName.toLowerCase()} projects for businesses across ${location.state} and beyond.` },
               { stat: 98, suffix: "%", label: "Client Retention Rate", description: `Our commitment to results keeps ${cityName} businesses coming back. A 98% retention rate speaks to the quality of our work.` },
               { stat: 5, suffix: "x", label: "Average ROI", description: `${cityName} businesses working with TML see an average 5x return on their ${serviceName.toLowerCase()} investment within the first year.` },
-            ].map((item, i) => (
-              <motion.div key={item.label} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.1, ease }}
+            ].map((item) => (
+              <div key={item.label}
                 className="p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 text-center"
               >
                 <div className="text-3xl md:text-4xl font-bold text-[#ff4500] mb-2">
@@ -370,7 +369,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.label}</h3>
                 <p className="text-sm text-white/90 leading-relaxed">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -384,18 +383,18 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <div className="relative mx-auto max-w-5xl">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-10">
-            <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold">Local Expertise</motion.p>
-            <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, ease }} className="flex-1 h-[1px] bg-white/[0.06] origin-left" />
+            <p className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase font-semibold">Local Expertise</p>
+            <div className="flex-1 h-[1px] bg-white/[0.06]" />
           </div>
 
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-14">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-14">
             {serviceName} in {cityName}<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          </h2>
 
           {/* Content blocks — card grid for local info */}
           <div className="space-y-16">
             {/* Block 1: Your Local Partner */}
-            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.7, ease }}>
+            <div>
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-xs font-mono text-[#ff4500]/50 font-bold">01</span>
                 <div className="flex-1 h-[1px] bg-gradient-to-r from-[#ff4500]/20 to-transparent" />
@@ -425,10 +424,10 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   )}
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Block 2: Market Overview */}
-            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.7, ease }}>
+            <div>
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-xs font-mono text-[#ff4500]/50 font-bold">02</span>
                 <div className="flex-1 h-[1px] bg-gradient-to-r from-[#ff4500]/20 to-transparent" />
@@ -450,11 +449,11 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Block 3: Unique Content (if available) */}
             {location.uniqueContent && location.uniqueContent.length > 0 && (
-              <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.7, ease }}>
+              <div>
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-xs font-mono text-[#ff4500]/50 font-bold">03</span>
                   <div className="flex-1 h-[1px] bg-gradient-to-r from-[#ff4500]/20 to-transparent" />
@@ -465,15 +464,15 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   </div>
                   <div className="md:w-3/5 space-y-5 pl-5 border-l border-white/[0.06]">
                     {location.uniqueContent.map((paragraph, i) => (
-                      <motion.p key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                      <p key={i}
                         className="text-sm md:text-[15px] text-white/45 leading-[1.8]"
                       >
                         {paragraph}
-                      </motion.p>
+                      </p>
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             )}
           </div>
         </div>
@@ -485,7 +484,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <SectionDivider />
           <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
             <div className="relative mx-auto max-w-4xl">
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2, ease }}>
+              <div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6">{cityName} Market Insights</h3>
                 <div className="p-6 md:p-8 rounded-2xl border border-[#ff4500]/10 bg-[#ff4500]/[0.03]">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
@@ -494,7 +493,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   </div>
                   <p className="text-sm text-white/90 leading-relaxed">{enrichment.marketInsight.body}</p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </section>
         </>
@@ -506,7 +505,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <SectionDivider />
           <section className="relative w-full px-6 py-12 md:py-16 lg:px-12 bg-[#080808]">
             <div className="relative mx-auto max-w-4xl">
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }}
+              <div
                 className="relative p-[1px] rounded-2xl overflow-hidden"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#ff4500]/30 via-[#ff4500]/5 to-[#ff4500]/20 opacity-60" />
@@ -528,7 +527,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </section>
         </>
@@ -539,9 +538,9 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* Industries */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
             Industries We Serve in {cityName}<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {(() => {
               const allIndustries = enrichment?.industries || location.industries;
@@ -552,13 +551,13 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
               }
               return chunks.map((chunk, ci) => (
                 <div key={ci} className="contents">
-                  {chunk.map((ind, i) => (
-                    <motion.div key={ind} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: (ci * chunkSize + i) * 0.05, ease }}
+                  {chunk.map((ind) => (
+                    <div key={ind}
                       className="flex items-center gap-3 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors"
                     >
                       <div className="w-2 h-2 rounded-full bg-[#ff4500]/50 flex-shrink-0" />
                       <span className="text-sm text-white/90 capitalize">{ind}</span>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               ));
@@ -577,10 +576,10 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* Trusted by Businesses - Trust Section */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-4xl text-center">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-10">
             Trusted by {cityName} Businesses<span className="text-[#ff4500]">.</span>
-          </motion.h2>
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1, ease }}
+          </h2>
+          <div
             className="p-8 md:p-12 rounded-2xl border border-white/[0.06] bg-white/[0.02]"
           >
             <div className="flex items-center justify-center gap-1 mb-4">
@@ -598,8 +597,8 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
               delivered results that exceeded our expectations. Highly recommended for any {cityName} business
               looking to grow.&rdquo;
             </p>
-            <p className="text-xs text-white/30 mt-4">— A satisfied {cityName} business owner</p>
-          </motion.div>
+            <p className="text-xs text-white/30 mt-4">&mdash; A satisfied {cityName} business owner</p>
+          </div>
         </div>
       </section>
 
@@ -614,31 +613,31 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
             <div className="relative mx-auto max-w-4xl">
 
               {/* Main H2 heading */}
-              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-8">
                 Unlock Your Business Potential with Comprehensive {serviceName} Services in {cityName}<span className="text-[#ff4500]">.</span>
-              </motion.h2>
+              </h2>
 
               <div className="space-y-12">
                 {/* Group 1: Intro + Offerings + Pricing */}
                 <div className="space-y-12">
                   {/* Intro */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <p className="text-sm md:text-base text-white/90 leading-[1.9] mb-4">
                       {seoData.intro}
                     </p>
                     <p className="text-sm md:text-base text-white/90 leading-[1.9]">
                       Additionally, businesses in {cityName} across {location.industries.slice(0, 3).join(", ")} sectors are increasingly turning to professional {serviceName.toLowerCase()} services to stay competitive. Whether you&apos;re based near {location.landmarks[0]}, operating in {location.landmarks[1]}, or serving customers across {location.region} — TML Agency delivers tailored {serviceName.toLowerCase()} solutions that drive measurable results for {cityName} businesses.
                     </p>
-                  </motion.div>
+                  </div>
 
                   {/* Products & Services Offered */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
                       Products and Services Offered by a {serviceName} Agency in {cityName}
                     </h3>
                     <div className="space-y-4">
                       {seoData.offerings.map((offering, i) => (
-                        <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.04, ease }}
+                        <div key={i}
                           className="flex items-start gap-4"
                         >
                           <span className="mt-2 w-2 h-2 rounded-full bg-[#ff4500]/60 flex-shrink-0" />
@@ -646,13 +645,13 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                             <h4 className="text-base font-semibold text-white/90 mb-1">{offering.title}</h4>
                             <p className="text-sm text-white/90 leading-relaxed">{offering.desc}</p>
                           </div>
-                        </motion.div>
+                        </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
 
                   {/* Pricing Section */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                       Charges for {serviceName} Services in {cityName}
                     </h3>
@@ -661,39 +660,39 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {seoData.pricingTiers.map((tier, i) => (
-                        <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.08, ease }}
+                        <div key={i}
                           className="p-5 rounded-xl border border-white/[0.08] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors"
                         >
                           <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-2">{tier.tier}</p>
                           <p className="text-lg font-bold text-white mb-3">{convertPriceRange(tier.range, location.country)}</p>
                           <p className="text-xs text-white/35 leading-relaxed">{tier.includes}</p>
-                        </motion.div>
+                        </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
 
                 {/* Group 2: Benefits + How to Choose + Why Needed */}
                 <div className="space-y-12">
                   {/* Benefits */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
                       Benefits of Availing {serviceName} Services for Your {cityName} Business
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {seoData.benefits.map((benefit, i) => (
-                        <motion.div key={i} initial={{ opacity: 0, x: -5 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.03, ease }}
+                        <div key={i}
                           className="flex items-start gap-3 p-3 rounded-lg"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#ff4500]/60 flex-shrink-0" />
                           <p className="text-sm text-white/45 leading-relaxed">{benefit}</p>
-                        </motion.div>
+                        </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
 
                   {/* How to Choose */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                       How to Decide Which {serviceName} Service is Suitable for Your Business in {cityName}
                     </h3>
@@ -702,18 +701,18 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     </p>
                     <ul className="space-y-3">
                       {seoData.howToChoose.map((item, i) => (
-                        <motion.li key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.04, ease }}
+                        <li key={i}
                           className="flex items-start gap-3 text-sm text-white/45 leading-relaxed"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#ff4500]/60 flex-shrink-0" />
                           {item}
-                        </motion.li>
+                        </li>
                       ))}
                     </ul>
-                  </motion.div>
+                  </div>
 
                   {/* Why You Need This */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                       Why Do You Need {serviceName} Services in {cityName}?
                     </h3>
@@ -722,38 +721,38 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     </p>
                     <ul className="space-y-3">
                       {seoData.whyNeeded.map((reason, i) => (
-                        <motion.li key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.04, ease }}
+                        <li key={i}
                           className="flex items-start gap-3 text-sm text-white/45 leading-relaxed"
                         >
                           <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#ff4500]/60 flex-shrink-0" />
                           {reason}
-                        </motion.li>
+                        </li>
                       ))}
                     </ul>
-                  </motion.div>
+                  </div>
                 </div>
 
                 {/* Group 3: Types + Industry Focus + CTA */}
                 <div className="space-y-12">
                   {/* Types */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-6">
                       Types of {serviceName} Services Available in {cityName}
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {seoData.types.map((type, i) => (
-                        <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.05, ease }}
+                        <div key={i}
                           className="p-5 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors"
                         >
                           <h4 className="text-base font-semibold text-white/90 mb-2">{type.title}</h4>
                           <p className="text-xs text-white/35 leading-relaxed">{type.desc}</p>
-                        </motion.div>
+                        </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
 
                   {/* Industry Focus for City */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                       {serviceName} for {cityName}&apos;s Key Industries
                     </h3>
@@ -761,21 +760,21 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                       {cityName} has a diverse economy driven by {location.industries.join(", ")}. Each industry requires a specialised {serviceName.toLowerCase()} approach. Here&apos;s how TML serves {cityName}&apos;s key sectors:
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {location.industries.map((ind, i) => (
-                        <motion.div key={ind} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.04, ease }}
+                      {location.industries.map((ind) => (
+                        <div key={ind}
                           className="p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]"
                         >
                           <h5 className="text-sm font-semibold text-white/90 capitalize mb-1">{serviceName} for {ind}</h5>
                           <p className="text-xs text-white/35 leading-relaxed">
                             Tailored {serviceName.toLowerCase()} strategies for {cityName}&apos;s {ind} sector — from audience targeting and content creation to performance tracking and ROI optimisation.
                           </p>
-                        </motion.div>
+                        </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
 
                   {/* CTA paragraph */}
-                  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }}>
+                  <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                       Get Started with {serviceName} in {cityName} Today
                     </h3>
@@ -785,7 +784,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     <p className="text-sm md:text-base text-white/90 leading-[1.9]">
                       Join 500+ businesses across {location.country} who have trusted TML with their {serviceName.toLowerCase()} needs. Our clients in {cityName} consistently report improved visibility, higher engagement, and measurable business growth. Contact us today and discover why TML is the preferred {serviceName.toLowerCase()} agency for businesses in {cityName}, {location.state}.
                     </p>
-                  </motion.div>
+                  </div>
                 </div>
 
               </div>
@@ -799,10 +798,10 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* Also Available In - Cross-linking */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-4xl text-center">
-          <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-xl sm:text-2xl font-medium text-white mb-8">
+          <h3 className="text-xl sm:text-2xl font-medium text-white mb-8">
             {serviceName} in Other Cities
-          </motion.h3>
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1, ease }} className="flex flex-wrap items-center justify-center gap-3">
+          </h3>
+          <div className="flex flex-wrap items-center justify-center gap-3">
             {(() => {
               if (enrichment?.crossLinks) {
                 return enrichment.crossLinks.map((loc) => {
@@ -824,17 +823,17 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   {serviceName} in {loc.name}
                 </Link>
               ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Other Services in this City */}
       <section className="relative w-full px-6 py-12 lg:px-12">
         <div className="relative mx-auto max-w-4xl text-center">
-          <motion.h3 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease }} className="text-lg sm:text-xl font-medium text-white/90 mb-6">
+          <h3 className="text-lg sm:text-xl font-medium text-white/90 mb-6">
             Other Services in {cityName}
-          </motion.h3>
-          <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease }} className="flex flex-wrap items-center justify-center gap-3">
+          </h3>
+          <div className="flex flex-wrap items-center justify-center gap-3">
             {["branding", "seo", "google-ads", "website-development", "social-media", "lead-generation", "graphic-design", "video-editing", "branding-packaging", "ai-influencer-management", "music-release"]
               .filter((s) => s !== serviceSlug)
               .slice(0, 6)
@@ -851,7 +850,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   </Link>
                 );
               })}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -860,9 +859,9 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       {/* FAQ */}
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-3xl">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
-            {serviceName} in {cityName} — FAQs<span className="text-[#ff4500]">.</span>
-          </motion.h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
+            {serviceName} in {cityName} &mdash; FAQs<span className="text-[#ff4500]">.</span>
+          </h2>
           <div className="space-y-3">
             {(() => {
               const chunkSize = 4;
@@ -873,7 +872,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
               return chunks.map((chunk, ci) => (
                 <div key={ci} className="space-y-3">
                   {chunk.map((faq, i) => (
-                    <motion.details key={ci * chunkSize + i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: (ci * chunkSize + i) * 0.08, ease }}
+                    <details key={ci * chunkSize + i}
                       className="group border border-white/[0.06] rounded-xl overflow-hidden bg-white/[0.02] hover:border-white/[0.1] transition-colors"
                     >
                       <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer list-none text-white font-medium text-sm md:text-base">
@@ -883,7 +882,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                       <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm text-white/90 leading-relaxed border-t border-white/[0.04] pt-4">
                         {faq.a}
                       </div>
-                    </motion.details>
+                    </details>
                   ))}
                 </div>
               ));
@@ -902,33 +901,21 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         return (
           <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
             <div className="relative mx-auto max-w-7xl">
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, ease }}
+              <p
                 className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 Read More
-              </motion.p>
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, ease }}
+              </p>
+              <h2
                 className="text-2xl sm:text-3xl font-medium text-white mb-10"
               >
                 {serviceName} Insights &amp; Articles
                 <span className="text-[#ff4500]">.</span>
-              </motion.h2>
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                {relatedBlogs.map(({ slug, article }, i) => (
-                  <motion.div
+                {relatedBlogs.map(({ slug, article }) => (
+                  <div
                     key={slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
                   >
                     <Link
                       href={`/blog/${slug}`}
@@ -947,7 +934,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                         Read Article &rarr;
                       </span>
                     </Link>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -971,33 +958,21 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         return (
           <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
             <div className="relative mx-auto max-w-7xl">
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, ease }}
+              <p
                 className="text-[10px] md:text-xs text-white/90 tracking-[0.25em] uppercase mb-4"
               >
                 Industries We Serve
-              </motion.p>
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, ease }}
+              </p>
+              <h2
                 className="text-2xl sm:text-3xl font-medium text-white mb-10"
               >
                 Industries We Serve in {cityName}
                 <span className="text-[#ff4500]">.</span>
-              </motion.h2>
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                {relatedIndustryData.map((ind, i) => (
-                  <motion.div
+                {relatedIndustryData.map((ind) => (
+                  <div
                     key={ind.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
                   >
                     <Link
                       href={`/industries/${ind.slug}`}
@@ -1013,7 +988,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                         View Industry &rarr;
                       </span>
                     </Link>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -1029,20 +1004,20 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <div className="w-[600px] h-[600px] rounded-full bg-[#ff4500]/[0.04] blur-[150px]" />
         </div>
         <div className="relative mx-auto max-w-3xl text-center">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease }} className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-6">
             Ready to grow in {cityName}<span className="text-[#ff4500]">?</span>
-          </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease }} className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto">
+          </h2>
+          <p className="text-sm md:text-base text-white/90 mb-10 max-w-xl mx-auto">
             Get a free consultation for your {serviceName.toLowerCase()} needs. No obligations — just expert advice for your {cityName} business.
-          </motion.p>
-          <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2, ease }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact" className="px-8 py-4 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_30px_rgba(255,69,0,0.3)]">
               Get Your Free Consultation
             </Link>
             <a href="tel:+919872648209" className="px-8 py-4 rounded-full border border-white/10 text-white/90 font-semibold text-sm hover:bg-white/5 transition-colors">
               Call Us Now
             </a>
-          </motion.div>
+          </div>
         </div>
       </section>
 

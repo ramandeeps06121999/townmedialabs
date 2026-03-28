@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogArticles } from "@/data/blogArticles";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import BlogArticleClient from "./BlogArticleClient";
 
 interface Props {
@@ -55,43 +56,22 @@ export default async function BlogSlugPage({ params }: Props) {
 
   const siteUrl = "https://townmedialabs.com";
 
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
+  const articleJsonLd = generateArticleSchema({
+    title: article.title,
     description: article.metaDescription,
-    url: `${siteUrl}/blog/${slug}`,
+    image: article.image,
     datePublished: article.date,
     dateModified: article.date,
-    image: `${siteUrl}${article.image || "/og-image.png"}`,
-    author: {
-      "@type": "Person",
-      name: "TML Agency Team",
-      url: `${siteUrl}/about`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "TML Agency",
-      logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${siteUrl}/blog/${slug}`,
-    },
-    keywords: article.keywords?.join(", "),
-    articleSection: article.category,
-    inLanguage: "en-IN",
-  };
+    slug,
+    keywords: article.keywords,
+    category: article.category,
+  });
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
-      { "@type": "ListItem", position: 3, name: article.title, item: `${siteUrl}/blog/${slug}` },
-    ],
-  };
+  const breadcrumbJsonLd = generateBreadcrumbSchema([
+    { name: "Home", url: siteUrl },
+    { name: "Blog", url: `${siteUrl}/blog` },
+    { name: article.title, url: `${siteUrl}/blog/${slug}` },
+  ]);
 
   return (
     <>

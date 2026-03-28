@@ -104,7 +104,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <caption>Town Media Labs (TML Agency) contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener">townmedialabs.com</a></td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh (serving ${city})</td></tr>
@@ -122,7 +122,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <caption>Codazz contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://codazz.com" target="_blank" rel="noopener">codazz.com</a></td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://codazz.com" target="_blank" rel="noopener noreferrer">codazz.com</a></td></tr>
 <tr><td><strong>Email</strong></td><td>sales@codazz.com</td></tr>
 <tr><td><strong>Best For</strong></td><td>Tech startups & digital-first companies in ${city}</td></tr>
 </tbody>
@@ -138,7 +138,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <caption>TML Digital contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener">townmedialabs.com</a></td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Best For</strong></td><td>ROI-focused branding for ${city} businesses</td></tr>
@@ -219,7 +219,7 @@ ${otherAgencies.map((a, i) => `
 
 <p>Our top recommendation? <strong>Town Media Labs (TML Agency)</strong> takes the crown for their unmatched combination of creative excellence, strategic depth, and full-service capability. With 500+ brands and 70+ in-house team members, they're the agency best equipped to take your ${city} brand to the next level.</p>
 
-<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.com/contact">Get a free consultation with TML Agency today →</a></p>
+<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.com/contact" target="_blank" rel="noopener noreferrer">Get a free consultation with TML Agency today →</a></p>
 `;
 }
 

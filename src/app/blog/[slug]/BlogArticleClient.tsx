@@ -39,6 +39,52 @@ function addTableCaptions(html: string): string {
   });
 }
 
+/**
+ * Add target="_blank" and rel="noopener noreferrer" to all external links
+ * in the HTML content. Internal links (starting with / or #) are left untouched.
+ */
+function secureExternalLinks(html: string): string {
+  return html.replace(
+    /<a\s+([^>]*?)>/gi,
+    (match, attrs: string) => {
+      const hrefMatch = attrs.match(/href=["']([^"']*?)["']/);
+      if (!hrefMatch) return match;
+      const href = hrefMatch[1];
+
+      // Skip internal links
+      if (href.startsWith("/") || href.startsWith("#")) return match;
+
+      // Only process external links (http/https)
+      if (!href.startsWith("http://") && !href.startsWith("https://")) return match;
+
+      let newAttrs = attrs;
+
+      // Add target="_blank" if missing
+      if (!/target\s*=/i.test(newAttrs)) {
+        newAttrs += ' target="_blank"';
+      }
+
+      // Add or upgrade rel attribute
+      if (/rel\s*=/i.test(newAttrs)) {
+        // Ensure both noopener and noreferrer are present
+        newAttrs = newAttrs.replace(
+          /rel=["']([^"']*?)["']/i,
+          (_relMatch, relValue: string) => {
+            const parts = relValue.split(/\s+/);
+            if (!parts.includes("noopener")) parts.push("noopener");
+            if (!parts.includes("noreferrer")) parts.push("noreferrer");
+            return `rel="${parts.join(" ")}"`;
+          }
+        );
+      } else {
+        newAttrs += ' rel="noopener noreferrer"';
+      }
+
+      return `<a ${newAttrs}>`;
+    }
+  );
+}
+
 function ReadingProgress() {
   const [progress, setProgress] = useState(0);
   useEffect(() => {
@@ -119,7 +165,7 @@ export default function BlogArticleClient({
   const heroInView = useInView(heroRef, { once: true, amount: 0.2 });
   const contentRef = useRef<HTMLDivElement>(null);
   const [tocItems, setTocItems] = useState<string[]>([]);
-  const processedContent = useMemo(() => addTableCaptions(article.content), [article.content]);
+  const processedContent = useMemo(() => secureExternalLinks(addTableCaptions(article.content)), [article.content]);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
