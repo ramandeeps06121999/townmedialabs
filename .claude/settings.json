@@ -23,7 +23,9 @@
       "Bash(while ps:*)",
       "Bash(do sleep:*)",
       "Bash(grep -n \"industries:.*}\\\\],$\" /Users/ramanmakkar/Desktop/tml-nextjs/src/data/locations.ts)",
-      "Bash(grep -n \"industries.*}\\\\],$\" src/data/locations.ts)"
+      "Bash(grep -n \"industries.*}\\\\],$\" src/data/locations.ts)",
+      "Read(//Users/ramanmakkar/Desktop/tml-nextjs/**)",
+      "Bash(grep -v \"^$\")"
     ],
     "additionalDirectories": [
       "/Users/ramanmakkar/Desktop/tml-nextjs",
