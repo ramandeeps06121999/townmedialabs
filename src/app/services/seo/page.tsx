@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { servicePages } from "@/data/servicePages";
 import ServicePageTemplate from "@/components/templates/ServicePageTemplate";
+import { ServicePageSchema } from "@/components/schema/ServicePageSchema";
 
 const data = servicePages["seo"];
 const siteUrl = "https://townmedialabs.com";
@@ -38,5 +39,10 @@ export const metadata: Metadata = {
 };
 
 export default function SEOPage() {
-  return <ServicePageTemplate data={data} />;
+  return (
+    <>
+      <ServicePageSchema data={data} />
+      <ServicePageTemplate data={data} />
+    </>
+  );
 }

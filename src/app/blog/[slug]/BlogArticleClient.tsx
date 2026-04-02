@@ -10,6 +10,7 @@ import type { BlogArticle } from "@/data/blogArticles";
 import { servicePages } from "@/data/servicePages";
 import { blogRelatedServices, blogRelatedArticles } from "@/lib/internalLinks";
 import { blogArticles } from "@/data/blogArticles";
+import { getAuthorBySlug } from "@/data/authors";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -167,6 +168,7 @@ export default function BlogArticleClient({
   const contentRef = useRef<HTMLDivElement>(null);
   const [tocItems, setTocItems] = useState<string[]>([]);
   const processedContent = useMemo(() => secureExternalLinks(addTableCaptions(article.content)), [article.content]);
+  const author = getAuthorBySlug(slug);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -300,12 +302,23 @@ export default function BlogArticleClient({
             className="flex items-center justify-between"
           >
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ff4500] to-[#ff6b35] flex items-center justify-center text-white text-sm font-bold shadow-[0_0_20px_rgba(255,69,0,0.3)]">
-                TML
-              </div>
+              <Link href={author ? `/authors/${author.id}` : "#"} className="group">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ff4500] to-[#ff6b35] flex items-center justify-center text-white text-sm font-bold shadow-[0_0_20px_rgba(255,69,0,0.3)] group-hover:shadow-[0_0_30px_rgba(255,69,0,0.5)] transition-all duration-300">
+                  {author?.name.split(' ').map(n => n[0]).join('') || 'TML'}
+                </div>
+              </Link>
               <div>
-                <p className="text-sm font-semibold text-white">TML Agency</p>
-                <p className="text-[11px] text-white">India&apos;s #1 Branding Agency</p>
+                <Link
+                  href={author ? `/authors/${author.id}` : "#"}
+                  className="hover:text-[#ff4500] transition-colors duration-300"
+                >
+                  <p className="text-sm font-semibold text-white">
+                    {author?.name || "TML Agency"}
+                  </p>
+                </Link>
+                <p className="text-[11px] text-white/70">
+                  {author?.title || "Editorial Team"}
+                </p>
               </div>
             </div>
             <div className="hidden sm:flex items-center gap-2">

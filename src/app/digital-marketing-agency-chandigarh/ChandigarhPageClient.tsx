@@ -431,7 +431,7 @@ export default function ChandigarhPageClient() {
               className="md:w-[62%] space-y-5 text-sm md:text-base text-white leading-relaxed"
             >
               <p>
-                Looking for the <strong className="text-white">best branding and digital marketing agency in Chandigarh</strong>? TML Agency — also known as Town Media Labs — has been the go-to <strong className="text-white">branding company in Chandigarh</strong> since 2015, helping businesses across Chandigarh, Mohali, Panchkula, Zirakpur, and the entire tricity region build powerful brands and grow online.
+                Looking for the <strong className="text-white">best branding and digital marketing agency in Chandigarh</strong>? TML Agency — also known as Town Media Labs — has been the go-to <strong className="text-white">branding company in Chandigarh</strong> since 2010, helping businesses across Chandigarh, Mohali, Panchkula, Zirakpur, and the entire tricity region build powerful brands and grow online.
               </p>
               <p>
                 As Chandigarh&apos;s <strong className="text-white">leading full-service branding and marketing agency</strong>, we offer everything from brand identity design, logo design, and packaging to website development, SEO, Google Ads management, social media marketing, lead generation, and AI influencer management. Our team of 70+ in-house branding and marketing experts at our Sector 34A office ensures every project is executed with precision.

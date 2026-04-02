@@ -105,6 +105,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
     city: cityName,
     state: location.state,
     services: serviceData ? serviceData.features.map((f) => f.title) : [serviceName],
+    coordinates: location.coordinates,
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([

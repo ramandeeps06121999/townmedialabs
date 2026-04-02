@@ -31,7 +31,7 @@ export const chandigarhServices: Record<string, ChandigarhServiceData> = {
       { title: "Strategy-First Approach", description: "We don't just design logos — we build strategic brand foundations that drive business growth." },
     ],
     localContent: [
-      "As the leading branding agency in Chandigarh, TML has been transforming businesses across the tricity since 2015. Whether you're a startup in IT Park Chandigarh, a restaurant in Sector 17, or an established brand in Mohali — we create brand identities that capture your essence and connect with your target audience.",
+      "As the leading branding agency in Chandigarh, TML has been transforming businesses across the tricity since 2010. Whether you're a startup in IT Park Chandigarh, a restaurant in Sector 17, or an established brand in Mohali — we create brand identities that capture your essence and connect with your target audience.",
       "Our Chandigarh-based branding team combines deep market research with creative excellence. We understand what makes tricity consumers tick, and we use that insight to build brands that don't just look good — they drive real business results.",
       "From complete rebranding projects to new brand launches, our portfolio includes work for real estate companies, restaurants, tech startups, fashion brands, healthcare providers, and more across Chandigarh, Mohali, and Panchkula.",
     ],

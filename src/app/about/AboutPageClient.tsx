@@ -128,7 +128,7 @@ export default function AboutPageClient() {
           >
             Chandigarh&apos;s leading digital marketing agency, helping brands grow through
             strategic branding, performance marketing, web development, and creative excellence
-            since 2015. We turn ambitious businesses into unforgettable brands.
+            since 2010. We turn ambitious businesses into unforgettable brands.
           </motion.p>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function AboutPageClient() {
                 to bridge the gap between creative excellence and measurable business results. What
                 began as a small, passionate team of digital marketing enthusiasts has evolved into
                 one of the most trusted creative agencies in North India, serving clients who demand
-                nothing less than exceptional outcomes.
+                nothing less than exceptional outcomes. Our 15+ years of proven track record reflects our commitment to excellence.
               </p>
               <p>
                 In our early years, we focused on building a strong foundation in branding and
@@ -214,7 +214,7 @@ export default function AboutPageClient() {
               </p>
               <p>
                 Our growth has been fuelled not by aggressive sales pitches, but by the results we
-                deliver. A 98% client retention rate speaks volumes about the trust our partners
+                deliver. Our clients consistently report high satisfaction rates and long-term partnerships, reflecting the trust our partners
                 place in us. Whether it&apos;s crafting a brand identity from scratch, building a
                 high-converting website, running data-driven social media campaigns, or dominating
                 search engine rankings — we approach every project with the same dedication and

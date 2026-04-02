@@ -22,7 +22,7 @@ export const serviceRelatedBlogs: Record<string, string[]> = {
   ],
   "social-media": [
     "social-media-marketing-cost",
-    "social-media-marketing-strategy-2025",
+    "social-media-marketing-strategy-2026",
     "seo-vs-social-media-marketing",
   ],
   branding: [
@@ -32,8 +32,8 @@ export const serviceRelatedBlogs: Record<string, string[]> = {
   ],
   "ai-influencer-management": [
     "what-are-ai-influencers-how-to-create-earn-money",
-    "ai-in-digital-marketing-2025",
-    "social-media-marketing-strategy-2025",
+    "ai-in-digital-marketing-2026",
+    "social-media-marketing-strategy-2026",
   ],
   "lead-generation": [
     "lead-generation-cost",
@@ -47,7 +47,7 @@ export const serviceRelatedBlogs: Record<string, string[]> = {
   ],
   "video-editing": [
     "video-editing-cost",
-    "social-media-marketing-strategy-2025",
+    "social-media-marketing-strategy-2026",
     "how-to-choose-digital-marketing-agency",
   ],
   "branding-packaging": [
@@ -63,7 +63,7 @@ export const serviceRelatedBlogs: Record<string, string[]> = {
   "link-building": [
     "how-much-does-seo-cost",
     "how-to-do-keyword-research",
-    "ecommerce-seo-guide-2025",
+    "ecommerce-seo-guide-2026",
   ],
   "meta-ads": [
     "facebook-ads-vs-google-ads",

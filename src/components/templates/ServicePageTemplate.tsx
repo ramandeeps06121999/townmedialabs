@@ -14,7 +14,6 @@ import { serviceRelatedBlogs, serviceRelatedIndustries } from "@/lib/internalLin
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
-import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 const ease = [0.23, 1, 0.32, 1] as const;
@@ -270,40 +269,8 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
     .map((slug) => servicePages[slug])
     .filter(Boolean);
 
-  const serviceSchema = generateServiceSchema({
-    name: data.title,
-    description: data.description,
-    url: `https://townmedialabs.com/services/${data.slug}`,
-    category: data.title,
-  });
-
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Services", url: "https://townmedialabs.com/services" },
-    { name: data.title, url: `https://townmedialabs.com/services/${data.slug}` },
-  ]);
-
-  const faqSchema = generateFAQSchema(
-    data.faqs.map((faq) => ({ question: faq.q, answer: faq.a }))
-  );
-
   return (
     <main className="bg-[#050505] text-white min-h-screen">
-      {/* Schema markup grouped to reduce DOM width */}
-      <div className="contents">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      </div>
       <InnerNavbar />
 
       {/* Hero Section */}

@@ -6,10 +6,28 @@
       "Bash(node generate-india-pages.mjs)",
       "Bash(lsof -ti:3000,3001,3002,3003)",
       "Bash(lsof -i:3002)",
-      "Bash(ls /Users/ramanmakkar/Desktop/tml-nextjs/public/favicon* /Users/ramanmakkar/Desktop/tml-nextjs/public/apple-touch-icon* /Users/ramanmakkar/Desktop/tml-nextjs/src/app/favicon*)"
+      "Bash(ls /Users/ramanmakkar/Desktop/tml-nextjs/public/favicon* /Users/ramanmakkar/Desktop/tml-nextjs/public/apple-touch-icon* /Users/ramanmakkar/Desktop/tml-nextjs/src/app/favicon*)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx|json\\)$\")",
+      "Bash(pkill -f \"next build\")",
+      "Bash(kill -9 23379)",
+      "Bash(__NEW_LINE_35d6ae080b4035f1__ grep:*)",
+      "Bash(/tmp/new_article.txt:*)",
+      "Bash(curl -I http://localhost:3000)",
+      "Bash(find /Users/ramanmakkar/Desktop/tml-nextjs/src -name *gtag* -o -name *GTM* -o -name *tag* -type f)",
+      "Bash(grep -n ',,\\\\|,,$' /Users/ramanmakkar/Desktop/tml-nextjs/src/data/locations.ts)",
+      "Read(//^  \"\"\"\"\"\"\"\"ai-digital-marketing-trends-2026\"\"\"\"\"\"\"\":/,/^  },$/**)",
+      "Read(//^  \"\"\"\"\"\"\"\"ai-digital-marketing-trends-2026\"\"\"\"\"\"\"\":/**)",
+      "Bash(pkill -9 node)",
+      "Bash(node /tmp/add_blog_authors.js)",
+      "Bash(awk 'NR>=29 && NR<=33' /Users/ramanmakkar/Desktop/tml-nextjs/src/data/locations.ts)",
+      "Bash(while ps:*)",
+      "Bash(do sleep:*)",
+      "Bash(grep -n \"industries:.*}\\\\],$\" /Users/ramanmakkar/Desktop/tml-nextjs/src/data/locations.ts)",
+      "Bash(grep -n \"industries.*}\\\\],$\" src/data/locations.ts)"
     ],
     "additionalDirectories": [
-      "/Users/ramanmakkar/Desktop/tml-nextjs"
+      "/Users/ramanmakkar/Desktop/tml-nextjs",
+      "/Users/ramanmakkar/Desktop"
     ]
   }
 }

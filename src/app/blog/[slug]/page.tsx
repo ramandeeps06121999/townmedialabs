@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogArticles } from "@/data/blogArticles";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { getAuthorBySlug } from "@/data/authors";
 import BlogArticleClient from "./BlogArticleClient";
 
 interface Props {
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const siteUrl = "https://townmedialabs.com";
+  const author = getAuthorBySlug(slug);
 
   const seoTitle = article.metaTitle || article.title;
   const ogImage = article.image || "/og-image.png";
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "en_IN",
       publishedTime: article.date,
       modifiedTime: article.date,
-      authors: ["TML Agency"],
+      authors: author ? [author.name] : ["TML Agency"],
       images: [{ url: ogImage, width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
@@ -55,6 +57,7 @@ export default async function BlogSlugPage({ params }: Props) {
   if (!article) notFound();
 
   const siteUrl = "https://townmedialabs.com";
+  const author = getAuthorBySlug(slug);
 
   const articleJsonLd = generateArticleSchema({
     title: article.title,
@@ -65,6 +68,8 @@ export default async function BlogSlugPage({ params }: Props) {
     slug,
     keywords: article.keywords,
     category: article.category,
+    authorName: author?.name,
+    authorId: author?.id,
   });
 
   const breadcrumbJsonLd = generateBreadcrumbSchema([

@@ -8,6 +8,10 @@ export interface LocationInfo {
   landmarks: string[];
   industries: string[];
   uniqueContent?: string[];
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
 }
 
 export const locations: Record<string, LocationInfo> = {
@@ -25,6 +29,10 @@ export const locations: Record<string, LocationInfo> = {
       "TML works with businesses across all three NCR cities — Delhi, Gurgaon, and Noida — each with distinct buyer personas. Gurgaon's corporate corridor demands B2B lead generation, Noida's Sector 62 IT hub needs SaaS-focused campaigns, and Delhi's Chandni Chowk and Karol Bagh traders are rapidly moving online.",
       "With over 30 million people in the NCR, the scale of opportunity is immense but so is the noise. Our campaigns cut through by combining hyperlocal targeting — think pin-code level Google Ads for Dwarka, Rohini, or Greater Kailash — with the kind of creative that resonates with Delhi's trend-savvy audience.",
     ],
+    coordinates: {
+      latitude: 28.7041,
+      longitude: 77.1025,
+    }
   },
   mumbai: {
     slug: "mumbai",
@@ -40,6 +48,10 @@ export const locations: Record<string, LocationInfo> = {
       "The Bollywood and entertainment industry is woven into Mumbai's DNA. From production houses in Andheri to post-production studios in Lower Parel, we've helped creative businesses build their digital presence with campaigns as bold as the city itself.",
       "Mumbai's startup ecosystem — centred around Powai's tech hub and Lower Parel's co-working boom — demands growth marketing that scales fast. Our performance marketing expertise helps Mumbai startups acquire users cost-effectively, whether you're targeting the local dabbawalas or a pan-India audience.",
     ],
+    coordinates: {
+      latitude: 19.076,
+      longitude: 72.8777,
+    }
   },
   punjab: {
     slug: "punjab",
@@ -55,6 +67,10 @@ export const locations: Record<string, LocationInfo> = {
       "With one of India's highest NRI populations, Punjab businesses have a unique dual audience: local buyers and overseas Punjabis investing back home. Our campaigns target both segments — running real estate lead generation for NRIs in Canada, UK, and Australia while driving footfall for retail businesses on GT Road.",
       "TML's roots are in Punjab, and that proximity matters. We speak the language, understand the seasonal rhythms of Rabi and Kharif marketing cycles for agri-businesses, and know that a Patiala retailer's needs are fundamentally different from an Amritsar hotel near the Golden Temple.",
     ],
+    coordinates: {
+      latitude: 31.1471,
+      longitude: 75.3412,
+    }
   },
   bathinda: {
     slug: "bathinda",
@@ -70,6 +86,10 @@ export const locations: Record<string, LocationInfo> = {
       "The Malwa belt's education boom has brought coaching centres, private universities, and ed-tech to Bathinda. We run targeted enrollment campaigns and local SEO strategies that help educational institutions compete for students across Bathinda, Mansa, and Muktsar districts.",
       "As a TML client in Bathinda, you benefit from our deep Punjab roots and proximity. We understand that Bathinda's market dynamics differ from Ludhiana or Chandigarh — the buyer here is value-conscious, community-driven, and increasingly smartphone-first. Our campaigns reflect that reality.",
     ],
+    coordinates: {
+      latitude: 29.6245,
+      longitude: 74.667,
+    }
   },
   ludhiana: {
     slug: "ludhiana",
@@ -85,6 +105,10 @@ export const locations: Record<string, LocationInfo> = {
       "The Feroze Gandhi Market and Clock Tower area represent Ludhiana's thriving retail core, while Sarabha Nagar and Dugri house the city's aspirational consumer base. Our hyperlocal campaigns target these distinct zones differently — luxury brand positioning for South Ludhiana versus value-driven ads for the wholesale markets.",
       "Ludhiana's business community is uniquely entrepreneurial, with family-run factories competing globally. TML's proximity to the city means we understand the hustle — from optimizing IndiaMart and Alibaba listings for exporters to running Instagram campaigns for Ludhiana's booming fashion boutique scene.",
     ],
+    coordinates: {
+      latitude: 30.901,
+      longitude: 75.8573,
+    }
   },
   zirakpur: {
     slug: "zirakpur",
@@ -100,6 +124,10 @@ export const locations: Record<string, LocationInfo> = {
       "The Chandigarh-Ambala highway corridor is Zirakpur's economic lifeline, and businesses here compete for attention from Chandigarh's affluent consumers who cross the border daily. Our geo-targeted campaigns capture this commuter audience, driving footfall to Zirakpur's restaurants, retail outlets, and service businesses.",
       "TML is based in the Tricity area, making Zirakpur our home turf. We know which Patiala Road eatery is trending, which Lohgarh Road developer needs pre-launch buzz, and how Gazipur's emerging commercial zone is changing the competitive landscape. That ground-level intelligence shapes every campaign we run.",
     ],
+    coordinates: {
+      latitude: 30.6415,
+      longitude: 76.8216,
+    }
   },
   // --- Additional India Cities ---
   chandigarh: {
@@ -111,6 +139,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's best-planned city and the joint capital of Punjab and Haryana",
     landmarks: ["Sector 17", "IT Park", "Elante Mall", "Industrial Area Phase I & II", "Manimajra"],
     industries: ["IT", "government", "education", "real estate", "hospitality", "healthcare", "retail"],
+    coordinates: {
+      latitude: 30.7333,
+      longitude: 76.7794,
+    }
   },
   mohali: {
     slug: "mohali",
@@ -121,6 +153,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Punjab's IT and startup hub adjacent to Chandigarh",
     landmarks: ["IT City", "Phase 8 Industrial Area", "Sector 70", "Aerocity", "Airport Road"],
     industries: ["IT", "startups", "pharma", "real estate", "education", "sports"],
+    coordinates: {
+      latitude: 30.6413,
+      longitude: 76.7104,
+    }
   },
   panchkula: {
     slug: "panchkula",
@@ -131,6 +167,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A planned city in Haryana forming part of the Chandigarh Tricity",
     landmarks: ["Sector 5 Market", "Industrial Area Phase I", "Tau Devi Lal Stadium", "Kalka"],
     industries: ["government", "education", "healthcare", "real estate", "hospitality"],
+    coordinates: {
+      latitude: 30.409,
+      longitude: 76.7268,
+    }
   },
   kharar: {
     slug: "kharar",
@@ -141,6 +181,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A rapidly developing town on the Mohali-Chandigarh corridor",
     landmarks: ["Kharar-Landran Road", "Sunny Enclave", "Kharar Bus Stand", "Balongi"],
     industries: ["real estate", "education", "retail", "food processing", "small manufacturing"],
+    coordinates: {
+      latitude: 30.6364,
+      longitude: 76.6542,
+    }
   },
   amritsar: {
     slug: "amritsar",
@@ -151,6 +195,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Punjab's holy city and a major cultural and tourism destination",
     landmarks: ["Golden Temple", "Hall Bazaar", "Lawrence Road", "Ranjit Avenue", "GT Road"],
     industries: ["tourism", "hospitality", "textiles", "handicrafts", "food processing", "retail"],
+    coordinates: {
+      latitude: 31.634,
+      longitude: 74.8711,
+    }
   },
   jalandhar: {
     slug: "jalandhar",
@@ -161,6 +209,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A major industrial and commercial centre in Punjab's Doaba belt",
     landmarks: ["BMC Chowk", "Model Town", "GT Road", "Focal Point Industrial Area", "Nakodar Road"],
     industries: ["sports goods", "rubber", "hand tools", "leather", "education", "media"],
+    coordinates: {
+      latitude: 31.7264,
+      longitude: 75.5761,
+    }
   },
   patiala: {
     slug: "patiala",
@@ -171,6 +223,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A royal city known for its heritage, education, and growing commercial sector",
     landmarks: ["Qila Mubarak", "Mall Road", "Rajpura", "Leela Bhawan", "Thapar University"],
     industries: ["education", "government", "pharmaceuticals", "food processing", "retail"],
+    coordinates: {
+      latitude: 30.3398,
+      longitude: 76.3869,
+    }
   },
   derabassi: {
     slug: "derabassi",
@@ -181,6 +237,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "An emerging industrial township on the Chandigarh-Ambala highway",
     landmarks: ["Industrial Area", "Barwala Road", "Lalru", "Ambala Highway"],
     industries: ["pharmaceuticals", "manufacturing", "real estate", "logistics", "food processing"],
+    coordinates: {
+      latitude: 30.5891,
+      longitude: 76.8196,
+    }
   },
   ambala: {
     slug: "ambala",
@@ -191,6 +251,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A strategic commercial town at the junction of Punjab and Haryana",
     landmarks: ["Ambala Cantt", "City Market", "Ambala-Chandigarh Highway", "Scientific Instruments Market"],
     industries: ["scientific instruments", "defence", "food processing", "retail", "logistics"],
+    coordinates: {
+      latitude: 29.3687,
+      longitude: 77.1025,
+    }
   },
   karnal: {
     slug: "karnal",
@@ -201,6 +265,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The rice bowl of India and a key city on the Delhi-Chandigarh highway",
     landmarks: ["GT Road", "Sector 12 Market", "Karna Lake", "NDRI"],
     industries: ["agriculture", "rice milling", "dairy", "education", "retail"],
+    coordinates: {
+      latitude: 29.62,
+      longitude: 77.1025,
+    }
   },
   panipat: {
     slug: "panipat",
@@ -211,6 +279,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The textile city of India and a major handloom hub",
     landmarks: ["GT Road", "Textile Market", "Siwah", "Panipat Refinery"],
     industries: ["textiles", "handloom", "oil refinery", "food processing", "retail"],
+    coordinates: {
+      latitude: 29.391,
+      longitude: 79.0099,
+    }
   },
   noida: {
     slug: "noida",
@@ -221,6 +293,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A major IT and corporate hub in the Delhi NCR region",
     landmarks: ["Sector 62 IT Hub", "Noida Expressway", "DLF Mall of India", "Film City", "Sector 18"],
     industries: ["IT", "media", "e-commerce", "manufacturing", "real estate", "education"],
+    coordinates: {
+      latitude: 28.5355,
+      longitude: 77.391,
+    }
   },
   gurgaon: {
     slug: "gurgaon",
@@ -231,6 +307,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's corporate capital with the highest concentration of Fortune 500 offices",
     landmarks: ["Cyber Hub", "DLF Cyber City", "MG Road", "Golf Course Road", "Sohna Road"],
     industries: ["IT", "consulting", "BFSI", "startups", "automotive", "real estate", "hospitality"],
+    coordinates: {
+      latitude: 28.4595,
+      longitude: 77.0266,
+    }
   },
   faridabad: {
     slug: "faridabad",
@@ -241,6 +321,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Haryana's largest and most industrialized city in southern NCR",
     landmarks: ["Sector 15 Market", "NIT Faridabad", "NHPC Chowk", "Ballabhgarh"],
     industries: ["manufacturing", "auto parts", "engineering", "real estate", "retail"],
+    coordinates: {
+      latitude: 28.4089,
+      longitude: 77.3178,
+    }
   },
   ghaziabad: {
     slug: "ghaziabad",
@@ -251,6 +335,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "A major industrial and residential hub in eastern Delhi NCR",
     landmarks: ["Indirapuram", "Vaishali", "Raj Nagar Extension", "Kaushambi", "Shipra Mall"],
     industries: ["manufacturing", "real estate", "retail", "education", "logistics"],
+    coordinates: {
+      latitude: 28.6692,
+      longitude: 77.4538,
+    }
   },
   bangalore: {
     slug: "bangalore",
@@ -261,6 +349,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's tech capital and the startup epicentre of South Asia",
     landmarks: ["Koramangala", "Indiranagar", "Electronic City", "Whitefield", "HSR Layout"],
     industries: ["IT", "startups", "biotech", "aerospace", "e-commerce", "education", "finance"],
+    coordinates: {
+      latitude: 12.9716,
+      longitude: 77.5946,
+    }
   },
   hyderabad: {
     slug: "hyderabad",
@@ -271,6 +363,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's pharma and IT hub, home to HITEC City and Genome Valley",
     landmarks: ["HITEC City", "Banjara Hills", "Gachibowli", "Jubilee Hills", "Genome Valley"],
     industries: ["IT", "pharma", "biotech", "defence", "film", "real estate", "education"],
+    coordinates: {
+      latitude: 17.385,
+      longitude: 78.4867,
+    }
   },
   chennai: {
     slug: "chennai",
@@ -281,6 +377,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The Detroit of India and a leading IT, auto, and healthcare hub",
     landmarks: ["OMR IT Corridor", "T. Nagar", "Anna Nagar", "Guindy", "Adyar"],
     industries: ["automotive", "IT", "healthcare", "manufacturing", "finance", "education", "media"],
+    coordinates: {
+      latitude: 13.0827,
+      longitude: 80.2707,
+    }
   },
   kolkata: {
     slug: "kolkata",
@@ -291,6 +391,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The cultural capital of India and eastern India's commercial gateway",
     landmarks: ["Salt Lake Sector V", "Park Street", "New Town", "Howrah", "Esplanade"],
     industries: ["IT", "finance", "jute", "steel", "education", "media", "FMCG"],
+    coordinates: {
+      latitude: 22.5726,
+      longitude: 88.3639,
+    }
   },
   pune: {
     slug: "pune",
@@ -301,6 +405,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's Oxford city and a booming IT and manufacturing hub",
     landmarks: ["Hinjewadi IT Park", "Kharadi", "Koregaon Park", "Shivajinagar", "Baner"],
     industries: ["IT", "automotive", "education", "manufacturing", "defence", "startups", "real estate"],
+    coordinates: {
+      latitude: 18.5204,
+      longitude: 73.8567,
+    }
   },
   ahmedabad: {
     slug: "ahmedabad",
@@ -311,6 +419,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Gujarat's commercial capital and one of India's fastest-growing cities",
     landmarks: ["SG Highway", "CG Road", "Ashram Road", "GIFT City", "Prahlad Nagar"],
     industries: ["textiles", "pharma", "chemicals", "IT", "real estate", "diamond", "FMCG"],
+    coordinates: {
+      latitude: 23.0225,
+      longitude: 72.5714,
+    }
   },
   jaipur: {
     slug: "jaipur",
@@ -321,6 +433,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The Pink City — Rajasthan's capital and a tourism and IT hub",
     landmarks: ["MI Road", "Mansarovar", "Sitapura Industrial Area", "Vaishali Nagar", "C-Scheme"],
     industries: ["tourism", "gems & jewellery", "IT", "textiles", "handicrafts", "real estate"],
+    coordinates: {
+      latitude: 26.9124,
+      longitude: 75.7873,
+    }
   },
   lucknow: {
     slug: "lucknow",
@@ -331,6 +447,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The City of Nawabs and Uttar Pradesh's capital with a growing IT sector",
     landmarks: ["Hazratganj", "Gomti Nagar", "Aliganj", "Indira Nagar", "IT City Lucknow"],
     industries: ["government", "IT", "education", "food processing", "retail", "healthcare"],
+    coordinates: {
+      latitude: 26.8467,
+      longitude: 80.9462,
+    }
   },
   indore: {
     slug: "indore",
@@ -341,6 +461,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "India's cleanest city and Madhya Pradesh's commercial powerhouse",
     landmarks: ["Vijay Nagar", "Palasia", "Rajwada", "Pithampur Industrial Area", "Super Corridor"],
     industries: ["IT", "pharma", "food processing", "textiles", "auto components", "education"],
+    coordinates: {
+      latitude: 22.7196,
+      longitude: 75.8577,
+    }
   },
   surat: {
     slug: "surat",
@@ -351,6 +475,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The diamond capital of the world and Gujarat's fastest-growing city",
     landmarks: ["Ring Road", "Vesu", "Athwa", "Hazira Industrial Area", "DREAM City"],
     industries: ["diamond", "textiles", "petrochemicals", "IT", "real estate", "food processing"],
+    coordinates: {
+      latitude: 21.1702,
+      longitude: 72.8311,
+    }
   },
   nagpur: {
     slug: "nagpur",
@@ -361,6 +489,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The orange city and the geographic centre of India with a booming logistics sector",
     landmarks: ["Sitabuldi", "Dharampeth", "MIHAN SEZ", "Wardha Road", "Sadar"],
     industries: ["logistics", "mining", "education", "IT", "orange trade", "real estate"],
+    coordinates: {
+      latitude: 21.1458,
+      longitude: 79.0882,
+    }
   },
   south_delhi: {
     slug: "south-delhi",
@@ -371,6 +503,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Delhi's most affluent and premium market for luxury brands and high-end services",
     landmarks: ["Greater Kailash", "Hauz Khas Village", "Saket", "Vasant Kunj", "Green Park"],
     industries: ["luxury retail", "fashion", "hospitality", "premium real estate", "fine dining", "healthcare"],
+    coordinates: {
+      latitude: 28.5355,
+      longitude: 77.2707,
+    }
   },
   dehradun: {
     slug: "dehradun",
@@ -381,6 +517,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Uttarakhand's capital and a growing education and tourism hub",
     landmarks: ["Rajpur Road", "Clock Tower", "Saharanpur Road", "IT Park Dehradun", "Mussoorie Road"],
     industries: ["education", "tourism", "IT", "defence", "government", "hospitality"],
+    coordinates: {
+      latitude: 30.3165,
+      longitude: 78.0322,
+    }
   },
   coimbatore: {
     slug: "coimbatore",
@@ -391,6 +531,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The Manchester of South India and a major engineering and textile hub",
     landmarks: ["Avinashi Road", "RS Puram", "Tidel Park", "Peelamedu", "SIPCOT IT Park"],
     industries: ["textiles", "engineering", "IT", "auto components", "pumps", "education"],
+    coordinates: {
+      latitude: 11.0086,
+      longitude: 76.9011,
+    }
   },
   kochi: {
     slug: "kochi",
@@ -401,6 +545,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "Kerala's commercial capital and a growing IT and tourism hub",
     landmarks: ["InfoPark", "Kakkanad", "Marine Drive", "MG Road", "Smart City Kochi"],
     industries: ["IT", "shipping", "tourism", "spices", "healthcare", "finance"],
+    coordinates: {
+      latitude: 9.9312,
+      longitude: 76.2673,
+    }
   },
   visakhapatnam: {
     slug: "visakhapatnam",
@@ -411,6 +559,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The jewel of the East Coast with a strategic port and industrial base",
     landmarks: ["Dwaraka Nagar", "MVP Colony", "Gajuwaka", "Rushikonda", "Madhurawada IT SEZ"],
     industries: ["steel", "shipping", "IT", "pharma", "tourism", "petrochemicals", "defence"],
+    coordinates: {
+      latitude: 17.6869,
+      longitude: 83.2185,
+    }
   },
   vadodara: {
     slug: "vadodara",
@@ -421,6 +573,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The cultural capital of Gujarat with a strong industrial and education base",
     landmarks: ["Alkapuri", "Race Course", "Makarpura GIDC", "Fatehgunj", "Akota"],
     industries: ["petrochemicals", "engineering", "pharma", "education", "IT", "manufacturing"],
+    coordinates: {
+      latitude: 22.3072,
+      longitude: 73.1812,
+    }
   },
   rajkot: {
     slug: "rajkot",
@@ -431,6 +587,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The industrial heart of Saurashtra and a major SME hub",
     landmarks: ["Kalawad Road", "150 Feet Ring Road", "Metoda GIDC", "Amin Marg", "University Road"],
     industries: ["auto parts", "casting", "engineering", "jewellery", "ceramics", "IT"],
+    coordinates: {
+      latitude: 22.3039,
+      longitude: 70.8022,
+    }
   },
   bhopal: {
     slug: "bhopal",
@@ -441,6 +601,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "The City of Lakes and Madhya Pradesh's capital with a growing IT sector",
     landmarks: ["MP Nagar", "Arera Colony", "New Market", "Mandideep Industrial Area", "Hoshangabad Road"],
     industries: ["government", "IT", "education", "manufacturing", "FMCG", "healthcare"],
+    coordinates: {
+      latitude: 23.1815,
+      longitude: 79.9864,
+    }
   },
   auckland: {
     slug: "auckland",
@@ -451,6 +615,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's largest city and commercial capital",
     landmarks: ["Auckland CBD", "Newmarket", "Ponsonby", "North Shore", "Britomart"],
     industries: ["tech startups", "tourism", "finance", "film & media", "e-commerce", "healthcare", "education"],
+    coordinates: {
+      latitude: -37.0882,
+      longitude: 174.7765,
+    }
   },
   wellington: {
     slug: "wellington",
@@ -461,6 +629,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's capital city and creative hub",
     landmarks: ["Lambton Quay", "Cuba Street", "Te Aro", "Thorndon", "Courtenay Place"],
     industries: ["government", "film & VFX", "tech startups", "creative agencies", "tourism", "education", "finance"],
+    coordinates: {
+      latitude: -41.2865,
+      longitude: 174.7762,
+    }
   },
   christchurch: {
     slug: "christchurch",
@@ -471,6 +643,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's Garden City and South Island's largest city",
     landmarks: ["Cathedral Square", "Riccarton", "Merivale", "Addington", "Hagley Park"],
     industries: ["agriculture", "tourism", "construction", "tech startups", "education", "manufacturing", "healthcare"],
+    coordinates: {
+      latitude: -43.532,
+      longitude: 172.6362,
+    }
   },
   hamilton: {
     slug: "hamilton",
@@ -481,6 +657,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's fourth-largest city and Waikato's commercial centre",
     landmarks: ["Victoria Street", "The Base", "Hamilton Central", "Claudelands", "Frankton"],
     industries: ["agriculture", "dairy", "education", "healthcare", "retail", "logistics", "tech"],
+    coordinates: {
+      latitude: 43.2557,
+      longitude: -79.8711,
+    }
   },
   tauranga: {
     slug: "tauranga",
@@ -491,6 +671,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's fastest-growing city and major port",
     landmarks: ["Mount Maunganui", "Tauranga CBD", "Papamoa", "Greerton", "The Strand"],
     industries: ["port & logistics", "horticulture", "tourism", "construction", "retail", "healthcare", "real estate"],
+    coordinates: {
+      latitude: -37.787,
+      longitude: 176.1693,
+    }
   },
   dunedin: {
     slug: "dunedin",
@@ -501,6 +685,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's university city and Scottish heritage centre",
     landmarks: ["The Octagon", "University of Otago", "George Street", "South Dunedin", "Port Chalmers"],
     industries: ["education", "healthcare", "tourism", "tech startups", "food & beverage", "creative arts", "research"],
+    coordinates: {
+      latitude: -45.8788,
+      longitude: 170.5028,
+    }
   },
   queenstown: {
     slug: "queenstown",
@@ -511,6 +699,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's adventure capital and premium tourism destination",
     landmarks: ["Queenstown Mall", "Frankton", "Remarkables Park", "Arrowtown", "Lake Wakatipu"],
     industries: ["tourism", "hospitality", "adventure sports", "real estate", "luxury brands", "food & wine", "events"],
+    coordinates: {
+      latitude: -44.9281,
+      longitude: 168.7406,
+    }
   },
   napier: {
     slug: "napier",
@@ -521,6 +713,10 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's Art Deco capital and wine country hub",
     landmarks: ["Marine Parade", "Ahuriri", "Hastings CBD", "Havelock North", "Te Mata Peak"],
     industries: ["wine & viticulture", "agriculture", "tourism", "food processing", "retail", "real estate", "events"],
+    coordinates: {
+      latitude: -39.483,
+      longitude: 176.9158,
+    }
   },
   palmerston_north: {
     slug: "palmerston_north",
@@ -531,54 +727,58 @@ export const locations: Record<string, LocationInfo> = {
     description: "New Zealand's knowledge city with a strong university presence",
     landmarks: ["The Square", "Broadway Avenue", "Massey University", "Arena Manawatu", "Rangitikei Street"],
     industries: ["education", "research", "agriculture", "defence", "logistics", "healthcare", "retail"],
+    coordinates: {
+      latitude: -40.357,
+      longitude: 175.6112,
+    }
   },
 
   // ── UK ──
-  london: { slug: "london", name: "London", state: "Greater London", country: "UK", region: "London, City of London, Westminster, and the greater London area", description: "The UK's capital and one of the world's leading financial and cultural centres", landmarks: ["Canary Wharf", "Shoreditch", "Soho", "The City", "Kings Cross"], industries: ["finance", "tech", "media", "fashion", "legal", "advertising", "tourism"] },
-  manchester: { slug: "manchester", name: "Manchester", state: "Greater Manchester", country: "UK", region: "Manchester, Salford, Trafford, and the greater Manchester area", description: "The UK's second city and a major tech and creative hub", landmarks: ["Deansgate", "Spinningfields", "Northern Quarter", "MediaCityUK", "Piccadilly"], industries: ["tech", "media", "creative", "finance", "manufacturing", "education", "healthcare"] },
-  birmingham: { slug: "birmingham", name: "Birmingham", state: "West Midlands", country: "UK", region: "Birmingham, Solihull, and the West Midlands conurbation", description: "The UK's second-largest city and a major business destination", landmarks: ["Bullring", "Brindleyplace", "Jewellery Quarter", "Digbeth", "Colmore Row"], industries: ["manufacturing", "automotive", "finance", "tech", "retail", "education", "healthcare"] },
-  leeds: { slug: "leeds", name: "Leeds", state: "West Yorkshire", country: "UK", region: "Leeds, Bradford, and the West Yorkshire region", description: "A major financial and legal centre in Northern England", landmarks: ["Leeds City Centre", "Trinity Quarter", "Leeds Dock", "Headingley", "Roundhay"], industries: ["finance", "legal", "digital", "healthcare", "retail", "education", "manufacturing"] },
-  glasgow: { slug: "glasgow", name: "Glasgow", state: "Scotland", country: "UK", region: "Glasgow and the greater Clyde Valley region", description: "Scotland's largest city and a powerhouse of culture and commerce", landmarks: ["Buchanan Street", "Merchant City", "West End", "SECC", "George Square"], industries: ["finance", "tech", "energy", "creative", "education", "healthcare", "tourism"] },
-  edinburgh: { slug: "edinburgh", name: "Edinburgh", state: "Scotland", country: "UK", region: "Edinburgh, Leith, and the Lothians", description: "Scotland's capital and a global festival and finance hub", landmarks: ["Royal Mile", "New Town", "Leith", "Edinburgh Park", "Grassmarket"], industries: ["finance", "tourism", "tech", "festivals", "education", "government", "creative"] },
-  liverpool: { slug: "liverpool", name: "Liverpool", state: "Merseyside", country: "UK", region: "Liverpool, Wirral, and the Merseyside region", description: "A vibrant port city with a rich cultural and creative heritage", landmarks: ["Liverpool ONE", "Albert Dock", "Baltic Triangle", "Ropewalks", "Waterfront"], industries: ["maritime", "creative", "tourism", "education", "tech", "healthcare", "retail"] },
-  bristol: { slug: "bristol", name: "Bristol", state: "South West England", country: "UK", region: "Bristol, Bath, and the wider South West", description: "A leading tech and creative city in South West England", landmarks: ["Harbourside", "Clifton", "Temple Quarter", "Stokes Croft", "Cabot Circus"], industries: ["aerospace", "tech", "creative", "finance", "media", "education", "healthcare"] },
-  sheffield: { slug: "sheffield", name: "Sheffield", state: "South Yorkshire", country: "UK", region: "Sheffield, Rotherham, and the South Yorkshire area", description: "A city renowned for advanced manufacturing and innovation", landmarks: ["Sheffield City Centre", "Kelham Island", "Meadowhall", "Sheffield Digital Campus", "Ecclesall Road"], industries: ["steel", "manufacturing", "tech", "education", "healthcare", "retail", "creative"] },
-  newcastle: { slug: "newcastle", name: "Newcastle", state: "Tyne and Wear", country: "UK", region: "Newcastle, Gateshead, Sunderland, and the North East", description: "The commercial and cultural capital of North East England", landmarks: ["Quayside", "Grey Street", "Ouseburn", "Eldon Square", "Newcastle Helix"], industries: ["tech", "education", "culture", "healthcare", "retail", "energy", "digital"] },
-  nottingham: { slug: "nottingham", name: "Nottingham", state: "East Midlands", country: "UK", region: "Nottingham and the East Midlands", description: "A vibrant city with a strong creative and tech scene", landmarks: ["Old Market Square", "Lace Market", "Creative Quarter", "Castle Quarter", "Hockley"], industries: ["pharma", "fintech", "creative", "education", "retail", "healthcare", "manufacturing"] },
-  leicester: { slug: "leicester", name: "Leicester", state: "East Midlands", country: "UK", region: "Leicester and Leicestershire", description: "One of the UK's most diverse and enterprising cities", landmarks: ["Highcross", "Cultural Quarter", "Leicester Market", "New Walk", "Abbey Park"], industries: ["textiles", "manufacturing", "tech", "retail", "food", "education", "healthcare"] },
-  cardiff: { slug: "cardiff", name: "Cardiff", state: "Wales", country: "UK", region: "Cardiff, Swansea, and South Wales", description: "The capital of Wales and its largest commercial centre", landmarks: ["Cardiff Bay", "City Centre", "Capitol Quarter", "Cathays Park", "Roath"], industries: ["media", "finance", "government", "education", "tourism", "tech", "creative"] },
-  belfast: { slug: "belfast", name: "Belfast", state: "Northern Ireland", country: "UK", region: "Belfast and Northern Ireland", description: "Northern Ireland's capital with a booming tech sector", landmarks: ["Cathedral Quarter", "Titanic Quarter", "City Centre", "Queens Quarter", "Linen Quarter"], industries: ["tech", "aerospace", "cybersecurity", "fintech", "tourism", "education", "creative"] },
-  brighton: { slug: "brighton", name: "Brighton", state: "East Sussex", country: "UK", region: "Brighton, Hove, and the Sussex coast", description: "The UK's leading seaside digital and creative hub", landmarks: ["The Lanes", "North Laine", "Brighton Marina", "Hove", "Preston Park"], industries: ["digital", "creative", "tourism", "tech startups", "education", "media", "retail"] },
-  cambridge: { slug: "cambridge", name: "Cambridge", state: "Cambridgeshire", country: "UK", region: "Cambridge and the Silicon Fen area", description: "A world-leading centre for research, biotech, and innovation", landmarks: ["Cambridge Science Park", "City Centre", "Mill Road", "Trumpington", "CB1"], industries: ["biotech", "tech", "education", "research", "pharma", "AI", "publishing"] },
-  oxford: { slug: "oxford", name: "Oxford", state: "Oxfordshire", country: "UK", region: "Oxford and Oxfordshire", description: "A historic university city with a thriving tech and research sector", landmarks: ["City Centre", "Jericho", "Oxford Science Park", "Headington", "Summertown"], industries: ["education", "research", "publishing", "biotech", "automotive", "tech", "tourism"] },
-  reading: { slug: "reading", name: "Reading", state: "Berkshire", country: "UK", region: "Reading and the Thames Valley", description: "A major business hub in the Thames Valley tech corridor", landmarks: ["Reading Town Centre", "Green Park", "Thames Valley Park", "Forbury Gardens", "Caversham"], industries: ["tech", "telecoms", "insurance", "logistics", "finance", "pharma", "IT services"] },
-  coventry: { slug: "coventry", name: "Coventry", state: "West Midlands", country: "UK", region: "Coventry and Warwickshire", description: "A city of innovation with strong automotive and tech heritage", landmarks: ["City Centre", "FarGo Village", "Coventry University", "Cathedral Quarter", "Warwick Arts Centre"], industries: ["automotive", "manufacturing", "education", "tech", "healthcare", "retail", "creative"] },
-  southampton: { slug: "southampton", name: "Southampton", state: "Hampshire", country: "UK", region: "Southampton, Portsmouth, and the Solent area", description: "A major port city and growing tech hub on the South Coast", landmarks: ["Southampton City Centre", "Ocean Village", "West Quay", "Portswood", "Itchen Bridge"], industries: ["maritime", "engineering", "tech", "education", "finance", "healthcare", "logistics"] },
-  plymouth: { slug: "plymouth", name: "Plymouth", state: "Devon", country: "UK", region: "Plymouth and South Devon", description: "A thriving coastal city with marine and defence industries", landmarks: ["Plymouth Hoe", "Barbican", "Royal William Yard", "City Centre", "Devonport"], industries: ["marine", "defence", "education", "healthcare", "tourism", "tech", "creative"] },
-  derby: { slug: "derby", name: "Derby", state: "Derbyshire", country: "UK", region: "Derby and Derbyshire", description: "An engineering powerhouse at the heart of the Midlands", landmarks: ["Cathedral Quarter", "Pride Park", "Derwent Valley", "City Centre", "Markeaton"], industries: ["engineering", "rail", "aerospace", "manufacturing", "tech", "education", "healthcare"] },
-  aberdeen: { slug: "aberdeen", name: "Aberdeen", state: "Scotland", country: "UK", region: "Aberdeen and Aberdeenshire", description: "The energy capital of Europe with a diversifying economy", landmarks: ["Union Street", "Aberdeen Beach", "Rubislaw", "Dyce", "Altens"], industries: ["oil & gas", "energy", "tech", "healthcare", "fishing", "tourism", "education"] },
-  bath: { slug: "bath", name: "Bath", state: "Somerset", country: "UK", region: "Bath and North East Somerset", description: "A UNESCO World Heritage city with a thriving creative economy", landmarks: ["Bath City Centre", "Milsom Street", "SouthGate", "Walcot", "Lansdown"], industries: ["tourism", "creative", "tech", "education", "heritage", "retail", "professional services"] },
-  exeter: { slug: "exeter", name: "Exeter", state: "Devon", country: "UK", region: "Exeter and East Devon", description: "Devon's county city with a growing digital and science sector", landmarks: ["Exeter High Street", "Princesshay", "Exeter Quay", "Southernhay", "St Thomas"], industries: ["education", "tech", "tourism", "healthcare", "retail", "environment", "creative"] },
-  york: { slug: "york", name: "York", state: "North Yorkshire", country: "UK", region: "York and North Yorkshire", description: "A historic city with strong tourism, education, and tech sectors", landmarks: ["York City Centre", "Shambles", "York Science Park", "Hungate", "Clifton"], industries: ["tourism", "education", "rail", "insurance", "tech", "creative", "heritage"] },
-  norwich: { slug: "norwich", name: "Norwich", state: "Norfolk", country: "UK", region: "Norwich and Norfolk", description: "East Anglia's capital with a vibrant creative and tech scene", landmarks: ["Norwich Lanes", "Riverside", "Cathedral Quarter", "Golden Triangle", "NR1"], industries: ["insurance", "finance", "tech", "food", "creative", "education", "healthcare"] },
-  swansea: { slug: "swansea", name: "Swansea", state: "Wales", country: "UK", region: "Swansea and South West Wales", description: "Wales' second city with a waterfront tech campus", landmarks: ["Wind Street", "SA1 Waterfront", "Swansea Marina", "Mumbles", "City Centre"], industries: ["tech", "education", "manufacturing", "energy", "healthcare", "tourism", "creative"] },
-  dundee: { slug: "dundee", name: "Dundee", state: "Scotland", country: "UK", region: "Dundee and Tayside", description: "Scotland's sunniest city and a UNESCO City of Design", landmarks: ["V&A Dundee", "City Quay", "Waterfront", "City Centre", "Dundee University"], industries: ["gaming", "tech", "biotech", "education", "digital", "healthcare", "creative"] },
-  bournemouth: { slug: "bournemouth", name: "Bournemouth", state: "Dorset", country: "UK", region: "Bournemouth, Christchurch, and Poole", description: "A coastal hub for digital agencies and financial services", landmarks: ["Bournemouth Town Centre", "Lansdowne", "Boscombe", "Westbourne", "Poole Quay"], industries: ["finance", "digital", "tourism", "education", "tech", "healthcare", "insurance"] },
-  milton_keynes: { slug: "milton_keynes", name: "Milton Keynes", state: "Buckinghamshire", country: "UK", region: "Milton Keynes and Buckinghamshire", description: "A modern business city and one of the UK's fastest growing economies", landmarks: ["Centre:MK", "Silbury Boulevard", "Campbell Park", "Bletchley", "Stadium MK"], industries: ["tech", "logistics", "finance", "automotive", "retail", "education", "professional services"] },
-  sunderland: { slug: "sunderland", name: "Sunderland", state: "Tyne and Wear", country: "UK", region: "Sunderland and Wearside", description: "A city reinventing itself through tech and software industries", landmarks: ["City Centre", "Keel Square", "Port of Sunderland", "Stadium of Light", "Doxford Park"], industries: ["automotive", "tech", "software", "manufacturing", "education", "healthcare", "retail"] },
-  wolverhampton: { slug: "wolverhampton", name: "Wolverhampton", state: "West Midlands", country: "UK", region: "Wolverhampton and the Black Country", description: "A key city in the West Midlands with strong manufacturing heritage", landmarks: ["City Centre", "Wolverhampton Science Park", "Molineux", "Chapel Ash", "Tettenhall"], industries: ["manufacturing", "engineering", "retail", "education", "healthcare", "logistics", "tech"] },
-  stoke_on_trent: { slug: "stoke_on_trent", name: "Stoke-on-Trent", state: "Staffordshire", country: "UK", region: "Stoke-on-Trent and North Staffordshire", description: "The Potteries capital with a growing digital sector", landmarks: ["Hanley City Centre", "Staffordshire University", "Festival Park", "Trentham", "Longton"], industries: ["ceramics", "manufacturing", "logistics", "education", "retail", "healthcare", "tech"] },
-  preston: { slug: "preston", name: "Preston", state: "Lancashire", country: "UK", region: "Preston and Lancashire", description: "Lancashire's county city and an emerging digital hub", landmarks: ["Preston City Centre", "UCLan Campus", "Fishergate", "Preston Docks", "Winckley Square"], industries: ["aerospace", "manufacturing", "education", "tech", "healthcare", "retail", "professional services"] },
-  middlesbrough: { slug: "middlesbrough", name: "Middlesbrough", state: "North Yorkshire", country: "UK", region: "Middlesbrough and Teesside", description: "Teesside's largest city with a growing digital and clean energy sector", landmarks: ["Middlesbrough Centre", "Boho Zone", "Teesside University", "Albert Road", "Middlehaven"], industries: ["chemical", "engineering", "digital", "education", "healthcare", "clean energy", "tech"] },
-  peterborough: { slug: "peterborough", name: "Peterborough", state: "Cambridgeshire", country: "UK", region: "Peterborough and North Cambridgeshire", description: "One of the fastest-growing cities in the UK", landmarks: ["Queensgate", "Cathedral Square", "Fletton Quays", "Orton", "Hampton"], industries: ["engineering", "finance", "logistics", "agriculture", "publishing", "tech", "retail"] },
-  cheltenham: { slug: "cheltenham", name: "Cheltenham", state: "Gloucestershire", country: "UK", region: "Cheltenham and Gloucestershire", description: "The UK's cyber capital home to GCHQ and thriving tech scene", landmarks: ["Promenade", "Montpellier", "GCHQ Hub", "Pittville", "Town Centre"], industries: ["cybersecurity", "tech", "education", "tourism", "festivals", "professional services", "finance"] },
-  ipswich: { slug: "ipswich", name: "Ipswich", state: "Suffolk", country: "UK", region: "Ipswich and Suffolk", description: "Suffolk's county town with strong insurance and tech sectors", landmarks: ["Ipswich Waterfront", "Cornhill", "University of Suffolk", "Ransomes Europark", "Town Centre"], industries: ["insurance", "finance", "tech", "logistics", "agriculture", "education", "healthcare"] },
-  luton_uk: { slug: "luton_uk", name: "Luton", state: "Bedfordshire", country: "UK", region: "Luton, Dunstable, and South Bedfordshire", description: "A diverse business town near London with aviation and logistics strengths", landmarks: ["Town Centre", "Luton Airport", "Capability Green", "Marsh Farm", "Barnfield College"], industries: ["aviation", "manufacturing", "logistics", "tech", "retail", "education", "healthcare"] },
+  london: { slug: "london", name: "London", state: "Greater London", country: "UK", region: "London, City of London, Westminster, and the greater London area", description: "The UK's capital and one of the world's leading financial and cultural centres", landmarks: ["Canary Wharf", "Shoreditch", "Soho", "The City", "Kings Cross"], industries: ["finance", "tech", "media", "fashion", "legal", "advertising", "tourism"], coordinates: { latitude: 51.5074, longitude: -0.1278 }},
+  manchester: { slug: "manchester", name: "Manchester", state: "Greater Manchester", country: "UK", region: "Manchester, Salford, Trafford, and the greater Manchester area", description: "The UK's second city and a major tech and creative hub", landmarks: ["Deansgate", "Spinningfields", "Northern Quarter", "MediaCityUK", "Piccadilly"], industries: ["tech", "media", "creative", "finance", "manufacturing", "education", "healthcare"], coordinates: { latitude: 53.4808, longitude: -2.2426 }},
+  birmingham: { slug: "birmingham", name: "Birmingham", state: "West Midlands", country: "UK", region: "Birmingham, Solihull, and the West Midlands conurbation", description: "The UK's second-largest city and a major business destination", landmarks: ["Bullring", "Brindleyplace", "Jewellery Quarter", "Digbeth", "Colmore Row"], industries: ["manufacturing", "automotive", "finance", "tech", "retail", "education", "healthcare"], coordinates: { latitude: 52.5086, longitude: -1.8753 }},
+  leeds: { slug: "leeds", name: "Leeds", state: "West Yorkshire", country: "UK", region: "Leeds, Bradford, and the West Yorkshire region", description: "A major financial and legal centre in Northern England", landmarks: ["Leeds City Centre", "Trinity Quarter", "Leeds Dock", "Headingley", "Roundhay"], industries: ["finance", "legal", "digital", "healthcare", "retail", "education", "manufacturing"], coordinates: { latitude: 53.8008, longitude: -1.5491 }},
+  glasgow: { slug: "glasgow", name: "Glasgow", state: "Scotland", country: "UK", region: "Glasgow and the greater Clyde Valley region", description: "Scotland's largest city and a powerhouse of culture and commerce", landmarks: ["Buchanan Street", "Merchant City", "West End", "SECC", "George Square"], industries: ["finance", "tech", "energy", "creative", "education", "healthcare", "tourism"], coordinates: { latitude: 55.8642, longitude: -4.2518 }},
+  edinburgh: { slug: "edinburgh", name: "Edinburgh", state: "Scotland", country: "UK", region: "Edinburgh, Leith, and the Lothians", description: "Scotland's capital and a global festival and finance hub", landmarks: ["Royal Mile", "New Town", "Leith", "Edinburgh Park", "Grassmarket"], industries: ["finance", "tourism", "tech", "festivals", "education", "government", "creative"], coordinates: { latitude: 55.9533, longitude: -3.1883 }},
+  liverpool: { slug: "liverpool", name: "Liverpool", state: "Merseyside", country: "UK", region: "Liverpool, Wirral, and the Merseyside region", description: "A vibrant port city with a rich cultural and creative heritage", landmarks: ["Liverpool ONE", "Albert Dock", "Baltic Triangle", "Ropewalks", "Waterfront"], industries: ["maritime", "creative", "tourism", "education", "tech", "healthcare", "retail"], coordinates: { latitude: 53.4084, longitude: -2.9916 }},
+  bristol: { slug: "bristol", name: "Bristol", state: "South West England", country: "UK", region: "Bristol, Bath, and the wider South West", description: "A leading tech and creative city in South West England", landmarks: ["Harbourside", "Clifton", "Temple Quarter", "Stokes Croft", "Cabot Circus"], industries: ["aerospace", "tech", "creative", "finance", "media", "education", "healthcare"], coordinates: { latitude: 51.4545, longitude: -2.5879 }},
+  sheffield: { slug: "sheffield", name: "Sheffield", state: "South Yorkshire", country: "UK", region: "Sheffield, Rotherham, and the South Yorkshire area", description: "A city renowned for advanced manufacturing and innovation", landmarks: ["Sheffield City Centre", "Kelham Island", "Meadowhall", "Sheffield Digital Campus", "Ecclesall Road"], industries: ["steel", "manufacturing", "tech", "education", "healthcare", "retail", "creative"], coordinates: { latitude: 53.3811, longitude: -1.4701 }},
+  newcastle: { slug: "newcastle", name: "Newcastle", state: "Tyne and Wear", country: "UK", region: "Newcastle, Gateshead, Sunderland, and the North East", description: "The commercial and cultural capital of North East England", landmarks: ["Quayside", "Grey Street", "Ouseburn", "Eldon Square", "Newcastle Helix"], industries: ["tech", "education", "culture", "healthcare", "retail", "energy", "digital"], coordinates: { latitude: 54.9783, longitude: -1.6178 }},
+  nottingham: { slug: "nottingham", name: "Nottingham", state: "East Midlands", country: "UK", region: "Nottingham and the East Midlands", description: "A vibrant city with a strong creative and tech scene", landmarks: ["Old Market Square", "Lace Market", "Creative Quarter", "Castle Quarter", "Hockley"], industries: ["pharma", "fintech", "creative", "education", "retail", "healthcare", "manufacturing"], coordinates: { latitude: 52.9549, longitude: -1.1581 }},
+  leicester: { slug: "leicester", name: "Leicester", state: "East Midlands", country: "UK", region: "Leicester and Leicestershire", description: "One of the UK's most diverse and enterprising cities", landmarks: ["Highcross", "Cultural Quarter", "Leicester Market", "New Walk", "Abbey Park"], industries: ["textiles", "manufacturing", "tech", "retail", "food", "education", "healthcare"], coordinates: { latitude: 52.6369, longitude: -1.1398 }},
+  cardiff: { slug: "cardiff", name: "Cardiff", state: "Wales", country: "UK", region: "Cardiff, Swansea, and South Wales", description: "The capital of Wales and its largest commercial centre", landmarks: ["Cardiff Bay", "City Centre", "Capitol Quarter", "Cathays Park", "Roath"], industries: ["media", "finance", "government", "education", "tourism", "tech", "creative"], coordinates: { latitude: 51.4816, longitude: -3.1791 }},
+  belfast: { slug: "belfast", name: "Belfast", state: "Northern Ireland", country: "UK", region: "Belfast and Northern Ireland", description: "Northern Ireland's capital with a booming tech sector", landmarks: ["Cathedral Quarter", "Titanic Quarter", "City Centre", "Queens Quarter", "Linen Quarter"], industries: ["tech", "aerospace", "cybersecurity", "fintech", "tourism", "education", "creative"], coordinates: { latitude: 54.5973, longitude: -5.9301 }},
+  brighton: { slug: "brighton", name: "Brighton", state: "East Sussex", country: "UK", region: "Brighton, Hove, and the Sussex coast", description: "The UK's leading seaside digital and creative hub", landmarks: ["The Lanes", "North Laine", "Brighton Marina", "Hove", "Preston Park"], industries: ["digital", "creative", "tourism", "tech startups", "education", "media", "retail"], coordinates: { latitude: 50.8658, longitude: -0.0832 }},
+  cambridge: { slug: "cambridge", name: "Cambridge", state: "Cambridgeshire", country: "UK", region: "Cambridge and the Silicon Fen area", description: "A world-leading centre for research, biotech, and innovation", landmarks: ["Cambridge Science Park", "City Centre", "Mill Road", "Trumpington", "CB1"], industries: ["biotech", "tech", "education", "research", "pharma", "AI", "publishing"], coordinates: { latitude: 52.2053, longitude: 0.1218 }},
+  oxford: { slug: "oxford", name: "Oxford", state: "Oxfordshire", country: "UK", region: "Oxford and Oxfordshire", description: "A historic university city with a thriving tech and research sector", landmarks: ["City Centre", "Jericho", "Oxford Science Park", "Headington", "Summertown"], industries: ["education", "research", "publishing", "biotech", "automotive", "tech", "tourism"], coordinates: { latitude: 51.752, longitude: -1.2577 }},
+  reading: { slug: "reading", name: "Reading", state: "Berkshire", country: "UK", region: "Reading and the Thames Valley", description: "A major business hub in the Thames Valley tech corridor", landmarks: ["Reading Town Centre", "Green Park", "Thames Valley Park", "Forbury Gardens", "Caversham"], industries: ["tech", "telecoms", "insurance", "logistics", "finance", "pharma", "IT services"], coordinates: { latitude: 51.4556, longitude: -0.9735 }},
+  coventry: { slug: "coventry", name: "Coventry", state: "West Midlands", country: "UK", region: "Coventry and Warwickshire", description: "A city of innovation with strong automotive and tech heritage", landmarks: ["City Centre", "FarGo Village", "Coventry University", "Cathedral Quarter", "Warwick Arts Centre"], industries: ["automotive", "manufacturing", "education", "tech", "healthcare", "retail", "creative"], coordinates: { latitude: 52.4062, longitude: -1.5045 }},
+  southampton: { slug: "southampton", name: "Southampton", state: "Hampshire", country: "UK", region: "Southampton, Portsmouth, and the Solent area", description: "A major port city and growing tech hub on the South Coast", landmarks: ["Southampton City Centre", "Ocean Village", "West Quay", "Portswood", "Itchen Bridge"], industries: ["maritime", "engineering", "tech", "education", "finance", "healthcare", "logistics"], coordinates: { latitude: 50.9097, longitude: -1.4044 }},
+  plymouth: { slug: "plymouth", name: "Plymouth", state: "Devon", country: "UK", region: "Plymouth and South Devon", description: "A thriving coastal city with marine and defence industries", landmarks: ["Plymouth Hoe", "Barbican", "Royal William Yard", "City Centre", "Devonport"], industries: ["marine", "defence", "education", "healthcare", "tourism", "tech", "creative"], coordinates: { latitude: 50.3755, longitude: -4.1427 }},
+  derby: { slug: "derby", name: "Derby", state: "Derbyshire", country: "UK", region: "Derby and Derbyshire", description: "An engineering powerhouse at the heart of the Midlands", landmarks: ["Cathedral Quarter", "Pride Park", "Derwent Valley", "City Centre", "Markeaton"], industries: ["engineering", "rail", "aerospace", "manufacturing", "tech", "education", "healthcare"], coordinates: { latitude: 52.9229, longitude: -1.4746 }},
+  aberdeen: { slug: "aberdeen", name: "Aberdeen", state: "Scotland", country: "UK", region: "Aberdeen and Aberdeenshire", description: "The energy capital of Europe with a diversifying economy", landmarks: ["Union Street", "Aberdeen Beach", "Rubislaw", "Dyce", "Altens"], industries: ["oil & gas", "energy", "tech", "healthcare", "fishing", "tourism", "education"], coordinates: { latitude: 57.1497, longitude: -2.0943 }},
+  bath: { slug: "bath", name: "Bath", state: "Somerset", country: "UK", region: "Bath and North East Somerset", description: "A UNESCO World Heritage city with a thriving creative economy", landmarks: ["Bath City Centre", "Milsom Street", "SouthGate", "Walcot", "Lansdown"], industries: ["tourism", "creative", "tech", "education", "heritage", "retail", "professional services"], coordinates: { latitude: 51.3811, longitude: -2.3625 }},
+  exeter: { slug: "exeter", name: "Exeter", state: "Devon", country: "UK", region: "Exeter and East Devon", description: "Devon's county city with a growing digital and science sector", landmarks: ["Exeter High Street", "Princesshay", "Exeter Quay", "Southernhay", "St Thomas"], industries: ["education", "tech", "tourism", "healthcare", "retail", "environment", "creative"], coordinates: { latitude: 50.7184, longitude: -3.5339 }},
+  york: { slug: "york", name: "York", state: "North Yorkshire", country: "UK", region: "York and North Yorkshire", description: "A historic city with strong tourism, education, and tech sectors", landmarks: ["York City Centre", "Shambles", "York Science Park", "Hungate", "Clifton"], industries: ["tourism", "education", "rail", "insurance", "tech", "creative", "heritage"], coordinates: { latitude: 53.959, longitude: -1.0873 }},
+  norwich: { slug: "norwich", name: "Norwich", state: "Norfolk", country: "UK", region: "Norwich and Norfolk", description: "East Anglia's capital with a vibrant creative and tech scene", landmarks: ["Norwich Lanes", "Riverside", "Cathedral Quarter", "Golden Triangle", "NR1"], industries: ["insurance", "finance", "tech", "food", "creative", "education", "healthcare"], coordinates: { latitude: 52.6309, longitude: 1.2974 }},
+  swansea: { slug: "swansea", name: "Swansea", state: "Wales", country: "UK", region: "Swansea and South West Wales", description: "Wales' second city with a waterfront tech campus", landmarks: ["Wind Street", "SA1 Waterfront", "Swansea Marina", "Mumbles", "City Centre"], industries: ["tech", "education", "manufacturing", "energy", "healthcare", "tourism", "creative"], coordinates: { latitude: 51.6214, longitude: -3.9436 }},
+  dundee: { slug: "dundee", name: "Dundee", state: "Scotland", country: "UK", region: "Dundee and Tayside", description: "Scotland's sunniest city and a UNESCO City of Design", landmarks: ["V&A Dundee", "City Quay", "Waterfront", "City Centre", "Dundee University"], industries: ["gaming", "tech", "biotech", "education", "digital", "healthcare", "creative"], coordinates: { latitude: 56.4627, longitude: -2.9707 }},
+  bournemouth: { slug: "bournemouth", name: "Bournemouth", state: "Dorset", country: "UK", region: "Bournemouth, Christchurch, and Poole", description: "A coastal hub for digital agencies and financial services", landmarks: ["Bournemouth Town Centre", "Lansdowne", "Boscombe", "Westbourne", "Poole Quay"], industries: ["finance", "digital", "tourism", "education", "tech", "healthcare", "insurance"], coordinates: { latitude: 50.7352, longitude: -1.8388 }},
+  milton_keynes: { slug: "milton_keynes", name: "Milton Keynes", state: "Buckinghamshire", country: "UK", region: "Milton Keynes and Buckinghamshire", description: "A modern business city and one of the UK's fastest growing economies", landmarks: ["Centre:MK", "Silbury Boulevard", "Campbell Park", "Bletchley", "Stadium MK"], industries: ["tech", "logistics", "finance", "automotive", "retail", "education", "professional services"], coordinates: { latitude: 52.0406, longitude: -0.7594 }},
+  sunderland: { slug: "sunderland", name: "Sunderland", state: "Tyne and Wear", country: "UK", region: "Sunderland and Wearside", description: "A city reinventing itself through tech and software industries", landmarks: ["City Centre", "Keel Square", "Port of Sunderland", "Stadium of Light", "Doxford Park"], industries: ["automotive", "tech", "software", "manufacturing", "education", "healthcare", "retail"], coordinates: { latitude: 54.9045, longitude: -1.3857 }},
+  wolverhampton: { slug: "wolverhampton", name: "Wolverhampton", state: "West Midlands", country: "UK", region: "Wolverhampton and the Black Country", description: "A key city in the West Midlands with strong manufacturing heritage", landmarks: ["City Centre", "Wolverhampton Science Park", "Molineux", "Chapel Ash", "Tettenhall"], industries: ["manufacturing", "engineering", "retail", "education", "healthcare", "logistics", "tech"], coordinates: { latitude: 52.5889, longitude: -2.1298 }},
+  stoke_on_trent: { slug: "stoke_on_trent", name: "Stoke-on-Trent", state: "Staffordshire", country: "UK", region: "Stoke-on-Trent and North Staffordshire", description: "The Potteries capital with a growing digital sector", landmarks: ["Hanley City Centre", "Staffordshire University", "Festival Park", "Trentham", "Longton"], industries: ["ceramics", "manufacturing", "logistics", "education", "retail", "healthcare", "tech"], coordinates: { latitude: 53.0404, longitude: -2.1763 }},
+  preston: { slug: "preston", name: "Preston", state: "Lancashire", country: "UK", region: "Preston and Lancashire", description: "Lancashire's county city and an emerging digital hub", landmarks: ["Preston City Centre", "UCLan Campus", "Fishergate", "Preston Docks", "Winckley Square"], industries: ["aerospace", "manufacturing", "education", "tech", "healthcare", "retail", "professional services"], coordinates: { latitude: 53.7632, longitude: -2.7080 }},
+  middlesbrough: { slug: "middlesbrough", name: "Middlesbrough", state: "North Yorkshire", country: "UK", region: "Middlesbrough and Teesside", description: "Teesside's largest city with a growing digital and clean energy sector", landmarks: ["Middlesbrough Centre", "Boho Zone", "Teesside University", "Albert Road", "Middlehaven"], industries: ["chemical", "engineering", "digital", "education", "healthcare", "clean energy", "tech"], coordinates: { latitude: 54.5761, longitude: -1.2355 }},
+  peterborough: { slug: "peterborough", name: "Peterborough", state: "Cambridgeshire", country: "UK", region: "Peterborough and North Cambridgeshire", description: "One of the fastest-growing cities in the UK", landmarks: ["Queensgate", "Cathedral Square", "Fletton Quays", "Orton", "Hampton"], industries: ["engineering", "finance", "logistics", "agriculture", "publishing", "tech", "retail"], coordinates: { latitude: 52.5700, longitude: -0.2453 }},
+  cheltenham: { slug: "cheltenham", name: "Cheltenham", state: "Gloucestershire", country: "UK", region: "Cheltenham and Gloucestershire", description: "The UK's cyber capital home to GCHQ and thriving tech scene", landmarks: ["Promenade", "Montpellier", "GCHQ Hub", "Pittville", "Town Centre"], industries: ["cybersecurity", "tech", "education", "tourism", "festivals", "professional services", "finance"], coordinates: { latitude: 51.8945, longitude: -2.0717 }},
+  ipswich: { slug: "ipswich", name: "Ipswich", state: "Suffolk", country: "UK", region: "Ipswich and Suffolk", description: "Suffolk's county town with strong insurance and tech sectors", landmarks: ["Ipswich Waterfront", "Cornhill", "University of Suffolk", "Ransomes Europark", "Town Centre"], industries: ["insurance", "finance", "tech", "logistics", "agriculture", "education", "healthcare"], coordinates: { latitude: 52.0591, longitude: 1.1449 }},
+  luton_uk: { slug: "luton_uk", name: "Luton", state: "Bedfordshire", country: "UK", region: "Luton, Dunstable, and South Bedfordshire", description: "A diverse business town near London with aviation and logistics strengths", landmarks: ["Town Centre", "Luton Airport", "Capability Green", "Marsh Farm", "Barnfield College"], industries: ["aviation", "manufacturing", "logistics", "tech", "retail", "education", "healthcare"], coordinates: { latitude: 51.8787, longitude: -0.4179 }},
 
   // ── USA ──
-  new_york: { slug: "new_york", name: "New York", state: "New York", country: "USA", region: "New York City, Manhattan, Brooklyn, and the tri-state area", description: "The world's financial capital and a global business hub", landmarks: ["Manhattan", "Times Square", "Wall Street", "Brooklyn", "Midtown"], industries: ["finance", "media", "fashion", "tech", "advertising", "real estate", "tourism"] },
-  los_angeles: { slug: "los_angeles", name: "Los Angeles", state: "California", country: "USA", region: "Los Angeles, Hollywood, Santa Monica, and the greater LA area", description: "The entertainment capital of the world and a major tech hub", landmarks: ["Hollywood", "Downtown LA", "Santa Monica", "Venice Beach", "Beverly Hills"], industries: ["entertainment", "tech", "fashion", "aerospace", "tourism", "media", "real estate"] },
-  chicago: { slug: "chicago", name: "Chicago", state: "Illinois", country: "USA", region: "Chicago and the greater Chicagoland area", description: "America's third-largest city and a major financial centre", landmarks: ["The Loop", "Magnificent Mile", "River North", "Wicker Park", "Lincoln Park"], industries: ["finance", "manufacturing", "food", "tech", "transportation", "healthcare", "media"] },
+  new_york: { slug: "new_york", name: "New York", state: "New York", country: "USA", region: "New York City, Manhattan, Brooklyn, and the tri-state area", description: "The world's financial capital and a global business hub", landmarks: ["Manhattan", "Times Square", "Wall Street", "Brooklyn", "Midtown"], industries: ["finance", "media", "fashion", "tech", "advertising", "real estate", "tourism"], coordinates: { latitude: 40.7128, longitude: -74.0060 }},
+  los_angeles: { slug: "los_angeles", name: "Los Angeles", state: "California", country: "USA", region: "Los Angeles, Hollywood, Santa Monica, and the greater LA area", description: "The entertainment capital of the world and a major tech hub", landmarks: ["Hollywood", "Downtown LA", "Santa Monica", "Venice Beach", "Beverly Hills"], industries: ["entertainment", "tech", "fashion", "aerospace", "tourism", "media", "real estate"], coordinates: { latitude: 34.0522, longitude: -118.2437 }},
+  chicago: { slug: "chicago", name: "Chicago", state: "Illinois", country: "USA", region: "Chicago and the greater Chicagoland area", description: "America's third-largest city and a major financial centre", landmarks: ["The Loop", "Magnificent Mile", "River North", "Wicker Park", "Lincoln Park"], industries: ["finance", "manufacturing", "food", "tech", "transportation", "healthcare", "media"], coordinates: { latitude: 41.8781, longitude: -87.6298 }},
   houston: { slug: "houston", name: "Houston", state: "Texas", country: "USA", region: "Houston, Sugar Land, The Woodlands, and the greater Houston area", description: "The energy capital of the world and NASA's home base", landmarks: ["Downtown Houston", "Galleria", "Medical Center", "Energy Corridor", "Midtown"], industries: ["energy", "aerospace", "healthcare", "manufacturing", "tech", "finance", "logistics"] },
   phoenix: { slug: "phoenix", name: "Phoenix", state: "Arizona", country: "USA", region: "Phoenix, Scottsdale, Tempe, and the Valley of the Sun", description: "One of America's fastest-growing metros and a tech magnet", landmarks: ["Downtown Phoenix", "Scottsdale", "Tempe", "Chandler", "Old Town Scottsdale"], industries: ["tech", "healthcare", "real estate", "finance", "manufacturing", "education", "tourism"] },
   philadelphia: { slug: "philadelphia", name: "Philadelphia", state: "Pennsylvania", country: "USA", region: "Philadelphia, Camden, and the Delaware Valley", description: "America's sixth-largest city with world-class healthcare and education", landmarks: ["Center City", "University City", "Old City", "Fishtown", "Rittenhouse Square"], industries: ["healthcare", "pharma", "education", "finance", "tech", "biotech", "manufacturing"] },

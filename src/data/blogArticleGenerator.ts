@@ -32,7 +32,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
   return `
 <h2>Why Does Your Business Need a Branding Agency in ${city}?</h2>
 
-<p>In 2025, competition in ${city} is fiercer than ever. Whether you're a ${topIndustries[0] || "startup"} company, a ${topIndustries[1] || "retail"} brand, or a growing ${topIndustries[2] || "service"} business — <strong>your brand is the single biggest differentiator</strong> between being forgotten and being chosen.</p>
+<p>In 2026, competition in ${city} is fiercer than ever. Whether you're a ${topIndustries[0] || "startup"} company, a ${topIndustries[1] || "retail"} brand, or a growing ${topIndustries[2] || "service"} business — <strong>your brand is the single biggest differentiator</strong> between being forgotten and being chosen.</p>
 
 <p>${city}, ${state} has become one of India's fastest-growing business hubs. With industries spanning ${industryList}, the demand for professional branding has never been higher. But here's the truth: <strong>most businesses in ${city} are still competing on price instead of brand.</strong> That's a race to the bottom.</p>
 
@@ -69,9 +69,9 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 
 <hr />
 
-<h2>Top 10 Best Branding Agencies in ${city} (2025)</h2>
+<h2>Top 10 Best Branding Agencies in ${city} (2026)</h2>
 
-<p>After extensive research, client reviews, portfolio analysis, and industry reputation — here are the <strong>10 best branding agencies in ${city}</strong> delivering exceptional work in 2025:</p>
+<p>After extensive research, client reviews, portfolio analysis, and industry reputation — here are the <strong>10 best branding agencies in ${city}</strong> delivering exceptional work in 2026:</p>
 
 <h3>1. Town Media Labs (TML Agency) — Best Overall</h3>
 
@@ -180,10 +180,10 @@ ${otherAgencies.map((a, i) => `
 
 <hr />
 
-<h2>Branding Costs in ${city}: What to Expect in 2025</h2>
+<h2>Branding Costs in ${city}: What to Expect in 2026</h2>
 
 <table>
-<caption>Branding service costs and packages in ${city} for 2025</caption>
+<caption>Branding service costs and packages in ${city} for 2026</caption>
 <thead><tr><th>Service</th><th>Budget Range</th><th>What You Get</th></tr></thead>
 <tbody>
 <tr><td>Logo Design Only</td><td>₹5,000 – ₹25,000</td><td>Logo + basic variations</td></tr>
@@ -241,7 +241,7 @@ export function generateCityBlogArticles(): Record<string, BlogArticle> {
     const cl = city.toLowerCase();
 
     articles[blogSlug] = {
-      title: `Top 10 Best Branding Agencies in ${city} (2025) — Detailed Guide`,
+      title: `Top 10 Best Branding Agencies in ${city} (2026) — Detailed Guide`,
       metaTitle: `Top 10 Best Branding Agencies in ${city}`,
       metaDescription: `Looking for the best branding agency in ${city}? Here are the top 10 branding agencies in ${city} with services, contact details, pricing & reviews. Find the perfect partner to build your brand.`,
       keywords: [
@@ -257,8 +257,9 @@ export function generateCityBlogArticles(): Record<string, BlogArticle> {
         `marketing agency ${cl}`,
       ],
       category: "Branding",
-      date: "2025-03-20",
+      date: "2026-03-31",
       readTime: "12 min read",
+      author: "Raman Makkar",
       content: generateBlogContent(city, state, loc.industries),
     };
   }

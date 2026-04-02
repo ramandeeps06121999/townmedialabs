@@ -47,7 +47,14 @@ export function generateLocalBusinessSchema(params: {
   services: string[];
   country?: string;
   areaServed?: { type: "City" | "Country" | "State"; name: string }[];
+  coordinates?: { latitude: number; longitude: number };
 }) {
+  // Default to Chandigarh if no coordinates provided (for country/state pages)
+  const coords = params.coordinates || {
+    latitude: 30.7333,
+    longitude: 76.7794,
+  };
+
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -64,8 +71,8 @@ export function generateLocalBusinessSchema(params: {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "30.7333",
-      longitude: "76.7794",
+      latitude: String(coords.latitude),
+      longitude: String(coords.longitude),
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -115,8 +122,24 @@ export function generateArticleSchema(params: {
   slug: string;
   keywords?: string[];
   category?: string;
+  authorName?: string;
+  authorId?: string;
 }) {
   const siteUrl = "https://townmedialabs.com";
+
+  // Create author object - use Person if authorName/ID provided, otherwise Organization
+  const author = params.authorName && params.authorId
+    ? {
+        "@type": "Person",
+        name: params.authorName,
+        url: `${siteUrl}/authors/${params.authorId}`,
+      }
+    : {
+        "@type": "Organization",
+        name: "TML Agency",
+        url: siteUrl,
+      };
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -125,11 +148,7 @@ export function generateArticleSchema(params: {
     image: `${siteUrl}${params.image || "/og-image.png"}`,
     datePublished: params.datePublished,
     dateModified: params.dateModified || params.datePublished,
-    author: {
-      "@type": "Organization",
-      name: "TML Agency",
-      url: siteUrl,
-    },
+    author,
     publisher: {
       "@type": "Organization",
       name: "TML Agency",
