@@ -131,14 +131,13 @@ const nextConfig: NextConfig = {
             value: "max-age=63072000; includeSubDomains; preload",
           },
           {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+          {
             key: "Permissions-Policy",
             value:
               "camera=(), microphone=(), geolocation=(), interest-cohort=()",
-          },
-          {
-            key: "Content-Security-Policy",
-            value:
-              "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://region1.google-analytics.com; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';",
           },
         ],
       },

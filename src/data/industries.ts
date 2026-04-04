@@ -2834,6 +2834,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "real estate lead generation",
       "real estate social media",
       "property branding",
+      "CREA digital marketing",
+      "Canadian real estate marketing",
+      "realtor marketing Canada",
+      "MLS listing optimization",
     ],
     heroTitle: "Digital Marketing for Real Estate",
     heroSubtitle:
@@ -2930,12 +2934,40 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "We work with developers, brokerage firms, individual high-performing agents, property portals, and PropTech companies. Strategies and budgets are scaled appropriately for each type of client.",
       },
+      {
+        question: "How does CREA and RECA compliance affect real estate digital marketing?",
+        answer:
+          "The Canadian Real Estate Association (CREA) and provincial regulators like the Real Estate Council of Alberta (RECA), the Real Estate Council of Ontario (RECO), and the BC Financial Services Authority (BCFSA) impose specific rules on how real estate professionals can advertise. This includes requirements around accurate property representation, mandatory brokerage identification in all advertising, restrictions on misleading claims, and rules governing the use of sold data and MLS listings in marketing materials. We build all real estate marketing campaigns with these compliance requirements built in from the start, ensuring your advertising meets both provincial regulatory standards and CREA guidelines.",
+      },
+      {
+        question: "What digital marketing strategies work best in competitive Canadian markets like Toronto and Vancouver?",
+        answer:
+          "In hyper-competitive markets like the Greater Toronto Area and Metro Vancouver, generic real estate marketing gets buried. We deploy neighbourhood-level SEO strategies targeting micro-markets (e.g., 'condos for sale in Liberty Village' or 'homes in Kitsilano'), build hyper-local content around community amenities, school catchments, and transit access, and run geo-targeted Google Ads campaigns at the postal code level. For agents in these markets, personal branding is also critical — we develop thought leadership content and social media strategies that differentiate individual agents within crowded brokerages.",
+      },
+      {
+        question: "Can you help with pre-construction condo marketing in Canada?",
+        answer:
+          "Yes. Pre-construction marketing is a specialisation that requires a distinct approach. We build anticipation through pre-registration landing pages, run targeted campaigns to investor and first-time buyer audiences, create compelling virtual tour and rendering showcase content, and manage the full digital funnel from awareness through VIP access events to sales centre appointments. We have experience marketing pre-construction projects across Ontario and British Columbia, where the regulatory and buyer dynamics differ significantly.",
+      },
     ],
     content: `<h2>Why Real Estate Businesses Need Specialised Digital Marketing</h2>
-<p>Real estate is one of the highest-stakes industries for digital marketing. A single qualified lead can represent lakhs or crores in commission and revenue, yet most property businesses operate with scattershot marketing strategies that waste budget and miss buyers at critical decision moments.</p>
-<p>At TML Agency, we have worked with residential developers, commercial real estate firms, property brokerages, and PropTech platforms across India. We understand that property marketing is fundamentally different from product e-commerce: purchase cycles are longer, decisions are higher-stakes, and trust plays an outsized role in conversion.</p>
+<p>Real estate is one of the highest-stakes industries for digital marketing. A single qualified lead can represent tens of thousands to millions of dollars in commission and revenue, yet most property businesses operate with scattershot marketing strategies that waste budget and miss buyers at critical decision moments.</p>
+<p>At TML Agency, we have worked with residential developers, commercial real estate firms, property brokerages, and PropTech platforms across Canada. We understand that property marketing is fundamentally different from product e-commerce: purchase cycles are longer, decisions are higher-stakes, and trust plays an outsized role in conversion.</p>
 <h2>Our Approach to Real Estate Digital Marketing</h2>
-<p>We map your buyer journey from awareness through research, comparison, inquiry, site visit, and conversion — and build marketing systems that nurture prospects at each stage. Every campaign is tracked at the lead level, not just the click level. We integrate with your CRM to attribute sales back to marketing spend, giving you a true picture of ROI rather than vanity metrics like impressions or page views.</p>`,
+<p>We map your buyer journey from awareness through research, comparison, inquiry, site visit, and conversion — and build marketing systems that nurture prospects at each stage. Every campaign is tracked at the lead level, not just the click level. We integrate with your CRM to attribute sales back to marketing spend, giving you a true picture of ROI rather than vanity metrics like impressions or page views.</p>
+
+<h2>Navigating the Canadian Real Estate Regulatory Landscape</h2>
+<p>Real estate marketing in Canada operates within a complex regulatory framework that varies by province. CREA (the Canadian Real Estate Association) governs the use of MLS trademarks and data in marketing. Provincial regulators — RECO in Ontario, RECA in Alberta, BCFSA in British Columbia, and OACIQ in Quebec — impose additional rules around advertising disclosure, brokerage identification, and claims made in property marketing materials. For example, Ontario regulations require that all real estate advertising clearly identify the brokerage, not just the individual agent. Alberta's RECA mandates specific disclosures when advertising properties that the agent has a personal interest in.</p>
+<p>The Competition Act also applies to real estate advertising at the federal level, prohibiting misleading or deceptive marketing practices including false claims about property features, fabricated testimonials, or manipulative pricing representations. CASL (Canadian Anti-Spam Legislation) governs email marketing to potential buyers, requiring proper consent mechanisms before sending property listings or market updates electronically. We build every real estate marketing campaign with these multi-layered compliance requirements integrated from the outset — ensuring your digital presence is both high-performing and fully compliant with all applicable regulations.</p>
+
+<h2>The Canadian Real Estate Digital Marketing Landscape</h2>
+<p>The Canadian real estate market is one of the most digitally active in the world. The Canadian Internet Registration Authority reports that over 93 percent of Canadians are active internet users, and real estate consistently ranks among the most searched categories online. According to the National Association of Realtors (with similar patterns in Canada), 97 percent of homebuyers use the internet during their property search, and 51 percent found the home they purchased online. In Canada's major markets — Toronto, Vancouver, Montreal, Calgary, Ottawa, and Edmonton — the digital competition for buyer attention is intense.</p>
+<p>REALTOR.ca, powered by CREA, dominates property search in Canada with over 22 million monthly visits. However, this creates both a challenge and an opportunity for individual agents and brokerages. While REALTOR.ca captures the broadest audience, agents who build strong independent digital presences through their own websites, Google Business Profiles, and social media channels can capture high-intent buyers earlier in the search journey and establish direct relationships without platform intermediation. Our strategies focus on building these independent digital assets while also maximising your visibility within the MLS ecosystem.</p>
+<p>The Canadian market also has distinct regional dynamics that affect marketing strategy. Toronto and Vancouver feature high investor activity and significant international buyer interest, requiring multilingual marketing strategies and messaging tailored to investment-focused audiences. Prairie markets like Calgary and Edmonton are more sensitive to energy sector economics. Atlantic Canadian markets like Halifax are experiencing rapid growth that creates opportunity for early digital movers. We tailor strategies to these regional realities rather than applying a one-size-fits-all national approach.</p>
+
+<h2>Building a Realtor Personal Brand in the Digital Age</h2>
+<p>In Canadian real estate, the agent's personal brand is often more important than the brokerage brand. Homebuyers and sellers choose agents based on perceived expertise, local market knowledge, communication style, and personal connection — qualities that are best demonstrated through consistent digital content. We help Canadian realtors build personal brands that attract clients organically through strategic content creation, social media presence, and community authority building.</p>
+<p>This includes developing a content strategy around local market insights — monthly neighbourhood market reports, commentary on interest rate changes and their impact on specific markets, school district guides, and community event coverage. LinkedIn and Instagram are the primary platforms for realtor personal branding in Canada, with YouTube growing rapidly as a channel for property walkthroughs and market analysis videos. We also build email newsletter programmes that keep agents top-of-mind with their sphere of influence, past clients, and prospective buyers — nurturing relationships that generate referrals and repeat business over time. The most successful agents we work with treat their digital presence as a long-term asset that compounds in value, rather than a campaign-by-campaign expense.</p>`,
   },
 
   "healthcare-medical": {
@@ -2952,6 +2984,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "patient acquisition",
       "health tech marketing",
       "clinic digital marketing",
+      "PIPEDA healthcare compliance",
+      "Canadian healthcare marketing",
+      "provincial health authority marketing",
+      "telemedicine marketing Canada",
     ],
     heroTitle: "Digital Marketing for Healthcare & Medical",
     heroSubtitle:
@@ -3048,12 +3084,41 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "Absolutely. Beyond traditional healthcare providers, we work with telemedicine platforms, health apps, diagnostic tech companies, and pharmaceutical brands. These require digital-first strategies focused on user acquisition, app installs, and B2B healthcare enterprise sales.",
       },
+      {
+        question: "How does PIPEDA affect healthcare digital marketing in Canada?",
+        answer:
+          "The Personal Information Protection and Electronic Documents Act (PIPEDA) governs how private-sector healthcare organisations collect, use, and disclose personal health information in their marketing activities. This means patient data cannot be used for marketing without explicit consent, email campaigns must follow CASL (Canadian Anti-Spam Legislation) requirements, and website tracking must respect privacy preferences. Provincial health information acts like Ontario's PHIPA and Alberta's HIA add additional layers. We build all healthcare marketing programmes with full PIPEDA and provincial compliance from day one — including consent management, data handling procedures, and compliant analytics configurations.",
+      },
+      {
+        question: "What marketing strategies work for specialists operating within the Canadian public healthcare system?",
+        answer:
+          "Canadian specialists who receive referrals through the public system face a unique marketing challenge — they cannot directly solicit patients in the same way as private practices. However, digital marketing still plays a critical role. We build referring-physician awareness campaigns, educational content that positions specialists as the authority in their field, and patient information resources that support the referral pathway. For specialists with private-pay services like cosmetic procedures, executive health assessments, or non-insured treatments, we deploy full patient acquisition funnels including Google Ads and local SEO optimisation.",
+      },
+      {
+        question: "Can you help healthcare practices rank in multiple Canadian cities?",
+        answer:
+          "Yes. Multi-location healthcare SEO is a core competency. For clinic networks operating across multiple Canadian cities, we build location-specific landing pages, manage separate Google Business Profiles for each location, and develop city-specific content strategies that target the unique competitive landscape in each market. Whether you operate in Toronto, Vancouver, Calgary, or smaller markets, we ensure each location has maximum local search visibility for the services it offers.",
+      },
     ],
     content: `<h2>Digital Marketing Built for Healthcare's Unique Challenges</h2>
 <p>Healthcare marketing operates at the intersection of commercial growth and patient welfare — a balance that requires both marketing expertise and deep sector understanding. At TML Agency, we build digital marketing systems for healthcare organisations that are effective, ethical, and fully compliant with advertising regulations.</p>
 <p>Whether you are running a single-specialty clinic, a multi-location hospital network, a diagnostic chain, or a health tech platform, the fundamental challenge is the same: building enough trust in your digital presence that prospective patients choose you over the dozens of alternatives a Google search reveals.</p>
 <h2>How We Build Patient Trust Through Digital Marketing</h2>
-<p>Trust in healthcare is earned through expertise signals — doctor credentials, published research, patient reviews, accreditations, and outcome transparency. Our content and SEO strategies are specifically designed to surface these trust signals in search results and across social platforms, so patients encounter your credibility before they even visit your website. We combine this trust-building content layer with precise paid search campaigns that intercept patients at the moment of highest intent.</p>`,
+<p>Trust in healthcare is earned through expertise signals — doctor credentials, published research, patient reviews, accreditations, and outcome transparency. Our content and SEO strategies are specifically designed to surface these trust signals in search results and across social platforms, so patients encounter your credibility before they even visit your website. We combine this trust-building content layer with precise paid search campaigns that intercept patients at the moment of highest intent.</p>
+
+<h2>Navigating Canadian Healthcare Compliance in Digital Marketing</h2>
+<p>Marketing healthcare services in Canada requires navigating a multi-layered compliance environment that differs significantly from other jurisdictions. At the federal level, PIPEDA governs the collection and use of personal health information for marketing purposes. Provincial legislation adds further requirements — Ontario's Personal Health Information Protection Act (PHIPA), Alberta's Health Information Act (HIA), and British Columbia's Freedom of Information and Protection of Privacy Act (FIPPA) each impose specific obligations on how patient data can be collected through website forms, used in email marketing, and stored for remarketing purposes.</p>
+<p>Beyond data privacy, provincial Colleges of Physicians and Surgeons regulate how medical practitioners can advertise their services. The College of Physicians and Surgeons of Ontario (CPSO), for example, has specific guidelines around testimonial use, claims about treatment outcomes, and comparative advertising. Similar rules exist across all provinces. Our team stays current with these regulatory frameworks and builds every healthcare marketing campaign with compliance as a non-negotiable foundation — not an afterthought. This includes implementing proper consent management platforms, configuring privacy-compliant analytics, building CASL-compliant email marketing workflows, and ensuring all ad copy and landing page content meets provincial advertising standards.</p>
+
+<h2>The Canadian Healthcare Digital Landscape: Market Realities</h2>
+<p>Canada's healthcare market presents unique dynamics that shape digital marketing strategy. The public-private healthcare split means marketing approaches differ dramatically depending on whether a practice operates within the publicly funded system or offers private-pay services. Over 70 percent of Canadian healthcare spending is public, but the private sector — encompassing dental clinics, cosmetic surgery, physiotherapy, optometry, mental health services, and executive health programmes — represents a rapidly growing market where digital marketing drives patient acquisition directly.</p>
+<p>Canadian patients are sophisticated digital researchers. According to the Canadian Medical Association, over 80 percent of Canadians search online for health information, and 65 percent research healthcare providers before booking appointments. Google is the dominant discovery channel, with searches like "walk-in clinic near me," "best dermatologist in Toronto," or "physiotherapy Vancouver" generating thousands of monthly queries in every major Canadian market. The Canada Health Infoway's push toward digital health adoption — including virtual care platforms — has further accelerated the importance of digital presence for healthcare providers.</p>
+<p>Seasonality also plays a role in Canadian healthcare marketing. Allergy clinics see search volume spikes in spring, mental health services peak in January and during darker winter months, sports medicine clinics see surges around hockey and skiing seasons, and cosmetic procedures often spike before summer. We build healthcare marketing calendars that align campaign intensity and budget allocation with these predictable demand patterns, ensuring maximum efficiency in patient acquisition spend.</p>
+
+<h2>Healthcare Service-Specific Marketing Strategies</h2>
+<p>Different healthcare verticals require fundamentally different digital marketing approaches, and a one-size-fits-all strategy invariably underperforms. For dental practices — the largest segment of private healthcare marketing in Canada — local SEO and Google Ads dominate patient acquisition. The competitive landscape in cities like Toronto, Vancouver, and Calgary means dental practices need hyper-optimised Google Business Profiles, treatment-specific landing pages, and aggressive review generation strategies to stand out.</p>
+<p>For specialist clinics such as dermatology, ophthalmology, or fertility services, content marketing and physician authority building are the primary levers. Patients researching specialists evaluate clinical expertise through published content, professional credentials, and peer recognition before booking consultations. We build content strategies that position specialists as authoritative voices in their field — publishing condition-specific guides, treatment explainers, and evidence-based health content that ranks for high-value informational queries and converts readers into patients.</p>
+<p>Mental health services represent one of the fastest-growing segments in Canadian healthcare digital marketing. The destigmatisation of mental health care, combined with the expansion of virtual therapy platforms, has created enormous demand. Marketing mental health services requires particular sensitivity — our campaigns focus on empathetic, non-clinical language, privacy-forward messaging, and accessible scheduling systems that lower the barrier to seeking help. For multi-disciplinary health clinics offering physiotherapy, chiropractic, massage therapy, and naturopathy, we build service-specific SEO and advertising strategies that capture the distinct search intent for each modality while cross-promoting the full suite of services through remarketing and email nurture campaigns.</p>`,
   },
 
   "restaurants-food": {
@@ -3188,6 +3253,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "D2C brand marketing",
       "e-commerce ROAS",
       "shopping ads management",
+      "Canadian e-commerce marketing",
+      "Shopify Canada marketing",
+      "cross-border e-commerce",
+      "CASL e-commerce compliance",
     ],
     heroTitle: "Digital Marketing for E-Commerce",
     heroSubtitle:
@@ -3284,12 +3353,41 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "Yes. CRO is integrated into all e-commerce engagements. We audit your current conversion funnel, identify drop-off points, run A/B tests on product page elements, and continuously optimise checkout flow. A 0.5% improvement in conversion rate at scale has more impact on profitability than a 20% reduction in CPM.",
       },
+      {
+        question: "How does CASL affect e-commerce email marketing in Canada?",
+        answer:
+          "Canada's Anti-Spam Legislation (CASL) is one of the strictest email marketing laws in the world. It requires express consent before sending commercial electronic messages, clear identification of the sender, a functioning unsubscribe mechanism, and specific record-keeping of consent. For e-commerce brands, this means your email list building, abandoned cart emails, post-purchase follow-ups, and promotional campaigns must all comply with CASL requirements. Importantly, CASL has an implied consent exception for existing customers (within 2 years of purchase), but acquisition marketing requires explicit opt-in. We build CASL-compliant email marketing programmes that maximise revenue from your existing customer base while legally growing your subscriber list.",
+      },
+      {
+        question: "Can you help with cross-border e-commerce between Canada and the US?",
+        answer:
+          "Yes. Cross-border commerce is a significant opportunity for Canadian e-commerce brands — the US market is 10 times larger and geographically adjacent. We build dual-market strategies that account for currency differences, shipping logistics messaging, duty and tax transparency at checkout, and market-specific advertising campaigns. This includes running separate Google Ads and Meta campaigns for Canadian and US audiences with market-appropriate messaging, pricing, and landing pages. We also help US-based brands enter the Canadian market with localised strategies.",
+      },
+      {
+        question: "What e-commerce platforms do you have experience with?",
+        answer:
+          "We have deep expertise across all major e-commerce platforms used by Canadian businesses: Shopify (including Shopify Plus for enterprise), WooCommerce, BigCommerce, and Magento. Shopify is by far the most popular platform among Canadian e-commerce brands and is particularly strong given Shopify's Canadian headquarters and native CAD, tax, and shipping integrations. Our marketing strategies are tailored to the specific capabilities and limitations of each platform, from product feed optimisation for Google Shopping to platform-specific conversion tracking and analytics configurations.",
+      },
     ],
     content: `<h2>Scaling E-Commerce Brands with Performance Marketing</h2>
 <p>E-commerce is simultaneously the most data-rich and most brutally competitive sector in digital marketing. Margins are thin, advertising costs are high, and customers have near-infinite alternatives available in a single Google search. The brands that win are those that have built efficient acquisition systems, strong brand equity, and high repeat purchase rates — and these are exactly what we help build at TML Agency.</p>
-<p>We work with D2C brands across fashion, beauty, health, home goods, electronics, and specialty categories. Whether you are running a Shopify store doing your first ₹10 lakh month or scaling a multi-crore revenue operation, our approach is the same: understand your unit economics, identify your most profitable customer segment, and build marketing systems that find more of them at the lowest possible cost.</p>
+<p>We work with D2C brands across fashion, beauty, health, home goods, electronics, and specialty categories. Whether you are running a Shopify store building toward your first $100K month or scaling a multi-million dollar operation, our approach is the same: understand your unit economics, identify your most profitable customer segment, and build marketing systems that find more of them at the lowest possible cost.</p>
 <h2>Beyond Acquisition: Building E-Commerce Brands That Last</h2>
-<p>The most successful e-commerce brands we work with have made a fundamental shift: they think of marketing as brand-building first and performance second. This means investing in content, community, and product experience — not just targeting and bidding. The payoff is lower CAC, higher LTV, and a brand that customers recommend to others. We call this the compounding brand effect, and it is the only sustainable path to e-commerce profitability.</p>`,
+<p>The most successful e-commerce brands we work with have made a fundamental shift: they think of marketing as brand-building first and performance second. This means investing in content, community, and product experience — not just targeting and bidding. The payoff is lower CAC, higher LTV, and a brand that customers recommend to others. We call this the compounding brand effect, and it is the only sustainable path to e-commerce profitability.</p>
+
+<h2>The Canadian E-Commerce Opportunity</h2>
+<p>Canada's e-commerce market has grown dramatically, with online retail sales exceeding $75 billion CAD annually. The Canada Post E-Commerce Report consistently shows that Canadian online shoppers are among the most active in the world, with over 80 percent of Canadians having made an online purchase in the past year. Yet the Canadian e-commerce landscape presents unique challenges and opportunities that require market-specific strategies rather than imported playbooks from the US or other markets.</p>
+<p>The most significant Canadian e-commerce reality is the cross-border dynamic. Canadian consumers routinely shop from US-based retailers, meaning Canadian brands compete not just with domestic competitors but with the entire American e-commerce ecosystem. Competing effectively requires emphasising Canadian advantages: faster domestic shipping, no duty or customs surprises, pricing in Canadian dollars, and the trust factor of buying from a Canadian business. We build marketing strategies that leverage these advantages, particularly in Google Shopping feeds where price, shipping speed, and currency are visible comparison factors.</p>
+<p>Shopify's Canadian headquarters has created a particularly strong ecosystem for Canadian e-commerce brands. Over 200,000 Canadian businesses use Shopify, benefiting from native CAD support, integrated Canadian tax calculations, and deep partnerships with Canada Post and other domestic carriers. Our marketing strategies are optimised for the Shopify ecosystem, leveraging Shopify's native analytics, audience tools, and marketing integrations to build efficient acquisition and retention programmes.</p>
+
+<h2>CASL Compliance and Email Marketing for E-Commerce</h2>
+<p>Canada's Anti-Spam Legislation (CASL) imposes some of the strictest email marketing rules in the world — and e-commerce brands must navigate these carefully because email is typically the highest-ROI marketing channel for online retail. CASL requires express consent before sending commercial electronic messages, with specific record-keeping requirements for how and when consent was obtained. The law provides an implied consent exception for existing customers (within 24 months of a purchase or 6 months of an inquiry), which is critical for e-commerce retention marketing.</p>
+<p>Our CASL-compliant e-commerce email strategies are designed to maximise revenue while maintaining full legal compliance. This includes properly configured double opt-in flows for new subscribers, compliant abandoned cart recovery sequences that respect consent requirements, segmented post-purchase email campaigns that drive repeat purchases within the implied consent window, and re-consent campaigns that convert implied consent to express consent before it expires. We also implement proper unsubscribe mechanisms, sender identification, and consent record-keeping systems that protect your business in the event of a CRTC investigation. The penalty for CASL violations can reach $10 million per violation for businesses, making compliance a business-critical priority.</p>
+
+<h2>E-Commerce Conversion Optimisation for the Canadian Market</h2>
+<p>Canadian e-commerce conversion rates are influenced by market-specific factors that generic CRO advice often misses. Canadian shoppers are particularly sensitive to shipping costs and delivery timelines — a study by Canada Post found that 67 percent of Canadian online shoppers have abandoned a cart due to shipping costs, and 43 percent expect free shipping on orders over $50. Currency transparency is another critical factor: displaying prices in CAD with clear duty-free messaging for domestic orders removes a significant purchase barrier.</p>
+<p>Payment preferences also differ in Canada. While credit cards remain dominant, Interac e-Transfer, PayPal, and increasingly Apple Pay and Google Pay are expected checkout options. Shopify Pay (Shop Pay) has gained significant adoption among Canadian Shopify stores and offers one-click checkout that measurably improves conversion rates. We optimise the full checkout experience for Canadian consumer expectations, from product page trust signals (Canadian-owned badges, domestic shipping guarantees, easy return policies) through to checkout flow design, payment option presentation, and post-purchase communication.</p>
+<p>For e-commerce brands selling regulated products — cannabis accessories, health supplements, alcohol, or age-restricted items — Canadian regulations add additional compliance requirements to both marketing and checkout processes. We build marketing and conversion funnels that incorporate required age gates, health disclaimers, and provincial regulatory requirements while minimising the friction these add to the purchase experience.</p>`,
   },
 
   "education-edtech": {
@@ -3424,6 +3522,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "legal services marketing",
       "solicitor digital marketing",
       "lawyer lead generation",
+      "Canadian law firm marketing",
+      "law society advertising rules",
+      "legal marketing compliance Canada",
+      "barrister digital marketing",
     ],
     heroTitle: "Digital Marketing for Legal & Law Firms",
     heroSubtitle:
@@ -3520,12 +3622,41 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "Yes. We work with solo practitioners, boutique firms, and large multi-practice law firms. For smaller practices, we build focused, efficient strategies that maximise impact within tighter budgets — often concentrating on a single practice area or geographic market to dominate it before expanding.",
       },
+      {
+        question: "How do Canadian law society advertising rules affect digital marketing?",
+        answer:
+          "Each provincial law society in Canada has specific rules governing lawyer advertising. The Law Society of Ontario (LSO), for example, requires that all marketing be demonstrably true, not misleading, and in the best interests of the public. The Law Society of British Columbia and the Barreau du Quebec have their own distinct requirements around testimonials, claims of expertise, and fee advertising. Some provinces restrict the use of the term 'specialist' unless the lawyer holds a certified specialisation. We build all legal marketing campaigns with full awareness of these provincial rules, ensuring every piece of content — from Google Ads copy to website testimonials to social media posts — meets the applicable law society's advertising standards.",
+      },
+      {
+        question: "What practice areas generate the highest ROI from digital marketing in Canada?",
+        answer:
+          "In the Canadian market, personal injury, family law, criminal defence, immigration, and real estate law consistently deliver strong digital marketing ROI due to high search volume and significant case values. Personal injury firms in particular benefit from Google Ads — a single case can justify thousands of dollars in marketing spend. Immigration law sees enormous demand driven by Canada's immigration targets. Family law has high volume in every major Canadian city. We help firms identify which practice areas offer the best marketing ROI given their specific market, competition level, and fee structure, then allocate budget accordingly.",
+      },
+      {
+        question: "Can you help our law firm attract corporate and commercial clients through digital channels?",
+        answer:
+          "Yes. Corporate and commercial client acquisition requires a different digital strategy than consumer-facing practice areas. We build LinkedIn thought leadership programmes, develop long-form content around business legal issues like M&A, employment law compliance, and intellectual property protection. We also implement account-based marketing strategies targeting specific industries or company sizes, and run targeted Google Ads campaigns for high-intent commercial searches like 'commercial lease lawyer Toronto' or 'employment lawyer for businesses Calgary'. The sales cycle for corporate clients is longer, but the lifetime value makes sustained marketing investment highly profitable.",
+      },
     ],
     content: `<h2>Why Law Firms Need a Specialist Digital Marketing Partner</h2>
-<p>Legal digital marketing sits at the intersection of high-stakes commercial competition and strict professional conduct regulations. A well-executed digital strategy can transform a law firm's client pipeline; a poorly designed one can violate bar association rules and damage professional reputation.</p>
-<p>TML Agency understands both dimensions. We have developed compliant marketing programmes for litigation firms, corporate law practices, family law specialists, IP attorneys, and legal aid organisations. In every case, the marketing challenge is the same: demonstrating genuine expertise and building enough trust that a prospective client chooses your firm over the dozens of alternatives ranking on the same search results page.</p>
+<p>Legal digital marketing sits at the intersection of high-stakes commercial competition and strict professional conduct regulations. A well-executed digital strategy can transform a law firm's client pipeline; a poorly designed one can violate law society rules and damage professional reputation.</p>
+<p>TML Agency understands both dimensions. We have developed compliant marketing programmes for litigation firms, corporate law practices, family law specialists, IP attorneys, immigration firms, and legal aid organisations across Canada. In every case, the marketing challenge is the same: demonstrating genuine expertise and building enough trust that a prospective client chooses your firm over the dozens of alternatives ranking on the same search results page.</p>
 <h2>Content as the Foundation of Legal Marketing Authority</h2>
-<p>The most powerful marketing tool for law firms is expertise-demonstrating content. Detailed guides to legal processes, plain-language explanations of complex laws, and analysis of recent legal developments — these build the kind of authority that both Google and prospective clients recognise and reward. We build legal content strategies that are genuinely educational, optimised for search, and structured to convert readers into consultation inquiry submissions.</p>`,
+<p>The most powerful marketing tool for law firms is expertise-demonstrating content. Detailed guides to legal processes, plain-language explanations of complex laws, and analysis of recent legal developments — these build the kind of authority that both Google and prospective clients recognise and reward. We build legal content strategies that are genuinely educational, optimised for search, and structured to convert readers into consultation inquiry submissions.</p>
+
+<h2>Canadian Law Society Advertising Compliance</h2>
+<p>Legal advertising in Canada is governed by provincial law societies, each with its own Rules of Professional Conduct that include specific provisions on marketing and advertising. The Law Society of Ontario's rules require that marketing be demonstrably true and not misleading — a higher standard than general advertising law. The Law Society of Alberta prohibits marketing that is undignified, in bad taste, or that brings the profession into disrepute. The Law Society of British Columbia restricts the use of endorsements and requires careful handling of client testimonials. The Barreau du Quebec operates under the Professional Code and has historically been among the most restrictive regarding legal advertising in Canada.</p>
+<p>These rules have practical implications for digital marketing execution. Google Ads copy for law firms must avoid superlative claims ("best lawyer in Toronto") unless they can be substantiated. Client testimonials on websites must be genuine and typically cannot promise specific outcomes. Fee comparisons must be accurate and not misleading. Social media content must maintain professional standards. Even the use of the word "specialist" is restricted in many provinces unless the lawyer holds a certified specialisation from their law society. We navigate these provincial variations as a core part of our legal marketing service, ensuring every element of your digital presence meets the applicable regulatory standard while still effectively communicating your expertise and winning new clients.</p>
+
+<h2>The Canadian Legal Services Market: Digital Opportunity</h2>
+<p>The Canadian legal services market generates over $30 billion in annual revenue, yet the profession has been notably slow to adopt digital marketing compared to other professional services. This creates a significant first-mover advantage for law firms that invest strategically in digital presence. According to the Canadian Bar Association, the majority of Canadians — particularly younger demographics — now research legal issues online before contacting a lawyer. Searches like "divorce lawyer near me," "how much does a will cost in Ontario," or "immigration lawyer Vancouver" generate thousands of monthly queries in every major Canadian market.</p>
+<p>The competitive landscape varies dramatically by practice area and geography. In personal injury law, the digital marketing battle is fierce — firms in the Greater Toronto Area compete with significant advertising budgets for high-value case acquisition. In contrast, practice areas like estate planning, corporate commercial law, or real estate law often have less digital competition, meaning strategic SEO investment can yield dominant rankings relatively quickly. Immigration law represents a particularly large opportunity in Canada given the country's immigration targets of over 400,000 new permanent residents annually — nearly every newcomer needs legal assistance, and most begin their search online.</p>
+<p>Regional dynamics also shape legal marketing strategy. Bilingual marketing is essential in Quebec and for firms serving francophone communities in Ontario and New Brunswick. Indigenous law is a growing practice area across Western Canada. Tech-focused practice areas like privacy law and cryptocurrency regulation are concentrated in Toronto, Vancouver, and Waterloo-Kitchener. We help law firms identify and capitalise on the specific market opportunities most relevant to their practice areas and geographic presence.</p>
+
+<h2>Practice-Area-Specific Digital Marketing Strategies</h2>
+<p>Different legal practice areas require fundamentally different marketing approaches. Personal injury law is the most advertising-intensive practice area in Canada — firms compete aggressively on Google Ads, outdoor advertising, and broadcast media. Our digital strategy for PI firms focuses on maximising Quality Score to reduce costs-per-click in an expensive vertical, building SEO authority for condition-specific and accident-type queries, and developing compelling case result content that demonstrates capability without violating law society rules around outcome guarantees.</p>
+<p>Family law marketing requires sensitivity and empathy — clients are going through some of the most difficult experiences of their lives. We craft family law content and advertising that is informative, compassionate, and reassuring, focusing on process clarity and emotional support rather than aggressive client solicitation. Immigration law marketing demands multilingual capabilities and cultural sensitivity, with content strategies that address the specific concerns of different immigration pathways — Express Entry, family sponsorship, refugee claims, and business immigration each attracting distinct audiences with different informational needs.</p>
+<p>For corporate and commercial law firms, digital marketing shifts from volume-driven client acquisition to authority-driven relationship building. LinkedIn is the primary platform, with thought leadership content, legal commentary on business developments, and strategic networking forming the foundation of digital presence. We complement this with SEO strategies targeting commercial search queries, email newsletters that keep the firm top-of-mind with existing corporate clients, and targeted content marketing that positions the firm as the go-to authority in specific industry verticals or legal specialisations.</p>`,
   },
 
   "fitness-wellness": {
@@ -3778,6 +3909,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "plumbing electrician marketing",
       "construction company SEO",
       "home improvement lead generation",
+      "Canadian contractor marketing",
+      "home renovation marketing Canada",
+      "HVAC marketing Canada",
+      "licensed contractor digital marketing",
     ],
     heroTitle: "Digital Marketing for Construction & Home Services",
     heroSubtitle:
@@ -3874,12 +4009,41 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "Google Ads and Local Services Ads can generate project inquiries within 24–72 hours of campaign launch — provided targeting and budgets are correctly configured. SEO takes longer (3–6 months) but generates lower-cost organic inquiries over time. New businesses should start with paid search for immediate lead volume while building their SEO foundation and online review profile simultaneously.",
       },
+      {
+        question: "How do provincial licensing requirements affect construction marketing in Canada?",
+        answer:
+          "Each Canadian province has distinct licensing and registration requirements for construction trades, and these directly affect what you can and cannot claim in your marketing. In Ontario, the Home Construction Regulatory Authority (HCRA) requires new home builders and vendors to be licensed, and marketing must accurately represent this licensing status. In British Columbia, the BC Housing Licensing and Consumer Services requires residential builders to be licensed. In Alberta, the Safety Codes Council oversees trade certification. Your digital marketing must accurately represent your licensing, insurance, and certification status — and we ensure all website content, ad copy, and social media references to credentials are accurate and compliant with provincial regulations.",
+      },
+      {
+        question: "What digital marketing strategies work best for seasonal construction businesses in Canada?",
+        answer:
+          "Canadian construction businesses face dramatic seasonality — exterior work largely stops in winter across most of the country. We build marketing strategies that account for this reality: ramping up lead generation in late winter and early spring to fill the summer schedule, pivoting to interior renovation and maintenance services during colder months, and using the slower winter season to build SEO foundations, create portfolio content, and develop the digital assets that drive lead generation when demand returns. We also build pre-season campaigns that capture early-bird customers planning spring and summer projects.",
+      },
+      {
+        question: "Can you help construction companies market to both residential and commercial clients?",
+        answer:
+          "Yes, but we treat residential and commercial construction marketing as fundamentally different programmes. Residential marketing is driven by Google Local search, homeowner-focused social media content, and review-based reputation building. Commercial construction marketing requires LinkedIn presence, relationships with architects and project managers, RFP process support, and content marketing that demonstrates capability on larger-scale projects. We build separate strategies for each segment, with distinct messaging, targeting, and channel allocation.",
+      },
     ],
     content: `<h2>Building a Consistent Pipeline for Construction and Trade Businesses</h2>
 <p>Construction and home service businesses face a unique challenge: their marketing has historically been entirely referral-driven. When the referral network is strong, everything is fine. When it dries up — due to project delays, economic shifts, or simply slow seasons — there is no backup pipeline. Digital marketing creates the systematic, channel-diversified lead generation that referrals alone cannot guarantee.</p>
-<p>At TML Agency, we have worked with general contractors, specialist tradespeople, interior design firms, fit-out companies, and home renovation businesses across residential and commercial segments. In every case, the marketing foundation is the same: a professional digital presence that builds trust, local search visibility that captures active project searchers, and a lead capture system that converts visitors into qualified inquiries.</p>
+<p>At TML Agency, we have worked with general contractors, specialist tradespeople, interior design firms, renovation companies, and home service businesses across residential and commercial segments in Canada. In every case, the marketing foundation is the same: a professional digital presence that builds trust, local search visibility that captures active project searchers, and a lead capture system that converts visitors into qualified inquiries.</p>
 <h2>Project Portfolio as Your Most Powerful Marketing Asset</h2>
-<p>In construction and home services, your completed projects are your most compelling marketing asset — yet most businesses fail to systematically document and showcase their work. We help businesses build project photography and videography processes, structure showcase content for maximum SEO and social impact, and use project portfolio as the foundation of every marketing channel from Google Ads landing pages to Instagram feeds.</p>`,
+<p>In construction and home services, your completed projects are your most compelling marketing asset — yet most businesses fail to systematically document and showcase their work. We help businesses build project photography and videography processes, structure showcase content for maximum SEO and social impact, and use project portfolio as the foundation of every marketing channel from Google Ads landing pages to Instagram feeds.</p>
+
+<h2>Navigating Canadian Construction Industry Regulations in Marketing</h2>
+<p>Construction and home services in Canada operate within a complex regulatory environment that directly impacts how businesses can market themselves. Provincial licensing requirements vary significantly: Ontario's Home Construction Regulatory Authority (HCRA) governs new home builders and vendors, requiring specific licensing that must be accurately represented in all marketing materials. British Columbia's BC Housing Licensing and Consumer Services mandates residential builder licensing, while Alberta's Safety Codes Council and New Home Buyer Protection Board impose their own certification requirements. Trade-specific licensing — electrical, plumbing, HVAC, gas fitting — is regulated provincially, and marketing that implies capabilities beyond a company's licensed scope can result in regulatory action.</p>
+<p>Insurance and bonding requirements also affect marketing messaging. Most provinces require contractors to carry general liability insurance, and many homeowners now specifically look for proof of insurance before hiring. Workers' compensation coverage through provincial bodies like Ontario's WSIB or British Columbia's WorkSafeBC is mandatory for most construction businesses. We help construction companies prominently feature their licensing, insurance, and safety certifications in their digital marketing — these credentials are powerful trust signals that directly influence conversion rates. Our website designs include dedicated credential sections, and our Google Business Profile optimisation includes verification badges and certification details that build confidence with prospective clients.</p>
+
+<h2>Seasonality and the Canadian Construction Marketing Calendar</h2>
+<p>Canada's climate creates dramatic seasonality in the construction and home services market. In most of the country, exterior construction activity concentrates between April and November, creating intense competition for projects during the building season and a significant slowdown during winter months. Smart construction marketing accounts for this seasonality rather than fighting it.</p>
+<p>Our approach builds a 12-month marketing calendar aligned with Canadian construction demand patterns. In January and February, we ramp up lead generation campaigns targeting homeowners planning spring renovations — searches for "kitchen renovation contractor" and "bathroom remodel near me" spike in late winter as homeowners finalise plans. March through May is peak campaign season, with maximum budget allocation to capture the surge in project inquiries. During the active building season (June through October), we shift to reputation building — collecting reviews from completed projects, documenting work for portfolio content, and maintaining steady-state lead generation for the current pipeline. November and December provide an opportunity to market interior services — basement finishing, kitchen renovations, bathroom remodels — that are not weather-dependent, and to build the SEO and content foundation for the following spring.</p>
+<p>For HVAC companies, the seasonal pattern differs: heating system demand peaks before and during winter, while air conditioning installations and repairs surge in late spring and summer. We build HVAC-specific marketing calendars that capture each seasonal demand wave with appropriate messaging, landing pages, and campaign structures. Emergency service marketing (burst pipes, furnace failures, electrical emergencies) runs year-round with always-on campaigns designed for immediate response conversion.</p>
+
+<h2>Local SEO Dominance for Canadian Contractors</h2>
+<p>For construction and home service businesses, local SEO is the single highest-ROI marketing investment. When a homeowner searches "plumber near me," "best roofer in Mississauga," or "basement renovation contractor Toronto," the businesses that appear in Google's Local Pack (the map results) capture the vast majority of clicks and calls. Building and maintaining this local visibility requires a systematic approach that most contractors neglect.</p>
+<p>Google Business Profile optimisation is the foundation. We ensure every element is fully completed and optimised — primary and secondary categories, service area configuration, business description with natural keyword integration, high-quality project photos updated regularly, and active review management. For multi-service businesses, we build service-specific landing pages on the website that target distinct search intents: a general contractor needs separate optimised pages for kitchen renovations, bathroom remodels, basement finishing, home additions, and deck building, because homeowners search for specific services rather than generic "contractor" terms.</p>
+<p>Review generation is equally critical. Canadian homeowners are highly review-conscious — they check Google reviews, HomeStars, Houzz, and other platforms before contacting contractors. A business with 100+ reviews averaging 4.8 stars will dramatically outperform a competitor with 15 reviews, regardless of actual work quality. We implement automated review request systems that follow up with clients after project completion, making it effortless to leave a review. We also help businesses develop professional responses to both positive and negative reviews, building the kind of engaged reputation profile that Google rewards with higher local rankings and that homeowners trust when making hiring decisions.</p>`,
   },
 
   "saas-technology": {
@@ -3896,6 +4060,10 @@ export const industryPages: Record<string, IndustryPage> = {
       "software marketing",
       "IT company digital marketing",
       "B2B SaaS marketing",
+      "Canadian SaaS marketing",
+      "tech startup marketing Canada",
+      "SR&ED marketing",
+      "Canadian technology company growth",
     ],
     heroTitle: "Digital Marketing for SaaS & Technology",
     heroSubtitle:
@@ -3992,12 +4160,42 @@ export const industryPages: Record<string, IndustryPage> = {
         answer:
           "Yes. IT services marketing — for managed service providers, custom development shops, consulting firms, and system integrators — requires a different approach from product marketing. It is more B2B sales-enablement focused, with content strategies built around demonstrating technical expertise, case studies, and thought leadership rather than product feature promotion.",
       },
+      {
+        question: "How does the Canadian tech ecosystem affect SaaS marketing strategy?",
+        answer:
+          "Canada has one of the world's most vibrant tech ecosystems, with major hubs in Toronto-Waterloo, Vancouver, Montreal, Ottawa, and Calgary. This creates both opportunity and competition. Canadian SaaS companies benefit from proximity to the US market (the primary revenue target for most B2B SaaS), strong government support through programmes like SR&ED tax credits and IRAP funding, and a deep talent pool from world-class universities. However, the competitive landscape means Canadian SaaS companies must build exceptional digital presence to stand out — both domestically and in the US market where most revenue growth occurs. We build marketing strategies that leverage Canadian credibility while targeting the North American or global market.",
+      },
+      {
+        question: "Can you help a SaaS company expand from the Canadian market into the US?",
+        answer:
+          "Yes, and this is one of our most common engagements. Many Canadian SaaS companies build initial traction domestically and then need marketing strategies to penetrate the much larger US market. This requires market-specific keyword research (US search patterns differ from Canadian), US-targeted Google Ads campaigns with appropriate geo-targeting and budget allocation, content localised for US audiences (including currency, regulatory references, and cultural context), and US-specific case studies and social proof. We also help with US review platform presence (G2, Capterra, TrustRadius) which is critical for US buyer evaluation processes.",
+      },
+      {
+        question: "What role does LinkedIn play in B2B SaaS marketing?",
+        answer:
+          "LinkedIn is the single most important social platform for B2B SaaS marketing. It serves three distinct functions: paid demand generation through LinkedIn Ads targeting specific job titles, company sizes, and industries; organic thought leadership that builds category authority through founder and executive content; and direct outreach that connects your sales team with decision-makers at target accounts. We build integrated LinkedIn strategies that leverage all three functions — with paid campaigns driving top-of-funnel awareness, organic content building credibility, and sales navigator outreach converting warm leads into demo bookings.",
+      },
     ],
     content: `<h2>Demand Generation for SaaS: Beyond Lead Volume to Revenue Impact</h2>
 <p>The most common mistake SaaS companies make in digital marketing is optimising for lead volume rather than revenue impact. MQL counts look good in a dashboard but mean nothing if they do not convert to activated users and paying customers. At TML Agency, we build SaaS marketing programmes around the metrics that actually matter: MRR, CAC, LTV, and payback period.</p>
 <p>This means understanding your entire revenue funnel — from first marketing touch through trial activation, conversion to paid, expansion revenue, and churn. Every marketing decision is made in the context of its impact on these outcomes, not just upstream engagement metrics. We work closely with your product and sales teams to build marketing that is genuinely integrated with your growth motion.</p>
 <h2>Content Marketing as a SaaS Growth Moat</h2>
-<p>The SaaS companies with the most sustainable, profitable growth trajectories have all built organic content moats — libraries of genuinely valuable content that generate consistent, compounding inbound traffic without ongoing ad spend. This content doubles as sales enablement, reducing objections and educating prospects before they reach your sales team. We build these content systems methodically, around your specific ICP, buyer journey, and competitive landscape — transforming your blog from a marketing afterthought into a primary growth channel.</p>`,
+<p>The SaaS companies with the most sustainable, profitable growth trajectories have all built organic content moats — libraries of genuinely valuable content that generate consistent, compounding inbound traffic without ongoing ad spend. This content doubles as sales enablement, reducing objections and educating prospects before they reach your sales team. We build these content systems methodically, around your specific ICP, buyer journey, and competitive landscape — transforming your blog from a marketing afterthought into a primary growth channel.</p>
+
+<h2>The Canadian SaaS Ecosystem: A Global Growth Launchpad</h2>
+<p>Canada has emerged as one of the world's premier SaaS ecosystems, with the Toronto-Waterloo corridor alone home to over 5,200 tech companies and producing globally significant SaaS businesses like Shopify, Hootsuite, Clio, FreshBooks, and Wealthsimple. Vancouver's tech scene — anchored by companies like Slack (originally Tiny Speck), Unbounce, and ActiveState — is equally vibrant. Montreal's AI-focused ecosystem, Ottawa's enterprise tech heritage, and Calgary's emerging energy-tech sector round out a national landscape that produces world-class software companies.</p>
+<p>For Canadian SaaS companies, the marketing challenge is distinct from other tech ecosystems. Most Canadian B2B SaaS companies generate the majority of their revenue from the US market, meaning marketing must be optimised for US buyer behaviour, search patterns, and competitive landscapes while the company operates from a Canadian base. This creates a unique set of strategic considerations: content must reference US regulatory contexts (SOC 2, HIPAA, CCPA) even when the company is headquartered in Canada; pricing pages must handle USD/CAD dynamics gracefully; and case studies should feature recognisable US (or global) logos alongside Canadian client wins.</p>
+<p>Government support programmes also create marketing-adjacent opportunities. The Scientific Research and Experimental Development (SR&ED) tax credit programme, the Industrial Research Assistance Program (IRAP), and provincial programmes like Ontario's Innovation Tax Credit provide funding that can be partially allocated to marketing infrastructure — including marketing technology, analytics platforms, and content production. The Canada Digital Adoption Program has also helped SMB SaaS companies accelerate their digital marketing capabilities. We help Canadian SaaS companies navigate these programmes and leverage available support to accelerate marketing investment.</p>
+
+<h2>SaaS Competitive Positioning and Comparison Marketing</h2>
+<p>In the SaaS market, buyers almost always evaluate multiple solutions before making a purchase decision. G2, Capterra, TrustRadius, and Google comparison searches ("best project management software," "Salesforce alternatives," "[competitor] vs [your product]") are critical moments in the buyer journey where deals are won or lost. Building a systematic competitive positioning strategy is essential for SaaS growth — and most companies underinvest in this area.</p>
+<p>Our SaaS competitive marketing framework includes several interconnected elements. First, we build comprehensive comparison and alternatives pages targeting high-intent competitive search queries. These pages must be genuinely useful — listing real feature differences, pricing comparisons, and honest assessments of where your product excels and where alternatives may be stronger. Google rewards this kind of transparent, comprehensive content with strong rankings, and buyers trust it more than one-sided product pages. Second, we develop a review platform strategy across G2, Capterra, and TrustRadius — encouraging existing customers to leave detailed reviews, responding to all reviews (positive and negative), and using review insights to inform product positioning and messaging.</p>
+<p>Third, we build programmatic SEO strategies that capture the long tail of SaaS evaluation queries. For a CRM product, this might mean creating optimised pages for "CRM for real estate agents," "CRM for nonprofits," "CRM for small law firms," and dozens of other industry-specific use cases — each targeting a distinct search intent with tailored messaging that demonstrates your product's fit for that specific audience. This programmatic approach can generate hundreds of ranked pages that collectively drive significant qualified traffic without ongoing ad spend. Finally, we integrate competitive intelligence into ongoing campaign management, monitoring competitor ad strategies, content output, and positioning changes to ensure your marketing stays ahead of the competitive landscape.</p>
+
+<h2>B2B SaaS Demand Generation: The Full-Funnel Approach</h2>
+<p>Effective B2B SaaS demand generation requires orchestrating multiple channels across a buying journey that typically spans weeks to months. The days of running a single Google Ads campaign and expecting demo bookings are over — modern B2B buyers engage with 6-10 pieces of content before entering a sales conversation. Our demand generation framework is built around this reality, creating a coordinated multi-channel system that meets buyers at every stage of their evaluation process.</p>
+<p>At the awareness stage, we deploy content marketing (blog posts, industry reports, original research), social media thought leadership (primarily LinkedIn for B2B), and targeted display and video campaigns that introduce your brand to in-market audiences. At the consideration stage, we shift to comparison content, detailed product guides, webinars, and case studies that help buyers understand how your product addresses their specific challenges. At the decision stage, we deploy bottom-of-funnel Google Ads, retargeting campaigns with demo/trial CTAs, and nurture sequences that address common objections and accelerate the path to conversion.</p>
+<p>For enterprise SaaS with higher ACV, we layer account-based marketing (ABM) on top of this foundation. ABM allows us to target specific companies that match your ideal customer profile with personalised advertising, content, and outreach across LinkedIn, display networks, and email. The combination of broad demand generation for pipeline volume and targeted ABM for high-value accounts creates the balanced growth motion that scales efficiently. We measure everything in terms of pipeline and revenue contribution — not just MQLs — ensuring marketing investment is directly correlated to business growth metrics that matter to founders, CROs, and investors.</p>`,
   },
 };
 
