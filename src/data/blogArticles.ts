@@ -1,4 +1,6 @@
 import { generateCityBlogArticles } from "./blogArticleGenerator";
+import { generateSeoArticles } from "./seoAgencyGenerator";
+import { generateGoogleAdsArticles } from "./googleAdsGenerator";
 
 export interface BlogArticle {
   title: string;
@@ -91,9 +93,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>After extensive research, client reviews, portfolio analysis, and industry reputation — here are the <strong>10 best branding agencies in Chandigarh</strong> that are delivering exceptional work in 2025:</p>
 
-<h3>1. Town Media Labs (TML Agency) — Best Overall Branding Agency</h3>
+<h3>1. TML Agency — Best Overall Branding Agency</h3>
 
-<p><strong>Town Media Labs</strong> — widely known as <strong>TML Agency</strong> — is Chandigarh's most trusted full-service branding and digital marketing agency. Founded in 2010, TML has worked with <strong>500+ brands across 25+ industries</strong>, delivering everything from brand identity design to large-scale ad campaigns.</p>
+<p><strong>TML Agency</strong> is Chandigarh's most trusted full-service branding and digital marketing agency. Founded in 2010, TML has worked with <strong>500+ brands across 25+ industries</strong>, delivering everything from brand identity design to large-scale ad campaigns.</p>
 
 <p>What sets TML apart is their <strong>end-to-end approach</strong>. They don't just design a logo and hand you a PDF — they build complete brand ecosystems. From strategy and visual identity to website development, social media, and paid advertising, TML handles the entire brand journey under one roof.</p>
 
@@ -118,11 +120,11 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 </ul>
 
 <table>
-<caption>Town Media Labs (TML Agency) contact details and services overview</caption>
+<caption>TML Agency contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
-<tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
+<tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh, India</td></tr>
 <tr><td><strong>Best For</strong></td><td>Complete branding + digital marketing under one roof</td></tr>
@@ -178,8 +180,8 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <caption>TML Digital contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
-<tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
+<tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh, India</td></tr>
 <tr><td><strong>Best For</strong></td><td>ROI-focused branding &amp; performance marketing</td></tr>
@@ -421,7 +423,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <h2>Frequently Asked Questions About Branding Agencies in Chandigarh</h2>
 
 <h3>Which is the best branding agency in Chandigarh?</h3>
-<p><strong>Town Media Labs (TML Agency)</strong> is widely regarded as the best branding agency in Chandigarh, with 500+ brands served, 70+ team members, and a comprehensive range of branding and digital marketing services.</p>
+<p><strong>TML Agency</strong> is widely regarded as the best branding agency in Chandigarh, with 500+ brands served, 70+ team members, and a comprehensive range of branding and digital marketing services.</p>
 
 <h3>How much does branding cost in Chandigarh?</h3>
 <p>Branding costs in Chandigarh range from ₹5,000 for a basic logo design to ₹3,00,000+ for a complete brand ecosystem with strategy, identity, website, and ongoing support.</p>
@@ -441,9 +443,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Chandigarh's branding landscape has matured significantly, with agencies now offering world-class work that rivals Delhi, Mumbai, and Bangalore — at a fraction of the cost. Whether you're a bootstrapped startup or an established enterprise, there's a <strong>branding agency in Chandigarh</strong> that fits your needs and budget.</p>
 
-<p>Our top recommendation? <strong>Town Media Labs (TML Agency)</strong> takes the crown for their unmatched combination of creative excellence, strategic depth, and full-service capability. With 500+ brands under their belt and a 70+ member in-house team, they're the agency best equipped to take your brand from where it is to where it deserves to be.</p>
+<p>Our top recommendation? <strong>TML Agency</strong> takes the crown for their unmatched combination of creative excellence, strategic depth, and full-service capability. With 500+ brands under their belt and a 70+ member in-house team, they're the agency best equipped to take your brand from where it is to where it deserves to be.</p>
 
-<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.com/contact">Get a free consultation with TML Agency today →</a></p>
+<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.ca/contact">Get a free consultation with TML Agency today →</a></p>
 `,
   },
 
@@ -666,7 +668,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Whether you're a <strong>brand looking to create a virtual ambassador</strong> or a <strong>creator exploring new revenue streams</strong>, the AI influencer space is wide open for newcomers in 2025.</p>
 
-<p><strong>Need help building your brand's AI strategy?</strong> <a href="https://townmedialabs.com/contact">Talk to TML Agency — we help brands leverage AI for growth →</a></p>
+<p><strong>Need help building your brand's AI strategy?</strong> <a href="https://townmedialabs.ca/contact">Talk to TML Agency — we help brands leverage AI for growth →</a></p>
 `,
   },
 
@@ -842,7 +844,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Start by getting your music on all platforms through a free distributor, claim your Spotify for Artists profile, and build a content calendar around each release. <strong>The tools are free. The audience is there. The only missing piece is you.</strong></p>
 
-<p><strong>Need help with music marketing?</strong> <a href="https://townmedialabs.com/contact">TML Agency helps artists and labels build their digital presence →</a></p>
+<p><strong>Need help with music marketing?</strong> <a href="https://townmedialabs.ca/contact">TML Agency helps artists and labels build their digital presence →</a></p>
 `,
   },
 
@@ -1010,7 +1012,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Focus on getting a high save rate, submit to playlists (both editorial and independent), and treat every release like a marketing campaign — not just an upload.</p>
 
-<p><strong>Need help with music marketing?</strong> <a href="https://townmedialabs.com/contact">TML Agency runs full-service music promotion campaigns for artists →</a></p>
+<p><strong>Need help with music marketing?</strong> <a href="https://townmedialabs.ca/contact">TML Agency runs full-service music promotion campaigns for artists →</a></p>
 `,
   },
 
@@ -1181,7 +1183,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Remember: <strong>consistency beats virality</strong>. Even if one Reel doesn't blow up, the next one might. Keep creating, keep engaging, and let the algorithm work for you.</p>
 
-<p><strong>Want professional music marketing?</strong> <a href="https://townmedialabs.com/contact">TML Agency runs Instagram campaigns for artists and labels →</a></p>
+<p><strong>Want professional music marketing?</strong> <a href="https://townmedialabs.ca/contact">TML Agency runs Instagram campaigns for artists and labels →</a></p>
 `,
   },
 
@@ -1347,7 +1349,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Getting your song on Instagram is a <strong>simple 5-step process</strong>: choose a distributor, upload your song, select Facebook/Instagram, wait for delivery, and verify it's live. Once it's in the library, the real work begins — creating Reels, engaging your audience, and making your song trend.</p>
 
-<p><strong>Need help with your music release strategy?</strong> <a href="https://townmedialabs.com/contact">TML Agency helps artists plan and execute music launches →</a></p>
+<p><strong>Need help with your music release strategy?</strong> <a href="https://townmedialabs.ca/contact">TML Agency helps artists plan and execute music launches →</a></p>
 `,
   },
 
@@ -1908,9 +1910,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <hr />
 
-<h2>Get Your Website Found on Google — Let Town Media Labs Help</h2>
+<h2>Get Your Website Found on Google — Let TML Agency Help</h2>
 
-<p>At <strong>Town Media Labs</strong>, we've helped hundreds of businesses go from invisible to page one on Google. Our SEO team doesn't just fix indexing issues — we build comprehensive search strategies that drive real traffic and real leads to your website.</p>
+<p>At <strong>TML Agency</strong>, we've helped hundreds of businesses go from invisible to page one on Google. Our SEO team doesn't just fix indexing issues — we build comprehensive search strategies that drive real traffic and real leads to your website.</p>
 
 <p>Here's what we do:</p>
 
@@ -1922,7 +1924,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Monthly reporting</strong> — transparent reports showing your rankings, traffic, and progress</li>
 </ul>
 
-<p><strong>Stop wondering why your website isn't on Google. Let's fix it.</strong> <a href="https://townmedialabs.com/contact">Get a free SEO audit from Town Media Labs →</a></p>
+<p><strong>Stop wondering why your website isn't on Google. Let's fix it.</strong> <a href="https://townmedialabs.ca/contact">Get a free SEO audit from TML Agency →</a></p>
 `,
   },
 
@@ -2210,11 +2212,11 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <hr />
 
-<h2>Turn Your Website Into a Lead Generation Machine — Let Town Media Labs Help</h2>
+<h2>Turn Your Website Into a Lead Generation Machine — Let TML Agency Help</h2>
 
 <p>If you've read through these 12 reasons and recognized your website in several of them, you're not alone. <strong>Most business websites underperform because they were built to look good, not to generate leads.</strong></p>
 
-<p>At <strong>Town Media Labs</strong>, we specialize in turning underperforming websites into lead generation machines. Our process includes:</p>
+<p>At <strong>TML Agency</strong>, we specialize in turning underperforming websites into lead generation machines. Our process includes:</p>
 
 <ul>
 <li><strong>Conversion Rate Audit:</strong> We analyze your current website, identify every friction point, and create a prioritized optimization plan</li>
@@ -2227,7 +2229,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p><strong>Your website should be your best salesperson — working 24/7 to bring in leads.</strong> If it's not doing that right now, let's change that.</p>
 
-<p><a href="https://townmedialabs.com/contact">Get a free website conversion audit from Town Media Labs →</a></p>
+<p><a href="https://townmedialabs.ca/contact">Get a free website conversion audit from TML Agency →</a></p>
 `,
   },
 
@@ -3714,9 +3716,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you recognised your website in multiple signs on this list, it is time to take action. Every day you wait is another day of lost leads, lost revenue, and lost credibility.</p>
 
-<p>At <strong>Town Media Labs</strong>, we design and develop fast, modern, conversion-focused websites that look stunning on every device and are built to generate results. From strategy and UX design to development and launch, we handle everything &mdash; so you get a website that actually works as hard as you do.</p>
+<p>At <strong>TML Agency</strong>, we design and develop fast, modern, conversion-focused websites that look stunning on every device and are built to generate results. From strategy and UX design to development and launch, we handle everything &mdash; so you get a website that actually works as hard as you do.</p>
 
-<p><strong>Let us build a website your business deserves.</strong> <a href="https://townmedialabs.com/services/website-development">Explore TML Web Development Services</a> or <a href="https://townmedialabs.com/contact">get in touch for a free website audit today</a>.</p>
+<p><strong>Let us build a website your business deserves.</strong> <a href="https://townmedialabs.ca/services/website-development">Explore TML Web Development Services</a> or <a href="https://townmedialabs.ca/contact">get in touch for a free website audit today</a>.</p>
 `,
   },
 
@@ -4085,9 +4087,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you recognised your account in multiple mistakes on this list, do not keep throwing money at a broken setup. <strong>Fix the fundamentals first</strong>, and you will be amazed at how quickly performance improves.</p>
 
-<p>At <strong>Town Media Labs</strong>, we manage Google Ads campaigns with a focus on real business results &mdash; not vanity metrics. From account audits and restructuring to full campaign management, our PPC team ensures every rupee of your ad spend is working toward actual leads and revenue.</p>
+<p>At <strong>TML Agency</strong>, we manage Google Ads campaigns with a focus on real business results &mdash; not vanity metrics. From account audits and restructuring to full campaign management, our PPC team ensures every rupee of your ad spend is working toward actual leads and revenue.</p>
 
-<p><strong>Ready to turn your Google Ads around?</strong> <a href="https://townmedialabs.com/services/google-ads">Explore TML Google Ads Services</a> or <a href="https://townmedialabs.com/contact">book a free Google Ads audit with our team</a>.</p>
+<p><strong>Ready to turn your Google Ads around?</strong> <a href="https://townmedialabs.ca/services/google-ads">Explore TML Google Ads Services</a> or <a href="https://townmedialabs.ca/contact">book a free Google Ads audit with our team</a>.</p>
 `,
   },
   "website-loading-slow-how-to-fix": {
@@ -4117,7 +4119,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     content: `<article>
 <p>Three seconds. That is all the patience most people have for your website to load. Miss that window, and they are gone &mdash; back to Google, clicking on your competitor's link instead. And here is the part that really stings: you are paying for those visitors through ads, SEO, and content marketing, only to lose them because your site takes forever to show up.</p>
 
-<p>I have audited hundreds of slow websites over the years at Town Media Labs, and the same problems keep showing up. The good news? Most of them are surprisingly fixable once you know where to look.</p>
+<p>I have audited hundreds of slow websites over the years at TML Agency, and the same problems keep showing up. The good news? Most of them are surprisingly fixable once you know where to look.</p>
 
 <h2>Why Website Speed Actually Matters (Beyond "It's Annoying")</h2>
 
@@ -4294,9 +4296,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If your site is built on a legacy CMS, uses heavy custom JavaScript, or has deep server-side performance issues, DIY fixes only go so far. At that point, you need someone who can look under the hood properly.</p>
 
-<p>At <a href="https://townmedialabs.com/services/website-development">Town Media Labs</a>, we regularly take sites from 20-second load times to under 2 seconds. Our dev team handles everything from image pipelines and CDN setup to full code refactoring and server migration.</p>
+<p>At <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>, we regularly take sites from 20-second load times to under 2 seconds. Our dev team handles everything from image pipelines and CDN setup to full code refactoring and server migration.</p>
 
-<p><strong>Want a free speed audit?</strong> <a href="https://townmedialabs.com/contact">Drop us a message</a> and we will tell you exactly what is slowing your site down and how to fix it &mdash; no obligation, no sales pitch.</p>
+<p><strong>Want a free speed audit?</strong> <a href="https://townmedialabs.ca/contact">Drop us a message</a> and we will tell you exactly what is slowing your site down and how to fix it &mdash; no obligation, no sales pitch.</p>
 </article>`,
   },
   "website-not-mobile-friendly-fix": {
@@ -4443,7 +4445,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Fix 9: Speed Up Mobile Page Load</h2>
 
-<p>Mobile connections are often slower than desktop (especially on cellular data). Everything in our <a href="https://townmedialabs.com/blog/website-loading-slow-how-to-fix">slow website fix guide</a> applies here, but mobile needs extra attention:</p>
+<p>Mobile connections are often slower than desktop (especially on cellular data). Everything in our <a href="https://townmedialabs.ca/blog/website-loading-slow-how-to-fix">slow website fix guide</a> applies here, but mobile needs extra attention:</p>
 
 <ul>
 <li>Aim for under 3 seconds on a 4G connection</li>
@@ -4521,9 +4523,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Start with the critical items in the checklist above. The viewport tag, readable text, and tappable buttons will get you 80% of the way there. Then work through the rest methodically.</p>
 
-<p>At <a href="https://townmedialabs.com/services/website-development">Town Media Labs</a>, we build every website mobile-first from day one. If your existing site needs a mobile overhaul, our dev team can audit your current setup and implement all 13 fixes &mdash; usually within a week or two.</p>
+<p>At <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>, we build every website mobile-first from day one. If your existing site needs a mobile overhaul, our dev team can audit your current setup and implement all 13 fixes &mdash; usually within a week or two.</p>
 
-<p><strong>Need a mobile-friendly upgrade?</strong> <a href="https://townmedialabs.com/contact">Get in touch</a> and we will review your site on every device that matters.</p>
+<p><strong>Need a mobile-friendly upgrade?</strong> <a href="https://townmedialabs.ca/contact">Get in touch</a> and we will review your site on every device that matters.</p>
 </article>`,
   },
   "google-ads-vs-seo-which-is-better": {
@@ -4648,9 +4650,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li>What is my total monthly marketing budget? (Under $1K = pick one; over $3K = do both)</li>
 </ol>
 
-<p>At <a href="https://townmedialabs.com">Town Media Labs</a>, we offer both <a href="https://townmedialabs.com/services/seo">SEO services</a> and <a href="https://townmedialabs.com/services/google-ads">Google Ads management</a>. We will honestly tell you which one makes sense for your specific situation &mdash; and sometimes that means recommending you start with just one.</p>
+<p>At <a href="https://townmedialabs.ca">TML Agency</a>, we offer both <a href="https://townmedialabs.ca/services/seo">SEO services</a> and <a href="https://townmedialabs.ca/services/google-ads">Google Ads management</a>. We will honestly tell you which one makes sense for your specific situation &mdash; and sometimes that means recommending you start with just one.</p>
 
-<p><strong>Not sure which to choose?</strong> <a href="https://townmedialabs.com/contact">Book a free strategy call</a> and we will map out a plan based on your budget, timeline, and industry.</p>
+<p><strong>Not sure which to choose?</strong> <a href="https://townmedialabs.ca/contact">Book a free strategy call</a> and we will map out a plan based on your budget, timeline, and industry.</p>
 </article>`,
   },
   "branding-mistakes-small-business": {
@@ -4682,7 +4684,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>That is exactly what bad branding does to your business. Potential customers sense the disconnect, even if they cannot articulate it, and they quietly leave.</p>
 
-<p>After working with hundreds of small businesses at Town Media Labs, here are the 10 branding mistakes I see destroying companies from the inside out.</p>
+<p>After working with hundreds of small businesses at TML Agency, here are the 10 branding mistakes I see destroying companies from the inside out.</p>
 
 <h2>Mistake 1: Thinking Your Brand Is Just a Logo</h2>
 
@@ -4774,9 +4776,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Apply consistently</strong> &mdash; update everything to match your new brand standards</li>
 </ol>
 
-<p>At <a href="https://townmedialabs.com/services/branding">Town Media Labs</a>, we help small businesses build brands that actually stand out and connect with the right audience. From logo design and brand identity to website redesign and messaging strategy &mdash; we handle the whole picture.</p>
+<p>At <a href="https://townmedialabs.ca/services/branding">TML Agency</a>, we help small businesses build brands that actually stand out and connect with the right audience. From logo design and brand identity to website redesign and messaging strategy &mdash; we handle the whole picture.</p>
 
-<p><strong>Ready to stop blending in?</strong> <a href="https://townmedialabs.com/contact">Let us talk about your brand</a>.</p>
+<p><strong>Ready to stop blending in?</strong> <a href="https://townmedialabs.ca/contact">Let us talk about your brand</a>.</p>
 </article>`,
   },
   "how-to-choose-digital-marketing-agency": {
@@ -4808,7 +4810,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>This means the market is flooded with agencies that range from genuinely excellent to outright scams. And unless you know what to look for, telling them apart is incredibly difficult.</p>
 
-<p>I run a digital marketing agency (<a href="https://townmedialabs.com">Town Media Labs</a>), so yes, I have skin in this game. But I would rather you find the RIGHT agency &mdash; even if it is not us &mdash; than get burned by the wrong one. Because bad experiences with bad agencies make everyone in this industry look bad.</p>
+<p>I run a digital marketing agency (<a href="https://townmedialabs.ca">TML Agency</a>), so yes, I have skin in this game. But I would rather you find the RIGHT agency &mdash; even if it is not us &mdash; than get burned by the wrong one. Because bad experiences with bad agencies make everyone in this industry look bad.</p>
 
 <h2>Red Flags That Scream "Run Away"</h2>
 
@@ -4908,9 +4910,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li>Set clear KPIs from day one and review monthly</li>
 </ol>
 
-<p>At <a href="https://townmedialabs.com">Town Media Labs</a>, we welcome these questions &mdash; in fact, we encourage them. We offer transparent pricing, month-to-month flexibility, and you always own your accounts and assets. We would rather earn your business through results than trap you in a contract.</p>
+<p>At <a href="https://townmedialabs.ca">TML Agency</a>, we welcome these questions &mdash; in fact, we encourage them. We offer transparent pricing, month-to-month flexibility, and you always own your accounts and assets. We would rather earn your business through results than trap you in a contract.</p>
 
-<p><strong>Want to see if we are the right fit?</strong> <a href="https://townmedialabs.com/contact">Schedule a free strategy call</a> &mdash; no pressure, no sales pitch. If we are not the right agency for you, we will tell you honestly.</p>
+<p><strong>Want to see if we are the right fit?</strong> <a href="https://townmedialabs.ca/contact">Schedule a free strategy call</a> &mdash; no pressure, no sales pitch. If we are not the right agency for you, we will tell you honestly.</p>
 </article>`,
   },
   "ecommerce-seo-guide-2025": {
@@ -5056,9 +5058,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>E-commerce SEO feels overwhelming because there is a lot to do. But you do not need to do everything at once. Start with your top 20 products &mdash; the ones that generate the most revenue. Optimise their titles, write unique descriptions, add schema markup, and compress their images. Then move to your most important category pages.</p>
 
-<p>At <a href="https://townmedialabs.com/services/seo">Town Media Labs</a>, we have helped online stores increase their organic traffic by 200-400% through strategic e-commerce SEO. From technical audits and product page optimization to content strategy and link building &mdash; we handle the full picture.</p>
+<p>At <a href="https://townmedialabs.ca/services/seo">TML Agency</a>, we have helped online stores increase their organic traffic by 200-400% through strategic e-commerce SEO. From technical audits and product page optimization to content strategy and link building &mdash; we handle the full picture.</p>
 
-<p><strong>Want more organic sales?</strong> <a href="https://townmedialabs.com/contact">Get a free e-commerce SEO audit</a> and we will identify exactly where your store is leaving money on the table.</p>
+<p><strong>Want more organic sales?</strong> <a href="https://townmedialabs.ca/contact">Get a free e-commerce SEO audit</a> and we will identify exactly where your store is leaving money on the table.</p>
 </article>`,
   },
   "how-much-does-seo-cost": {
@@ -5201,11 +5203,11 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Our Honest Recommendation</h2>
 
-<p>At <a href="https://townmedialabs.com/services/seo">Town Media Labs</a>, we offer SEO packages starting from Rs 25,000/month for local businesses and scaling up based on scope and competitiveness. Every package includes transparent reporting, a dedicated strategist, and clear deliverables &mdash; no mystery work.</p>
+<p>At <a href="https://townmedialabs.ca/services/seo">TML Agency</a>, we offer SEO packages starting from Rs 25,000/month for local businesses and scaling up based on scope and competitiveness. Every package includes transparent reporting, a dedicated strategist, and clear deliverables &mdash; no mystery work.</p>
 
 <p>We will never oversell you. If your business only needs a $1,000/month SEO investment, we will tell you that &mdash; even though we would obviously prefer a bigger contract. Long-term trust matters more to us than short-term revenue.</p>
 
-<p><strong>Want a custom quote?</strong> <a href="https://townmedialabs.com/contact">Get in touch</a> and we will assess your needs and give you an honest pricing estimate within 24 hours.</p>
+<p><strong>Want a custom quote?</strong> <a href="https://townmedialabs.ca/contact">Get in touch</a> and we will assess your needs and give you an honest pricing estimate within 24 hours.</p>
 </article>`,
   },
   "how-much-does-website-cost": {
@@ -5335,9 +5337,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Invest in content.</strong> The biggest mistake businesses make is spending $20,000 on a beautiful website and $0 on the words, images, and videos that go on it.</li>
 </ol>
 
-<p>At <a href="https://townmedialabs.com/services/website-development">Town Media Labs</a>, we build websites using Next.js &mdash; the fastest, most SEO-friendly framework available. Our sites consistently score 90+ on Google PageSpeed. Pricing starts from Rs 50,000 for small business sites and scales based on complexity.</p>
+<p>At <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>, we build websites using Next.js &mdash; the fastest, most SEO-friendly framework available. Our sites consistently score 90+ on Google PageSpeed. Pricing starts from Rs 50,000 for small business sites and scales based on complexity.</p>
 
-<p><strong>Need a website quote?</strong> <a href="https://townmedialabs.com/contact">Tell us about your project</a> and we will send you a detailed proposal within 48 hours.</p>
+<p><strong>Need a website quote?</strong> <a href="https://townmedialabs.ca/contact">Tell us about your project</a> and we will send you a detailed proposal within 48 hours.</p>
 </article>`,
   },
   "how-much-do-google-ads-cost": {
@@ -5468,9 +5470,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Test, test, test.</strong> Run A/B tests on ad copy and landing pages continuously.</li>
 </ul>
 
-<p>At <a href="https://townmedialabs.com/services/google-ads">Town Media Labs</a>, we manage Google Ads with a focus on cost efficiency and real business results. Our clients typically see a 30-50% reduction in cost per lead within the first 3 months through proper optimization. We charge a flat monthly management fee &mdash; no percentage games.</p>
+<p>At <a href="https://townmedialabs.ca/services/google-ads">TML Agency</a>, we manage Google Ads with a focus on cost efficiency and real business results. Our clients typically see a 30-50% reduction in cost per lead within the first 3 months through proper optimization. We charge a flat monthly management fee &mdash; no percentage games.</p>
 
-<p><strong>Want to know what Google Ads would cost for your business?</strong> <a href="https://townmedialabs.com/contact">Book a free PPC consultation</a> and we will give you a realistic budget estimate and ROI projection.</p>
+<p><strong>Want to know what Google Ads would cost for your business?</strong> <a href="https://townmedialabs.ca/contact">Book a free PPC consultation</a> and we will give you a realistic budget estimate and ROI projection.</p>
 </article>`,
   },
   "social-media-marketing-cost": {
@@ -5606,9 +5608,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p><strong>Better approach:</strong> Focus on 2-3 platforms where your audience actually is, create quality content consistently, and tie everything back to business outcomes.</p>
 
-<p>At <a href="https://townmedialabs.com/services/social-media">Town Media Labs</a>, our social media packages start from Rs 15,000/month and include strategy, content creation, scheduling, and monthly reporting. We focus on platforms that actually drive results for your specific business &mdash; not vanity metrics across every platform.</p>
+<p>At <a href="https://townmedialabs.ca/services/social-media">TML Agency</a>, our social media packages start from Rs 15,000/month and include strategy, content creation, scheduling, and monthly reporting. We focus on platforms that actually drive results for your specific business &mdash; not vanity metrics across every platform.</p>
 
-<p><strong>Want a social media strategy that actually works?</strong> <a href="https://townmedialabs.com/contact">Let us create a plan for your business</a>.</p>
+<p><strong>Want a social media strategy that actually works?</strong> <a href="https://townmedialabs.ca/contact">Let us create a plan for your business</a>.</p>
 </article>`,
   },
   "branding-cost-small-business": {
@@ -5766,9 +5768,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Our Recommendation</h2>
 
-<p>At <a href="https://townmedialabs.com/services/branding">Town Media Labs</a>, our branding packages start from Rs 15,000 for logo design and scale up to comprehensive brand identity systems. Every project includes a strategy session, multiple concepts, unlimited revisions, and complete file deliverables.</p>
+<p>At <a href="https://townmedialabs.ca/services/branding">TML Agency</a>, our branding packages start from Rs 15,000 for logo design and scale up to comprehensive brand identity systems. Every project includes a strategy session, multiple concepts, unlimited revisions, and complete file deliverables.</p>
 
-<p><strong>Ready to build a brand that stands out?</strong> <a href="https://townmedialabs.com/contact">Tell us about your business</a> and we will recommend the right branding investment for your stage and budget.</p>
+<p><strong>Ready to build a brand that stands out?</strong> <a href="https://townmedialabs.ca/contact">Tell us about your business</a> and we will recommend the right branding investment for your stage and budget.</p>
 </article>`,
   },
   "digital-marketing-cost-india": {
@@ -5850,7 +5852,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Agencies in Delhi, Mumbai, and Bangalore typically charge 30-50% more than agencies in Chandigarh, Jaipur, or Pune. But here is a secret: <strong>the work quality is often identical</strong>. You are paying for the agency's office rent and lifestyle cost, not necessarily better talent.</p>
 
-<p>Many businesses are now choosing agencies in Tier 2 cities for significant cost savings without compromising on quality. At <a href="https://townmedialabs.com">Town Media Labs</a>, we are based in Chandigarh and serve clients across India and internationally &mdash; at Tier 2 pricing with Tier 1 quality.</p>
+<p>Many businesses are now choosing agencies in Tier 2 cities for significant cost savings without compromising on quality. At <a href="https://townmedialabs.ca">TML Agency</a>, we are based in Chandigarh and serve clients across India and internationally &mdash; at Tier 2 pricing with Tier 1 quality.</p>
 
 <h2>What to Watch Out For</h2>
 
@@ -5893,9 +5895,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Cut what does not work</strong> &mdash; after sufficient data, stop wasting money on underperformers</li>
 </ol>
 
-<p>At <a href="https://townmedialabs.com">Town Media Labs</a>, we offer flexible digital marketing packages starting from Rs 15,000/month. Based in Chandigarh, we provide Tier 1 quality at Tier 2 pricing &mdash; no fancy office costs passed on to you.</p>
+<p>At <a href="https://townmedialabs.ca">TML Agency</a>, we offer flexible digital marketing packages starting from Rs 15,000/month. Based in Chandigarh, we provide Tier 1 quality at Tier 2 pricing &mdash; no fancy office costs passed on to you.</p>
 
-<p><strong>Want a custom quote for your business?</strong> <a href="https://townmedialabs.com/contact">Tell us your goals and budget</a> and we will recommend exactly where to invest for maximum impact.</p>
+<p><strong>Want a custom quote for your business?</strong> <a href="https://townmedialabs.ca/contact">Tell us your goals and budget</a> and we will recommend exactly where to invest for maximum impact.</p>
 </article>`,
   },
   "lead-generation-cost": {
@@ -6011,9 +6013,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Test relentlessly.</strong> A/B test everything: ad copy, landing pages, CTAs, form fields, offers.</li>
 </ul>
 
-<p>At <a href="https://townmedialabs.com/services/lead-generation">Town Media Labs</a>, we focus on driving qualified leads that actually convert &mdash; not just filling your inbox with contacts. Our lead generation packages combine SEO, paid ads, and conversion optimization for the lowest possible CPL.</p>
+<p>At <a href="https://townmedialabs.ca/services/lead-generation">TML Agency</a>, we focus on driving qualified leads that actually convert &mdash; not just filling your inbox with contacts. Our lead generation packages combine SEO, paid ads, and conversion optimization for the lowest possible CPL.</p>
 
-<p><strong>Want more leads at a lower cost?</strong> <a href="https://townmedialabs.com/contact">Let us audit your current lead generation</a> and identify the biggest cost-saving opportunities.</p>
+<p><strong>Want more leads at a lower cost?</strong> <a href="https://townmedialabs.ca/contact">Let us audit your current lead generation</a> and identify the biggest cost-saving opportunities.</p>
 </article>`,
   },
   "video-editing-cost": {
@@ -6151,9 +6153,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you are not investing in video content, you are leaving attention and revenue on the table.</p>
 
-<p>At <a href="https://townmedialabs.com/services/video-editing">Town Media Labs</a>, our video editing packages start from Rs 2,000 per video for social media content and scale up for corporate productions and motion graphics. We handle everything from social media reels to full corporate video production.</p>
+<p>At <a href="https://townmedialabs.ca/services/video-editing">TML Agency</a>, our video editing packages start from Rs 2,000 per video for social media content and scale up for corporate productions and motion graphics. We handle everything from social media reels to full corporate video production.</p>
 
-<p><strong>Need video content that actually performs?</strong> <a href="https://townmedialabs.com/contact">Tell us about your project</a> and we will send you a custom quote within 24 hours.</p>
+<p><strong>Need video content that actually performs?</strong> <a href="https://townmedialabs.ca/contact">Tell us about your project</a> and we will send you a custom quote within 24 hours.</p>
 </article>`,
   },
 
@@ -6188,7 +6190,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Fair enough. These two platforms could not be more different in philosophy, yet both can produce a solid business website. The right choice depends entirely on what you actually need, not what is trendy on Twitter.</p>
 
-<p>We have built sites on both platforms at <a href="https://townmedialabs.com/services/website-development">TML Agency</a>. WordPress sites for local businesses that needed something up fast, and Next.js projects for brands that needed blazing performance and total control. Neither is universally better. Let us walk through it honestly.</p>
+<p>We have built sites on both platforms at <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>. WordPress sites for local businesses that needed something up fast, and Next.js projects for brands that needed blazing performance and total control. Neither is universally better. Let us walk through it honestly.</p>
 
 <h2>Quick Overview: What Are We Comparing?</h2>
 
@@ -6345,9 +6347,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you are building a brand that competes on digital experience, if your website IS your product, or if you need serious performance, Next.js is worth the investment. The upfront cost is higher, but the long-term benefits in speed, security, and SEO are substantial.</p>
 
-<p>At <a href="https://townmedialabs.com/services/website-development">TML Agency</a>, we build on both platforms. We will never push you toward Next.js when WordPress does the job, and we will not hold you back on WordPress when your business needs something more powerful.</p>
+<p>At <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>, we build on both platforms. We will never push you toward Next.js when WordPress does the job, and we will not hold you back on WordPress when your business needs something more powerful.</p>
 
-<p><strong>Not sure which platform is right for your project?</strong> <a href="https://townmedialabs.com/contact">Talk to our team</a> and we will give you a straight answer based on your specific needs and budget.</p>
+<p><strong>Not sure which platform is right for your project?</strong> <a href="https://townmedialabs.ca/contact">Talk to our team</a> and we will give you a straight answer based on your specific needs and budget.</p>
 
 </article>`,
   },
@@ -6383,7 +6385,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>The short answer: both, eventually. The real answer: it depends on where your business is right now, what you sell, and how fast you need results.</p>
 
-<p>We run both SEO and social media campaigns at <a href="https://townmedialabs.com/services">TML Agency</a>, and we have seen businesses waste lakhs by picking the wrong channel at the wrong time. Let us make sure that does not happen to you.</p>
+<p>We run both SEO and social media campaigns at <a href="https://townmedialabs.ca/services">TML Agency</a>, and we have seen businesses waste lakhs by picking the wrong channel at the wrong time. Let us make sure that does not happen to you.</p>
 
 <h2>The Fundamental Difference</h2>
 
@@ -6493,7 +6495,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>The Real Answer: Build Both, but Prioritize Based on Stage</h2>
 
-<p>Here is the framework we use at <a href="https://townmedialabs.com/services/seo">TML Agency</a> when advising clients:</p>
+<p>Here is the framework we use at <a href="https://townmedialabs.ca/services/seo">TML Agency</a> when advising clients:</p>
 
 <p><strong>Month 1-3:</strong> Start social media immediately for quick wins and brand building. Simultaneously, set up your SEO foundations — optimize your website, create your core service pages, claim Google Business Profile, and start a content calendar.</p>
 
@@ -6507,7 +6509,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Paid social media (Facebook Ads, Instagram Ads) is a different beast entirely from organic social. Paid social can generate leads immediately, and the targeting options are incredible. But the moment you stop paying, the leads stop too.</p>
 
-<p>We cover this in detail in our <a href="https://townmedialabs.com/blog/facebook-ads-vs-google-ads">Facebook Ads vs Google Ads comparison</a>, but the short version: paid social is a tap you turn on and off. SEO is a well that keeps filling.</p>
+<p>We cover this in detail in our <a href="https://townmedialabs.ca/blog/facebook-ads-vs-google-ads">Facebook Ads vs Google Ads comparison</a>, but the short version: paid social is a tap you turn on and off. SEO is a well that keeps filling.</p>
 
 <h2>Common Mistakes We See</h2>
 
@@ -6525,7 +6527,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If we had to pick one for most businesses with limited budgets: invest in SEO first. The returns compound, the traffic is sustainable, and the leads are higher quality. Use social media organically (free posting, community engagement) while your SEO builds momentum, then layer in paid social when your budget allows.</p>
 
-<p><strong>Want a marketing strategy built around your specific business?</strong> <a href="https://townmedialabs.com/contact">Let us build your roadmap</a> — we will tell you exactly where to allocate your budget for maximum impact.</p>
+<p><strong>Want a marketing strategy built around your specific business?</strong> <a href="https://townmedialabs.ca/contact">Let us build your roadmap</a> — we will tell you exactly where to allocate your budget for maximum impact.</p>
 
 </article>`,
   },
@@ -6559,7 +6561,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>You have an advertising budget. You want leads, sales, or both. Two platforms dominate the paid advertising world: Google Ads and Facebook Ads (now officially Meta Ads, but everyone still calls them Facebook Ads). Each one wants your money. But which one will actually give you a return?</p>
 
-<p>Having managed ad campaigns across both platforms at <a href="https://townmedialabs.com/services">TML Agency</a>, we can tell you this: the platform that works best depends on your business model, your audience, and what you sell. Let us break it down with actual data and real talk.</p>
+<p>Having managed ad campaigns across both platforms at <a href="https://townmedialabs.ca/services">TML Agency</a>, we can tell you this: the platform that works best depends on your business model, your audience, and what you sell. Let us break it down with actual data and real talk.</p>
 
 <h2>The Core Difference: Intent vs Interest</h2>
 
@@ -6769,9 +6771,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If your budget allows both, use them together. The combination is more powerful than either alone.</p>
 
-<p>At <a href="https://townmedialabs.com/services">TML Agency</a>, we manage both Google and Meta ad accounts for our clients. We have seen businesses burn through lakhs on the wrong platform, and we have seen Rs 10,000 budgets generate 10x returns on the right one. The difference is strategy, not just spending.</p>
+<p>At <a href="https://townmedialabs.ca/services">TML Agency</a>, we manage both Google and Meta ad accounts for our clients. We have seen businesses burn through lakhs on the wrong platform, and we have seen Rs 10,000 budgets generate 10x returns on the right one. The difference is strategy, not just spending.</p>
 
-<p><strong>Want to know which platform will work for your specific business?</strong> <a href="https://townmedialabs.com/contact">Get a free ad strategy consultation</a> — we will audit your market and tell you exactly where your ad budget should go.</p>
+<p><strong>Want to know which platform will work for your specific business?</strong> <a href="https://townmedialabs.ca/contact">Get a free ad strategy consultation</a> — we will audit your market and tell you exactly where your ad budget should go.</p>
 
 </article>`,
   },
@@ -6805,7 +6807,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>You know you need help with digital marketing. Your options are: hire a freelancer for Rs 10,000-30,000 per month, or hire an agency for Rs 25,000-1,00,000 per month. The price difference alone makes the freelancer tempting. But cheaper is not always better, and expensive is not always worth it.</p>
 
-<p>Let us be upfront: we are an agency. <a href="https://townmedialabs.com/services">TML Agency</a>, to be specific. So yes, we have a bias. But we also started as freelancers. We have been on both sides. And we have had clients come to us after terrible agency experiences and after terrible freelancer experiences. The truth is nuanced.</p>
+<p>Let us be upfront: we are an agency. <a href="https://townmedialabs.ca/services">TML Agency</a>, to be specific. So yes, we have a bias. But we also started as freelancers. We have been on both sides. And we have had clients come to us after terrible agency experiences and after terrible freelancer experiences. The truth is nuanced.</p>
 
 <h2>The Real Cost Comparison</h2>
 
@@ -6998,9 +7000,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you are a small business owner reading this and your budget is tight, start with a freelancer. Find someone with a proven track record, sign a clear contract, and define your expectations upfront. As your business grows and your marketing needs expand, transitioning to an agency makes sense.</p>
 
-<p>At <a href="https://townmedialabs.com/services">TML Agency</a>, we work with businesses at every stage. Some clients come to us from day one, others come after outgrowing their freelancer. Both paths are valid. What matters is that your marketing is actually moving the needle.</p>
+<p>At <a href="https://townmedialabs.ca/services">TML Agency</a>, we work with businesses at every stage. Some clients come to us from day one, others come after outgrowing their freelancer. Both paths are valid. What matters is that your marketing is actually moving the needle.</p>
 
-<p><strong>Trying to decide between a freelancer and an agency for your business?</strong> <a href="https://townmedialabs.com/contact">Book a free consultation</a> — we will give you an honest assessment of what you actually need, even if the answer is "a freelancer is fine for now."</p>
+<p><strong>Trying to decide between a freelancer and an agency for your business?</strong> <a href="https://townmedialabs.ca/contact">Book a free consultation</a> — we will give you an honest assessment of what you actually need, even if the answer is "a freelancer is fine for now."</p>
 
 </article>`,
   },
@@ -7034,7 +7036,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>You want to sell products online. You have done some research and two names keep coming up: Shopify and WooCommerce. One is a hosted platform that handles everything for you. The other is an open-source plugin that gives you total control. Both power millions of online stores. Neither is universally better.</p>
 
-<p>We have built stores on both platforms at <a href="https://townmedialabs.com/services/website-development">TML Agency</a>. Shopify stores for clients who wanted simplicity and speed. WooCommerce stores for clients who needed deep customization and cost control. Here is the honest breakdown.</p>
+<p>We have built stores on both platforms at <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>. Shopify stores for clients who wanted simplicity and speed. WooCommerce stores for clients who needed deep customization and cost control. Here is the honest breakdown.</p>
 
 <h2>The 30-Second Summary</h2>
 
@@ -7216,9 +7218,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>For businesses that already have a WordPress site, sell digital products, or need heavy customization, WooCommerce makes more sense. Why rebuild on a new platform when WordPress already serves you well?</p>
 
-<p>At <a href="https://townmedialabs.com/services/website-development">TML Agency</a>, we build and optimize stores on both platforms. We will never push Shopify on a business that needs WooCommerce's flexibility, and we will not saddle a non-technical business owner with WooCommerce's maintenance burden when Shopify does the job better.</p>
+<p>At <a href="https://townmedialabs.ca/services/website-development">TML Agency</a>, we build and optimize stores on both platforms. We will never push Shopify on a business that needs WooCommerce's flexibility, and we will not saddle a non-technical business owner with WooCommerce's maintenance burden when Shopify does the job better.</p>
 
-<p><strong>Ready to launch your online store?</strong> <a href="https://townmedialabs.com/contact">Talk to our e-commerce team</a> — we will recommend the right platform and give you a detailed quote within 48 hours.</p>
+<p><strong>Ready to launch your online store?</strong> <a href="https://townmedialabs.ca/contact">Talk to our e-commerce team</a> — we will recommend the right platform and give you a detailed quote within 48 hours.</p>
 
 </article>`,
   },
@@ -7260,7 +7262,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p><strong>Paid marketing</strong> is anything where you pay a platform to display your message. Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads, YouTube Ads, display advertising, influencer sponsorships, sponsored content. Money goes out, visibility comes in.</p>
 
-<p>The analogy we use at <a href="https://townmedialabs.com/services">TML Agency</a>: organic marketing is like growing a garden. You plant seeds, water them daily, and harvest fruit for years. Paid marketing is like going to the grocery store. You pay money and get food immediately, but you have to keep paying every time you need more.</p>
+<p>The analogy we use at <a href="https://townmedialabs.ca/services">TML Agency</a>: organic marketing is like growing a garden. You plant seeds, water them daily, and harvest fruit for years. Paid marketing is like going to the grocery store. You pay money and get food immediately, but you have to keep paying every time you need more.</p>
 
 <h2>The Cost Equation: It Is Not What You Think</h2>
 
@@ -7336,7 +7338,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>The Budget Allocation Framework</h2>
 
-<p>Here is the framework we use at <a href="https://townmedialabs.com/services">TML Agency</a> to help clients decide how to split their budget. It is based on business stage, not arbitrary percentages.</p>
+<p>Here is the framework we use at <a href="https://townmedialabs.ca/services">TML Agency</a> to help clients decide how to split their budget. It is based on business stage, not arbitrary percentages.</p>
 
 <h3>Stage 1: Launch (Month 0-3)</h3>
 <p><strong>Split: 70% Paid / 30% Organic</strong></p>
@@ -7401,9 +7403,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>If you take away one thing from this article, let it be this: every rupee you spend on organic marketing today pays dividends for years. Every rupee you spend on paid ads today is gone tomorrow. Both have their place, but the ratio should shift toward organic as your business matures.</p>
 
-<p>At <a href="https://townmedialabs.com/services">TML Agency</a>, we build marketing strategies that balance immediate revenue needs with long-term growth. We have helped businesses reduce their ad dependency by 60-70% over 18 months by building robust organic channels alongside their paid campaigns.</p>
+<p>At <a href="https://townmedialabs.ca/services">TML Agency</a>, we build marketing strategies that balance immediate revenue needs with long-term growth. We have helped businesses reduce their ad dependency by 60-70% over 18 months by building robust organic channels alongside their paid campaigns.</p>
 
-<p><strong>Want a marketing strategy that does not keep you chained to ad spend forever?</strong> <a href="https://townmedialabs.com/contact">Let us build your roadmap</a> — we will map out exactly how to transition from paid-dependent to organic-dominant marketing.</p>
+<p><strong>Want a marketing strategy that does not keep you chained to ad spend forever?</strong> <a href="https://townmedialabs.ca/contact">Let us build your roadmap</a> — we will map out exactly how to transition from paid-dependent to organic-dominant marketing.</p>
 
 </article>`,
   },
@@ -7502,7 +7504,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p><strong>Mangools (KWFinder)</strong> — More affordable option at $49/month with a clean interface. The keyword difficulty score is particularly accurate and beginner-friendly.</p>
 
-<p>At <a href="https://townmedialabs.com/services/seo">TML Agency</a>, we use a combination of Ahrefs and SEMrush for client keyword research because each tool surfaces slightly different keyword ideas and metrics.</p>
+<p>At <a href="https://townmedialabs.ca/services/seo">TML Agency</a>, we use a combination of Ahrefs and SEMrush for client keyword research because each tool surfaces slightly different keyword ideas and metrics.</p>
 
 <hr />
 
@@ -7681,7 +7683,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Step 9: Put It All Together — Your Keyword Research Workflow</h2>
 
-<p>Here is the complete workflow we use at <a href="https://townmedialabs.com/services/seo">TML Agency</a> for every new client engagement:</p>
+<p>Here is the complete workflow we use at <a href="https://townmedialabs.ca/services/seo">TML Agency</a> for every new client engagement:</p>
 
 <ol>
 <li><strong>Discovery:</strong> Brainstorm 20-30 seed keywords based on the business, products, and services</li>
@@ -7716,7 +7718,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Within 3-6 months, you will start seeing those pages rank and bring in targeted traffic — the kind that actually converts into leads and customers.</p>
 
-<p>If you would rather have experts handle your keyword strategy and SEO execution, <a href="https://townmedialabs.com/contact">get in touch with TML Agency</a>. We have helped 500+ brands build search visibility that drives real business results. Our <a href="https://townmedialabs.com/services/seo">SEO services</a> include comprehensive keyword research, content strategy, technical optimisation, and ongoing ranking management.</p>
+<p>If you would rather have experts handle your keyword strategy and SEO execution, <a href="https://townmedialabs.ca/contact">get in touch with TML Agency</a>. We have helped 500+ brands build search visibility that drives real business results. Our <a href="https://townmedialabs.ca/services/seo">SEO services</a> include comprehensive keyword research, content strategy, technical optimisation, and ongoing ranking management.</p>
 </article>`,
   },
 
@@ -7810,7 +7812,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>You get 750 characters. Use all of them. Describe what your business does, who you serve, what makes you different, and your location. Include your primary keyword and city name naturally — but do not keyword stuff.</p>
 
-<p><strong>Good example:</strong> "Town Media Labs is a full-service digital marketing agency based in Chandigarh. Since 2015, we have helped 500+ brands across India grow their online presence through SEO, social media marketing, web development, and paid advertising. Our team of 70+ marketing professionals delivers measurable results for businesses ranging from startups to enterprise companies across 25+ industries."</p>
+<p><strong>Good example:</strong> "TML Agency is a full-service digital marketing agency based in Chandigarh. Since 2015, we have helped 500+ brands across India grow their online presence through SEO, social media marketing, web development, and paid advertising. Our team of 70+ marketing professionals delivers measurable results for businesses ranging from startups to enterprise companies across 25+ industries."</p>
 
 <h3>Business Hours</h3>
 
@@ -7923,7 +7925,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Photo views</strong> — How your photos compare to similar businesses in your area.</li>
 </ul>
 
-<p>At <a href="https://townmedialabs.com/services/seo">TML Agency</a>, we track these metrics monthly for every local SEO client and use the search query data to inform ongoing content and optimization strategy.</p>
+<p>At <a href="https://townmedialabs.ca/services/seo">TML Agency</a>, we track these metrics monthly for every local SEO client and use the search query data to inform ongoing content and optimization strategy.</p>
 
 <hr />
 
@@ -7959,7 +7961,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>A fully optimised Google Business Profile does not just improve your rankings — it becomes a conversion machine that turns searchers into customers around the clock, completely free.</p>
 
-<p>If you want expert help optimising your Google Business Profile and local SEO strategy, <a href="https://townmedialabs.com/contact">reach out to TML Agency</a>. We manage local SEO for businesses across India and know exactly what it takes to dominate the Maps Pack in your area. Explore our <a href="https://townmedialabs.com/services/seo">local SEO services</a> to learn more.</p>
+<p>If you want expert help optimising your Google Business Profile and local SEO strategy, <a href="https://townmedialabs.ca/contact">reach out to TML Agency</a>. We manage local SEO for businesses across India and know exactly what it takes to dominate the Maps Pack in your area. Explore our <a href="https://townmedialabs.ca/services/seo">local SEO services</a> to learn more.</p>
 </article>`,
   },
 
@@ -7997,7 +7999,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>We are not talking about gaming the system or keyword stuffing. Google has moved far beyond that. We are talking about writing genuinely useful content that also happens to be structured in a way that Google can understand, trust, and rank.</p>
 
-<p>At <a href="https://townmedialabs.com/services/content-writing">TML Agency</a>, content is one of our core services, and we have published hundreds of blog posts that rank on page one. This guide is the exact process we follow.</p>
+<p>At <a href="https://townmedialabs.ca/services/content-writing">TML Agency</a>, content is one of our core services, and we have published hundreds of blog posts that rank on page one. This guide is the exact process we follow.</p>
 
 <hr />
 
@@ -8206,7 +8208,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>The hardest part is consistency. Most businesses publish 3-4 blog posts, see no immediate results, and stop. SEO content compounds over time — the posts you publish today might not peak in traffic for 6-12 months. But once they do, they keep driving visitors without any ongoing ad spend.</p>
 
-<p>Need help creating blog content that actually ranks? <a href="https://townmedialabs.com/contact">Talk to our content team at TML Agency</a>. We handle everything from keyword research and content strategy to writing, publishing, and ongoing optimisation. Check out our <a href="https://townmedialabs.com/services/content-writing">content writing services</a> to learn more.</p>
+<p>Need help creating blog content that actually ranks? <a href="https://townmedialabs.ca/contact">Talk to our content team at TML Agency</a>. We handle everything from keyword research and content strategy to writing, publishing, and ongoing optimisation. Check out our <a href="https://townmedialabs.ca/services/content-writing">content writing services</a> to learn more.</p>
 </article>`,
   },
 
@@ -8523,7 +8525,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Facebook advertising is a skill that improves dramatically with practice. Every campaign teaches you something about your audience, your messaging, and what drives people to act.</p>
 
-<p>If you want to skip the learning curve and start with campaigns that work from day one, <a href="https://townmedialabs.com/contact">talk to the paid advertising team at TML Agency</a>. We manage Meta ad campaigns for businesses across industries and budgets. Our <a href="https://townmedialabs.com/services/social-media">social media marketing services</a> include full campaign strategy, creative production, audience research, and ongoing optimisation.</p>
+<p>If you want to skip the learning curve and start with campaigns that work from day one, <a href="https://townmedialabs.ca/contact">talk to the paid advertising team at TML Agency</a>. We manage Meta ad campaigns for businesses across industries and budgets. Our <a href="https://townmedialabs.ca/services/social-media">social media marketing services</a> include full campaign strategy, creative production, audience research, and ongoing optimisation.</p>
 </article>`,
   },
 
@@ -8783,7 +8785,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Consistency is what builds a list. Add subscribers every day — even if it is just 1-2 — and within a year you will have a list that generates real revenue for your business.</p>
 
-<p>At <a href="https://townmedialabs.com/services/email-marketing">TML Agency</a>, we help businesses build and manage email marketing systems that drive measurable revenue. From list building strategy to automation setup to ongoing campaign management, our team handles it all. <a href="https://townmedialabs.com/contact">Get in touch</a> to discuss your email marketing goals.</p>
+<p>At <a href="https://townmedialabs.ca/services/email-marketing">TML Agency</a>, we help businesses build and manage email marketing systems that drive measurable revenue. From list building strategy to automation setup to ongoing campaign management, our team handles it all. <a href="https://townmedialabs.ca/contact">Get in touch</a> to discuss your email marketing goals.</p>
 </article>`,
   },
 
@@ -9023,7 +9025,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Zapier integrations</strong> — Connect your invoicing or project management tool to your email platform to trigger review requests automatically after payment or project completion</li>
 </ul>
 
-<p>At <a href="https://townmedialabs.com/services/seo">TML Agency</a>, we set up automated review generation systems for our local SEO clients that consistently produce 10-30 new reviews per month on autopilot.</p>
+<p>At <a href="https://townmedialabs.ca/services/seo">TML Agency</a>, we set up automated review generation systems for our local SEO clients that consistently produce 10-30 new reviews per month on autopilot.</p>
 
 <hr />
 
@@ -9088,7 +9090,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Remember: the goal is not to get 100 reviews overnight. Consistent, steady review acquisition — 5-10 new reviews per month — signals to Google that your business is active and trusted. Over 6-12 months, this compounds into a significant competitive advantage.</p>
 
-<p>Need help building a comprehensive local SEO strategy that includes review generation, Google Business Profile optimization, and local rankings? <a href="https://townmedialabs.com/contact">Contact TML Agency</a> for a free consultation. Our <a href="https://townmedialabs.com/services/seo">local SEO services</a> have helped businesses across India dominate their local search results.</p>
+<p>Need help building a comprehensive local SEO strategy that includes review generation, Google Business Profile optimization, and local rankings? <a href="https://townmedialabs.ca/contact">Contact TML Agency</a> for a free consultation. Our <a href="https://townmedialabs.ca/services/seo">local SEO services</a> have helped businesses across India dominate their local search results.</p>
 </article>`,
   },
   "digital-marketing-for-restaurants-guide": {
@@ -9387,7 +9389,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Start with your Google Business Profile and food photography. Those two things alone will make a noticeable difference within 30 days. Then layer on social media, reviews, and paid ads.</p>
 
-<p>If you want an expert team to handle your restaurant's digital marketing while you focus on what you do best — creating amazing food — <a href="https://townmedialabs.com/contact">get in touch with TML Agency</a>. We have helped restaurants across India build their digital presence and fill their tables. Our <a href="https://townmedialabs.com/services">full-service marketing solutions</a> are tailored specifically for the food and hospitality industry.</p>
+<p>If you want an expert team to handle your restaurant's digital marketing while you focus on what you do best — creating amazing food — <a href="https://townmedialabs.ca/contact">get in touch with TML Agency</a>. We have helped restaurants across India build their digital presence and fill their tables. Our <a href="https://townmedialabs.ca/services">full-service marketing solutions</a> are tailored specifically for the food and hospitality industry.</p>
 </article>`,
   },
   "seo-for-dentists-guide": {
@@ -9672,7 +9674,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Within 3-6 months of consistent effort, you will see measurable increases in search visibility, phone calls, and new patient bookings.</p>
 
-<p>Want to accelerate your dental practice's growth with a proven SEO strategy? <a href="https://townmedialabs.com/contact">Contact TML Agency</a> for a free dental SEO audit. Our <a href="https://townmedialabs.com/services/seo">local SEO services</a> have helped healthcare practices across India dominate their local search results and fill their appointment books.</p>
+<p>Want to accelerate your dental practice's growth with a proven SEO strategy? <a href="https://townmedialabs.ca/contact">Contact TML Agency</a> for a free dental SEO audit. Our <a href="https://townmedialabs.ca/services/seo">local SEO services</a> have helped healthcare practices across India dominate their local search results and fill their appointment books.</p>
 </article>`,
   },
   "digital-marketing-for-real-estate": {
@@ -9890,7 +9892,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>The real estate agents who thrive in 2026 will be the ones who master digital marketing. Start with your website and Google Business Profile, add social media and paid ads, and track everything in a CRM.</p>
 
-<p>Need help building a digital marketing strategy for your real estate business? <a href="https://townmedialabs.com/contact">Talk to TML Agency</a>. We have helped real estate developers and agents across India generate qualified leads through <a href="https://townmedialabs.com/services">SEO, paid advertising, and social media marketing</a>.</p>
+<p>Need help building a digital marketing strategy for your real estate business? <a href="https://townmedialabs.ca/contact">Talk to TML Agency</a>. We have helped real estate developers and agents across India generate qualified leads through <a href="https://townmedialabs.ca/services">SEO, paid advertising, and social media marketing</a>.</p>
 </article>`,
   },
   "marketing-for-law-firms": {
@@ -10105,7 +10107,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Begin with these priorities: optimize your Google Business Profile, build comprehensive practice area pages, start a review generation system, and publish weekly educational content.</p>
 
-<p>Need help building a digital marketing strategy that respects legal professionalism while generating qualified consultations? <a href="https://townmedialabs.com/contact">Contact TML Agency</a>. Our <a href="https://townmedialabs.com/services">digital marketing services</a> have helped professional service firms across India build online authority and attract high-quality clients.</p>
+<p>Need help building a digital marketing strategy that respects legal professionalism while generating qualified consultations? <a href="https://townmedialabs.ca/contact">Contact TML Agency</a>. Our <a href="https://townmedialabs.ca/services">digital marketing services</a> have helped professional service firms across India build online authority and attract high-quality clients.</p>
 </article>`,
   },
   "gym-marketing-strategies": {
@@ -10339,7 +10341,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <li><strong>Within 90 days</strong> — Facebook/Instagram Ads, email automation, Google Ads, community events</li>
 </ol>
 
-<p>Want help building a marketing system that consistently fills your gym? <a href="https://townmedialabs.com/contact">Get in touch with TML Agency</a>. Our <a href="https://townmedialabs.com/services">digital marketing services</a> are designed to help fitness businesses grow their membership and build lasting brands.</p>
+<p>Want help building a marketing system that consistently fills your gym? <a href="https://townmedialabs.ca/contact">Get in touch with TML Agency</a>. Our <a href="https://townmedialabs.ca/services">digital marketing services</a> are designed to help fitness businesses grow their membership and build lasting brands.</p>
 </article>`,
   },
   "ecommerce-marketing-strategy": {
@@ -10539,7 +10541,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Start with the fundamentals: product SEO, abandoned cart emails, and basic social media. Then layer on paid ads, influencers, and advanced retention strategies as revenue grows.</p>
 
-<p>Ready to build or scale your e-commerce marketing? <a href="https://townmedialabs.com/contact">Talk to TML Agency</a>. Our <a href="https://townmedialabs.com/services">e-commerce marketing services</a> cover everything from SEO and paid ads to email automation and conversion optimization.</p>
+<p>Ready to build or scale your e-commerce marketing? <a href="https://townmedialabs.ca/contact">Talk to TML Agency</a>. Our <a href="https://townmedialabs.ca/services">e-commerce marketing services</a> cover everything from SEO and paid ads to email automation and conversion optimization.</p>
 </article>`,
   },
   "saas-marketing-guide": {
@@ -10795,7 +10797,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Start by nailing onboarding and content marketing. These two foundations support everything else. Then layer on paid acquisition and retention strategies as you scale.</p>
 
-<p>Need help building a marketing engine for your SaaS product? <a href="https://townmedialabs.com/contact">Talk to TML Agency</a>. Our <a href="https://townmedialabs.com/services">digital marketing team</a> has helped SaaS companies and tech startups build scalable acquisition and retention systems.</p>
+<p>Need help building a marketing engine for your SaaS product? <a href="https://townmedialabs.ca/contact">Talk to TML Agency</a>. Our <a href="https://townmedialabs.ca/services">digital marketing team</a> has helped SaaS companies and tech startups build scalable acquisition and retention systems.</p>
 </article>`,
   },
   "healthcare-marketing-guide": {
@@ -11026,7 +11028,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Healthcare marketing done right is a service to your community. Start with your Google Business Profile and patient review system — these can significantly increase enquiries within the first month. Then build out website content, patient education blog, and targeted advertising.</p>
 
-<p>Need help developing a healthcare marketing strategy that is effective and compliant? <a href="https://townmedialabs.com/contact">Contact TML Agency</a>. Our <a href="https://townmedialabs.com/services">healthcare marketing services</a> help medical practices, hospitals, and healthcare businesses grow their patient base while maintaining the highest standards of privacy and professionalism.</p>
+<p>Need help developing a healthcare marketing strategy that is effective and compliant? <a href="https://townmedialabs.ca/contact">Contact TML Agency</a>. Our <a href="https://townmedialabs.ca/services">healthcare marketing services</a> help medical practices, hospitals, and healthcare businesses grow their patient base while maintaining the highest standards of privacy and professionalism.</p>
 </article>`,
   },
 
@@ -11061,7 +11063,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Here's something nobody tells you at the start: <strong>most small businesses don't fail because their product is bad.</strong> They fail because nobody knows they exist. You can make the best handmade candles, run the most meticulous accounting firm, or cook the best biryani in town — but if your digital presence is invisible, you're losing to competitors who figured out marketing first.</p>
 
-<p>We've worked with over 500 brands at <a href="https://townmedialabs.com">TML Agency</a>, and the pattern is always the same. The businesses that grow fastest aren't the ones with the biggest budgets. They're the ones who <em>understand which channels actually matter</em> for their specific situation, and then execute relentlessly on those channels.</p>
+<p>We've worked with over 500 brands at <a href="https://townmedialabs.ca">TML Agency</a>, and the pattern is always the same. The businesses that grow fastest aren't the ones with the biggest budgets. They're the ones who <em>understand which channels actually matter</em> for their specific situation, and then execute relentlessly on those channels.</p>
 
 <p>This guide is everything we wish someone had given us when we started. No fluff, no jargon soup, no "just post consistently on social media" advice. Real strategies, real numbers, real frameworks you can use <strong>today</strong> — regardless of whether your monthly marketing budget is ₹10,000 or ₹10,00,000.</p>
 
@@ -11093,7 +11095,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>SEO is the closest thing to a free lunch in digital marketing — except it isn't free, and it isn't lunch. It's an investment that compounds over time. The blog post you publish today could bring in leads for the next three years. The Google Ads campaign you run today stops the moment you stop paying.</p>
 
-<p>At its core, <a href="https://townmedialabs.com/services/seo">SEO</a> is about making your website the best answer to what your potential customers are searching for. Google processes over 8.5 billion searches per day. Some percentage of those people are looking for exactly what you sell. SEO ensures they find <em>you</em> instead of your competitor.</p>
+<p>At its core, <a href="https://townmedialabs.ca/services/seo">SEO</a> is about making your website the best answer to what your potential customers are searching for. Google processes over 8.5 billion searches per day. Some percentage of those people are looking for exactly what you sell. SEO ensures they find <em>you</em> instead of your competitor.</p>
 
 <h3>Local SEO: The Small Business Superpower</h3>
 
@@ -11125,7 +11127,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Google Ads: Turning Budget Into Leads on Demand</h2>
 
-<p>If SEO is a marathon, <a href="https://townmedialabs.com/services/google-ads">Google Ads</a> is a sprint. You can go from zero to appearing at the top of Google search results <em>today</em>. The catch? You pay for every click, and costs add up quickly if you don't know what you're doing.</p>
+<p>If SEO is a marathon, <a href="https://townmedialabs.ca/services/google-ads">Google Ads</a> is a sprint. You can go from zero to appearing at the top of Google search results <em>today</em>. The catch? You pay for every click, and costs add up quickly if you don't know what you're doing.</p>
 
 <p>We manage Google Ads campaigns for dozens of businesses at TML, and here's the honest truth: <strong>most small businesses waste 40–60% of their ad spend</strong> because of poor keyword targeting, weak landing pages, and zero conversion tracking. But when done right, Google Ads delivers the highest-intent traffic you can buy.</p>
 
@@ -11163,7 +11165,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Social Media Marketing: Building a Brand People Actually Care About</h2>
 
-<p>Let's get something straight: <a href="https://townmedialabs.com/services/social-media">social media marketing</a> is not about posting a graphic every day and hoping for the best. That's content publishing, not marketing. Real social media marketing is about <strong>building relationships at scale</strong> — turning strangers into followers, followers into fans, and fans into customers.</p>
+<p>Let's get something straight: <a href="https://townmedialabs.ca/services/social-media">social media marketing</a> is not about posting a graphic every day and hoping for the best. That's content publishing, not marketing. Real social media marketing is about <strong>building relationships at scale</strong> — turning strangers into followers, followers into fans, and fans into customers.</p>
 
 <h3>Which Platforms Should Your Small Business Be On?</h3>
 
@@ -11367,9 +11369,9 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p><strong>Hire an agency if:</strong> you need results fast, you're spending more than ₹30,000/month on marketing, or your own time is better spent on core business operations. A good agency brings expertise across all channels, access to premium tools, and the ability to execute at a pace you can't match alone.</p>
 
-<p>At <a href="https://townmedialabs.com">TML Agency</a>, we work with businesses at every stage — from startups just getting their first website to established companies spending lakhs per month on advertising. The key is finding a partner who treats your budget like their own money and reports on results, not activity.</p>
+<p>At <a href="https://townmedialabs.ca">TML Agency</a>, we work with businesses at every stage — from startups just getting their first website to established companies spending lakhs per month on advertising. The key is finding a partner who treats your budget like their own money and reports on results, not activity.</p>
 
-<p><strong>Ready to stop guessing and start growing?</strong> Explore our <a href="https://townmedialabs.com/services/seo">SEO services</a>, <a href="https://townmedialabs.com/services/google-ads">Google Ads management</a>, <a href="https://townmedialabs.com/services/social-media">social media marketing</a>, and <a href="https://townmedialabs.com/services/lead-generation">lead generation</a> — or <a href="https://townmedialabs.com/contact">get a free consultation</a> to build a plan tailored to your business.</p>
+<p><strong>Ready to stop guessing and start growing?</strong> Explore our <a href="https://townmedialabs.ca/services/seo">SEO services</a>, <a href="https://townmedialabs.ca/services/google-ads">Google Ads management</a>, <a href="https://townmedialabs.ca/services/social-media">social media marketing</a>, and <a href="https://townmedialabs.ca/services/lead-generation">lead generation</a> — or <a href="https://townmedialabs.ca/contact">get a free consultation</a> to build a plan tailored to your business.</p>
 `,
   },
 
@@ -11463,7 +11465,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h3>Look for Results, Not Just Aesthetics</h3>
 
-<p>Did the rebrand lead to measurable outcomes? More sales? Better customer perception? Higher price points? Case studies that include business results are worth ten times more than case studies that only show visuals. Check the agency's <a href="https://townmedialabs.com/portfolio">portfolio</a> for evidence of real impact.</p>
+<p>Did the rebrand lead to measurable outcomes? More sales? Better customer perception? Higher price points? Case studies that include business results are worth ten times more than case studies that only show visuals. Check the agency's <a href="https://townmedialabs.ca/portfolio">portfolio</a> for evidence of real impact.</p>
 
 <h3>The Portfolio Evaluation Scorecard</h3>
 
@@ -11634,7 +11636,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <p>Good agencies spend significant time on research and strategy before any design work begins. This phase can feel like nothing is happening, but it's the most important part. The brands that skip research are the brands that end up rebranding again in 18 months.</p>
 
 <h3>Plan for Brand Implementation</h3>
-<p>The best brand guidelines in the world are useless if nobody follows them. Before the project ends, ensure you have a plan for rolling out the new brand across your website, social media, signage, packaging, email signatures, and every other touchpoint. Ask your agency about <a href="https://townmedialabs.com/services/graphic-design">ongoing design support</a> for implementation.</p>
+<p>The best brand guidelines in the world are useless if nobody follows them. Before the project ends, ensure you have a plan for rolling out the new brand across your website, social media, signage, packaging, email signatures, and every other touchpoint. Ask your agency about <a href="https://townmedialabs.ca/services/graphic-design">ongoing design support</a> for implementation.</p>
 
 <hr />
 
@@ -11675,11 +11677,11 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <h2>Making Your Final Decision With Confidence</h2>
 
-<p>Choosing a <a href="https://townmedialabs.com/services/branding">branding agency</a> is a significant decision, but it doesn't have to be a stressful one. If you've followed this checklist — defined your needs, evaluated portfolios critically, asked the right questions, watched for red flags, and scored your options objectively — you've already done more due diligence than 95% of businesses.</p>
+<p>Choosing a <a href="https://townmedialabs.ca/services/branding">branding agency</a> is a significant decision, but it doesn't have to be a stressful one. If you've followed this checklist — defined your needs, evaluated portfolios critically, asked the right questions, watched for red flags, and scored your options objectively — you've already done more due diligence than 95% of businesses.</p>
 
 <p>The best branding relationships feel like partnerships, not transactions. The right agency will challenge your assumptions, push your brand further than you imagined, and ultimately build something that makes you proud every time a customer encounters it.</p>
 
-<p>At <a href="https://townmedialabs.com">TML Agency</a>, we've built brands for 500+ businesses across 25+ industries — from scrappy local startups to international companies. If you're looking for a branding partner with a proven process, an in-house team of 70+, and a portfolio that speaks for itself, <a href="https://townmedialabs.com/contact">let's talk</a>.</p>
+<p>At <a href="https://townmedialabs.ca">TML Agency</a>, we've built brands for 500+ businesses across 25+ industries — from scrappy local startups to international companies. If you're looking for a branding partner with a proven process, an in-house team of 70+, and a portfolio that speaks for itself, <a href="https://townmedialabs.ca/contact">let's talk</a>.</p>
 `,
   },
 
@@ -11718,7 +11720,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 
 <p>Here's what frustrates us about how most marketing blogs answer this question. They either lean heavily toward SEO (because it's "free" and "sustainable") or toward Google Ads (because results are "immediate"). Both of those framings are misleading. <strong>SEO isn't free. Google Ads aren't always immediate.</strong> And for most businesses, the real answer isn't "one or the other" — it's understanding which to prioritise <em>first</em> and how to combine both for maximum impact.</p>
 
-<p>After managing both <a href="https://townmedialabs.com/services/seo">SEO</a> and <a href="https://townmedialabs.com/services/google-ads">Google Ads</a> campaigns for hundreds of businesses at TML Agency, we've seen every possible combination. This guide shares what actually works — with real numbers, real scenarios, and a decision framework you can apply to your business today.</p>
+<p>After managing both <a href="https://townmedialabs.ca/services/seo">SEO</a> and <a href="https://townmedialabs.ca/services/google-ads">Google Ads</a> campaigns for hundreds of businesses at TML Agency, we've seen every possible combination. This guide shares what actually works — with real numbers, real scenarios, and a decision framework you can apply to your business today.</p>
 
 <hr />
 
@@ -11949,7 +11951,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
 
 <p>That's the sweet spot. That's where marketing budgets become efficient, lead costs drop, and growth becomes sustainable.</p>
 
-<p>Need help figuring out the right mix for your business? Our team at TML Agency manages both <a href="https://townmedialabs.com/services/seo">SEO</a> and <a href="https://townmedialabs.com/services/google-ads">Google Ads</a> for businesses across India and internationally. We also offer <a href="https://townmedialabs.com/services/lead-generation">lead generation strategies</a> that combine both channels for maximum ROI. <a href="https://townmedialabs.com/contact">Get a free consultation</a> — we'll tell you exactly where your marketing budget should go, even if the answer isn't "hire us."</p>
+<p>Need help figuring out the right mix for your business? Our team at TML Agency manages both <a href="https://townmedialabs.ca/services/seo">SEO</a> and <a href="https://townmedialabs.ca/services/google-ads">Google Ads</a> for businesses across India and internationally. We also offer <a href="https://townmedialabs.ca/services/lead-generation">lead generation strategies</a> that combine both channels for maximum ROI. <a href="https://townmedialabs.ca/contact">Get a free consultation</a> — we'll tell you exactly where your marketing budget should go, even if the answer isn't "hire us."</p>
 `,
   },
   "how-much-does-website-cost-india-2025": {
@@ -12801,7 +12803,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
 </table>
 
 <h3>NAP Consistency — The #1 Citation Mistake</h3>
-<p><strong>Your business name, address, and phone number must be identical across every listing.</strong> Not similar — identical. "TML Agency, SCO 123, Sector 17, Chandigarh" and "Town Media Labs, SCO-123, Sector-17, Chandigarh" are two different NAPs in Google's eyes.</p>
+<p><strong>Your business name, address, and phone number must be identical across every listing.</strong> Not similar — identical. "TML Agency, SCO 123, Sector 17, Chandigarh" and "TML Agency, SCO-123, Sector-17, Chandigarh" are two different NAPs in Google's eyes.</p>
 
 <p>Pick one exact format and use it everywhere. Even small variations (Rd. vs Road, # vs No.) can dilute your citation signals.</p>
 
@@ -14033,5 +14035,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
 // Merge hand-written + auto-generated city articles (hand-written takes priority)
 export const blogArticles: Record<string, BlogArticle> = {
   ...generateCityBlogArticles(),
+  ...generateSeoArticles(),
+  ...generateGoogleAdsArticles(),
   ...handWrittenArticles,
 };

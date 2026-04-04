@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["leicester"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Leicester | TML Agency",
+  title: "Website Development Agency in Leicester | TML Agency",
   description: "TML offers expert website development services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development leicester", "website development agency leicester", "website development company leicester"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-leicester",
+    canonical: "https://townmedialabs.ca/services/website-development-in-leicester",
   },
   openGraph: {
-    title: "Best Website Development Agency in Leicester | TML Agency",
+    title: "Website Development Agency in Leicester | TML Agency",
     description: "TML offers expert website development services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-leicester",
+    url: "https://townmedialabs.ca/services/website-development-in-leicester",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Leicester | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Leicester | TML Agency",
+    title: "Website Development Agency in Leicester | TML Agency",
     description: "TML offers expert website development services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

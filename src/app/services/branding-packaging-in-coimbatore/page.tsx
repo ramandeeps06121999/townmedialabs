@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["coimbatore"];
 
 export const metadata: Metadata = {
-  title: "Best Branding & Packaging Agency in Coimbatore | TML Agency",
+  title: "Branding & Packaging Agency in Coimbatore | TML Agency",
   description: "TML offers expert branding and packaging services in Coimbatore. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding and packaging coimbatore", "branding and packaging agency coimbatore", "branding and packaging company coimbatore"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-coimbatore",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-coimbatore",
   },
   openGraph: {
-    title: "Best Branding & Packaging Agency in Coimbatore | TML Agency",
+    title: "Branding & Packaging Agency in Coimbatore | TML Agency",
     description: "TML offers expert branding and packaging services in Coimbatore. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-coimbatore",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-coimbatore",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding & Packaging Agency in Coimbatore | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding & Packaging Agency in Coimbatore | TML Agency",
+    title: "Branding & Packaging Agency in Coimbatore | TML Agency",
     description: "TML offers expert branding and packaging services in Coimbatore. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

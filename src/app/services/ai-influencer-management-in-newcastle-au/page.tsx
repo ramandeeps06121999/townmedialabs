@@ -6,25 +6,25 @@ const location = locations["newcastle_au"];
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
-  title: "Best AI Influencer Management Agency in Newcastle | TML Agency",
+  title: "AI Influencer Management Agency in Newcastle | TML Agency",
   description: "TML offers expert ai influencer management services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management newcastle", "ai influencer management agency newcastle", "ai influencer management company newcastle"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-newcastle-au",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-newcastle-au",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Newcastle | TML Agency",
+    title: "AI Influencer Management Agency in Newcastle | TML Agency",
     description: "TML offers expert ai influencer management services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-newcastle-au",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-newcastle-au",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Newcastle | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Newcastle | TML Agency",
+    title: "AI Influencer Management Agency in Newcastle | TML Agency",
     description: "TML offers expert ai influencer management services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

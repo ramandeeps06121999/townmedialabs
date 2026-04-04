@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["noida"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Noida | TML Agency",
+  title: "Lead Generation Agency in Noida | TML Agency",
   description: "TML offers expert lead generation services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation noida", "lead generation agency noida", "lead generation company noida"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-noida",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-noida",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Noida | TML Agency",
+    title: "Lead Generation Agency in Noida | TML Agency",
     description: "TML offers expert lead generation services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-noida",
+    url: "https://townmedialabs.ca/services/lead-generation-in-noida",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Noida | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Noida | TML Agency",
+    title: "Lead Generation Agency in Noida | TML Agency",
     description: "TML offers expert lead generation services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

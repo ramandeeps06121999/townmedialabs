@@ -189,7 +189,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
               Get a Free Strategy Call
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Talk to an Expert
@@ -348,7 +348,7 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
           <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl border border-white/[0.06] mb-8">
             <Image
               src="/work/web-design-finance-hero.webp"
-              alt={`Digital marketing solutions for ${industry.name} industry`}
+              alt="Finance website hero design — investment platform with AI-generated imagery"
               fill
               sizes="100vw"
               className="object-cover"
@@ -469,10 +469,10 @@ export default function IndustryPageClient({ industry }: { industry: IndustryInf
               Book a Free Strategy Call
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
-              info@townmedialabs.com
+              info@townmedialabs.ca
             </a>
           </motion.div>
         </div>

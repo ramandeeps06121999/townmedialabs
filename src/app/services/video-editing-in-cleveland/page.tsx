@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["cleveland"];
 
 export const metadata: Metadata = {
-  title: "Best Video Editing Agency in Cleveland | TML Agency",
+  title: "Video Editing Agency in Cleveland | TML Agency",
   description: "TML offers expert video editing services in Cleveland. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing cleveland", "video editing agency cleveland", "video editing company cleveland"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-cleveland",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-cleveland",
   },
   openGraph: {
-    title: "Best Video Editing Agency in Cleveland | TML Agency",
+    title: "Video Editing Agency in Cleveland | TML Agency",
     description: "TML offers expert video editing services in Cleveland. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/video-editing-in-cleveland",
+    url: "https://townmedialabs.ca/services/video-editing-in-cleveland",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Cleveland | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Video Editing Agency in Cleveland | TML Agency",
+    title: "Video Editing Agency in Cleveland | TML Agency",
     description: "TML offers expert video editing services in Cleveland. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

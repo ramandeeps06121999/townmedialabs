@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["nagpur"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Nagpur | TML Agency",
+  title: "Graphic Design Agency in Nagpur | TML Agency",
   description: "TML offers expert graphic design services in Nagpur. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design nagpur", "graphic design agency nagpur", "graphic design company nagpur"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-nagpur",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-nagpur",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Nagpur | TML Agency",
+    title: "Graphic Design Agency in Nagpur | TML Agency",
     description: "TML offers expert graphic design services in Nagpur. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-nagpur",
+    url: "https://townmedialabs.ca/services/graphic-design-in-nagpur",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Nagpur | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Nagpur | TML Agency",
+    title: "Graphic Design Agency in Nagpur | TML Agency",
     description: "TML offers expert graphic design services in Nagpur. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

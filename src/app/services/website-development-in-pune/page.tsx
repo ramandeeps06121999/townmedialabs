@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["pune"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Pune | TML Agency",
+  title: "Website Development Agency in Pune | TML Agency",
   description: "TML offers expert website development services in Pune. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development pune", "website development agency pune", "website development company pune"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-pune",
+    canonical: "https://townmedialabs.ca/services/website-development-in-pune",
   },
   openGraph: {
-    title: "Best Website Development Agency in Pune | TML Agency",
+    title: "Website Development Agency in Pune | TML Agency",
     description: "TML offers expert website development services in Pune. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-pune",
+    url: "https://townmedialabs.ca/services/website-development-in-pune",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Pune | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Pune | TML Agency",
+    title: "Website Development Agency in Pune | TML Agency",
     description: "TML offers expert website development services in Pune. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

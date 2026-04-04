@@ -18,6 +18,19 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
+/** Parse stat value into animatable parts, or null for plain text */
+function parseStatValue(value: string): { target: number; prefix: string; suffix: string; decimals: number } | null {
+  const match = value.match(/^([^0-9]*)(\d+(?:\.\d+)?)(.*)$/);
+  if (!match) return null;
+  const prefix = match[1];
+  const numStr = match[2];
+  const suffix = match[3];
+  const target = parseFloat(numStr);
+  if (isNaN(target) || target === 0) return null;
+  const decimalPart = numStr.includes('.') ? numStr.split('.')[1].length : 0;
+  return { target, prefix, suffix, decimals: decimalPart };
+}
+
 function FeatureCard({ feature, index }: { feature: { title: string; description: string }; index: number }) {
   return (
     <motion.div
@@ -344,7 +357,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
               Get a Free Quote
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
               Talk to an Expert
@@ -367,21 +380,20 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 className="text-center p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02]"
               >
                 <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                  {statsInView ? (
-                    /^\d/.test(stat.value) ? (
-                      <>
-                        <AnimatedCounter
-                          target={parseInt(stat.value.replace(/[^0-9]/g, ""))}
-                          suffix={stat.value.replace(/[0-9]/g, "")}
-                          duration={2}
-                        />
-                      </>
-                    ) : (
-                      <span className="text-[#ff4500]">{stat.value}</span>
-                    )
-                  ) : (
-                    <span className="text-white">—</span>
-                  )}
+                  {(() => {
+                    const parsed = parseStatValue(stat.value);
+                    if (!statsInView) return <span className="text-white">&mdash;</span>;
+                    if (!parsed) return <span className="text-[#ff4500]">{stat.value}</span>;
+                    return (
+                      <AnimatedCounter
+                        target={parsed.target}
+                        prefix={parsed.prefix}
+                        suffix={parsed.suffix}
+                        decimals={parsed.decimals}
+                        duration={2}
+                      />
+                    );
+                  })()}
                 </div>
                 <p className="text-xs text-white tracking-wide">{stat.label}</p>
               </motion.div>
@@ -757,10 +769,10 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
               Book a Free Strategy Call
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
-              info@townmedialabs.com
+              info@townmedialabs.ca
             </a>
           </motion.div>
         </div>

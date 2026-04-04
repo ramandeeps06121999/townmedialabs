@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["hyderabad"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Hyderabad | TML Agency",
+  title: "SEO Agency in Hyderabad | TML Agency",
   description: "TML offers expert search engine optimization services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["search engine optimization hyderabad", "search engine optimization agency hyderabad", "search engine optimization company hyderabad"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-hyderabad",
+    canonical: "https://townmedialabs.ca/services/seo-in-hyderabad",
   },
   openGraph: {
-    title: "Best SEO Agency in Hyderabad | TML Agency",
+    title: "SEO Agency in Hyderabad | TML Agency",
     description: "TML offers expert search engine optimization services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-hyderabad",
+    url: "https://townmedialabs.ca/services/seo-in-hyderabad",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Hyderabad | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Hyderabad | TML Agency",
+    title: "SEO Agency in Hyderabad | TML Agency",
     description: "TML offers expert search engine optimization services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

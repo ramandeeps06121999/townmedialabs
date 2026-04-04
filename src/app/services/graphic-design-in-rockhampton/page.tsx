@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["rockhampton"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Rockhampton | TML Agency",
+  title: "Graphic Design Agency in Rockhampton | TML Agency",
   description: "TML offers expert graphic design services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design rockhampton", "graphic design agency rockhampton", "graphic design company rockhampton"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-rockhampton",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-rockhampton",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Rockhampton | TML Agency",
+    title: "Graphic Design Agency in Rockhampton | TML Agency",
     description: "TML offers expert graphic design services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-rockhampton",
+    url: "https://townmedialabs.ca/services/graphic-design-in-rockhampton",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Rockhampton | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Rockhampton | TML Agency",
+    title: "Graphic Design Agency in Rockhampton | TML Agency",
     description: "TML offers expert graphic design services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

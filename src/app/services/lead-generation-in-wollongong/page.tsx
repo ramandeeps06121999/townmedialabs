@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["wollongong"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Wollongong | TML Agency",
+  title: "Lead Generation Agency in Wollongong | TML Agency",
   description: "TML offers expert lead generation services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation wollongong", "lead generation agency wollongong", "lead generation company wollongong"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-wollongong",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-wollongong",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Wollongong | TML Agency",
+    title: "Lead Generation Agency in Wollongong | TML Agency",
     description: "TML offers expert lead generation services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-wollongong",
+    url: "https://townmedialabs.ca/services/lead-generation-in-wollongong",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Wollongong | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Wollongong | TML Agency",
+    title: "Lead Generation Agency in Wollongong | TML Agency",
     description: "TML offers expert lead generation services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

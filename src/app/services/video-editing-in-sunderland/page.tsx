@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["sunderland"];
 
 export const metadata: Metadata = {
-  title: "Best Video Editing Agency in Sunderland | TML Agency",
+  title: "Video Editing Agency in Sunderland | TML Agency",
   description: "TML offers expert video editing services in Sunderland. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing sunderland", "video editing agency sunderland", "video editing company sunderland"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-sunderland",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-sunderland",
   },
   openGraph: {
-    title: "Best Video Editing Agency in Sunderland | TML Agency",
+    title: "Video Editing Agency in Sunderland | TML Agency",
     description: "TML offers expert video editing services in Sunderland. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/video-editing-in-sunderland",
+    url: "https://townmedialabs.ca/services/video-editing-in-sunderland",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Sunderland | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Video Editing Agency in Sunderland | TML Agency",
+    title: "Video Editing Agency in Sunderland | TML Agency",
     description: "TML offers expert video editing services in Sunderland. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

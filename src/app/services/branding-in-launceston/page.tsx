@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["launceston"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Launceston | TML Agency",
+  title: "Branding Agency in Launceston | TML Agency",
   description: "TML offers expert branding services in Launceston. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding launceston", "branding agency launceston", "branding company launceston"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-launceston",
+    canonical: "https://townmedialabs.ca/services/branding-in-launceston",
   },
   openGraph: {
-    title: "Best Branding Agency in Launceston | TML Agency",
+    title: "Branding Agency in Launceston | TML Agency",
     description: "TML offers expert branding services in Launceston. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-launceston",
+    url: "https://townmedialabs.ca/services/branding-in-launceston",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Launceston | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Launceston | TML Agency",
+    title: "Branding Agency in Launceston | TML Agency",
     description: "TML offers expert branding services in Launceston. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

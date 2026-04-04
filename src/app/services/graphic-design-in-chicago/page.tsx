@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["chicago"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Chicago | TML Agency",
+  title: "Graphic Design Agency in Chicago | TML Agency",
   description: "TML offers expert graphic design services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design chicago", "graphic design agency chicago", "graphic design company chicago"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-chicago",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-chicago",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Chicago | TML Agency",
+    title: "Graphic Design Agency in Chicago | TML Agency",
     description: "TML offers expert graphic design services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-chicago",
+    url: "https://townmedialabs.ca/services/graphic-design-in-chicago",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Chicago | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Chicago | TML Agency",
+    title: "Graphic Design Agency in Chicago | TML Agency",
     description: "TML offers expert graphic design services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

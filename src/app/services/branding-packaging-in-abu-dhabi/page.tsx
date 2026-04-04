@@ -6,25 +6,25 @@ const location = locations["abu_dhabi"];
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
-  title: "Best Packaging Design Agency in Abu Dhabi | TML Agency",
+  title: "Packaging Design Agency in Abu Dhabi | TML Agency",
   description: "TML offers expert packaging design services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design abu dhabi", "packaging design agency abu dhabi", "packaging design company abu dhabi"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-abu-dhabi",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-abu-dhabi",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Abu Dhabi | TML Agency",
+    title: "Packaging Design Agency in Abu Dhabi | TML Agency",
     description: "TML offers expert packaging design services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-abu-dhabi",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-abu-dhabi",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Abu Dhabi | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Abu Dhabi | TML Agency",
+    title: "Packaging Design Agency in Abu Dhabi | TML Agency",
     description: "TML offers expert packaging design services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

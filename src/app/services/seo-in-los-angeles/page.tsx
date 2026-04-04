@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["los_angeles"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Los Angeles | TML Agency",
+  title: "SEO Agency in Los Angeles | TML Agency",
   description: "TML offers expert seo services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo los angeles", "seo agency los angeles", "seo company los angeles"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-los-angeles",
+    canonical: "https://townmedialabs.ca/services/seo-in-los-angeles",
   },
   openGraph: {
-    title: "Best SEO Agency in Los Angeles | TML Agency",
+    title: "SEO Agency in Los Angeles | TML Agency",
     description: "TML offers expert seo services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-los-angeles",
+    url: "https://townmedialabs.ca/services/seo-in-los-angeles",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Los Angeles | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Los Angeles | TML Agency",
+    title: "SEO Agency in Los Angeles | TML Agency",
     description: "TML offers expert seo services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

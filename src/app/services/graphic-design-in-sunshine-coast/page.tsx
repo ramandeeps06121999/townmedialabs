@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["sunshine_coast"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Sunshine Coast | TML Agency",
+  title: "Graphic Design Agency in Sunshine Coast | TML Agency",
   description: "TML offers expert graphic design services in Sunshine Coast. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design sunshine coast", "graphic design agency sunshine coast", "graphic design company sunshine coast"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-sunshine-coast",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-sunshine-coast",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Sunshine Coast | TML Agency",
+    title: "Graphic Design Agency in Sunshine Coast | TML Agency",
     description: "TML offers expert graphic design services in Sunshine Coast. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-sunshine-coast",
+    url: "https://townmedialabs.ca/services/graphic-design-in-sunshine-coast",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Sunshine Coast | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Sunshine Coast | TML Agency",
+    title: "Graphic Design Agency in Sunshine Coast | TML Agency",
     description: "TML offers expert graphic design services in Sunshine Coast. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

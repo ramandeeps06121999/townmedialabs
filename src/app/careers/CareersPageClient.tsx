@@ -344,7 +344,7 @@ export default function CareersPageClient() {
 
                   {/* Apply CTA */}
                   <a
-                    href={`mailto:info@townmedialabs.com?subject=Application for ${encodeURIComponent(pos.title)}&body=Hi TML Agency,%0D%0A%0D%0AI am interested in the ${encodeURIComponent(pos.title)} position.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ARegards`}
+                    href={`mailto:info@townmedialabs.ca?subject=Application for ${encodeURIComponent(pos.title)}&body=Hi TML Agency,%0D%0A%0D%0AI am interested in the ${encodeURIComponent(pos.title)} position.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ARegards`}
                     className="shrink-0 inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-xl px-6 py-3 text-sm font-semibold text-white hover:bg-[#ff4500] hover:text-white hover:border-[#ff4500] transition-all duration-300 self-start md:self-center"
                   >
                     Apply
@@ -378,7 +378,7 @@ export default function CareersPageClient() {
               and we&apos;ll reach out when the right opportunity comes up.
             </p>
             <a
-              href="mailto:info@townmedialabs.com?subject=Job Application - General&body=Hi TML Agency,%0D%0A%0D%0AI'd like to apply for a role at your agency.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ARegards"
+              href="mailto:info@townmedialabs.ca?subject=Job Application - General&body=Hi TML Agency,%0D%0A%0D%0AI'd like to apply for a role at your agency.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0ARegards"
               className="relative inline-flex items-center gap-2 bg-[#ff4500] text-white px-8 py-4 rounded-xl text-sm font-semibold hover:bg-[#ff5500] transition-colors"
             >
               Send Your Resume

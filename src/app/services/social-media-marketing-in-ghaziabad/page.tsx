@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ghaziabad"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Ghaziabad | TML Agency",
+  title: "Social Media Marketing Agency in Ghaziabad | TML Agency",
   description: "TML offers expert social media marketing services in Ghaziabad. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing ghaziabad", "social media marketing agency ghaziabad", "social media marketing company ghaziabad"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-ghaziabad",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-ghaziabad",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Ghaziabad | TML Agency",
+    title: "Social Media Marketing Agency in Ghaziabad | TML Agency",
     description: "TML offers expert social media marketing services in Ghaziabad. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-ghaziabad",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-ghaziabad",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Ghaziabad | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Ghaziabad | TML Agency",
+    title: "Social Media Marketing Agency in Ghaziabad | TML Agency",
     description: "TML offers expert social media marketing services in Ghaziabad. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

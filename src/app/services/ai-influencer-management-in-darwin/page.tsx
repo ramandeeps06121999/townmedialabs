@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["darwin"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Darwin | TML Agency",
+  title: "AI Influencer Management Agency in Darwin | TML Agency",
   description: "TML offers expert ai influencer management services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management darwin", "ai influencer management agency darwin", "ai influencer management company darwin"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-darwin",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-darwin",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Darwin | TML Agency",
+    title: "AI Influencer Management Agency in Darwin | TML Agency",
     description: "TML offers expert ai influencer management services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-darwin",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-darwin",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Darwin | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Darwin | TML Agency",
+    title: "AI Influencer Management Agency in Darwin | TML Agency",
     description: "TML offers expert ai influencer management services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

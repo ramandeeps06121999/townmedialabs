@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["south_delhi"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in South Delhi | TML Agency",
+  title: "Website Development Agency in South Delhi | TML Agency",
   description: "TML offers expert website development services in South Delhi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development south delhi", "website development agency south delhi", "website development company south delhi"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-south-delhi",
+    canonical: "https://townmedialabs.ca/services/website-development-in-south-delhi",
   },
   openGraph: {
-    title: "Best Website Development Agency in South Delhi | TML Agency",
+    title: "Website Development Agency in South Delhi | TML Agency",
     description: "TML offers expert website development services in South Delhi. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-south-delhi",
+    url: "https://townmedialabs.ca/services/website-development-in-south-delhi",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in South Delhi | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in South Delhi | TML Agency",
+    title: "Website Development Agency in South Delhi | TML Agency",
     description: "TML offers expert website development services in South Delhi. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

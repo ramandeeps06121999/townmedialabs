@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["vadodara"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Vadodara | TML Agency",
+  title: "Website Development Agency in Vadodara | TML Agency",
   description: "TML offers expert website development services in Vadodara. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development vadodara", "website development agency vadodara", "website development company vadodara"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-vadodara",
+    canonical: "https://townmedialabs.ca/services/website-development-in-vadodara",
   },
   openGraph: {
-    title: "Best Website Development Agency in Vadodara | TML Agency",
+    title: "Website Development Agency in Vadodara | TML Agency",
     description: "TML offers expert website development services in Vadodara. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-vadodara",
+    url: "https://townmedialabs.ca/services/website-development-in-vadodara",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Vadodara | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Vadodara | TML Agency",
+    title: "Website Development Agency in Vadodara | TML Agency",
     description: "TML offers expert website development services in Vadodara. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

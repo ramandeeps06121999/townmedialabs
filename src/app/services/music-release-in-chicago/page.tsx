@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["chicago"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Chicago | TML Agency",
+  title: "Music Release Agency in Chicago | TML Agency",
   description: "TML offers expert music release services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release chicago", "music release agency chicago", "music release company chicago"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-chicago",
+    canonical: "https://townmedialabs.ca/services/music-release-in-chicago",
   },
   openGraph: {
-    title: "Best Music Release Agency in Chicago | TML Agency",
+    title: "Music Release Agency in Chicago | TML Agency",
     description: "TML offers expert music release services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-chicago",
+    url: "https://townmedialabs.ca/services/music-release-in-chicago",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Chicago | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Chicago | TML Agency",
+    title: "Music Release Agency in Chicago | TML Agency",
     description: "TML offers expert music release services in Chicago. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

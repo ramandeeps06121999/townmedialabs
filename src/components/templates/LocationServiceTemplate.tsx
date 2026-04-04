@@ -18,23 +18,6 @@ import { getCityServiceContent } from "@/data/cityServiceContent";
 import { getImagesForService } from "@/data/portfolioImages";
 import Image from "next/image";
 
-function convertPriceRange(range: string, country: string): string {
-  if (country === "India") return range;
-  // Convert INR amounts to country currency (approximate: ₹100 ≈ $1.20)
-  const currencyMap: Record<string, { symbol: string; rate: number }> = {
-    "New Zealand": { symbol: "NZ$", rate: 0.02 },
-    "United Kingdom": { symbol: "£", rate: 0.0095 },
-    "United States": { symbol: "$", rate: 0.012 },
-    "Australia": { symbol: "A$", rate: 0.018 },
-    "UAE": { symbol: "AED", rate: 0.044 },
-  };
-  const curr = currencyMap[country] || { symbol: "$", rate: 0.012 };
-  return range.replace(/₹([\d,]+)/g, (_, num) => {
-    const val = parseInt(num.replace(/,/g, ""), 10);
-    const converted = Math.round(val * curr.rate);
-    return `${curr.symbol}${converted.toLocaleString()}`;
-  });
-}
 
 function SectionDivider() {
   return (
@@ -42,6 +25,114 @@ function SectionDivider() {
       <div className="h-px bg-gradient-to-r from-transparent via-[#ff4500]/20 to-transparent" />
     </div>
   );
+}
+
+/**
+ * Parse a stat value string like "4.2x", "$5M+", "500+", "1.8s", "98%"
+ * into { target, prefix, suffix, decimals } for AnimatedCounter,
+ * or null if the value should be rendered as plain text (e.g. "Yes").
+ */
+function parseStatValue(value: string): { target: number; prefix: string; suffix: string; decimals: number } | null {
+  const match = value.match(/^([^0-9]*)(\d+(?:\.\d+)?)(.*)$/);
+  if (!match) return null;
+  const prefix = match[1];
+  const numStr = match[2];
+  const suffix = match[3];
+  const target = parseFloat(numStr);
+  if (isNaN(target) || target === 0) return null;
+  const decimalPart = numStr.includes('.') ? numStr.split('.')[1].length : 0;
+  return { target, prefix, suffix, decimals: decimalPart };
+}
+
+/** Service-specific stats for the "Our Expertise" section */
+const expertiseStats: Record<string, { stat: number; decimals?: number; prefix?: string; suffix: string; label: string; descriptionTemplate: string }[]> = {
+  "google-ads": [
+    { stat: 500, suffix: "+", label: "Campaigns Managed", descriptionTemplate: "We have successfully managed over 500 Google Ads campaigns for businesses across {state} and beyond." },
+    { stat: 4, decimals: 1, suffix: "x", label: "Average ROAS", descriptionTemplate: "Our {city} clients see an average 4.2x return on ad spend, turning every dollar into measurable revenue." },
+    { stat: 5, prefix: "$", suffix: "M+", label: "Ad Spend Managed", descriptionTemplate: "We've managed over $5M in ad spend for businesses across {state}, optimizing every dollar for maximum results." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+  ],
+  "seo": [
+    { stat: 500, suffix: "+", label: "Projects Delivered", descriptionTemplate: "We have successfully delivered over 500 SEO projects for businesses across {state} and beyond." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+    { stat: 3, decimals: 1, suffix: "x", label: "Average ROI", descriptionTemplate: "{city} businesses working with TML see an average 3.5x return on their SEO investment within the first year." },
+    { stat: 15, suffix: "+", label: "Years Experience", descriptionTemplate: "With over 15 years of SEO experience, we bring proven strategies to every {city} business we work with." },
+  ],
+  "branding": [
+    { stat: 500, suffix: "+", label: "Brands Created", descriptionTemplate: "We have designed and built over 500 brands for businesses across {state} and beyond." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+    { stat: 15, suffix: "+", label: "Years Experience", descriptionTemplate: "With over 15 years of branding experience, we bring proven creative strategies to every {city} business we work with." },
+    { stat: 50, suffix: "+", label: "Industries Served", descriptionTemplate: "We've created brands across 50+ industries, bringing diverse expertise to every {city} project." },
+  ],
+  "website-development": [
+    { stat: 300, suffix: "+", label: "Websites Delivered", descriptionTemplate: "We have built over 300 websites for businesses across {state} and beyond." },
+    { stat: 99, suffix: "%", label: "Client Satisfaction", descriptionTemplate: "Our commitment to quality keeps {city} businesses coming back. A 99% satisfaction rate speaks for itself." },
+    { stat: 1, decimals: 1, suffix: "s", label: "Avg Load Time", descriptionTemplate: "Our websites load in under 2 seconds on average, giving {city} businesses a competitive edge in search rankings." },
+    { stat: 20, suffix: "+", label: "Technologies Used", descriptionTemplate: "We work with 20+ modern technologies to build the perfect solution for every {city} business." },
+  ],
+  "social-media": [
+    { stat: 2, suffix: "M+", label: "Followers Grown", descriptionTemplate: "We have grown over 2M followers for businesses across {state} and beyond." },
+    { stat: 4, decimals: 1, suffix: "%", label: "Engagement Rate", descriptionTemplate: "Our {city} clients see an average 4.8% engagement rate, well above industry benchmarks." },
+    { stat: 100, suffix: "+", label: "Brands Managed", descriptionTemplate: "We've managed social media for 100+ brands, bringing proven strategies to every {city} business." },
+    { stat: 500, suffix: "+", label: "Content Pieces/Mo", descriptionTemplate: "Our team produces over 500 content pieces per month for clients across {state}." },
+  ],
+  "lead-generation": [
+    { stat: 50, suffix: "K+", label: "Leads Generated", descriptionTemplate: "We have generated over 50,000 qualified leads for businesses across {state} and beyond." },
+    { stat: 12, suffix: "%", label: "Conversion Rate", descriptionTemplate: "Our {city} clients see an average 12% conversion rate, far above the industry average." },
+    { stat: 500, suffix: "+", label: "Funnels Built", descriptionTemplate: "We've built over 500 lead generation funnels, each optimized for maximum conversions." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+  ],
+  "meta-ads": [
+    { stat: 5, prefix: "$", suffix: "M+", label: "Ad Spend Managed", descriptionTemplate: "We've managed over $5M in Meta ad spend for businesses across {state}, optimizing every dollar." },
+    { stat: 5, decimals: 1, suffix: "x", label: "Average ROAS", descriptionTemplate: "Our {city} clients see an average 5.2x return on their Meta ad spend." },
+    { stat: 2000, suffix: "+", label: "Campaigns Run", descriptionTemplate: "We have run over 2,000 Meta ad campaigns for businesses across {state} and beyond." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+  ],
+  "ppc-management": [
+    { stat: 5, prefix: "$", suffix: "M+", label: "Ad Spend Managed", descriptionTemplate: "We've managed over $5.5M in PPC ad spend for businesses across {state}, optimizing every dollar." },
+    { stat: 6, suffix: "+", label: "Platforms Managed", descriptionTemplate: "We manage PPC campaigns across 6+ platforms for {city} businesses." },
+    { stat: 32, suffix: "%", label: "Avg CPA Reduction", descriptionTemplate: "{city} businesses working with TML see an average 32% reduction in cost per acquisition." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+  ],
+  "video-editing": [
+    { stat: 2000, suffix: "+", label: "Videos Produced", descriptionTemplate: "We have produced over 2,000 videos for businesses across {state} and beyond." },
+    { stat: 5000, suffix: "+", label: "Hours of Content", descriptionTemplate: "Over 5,000 hours of video content created for {city} businesses and beyond." },
+    { stat: 100, suffix: "M+", label: "Views Generated", descriptionTemplate: "Our video content has generated over 100 million views for clients across {state}." },
+    { stat: 48, suffix: "hrs", label: "Turnaround Time", descriptionTemplate: "Fast 48-hour turnaround on video edits so {city} businesses never miss a deadline." },
+  ],
+  "content-writing": [
+    { stat: 5000, suffix: "+", label: "Articles Published", descriptionTemplate: "We have published over 5,000 articles for businesses across {state} and beyond." },
+    { stat: 60, suffix: "%", label: "Avg Traffic Increase", descriptionTemplate: "Our {city} clients see an average 60% traffic increase from our content strategies." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+    { stat: 25, suffix: "+", label: "Industries Covered", descriptionTemplate: "We write expert content across 25+ industries for {city} businesses." },
+  ],
+  "graphic-design": [
+    { stat: 10, suffix: "K+", label: "Designs Created", descriptionTemplate: "We have created over 10,000 designs for businesses across {state} and beyond." },
+    { stat: 500, suffix: "+", label: "Brands Served", descriptionTemplate: "Over 500 brands trust us with their visual identity and design needs." },
+    { stat: 99, suffix: "%", label: "On-Time Delivery", descriptionTemplate: "We deliver 99% of {city} design projects on time, every time." },
+    { stat: 15, suffix: "+", label: "Design Awards", descriptionTemplate: "Our creative work has earned 15+ industry design awards." },
+  ],
+  "email-marketing": [
+    { stat: 50, suffix: "M+", label: "Emails Sent", descriptionTemplate: "We have sent over 50 million emails for businesses across {state} and beyond." },
+    { stat: 32, suffix: "%", label: "Avg Open Rate", descriptionTemplate: "Our {city} clients see an average 32% open rate, well above industry benchmarks." },
+    { stat: 42, suffix: "x", label: "Average ROI", descriptionTemplate: "{city} businesses see an average 42x return on their email marketing investment." },
+    { stat: 98, suffix: "%", label: "Client Retention", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+  ],
+  "content-marketing": [
+    { stat: 10, suffix: "K+", label: "Content Pieces", descriptionTemplate: "We have created over 10,000 content pieces for businesses across {state} and beyond." },
+    { stat: 70, suffix: "%", label: "Avg Traffic Increase", descriptionTemplate: "Our {city} clients see an average 70% traffic increase from our content marketing." },
+    { stat: 50, suffix: "K+", label: "Leads Generated", descriptionTemplate: "Our content strategies have generated over 50,000 leads for clients across {state}." },
+    { stat: 25, suffix: "+", label: "Industries Served", descriptionTemplate: "We create content across 25+ industries for {city} businesses." },
+  ],
+};
+
+/** Default expertise stats used when no service-specific override exists */
+function getDefaultExpertiseStats(serviceName: string) {
+  return [
+    { stat: 500, suffix: "+", label: "Projects Delivered", descriptionTemplate: `We have successfully delivered over 500 ${serviceName.toLowerCase()} projects for businesses across {state} and beyond.` },
+    { stat: 98, suffix: "%", label: "Client Retention Rate", descriptionTemplate: "Our commitment to results keeps {city} businesses coming back. A 98% retention rate speaks to the quality of our work." },
+    { stat: 5, suffix: "x", label: "Average ROI", descriptionTemplate: `{city} businesses working with TML see an average 5x return on their ${serviceName.toLowerCase()} investment within the first year.` },
+  ];
 }
 
 /** Simple hook: returns true once the element is in the viewport */
@@ -93,26 +184,28 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
   const serviceSchema = generateServiceSchema({
     name: `${serviceName} in ${cityName}`,
     description: `TML is a leading ${serviceName.toLowerCase()} agency serving businesses across ${location.region}.`,
-    url: `https://townmedialabs.com/services/${serviceSlug}/${location.slug}`,
+    url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}`,
     areaServed: cityName,
     category: serviceName,
   });
 
-  const localBusinessSchema = generateLocalBusinessSchema({
+  const isHeadquartersCity = location.slug === "edmonton";
+
+  const localBusinessSchema = isHeadquartersCity ? generateLocalBusinessSchema({
     name: `TML Agency - ${cityName}`,
     description: `Leading ${serviceName.toLowerCase()} agency in ${cityName}, ${location.state}.`,
-    url: `https://townmedialabs.com/services/${serviceSlug}/${location.slug}`,
+    url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}`,
     city: cityName,
     state: location.state,
     services: serviceData ? serviceData.features.map((f) => f.title) : [serviceName],
     coordinates: location.coordinates,
-  });
+  }) : null;
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Services", url: "https://townmedialabs.com/services" },
-    { name: serviceName, url: `https://townmedialabs.com/services/${serviceSlug}` },
-    { name: cityName, url: `https://townmedialabs.com/services/${serviceSlug}/${location.slug}` },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Services", url: "https://townmedialabs.ca/services" },
+    { name: serviceName, url: `https://townmedialabs.ca/services/${serviceSlug}` },
+    { name: cityName, url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}` },
   ]);
 
   const faqSchema = generateFAQSchema(
@@ -127,10 +220,12 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+        {localBusinessSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          />
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -226,19 +321,20 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   className="text-center p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02]"
                 >
                   <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    {statsInView ? (
-                      /^\d/.test(stat.value) ? (
+                    {(() => {
+                      const parsed = parseStatValue(stat.value);
+                      if (!statsInView) return <span className="text-white">&mdash;</span>;
+                      if (!parsed) return <span className="text-[#ff4500]">{stat.value}</span>;
+                      return (
                         <AnimatedCounter
-                          target={parseInt(stat.value.replace(/[^0-9]/g, ""))}
-                          suffix={stat.value.replace(/[0-9]/g, "")}
+                          target={parsed.target}
+                          prefix={parsed.prefix}
+                          suffix={parsed.suffix}
+                          decimals={parsed.decimals}
                           duration={2}
                         />
-                      ) : (
-                        <span className="text-[#ff4500]">{stat.value}</span>
-                      )
-                    ) : (
-                      <span className="text-white">&mdash;</span>
-                    )}
+                      );
+                    })()}
                   </div>
                   <p className="text-xs text-white">{stat.label}</p>
                 </div>
@@ -385,22 +481,23 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
             Why {cityName} Businesses Trust Our {serviceName}<span className="text-[#ff4500]">.</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              { stat: 500, suffix: "+", label: "Projects Delivered", description: `We have successfully delivered over 500 ${serviceName.toLowerCase()} projects for businesses across ${location.state} and beyond.` },
-              { stat: 98, suffix: "%", label: "Client Retention Rate", description: `Our commitment to results keeps ${cityName} businesses coming back. A 98% retention rate speaks to the quality of our work.` },
-              { stat: 5, suffix: "x", label: "Average ROI", description: `${cityName} businesses working with TML see an average 5x return on their ${serviceName.toLowerCase()} investment within the first year.` },
-            ].map((item) => (
+          <div className={`grid grid-cols-1 gap-5 ${(expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).length >= 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
+            {(expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).map((item) => {
+              const description = item.descriptionTemplate
+                .replace(/\{city\}/g, cityName)
+                .replace(/\{state\}/g, location.state);
+              return (
               <div key={item.label}
                 className="p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 text-center"
               >
                 <div className="text-3xl md:text-4xl font-bold text-[#ff4500] mb-2">
-                  <AnimatedCounter target={item.stat} suffix={item.suffix} duration={2} />
+                  <AnimatedCounter target={item.stat} prefix={item.prefix || ""} suffix={item.suffix} decimals={item.decimals || 0} duration={2} />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-3">{item.label}</h3>
-                <p className="text-sm text-white leading-relaxed">{item.description}</p>
+                <p className="text-sm text-white leading-relaxed">{description}</p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -759,19 +856,20 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                   <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                     Charges for {serviceName} Services in {cityName}
                   </h3>
-                  <p className="text-sm text-white/60 leading-relaxed mb-6">
-                    Approximate pricing varies depending on services, scope, and business requirements. Contact us for a customised quote.
+                  <p className="text-sm text-white/70 leading-relaxed mb-5">
+                    Pricing varies depending on scope, competitive landscape, and business goals in {cityName}. We tailor every engagement to your specific requirements rather than offering one-size-fits-all packages.
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {seoData.pricingTiers.map((tier, i) => (
-                      <div key={i}
-                        className="p-5 rounded-xl border border-white/[0.08] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors"
-                      >
-                        <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-2">{tier.tier}</p>
-                        <p className="text-lg font-bold text-white mb-3">{convertPriceRange(tier.range, location.country)}</p>
-                        <p className="text-xs text-white/70 leading-relaxed">{tier.includes}</p>
+                  <div className="p-6 rounded-xl border border-white/[0.08] bg-white/[0.02]">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                      <div>
+                        <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-1">Custom Quote</p>
+                        <p className="text-sm text-white/70 leading-relaxed">Get a tailored proposal with transparent pricing for your {cityName} business.</p>
                       </div>
-                    ))}
+                      <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_20px_rgba(255,69,0,0.25)] whitespace-nowrap">
+                        Request a Quote
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                      </Link>
+                    </div>
                   </div>
                 </div>
 

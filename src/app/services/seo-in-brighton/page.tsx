@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["brighton"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Brighton | TML Agency",
+  title: "SEO Agency in Brighton | TML Agency",
   description: "TML offers expert seo services in Brighton. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo brighton", "seo agency brighton", "seo company brighton"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-brighton",
+    canonical: "https://townmedialabs.ca/services/seo-in-brighton",
   },
   openGraph: {
-    title: "Best SEO Agency in Brighton | TML Agency",
+    title: "SEO Agency in Brighton | TML Agency",
     description: "TML offers expert seo services in Brighton. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-brighton",
+    url: "https://townmedialabs.ca/services/seo-in-brighton",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Brighton | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Brighton | TML Agency",
+    title: "SEO Agency in Brighton | TML Agency",
     description: "TML offers expert seo services in Brighton. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

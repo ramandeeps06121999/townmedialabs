@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["queenstown"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Queenstown | TML Agency",
+  title: "Branding Agency in Queenstown | TML Agency",
   description: "TML offers expert branding services in Queenstown, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
   keywords: ["branding queenstown", "branding agency queenstown", "branding queenstown nz"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-queenstown",
+    canonical: "https://townmedialabs.ca/services/branding-in-queenstown",
   },
   openGraph: {
-    title: "Best Branding Agency in Queenstown | TML Agency",
+    title: "Branding Agency in Queenstown | TML Agency",
     description: "TML offers expert branding services in Queenstown, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-queenstown",
+    url: "https://townmedialabs.ca/services/branding-in-queenstown",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Queenstown | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Queenstown | TML Agency",
+    title: "Branding Agency in Queenstown | TML Agency",
     description: "TML offers expert branding services in Queenstown, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
     images: ["/og-image.png"],
   },

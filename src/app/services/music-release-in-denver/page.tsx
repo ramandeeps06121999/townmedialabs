@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["denver"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Denver | TML Agency",
+  title: "Music Release Agency in Denver | TML Agency",
   description: "TML offers expert music release services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release denver", "music release agency denver", "music release company denver"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-denver",
+    canonical: "https://townmedialabs.ca/services/music-release-in-denver",
   },
   openGraph: {
-    title: "Best Music Release Agency in Denver | TML Agency",
+    title: "Music Release Agency in Denver | TML Agency",
     description: "TML offers expert music release services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-denver",
+    url: "https://townmedialabs.ca/services/music-release-in-denver",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Denver | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Denver | TML Agency",
+    title: "Music Release Agency in Denver | TML Agency",
     description: "TML offers expert music release services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

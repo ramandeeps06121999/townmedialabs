@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: tool.metaTitle,
       description: tool.metaDescription,
-      url: `https://townmedialabs.com/free-tools/${tool.slug}`,
+      url: `https://townmedialabs.ca/free-tools/${tool.slug}`,
       siteName: "TML Agency",
       type: "website",
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${tool.metaTitle} - TML Agency` }],
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `https://townmedialabs.com/free-tools/${tool.slug}`,
+      canonical: `https://townmedialabs.ca/free-tools/${tool.slug}`,
     },
   };
 }

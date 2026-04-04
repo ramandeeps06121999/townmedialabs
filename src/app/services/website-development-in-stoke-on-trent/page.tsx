@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["stoke_on_trent"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Stoke-on-Trent | TML Agency",
+  title: "Website Development Agency in Stoke-on-Trent | TML Agency",
   description: "TML offers expert website development services in Stoke-on-Trent. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development stoke-on-trent", "website development agency stoke-on-trent", "website development company stoke-on-trent"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-stoke-on-trent",
+    canonical: "https://townmedialabs.ca/services/website-development-in-stoke-on-trent",
   },
   openGraph: {
-    title: "Best Website Development Agency in Stoke-on-Trent | TML Agency",
+    title: "Website Development Agency in Stoke-on-Trent | TML Agency",
     description: "TML offers expert website development services in Stoke-on-Trent. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-stoke-on-trent",
+    url: "https://townmedialabs.ca/services/website-development-in-stoke-on-trent",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Stoke-on-Trent | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Stoke-on-Trent | TML Agency",
+    title: "Website Development Agency in Stoke-on-Trent | TML Agency",
     description: "TML offers expert website development services in Stoke-on-Trent. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

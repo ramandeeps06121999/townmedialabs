@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlogPageClient from "./BlogPageClient";
 
-const siteUrl = "https://townmedialabs.com";
+const siteUrl = "https://townmedialabs.ca";
 
 export const metadata: Metadata = {
   title: "Blog | TML Agency — Marketing, Branding & AI Insights",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: `${siteUrl}/blog`,
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [
       {
         url: "/og-image.png",

@@ -250,10 +250,10 @@ export default function CountryPageClient({
               Let&apos;s Talk About Your Business
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
-              info@townmedialabs.com
+              info@townmedialabs.ca
             </a>
           </motion.div>
         </div>

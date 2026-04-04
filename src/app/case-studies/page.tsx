@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Case Studies & Portfolio | TML Agency",
     description:
       "Real results for real businesses. Explore our portfolio of successful digital marketing campaigns across industries.",
-    url: "https://townmedialabs.com/case-studies",
+    url: "https://townmedialabs.ca/case-studies",
     siteName: "TML Agency",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "TML Agency Case Studies & Portfolio" }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://townmedialabs.com/case-studies",
+    canonical: "https://townmedialabs.ca/case-studies",
   },
 };
 

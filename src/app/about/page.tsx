@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AboutPageClient from "./AboutPageClient";
 
-const siteUrl = "https://townmedialabs.com";
+const siteUrl = "https://townmedialabs.ca";
 
 export const metadata: Metadata = {
   title: "About TML Agency | Leading Digital Marketing Agency in Chandigarh",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: `${siteUrl}/about`,
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [
       {
         url: "/og-image.png",
@@ -48,6 +48,26 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
 };
+
+const teamMembersJsonLd = [
+  { name: "Arvinder Singh", jobTitle: "Owner & Visionary" },
+  { name: "Raman Makkar", jobTitle: "SEO & Growth" },
+  { name: "Taran", jobTitle: "Head of Sales" },
+  { name: "Harman", jobTitle: "Project Manager" },
+  { name: "Cristi", jobTitle: "Designer" },
+  { name: "Tammy", jobTitle: "Product Designer" },
+  { name: "Mr Hoop", jobTitle: "Branding Manager" },
+].map((member) => ({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: member.name,
+  jobTitle: member.jobTitle,
+  worksFor: {
+    "@type": "Organization",
+    name: "TML Agency",
+    url: siteUrl,
+  },
+}));
 
 const aboutPageJsonLd = {
   "@context": "https://schema.org",
@@ -76,13 +96,12 @@ const aboutPageJsonLd = {
       addressRegion: "Chandigarh",
       addressCountry: "IN",
     },
-    email: "info@townmedialabs.com",
+    email: "info@townmedialabs.ca",
     sameAs: [
-      "https://www.facebook.com/Town.media.labs",
-      "https://www.instagram.com/townmedialabs/",
-      "https://in.linkedin.com/company/townmedialabs",
-      "https://x.com/tmlagency",
-      "https://www.youtube.com/@tmlagency",
+      "https://www.instagram.com/tmlagency/",
+      "https://www.facebook.com/tmlagency/",
+      "https://www.linkedin.com/company/tmlagency/",
+      "https://twitter.com/tmlagency",
     ],
     knowsAbout: [
       "Digital Marketing",
@@ -105,6 +124,12 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(aboutPageJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(teamMembersJsonLd),
         }}
       />
       <AboutPageClient />

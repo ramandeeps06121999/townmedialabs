@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["panipat"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Panipat | TML Agency",
+  title: "Social Media Marketing Agency in Panipat | TML Agency",
   description: "TML offers expert social media marketing services in Panipat. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing panipat", "social media marketing agency panipat", "social media marketing company panipat"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-panipat",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-panipat",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Panipat | TML Agency",
+    title: "Social Media Marketing Agency in Panipat | TML Agency",
     description: "TML offers expert social media marketing services in Panipat. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-panipat",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-panipat",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Panipat | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Panipat | TML Agency",
+    title: "Social Media Marketing Agency in Panipat | TML Agency",
     description: "TML offers expert social media marketing services in Panipat. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

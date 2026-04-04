@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["middlesbrough"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Middlesbrough | TML Agency",
+  title: "Packaging Design Agency in Middlesbrough | TML Agency",
   description: "TML offers expert packaging design services in Middlesbrough. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design middlesbrough", "packaging design agency middlesbrough", "packaging design company middlesbrough"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-middlesbrough",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-middlesbrough",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Middlesbrough | TML Agency",
+    title: "Packaging Design Agency in Middlesbrough | TML Agency",
     description: "TML offers expert packaging design services in Middlesbrough. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-middlesbrough",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-middlesbrough",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Middlesbrough | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Middlesbrough | TML Agency",
+    title: "Packaging Design Agency in Middlesbrough | TML Agency",
     description: "TML offers expert packaging design services in Middlesbrough. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

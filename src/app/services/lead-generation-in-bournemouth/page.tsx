@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["bournemouth"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Bournemouth | TML Agency",
+  title: "Lead Generation Agency in Bournemouth | TML Agency",
   description: "TML offers expert lead generation services in Bournemouth. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation bournemouth", "lead generation agency bournemouth", "lead generation company bournemouth"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-bournemouth",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-bournemouth",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Bournemouth | TML Agency",
+    title: "Lead Generation Agency in Bournemouth | TML Agency",
     description: "TML offers expert lead generation services in Bournemouth. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-bournemouth",
+    url: "https://townmedialabs.ca/services/lead-generation-in-bournemouth",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Bournemouth | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Bournemouth | TML Agency",
+    title: "Lead Generation Agency in Bournemouth | TML Agency",
     description: "TML offers expert lead generation services in Bournemouth. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

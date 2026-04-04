@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["leicester"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Leicester | TML Agency",
+  title: "AI Influencer Management Agency in Leicester | TML Agency",
   description: "TML offers expert ai influencer management services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management leicester", "ai influencer management agency leicester", "ai influencer management company leicester"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-leicester",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-leicester",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Leicester | TML Agency",
+    title: "AI Influencer Management Agency in Leicester | TML Agency",
     description: "TML offers expert ai influencer management services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-leicester",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-leicester",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Leicester | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Leicester | TML Agency",
+    title: "AI Influencer Management Agency in Leicester | TML Agency",
     description: "TML offers expert ai influencer management services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

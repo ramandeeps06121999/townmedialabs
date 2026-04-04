@@ -12,6 +12,19 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { getImagesForService } from "@/data/portfolioImages";
 import Image from "next/image";
 
+/** Parse stat value into animatable parts, or null for plain text */
+function parseStatValue(value: string): { target: number; prefix: string; suffix: string; decimals: number } | null {
+  const match = value.match(/^([^0-9]*)(\d+(?:\.\d+)?)(.*)$/);
+  if (!match) return null;
+  const prefix = match[1];
+  const numStr = match[2];
+  const suffix = match[3];
+  const target = parseFloat(numStr);
+  if (isNaN(target) || target === 0) return null;
+  const decimalPart = numStr.includes('.') ? numStr.split('.')[1].length : 0;
+  return { target, prefix, suffix, decimals: decimalPart };
+}
+
 /* ─── Lightweight IntersectionObserver hook ─── */
 function useScrollReveal() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -105,7 +118,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
   const serviceSchema = generateServiceSchema({
     name: data.title,
     description: data.metaDescription,
-    url: `https://townmedialabs.com/services/${data.slug}`,
+    url: `https://townmedialabs.ca/services/${data.slug}`,
     areaServed: "Chandigarh",
     category: serviceData?.title,
   });
@@ -113,17 +126,17 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
   const localBusinessSchema = generateLocalBusinessSchema({
     name: "TML Agency - Chandigarh",
     description: data.metaDescription,
-    url: `https://townmedialabs.com/services/${data.slug}`,
+    url: `https://townmedialabs.ca/services/${data.slug}`,
     city: "Chandigarh",
     state: "Punjab",
     services: serviceData ? serviceData.features.map((f) => f.title) : [],
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Services", url: "https://townmedialabs.com/services" },
-    { name: serviceData?.title || data.title, url: `https://townmedialabs.com/services/${data.serviceSlug}` },
-    { name: "Chandigarh", url: `https://townmedialabs.com/services/${data.slug}` },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Services", url: "https://townmedialabs.ca/services" },
+    { name: serviceData?.title || data.title, url: `https://townmedialabs.ca/services/${data.serviceSlug}` },
+    { name: "Chandigarh", url: `https://townmedialabs.ca/services/${data.slug}` },
   ]);
 
   const faqSchema = generateFAQSchema(
@@ -215,19 +228,20 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
                   className={`scroll-reveal scroll-delay-${i + 1} text-center p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02]`}
                 >
                   <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    {statsInView ? (
-                      /^\d/.test(stat.value) ? (
+                    {(() => {
+                      const parsed = parseStatValue(stat.value);
+                      if (!statsInView) return <span className="text-white">&mdash;</span>;
+                      if (!parsed) return <span className="text-[#ff4500]">{stat.value}</span>;
+                      return (
                         <AnimatedCounter
-                          target={parseInt(stat.value.replace(/[^0-9]/g, ""))}
-                          suffix={stat.value.replace(/[0-9]/g, "")}
+                          target={parsed.target}
+                          prefix={parsed.prefix}
+                          suffix={parsed.suffix}
+                          decimals={parsed.decimals}
                           duration={2}
                         />
-                      ) : (
-                        <span className="text-[#ff4500]">{stat.value}</span>
-                      )
-                    ) : (
-                      <span className="text-white">&mdash;</span>
-                    )}
+                      );
+                    })()}
                   </div>
                   <p className="text-xs text-white">{stat.label}</p>
                 </div>
@@ -354,7 +368,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
               <div className="scroll-reveal scroll-delay-1 relative w-full aspect-[21/9] overflow-hidden rounded-2xl border border-white/[0.06] mb-10">
                 <Image
                   src={images[0].src}
-                  alt={`${data.title} work by TML Agency Chandigarh`}
+                  alt={images[0].alt}
                   fill
                   sizes="100vw"
                   className="object-cover"

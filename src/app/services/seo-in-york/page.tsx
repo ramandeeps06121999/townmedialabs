@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["york"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in York | TML Agency",
+  title: "SEO Agency in York | TML Agency",
   description: "TML offers expert seo services in York. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo york", "seo agency york", "seo company york"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-york",
+    canonical: "https://townmedialabs.ca/services/seo-in-york",
   },
   openGraph: {
-    title: "Best SEO Agency in York | TML Agency",
+    title: "SEO Agency in York | TML Agency",
     description: "TML offers expert seo services in York. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-york",
+    url: "https://townmedialabs.ca/services/seo-in-york",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in York | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in York | TML Agency",
+    title: "SEO Agency in York | TML Agency",
     description: "TML offers expert seo services in York. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

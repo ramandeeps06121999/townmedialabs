@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   description: enrichment?.metaDescription || "TML offers expert Video Editing services in Chandigarh. Proven results for 500+ businesses.",
   keywords: enrichment?.keywords || ["video-editing chandigarh"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-chandigarh",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-chandigarh",
   },
   openGraph: {
     title: enrichment?.metaTitle || "Best Video Editing Agency in Chandigarh | TML Agency",
     description: enrichment?.metaDescription || "TML offers expert Video Editing services in Chandigarh. Proven results for 500+ businesses.",
-    url: "https://townmedialabs.com/services/video-editing-in-chandigarh",
+    url: "https://townmedialabs.ca/services/video-editing-in-chandigarh",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Chandigarh | TML Agency" }],
   },
   twitter: {

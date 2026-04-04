@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["newcastle"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Newcastle | TML Agency",
+  title: "SEO Agency in Newcastle | TML Agency",
   description: "TML offers expert seo services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo newcastle", "seo agency newcastle", "seo company newcastle"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-newcastle",
+    canonical: "https://townmedialabs.ca/services/seo-in-newcastle",
   },
   openGraph: {
-    title: "Best SEO Agency in Newcastle | TML Agency",
+    title: "SEO Agency in Newcastle | TML Agency",
     description: "TML offers expert seo services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-newcastle",
+    url: "https://townmedialabs.ca/services/seo-in-newcastle",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Newcastle | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Newcastle | TML Agency",
+    title: "SEO Agency in Newcastle | TML Agency",
     description: "TML offers expert seo services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

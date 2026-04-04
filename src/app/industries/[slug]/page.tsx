@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       openGraph: {
         title: industryV2.metaTitle,
         description: industryV2.metaDescription,
-        url: `https://townmedialabs.com/industries/${industryV2.slug}`,
+        url: `https://townmedialabs.ca/industries/${industryV2.slug}`,
         siteName: "TML Agency",
         type: "website",
         images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${industryV2.metaTitle} - TML Agency` }],
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         images: ["/og-image.png"],
       },
       alternates: {
-        canonical: `https://townmedialabs.com/industries/${industryV2.slug}`,
+        canonical: `https://townmedialabs.ca/industries/${industryV2.slug}`,
       },
     };
   }
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: industry.metaTitle,
       description: industry.metaDescription,
-      url: `https://townmedialabs.com/industries/${industry.slug}`,
+      url: `https://townmedialabs.ca/industries/${industry.slug}`,
       siteName: "TML Agency",
       type: "website",
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${industry.metaTitle} - TML Agency` }],
@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `https://townmedialabs.com/industries/${industry.slug}`,
+      canonical: `https://townmedialabs.ca/industries/${industry.slug}`,
     },
   };
 }
@@ -87,14 +87,14 @@ export default async function IndustryPage({ params }: PageProps) {
     const serviceSchema = generateServiceSchema({
       name: `${industryV2.name} Digital Marketing Services`,
       description: industryV2.metaDescription,
-      url: `https://townmedialabs.com/industries/${industryV2.slug}`,
+      url: `https://townmedialabs.ca/industries/${industryV2.slug}`,
       category: industryV2.name,
     });
 
     const breadcrumbSchema = generateBreadcrumbSchema([
-      { name: "Home", url: "https://townmedialabs.com" },
-      { name: "Industries", url: "https://townmedialabs.com/industries" },
-      { name: industryV2.name, url: `https://townmedialabs.com/industries/${industryV2.slug}` },
+      { name: "Home", url: "https://townmedialabs.ca" },
+      { name: "Industries", url: "https://townmedialabs.ca/industries" },
+      { name: industryV2.name, url: `https://townmedialabs.ca/industries/${industryV2.slug}` },
     ]);
 
     const faqSchema = generateFAQSchema(
@@ -134,14 +134,14 @@ export default async function IndustryPage({ params }: PageProps) {
   const serviceSchema = generateServiceSchema({
     name: `${industry.name} Digital Marketing Services`,
     description: industry.description,
-    url: `https://townmedialabs.com/industries/${industry.slug}`,
+    url: `https://townmedialabs.ca/industries/${industry.slug}`,
     category: industry.name,
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Industries", url: "https://townmedialabs.com/industries" },
-    { name: industry.name, url: `https://townmedialabs.com/industries/${industry.slug}` },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Industries", url: "https://townmedialabs.ca/industries" },
+    { name: industry.name, url: `https://townmedialabs.ca/industries/${industry.slug}` },
   ]);
 
   const faqSchema = generateFAQSchema(

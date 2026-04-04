@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["birmingham"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Birmingham | TML Agency",
+  title: "Branding Agency in Birmingham | TML Agency",
   description: "TML offers expert branding services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding birmingham", "branding agency birmingham", "branding company birmingham"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-birmingham",
+    canonical: "https://townmedialabs.ca/services/branding-in-birmingham",
   },
   openGraph: {
-    title: "Best Branding Agency in Birmingham | TML Agency",
+    title: "Branding Agency in Birmingham | TML Agency",
     description: "TML offers expert branding services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-birmingham",
+    url: "https://townmedialabs.ca/services/branding-in-birmingham",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Birmingham | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Birmingham | TML Agency",
+    title: "Branding Agency in Birmingham | TML Agency",
     description: "TML offers expert branding services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

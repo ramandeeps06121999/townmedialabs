@@ -20,11 +20,15 @@ function formatDate(dateStr: string) {
   });
 }
 
+const POSTS_PER_PAGE = 12;
+
 export default function BlogPageClient() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [sortBy, setSortBy] = useState<SortOption>("newest");
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
   const heroRef = useRef<HTMLElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
   const heroInView = useInView(heroRef, { once: true, amount: 0.2 });
 
   const filteredPosts = useMemo(() => {
@@ -52,6 +56,43 @@ export default function BlogPageClient() {
 
     return posts;
   }, [activeCategory, sortBy, searchQuery]);
+
+  // Reset to page 1 when filters change
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    setCurrentPage(1);
+  };
+  const handleSearchChange = (val: string) => {
+    setSearchQuery(val);
+    setCurrentPage(1);
+  };
+  const handleSortChange = (val: SortOption) => {
+    setSortBy(val);
+    setCurrentPage(1);
+  };
+
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
+  const safeCurrentPage = Math.min(currentPage, totalPages);
+  const startIdx = (safeCurrentPage - 1) * POSTS_PER_PAGE;
+  const paginatedPosts = filteredPosts.slice(startIdx, startIdx + POSTS_PER_PAGE);
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    gridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  // Generate page numbers to display (show max 7 with ellipsis)
+  const getPageNumbers = (): (number | "...")[] => {
+    if (totalPages <= 7) return Array.from({ length: totalPages }, (_, i) => i + 1);
+    const pages: (number | "...")[] = [1];
+    if (safeCurrentPage > 3) pages.push("...");
+    const start = Math.max(2, safeCurrentPage - 1);
+    const end = Math.min(totalPages - 1, safeCurrentPage + 1);
+    for (let i = start; i <= end; i++) pages.push(i);
+    if (safeCurrentPage < totalPages - 2) pages.push("...");
+    pages.push(totalPages);
+    return pages;
+  };
 
   const featuredPosts = blogPosts.filter((p) => p.featured);
 
@@ -175,6 +216,14 @@ export default function BlogPageClient() {
                           Read More →
                         </span>
                       </div>
+                      <div className="flex items-center gap-2 mt-3 pt-3 border-t border-white/[0.06]">
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#ff4500] to-[#ff6b35] flex items-center justify-center text-white text-[8px] font-bold">
+                          {post.authorName.split(" ").map((n) => n[0]).join("")}
+                        </div>
+                        <span className="text-[11px] text-white/70 font-medium">
+                          {post.authorName}
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 </motion.div>
@@ -213,12 +262,12 @@ export default function BlogPageClient() {
                 placeholder="Search blogs..."
                 aria-label="Search blog articles"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
                 className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder:text-white outline-none focus:border-[#ff4500]/40 focus:bg-white/[0.05] transition-all duration-300"
               />
               {searchQuery && (
                 <button
-                  onClick={() => setSearchQuery("")}
+                  onClick={() => handleSearchChange("")}
                   aria-label="Clear search"
                   className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-white hover:bg-white/20 transition-all"
                 >
@@ -236,7 +285,7 @@ export default function BlogPageClient() {
                 {blogCategories.map((cat) => (
                   <button
                     key={cat}
-                    onClick={() => setActiveCategory(cat)}
+                    onClick={() => handleCategoryChange(cat)}
                     className={`text-xs font-medium px-4 py-2 rounded-full border transition-all duration-300 ${
                       activeCategory === cat
                         ? "bg-[#ff4500] border-[#ff4500] text-white"
@@ -253,7 +302,7 @@ export default function BlogPageClient() {
                 <span className="text-[10px] text-white uppercase tracking-widest font-semibold hidden sm:block">Sort</span>
                 <select
                   value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as SortOption)}
+                  onChange={(e) => handleSortChange(e.target.value as SortOption)}
                   aria-label="Sort articles by"
                   className="bg-white/[0.03] border border-white/[0.08] rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-[#ff4500]/40 transition-all cursor-pointer appearance-none"
                   style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='rgba(255,255,255,0.3)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`, backgroundRepeat: "no-repeat", backgroundPosition: "right 10px center", paddingRight: "28px" }}
@@ -273,10 +322,10 @@ export default function BlogPageClient() {
       </section>
 
       {/* All Posts Grid */}
-      <section className="px-6 lg:px-12 py-8 md:py-12">
+      <section ref={gridRef} className="px-6 lg:px-12 py-8 md:py-12 scroll-mt-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPosts.map((post, i) => (
+            {paginatedPosts.map((post, i) => (
               <motion.div
                 key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
@@ -330,8 +379,18 @@ export default function BlogPageClient() {
                     <p className="text-xs text-white leading-relaxed line-clamp-2">
                       {post.excerpt}
                     </p>
-                    <div className="mt-4 text-xs font-semibold text-[#ff4500]/70 group-hover:text-[#ff4500] transition-colors">
-                      Read Article →
+                    <div className="flex items-center justify-between mt-4 pt-3 border-t border-white/[0.06]">
+                      <div className="flex items-center gap-2">
+                        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-[#ff4500] to-[#ff6b35] flex items-center justify-center text-white text-[7px] font-bold">
+                          {post.authorName.split(" ").map((n) => n[0]).join("")}
+                        </div>
+                        <span className="text-[10px] text-white/60 font-medium">
+                          {post.authorName}
+                        </span>
+                      </div>
+                      <span className="text-xs font-semibold text-[#ff4500]/70 group-hover:text-[#ff4500] transition-colors">
+                        Read →
+                      </span>
                     </div>
                   </div>
                 </Link>
@@ -354,6 +413,62 @@ export default function BlogPageClient() {
                 Try a different search term or category
               </p>
             </div>
+          )}
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <nav aria-label="Blog pagination" className="flex items-center justify-center gap-2 mt-12 pt-8 border-t border-white/[0.06]">
+              {/* Previous */}
+              <button
+                onClick={() => goToPage(safeCurrentPage - 1)}
+                disabled={safeCurrentPage <= 1}
+                aria-label="Previous page"
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold border border-white/[0.08] bg-white/[0.03] text-white hover:border-[#ff4500]/40 hover:text-[#ff4500] transition-all duration-300 disabled:opacity-30 disabled:pointer-events-none"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+                Prev
+              </button>
+
+              {/* Page numbers */}
+              <div className="flex items-center gap-1">
+                {getPageNumbers().map((page, idx) =>
+                  page === "..." ? (
+                    <span key={`ellipsis-${idx}`} className="px-2 py-2 text-xs text-white/40 select-none">
+                      ...
+                    </span>
+                  ) : (
+                    <button
+                      key={page}
+                      onClick={() => goToPage(page)}
+                      aria-label={`Page ${page}`}
+                      aria-current={page === safeCurrentPage ? "page" : undefined}
+                      className={`min-w-[36px] h-9 rounded-xl text-xs font-semibold transition-all duration-300 ${
+                        page === safeCurrentPage
+                          ? "bg-[#ff4500] text-white shadow-[0_0_20px_rgba(255,69,0,0.3)]"
+                          : "bg-white/[0.03] border border-white/[0.08] text-white hover:border-[#ff4500]/40 hover:text-[#ff4500]"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  )
+                )}
+              </div>
+
+              {/* Next */}
+              <button
+                onClick={() => goToPage(safeCurrentPage + 1)}
+                disabled={safeCurrentPage >= totalPages}
+                aria-label="Next page"
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold border border-white/[0.08] bg-white/[0.03] text-white hover:border-[#ff4500]/40 hover:text-[#ff4500] transition-all duration-300 disabled:opacity-30 disabled:pointer-events-none"
+              >
+                Next
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </nav>
           )}
         </div>
       </section>

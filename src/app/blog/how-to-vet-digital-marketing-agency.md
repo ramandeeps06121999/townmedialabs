@@ -1,6 +1,6 @@
 # How to Vet a Digital Marketing Agency: Red Flags Checklist for Hiring (2026)
 
-When we started Town Media Labs 15+ years ago, we weren't just learning how to run a successful digital marketing agency—we were learning how *not* to be the agencies our early clients complained about.
+When we started TML Agency 15+ years ago, we weren't just learning how to run a successful digital marketing agency—we were learning how *not* to be the agencies our early clients complained about.
 
 Today, we've worked with over 500 clients across industries, from bootstrapped startups to established brands. And in every single consultation with a prospective client who's switching agencies, we hear the same story: they hired someone based on a good pitch, got mediocre results, and wasted thousands (sometimes hundreds of thousands) of dollars.
 
@@ -577,7 +577,7 @@ Here's your one-page checklist to use when evaluating agencies:
 
 ## **Final Words: From 500+ Client Relationships**
 
-We've built Town Media Labs by doing the opposite of the red flags listed above. We ask a lot of questions. We customize strategy. We're transparent about process. We own our results. And we build relationships meant to last.
+We've built TML Agency by doing the opposite of the red flags listed above. We ask a lot of questions. We customize strategy. We're transparent about process. We own our results. And we build relationships meant to last.
 
 That's not because we're special. It's because **the best agencies have a simple philosophy: your success is our success.**
 

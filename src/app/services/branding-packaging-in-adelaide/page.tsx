@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["adelaide"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Adelaide | TML Agency",
+  title: "Packaging Design Agency in Adelaide | TML Agency",
   description: "TML offers expert packaging design services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design adelaide", "packaging design agency adelaide", "packaging design company adelaide"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-adelaide",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-adelaide",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Adelaide | TML Agency",
+    title: "Packaging Design Agency in Adelaide | TML Agency",
     description: "TML offers expert packaging design services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-adelaide",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-adelaide",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Adelaide | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Adelaide | TML Agency",
+    title: "Packaging Design Agency in Adelaide | TML Agency",
     description: "TML offers expert packaging design services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

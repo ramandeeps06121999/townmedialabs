@@ -6,25 +6,25 @@ const location = locations["newcastle_au"];
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
-  title: "Best Packaging Design Agency in Newcastle | TML Agency",
+  title: "Packaging Design Agency in Newcastle | TML Agency",
   description: "TML offers expert packaging design services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design newcastle", "packaging design agency newcastle", "packaging design company newcastle"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-newcastle-au",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-newcastle-au",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Newcastle | TML Agency",
+    title: "Packaging Design Agency in Newcastle | TML Agency",
     description: "TML offers expert packaging design services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-newcastle-au",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-newcastle-au",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Newcastle | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Newcastle | TML Agency",
+    title: "Packaging Design Agency in Newcastle | TML Agency",
     description: "TML offers expert packaging design services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

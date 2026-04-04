@@ -1,16 +1,22 @@
 const DEFAULT_PROVIDER = {
   "@type": "Organization" as const,
   name: "TML Agency",
-  url: "https://townmedialabs.com",
-  telephone: "+919872648209",
+  url: "https://townmedialabs.ca",
+  telephone: "+14036048692",
   address: {
     "@type": "PostalAddress" as const,
-    streetAddress: "CO 112, Basement, Sector 34A",
-    addressLocality: "Chandigarh",
-    addressRegion: "Chandigarh",
-    addressCountry: "IN",
-    postalCode: "160022",
+    streetAddress: "11930 104 St NW",
+    addressLocality: "Edmonton",
+    addressRegion: "Alberta",
+    addressCountry: "CA",
+    postalCode: "T5G 2K1",
   },
+  sameAs: [
+    "https://www.instagram.com/tmlagency/",
+    "https://www.facebook.com/tmlagency/",
+    "https://www.linkedin.com/company/tmlagency/",
+    "https://twitter.com/tmlagency",
+  ],
 };
 
 export function generateServiceSchema(params: {
@@ -49,10 +55,10 @@ export function generateLocalBusinessSchema(params: {
   areaServed?: { type: "City" | "Country" | "State"; name: string }[];
   coordinates?: { latitude: number; longitude: number };
 }) {
-  // Default to Chandigarh if no coordinates provided (for country/state pages)
+  // Default to Edmonton HQ if no coordinates provided
   const coords = params.coordinates || {
-    latitude: 30.7333,
-    longitude: 76.7794,
+    latitude: 53.5461,
+    longitude: -113.4937,
   };
 
   return {
@@ -66,8 +72,8 @@ export function generateLocalBusinessSchema(params: {
       "@type": "PostalAddress",
       addressLocality: params.city,
       addressRegion: params.state,
-      addressCountry: params.country || "IN",
-      postalCode: "160022",
+      addressCountry: params.country || "CA",
+      postalCode: "T5G 2K1",
     },
     geo: {
       "@type": "GeoCoordinates",
@@ -125,7 +131,7 @@ export function generateArticleSchema(params: {
   authorName?: string;
   authorId?: string;
 }) {
-  const siteUrl = "https://townmedialabs.com";
+  const siteUrl = "https://townmedialabs.ca";
 
   // Create author object - use Person if authorName/ID provided, otherwise Organization
   const author = params.authorName && params.authorId
@@ -163,7 +169,7 @@ export function generateArticleSchema(params: {
     },
     ...(params.keywords && { keywords: params.keywords.join(", ") }),
     ...(params.category && { articleSection: params.category }),
-    inLanguage: "en-IN",
+    inLanguage: "en-CA",
   };
 }
 

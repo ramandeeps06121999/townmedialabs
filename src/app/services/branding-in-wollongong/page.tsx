@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["wollongong"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Wollongong | TML Agency",
+  title: "Branding Agency in Wollongong | TML Agency",
   description: "TML offers expert branding services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding wollongong", "branding agency wollongong", "branding company wollongong"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-wollongong",
+    canonical: "https://townmedialabs.ca/services/branding-in-wollongong",
   },
   openGraph: {
-    title: "Best Branding Agency in Wollongong | TML Agency",
+    title: "Branding Agency in Wollongong | TML Agency",
     description: "TML offers expert branding services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-wollongong",
+    url: "https://townmedialabs.ca/services/branding-in-wollongong",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Wollongong | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Wollongong | TML Agency",
+    title: "Branding Agency in Wollongong | TML Agency",
     description: "TML offers expert branding services in Wollongong. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

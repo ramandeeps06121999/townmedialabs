@@ -368,7 +368,7 @@ export function ServicesHome2() {
               position: i + 1,
               name: s.title,
               description: s.description,
-              url: `https://townmedialabs.com${serviceSlugMap[s.title] || "/services"}`,
+              url: `https://townmedialabs.ca${serviceSlugMap[s.title] || "/services"}`,
             })),
           }),
         }}

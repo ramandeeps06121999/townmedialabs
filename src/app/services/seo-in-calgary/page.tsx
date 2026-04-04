@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["calgary"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Calgary | TML Agency",
+  title: "SEO Agency in Calgary | TML Agency",
   description: "TML offers expert seo services in Calgary, Alberta. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo calgary", "seo agency calgary"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-calgary",
+    canonical: "https://townmedialabs.ca/services/seo-in-calgary",
   },
   openGraph: {
-    title: "Best SEO Agency in Calgary | TML Agency",
+    title: "SEO Agency in Calgary | TML Agency",
     description: "TML offers expert seo services in Calgary, Alberta. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-calgary",
+    url: "https://townmedialabs.ca/services/seo-in-calgary",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Calgary | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Calgary | TML Agency",
+    title: "SEO Agency in Calgary | TML Agency",
     description: "TML offers expert seo services in Calgary, Alberta. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

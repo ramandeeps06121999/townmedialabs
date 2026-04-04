@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Free Marketing Tools & Calculators | TML Agency",
     description:
       "Free interactive tools to audit your SEO, calculate ad budgets, measure ROI, generate meta tags, and more. No signup required.",
-    url: "https://townmedialabs.com/free-tools",
+    url: "https://townmedialabs.ca/free-tools",
     siteName: "TML Agency",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Marketing Tools - TML Agency" }],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://townmedialabs.com/free-tools",
+    canonical: "https://townmedialabs.ca/free-tools",
   },
 };
 

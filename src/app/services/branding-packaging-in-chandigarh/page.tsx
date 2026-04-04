@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   description: enrichment?.metaDescription || "TML offers expert Packaging Design services in Chandigarh. Proven results for 500+ businesses.",
   keywords: enrichment?.keywords || ["branding-packaging chandigarh"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-chandigarh",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-chandigarh",
   },
   openGraph: {
     title: enrichment?.metaTitle || "Best Packaging Design Agency in Chandigarh | TML Agency",
     description: enrichment?.metaDescription || "TML offers expert Packaging Design services in Chandigarh. Proven results for 500+ businesses.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-chandigarh",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-chandigarh",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Chandigarh | TML Agency" }],
   },
   twitter: {

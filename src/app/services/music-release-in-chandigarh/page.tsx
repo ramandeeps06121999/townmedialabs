@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   description: enrichment?.metaDescription || "TML offers expert Music Release & Promotion services in Chandigarh. Proven results for 500+ businesses.",
   keywords: enrichment?.keywords || ["music-release chandigarh"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-chandigarh",
+    canonical: "https://townmedialabs.ca/services/music-release-in-chandigarh",
   },
   openGraph: {
     title: enrichment?.metaTitle || "Best Music Release & Promotion Agency in Chandigarh | TML Agency",
     description: enrichment?.metaDescription || "TML offers expert Music Release & Promotion services in Chandigarh. Proven results for 500+ businesses.",
-    url: "https://townmedialabs.com/services/music-release-in-chandigarh",
+    url: "https://townmedialabs.ca/services/music-release-in-chandigarh",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release & Promotion Agency in Chandigarh | TML Agency" }],
   },
   twitter: {

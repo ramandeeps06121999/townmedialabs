@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["oklahoma_city"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Oklahoma City | TML Agency",
+  title: "Website Development Agency in Oklahoma City | TML Agency",
   description: "TML offers expert website development services in Oklahoma City. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development oklahoma city", "website development agency oklahoma city", "website development company oklahoma city"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-oklahoma-city",
+    canonical: "https://townmedialabs.ca/services/website-development-in-oklahoma-city",
   },
   openGraph: {
-    title: "Best Website Development Agency in Oklahoma City | TML Agency",
+    title: "Website Development Agency in Oklahoma City | TML Agency",
     description: "TML offers expert website development services in Oklahoma City. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-oklahoma-city",
+    url: "https://townmedialabs.ca/services/website-development-in-oklahoma-city",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Oklahoma City | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Oklahoma City | TML Agency",
+    title: "Website Development Agency in Oklahoma City | TML Agency",
     description: "TML offers expert website development services in Oklahoma City. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     description:
       "Get in touch with TML Agency, Chandigarh's leading digital marketing agency. Free consultation for branding, SEO, Google Ads, social media & web development.",
     type: "website",
-    url: "https://townmedialabs.com/contact",
+    url: "https://townmedialabs.ca/contact",
     siteName: "TML Agency",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [
       {
         url: "/og-image.png",
@@ -48,15 +48,15 @@ const contactPageSchema = {
   name: "Contact TML Agency",
   description:
     "Get in touch with TML Agency, Chandigarh's leading digital marketing agency. Free consultation for branding, SEO, Google Ads, social media & web development.",
-  url: "https://townmedialabs.com/contact",
+  url: "https://townmedialabs.ca/contact",
   mainEntity: {
     "@type": "Organization",
     name: "TML Agency",
-    url: "https://townmedialabs.com",
+    url: "https://townmedialabs.ca",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+91-98726-48209",
-      email: "info@townmedialabs.com",
+      email: "info@townmedialabs.ca",
       contactType: "customer service",
       availableLanguage: ["English", "Hindi"],
     },
@@ -66,14 +66,14 @@ const contactPageSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://townmedialabs.com/#business",
+  "@id": "https://townmedialabs.ca/#business",
   name: "TML Agency",
   description:
     "Chandigarh's leading digital marketing agency specializing in branding, SEO, Google Ads, social media marketing & web development.",
-  url: "https://townmedialabs.com",
+  url: "https://townmedialabs.ca",
   telephone: "+91-98726-48209",
-  email: "info@townmedialabs.com",
-  image: "https://townmedialabs.com/og-image.png",
+  email: "info@townmedialabs.ca",
+  image: "https://townmedialabs.ca/og-image.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "CO 112, Basement, Sector 34A",
@@ -104,9 +104,10 @@ const localBusinessSchema = {
   ],
   priceRange: "$$",
   sameAs: [
-    "https://www.instagram.com/townmedialabs/",
-    "https://in.linkedin.com/company/townmedialabs",
-    "https://www.facebook.com/Town.media.labs",
+    "https://www.instagram.com/tmlagency/",
+    "https://www.facebook.com/tmlagency/",
+    "https://www.linkedin.com/company/tmlagency/",
+    "https://twitter.com/tmlagency",
   ],
 };
 

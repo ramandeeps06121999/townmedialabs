@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ipswich"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Ipswich | TML Agency",
+  title: "Music Release Agency in Ipswich | TML Agency",
   description: "TML offers expert music release services in Ipswich. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release ipswich", "music release agency ipswich", "music release company ipswich"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-ipswich",
+    canonical: "https://townmedialabs.ca/services/music-release-in-ipswich",
   },
   openGraph: {
-    title: "Best Music Release Agency in Ipswich | TML Agency",
+    title: "Music Release Agency in Ipswich | TML Agency",
     description: "TML offers expert music release services in Ipswich. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-ipswich",
+    url: "https://townmedialabs.ca/services/music-release-in-ipswich",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Ipswich | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Ipswich | TML Agency",
+    title: "Music Release Agency in Ipswich | TML Agency",
     description: "TML offers expert music release services in Ipswich. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

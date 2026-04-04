@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["richmond"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Richmond | TML Agency",
+  title: "Packaging Design Agency in Richmond | TML Agency",
   description: "TML offers expert packaging design services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design richmond", "packaging design agency richmond", "packaging design company richmond"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-richmond",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-richmond",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Richmond | TML Agency",
+    title: "Packaging Design Agency in Richmond | TML Agency",
     description: "TML offers expert packaging design services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-richmond",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-richmond",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Richmond | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Richmond | TML Agency",
+    title: "Packaging Design Agency in Richmond | TML Agency",
     description: "TML offers expert packaging design services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

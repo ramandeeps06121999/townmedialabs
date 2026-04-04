@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["sacramento"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Sacramento | TML Agency",
+  title: "Graphic Design Agency in Sacramento | TML Agency",
   description: "TML offers expert graphic design services in Sacramento. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design sacramento", "graphic design agency sacramento", "graphic design company sacramento"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-sacramento",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-sacramento",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Sacramento | TML Agency",
+    title: "Graphic Design Agency in Sacramento | TML Agency",
     description: "TML offers expert graphic design services in Sacramento. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-sacramento",
+    url: "https://townmedialabs.ca/services/graphic-design-in-sacramento",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Sacramento | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Sacramento | TML Agency",
+    title: "Graphic Design Agency in Sacramento | TML Agency",
     description: "TML offers expert graphic design services in Sacramento. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

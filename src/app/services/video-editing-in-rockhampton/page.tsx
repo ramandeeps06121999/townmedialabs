@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["rockhampton"];
 
 export const metadata: Metadata = {
-  title: "Best Video Editing Agency in Rockhampton | TML Agency",
+  title: "Video Editing Agency in Rockhampton | TML Agency",
   description: "TML offers expert video editing services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing rockhampton", "video editing agency rockhampton", "video editing company rockhampton"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-rockhampton",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-rockhampton",
   },
   openGraph: {
-    title: "Best Video Editing Agency in Rockhampton | TML Agency",
+    title: "Video Editing Agency in Rockhampton | TML Agency",
     description: "TML offers expert video editing services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/video-editing-in-rockhampton",
+    url: "https://townmedialabs.ca/services/video-editing-in-rockhampton",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Rockhampton | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Video Editing Agency in Rockhampton | TML Agency",
+    title: "Video Editing Agency in Rockhampton | TML Agency",
     description: "TML offers expert video editing services in Rockhampton. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

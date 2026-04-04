@@ -6,25 +6,25 @@ const location = locations["san_jose"];
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
-  title: "Best Music Release Agency in San Jose | TML Agency",
+  title: "Music Release Agency in San Jose | TML Agency",
   description: "TML offers expert music release services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release san jose", "music release agency san jose", "music release company san jose"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-san-jose",
+    canonical: "https://townmedialabs.ca/services/music-release-in-san-jose",
   },
   openGraph: {
-    title: "Best Music Release Agency in San Jose | TML Agency",
+    title: "Music Release Agency in San Jose | TML Agency",
     description: "TML offers expert music release services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-san-jose",
+    url: "https://townmedialabs.ca/services/music-release-in-san-jose",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in San Jose | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in San Jose | TML Agency",
+    title: "Music Release Agency in San Jose | TML Agency",
     description: "TML offers expert music release services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

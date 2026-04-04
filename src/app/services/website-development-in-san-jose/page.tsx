@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["san_jose"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in San Jose | TML Agency",
+  title: "Website Development Agency in San Jose | TML Agency",
   description: "TML offers expert website development services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development san jose", "website development agency san jose", "website development company san jose"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-san-jose",
+    canonical: "https://townmedialabs.ca/services/website-development-in-san-jose",
   },
   openGraph: {
-    title: "Best Website Development Agency in San Jose | TML Agency",
+    title: "Website Development Agency in San Jose | TML Agency",
     description: "TML offers expert website development services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-san-jose",
+    url: "https://townmedialabs.ca/services/website-development-in-san-jose",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in San Jose | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in San Jose | TML Agency",
+    title: "Website Development Agency in San Jose | TML Agency",
     description: "TML offers expert website development services in San Jose. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

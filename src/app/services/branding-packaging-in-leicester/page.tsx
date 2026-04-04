@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["leicester"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Leicester | TML Agency",
+  title: "Packaging Design Agency in Leicester | TML Agency",
   description: "TML offers expert packaging design services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design leicester", "packaging design agency leicester", "packaging design company leicester"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-leicester",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-leicester",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Leicester | TML Agency",
+    title: "Packaging Design Agency in Leicester | TML Agency",
     description: "TML offers expert packaging design services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-leicester",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-leicester",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Leicester | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Leicester | TML Agency",
+    title: "Packaging Design Agency in Leicester | TML Agency",
     description: "TML offers expert packaging design services in Leicester. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

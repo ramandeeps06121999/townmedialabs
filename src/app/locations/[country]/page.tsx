@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `Digital Marketing in ${config.name} | TML Agency`,
       description: config.description,
-      url: `https://townmedialabs.com/locations/${config.slug}`,
+      url: `https://townmedialabs.ca/locations/${config.slug}`,
       siteName: "TML Agency",
       type: "website",
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Digital Marketing in ${config.name} - TML Agency` }],
@@ -86,7 +86,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `https://townmedialabs.com/locations/${config.slug}`,
+      canonical: `https://townmedialabs.ca/locations/${config.slug}`,
     },
   };
 }
@@ -112,15 +112,15 @@ export default async function CountryPage({ params }: PageProps) {
   const allCities = Object.values(stateGroups).flat();
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Locations", url: "https://townmedialabs.com/locations" },
-    { name: config.name, url: `https://townmedialabs.com/locations/${config.slug}` },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Locations", url: "https://townmedialabs.ca/locations" },
+    { name: config.name, url: `https://townmedialabs.ca/locations/${config.slug}` },
   ]);
 
   const professionalServiceSchema = generateLocalBusinessSchema({
     name: `TML Agency - Digital Marketing in ${config.name}`,
     description: config.description,
-    url: `https://townmedialabs.com/locations/${config.slug}`,
+    url: `https://townmedialabs.ca/locations/${config.slug}`,
     city: "Chandigarh",
     state: "Chandigarh",
     country: config.countryCode,

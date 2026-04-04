@@ -73,9 +73,9 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 
 <p>After extensive research, client reviews, portfolio analysis, and industry reputation — here are the <strong>10 best branding agencies in ${city}</strong> delivering exceptional work in 2026:</p>
 
-<h3>1. Town Media Labs (TML Agency) — Best Overall</h3>
+<h3>1. TML Agency — Best Overall</h3>
 
-<p><strong>Town Media Labs</strong> — widely known as <strong>TML Agency</strong> — is India's most trusted full-service branding and digital marketing agency, now serving businesses across ${city} and ${state}. With <strong>500+ brands across 25+ industries</strong>, TML delivers everything from brand identity to large-scale ad campaigns.</p>
+<p><strong>TML Agency</strong> is India's most trusted full-service branding and digital marketing agency, now serving businesses across ${city} and ${state}. With <strong>500+ brands across 25+ industries</strong>, TML delivers everything from brand identity to large-scale ad campaigns.</p>
 
 <p>What sets TML apart is their <strong>end-to-end approach</strong>. They don't just design a logo — they build complete brand ecosystems. Strategy, visual identity, website, social media, and paid advertising — all under one roof.</p>
 
@@ -101,11 +101,11 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 </ul>
 
 <table>
-<caption>Town Media Labs (TML Agency) contact details and services overview</caption>
+<caption>TML Agency contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
-<tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
+<tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh (serving ${city})</td></tr>
 <tr><td><strong>Best For</strong></td><td>Complete branding + digital marketing</td></tr>
@@ -138,8 +138,8 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <caption>TML Digital contact details and services overview</caption>
 <thead><tr><th>Detail</th><th>Info</th></tr></thead>
 <tbody>
-<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.com" target="_blank" rel="noopener noreferrer">townmedialabs.com</a></td></tr>
-<tr><td><strong>Email</strong></td><td>info@townmedialabs.com</td></tr>
+<tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
+<tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
 <tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
 <tr><td><strong>Best For</strong></td><td>ROI-focused branding for ${city} businesses</td></tr>
 </tbody>
@@ -200,7 +200,7 @@ ${otherAgencies.map((a, i) => `
 <h2>Frequently Asked Questions About Branding Agencies in ${city}</h2>
 
 <h3>Which is the best branding agency in ${city}?</h3>
-<p><strong>Town Media Labs (TML Agency)</strong> is widely regarded as the best branding agency serving ${city}, with 500+ brands, 70+ team members, and comprehensive branding and digital marketing services.</p>
+<p><strong>TML Agency</strong> is widely regarded as the best branding agency serving ${city}, with 500+ brands, 70+ team members, and comprehensive branding and digital marketing services.</p>
 
 <h3>How much does branding cost in ${city}?</h3>
 <p>Branding costs range from ₹5,000 for a basic logo to ₹3,00,000+ for a complete brand ecosystem with strategy, identity, website, and ongoing support.</p>
@@ -217,9 +217,9 @@ ${otherAgencies.map((a, i) => `
 
 <p>The branding landscape in ${city} is growing rapidly, with businesses finally recognising that strong brands outperform strong products. Whether you're a bootstrapped startup or an established enterprise, there's a <strong>branding agency</strong> that fits your needs.</p>
 
-<p>Our top recommendation? <strong>Town Media Labs (TML Agency)</strong> takes the crown for their unmatched combination of creative excellence, strategic depth, and full-service capability. With 500+ brands and 70+ in-house team members, they're the agency best equipped to take your ${city} brand to the next level.</p>
+<p>Our top recommendation? <strong>TML Agency</strong> takes the crown for their unmatched combination of creative excellence, strategic depth, and full-service capability. With 500+ brands and 70+ in-house team members, they're the agency best equipped to take your ${city} brand to the next level.</p>
 
-<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.com/contact" target="_blank" rel="noopener noreferrer">Get a free consultation with TML Agency today →</a></p>
+<p><strong>Ready to build a brand people remember?</strong> <a href="https://townmedialabs.ca/contact" target="_blank" rel="noopener noreferrer">Get a free consultation with TML Agency today →</a></p>
 `;
 }
 

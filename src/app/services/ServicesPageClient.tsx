@@ -43,7 +43,7 @@ export default function ServicesPageClient() {
   const serviceSchema = generateServiceSchema({
     name: "Digital Marketing Services",
     description: "TML Agency offers comprehensive digital marketing services including branding, SEO, Google Ads, social media marketing, website development, AI influencer management, lead generation, and more.",
-    url: "https://townmedialabs.com/services",
+    url: "https://townmedialabs.ca/services",
     category: "Digital Marketing",
   });
 
@@ -60,7 +60,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Branding",
             description: "Strategic brand identity design that resonates with your audience and creates lasting impressions.",
-            url: "https://townmedialabs.com/services/branding",
+            url: "https://townmedialabs.ca/services/branding",
           },
         },
         {
@@ -69,7 +69,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "SEO",
             description: "Proven SEO strategies that boost your rankings, drive organic traffic, and grow your business sustainably.",
-            url: "https://townmedialabs.com/services/seo",
+            url: "https://townmedialabs.ca/services/seo",
           },
         },
         {
@@ -78,7 +78,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Google Ads",
             description: "Expert Google Ads management that maximizes ROI and drives qualified traffic to your business.",
-            url: "https://townmedialabs.com/services/google-ads",
+            url: "https://townmedialabs.ca/services/google-ads",
           },
         },
         {
@@ -87,7 +87,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Social Media Marketing",
             description: "Strategic social media management that grows your audience, builds brand loyalty, and generates leads.",
-            url: "https://townmedialabs.com/services/social-media",
+            url: "https://townmedialabs.ca/services/social-media",
           },
         },
         {
@@ -96,7 +96,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Website Development",
             description: "Custom, high-performance websites built with modern technologies for speed, security, and conversions.",
-            url: "https://townmedialabs.com/services/website-development",
+            url: "https://townmedialabs.ca/services/website-development",
           },
         },
         {
@@ -105,7 +105,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "AI Influencer Management",
             description: "Cutting-edge AI influencer creation and management for brands looking to lead the next wave of digital marketing.",
-            url: "https://townmedialabs.com/services/ai-influencer-management",
+            url: "https://townmedialabs.ca/services/ai-influencer-management",
           },
         },
         {
@@ -114,7 +114,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Lead Generation",
             description: "Data-driven lead generation strategies that attract, capture, and convert high-quality prospects.",
-            url: "https://townmedialabs.com/services/lead-generation",
+            url: "https://townmedialabs.ca/services/lead-generation",
           },
         },
         {
@@ -123,7 +123,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Music Release & Promotion",
             description: "End-to-end music release strategy covering distribution, promotion, playlist pitching, and audience growth.",
-            url: "https://townmedialabs.com/services/music-release",
+            url: "https://townmedialabs.ca/services/music-release",
           },
         },
         {
@@ -132,7 +132,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Video Editing & Production",
             description: "Professional video editing and production services that bring your vision to life with cinematic quality.",
-            url: "https://townmedialabs.com/services/video-editing",
+            url: "https://townmedialabs.ca/services/video-editing",
           },
         },
         {
@@ -141,7 +141,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Packaging Design",
             description: "Eye-catching packaging design that communicates your brand story and drives purchase decisions.",
-            url: "https://townmedialabs.com/services/branding-packaging",
+            url: "https://townmedialabs.ca/services/branding-packaging",
           },
         },
         {
@@ -150,7 +150,7 @@ export default function ServicesPageClient() {
             "@type": "Service",
             name: "Graphic Design",
             description: "Professional graphic design services that bring your brand story to life across every visual touchpoint.",
-            url: "https://townmedialabs.com/services/graphic-design",
+            url: "https://townmedialabs.ca/services/graphic-design",
           },
         },
       ],
@@ -158,8 +158,8 @@ export default function ServicesPageClient() {
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Services", url: "https://townmedialabs.com/services" },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Services", url: "https://townmedialabs.ca/services" },
   ]);
 
   return (
@@ -416,10 +416,10 @@ export default function ServicesPageClient() {
               Get a Free Consultation
             </Link>
             <a
-              href="mailto:info@townmedialabs.com"
+              href="mailto:info@townmedialabs.ca"
               className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors"
             >
-              info@townmedialabs.com
+              info@townmedialabs.ca
             </a>
           </motion.div>
         </div>

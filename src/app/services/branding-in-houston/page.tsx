@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["houston"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Houston | TML Agency",
+  title: "Branding Agency in Houston | TML Agency",
   description: "TML offers expert branding services in Houston. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding houston", "branding agency houston", "branding company houston"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-houston",
+    canonical: "https://townmedialabs.ca/services/branding-in-houston",
   },
   openGraph: {
-    title: "Best Branding Agency in Houston | TML Agency",
+    title: "Branding Agency in Houston | TML Agency",
     description: "TML offers expert branding services in Houston. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-houston",
+    url: "https://townmedialabs.ca/services/branding-in-houston",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Houston | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Houston | TML Agency",
+    title: "Branding Agency in Houston | TML Agency",
     description: "TML offers expert branding services in Houston. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

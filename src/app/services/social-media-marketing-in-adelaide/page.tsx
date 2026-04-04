@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["adelaide"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Adelaide | TML Agency",
+  title: "Social Media Marketing Agency in Adelaide | TML Agency",
   description: "TML offers expert social media marketing services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing adelaide", "social media marketing agency adelaide", "social media marketing company adelaide"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-adelaide",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-adelaide",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Adelaide | TML Agency",
+    title: "Social Media Marketing Agency in Adelaide | TML Agency",
     description: "TML offers expert social media marketing services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-adelaide",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-adelaide",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Adelaide | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Adelaide | TML Agency",
+    title: "Social Media Marketing Agency in Adelaide | TML Agency",
     description: "TML offers expert social media marketing services in Adelaide. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

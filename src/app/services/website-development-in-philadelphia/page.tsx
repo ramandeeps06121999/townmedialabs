@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["philadelphia"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Philadelphia | TML Agency",
+  title: "Website Development Agency in Philadelphia | TML Agency",
   description: "TML offers expert website development services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development philadelphia", "website development agency philadelphia", "website development company philadelphia"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-philadelphia",
+    canonical: "https://townmedialabs.ca/services/website-development-in-philadelphia",
   },
   openGraph: {
-    title: "Best Website Development Agency in Philadelphia | TML Agency",
+    title: "Website Development Agency in Philadelphia | TML Agency",
     description: "TML offers expert website development services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-philadelphia",
+    url: "https://townmedialabs.ca/services/website-development-in-philadelphia",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Philadelphia | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Philadelphia | TML Agency",
+    title: "Website Development Agency in Philadelphia | TML Agency",
     description: "TML offers expert website development services in Philadelphia. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

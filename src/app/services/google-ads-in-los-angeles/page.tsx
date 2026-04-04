@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["los_angeles"];
 
 export const metadata: Metadata = {
-  title: "Best Google Ads Agency in Los Angeles | TML Agency",
+  title: "Google Ads Agency in Los Angeles | TML Agency",
   description: "TML offers expert google ads services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["google ads los angeles", "google ads agency los angeles", "google ads company los angeles"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/google-ads-in-los-angeles",
+    canonical: "https://townmedialabs.ca/services/google-ads-in-los-angeles",
   },
   openGraph: {
-    title: "Best Google Ads Agency in Los Angeles | TML Agency",
+    title: "Google Ads Agency in Los Angeles | TML Agency",
     description: "TML offers expert google ads services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/google-ads-in-los-angeles",
+    url: "https://townmedialabs.ca/services/google-ads-in-los-angeles",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Google Ads Agency in Los Angeles | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Google Ads Agency in Los Angeles | TML Agency",
+    title: "Google Ads Agency in Los Angeles | TML Agency",
     description: "TML offers expert google ads services in Los Angeles. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

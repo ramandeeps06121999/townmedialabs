@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["hamilton"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Hamilton | TML Agency",
+  title: "Music Release Agency in Hamilton | TML Agency",
   description: "TML offers expert music release services in Hamilton, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
   keywords: ["music release hamilton", "music release agency hamilton", "music release hamilton nz"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-hamilton",
+    canonical: "https://townmedialabs.ca/services/music-release-in-hamilton",
   },
   openGraph: {
-    title: "Best Music Release Agency in Hamilton | TML Agency",
+    title: "Music Release Agency in Hamilton | TML Agency",
     description: "TML offers expert music release services in Hamilton, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-hamilton",
+    url: "https://townmedialabs.ca/services/music-release-in-hamilton",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Hamilton | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Hamilton | TML Agency",
+    title: "Music Release Agency in Hamilton | TML Agency",
     description: "TML offers expert music release services in Hamilton, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
     images: ["/og-image.png"],
   },

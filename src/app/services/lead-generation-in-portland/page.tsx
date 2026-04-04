@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["portland"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Portland | TML Agency",
+  title: "Lead Generation Agency in Portland | TML Agency",
   description: "TML offers expert lead generation services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation portland", "lead generation agency portland", "lead generation company portland"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-portland",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-portland",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Portland | TML Agency",
+    title: "Lead Generation Agency in Portland | TML Agency",
     description: "TML offers expert lead generation services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-portland",
+    url: "https://townmedialabs.ca/services/lead-generation-in-portland",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Portland | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Portland | TML Agency",
+    title: "Lead Generation Agency in Portland | TML Agency",
     description: "TML offers expert lead generation services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

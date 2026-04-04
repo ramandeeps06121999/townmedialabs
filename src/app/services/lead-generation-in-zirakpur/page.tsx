@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["zirakpur"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Zirakpur | TML Agency",
+  title: "Lead Generation Agency in Zirakpur | TML Agency",
   description: "TML offers expert lead generation services in Zirakpur. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation zirakpur", "lead generation agency zirakpur", "lead generation company zirakpur"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-zirakpur",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-zirakpur",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Zirakpur | TML Agency",
+    title: "Lead Generation Agency in Zirakpur | TML Agency",
     description: "TML offers expert lead generation services in Zirakpur. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-zirakpur",
+    url: "https://townmedialabs.ca/services/lead-generation-in-zirakpur",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Zirakpur | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Zirakpur | TML Agency",
+    title: "Lead Generation Agency in Zirakpur | TML Agency",
     description: "TML offers expert lead generation services in Zirakpur. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

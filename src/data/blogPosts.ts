@@ -1,4 +1,5 @@
 import { blogArticles } from "./blogArticles";
+import { getAuthorBySlug } from "./authors";
 
 export interface BlogPost {
   slug: string;
@@ -9,6 +10,7 @@ export interface BlogPost {
   readTime: string;
   image: string;
   featured?: boolean;
+  authorName: string;
 }
 
 // Hand-curated featured post
@@ -25,6 +27,7 @@ export const blogPosts: BlogPost[] = Object.entries(blogArticles).map(
     readTime: article.readTime,
     image: "/blog/branding-agencies.jpg",
     featured: featuredSlugs.has(slug),
+    authorName: getAuthorBySlug(slug).name,
   })
 );
 

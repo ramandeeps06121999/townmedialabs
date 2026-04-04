@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ambala"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Ambala | TML Agency",
+  title: "Graphic Design Agency in Ambala | TML Agency",
   description: "TML offers expert graphic design services in Ambala. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design ambala", "graphic design agency ambala", "graphic design company ambala"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-ambala",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-ambala",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Ambala | TML Agency",
+    title: "Graphic Design Agency in Ambala | TML Agency",
     description: "TML offers expert graphic design services in Ambala. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-ambala",
+    url: "https://townmedialabs.ca/services/graphic-design-in-ambala",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Ambala | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Ambala | TML Agency",
+    title: "Graphic Design Agency in Ambala | TML Agency",
     description: "TML offers expert graphic design services in Ambala. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

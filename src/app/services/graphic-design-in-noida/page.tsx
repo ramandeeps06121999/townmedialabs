@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["noida"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Noida | TML Agency",
+  title: "Graphic Design Agency in Noida | TML Agency",
   description: "TML offers expert graphic design services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design noida", "graphic design agency noida", "graphic design company noida"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-noida",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-noida",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Noida | TML Agency",
+    title: "Graphic Design Agency in Noida | TML Agency",
     description: "TML offers expert graphic design services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-noida",
+    url: "https://townmedialabs.ca/services/graphic-design-in-noida",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Noida | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Noida | TML Agency",
+    title: "Graphic Design Agency in Noida | TML Agency",
     description: "TML offers expert graphic design services in Noida. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

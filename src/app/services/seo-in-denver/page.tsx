@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["denver"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Denver | TML Agency",
+  title: "SEO Agency in Denver | TML Agency",
   description: "TML offers expert seo services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo denver", "seo agency denver", "seo company denver"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-denver",
+    canonical: "https://townmedialabs.ca/services/seo-in-denver",
   },
   openGraph: {
-    title: "Best SEO Agency in Denver | TML Agency",
+    title: "SEO Agency in Denver | TML Agency",
     description: "TML offers expert seo services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-denver",
+    url: "https://townmedialabs.ca/services/seo-in-denver",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Denver | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Denver | TML Agency",
+    title: "SEO Agency in Denver | TML Agency",
     description: "TML offers expert seo services in Denver. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

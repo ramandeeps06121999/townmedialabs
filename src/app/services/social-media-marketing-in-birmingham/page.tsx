@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["birmingham"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Birmingham | TML Agency",
+  title: "Social Media Marketing Agency in Birmingham | TML Agency",
   description: "TML offers expert social media marketing services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing birmingham", "social media marketing agency birmingham", "social media marketing company birmingham"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-birmingham",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-birmingham",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Birmingham | TML Agency",
+    title: "Social Media Marketing Agency in Birmingham | TML Agency",
     description: "TML offers expert social media marketing services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-birmingham",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-birmingham",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Birmingham | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Birmingham | TML Agency",
+    title: "Social Media Marketing Agency in Birmingham | TML Agency",
     description: "TML offers expert social media marketing services in Birmingham. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

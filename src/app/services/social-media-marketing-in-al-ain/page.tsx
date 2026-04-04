@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["al_ain"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Al Ain | TML Agency",
+  title: "Social Media Marketing Agency in Al Ain | TML Agency",
   description: "TML offers expert social media marketing services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing al ain", "social media marketing agency al ain", "social media marketing company al ain"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-al-ain",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-al-ain",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Al Ain | TML Agency",
+    title: "Social Media Marketing Agency in Al Ain | TML Agency",
     description: "TML offers expert social media marketing services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-al-ain",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-al-ain",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Al Ain | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Al Ain | TML Agency",
+    title: "Social Media Marketing Agency in Al Ain | TML Agency",
     description: "TML offers expert social media marketing services in Al Ain. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

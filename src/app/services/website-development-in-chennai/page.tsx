@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["chennai"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Chennai | TML Agency",
+  title: "Website Development Agency in Chennai | TML Agency",
   description: "TML offers expert website development services in Chennai. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development chennai", "website development agency chennai", "website development company chennai"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-chennai",
+    canonical: "https://townmedialabs.ca/services/website-development-in-chennai",
   },
   openGraph: {
-    title: "Best Website Development Agency in Chennai | TML Agency",
+    title: "Website Development Agency in Chennai | TML Agency",
     description: "TML offers expert website development services in Chennai. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-chennai",
+    url: "https://townmedialabs.ca/services/website-development-in-chennai",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Chennai | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Chennai | TML Agency",
+    title: "Website Development Agency in Chennai | TML Agency",
     description: "TML offers expert website development services in Chennai. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

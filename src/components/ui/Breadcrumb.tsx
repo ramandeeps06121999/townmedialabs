@@ -81,9 +81,9 @@ function ChevronRightIcon({ className = "" }: { className?: string }) {
  * Usage:
  * 1. With explicit items:
  *    <Breadcrumb items={[
- *      { name: "Home", url: "https://townmedialabs.com" },
- *      { name: "Services", url: "https://townmedialabs.com/services" },
- *      { name: "Branding", url: "https://townmedialabs.com/services/branding" }
+ *      { name: "Home", url: "https://townmedialabs.ca" },
+ *      { name: "Services", url: "https://townmedialabs.ca/services" },
+ *      { name: "Branding", url: "https://townmedialabs.ca/services/branding" }
  *    ]} />
  * 
  * 2. Auto-generated from pathname (requires usePathname):
@@ -98,10 +98,10 @@ export default function Breadcrumb({
   
   // If items are not provided, generate from pathname
   const breadcrumbItems: BreadcrumbItem[] = items || (() => {
-    if (!pathname) return [{ name: homeLabel, url: "https://townmedialabs.com" }];
+    if (!pathname) return [{ name: homeLabel, url: "https://townmedialabs.ca" }];
     
     const segments = pathname.split("/").filter(Boolean);
-    const items: BreadcrumbItem[] = [{ name: homeLabel, url: "https://townmedialabs.com" }];
+    const items: BreadcrumbItem[] = [{ name: homeLabel, url: "https://townmedialabs.ca" }];
     
     let currentPath = "";
     segments.forEach((segment) => {
@@ -113,7 +113,7 @@ export default function Breadcrumb({
       
       items.push({
         name,
-        url: `https://townmedialabs.com${currentPath}`,
+        url: `https://townmedialabs.ca${currentPath}`,
       });
     });
     

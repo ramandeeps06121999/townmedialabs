@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["indore"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Indore | TML Agency",
+  title: "AI Influencer Management Agency in Indore | TML Agency",
   description: "TML offers expert AI influencer management services in Indore. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["AI influencer management indore", "AI influencer management agency indore", "AI influencer management company indore"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-indore",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-indore",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Indore | TML Agency",
+    title: "AI Influencer Management Agency in Indore | TML Agency",
     description: "TML offers expert AI influencer management services in Indore. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-indore",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-indore",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Indore | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Indore | TML Agency",
+    title: "AI Influencer Management Agency in Indore | TML Agency",
     description: "TML offers expert AI influencer management services in Indore. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

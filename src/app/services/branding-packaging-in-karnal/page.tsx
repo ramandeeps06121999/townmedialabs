@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["karnal"];
 
 export const metadata: Metadata = {
-  title: "Best Branding & Packaging Agency in Karnal | TML Agency",
+  title: "Branding & Packaging Agency in Karnal | TML Agency",
   description: "TML offers expert branding and packaging services in Karnal. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding and packaging karnal", "branding and packaging agency karnal", "branding and packaging company karnal"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-karnal",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-karnal",
   },
   openGraph: {
-    title: "Best Branding & Packaging Agency in Karnal | TML Agency",
+    title: "Branding & Packaging Agency in Karnal | TML Agency",
     description: "TML offers expert branding and packaging services in Karnal. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-karnal",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-karnal",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding & Packaging Agency in Karnal | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding & Packaging Agency in Karnal | TML Agency",
+    title: "Branding & Packaging Agency in Karnal | TML Agency",
     description: "TML offers expert branding and packaging services in Karnal. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

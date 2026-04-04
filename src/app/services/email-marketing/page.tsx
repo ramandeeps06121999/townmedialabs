@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/templates/ServicePageTemplate";
 import { ServicePageSchema } from "@/components/schema/ServicePageSchema";
 
 const data = servicePages["email-marketing"];
-const siteUrl = "https://townmedialabs.com";
+const siteUrl = "https://townmedialabs.ca";
 
 export const metadata: Metadata = {
   title: data.metaTitle,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: `${siteUrl}/services/${data.slug}`,
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [
       {
         url: "/og-image.png",

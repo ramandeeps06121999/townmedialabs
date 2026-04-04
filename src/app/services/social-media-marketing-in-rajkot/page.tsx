@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["rajkot"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Rajkot | TML Agency",
+  title: "Social Media Marketing Agency in Rajkot | TML Agency",
   description: "TML offers expert social media marketing services in Rajkot. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing rajkot", "social media marketing agency rajkot", "social media marketing company rajkot"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-rajkot",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-rajkot",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Rajkot | TML Agency",
+    title: "Social Media Marketing Agency in Rajkot | TML Agency",
     description: "TML offers expert social media marketing services in Rajkot. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-rajkot",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-rajkot",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Rajkot | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Rajkot | TML Agency",
+    title: "Social Media Marketing Agency in Rajkot | TML Agency",
     description: "TML offers expert social media marketing services in Rajkot. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

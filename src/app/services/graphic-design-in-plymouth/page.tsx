@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["plymouth"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Plymouth | TML Agency",
+  title: "Graphic Design Agency in Plymouth | TML Agency",
   description: "TML offers expert graphic design services in Plymouth. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design plymouth", "graphic design agency plymouth", "graphic design company plymouth"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-plymouth",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-plymouth",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Plymouth | TML Agency",
+    title: "Graphic Design Agency in Plymouth | TML Agency",
     description: "TML offers expert graphic design services in Plymouth. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-plymouth",
+    url: "https://townmedialabs.ca/services/graphic-design-in-plymouth",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Plymouth | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Plymouth | TML Agency",
+    title: "Graphic Design Agency in Plymouth | TML Agency",
     description: "TML offers expert graphic design services in Plymouth. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

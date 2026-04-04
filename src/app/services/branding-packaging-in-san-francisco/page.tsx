@@ -6,25 +6,25 @@ const location = locations["san_francisco"];
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
-  title: "Best Packaging Design Agency in San Francisco | TML Agency",
+  title: "Packaging Design Agency in San Francisco | TML Agency",
   description: "TML offers expert packaging design services in San Francisco. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design san francisco", "packaging design agency san francisco", "packaging design company san francisco"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-san-francisco",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-san-francisco",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in San Francisco | TML Agency",
+    title: "Packaging Design Agency in San Francisco | TML Agency",
     description: "TML offers expert packaging design services in San Francisco. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-san-francisco",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-san-francisco",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in San Francisco | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in San Francisco | TML Agency",
+    title: "Packaging Design Agency in San Francisco | TML Agency",
     description: "TML offers expert packaging design services in San Francisco. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

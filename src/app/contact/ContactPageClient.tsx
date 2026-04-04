@@ -10,6 +10,17 @@ const ease = [0.23, 1, 0.32, 1] as const;
 
 const contactCards = [
   {
+    label: "Edmonton Office",
+    value: "11930 104 St NW, Edmonton, AB T5G 2K1",
+    href: "https://maps.google.com/?q=11930+104+St+NW,+Edmonton,+AB+T5G+2K1,+Canada",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    ),
+  },
+  {
     label: "India Office",
     value: "CO 112, Basement, Sector 34A, Chandigarh 160022",
     href: "https://maps.google.com/?q=Townmedialabs+Sector+34A+Chandigarh",
@@ -44,8 +55,8 @@ const contactCards = [
   },
   {
     label: "Email",
-    value: "info@townmedialabs.com",
-    href: "mailto:info@townmedialabs.com",
+    value: "info@townmedialabs.ca",
+    href: "mailto:info@townmedialabs.ca",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -210,7 +221,7 @@ export default function ContactPageClient() {
       {/* ── Contact Info Cards ── */}
       <section className="relative w-full px-6 py-8 md:py-12 lg:px-12">
         <div className="relative mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {contactCards.map((card, i) => (
               <motion.a
                 key={card.label}
@@ -657,19 +668,69 @@ export default function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease }}
-            className="rounded-2xl border border-white/[0.06] overflow-hidden"
+            className="text-center mb-10"
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.5!2d76.7558!3d30.7333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0abe888887%3A0x5c7a52e033e3a3a9!2sTownmedialabs!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.95) contrast(1.1)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="TML Agency Chandigarh Office Location"
-            />
+            <p className="text-[11px] text-white tracking-[0.25em] uppercase mb-4">
+              Our Locations
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">
+              Find{" "}
+              <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
+                Us
+              </span>
+            </h2>
           </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Chandigarh Office */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease }}
+              className="rounded-2xl border border-white/[0.06] overflow-hidden"
+            >
+              <div className="p-5 border-b border-white/[0.06] bg-white/[0.02]">
+                <h3 className="text-lg font-semibold text-white">Chandigarh Office</h3>
+                <p className="text-sm text-white/60 mt-1">CO 112, Basement, Sector 34A, Chandigarh 160022</p>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.5!2d76.7558!3d30.7333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0abe888887%3A0x5c7a52e033e3a3a9!2sTownmedialabs!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.95) contrast(1.1)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="TML Agency Chandigarh Office Location"
+              />
+            </motion.div>
+
+            {/* Edmonton Office */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1, ease }}
+              className="rounded-2xl border border-white/[0.06] overflow-hidden"
+            >
+              <div className="p-5 border-b border-white/[0.06] bg-white/[0.02]">
+                <h3 className="text-lg font-semibold text-white">Edmonton Office</h3>
+                <p className="text-sm text-white/60 mt-1">11930 104 St NW, Edmonton, AB T5G 2K1, Canada</p>
+              </div>
+              <iframe
+                src="https://maps.google.com/maps?q=11930+104+St+NW,+Edmonton,+AB+T5G+2K1,+Canada&output=embed"
+                width="100%"
+                height="300"
+                style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.95) contrast(1.1)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="TML Agency Edmonton Office Location"
+                className="rounded-b-xl"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 

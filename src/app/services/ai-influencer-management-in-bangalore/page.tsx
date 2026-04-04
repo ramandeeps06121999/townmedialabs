@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["bangalore"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Bangalore | TML Agency",
+  title: "AI Influencer Management Agency in Bangalore | TML Agency",
   description: "TML offers expert AI influencer management services in Bangalore. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["AI influencer management bangalore", "AI influencer management agency bangalore", "AI influencer management company bangalore"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-bangalore",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-bangalore",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Bangalore | TML Agency",
+    title: "AI Influencer Management Agency in Bangalore | TML Agency",
     description: "TML offers expert AI influencer management services in Bangalore. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-bangalore",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-bangalore",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Bangalore | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Bangalore | TML Agency",
+    title: "AI Influencer Management Agency in Bangalore | TML Agency",
     description: "TML offers expert AI influencer management services in Bangalore. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

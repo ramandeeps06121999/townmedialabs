@@ -24,7 +24,7 @@ const syne = Syne({
   adjustFontFallback: true,
 });
 
-const siteUrl = "https://townmedialabs.com";
+const siteUrl = "https://townmedialabs.ca";
 
 export const metadata: Metadata = {
   title: {
@@ -35,9 +35,12 @@ export const metadata: Metadata = {
     "TML is a full-service branding and digital marketing agency with 15+ years of experience. We specialize in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 500+ brands scaled, 98% client retention.",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -78,7 +81,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [
       {
         url: "/og-image.png",
@@ -97,6 +100,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
+    "max-video-preview": -1,
+    "max-image-preview": "large",
+    "max-snippet": -1,
     googleBot: {
       index: true,
       follow: true,
@@ -120,7 +127,7 @@ const organizationJsonLd = {
     width: 512,
     height: 512,
   },
-  email: "info@townmedialabs.com",
+  email: "info@townmedialabs.ca",
   telephone: "+91-98726-48209",
   description:
     "Full-service digital marketing and branding agency based in Chandigarh, India. Specialising in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 500+ brands scaled, 15+ years of experience.",
@@ -149,17 +156,16 @@ const organizationJsonLd = {
       "@type": "ContactPoint",
       telephone: "+91-98726-48209",
       contactType: "customer service",
-      email: "info@townmedialabs.com",
+      email: "info@townmedialabs.ca",
       availableLanguage: ["English", "Hindi"],
       areaServed: ["IN", "US", "GB", "CA", "AU", "NZ", "AE"],
     },
   ],
   sameAs: [
-    "https://www.facebook.com/Town.media.labs",
-    "https://www.instagram.com/townmedialabs/",
-    "https://in.linkedin.com/company/townmedialabs",
-    "https://x.com/tmlagency",
-    "https://www.youtube.com/@tmlagency",
+    "https://www.instagram.com/tmlagency/",
+    "https://www.facebook.com/tmlagency/",
+    "https://www.linkedin.com/company/tmlagency/",
+    "https://twitter.com/tmlagency",
   ],
   knowsAbout: [
     "Digital Marketing",
@@ -182,7 +188,7 @@ const localBusinessJsonLd = {
   name: "TML Agency",
   url: siteUrl,
   telephone: "+91-98726-48209",
-  email: "info@townmedialabs.com",
+  email: "info@townmedialabs.ca",
   image: `${siteUrl}/logo.png`,
   description:
     "Full-service branding and digital marketing agency based in Chandigarh, India. 500+ brands scaled, 15+ years of experience.",
@@ -248,11 +254,10 @@ const localBusinessJsonLd = {
     },
   ],
   sameAs: [
-    "https://www.facebook.com/Town.media.labs",
-    "https://www.instagram.com/townmedialabs/",
-    "https://in.linkedin.com/company/townmedialabs",
-    "https://x.com/tmlagency",
-    "https://www.youtube.com/@tmlagency",
+    "https://www.instagram.com/tmlagency/",
+    "https://www.facebook.com/tmlagency/",
+    "https://www.linkedin.com/company/tmlagency/",
+    "https://twitter.com/tmlagency",
   ],
   knowsAbout: [
     "Branding",

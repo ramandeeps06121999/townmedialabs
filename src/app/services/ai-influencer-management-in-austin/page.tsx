@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["austin"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Austin | TML Agency",
+  title: "AI Influencer Management Agency in Austin | TML Agency",
   description: "TML offers expert ai influencer management services in Austin. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management austin", "ai influencer management agency austin", "ai influencer management company austin"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-austin",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-austin",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Austin | TML Agency",
+    title: "AI Influencer Management Agency in Austin | TML Agency",
     description: "TML offers expert ai influencer management services in Austin. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-austin",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-austin",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Austin | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Austin | TML Agency",
+    title: "AI Influencer Management Agency in Austin | TML Agency",
     description: "TML offers expert ai influencer management services in Austin. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

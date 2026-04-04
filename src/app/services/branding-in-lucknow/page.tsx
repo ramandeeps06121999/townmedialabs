@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["lucknow"];
 
 export const metadata: Metadata = {
-  title: "Best Branding Agency in Lucknow | TML Agency",
+  title: "Branding Agency in Lucknow | TML Agency",
   description: "TML offers expert branding services in Lucknow. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["branding lucknow", "branding agency lucknow", "branding company lucknow"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-in-lucknow",
+    canonical: "https://townmedialabs.ca/services/branding-in-lucknow",
   },
   openGraph: {
-    title: "Best Branding Agency in Lucknow | TML Agency",
+    title: "Branding Agency in Lucknow | TML Agency",
     description: "TML offers expert branding services in Lucknow. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-in-lucknow",
+    url: "https://townmedialabs.ca/services/branding-in-lucknow",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Branding Agency in Lucknow | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Branding Agency in Lucknow | TML Agency",
+    title: "Branding Agency in Lucknow | TML Agency",
     description: "TML offers expert branding services in Lucknow. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

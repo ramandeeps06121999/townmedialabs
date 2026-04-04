@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["indianapolis"];
 
 export const metadata: Metadata = {
-  title: "Best Website Development Agency in Indianapolis | TML Agency",
+  title: "Website Development Agency in Indianapolis | TML Agency",
   description: "TML offers expert website development services in Indianapolis. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["website development indianapolis", "website development agency indianapolis", "website development company indianapolis"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/website-development-in-indianapolis",
+    canonical: "https://townmedialabs.ca/services/website-development-in-indianapolis",
   },
   openGraph: {
-    title: "Best Website Development Agency in Indianapolis | TML Agency",
+    title: "Website Development Agency in Indianapolis | TML Agency",
     description: "TML offers expert website development services in Indianapolis. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/website-development-in-indianapolis",
+    url: "https://townmedialabs.ca/services/website-development-in-indianapolis",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Website Development Agency in Indianapolis | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Website Development Agency in Indianapolis | TML Agency",
+    title: "Website Development Agency in Indianapolis | TML Agency",
     description: "TML offers expert website development services in Indianapolis. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

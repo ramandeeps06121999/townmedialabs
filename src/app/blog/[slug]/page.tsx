@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = blogArticles[slug];
   if (!article) return {};
 
-  const siteUrl = "https://townmedialabs.com";
+  const siteUrl = "https://townmedialabs.ca";
   const author = getAuthorBySlug(slug);
 
   const seoTitle = article.metaTitle || article.title;
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${siteUrl}/blog/${slug}`,
       siteName: "TML Agency",
       type: "article",
-      locale: "en_IN",
+      locale: "en_CA",
       publishedTime: article.date,
       modifiedTime: article.date,
       authors: author ? [author.name] : ["TML Agency"],
@@ -56,7 +56,7 @@ export default async function BlogSlugPage({ params }: Props) {
   const article = blogArticles[slug];
   if (!article) notFound();
 
-  const siteUrl = "https://townmedialabs.com";
+  const siteUrl = "https://townmedialabs.ca";
   const author = getAuthorBySlug(slug);
 
   const articleJsonLd = generateArticleSchema({

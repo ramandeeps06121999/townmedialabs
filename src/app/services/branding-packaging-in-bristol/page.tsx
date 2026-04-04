@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["bristol"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Bristol | TML Agency",
+  title: "Packaging Design Agency in Bristol | TML Agency",
   description: "TML offers expert packaging design services in Bristol. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design bristol", "packaging design agency bristol", "packaging design company bristol"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-bristol",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-bristol",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Bristol | TML Agency",
+    title: "Packaging Design Agency in Bristol | TML Agency",
     description: "TML offers expert packaging design services in Bristol. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-bristol",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-bristol",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Bristol | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Bristol | TML Agency",
+    title: "Packaging Design Agency in Bristol | TML Agency",
     description: "TML offers expert packaging design services in Bristol. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

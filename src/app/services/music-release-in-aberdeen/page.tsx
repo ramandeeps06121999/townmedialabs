@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["aberdeen"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Aberdeen | TML Agency",
+  title: "Music Release Agency in Aberdeen | TML Agency",
   description: "TML offers expert music release services in Aberdeen. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release aberdeen", "music release agency aberdeen", "music release company aberdeen"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-aberdeen",
+    canonical: "https://townmedialabs.ca/services/music-release-in-aberdeen",
   },
   openGraph: {
-    title: "Best Music Release Agency in Aberdeen | TML Agency",
+    title: "Music Release Agency in Aberdeen | TML Agency",
     description: "TML offers expert music release services in Aberdeen. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-aberdeen",
+    url: "https://townmedialabs.ca/services/music-release-in-aberdeen",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Aberdeen | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Aberdeen | TML Agency",
+    title: "Music Release Agency in Aberdeen | TML Agency",
     description: "TML offers expert music release services in Aberdeen. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

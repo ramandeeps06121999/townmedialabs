@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 interface AnimatedCounterProps {
   target: number;
   suffix?: string;
+  prefix?: string;
+  decimals?: number;
   duration?: number;
   className?: string;
 }
@@ -12,6 +14,8 @@ interface AnimatedCounterProps {
 export function AnimatedCounter({
   target,
   suffix = "",
+  prefix = "",
+  decimals = 0,
   duration = 1.5,
   className,
 }: AnimatedCounterProps) {
@@ -46,7 +50,8 @@ export function AnimatedCounter({
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
       // ease-out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * target));
+      const rawValue = eased * target;
+      setCount(decimals > 0 ? parseFloat(rawValue.toFixed(decimals)) : Math.floor(rawValue));
 
       if (progress < 1) {
         frame = requestAnimationFrame(animate);
@@ -55,11 +60,12 @@ export function AnimatedCounter({
 
     frame = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(frame);
-  }, [isInView, target, duration]);
+  }, [isInView, target, duration, decimals]);
 
   return (
     <span ref={ref} className={className}>
-      {count}
+      {prefix}
+      {decimals > 0 ? count.toFixed(decimals) : count}
       {suffix}
     </span>
   );

@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["ajman"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Ajman | TML Agency",
+  title: "Packaging Design Agency in Ajman | TML Agency",
   description: "TML offers expert packaging design services in Ajman. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design ajman", "packaging design agency ajman", "packaging design company ajman"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-ajman",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-ajman",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Ajman | TML Agency",
+    title: "Packaging Design Agency in Ajman | TML Agency",
     description: "TML offers expert packaging design services in Ajman. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-ajman",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-ajman",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Ajman | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Ajman | TML Agency",
+    title: "Packaging Design Agency in Ajman | TML Agency",
     description: "TML offers expert packaging design services in Ajman. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

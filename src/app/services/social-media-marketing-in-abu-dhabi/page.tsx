@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["abu_dhabi"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Abu Dhabi | TML Agency",
+  title: "Social Media Marketing Agency in Abu Dhabi | TML Agency",
   description: "TML offers expert social media marketing services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing abu dhabi", "social media marketing agency abu dhabi", "social media marketing company abu dhabi"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-abu-dhabi",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-abu-dhabi",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Abu Dhabi | TML Agency",
+    title: "Social Media Marketing Agency in Abu Dhabi | TML Agency",
     description: "TML offers expert social media marketing services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-abu-dhabi",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-abu-dhabi",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Abu Dhabi | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Abu Dhabi | TML Agency",
+    title: "Social Media Marketing Agency in Abu Dhabi | TML Agency",
     description: "TML offers expert social media marketing services in Abu Dhabi. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

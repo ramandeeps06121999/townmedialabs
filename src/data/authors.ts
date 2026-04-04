@@ -15,7 +15,7 @@ export const authors: Record<string, Author> = {
     id: "raman-makkar",
     name: "Raman Makkar",
     title: "Founder & SEO Strategist",
-    bio: "Raman is the founder of Town Media Labs (TML Agency), a full-service digital marketing agency serving 500+ brands across India. With 10+ years of experience in SEO, brand strategy, and digital marketing, Raman specializes in helping businesses achieve sustainable growth through data-driven strategies and human-centered brand building.",
+    bio: "Raman is the founder of TML Agency, a full-service digital marketing agency serving 500+ brands across India. With 10+ years of experience in SEO, brand strategy, and digital marketing, Raman specializes in helping businesses achieve sustainable growth through data-driven strategies and human-centered brand building.",
     expertise: ["SEO", "Branding", "Digital Marketing Strategy", "Growth Strategy"],
     yearsOfExperience: 10,
     linkedin: "https://linkedin.com/in/ramanmakkar",
@@ -25,7 +25,7 @@ export const authors: Record<string, Author> = {
     id: "tml-agency",
     name: "TML Agency",
     title: "Editorial Team",
-    bio: "Town Media Labs (TML Agency) is a full-service branding and digital marketing agency founded in 2010. Our team of 70+ designers, developers, strategists, and marketers create comprehensive brand ecosystems for businesses across India. We combine creativity with data-driven insights to deliver measurable results.",
+    bio: "TML Agency is a full-service branding and digital marketing agency founded in 2010. Our team of 70+ designers, developers, strategists, and marketers create comprehensive brand ecosystems for businesses across India. We combine creativity with data-driven insights to deliver measurable results.",
     expertise: ["Branding", "Web Development", "Digital Marketing", "Video Production", "Google Ads", "SEO"],
     yearsOfExperience: 10,
     linkedin: "https://linkedin.com/company/town-media-labs",
@@ -130,10 +130,13 @@ export const articleAuthorMap: Record<string, string> = {
   "branding-agencies-in-ahmedabad": "raman-makkar",
 };
 
-export function getAuthorBySlug(slug: string): Author | null {
-  const authorId = articleAuthorMap[slug];
-  if (!authorId) return null;
-  return authors[authorId] || null;
+/**
+ * Return the author for a given blog article slug.
+ * Falls back to the "tml-agency" default so every post has clear authorship (E-E-A-T).
+ */
+export function getAuthorBySlug(slug: string): Author {
+  const authorId = articleAuthorMap[slug] ?? "tml-agency";
+  return authors[authorId] ?? authors["tml-agency"];
 }
 
 export function getAuthorById(id: string): Author | null {

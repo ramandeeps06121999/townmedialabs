@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["darwin"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Darwin | TML Agency",
+  title: "Social Media Marketing Agency in Darwin | TML Agency",
   description: "TML offers expert social media marketing services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["social media marketing darwin", "social media marketing agency darwin", "social media marketing company darwin"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-darwin",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-darwin",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Darwin | TML Agency",
+    title: "Social Media Marketing Agency in Darwin | TML Agency",
     description: "TML offers expert social media marketing services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-darwin",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-darwin",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Darwin | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Darwin | TML Agency",
+    title: "Social Media Marketing Agency in Darwin | TML Agency",
     description: "TML offers expert social media marketing services in Darwin. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

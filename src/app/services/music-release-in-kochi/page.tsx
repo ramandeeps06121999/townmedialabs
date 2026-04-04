@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["kochi"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Kochi | TML Agency",
+  title: "Music Release Agency in Kochi | TML Agency",
   description: "TML offers expert music release and distribution services in Kochi. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["music release and distribution kochi", "music release and distribution agency kochi", "music release and distribution company kochi"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-kochi",
+    canonical: "https://townmedialabs.ca/services/music-release-in-kochi",
   },
   openGraph: {
-    title: "Best Music Release Agency in Kochi | TML Agency",
+    title: "Music Release Agency in Kochi | TML Agency",
     description: "TML offers expert music release and distribution services in Kochi. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-kochi",
+    url: "https://townmedialabs.ca/services/music-release-in-kochi",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Kochi | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Kochi | TML Agency",
+    title: "Music Release Agency in Kochi | TML Agency",
     description: "TML offers expert music release and distribution services in Kochi. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

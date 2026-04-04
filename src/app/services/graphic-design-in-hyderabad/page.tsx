@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["hyderabad"];
 
 export const metadata: Metadata = {
-  title: "Best Graphic Design Agency in Hyderabad | TML Agency",
+  title: "Graphic Design Agency in Hyderabad | TML Agency",
   description: "TML offers expert graphic design services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["graphic design hyderabad", "graphic design agency hyderabad", "graphic design company hyderabad"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/graphic-design-in-hyderabad",
+    canonical: "https://townmedialabs.ca/services/graphic-design-in-hyderabad",
   },
   openGraph: {
-    title: "Best Graphic Design Agency in Hyderabad | TML Agency",
+    title: "Graphic Design Agency in Hyderabad | TML Agency",
     description: "TML offers expert graphic design services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/graphic-design-in-hyderabad",
+    url: "https://townmedialabs.ca/services/graphic-design-in-hyderabad",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Graphic Design Agency in Hyderabad | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Graphic Design Agency in Hyderabad | TML Agency",
+    title: "Graphic Design Agency in Hyderabad | TML Agency",
     description: "TML offers expert graphic design services in Hyderabad. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

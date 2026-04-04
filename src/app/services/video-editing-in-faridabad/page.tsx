@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["faridabad"];
 
 export const metadata: Metadata = {
-  title: "Best Video Editing Agency in Faridabad | TML Agency",
+  title: "Video Editing Agency in Faridabad | TML Agency",
   description: "TML offers expert video editing services in Faridabad. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing faridabad", "video editing agency faridabad", "video editing company faridabad"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-faridabad",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-faridabad",
   },
   openGraph: {
-    title: "Best Video Editing Agency in Faridabad | TML Agency",
+    title: "Video Editing Agency in Faridabad | TML Agency",
     description: "TML offers expert video editing services in Faridabad. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/video-editing-in-faridabad",
+    url: "https://townmedialabs.ca/services/video-editing-in-faridabad",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Faridabad | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Video Editing Agency in Faridabad | TML Agency",
+    title: "Video Editing Agency in Faridabad | TML Agency",
     description: "TML offers expert video editing services in Faridabad. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

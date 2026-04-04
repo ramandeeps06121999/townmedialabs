@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["napier"];
 
 export const metadata: Metadata = {
-  title: "Best Social Media Marketing Agency in Napier | TML Agency",
+  title: "Social Media Marketing Agency in Napier | TML Agency",
   description: "TML offers expert social media marketing services in Napier, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
   keywords: ["social media marketing napier", "social media marketing agency napier", "social media marketing napier nz"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/social-media-marketing-in-napier",
+    canonical: "https://townmedialabs.ca/services/social-media-marketing-in-napier",
   },
   openGraph: {
-    title: "Best Social Media Marketing Agency in Napier | TML Agency",
+    title: "Social Media Marketing Agency in Napier | TML Agency",
     description: "TML offers expert social media marketing services in Napier, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/social-media-marketing-in-napier",
+    url: "https://townmedialabs.ca/services/social-media-marketing-in-napier",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Social Media Marketing Agency in Napier | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Social Media Marketing Agency in Napier | TML Agency",
+    title: "Social Media Marketing Agency in Napier | TML Agency",
     description: "TML offers expert social media marketing services in Napier, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
     images: ["/og-image.png"],
   },

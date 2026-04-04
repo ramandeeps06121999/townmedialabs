@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["dallas"];
 
 export const metadata: Metadata = {
-  title: "Best Packaging Design Agency in Dallas | TML Agency",
+  title: "Packaging Design Agency in Dallas | TML Agency",
   description: "TML offers expert packaging design services in Dallas. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["packaging design dallas", "packaging design agency dallas", "packaging design company dallas"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/branding-packaging-in-dallas",
+    canonical: "https://townmedialabs.ca/services/branding-packaging-in-dallas",
   },
   openGraph: {
-    title: "Best Packaging Design Agency in Dallas | TML Agency",
+    title: "Packaging Design Agency in Dallas | TML Agency",
     description: "TML offers expert packaging design services in Dallas. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/branding-packaging-in-dallas",
+    url: "https://townmedialabs.ca/services/branding-packaging-in-dallas",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Packaging Design Agency in Dallas | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Packaging Design Agency in Dallas | TML Agency",
+    title: "Packaging Design Agency in Dallas | TML Agency",
     description: "TML offers expert packaging design services in Dallas. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

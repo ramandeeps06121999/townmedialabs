@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["newcastle_au"];
 
 export const metadata: Metadata = {
-  title: "Best Google Ads Agency in Newcastle | TML Agency",
+  title: "Google Ads Agency in Newcastle | TML Agency",
   description: "TML offers expert google ads services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["google ads newcastle", "google ads agency newcastle", "google ads company newcastle"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/google-ads-in-newcastle-au",
+    canonical: "https://townmedialabs.ca/services/google-ads-in-newcastle-au",
   },
   openGraph: {
-    title: "Best Google Ads Agency in Newcastle | TML Agency",
+    title: "Google Ads Agency in Newcastle | TML Agency",
     description: "TML offers expert google ads services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/google-ads-in-newcastle-au",
+    url: "https://townmedialabs.ca/services/google-ads-in-newcastle-au",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Google Ads Agency in Newcastle | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Google Ads Agency in Newcastle | TML Agency",
+    title: "Google Ads Agency in Newcastle | TML Agency",
     description: "TML offers expert google ads services in Newcastle. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

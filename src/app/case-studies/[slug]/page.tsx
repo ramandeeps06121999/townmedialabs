@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: study.metaTitle,
       description: study.metaDescription,
-      url: `https://townmedialabs.com/case-studies/${study.slug}`,
+      url: `https://townmedialabs.ca/case-studies/${study.slug}`,
       siteName: "TML Agency",
       type: "article",
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${study.metaTitle} - TML Agency` }],
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `https://townmedialabs.com/case-studies/${study.slug}`,
+      canonical: `https://townmedialabs.ca/case-studies/${study.slug}`,
     },
   };
 }
@@ -57,9 +57,9 @@ export default async function CaseStudyPage({ params }: PageProps) {
   }
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://townmedialabs.com" },
-    { name: "Case Studies", url: "https://townmedialabs.com/case-studies" },
-    { name: study.client, url: `https://townmedialabs.com/case-studies/${study.slug}` },
+    { name: "Home", url: "https://townmedialabs.ca" },
+    { name: "Case Studies", url: "https://townmedialabs.ca/case-studies" },
+    { name: study.client, url: `https://townmedialabs.ca/case-studies/${study.slug}` },
   ]);
 
   const caseStudySchema = {
@@ -67,19 +67,19 @@ export default async function CaseStudyPage({ params }: PageProps) {
     "@type": "Article",
     headline: study.title,
     description: study.metaDescription,
-    url: `https://townmedialabs.com/case-studies/${study.slug}`,
+    url: `https://townmedialabs.ca/case-studies/${study.slug}`,
     author: {
       "@type": "Organization",
       name: "TML Agency",
-      url: "https://townmedialabs.com",
+      url: "https://townmedialabs.ca",
     },
     publisher: {
       "@type": "Organization",
       name: "TML Agency",
-      url: "https://townmedialabs.com",
+      url: "https://townmedialabs.ca",
       logo: {
         "@type": "ImageObject",
-        url: "https://townmedialabs.com/logo.png",
+        url: "https://townmedialabs.ca/logo.png",
       },
     },
     about: {
@@ -101,7 +101,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
     itemReviewed: {
       "@type": "Organization",
       name: "TML Agency",
-      url: "https://townmedialabs.com",
+      url: "https://townmedialabs.ca",
     },
     reviewRating: {
       "@type": "Rating",

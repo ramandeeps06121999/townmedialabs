@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["portland"];
 
 export const metadata: Metadata = {
-  title: "Best AI Influencer Management Agency in Portland | TML Agency",
+  title: "AI Influencer Management Agency in Portland | TML Agency",
   description: "TML offers expert ai influencer management services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["ai influencer management portland", "ai influencer management agency portland", "ai influencer management company portland"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/ai-influencer-management-in-portland",
+    canonical: "https://townmedialabs.ca/services/ai-influencer-management-in-portland",
   },
   openGraph: {
-    title: "Best AI Influencer Management Agency in Portland | TML Agency",
+    title: "AI Influencer Management Agency in Portland | TML Agency",
     description: "TML offers expert ai influencer management services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/ai-influencer-management-in-portland",
+    url: "https://townmedialabs.ca/services/ai-influencer-management-in-portland",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best AI Influencer Management Agency in Portland | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best AI Influencer Management Agency in Portland | TML Agency",
+    title: "AI Influencer Management Agency in Portland | TML Agency",
     description: "TML offers expert ai influencer management services in Portland. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

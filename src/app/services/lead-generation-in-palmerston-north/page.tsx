@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["palmerston_north"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Palmerston North | TML Agency",
+  title: "Lead Generation Agency in Palmerston North | TML Agency",
   description: "TML offers expert lead generation services in Palmerston North, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
   keywords: ["lead generation palmerston north", "lead generation agency palmerston north", "lead generation palmerston north nz"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-palmerston-north",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-palmerston-north",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Palmerston North | TML Agency",
+    title: "Lead Generation Agency in Palmerston North | TML Agency",
     description: "TML offers expert lead generation services in Palmerston North, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-palmerston-north",
+    url: "https://townmedialabs.ca/services/lead-generation-in-palmerston-north",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Palmerston North | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Palmerston North | TML Agency",
+    title: "Lead Generation Agency in Palmerston North | TML Agency",
     description: "TML offers expert lead generation services in Palmerston North, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
     images: ["/og-image.png"],
   },

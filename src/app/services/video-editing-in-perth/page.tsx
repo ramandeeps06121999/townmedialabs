@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["perth"];
 
 export const metadata: Metadata = {
-  title: "Best Video Editing Agency in Perth | TML Agency",
+  title: "Video Editing Agency in Perth | TML Agency",
   description: "TML offers expert video editing services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["video editing perth", "video editing agency perth", "video editing company perth"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/video-editing-in-perth",
+    canonical: "https://townmedialabs.ca/services/video-editing-in-perth",
   },
   openGraph: {
-    title: "Best Video Editing Agency in Perth | TML Agency",
+    title: "Video Editing Agency in Perth | TML Agency",
     description: "TML offers expert video editing services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/video-editing-in-perth",
+    url: "https://townmedialabs.ca/services/video-editing-in-perth",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Video Editing Agency in Perth | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Video Editing Agency in Perth | TML Agency",
+    title: "Video Editing Agency in Perth | TML Agency",
     description: "TML offers expert video editing services in Perth. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

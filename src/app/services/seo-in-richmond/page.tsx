@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["richmond"];
 
 export const metadata: Metadata = {
-  title: "Best SEO Agency in Richmond | TML Agency",
+  title: "SEO Agency in Richmond | TML Agency",
   description: "TML offers expert seo services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["seo richmond", "seo agency richmond", "seo company richmond"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/seo-in-richmond",
+    canonical: "https://townmedialabs.ca/services/seo-in-richmond",
   },
   openGraph: {
-    title: "Best SEO Agency in Richmond | TML Agency",
+    title: "SEO Agency in Richmond | TML Agency",
     description: "TML offers expert seo services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/seo-in-richmond",
+    url: "https://townmedialabs.ca/services/seo-in-richmond",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best SEO Agency in Richmond | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best SEO Agency in Richmond | TML Agency",
+    title: "SEO Agency in Richmond | TML Agency",
     description: "TML offers expert seo services in Richmond. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

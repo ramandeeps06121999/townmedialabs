@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["wellington"];
 
 export const metadata: Metadata = {
-  title: "Best Music Release Agency in Wellington | TML Agency",
+  title: "Music Release Agency in Wellington | TML Agency",
   description: "TML offers expert music release services in Wellington, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
   keywords: ["music release wellington", "music release agency wellington", "music release wellington nz"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/music-release-in-wellington",
+    canonical: "https://townmedialabs.ca/services/music-release-in-wellington",
   },
   openGraph: {
-    title: "Best Music Release Agency in Wellington | TML Agency",
+    title: "Music Release Agency in Wellington | TML Agency",
     description: "TML offers expert music release services in Wellington, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/music-release-in-wellington",
+    url: "https://townmedialabs.ca/services/music-release-in-wellington",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Music Release Agency in Wellington | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Music Release Agency in Wellington | TML Agency",
+    title: "Music Release Agency in Wellington | TML Agency",
     description: "TML offers expert music release services in Wellington, New Zealand. Proven results for businesses across NZ. Get a free consultation today.",
     images: ["/og-image.png"],
   },

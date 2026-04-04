@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["jacksonville"];
 
 export const metadata: Metadata = {
-  title: "Best Lead Generation Agency in Jacksonville | TML Agency",
+  title: "Lead Generation Agency in Jacksonville | TML Agency",
   description: "TML offers expert lead generation services in Jacksonville. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["lead generation jacksonville", "lead generation agency jacksonville", "lead generation company jacksonville"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/lead-generation-in-jacksonville",
+    canonical: "https://townmedialabs.ca/services/lead-generation-in-jacksonville",
   },
   openGraph: {
-    title: "Best Lead Generation Agency in Jacksonville | TML Agency",
+    title: "Lead Generation Agency in Jacksonville | TML Agency",
     description: "TML offers expert lead generation services in Jacksonville. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/lead-generation-in-jacksonville",
+    url: "https://townmedialabs.ca/services/lead-generation-in-jacksonville",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Lead Generation Agency in Jacksonville | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Lead Generation Agency in Jacksonville | TML Agency",
+    title: "Lead Generation Agency in Jacksonville | TML Agency",
     description: "TML offers expert lead generation services in Jacksonville. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },

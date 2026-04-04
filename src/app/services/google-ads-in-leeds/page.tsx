@@ -5,25 +5,25 @@ import LocationServiceTemplate from "@/components/templates/LocationServiceTempl
 const location = locations["leeds"];
 
 export const metadata: Metadata = {
-  title: "Best Google Ads Agency in Leeds | TML Agency",
+  title: "Google Ads Agency in Leeds | TML Agency",
   description: "TML offers expert google ads services in Leeds. Proven results for 500+ businesses. Get a free consultation today.",
   keywords: ["google ads leeds", "google ads agency leeds", "google ads company leeds"],
   alternates: {
-    canonical: "https://townmedialabs.com/services/google-ads-in-leeds",
+    canonical: "https://townmedialabs.ca/services/google-ads-in-leeds",
   },
   openGraph: {
-    title: "Best Google Ads Agency in Leeds | TML Agency",
+    title: "Google Ads Agency in Leeds | TML Agency",
     description: "TML offers expert google ads services in Leeds. Proven results for 500+ businesses. Get a free consultation today.",
-    url: "https://townmedialabs.com/services/google-ads-in-leeds",
+    url: "https://townmedialabs.ca/services/google-ads-in-leeds",
     siteName: "TML Agency",
     type: "website",
-    locale: "en_IN",
+    locale: "en_CA",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Best Google Ads Agency in Leeds | TML Agency" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Best Google Ads Agency in Leeds | TML Agency",
+    title: "Google Ads Agency in Leeds | TML Agency",
     description: "TML offers expert google ads services in Leeds. Proven results for 500+ businesses. Get a free consultation today.",
     images: ["/og-image.png"],
   },
