@@ -3510,10 +3510,10 @@ export const industryPages: Record<string, IndustryPage> = {
 
   "legal-law-firms": {
     slug: "legal-law-firms",
-    name: "Legal / Law Firms",
+    name: "Law Firms & Legal Services",
     metaTitle: "Digital Marketing for Law Firms & Legal Services",
     metaDescription:
-      "TML Agency builds authoritative digital presences for law firms, attorneys, and legal service businesses. SEO, Google Ads, reputation management, and compliant legal marketing.",
+      "TML builds authoritative digital presences for law firms and attorneys. SEO, Google Ads, reputation management & compliant legal marketing.",
     keywords: [
       "law firm digital marketing",
       "legal SEO agency",
@@ -3527,7 +3527,7 @@ export const industryPages: Record<string, IndustryPage> = {
       "legal marketing compliance Canada",
       "barrister digital marketing",
     ],
-    heroTitle: "Digital Marketing for Legal / Law Firms",
+    heroTitle: "Digital Marketing for Law Firms & Legal Services",
     heroSubtitle:
       "Build authority, generate qualified client inquiries, and establish digital dominance in your practice areas with compliant, trust-first marketing strategies designed for law firms and legal service providers.",
     challenges: [
