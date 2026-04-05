@@ -365,7 +365,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <div className="relative mx-auto max-w-7xl">
           <p className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4">Why Choose TML</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-            Why {cityName} businesses choose us<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("whyChoose", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {(enrichment?.whyChoose || [
@@ -395,7 +395,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <div className="relative mx-auto max-w-7xl">
           <p className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4">Our Process</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-            Our {serviceName} Process in {cityName}<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("process", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {(enrichment?.processSteps ? enrichment.processSteps.map((s, i) => ({ step: i + 1, title: s.title, description: s.description })) : cityProcess.length > 0 ? cityProcess.map((s) => ({ step: parseInt(s.step, 10), title: s.title, description: s.description })) : [
@@ -454,7 +454,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <div className="relative mx-auto max-w-7xl">
             <p className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4">What We Offer</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-              Our {serviceName} Services in {cityName}<span className="text-[#ff4500]">.</span>
+              {getSectionHeading("services", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {(() => {
@@ -493,10 +493,10 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
         <div className="relative mx-auto max-w-7xl">
           <p className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4">Our Expertise</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 md:mb-16">
-            Why {cityName} Businesses Trust Our {serviceName}<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("trust", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
           </h2>
-          <div className={`grid grid-cols-1 gap-5 ${(expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).length >= 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
-            {(expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).map((item) => {
+          <div className={`grid grid-cols-1 gap-5 ${(cityExpertiseStats.length > 0 ? cityExpertiseStats : expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).length >= 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
+            {(cityExpertiseStats.length > 0 ? cityExpertiseStats : expertiseStats[serviceSlug] || getDefaultExpertiseStats(serviceName)).map((item) => {
               const description = item.descriptionTemplate
                 .replace(/\{city\}/g, cityName)
                 .replace(/\{state\}/g, location.state);
@@ -628,16 +628,33 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                       gaps in your competitors&apos; strategies and positioning your brand where it matters most — in front of your
                       {" "}{cityName} audience at the right time, on the right platform.
                     </p>
+                    {enrichment?.competitorLandscape && (
+                      <p className="text-sm md:text-[15px] text-white/80 leading-[1.9]">{enrichment.competitorLandscape}</p>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Block 3: Unique Content (if available) */}
-            {location.uniqueContent && location.uniqueContent.length > 0 && (
+            {/* Case Study Snippet */}
+            {enrichment?.caseStudySnippet && (
               <div>
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-xs font-mono text-[#ff4500]/50 font-bold">03</span>
+                  <div className="flex-1 h-[1px] bg-gradient-to-r from-[#ff4500]/20 to-transparent" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-medium text-white leading-tight mb-6">Case Study<span className="text-[#ff4500]">.</span></h3>
+                <div className="p-6 md:p-8 rounded-2xl border border-[#ff4500]/10 bg-[#ff4500]/[0.03]">
+                  <p className="text-sm md:text-[15px] text-white/80 leading-[1.9] italic">{enrichment.caseStudySnippet}</p>
+                </div>
+              </div>
+            )}
+
+            {/* Block 3/4: Unique Content (if available) */}
+            {location.uniqueContent && location.uniqueContent.length > 0 && (
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="text-xs font-mono text-[#ff4500]/50 font-bold">{enrichment?.caseStudySnippet ? "04" : "03"}</span>
                   <div className="flex-1 h-[1px] bg-gradient-to-r from-[#ff4500]/20 to-transparent" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-medium text-white leading-tight mb-8">What Makes {cityName} Unique<span className="text-[#ff4500]">.</span></h3>
@@ -702,7 +719,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     </div>
                     <div className="flex-1">
                       <p className="text-[10px] text-[#ff4500]/60 tracking-[0.2em] uppercase font-semibold mb-2">Transparent Pricing</p>
-                      <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">{serviceName} Investment in {cityName}</h2>
+                      <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">{getSectionHeading("pricing", serviceName, cityName, seed)}</h2>
                       <p className="text-sm md:text-[15px] text-white leading-[1.8] mb-6">{serviceData.pricingNote}</p>
                       <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_20px_rgba(255,69,0,0.25)]">
                         Get a Custom Quote
@@ -723,7 +740,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
-            Industries We Serve in {cityName}<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("industries", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {(() => {
@@ -761,7 +778,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-4xl text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-10">
-            Trusted by {cityName} Businesses<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("trust", serviceName, cityName, seed + 1)}<span className="text-[#ff4500]">.</span>
           </h2>
           <div
             className="p-8 md:p-12 rounded-2xl border border-white/[0.06] bg-white/[0.02]"
@@ -777,11 +794,9 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
             <p className="text-white text-sm mb-6">across {location.region}</p>
             <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent mb-6" />
             <p className="text-sm md:text-base text-white italic leading-relaxed max-w-2xl mx-auto">
-              &ldquo;TML transformed our digital presence in {cityName}. Their {serviceName.toLowerCase()} expertise
-              delivered results that exceeded our expectations. Highly recommended for any {cityName} business
-              looking to grow.&rdquo;
+              &ldquo;{cityTrustQuote.quote}&rdquo;
             </p>
-            <p className="text-xs text-white mt-4">&mdash; A satisfied {cityName} business owner</p>
+            <p className="text-xs text-white mt-4">&mdash; {cityTrustQuote.author}, {cityTrustQuote.role} at {cityTrustQuote.company}</p>
           </div>
         </div>
       </section>
@@ -831,7 +846,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
 
               {/* Main H2 heading */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white mb-8">
-                Unlock Your Business Potential with Comprehensive {serviceName} Services in {cityName}<span className="text-[#ff4500]">.</span>
+                {getSectionHeading("seoContent", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
               </h2>
 
               <div className="space-y-14">
@@ -844,6 +859,19 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                     Additionally, businesses in {cityName} across {location.industries.slice(0, 3).join(", ")} sectors are increasingly turning to professional {serviceName.toLowerCase()} services to stay competitive. Whether you&apos;re based near {location.landmarks[0]}, operating in {location.landmarks[1]}, or serving customers across {location.region} — TML Agency delivers tailored {serviceName.toLowerCase()} solutions that drive measurable results for {cityName} businesses.
                   </p>
                 </div>
+
+                {/* Country-specific SEO overlay */}
+                {countryOverlay && (
+                  <div className="space-y-5">
+                    <p className="text-sm md:text-base text-white/80 leading-[1.9]">{countryOverlay.intro}</p>
+                    <p className="text-sm md:text-base text-white/80 leading-[1.9]">{countryOverlay.marketContext}</p>
+                    <p className="text-sm md:text-base text-white/80 leading-[1.9]">{countryOverlay.whyItMatters}</p>
+                    <div className="p-5 rounded-xl border border-[#ff4500]/10 bg-[#ff4500]/[0.03]">
+                      <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-2">Local Tip</p>
+                      <p className="text-sm text-white/80 leading-relaxed">{countryOverlay.localTip}</p>
+                    </div>
+                  </div>
+                )}
 
                 {/* Products & Services Offered */}
                 <div>
@@ -868,11 +896,26 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 {/* Pricing Section */}
                 <div>
                   <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
-                    Charges for {serviceName} Services in {cityName}
+                    {getSectionHeading("charges", serviceName, cityName, seed)}
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed mb-5">
                     Pricing varies depending on scope, competitive landscape, and business goals in {cityName}. We tailor every engagement to your specific requirements rather than offering one-size-fits-all packages.
                   </p>
+                  {(() => {
+                    const pricingTiers = countrySeoData?.pricingTiers || seoData?.pricingTiers;
+                    if (!pricingTiers || pricingTiers.length === 0) return null;
+                    return (
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                        {pricingTiers.map((tier, i) => (
+                          <div key={i} className="p-5 rounded-xl border border-white/[0.08] bg-white/[0.02] hover:border-[#ff4500]/20 transition-colors">
+                            <p className="text-[10px] text-[#ff4500]/60 uppercase tracking-wider font-semibold mb-1">{tier.tier}</p>
+                            <p className="text-lg font-bold text-white mb-2">{tier.range}</p>
+                            <p className="text-xs text-white/60 leading-relaxed">{tier.includes}</p>
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  })()}
                   <div className="p-6 rounded-xl border border-white/[0.08] bg-white/[0.02]">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                       <div>
@@ -926,7 +969,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
                 {/* Why You Need This */}
                 <div>
                   <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
-                    Why Do You Need {serviceName} Services in {cityName}?
+                    {getSectionHeading("whyNeed", serviceName, cityName, seed)}
                   </h3>
                   <p className="text-sm text-white/60 leading-relaxed mb-5">
                     {cityName}, known as {location.description.toLowerCase()}, has a rapidly growing digital economy. Here&apos;s why investing in professional {serviceName.toLowerCase()} services is essential for businesses in {cityName}:
@@ -1044,7 +1087,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       <section className="relative w-full px-6 py-12 lg:px-12">
         <div className="relative mx-auto max-w-4xl text-center">
           <h3 className="text-lg sm:text-xl font-medium text-white mb-6">
-            Other Services in {cityName}
+            {getSectionHeading("otherServices", serviceName, cityName, seed)}
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-3">
             {["branding", "seo", "google-ads", "website-development", "social-media", "lead-generation", "graphic-design", "video-editing", "branding-packaging", "ai-influencer-management", "music-release"]
@@ -1104,7 +1147,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
       <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 overflow-hidden">
         <div className="relative mx-auto max-w-3xl">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-white mb-12 text-center">
-            {serviceName} in {cityName} &mdash; FAQs<span className="text-[#ff4500]">.</span>
+            {getSectionHeading("faq", serviceName, cityName, seed)}<span className="text-[#ff4500]">.</span>
           </h2>
           <div className="space-y-3">
             {(() => {

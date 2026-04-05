@@ -488,7 +488,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand Chandigarh remembers.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "Looking for a branding agency in Chandigarh? TML has helped 500+ businesses in Chandigarh, Mohali, and Panchkula build powerful brand identities that stand out. From logo design to complete brand systems \u2014 we create brands that your customers remember.",
-    metaTitle: "Best Branding Agency in Chandigarh | TML Agency",
+    metaTitle: "Best Branding Agency in Chandigarh",
     metaDescription: "TML is Chandigarh\u2019s top branding agency offering logo design, brand identity, brand strategy, and guidelines. 500+ brands built. Get a free consultation.",
     keywords: ["branding agency chandigarh", "logo design chandigarh", "brand identity chandigarh", "branding company chandigarh"],
     whyChoose: [
@@ -519,7 +519,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Maximize ROI with Chandigarh\u2019s top Google Ads experts.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is a certified Google Partner agency based in Chandigarh. We manage \u20B95Cr+ in ad spend for businesses across the tricity, delivering an average 4.2x ROAS. From search and display to shopping and Performance Max \u2014 we maximize every rupee.",
-    metaTitle: "Best Google Ads Agency in Chandigarh | TML Agency \u2014 Certified Partner",
+    metaTitle: "Best Google Ads Agency in Chandigarh \u2014 Certified Partner",
     metaDescription: "TML is a Google Partner agency in Chandigarh offering expert Google Ads management. \u20B95Cr+ ad spend managed, 4.2x avg ROAS. Get a free audit today.",
     keywords: ["google ads agency chandigarh", "ppc company chandigarh", "google ads management chandigarh", "sem agency chandigarh"],
     whyChoose: [
@@ -550,7 +550,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Dominate Google rankings in Chandigarh.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "Want to rank #1 on Google for your Chandigarh business? TML delivers proven SEO results \u2014 280% average traffic increase and 500+ first page rankings. From local SEO to technical audits, we help tricity businesses dominate search.",
-    metaTitle: "Best SEO Company in Chandigarh | TML Agency \u2014 Proven Results",
+    metaTitle: "Best SEO Company in Chandigarh \u2014 Proven Results",
     metaDescription: "TML is Chandigarh\u2019s leading SEO company. 280% avg traffic increase, 500+ first page rankings. Get a free SEO audit for your Chandigarh business.",
     keywords: ["seo company chandigarh", "seo services chandigarh", "seo agency chandigarh", "best seo chandigarh"],
     whyChoose: [
@@ -581,7 +581,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites that put Chandigarh businesses online.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is Chandigarh\u2019s premier web development company with 300+ websites delivered. From custom business websites to e-commerce platforms, we build fast, beautiful, and conversion-optimized digital experiences for tricity businesses.",
-    metaTitle: "Best Website Development Company in Chandigarh | TML Agency",
+    metaTitle: "Best Website Development Company in Chandigarh",
     metaDescription: "TML is Chandigarh\u2019s top web development company. 300+ websites delivered. Custom design, e-commerce, CMS. Fast, responsive, SEO-optimized. Get a quote.",
     keywords: ["website development chandigarh", "web design chandigarh", "web development company chandigarh", "ecommerce development chandigarh"],
     whyChoose: [
@@ -612,7 +612,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Grow your Chandigarh brand on social media.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is Chandigarh\u2019s most trusted social media marketing agency. We\u2019ve grown 2M+ followers for 100+ brands across the tricity. From content creation to paid ads \u2014 we help Chandigarh businesses build engaged communities on social media.",
-    metaTitle: "Best Social Media Marketing Agency in Chandigarh | TML Agency",
+    metaTitle: "Best Social Media Marketing Agency in Chandigarh",
     metaDescription: "TML is Chandigarh\u2019s leading social media agency. Instagram, Facebook, LinkedIn management. 2M+ followers grown. Content creation, ads & strategy.",
     keywords: ["social media marketing chandigarh", "social media agency chandigarh", "instagram marketing chandigarh", "social media management chandigarh"],
     whyChoose: [
@@ -643,7 +643,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "The future of influence, powered from Chandigarh.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is pioneering AI influencer management from Chandigarh. We create hyper-realistic virtual brand ambassadors that represent your business 24/7 \u2014 no scheduling conflicts, always on-brand, unlimited creative potential.",
-    metaTitle: "AI Influencer Management Agency in Chandigarh | TML Agency",
+    metaTitle: "AI Influencer Management Agency in Chandigarh",
     metaDescription: "TML is Chandigarh\u2019s first AI influencer management agency. We create and manage virtual influencers for brands. 25+ AI personas, 500K+ followers.",
     keywords: ["ai influencer chandigarh", "virtual influencer agency chandigarh", "ai marketing chandigarh"],
     whyChoose: [
@@ -674,7 +674,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fill your pipeline with Chandigarh leads.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "Need more customers for your Chandigarh business? TML builds lead generation systems that consistently deliver qualified prospects. 50K+ leads generated for tricity businesses through landing pages, paid ads, email marketing, and CRM automation.",
-    metaTitle: "Best Lead Generation Company in Chandigarh | TML Agency",
+    metaTitle: "Best Lead Generation Company in Chandigarh",
     metaDescription: "TML generates high-quality leads for Chandigarh businesses. 50K+ leads generated, 12% conversion rate. Landing pages, ads & automation. Free consultation.",
     keywords: ["lead generation chandigarh", "lead generation company chandigarh", "leads for business chandigarh"],
     whyChoose: [
@@ -705,7 +705,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Launch your music from the heart of Punjab.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "Chandigarh is the heart of Punjabi music \u2014 and TML is your partner to take it global. We\u2019ve helped release 500+ songs, generating 50M+ streams. From distribution to playlist pitching to social media campaigns \u2014 we handle the business so you can create.",
-    metaTitle: "Best Music Promotion Agency in Chandigarh | TML Agency",
+    metaTitle: "Best Music Promotion Agency in Chandigarh",
     metaDescription: "TML helps Chandigarh artists release and promote music across Spotify, YouTube, JioSaavn. 500+ songs released, 50M+ streams. Distribution, playlists & PR.",
     keywords: ["music promotion chandigarh", "music release agency chandigarh", "music marketing chandigarh", "punjabi music promotion"],
     whyChoose: [
@@ -736,7 +736,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Professional video production, Chandigarh-based.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is Chandigarh\u2019s premier video editing and production company. 2000+ videos produced for tricity businesses \u2014 from Instagram reels and corporate films to music videos and ad campaigns. Professional quality, fast turnaround.",
-    metaTitle: "Best Video Editing Company in Chandigarh | TML Agency",
+    metaTitle: "Best Video Editing Company in Chandigarh",
     metaDescription: "TML offers professional video editing in Chandigarh. 2000+ videos produced. Reels, corporate films, ads, music videos. 48hr turnaround. Get a quote.",
     keywords: ["video editing chandigarh", "video production chandigarh", "video editing company chandigarh", "corporate video chandigarh"],
     whyChoose: [
@@ -767,7 +767,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Packaging that sells off Chandigarh shelves.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is Chandigarh\u2019s top packaging design agency with 500+ packages designed for brands across food, beauty, FMCG, and more. We create packaging that tells your brand story and drives purchase decisions at the point of sale.",
-    metaTitle: "Best Packaging Design Agency in Chandigarh | TML Agency",
+    metaTitle: "Best Packaging Design Agency in Chandigarh",
     metaDescription: "TML offers professional packaging design in Chandigarh. 500+ packages designed for food, beauty, FMCG. From concept to print. Get a free consultation.",
     keywords: ["packaging design chandigarh", "product packaging chandigarh", "label design chandigarh", "packaging company chandigarh"],
     whyChoose: [
@@ -798,7 +798,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Creative design for Chandigarh brands.",
     heroBadge: chandigarhHeroBadge,
     heroDescription: "TML is Chandigarh\u2019s most prolific graphic design agency with 10K+ designs created for 500+ brands. From social media creatives to print materials, presentations to ad campaigns \u2014 we deliver designs that communicate, engage, and convert.",
-    metaTitle: "Best Graphic Design Agency in Chandigarh | TML Agency",
+    metaTitle: "Best Graphic Design Agency in Chandigarh",
     metaDescription: "TML is Chandigarh\u2019s top graphic design agency. 10K+ designs created. Social media, print, presentations, ads. Fast turnaround. Get a quote.",
     keywords: ["graphic design chandigarh", "graphic design agency chandigarh", "design company chandigarh", "creative agency chandigarh"],
     whyChoose: [
@@ -833,7 +833,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that earns attention from Soho to the Square Mile.",
     heroBadge: londonHeroBadge,
     heroDescription: "London doesn't do forgettable. With thousands of brands fighting for mindshare across the capital, your identity needs to be sharper, bolder, and more intentional than the competition. TML builds brand systems for London businesses — from fintech startups in Shoreditch to professional services firms in the City — delivering the strategic depth of a Soho agency at a fraction of the cost.",
-    metaTitle: "Branding Agency London | TML Agency",
+    metaTitle: "Branding Agency London",
     metaDescription: "TML builds powerful brand identities for London businesses. Strategy, logo, visual systems. Premium quality, competitive rates. Free consultation.",
     keywords: ["branding agency london", "brand identity london", "logo design london", "branding company london", "brand strategy london"],
     whyChoose: [
@@ -864,7 +864,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Stop burning budget. Start winning clicks that convert.",
     heroBadge: londonHeroBadge,
     heroDescription: "Running Google Ads in London is expensive — CPCs are among the highest in Europe, and every wasted click eats into your margin. TML manages PPC campaigns for London businesses with surgical precision: tight targeting, relentless optimisation, and a focus on profit, not just traffic. We've managed over £2M in ad spend for UK clients with an average 4.5x ROAS.",
-    metaTitle: "Google Ads Agency London | PPC Management | TML",
+    metaTitle: "Google Ads Agency London | PPC Management",
     metaDescription: "TML manages Google Ads for London businesses. £2M+ spend managed, 4.5x avg ROAS. Search, Shopping, Performance Max. Free audit available.",
     keywords: ["google ads agency london", "ppc management london", "google ads london", "ppc agency london", "sem agency london"],
     whyChoose: [
@@ -895,7 +895,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Rank where it matters. Win the searches London is making.",
     heroBadge: londonHeroBadge,
     heroDescription: "SEO in London is fiercely competitive — every industry is saturated with well-funded competitors fighting for page one. TML delivers SEO that cuts through: technically sound, strategically sharp, and built for long-term organic growth. We've achieved 500+ first-page rankings for UK businesses and driven an average 280% traffic increase for our clients.",
-    metaTitle: "SEO Agency London | Proven Rankings | TML",
+    metaTitle: "SEO Agency London | Proven Rankings",
     metaDescription: "TML is an SEO agency serving London businesses. 500+ page-one rankings, 280% avg traffic growth. Technical SEO, content, link building. Free audit.",
     keywords: ["seo agency london", "seo company london", "seo services london", "london seo agency", "search engine optimisation london"],
     whyChoose: [
@@ -926,7 +926,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built to perform in the UK's most demanding market.",
     heroBadge: londonHeroBadge,
     heroDescription: "Your London audience judges fast. If your website is slow, clunky, or forgettable, they'll bounce to a competitor before you've finished loading. TML builds high-performance websites for London businesses — lightning-fast, beautifully designed, and engineered to convert. 300+ sites delivered. React, Next.js, WordPress, Shopify.",
-    metaTitle: "Web Development London | TML Agency",
+    metaTitle: "Web Development London",
     metaDescription: "TML builds fast, conversion-optimised websites for London businesses. 300+ sites delivered. React, Next.js, WordPress. Premium quality, fair pricing.",
     keywords: ["website development london", "web design london", "web development agency london", "website design london", "ecommerce development london"],
     whyChoose: [
@@ -957,7 +957,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social content that actually moves the needle in the capital.",
     heroBadge: londonHeroBadge,
     heroDescription: "London's social feeds are noisy, fast-moving, and brutally competitive. Generic content gets scrolled past in milliseconds. TML manages social media for London businesses with a focus on strategy, creative quality, and measurable ROI — not vanity metrics. From Instagram and LinkedIn to TikTok and paid social, we build audiences that buy.",
-    metaTitle: "Social Media Agency London | TML Agency",
+    metaTitle: "Social Media Agency London",
     metaDescription: "TML manages social media for London businesses. Strategy, content creation, paid social, community management. Audiences that convert. Free strategy call.",
     keywords: ["social media agency london", "social media management london", "social media marketing london", "instagram marketing london", "linkedin marketing london"],
     whyChoose: [
@@ -988,7 +988,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads. Not just names on a spreadsheet.",
     heroBadge: londonHeroBadge,
     heroDescription: "Every London business needs leads — but most are drowning in low-quality enquiries that waste their sales team's time. TML builds lead generation systems that deliver qualified, sales-ready prospects through targeted advertising, high-converting landing pages, and intelligent nurturing automation. 50K+ leads generated. Average 12% conversion rate.",
-    metaTitle: "Lead Generation Agency London | TML Agency",
+    metaTitle: "Lead Generation Agency London",
     metaDescription: "TML generates qualified leads for London businesses. 50K+ leads delivered, 12% avg conversion. Landing pages, ads, automation. Free consultation.",
     keywords: ["lead generation london", "lead generation agency london", "b2b lead generation london", "lead gen company london", "demand generation london"],
     whyChoose: [
@@ -1019,7 +1019,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that doesn't just look good — it works.",
     heroBadge: londonHeroBadge,
     heroDescription: "London's visual standards are world-class, and your brand's design needs to match. TML delivers graphic design for London businesses across every format — social media, print, presentations, advertising, packaging — with the creative quality of a Clerkenwell studio and turnaround times that keep pace with the capital.",
-    metaTitle: "Graphic Design Agency London | TML Agency",
+    metaTitle: "Graphic Design Agency London",
     metaDescription: "TML delivers graphic design for London businesses. Social media, print, ads, presentations. 24-48hr turnaround. Premium quality, competitive pricing.",
     keywords: ["graphic design agency london", "graphic design london", "design agency london", "creative design london", "graphic designer london"],
     whyChoose: [
@@ -1054,7 +1054,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Brand identity built for the North's boldest city.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester doesn't do bland. From the Northern Quarter's indie spirit to Spinningfields' corporate ambition, this city rewards brands that have something real to say. TML builds brand identities for Manchester businesses that capture personality, communicate value, and stand out in one of the UK's most dynamic markets.",
-    metaTitle: "Branding Agency Manchester | TML Agency",
+    metaTitle: "Branding Agency Manchester",
     metaDescription: "TML builds distinctive brand identities for Manchester businesses. Strategy, logo, visual systems, guidelines. Premium quality, competitive rates.",
     keywords: ["branding agency manchester", "brand identity manchester", "logo design manchester", "branding company manchester", "brand strategy manchester"],
     whyChoose: [
@@ -1085,7 +1085,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "PPC campaigns that turn Manchester clicks into customers.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Google Ads in Manchester offers brilliant opportunity — lower CPCs than London with a massive, commercially active audience across Greater Manchester. TML builds and manages PPC campaigns for Manchester businesses that maximise every pound of ad spend: tight targeting, smart bidding, and relentless conversion optimisation.",
-    metaTitle: "Google Ads Agency Manchester | PPC | TML",
+    metaTitle: "Google Ads Agency Manchester | PPC",
     metaDescription: "TML manages Google Ads for Manchester businesses. Lower CPCs, higher ROAS. Search, Shopping, Performance Max. Free audit for Manchester companies.",
     keywords: ["google ads agency manchester", "ppc agency manchester", "google ads manchester", "ppc management manchester", "adwords agency manchester"],
     whyChoose: [
@@ -1116,7 +1116,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Organic growth for the North's digital capital.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester's digital economy is booming — and the businesses investing in SEO now are the ones that will dominate organic search for years to come. TML delivers SEO for Manchester businesses that's technically rigorous, strategically sound, and focused on the keywords that actually drive revenue. 500+ first-page rankings. 280% average traffic increase.",
-    metaTitle: "SEO Agency Manchester | Rankings | TML",
+    metaTitle: "SEO Agency Manchester | Rankings",
     metaDescription: "TML delivers SEO for Manchester businesses. 500+ page-one rankings, 280% avg traffic growth. Technical SEO, content, links. Free SEO audit.",
     keywords: ["seo agency manchester", "seo company manchester", "seo services manchester", "manchester seo", "search engine optimisation manchester"],
     whyChoose: [
@@ -1147,7 +1147,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites as ambitious as Manchester itself.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester businesses need websites that match the city's ambition — fast, bold, and built to convert. TML develops high-performance websites for Manchester companies using modern technology stacks: React, Next.js, WordPress, Shopify. 300+ websites delivered. Every one built mobile-first, SEO-ready, and engineered for results.",
-    metaTitle: "Web Development Manchester | TML Agency",
+    metaTitle: "Web Development Manchester",
     metaDescription: "TML builds high-performance websites for Manchester businesses. 300+ sites delivered. React, Next.js, WordPress. Fast, responsive, conversion-focused.",
     keywords: ["website development manchester", "web design manchester", "web developer manchester", "website design manchester", "ecommerce development manchester"],
     whyChoose: [
@@ -1178,7 +1178,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social content with Northern grit and creative flair.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester's social media scene is loud, creative, and fiercely authentic — generic content dies on arrival. TML manages social media for Manchester businesses with a focus on genuine engagement, platform-native content, and measurable business impact. From Instagram and TikTok to LinkedIn and paid social, we build audiences that matter.",
-    metaTitle: "Social Media Agency Manchester | TML Agency",
+    metaTitle: "Social Media Agency Manchester",
     metaDescription: "TML manages social media for Manchester businesses. Instagram, LinkedIn, TikTok. Strategy, content creation, paid social. Audiences that convert.",
     keywords: ["social media agency manchester", "social media management manchester", "social media marketing manchester", "instagram marketing manchester", "social media company manchester"],
     whyChoose: [
@@ -1209,7 +1209,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fill your pipeline with qualified Manchester prospects.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester's business community is growing fast — and so is the competition for customers. TML builds lead generation systems for Manchester businesses that consistently deliver qualified prospects through targeted advertising, high-converting landing pages, and automated nurturing. 50K+ leads generated. Campaigns running across every major sector in Greater Manchester.",
-    metaTitle: "Lead Generation Manchester | TML Agency",
+    metaTitle: "Lead Generation Manchester",
     metaDescription: "TML generates qualified leads for Manchester businesses. 50K+ leads delivered. Landing pages, PPC, email automation. Lower CPL, higher quality.",
     keywords: ["lead generation manchester", "lead generation agency manchester", "b2b leads manchester", "lead gen manchester", "demand generation manchester"],
     whyChoose: [
@@ -1240,7 +1240,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Creative that matches Manchester's energy.",
     heroBadge: manchesterHeroBadge,
     heroDescription: "Manchester is a city with extraordinary creative DNA — and your design needs to reflect that. TML delivers graphic design for Manchester businesses across social media, print, advertising, presentations, and packaging. Fast turnaround, consistent quality, and pricing that makes creative support accessible to businesses of every size.",
-    metaTitle: "Graphic Design Agency Manchester | TML",
+    metaTitle: "Graphic Design Agency Manchester",
     metaDescription: "TML delivers graphic design for Manchester businesses. Social media, print, ads, presentations. 24-48hr turnaround. Monthly retainers available.",
     keywords: ["graphic design agency manchester", "graphic design manchester", "design agency manchester", "creative agency manchester", "graphic designer manchester"],
     whyChoose: [
@@ -1275,7 +1275,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Brand identity for the UK's city of reinvention.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham is transforming — and the brands that thrive here need to reflect that ambition. TML builds brand identities for Birmingham businesses that communicate credibility, differentiation, and forward momentum. From Digbeth startups to Colmore Row corporates, we create brands that earn attention in the UK's second city.",
-    metaTitle: "Branding Agency Birmingham | TML Agency",
+    metaTitle: "Branding Agency Birmingham",
     metaDescription: "TML builds brand identities for Birmingham businesses. Strategy, logo, visual systems, guidelines. Premium quality, competitive pricing. Free consultation.",
     keywords: ["branding agency birmingham", "brand identity birmingham", "logo design birmingham", "branding company birmingham", "brand strategy birmingham"],
     whyChoose: [
@@ -1306,7 +1306,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "PPC that delivers results across the West Midlands.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham's Google Ads market offers a compelling opportunity: a large, commercially active population with CPCs significantly lower than London. TML manages PPC campaigns for Birmingham businesses with precision — maximising conversions while keeping costs under control. Search, Shopping, Display, Performance Max — all managed with the same attention to detail.",
-    metaTitle: "Google Ads Agency Birmingham | PPC | TML",
+    metaTitle: "Google Ads Agency Birmingham | PPC",
     metaDescription: "TML manages Google Ads for Birmingham businesses. Lower CPCs than London, higher ROAS. Search, Shopping, Performance Max. Free PPC audit.",
     keywords: ["google ads agency birmingham", "ppc agency birmingham", "google ads birmingham", "ppc management birmingham", "sem agency birmingham"],
     whyChoose: [
@@ -1337,7 +1337,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Organic visibility for the UK's second city.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham businesses are waking up to the power of SEO — and those investing now are building an organic advantage that will compound for years. TML delivers technically rigorous, strategically sound SEO for Birmingham businesses. 500+ first-page rankings achieved. 280% average traffic increase. Real results, transparent reporting.",
-    metaTitle: "SEO Agency Birmingham | Rankings | TML",
+    metaTitle: "SEO Agency Birmingham | Rankings",
     metaDescription: "TML delivers SEO for Birmingham businesses. 500+ page-one rankings, 280% avg traffic growth. Technical SEO, content, link building. Free audit.",
     keywords: ["seo agency birmingham", "seo company birmingham", "seo services birmingham", "birmingham seo", "search engine optimisation birmingham"],
     whyChoose: [
@@ -1368,7 +1368,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built to fuel Birmingham's business growth.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham's transformation demands digital experiences to match. TML builds high-performance websites for Birmingham businesses — fast-loading, conversion-optimised, and built on modern technology. Whether you're a Jewellery Quarter artisan or a Brindleyplace enterprise, we deliver websites that turn visitors into customers. 300+ sites delivered.",
-    metaTitle: "Web Development Birmingham | TML Agency",
+    metaTitle: "Web Development Birmingham",
     metaDescription: "TML builds high-performance websites for Birmingham businesses. 300+ sites delivered. React, Next.js, WordPress. Fast, responsive, conversion-focused.",
     keywords: ["website development birmingham", "web design birmingham", "web developer birmingham", "website design birmingham", "ecommerce development birmingham"],
     whyChoose: [
@@ -1399,7 +1399,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social strategy for the UK's most underestimated city.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham's social media landscape is maturing fast — and the businesses investing in quality content and genuine engagement now are building audiences that will pay dividends for years. TML manages social media for Birmingham businesses with strategic depth, creative quality, and a relentless focus on business outcomes over vanity metrics.",
-    metaTitle: "Social Media Agency Birmingham | TML Agency",
+    metaTitle: "Social Media Agency Birmingham",
     metaDescription: "TML manages social media for Birmingham businesses. Strategy, content, paid social, community management. Instagram, LinkedIn, TikTok. Real results.",
     keywords: ["social media agency birmingham", "social media management birmingham", "social media marketing birmingham", "instagram marketing birmingham", "social media company birmingham"],
     whyChoose: [
@@ -1430,7 +1430,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads that fuel West Midlands growth.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham's growing economy means more businesses competing for the same customers. TML builds lead generation systems that give your Birmingham business a consistent pipeline of qualified prospects — through targeted advertising, high-converting landing pages, and intelligent automation. 50K+ leads generated across sectors. Average CPL 40% below industry benchmarks.",
-    metaTitle: "Lead Generation Birmingham | TML Agency",
+    metaTitle: "Lead Generation Birmingham",
     metaDescription: "TML generates qualified leads for Birmingham businesses. 50K+ leads, 40% lower CPL. Landing pages, PPC, email automation. Free consultation.",
     keywords: ["lead generation birmingham", "lead generation agency birmingham", "b2b leads birmingham", "lead gen birmingham", "demand generation birmingham"],
     whyChoose: [
@@ -1461,7 +1461,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design with substance for the UK's second city.",
     heroBadge: birminghamHeroBadge,
     heroDescription: "Birmingham businesses deserve graphic design that matches the city's growing ambition — not generic templates or overpriced agency output. TML delivers high-quality graphic design across every format: social media, print, presentations, advertising, and packaging. Fast turnaround, consistent quality, and rates that respect your budget.",
-    metaTitle: "Graphic Design Agency Birmingham | TML",
+    metaTitle: "Graphic Design Agency Birmingham",
     metaDescription: "TML delivers graphic design for Birmingham businesses. Social media, print, presentations, ads. 24-48hr turnaround. Monthly retainers from £400/month.",
     keywords: ["graphic design agency birmingham", "graphic design birmingham", "design agency birmingham", "creative agency birmingham", "graphic designer birmingham"],
     whyChoose: [
@@ -1496,7 +1496,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Brand identity worthy of Scotland's capital.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh demands sophistication. From the financial institutions of Charlotte Square to the tech startups of Quartermile, this city's businesses need brands that project credibility, quality, and ambition. TML builds brand identities for Edinburgh businesses that honour the city's prestige while communicating modernity and forward-thinking purpose.",
-    metaTitle: "Branding Agency Edinburgh | TML Agency",
+    metaTitle: "Branding Agency Edinburgh",
     metaDescription: "TML builds distinctive brand identities for Edinburgh businesses. Strategy, logo, visual systems, guidelines. Premium quality, competitive rates.",
     keywords: ["branding agency edinburgh", "brand identity edinburgh", "logo design edinburgh", "branding company edinburgh", "brand strategy edinburgh"],
     whyChoose: [
@@ -1527,7 +1527,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "PPC campaigns built for Scotland's economic powerhouse.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh's affluent, highly educated population makes it one of the UK's most valuable PPC markets per capita. TML manages Google Ads for Edinburgh businesses with precision — targeting the city's unique audience segments, managing CPCs efficiently, and driving the conversions that grow your bottom line. Search, Shopping, Display, Performance Max.",
-    metaTitle: "Google Ads Agency Edinburgh | PPC | TML",
+    metaTitle: "Google Ads Agency Edinburgh | PPC",
     metaDescription: "TML manages Google Ads for Edinburgh businesses. High-value audience targeting, strong ROAS. Search, Shopping, Performance Max. Free PPC audit.",
     keywords: ["google ads agency edinburgh", "ppc agency edinburgh", "google ads edinburgh", "ppc management edinburgh", "sem agency edinburgh"],
     whyChoose: [
@@ -1558,7 +1558,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Organic rankings for Scotland's most prestigious city.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh's businesses compete in a market that values quality, expertise, and trust — exactly the signals that strong SEO communicates. TML delivers search engine optimisation for Edinburgh businesses that builds lasting organic visibility: technically sound, content-rich, and strategically aligned with how Edinburgh's audience searches. 500+ first-page rankings. 280% average traffic growth.",
-    metaTitle: "SEO Agency Edinburgh | Rankings | TML",
+    metaTitle: "SEO Agency Edinburgh | Rankings",
     metaDescription: "TML delivers SEO for Edinburgh businesses. 500+ page-one rankings, 280% avg traffic growth. Technical SEO, content, link building. Free audit.",
     keywords: ["seo agency edinburgh", "seo company edinburgh", "seo services edinburgh", "edinburgh seo", "search engine optimisation edinburgh"],
     whyChoose: [
@@ -1589,7 +1589,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites that reflect Edinburgh's standards of excellence.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh businesses operate in a market that values quality, attention to detail, and trust. Your website needs to communicate all three within seconds. TML builds high-performance websites for Edinburgh businesses — technically excellent, visually refined, and engineered for conversion. 300+ sites delivered. React, Next.js, WordPress, Shopify.",
-    metaTitle: "Web Development Edinburgh | TML Agency",
+    metaTitle: "Web Development Edinburgh",
     metaDescription: "TML builds high-performance websites for Edinburgh businesses. 300+ sites delivered. React, Next.js, WordPress. Fast, polished, conversion-optimised.",
     keywords: ["website development edinburgh", "web design edinburgh", "web developer edinburgh", "website design edinburgh", "ecommerce development edinburgh"],
     whyChoose: [
@@ -1620,7 +1620,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social presence befitting Scotland's most magnetic city.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh's social media landscape demands quality and authenticity. From financial services firms building LinkedIn authority to hospitality brands showcasing the city's beauty on Instagram, success requires strategic thinking and creative execution. TML manages social media for Edinburgh businesses with the sophistication and attention to detail the city demands.",
-    metaTitle: "Social Media Agency Edinburgh | TML Agency",
+    metaTitle: "Social Media Agency Edinburgh",
     metaDescription: "TML manages social media for Edinburgh businesses. Strategy, content, paid social. Instagram, LinkedIn, TikTok. Audiences that convert. Free consultation.",
     keywords: ["social media agency edinburgh", "social media management edinburgh", "social media marketing edinburgh", "instagram marketing edinburgh", "linkedin marketing edinburgh"],
     whyChoose: [
@@ -1651,7 +1651,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "High-quality prospects for Scotland's capital.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh's affluent market and concentration of high-value businesses make it fertile ground for lead generation — if you target precisely and qualify rigorously. TML builds lead generation systems for Edinburgh businesses that deliver qualified prospects through targeted advertising, optimised landing pages, and intelligent nurturing automation.",
-    metaTitle: "Lead Generation Edinburgh | TML Agency",
+    metaTitle: "Lead Generation Edinburgh",
     metaDescription: "TML generates qualified leads for Edinburgh businesses. High-value targeting, lower CPL. Landing pages, ads, email automation. Free consultation.",
     keywords: ["lead generation edinburgh", "lead generation agency edinburgh", "b2b leads edinburgh", "lead gen edinburgh", "demand generation edinburgh"],
     whyChoose: [
@@ -1682,7 +1682,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Considered design for Scotland's most discerning city.",
     heroBadge: edinburghHeroBadge,
     heroDescription: "Edinburgh has an eye for quality — the city's heritage of architecture, art, and design means businesses here need visual communication that meets exacting standards. TML delivers graphic design for Edinburgh businesses across every format: social media, print, presentations, advertising, and packaging. Thoughtful, polished, and purposeful.",
-    metaTitle: "Graphic Design Agency Edinburgh | TML",
+    metaTitle: "Graphic Design Agency Edinburgh",
     metaDescription: "TML delivers graphic design for Edinburgh businesses. Social media, print, presentations, ads. 24-48hr turnaround. Monthly retainers from £400/month.",
     keywords: ["graphic design agency edinburgh", "graphic design edinburgh", "design agency edinburgh", "creative agency edinburgh", "graphic designer edinburgh"],
     whyChoose: [
@@ -1715,7 +1715,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that cuts through the noise of the world's toughest market.",
     heroBadge: nyHeroBadge,
     heroDescription: "New York doesn't give second chances at first impressions. TML helps NYC businesses — from SoHo startups to Midtown enterprises — build brand identities that command attention and earn trust in the most competitive market on earth.",
-    metaTitle: "Branding Agency for New York Businesses | TML",
+    metaTitle: "Branding Agency for New York Businesses",
     metaDescription: "TML builds powerful brand identities for NYC businesses. Logo design, brand strategy, visual systems. Fresh perspective, world-class quality. Free consultation.",
     keywords: ["branding agency new york", "nyc brand identity", "logo design new york", "brand strategy nyc", "new york branding company"],
     whyChoose: [
@@ -1749,7 +1749,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Turn New York's expensive clicks into profitable customers.",
     heroBadge: nyHeroBadge,
     heroDescription: "Google Ads in NYC is a high-stakes game — CPCs in finance, legal, and real estate routinely exceed $50. TML helps New York businesses extract maximum ROI from every dollar, combining sharp targeting with relentless optimization across Search, Display, Shopping, and Performance Max.",
-    metaTitle: "Google Ads Agency for NYC Businesses | TML",
+    metaTitle: "Google Ads Agency for NYC Businesses",
     metaDescription: "TML manages Google Ads for New York businesses. Expert PPC management, avg 4.2x ROAS. Lower your CPC in NYC's competitive market. Free audit.",
     keywords: ["google ads agency new york", "ppc management nyc", "google ads new york", "sem agency nyc", "pay per click new york"],
     whyChoose: [
@@ -1783,7 +1783,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Rank where it matters — the first page in the world's biggest market.",
     heroBadge: nyHeroBadge,
     heroDescription: "SEO in New York means competing against some of the most well-funded websites on the internet. TML delivers technical excellence, strategic content, and authoritative link building that helps NYC businesses climb — and stay — on page one for the keywords that drive revenue.",
-    metaTitle: "SEO Agency for New York Businesses | TML",
+    metaTitle: "SEO Agency for New York Businesses",
     metaDescription: "TML provides expert SEO for NYC businesses. Technical audits, content strategy, link building. 280% avg traffic increase. Free SEO audit.",
     keywords: ["seo agency new york", "nyc seo company", "seo services new york", "new york seo experts", "seo consultant nyc"],
     whyChoose: [
@@ -1817,7 +1817,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fast, beautiful websites built for the city that never sleeps.",
     heroBadge: nyHeroBadge,
     heroDescription: "New York businesses need websites that load instantly, look impeccable, and convert visitors into customers. TML builds high-performance sites on modern stacks — React, Next.js, headless CMS — delivering the quality Manhattan expects at pricing that makes financial sense.",
-    metaTitle: "Web Development for NYC Businesses | TML",
+    metaTitle: "Web Development for NYC Businesses",
     metaDescription: "TML builds fast, conversion-optimized websites for New York businesses. React, Next.js, e-commerce. 300+ sites delivered. Get a free quote.",
     keywords: ["website development new york", "web design nyc", "web development company new york", "nyc website design", "new york web developer"],
     whyChoose: [
@@ -1851,7 +1851,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Own the feed in the city that sets the trends.",
     heroBadge: nyHeroBadge,
     heroDescription: "New York is where social trends are born and brands are built through culture. TML helps NYC businesses — from Tribeca restaurants to Midtown B2B firms — create social media presences that earn real engagement, not just vanity followers.",
-    metaTitle: "Social Media Agency for NYC Businesses | TML",
+    metaTitle: "Social Media Agency for NYC Businesses",
     metaDescription: "TML manages social media for New York businesses. Instagram, LinkedIn, TikTok. Content creation, community management, paid social. Free strategy call.",
     keywords: ["social media marketing new york", "social media agency nyc", "instagram marketing new york", "social media management nyc", "nyc social media company"],
     whyChoose: [
@@ -1885,7 +1885,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fill your sales pipeline with qualified NYC prospects.",
     heroBadge: nyHeroBadge,
     heroDescription: "Generating leads in New York means cutting through more noise than anywhere else. TML builds multi-channel lead generation systems for NYC businesses — combining paid ads, landing pages, email sequences, and CRM automation to deliver a steady flow of qualified prospects.",
-    metaTitle: "Lead Generation Agency for NYC | TML",
+    metaTitle: "Lead Generation Agency for NYC",
     metaDescription: "TML generates qualified leads for New York businesses. Landing pages, paid ads, email automation, CRM integration. Proven results. Free consultation.",
     keywords: ["lead generation new york", "lead generation agency nyc", "b2b leads new york", "lead gen company nyc", "new york lead generation"],
     whyChoose: [
@@ -1919,7 +1919,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that meets New York's exacting standards.",
     heroBadge: nyHeroBadge,
     heroDescription: "In a city where visual culture sets the global standard, mediocre design is a liability. TML delivers high-quality graphic design for NYC businesses — social media creatives, pitch decks, ad campaigns, print collateral — with the speed and polish that New York demands.",
-    metaTitle: "Graphic Design for NYC Businesses | TML",
+    metaTitle: "Graphic Design for NYC Businesses",
     metaDescription: "TML provides professional graphic design for New York businesses. Social media, presentations, ads, print. Fast turnaround, premium quality. Get a quote.",
     keywords: ["graphic design new york", "graphic design agency nyc", "design company new york", "creative design nyc", "new york graphic designer"],
     whyChoose: [
@@ -1955,7 +1955,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that stands out in the entertainment capital of the world.",
     heroBadge: laHeroBadge,
     heroDescription: "Los Angeles is a city built on image, storytelling, and identity. TML helps LA businesses — from Hollywood production companies to Santa Monica DTC startups — create brands that feel authentic, look stunning, and connect with audiences who've seen everything.",
-    metaTitle: "Branding Agency for LA Businesses | TML",
+    metaTitle: "Branding Agency for LA Businesses",
     metaDescription: "TML builds standout brand identities for Los Angeles businesses. Logo design, brand strategy, visual systems. Creative excellence at smart pricing.",
     keywords: ["branding agency los angeles", "la brand identity", "logo design los angeles", "brand strategy la", "los angeles branding company"],
     whyChoose: [
@@ -1989,7 +1989,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Make every ad dollar work harder in LA's sprawling market.",
     heroBadge: laHeroBadge,
     heroDescription: "LA's advertising landscape is massive and fragmented — 13 million people spread across dozens of distinct markets. TML builds Google Ads campaigns that navigate this complexity, delivering targeted, profitable results for Los Angeles businesses across Search, Display, Shopping, and YouTube.",
-    metaTitle: "Google Ads Agency for LA Businesses | TML",
+    metaTitle: "Google Ads Agency for LA Businesses",
     metaDescription: "TML manages Google Ads for Los Angeles businesses. Expert PPC, geo-targeted campaigns, avg 4.2x ROAS. Free Google Ads audit for LA businesses.",
     keywords: ["google ads agency los angeles", "ppc management la", "google ads los angeles", "sem agency la", "pay per click los angeles"],
     whyChoose: [
@@ -2023,7 +2023,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Dominate organic search across the LA metro.",
     heroBadge: laHeroBadge,
     heroDescription: "SEO in Los Angeles means ranking in a market of 13 million people with some of the highest-value keywords in the country. TML builds SEO strategies that combine technical excellence, compelling content, and smart link building to help LA businesses capture the organic traffic that drives real revenue.",
-    metaTitle: "SEO Agency for Los Angeles Businesses | TML",
+    metaTitle: "SEO Agency for Los Angeles Businesses",
     metaDescription: "TML delivers expert SEO for LA businesses. Technical audits, content strategy, local SEO, link building. Proven results in competitive markets. Free audit.",
     keywords: ["seo agency los angeles", "la seo company", "seo services los angeles", "los angeles seo experts", "seo consultant la"],
     whyChoose: [
@@ -2057,7 +2057,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites as bold and polished as the city itself.",
     heroBadge: laHeroBadge,
     heroDescription: "Los Angeles businesses need websites that make an immediate visual impact, load instantly on mobile, and convert visitors into customers. TML builds high-performance websites on modern technology — React, Next.js, Shopify Plus — with the creative quality LA demands and pricing that respects your budget.",
-    metaTitle: "Web Development for LA Businesses | TML",
+    metaTitle: "Web Development for LA Businesses",
     metaDescription: "TML builds stunning, high-performance websites for Los Angeles businesses. React, Next.js, Shopify, WordPress. 300+ sites delivered. Get a quote.",
     keywords: ["website development los angeles", "web design la", "web development company los angeles", "la website design", "los angeles web developer"],
     whyChoose: [
@@ -2091,7 +2091,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Create a social presence worthy of the content capital of the world.",
     heroBadge: laHeroBadge,
     heroDescription: "Los Angeles sets the social media trends that the rest of the country follows. TML helps LA businesses — from Melrose boutiques to Silicon Beach startups — build social presences that earn genuine engagement, grow loyal audiences, and drive measurable business results.",
-    metaTitle: "Social Media Agency for LA Businesses | TML",
+    metaTitle: "Social Media Agency for LA Businesses",
     metaDescription: "TML manages social media for Los Angeles businesses. Instagram, TikTok, LinkedIn. Content creation, community management, influencer marketing.",
     keywords: ["social media marketing los angeles", "social media agency la", "instagram marketing los angeles", "social media management la", "la social media company"],
     whyChoose: [
@@ -2125,7 +2125,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Capture high-quality leads across LA's sprawling market.",
     heroBadge: laHeroBadge,
     heroDescription: "Los Angeles is a vast, fragmented market where lead generation requires surgical precision. TML builds multi-channel lead generation systems for LA businesses — using paid ads, conversion-optimized landing pages, email automation, and CRM integration to deliver a steady pipeline of qualified prospects from the Westside to the Valley.",
-    metaTitle: "Lead Generation Agency for LA | TML",
+    metaTitle: "Lead Generation Agency for LA",
     metaDescription: "TML generates qualified leads for Los Angeles businesses. Paid ads, landing pages, email sequences, CRM automation. Proven LA market results.",
     keywords: ["lead generation los angeles", "lead generation agency la", "b2b leads los angeles", "lead gen company la", "la lead generation"],
     whyChoose: [
@@ -2159,7 +2159,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that meets LA's impossibly high visual standards.",
     heroBadge: laHeroBadge,
     heroDescription: "In a city where aesthetics are embedded in the culture, your brand's visual output has to be flawless. TML delivers high-quality graphic design for LA businesses — social media creatives, pitch decks, packaging, ad campaigns — with the creative polish Los Angeles demands and turnaround times that keep up with the pace.",
-    metaTitle: "Graphic Design for LA Businesses | TML",
+    metaTitle: "Graphic Design for LA Businesses",
     metaDescription: "TML provides professional graphic design for Los Angeles businesses. Social media, packaging, ads, presentations. Fast turnaround, LA-quality output.",
     keywords: ["graphic design los angeles", "graphic design agency la", "design company los angeles", "creative design la", "la graphic designer"],
     whyChoose: [
@@ -2195,7 +2195,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand with the substance and grit this city respects.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago doesn't fall for hype — it respects brands that deliver. TML helps Chicago businesses — from Loop financial firms to Wicker Park startups — build identities that communicate credibility, differentiation, and the kind of substance the Midwest takes seriously.",
-    metaTitle: "Branding Agency for Chicago Businesses | TML",
+    metaTitle: "Branding Agency for Chicago Businesses",
     metaDescription: "TML builds strong brand identities for Chicago businesses. Logo design, brand strategy, visual systems. Substance-driven branding at smart pricing.",
     keywords: ["branding agency chicago", "chicago brand identity", "logo design chicago", "brand strategy chicago", "chicago branding company"],
     whyChoose: [
@@ -2229,7 +2229,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Get more from every ad dollar in the Chicagoland market.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago's digital ad market is competitive but full of opportunity — especially for businesses willing to be smarter about targeting and optimization. TML manages Google Ads for Chicagoland businesses with a focus on ROI, precision targeting, and transparent performance reporting.",
-    metaTitle: "Google Ads Agency for Chicago Businesses | TML",
+    metaTitle: "Google Ads Agency for Chicago Businesses",
     metaDescription: "TML manages Google Ads for Chicago businesses. Expert PPC management, Chicagoland targeting, avg 4.2x ROAS. Free Google Ads audit.",
     keywords: ["google ads agency chicago", "ppc management chicago", "google ads chicago", "sem agency chicago", "pay per click chicago"],
     whyChoose: [
@@ -2263,7 +2263,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Earn the organic visibility that drives real business in the Midwest.",
     heroBadge: chiHeroBadge,
     heroDescription: "SEO in Chicago means ranking in the third-largest US market against well-established competitors. TML builds SEO strategies that combine technical precision, high-value content, and smart link building to help Chicagoland businesses capture the organic traffic that converts into customers and revenue.",
-    metaTitle: "SEO Agency for Chicago Businesses | TML",
+    metaTitle: "SEO Agency for Chicago Businesses",
     metaDescription: "TML provides expert SEO for Chicago businesses. Technical audits, content strategy, local SEO, link building. Proven results. Free SEO audit.",
     keywords: ["seo agency chicago", "chicago seo company", "seo services chicago", "chicago seo experts", "seo consultant chicago"],
     whyChoose: [
@@ -2297,7 +2297,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built solid — like everything else in this city.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago businesses need websites that are fast, functional, and built to last — not overwrought design experiments. TML builds high-performance websites on modern technology that load quickly, convert visitors, and reflect the no-nonsense professionalism Chicagoland clients expect.",
-    metaTitle: "Web Development for Chicago Businesses | TML",
+    metaTitle: "Web Development for Chicago Businesses",
     metaDescription: "TML builds fast, reliable websites for Chicago businesses. React, Next.js, WordPress, Shopify. 300+ sites delivered. Get a free quote.",
     keywords: ["website development chicago", "web design chicago", "web development company chicago", "chicago website design", "chicago web developer"],
     whyChoose: [
@@ -2331,7 +2331,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a social presence as authentic as the city itself.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago's social media audience values authenticity, community, and substance over polish. TML helps Chicagoland businesses — from River North restaurants to Loop professional firms — build social presences that earn genuine engagement and drive real business outcomes.",
-    metaTitle: "Social Media Agency for Chicago Businesses | TML",
+    metaTitle: "Social Media Agency for Chicago Businesses",
     metaDescription: "TML manages social media for Chicago businesses. Instagram, LinkedIn, TikTok. Content creation, community management, paid social. Free strategy call.",
     keywords: ["social media marketing chicago", "social media agency chicago", "instagram marketing chicago", "social media management chicago", "chicago social media company"],
     whyChoose: [
@@ -2365,7 +2365,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a reliable pipeline across the Chicagoland market.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago businesses need a steady, predictable flow of qualified leads — not marketing theater. TML builds multi-channel lead generation systems for Chicagoland businesses using paid ads, landing pages, email automation, and CRM integration to deliver the pipeline consistency that drives real growth.",
-    metaTitle: "Lead Generation Agency for Chicago | TML",
+    metaTitle: "Lead Generation Agency for Chicago",
     metaDescription: "TML generates qualified leads for Chicago businesses. Paid ads, landing pages, email sequences, CRM automation. Chicagoland targeting. Free consultation.",
     keywords: ["lead generation chicago", "lead generation agency chicago", "b2b leads chicago", "lead gen company chicago", "chicago lead generation"],
     whyChoose: [
@@ -2399,7 +2399,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Clean, purposeful design for a city that values substance.",
     heroBadge: chiHeroBadge,
     heroDescription: "Chicago businesses need design that communicates clearly and looks professional — not design that tries too hard. TML delivers high-quality graphic design for Chicagoland businesses across social media, presentations, advertising, print materials, and more, with the reliability and turnaround speed your business demands.",
-    metaTitle: "Graphic Design for Chicago Businesses | TML",
+    metaTitle: "Graphic Design for Chicago Businesses",
     metaDescription: "TML provides professional graphic design for Chicago businesses. Social media, presentations, ads, print. Fast turnaround, consistent quality. Get a quote.",
     keywords: ["graphic design chicago", "graphic design agency chicago", "design company chicago", "creative design chicago", "chicago graphic designer"],
     whyChoose: [
@@ -2435,7 +2435,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand the Bay Area actually remembers.",
     heroBadge: sfHeroBadge,
     heroDescription: "San Francisco is full of brilliant products with forgettable brands. TML helps SF startups, tech companies, and growth-stage businesses build brand identities that cut through the noise — from SoMa lofts to Sand Hill Road pitch decks. We bring the strategic depth of a top-tier agency without the $50K/month retainer.",
-    metaTitle: "Branding Agency in San Francisco | TML",
+    metaTitle: "Branding Agency in San Francisco",
     metaDescription: "TML builds powerful brand identities for San Francisco startups and tech companies. Logo, brand strategy, visual systems. Bay Area expertise at competitive rates.",
     keywords: ["branding agency san francisco", "brand identity sf", "startup branding san francisco", "branding company bay area", "san francisco brand strategy"],
     whyChoose: [
@@ -2466,7 +2466,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Turn Bay Area clicks into customers, not just impressions.",
     heroBadge: sfHeroBadge,
     heroDescription: "Google Ads in San Francisco is brutally competitive — CPCs in tech, SaaS, and professional services regularly top $30-50. TML manages Google Ads campaigns for SF businesses with the analytical rigor the Bay Area demands, delivering qualified leads and measurable ROAS without the inflated management fees of local agencies.",
-    metaTitle: "Google Ads Agency in San Francisco | TML",
+    metaTitle: "Google Ads Agency in San Francisco",
     metaDescription: "TML manages high-performance Google Ads for San Francisco businesses. Lower CPCs, better ROAS, data-driven optimization. Bay Area PPC expertise. Free audit.",
     keywords: ["google ads agency san francisco", "ppc agency sf", "google ads management bay area", "san francisco ppc", "google ads san francisco"],
     whyChoose: [
@@ -2497,7 +2497,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Rank where the most tech-savvy audience on earth is searching.",
     heroBadge: sfHeroBadge,
     heroDescription: "SEO in San Francisco isn't just competitive — it's existential. Your prospects are Googling solutions right now, and they're clicking the top 3 results. TML delivers technical SEO, content strategy, and link building for Bay Area businesses with the data-driven approach SF companies expect.",
-    metaTitle: "SEO Agency in San Francisco | TML",
+    metaTitle: "SEO Agency in San Francisco",
     metaDescription: "TML provides data-driven SEO for San Francisco businesses. Technical audits, content strategy, link building. Bay Area expertise. Free SEO audit.",
     keywords: ["seo agency san francisco", "seo company sf", "san francisco seo services", "bay area seo agency", "seo consultant san francisco"],
     whyChoose: [
@@ -2528,7 +2528,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built with the performance standards the Bay Area demands.",
     heroBadge: sfHeroBadge,
     heroDescription: "San Francisco audiences judge your credibility in 3 seconds — and your website is the first thing they see. TML builds fast, conversion-optimized websites for Bay Area startups, tech companies, and growing businesses. Modern stacks, clean code, and designs that actually convert visitors into customers.",
-    metaTitle: "Website Development Agency in San Francisco | TML",
+    metaTitle: "Website Development Agency in San Francisco",
     metaDescription: "TML builds high-performance websites for San Francisco businesses. Next.js, React, WordPress. Fast, conversion-optimized, SEO-ready. Bay Area expertise.",
     keywords: ["website development san francisco", "web development agency sf", "san francisco web design", "website developer bay area", "sf website agency"],
     whyChoose: [
@@ -2559,7 +2559,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social content that resonates with the Bay Area's smartest audiences.",
     heroBadge: sfHeroBadge,
     heroDescription: "San Francisco's audience is highly educated, deeply skeptical of marketing, and consumes content at a relentless pace. TML manages social media for Bay Area businesses with strategy-first content that builds genuine engagement — not just vanity follower counts.",
-    metaTitle: "Social Media Agency in San Francisco | TML",
+    metaTitle: "Social Media Agency in San Francisco",
     metaDescription: "TML manages social media for San Francisco businesses. Strategy, content creation, community management, paid social. Bay Area expertise. Free consultation.",
     keywords: ["social media agency san francisco", "social media management sf", "social media marketing bay area", "san francisco social media", "social media company sf"],
     whyChoose: [
@@ -2590,7 +2590,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads, not just MQLs that go nowhere.",
     heroBadge: sfHeroBadge,
     heroDescription: "In San Francisco's hyper-competitive market, the businesses that win are the ones with predictable, scalable lead generation engines. TML builds multi-channel lead gen systems for Bay Area companies — combining paid acquisition, content marketing, SEO, and automation to fill your pipeline with qualified opportunities.",
-    metaTitle: "Lead Generation Agency in San Francisco | TML",
+    metaTitle: "Lead Generation Agency in San Francisco",
     metaDescription: "TML builds lead generation systems for San Francisco businesses. Paid ads, SEO, content, automation. Qualified pipeline, not vanity metrics. Free consultation.",
     keywords: ["lead generation san francisco", "lead gen agency sf", "b2b lead generation bay area", "san francisco lead generation", "lead generation company sf"],
     whyChoose: [
@@ -2621,7 +2621,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that matches the Bay Area's taste — without the Bay Area price tag.",
     heroBadge: sfHeroBadge,
     heroDescription: "San Francisco businesses need design that's clean, modern, and instantly credible. TML provides high-quality graphic design for Bay Area companies — from pitch decks and social content to ad creatives and brand collateral — with the speed and consistency your team needs.",
-    metaTitle: "Graphic Design Agency in San Francisco | TML",
+    metaTitle: "Graphic Design Agency in San Francisco",
     metaDescription: "TML provides professional graphic design for San Francisco businesses. Pitch decks, social media, ads, brand collateral. Fast turnaround, competitive rates.",
     keywords: ["graphic design san francisco", "design agency sf", "graphic designer bay area", "san francisco graphic design", "design company sf"],
     whyChoose: [
@@ -2654,7 +2654,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that commands attention from DIFC to Dubai Marina.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Dubai's market is loud, fast, and fiercely competitive. Standing out demands more than a nice logo — it requires a brand identity that speaks to both Arabic and English audiences, communicates trust and ambition, and holds its own against the biggest names in the region. TML builds brands like that.",
-    metaTitle: "Branding Agency in Dubai | TML",
+    metaTitle: "Branding Agency in Dubai",
     metaDescription: "TML is a branding agency in Dubai delivering brand strategy, logo design, and visual identity. Bilingual (Arabic + English). Trusted by 500+ brands. Free consultation.",
     keywords: ["branding agency dubai", "brand identity dubai", "logo design dubai", "branding company dubai", "brand strategy dubai uae"],
     whyChoose: [
@@ -2685,7 +2685,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Stop burning dirhams on clicks that don't convert.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Google Ads in Dubai is expensive and getting more competitive every quarter. TML manages PPC campaigns for Dubai businesses with the precision and transparency that delivers real results — qualified leads, measurable ROAS, and a spend strategy that makes every dirham work harder.",
-    metaTitle: "Google Ads Agency in Dubai | TML",
+    metaTitle: "Google Ads Agency in Dubai",
     metaDescription: "TML manages high-performance Google Ads for Dubai businesses. Arabic + English campaigns, lower CPCs, better ROAS. UAE PPC expertise. Free audit.",
     keywords: ["google ads agency dubai", "ppc agency dubai", "google ads management dubai", "dubai ppc agency", "google ads dubai uae"],
     whyChoose: [
@@ -2716,7 +2716,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Rank at the top where Dubai's 3.5 million residents are searching.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "With 98% smartphone penetration and a population that Googles everything from restaurants to real estate agents, SEO in Dubai is not optional — it's critical. TML delivers technical SEO, bilingual content strategy, and authority-building link campaigns that put Dubai businesses at the top of search results.",
-    metaTitle: "SEO Agency in Dubai | TML",
+    metaTitle: "SEO Agency in Dubai",
     metaDescription: "TML provides expert SEO for Dubai businesses. Technical audits, bilingual content, link building. Arabic + English optimization. UAE expertise. Free SEO audit.",
     keywords: ["seo agency dubai", "seo company dubai", "dubai seo services", "seo consultant dubai", "seo dubai uae"],
     whyChoose: [
@@ -2747,7 +2747,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites that perform as impressively as the Dubai skyline.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Dubai businesses need websites that load fast, look premium, and convert visitors in both Arabic and English. TML builds high-performance websites for Dubai companies — modern architectures, bilingual design, and conversion optimization built in from the start.",
-    metaTitle: "Website Development Agency in Dubai | TML",
+    metaTitle: "Website Development Agency in Dubai",
     metaDescription: "TML builds high-performance websites for Dubai businesses. Bilingual Arabic/English, fast, conversion-optimized. Modern tech stacks. Free consultation.",
     keywords: ["website development dubai", "web development agency dubai", "website design dubai", "web developer dubai", "website company dubai uae"],
     whyChoose: [
@@ -2778,7 +2778,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social content that resonates from Instagram to Arabic Twitter.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Dubai has one of the highest social media usage rates on the planet — and one of the most diverse audiences. TML manages social media for Dubai businesses with bilingual content strategies that build genuine engagement, grow loyal followings, and drive measurable business results.",
-    metaTitle: "Social Media Agency in Dubai | TML",
+    metaTitle: "Social Media Agency in Dubai",
     metaDescription: "TML manages social media for Dubai businesses. Bilingual Arabic/English content, Instagram, LinkedIn, TikTok. UAE expertise. Proven results. Free consultation.",
     keywords: ["social media agency dubai", "social media management dubai", "social media marketing dubai", "dubai social media", "social media company dubai"],
     whyChoose: [
@@ -2809,7 +2809,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fill your pipeline with qualified Dubai leads, not tire-kickers.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Dubai's market moves fast, and businesses that lack a systematic approach to lead generation get left behind. TML builds multi-channel lead generation systems for Dubai businesses — combining Google Ads, social media, landing pages, WhatsApp automation, and CRM integration to deliver the pipeline you need to grow.",
-    metaTitle: "Lead Generation Agency in Dubai | TML",
+    metaTitle: "Lead Generation Agency in Dubai",
     metaDescription: "TML generates qualified leads for Dubai businesses. Google Ads, social, landing pages, WhatsApp automation. Bilingual campaigns. UAE targeting. Free consultation.",
     keywords: ["lead generation dubai", "lead generation agency dubai", "b2b leads dubai", "lead gen company dubai", "dubai lead generation uae"],
     whyChoose: [
@@ -2840,7 +2840,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that meets the visual standards of the world's most ambitious city.",
     heroBadge: dubaiHeroBadge,
     heroDescription: "Dubai demands premium. From luxury real estate brochures to sleek social media content, every visual touchpoint needs to communicate quality, sophistication, and attention to detail. TML delivers graphic design for Dubai businesses with the bilingual capability and fast turnaround the market requires.",
-    metaTitle: "Graphic Design Agency in Dubai | TML",
+    metaTitle: "Graphic Design Agency in Dubai",
     metaDescription: "TML provides premium graphic design for Dubai businesses. Bilingual Arabic/English, social media, brochures, presentations. Fast turnaround. Competitive rates.",
     keywords: ["graphic design dubai", "design agency dubai", "graphic designer dubai", "dubai graphic design", "creative design company dubai"],
     whyChoose: [
@@ -2873,7 +2873,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that earns trust in the UAE capital.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's business environment values substance, credibility, and long-term thinking. Your brand needs to reflect that — especially when you're selling to government entities, sovereign wealth funds, or the capital's growing private sector. TML builds brand identities that command respect in Abu Dhabi's boardrooms and markets alike.",
-    metaTitle: "Branding Agency in Abu Dhabi | TML",
+    metaTitle: "Branding Agency in Abu Dhabi",
     metaDescription: "TML is a branding agency in Abu Dhabi. Brand strategy, logo design, bilingual identity systems. Government, enterprise, and private sector expertise. Free consultation.",
     keywords: ["branding agency abu dhabi", "brand identity abu dhabi", "logo design abu dhabi", "branding company abu dhabi", "brand strategy abu dhabi uae"],
     whyChoose: [
@@ -2904,7 +2904,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Precision-targeted campaigns for the UAE capital.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Google Ads in Abu Dhabi demands precision — smaller population than Dubai, higher average deal values, and an audience that includes government decision-makers, high-net-worth individuals, and enterprise buyers. TML manages Google Ads for Abu Dhabi businesses with the strategic focus and bilingual capability this market requires.",
-    metaTitle: "Google Ads Agency in Abu Dhabi | TML",
+    metaTitle: "Google Ads Agency in Abu Dhabi",
     metaDescription: "TML manages Google Ads for Abu Dhabi businesses. Bilingual Arabic/English campaigns, precision targeting, transparent reporting. UAE PPC expertise. Free audit.",
     keywords: ["google ads agency abu dhabi", "ppc agency abu dhabi", "google ads management abu dhabi", "abu dhabi ppc", "google ads abu dhabi uae"],
     whyChoose: [
@@ -2935,7 +2935,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Own the top of Google where Abu Dhabi's decision-makers are searching.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's digital landscape is maturing fast, and the businesses ranking at the top of Google are winning disproportionate market share. TML delivers technical SEO, bilingual content strategy, and authority building for Abu Dhabi businesses — with the strategic rigor the capital's business environment demands.",
-    metaTitle: "SEO Agency in Abu Dhabi | TML",
+    metaTitle: "SEO Agency in Abu Dhabi",
     metaDescription: "TML provides expert SEO for Abu Dhabi businesses. Technical audits, bilingual content, link building, local SEO. UAE capital expertise. Free SEO audit.",
     keywords: ["seo agency abu dhabi", "seo company abu dhabi", "abu dhabi seo services", "seo consultant abu dhabi", "seo abu dhabi uae"],
     whyChoose: [
@@ -2966,7 +2966,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built to the standards Abu Dhabi's institutions demand.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's business environment demands websites that communicate trust, professionalism, and forward-thinking innovation. TML builds high-performance bilingual websites for the capital's government entities, enterprises, and growing businesses — modern technology, premium design, and conversion optimization built in.",
-    metaTitle: "Website Development Agency in Abu Dhabi | TML",
+    metaTitle: "Website Development Agency in Abu Dhabi",
     metaDescription: "TML builds high-performance websites for Abu Dhabi businesses. Bilingual Arabic/English, government-grade quality, modern tech stacks. Free consultation.",
     keywords: ["website development abu dhabi", "web development agency abu dhabi", "website design abu dhabi", "web developer abu dhabi", "website company abu dhabi uae"],
     whyChoose: [
@@ -2997,7 +2997,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Social content that resonates with the UAE capital's discerning audience.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's social media audience is affluent, educated, and culturally aware. They scroll past generic content instantly. TML manages social media for Abu Dhabi businesses with bilingual strategies that build genuine authority and engagement — not just follower counts.",
-    metaTitle: "Social Media Agency in Abu Dhabi | TML",
+    metaTitle: "Social Media Agency in Abu Dhabi",
     metaDescription: "TML manages social media for Abu Dhabi businesses. Bilingual Arabic/English content, strategy, community management. UAE capital expertise. Free consultation.",
     keywords: ["social media agency abu dhabi", "social media management abu dhabi", "social media marketing abu dhabi", "abu dhabi social media", "social media company abu dhabi"],
     whyChoose: [
@@ -3028,7 +3028,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads from the UAE's highest-value market.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's market offers some of the highest-value customer relationships in the region — but reaching decision-makers in the capital requires precision, patience, and the right channels. TML builds lead generation systems for Abu Dhabi businesses that deliver qualified opportunities from government, enterprise, and high-net-worth audiences.",
-    metaTitle: "Lead Generation Agency in Abu Dhabi | TML",
+    metaTitle: "Lead Generation Agency in Abu Dhabi",
     metaDescription: "TML generates qualified leads for Abu Dhabi businesses. Google Ads, LinkedIn, landing pages, CRM automation. Government and enterprise targeting. Free consultation.",
     keywords: ["lead generation abu dhabi", "lead generation agency abu dhabi", "b2b leads abu dhabi", "lead gen company abu dhabi", "abu dhabi lead generation uae"],
     whyChoose: [
@@ -3059,7 +3059,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that reflects the professionalism Abu Dhabi demands.",
     heroBadge: abuDhabiHeroBadge,
     heroDescription: "Abu Dhabi's government and enterprise clients expect design work that communicates trust, authority, and sophistication. TML provides graphic design for Abu Dhabi organizations — bilingual, culturally considered, and delivered with the reliability and quality the capital's business environment requires.",
-    metaTitle: "Graphic Design Agency in Abu Dhabi | TML",
+    metaTitle: "Graphic Design Agency in Abu Dhabi",
     metaDescription: "TML provides professional graphic design for Abu Dhabi businesses. Bilingual Arabic/English, corporate, government, presentations. Fast turnaround. Competitive rates.",
     keywords: ["graphic design abu dhabi", "design agency abu dhabi", "graphic designer abu dhabi", "abu dhabi graphic design", "creative design company abu dhabi"],
     whyChoose: [
@@ -3092,7 +3092,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that owns the room — from Connaught Place to Cyber City.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi-NCR is loud, crowded, and ruthlessly competitive. The brands that win here aren't the ones with the biggest budgets — they're the ones with the sharpest identities. TML builds brand systems that cut through the noise for startups in Hauz Khas, enterprises in Gurgaon, and everyone in between.",
-    metaTitle: "Branding Agency Delhi | TML Agency",
+    metaTitle: "Branding Agency Delhi",
     metaDescription: "TML is a branding agency for Delhi-NCR businesses. Logo design, brand identity, strategy & guidelines. 500+ brands built. Free consultation.",
     keywords: ["branding agency delhi", "brand identity delhi ncr", "logo design delhi", "branding company gurgaon", "brand strategy noida"],
     whyChoose: [
@@ -3123,7 +3123,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Stop burning ad budget. Start buying customers.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi-NCR's Google Ads landscape is a battlefield — CPCs are climbing, competition is fierce, and most businesses are haemorrhaging money on poorly managed campaigns. TML runs Google Ads that actually convert: sharp targeting, relentless optimisation, and transparent reporting in ₹.",
-    metaTitle: "Google Ads Agency Delhi | PPC Experts | TML",
+    metaTitle: "Google Ads Agency Delhi | PPC Experts",
     metaDescription: "TML manages Google Ads for Delhi-NCR businesses. Lower CPCs, higher conversions, transparent reporting. ₹25,000/mo starting. Free audit.",
     keywords: ["google ads agency delhi", "ppc agency delhi ncr", "google ads management gurgaon", "adwords agency noida", "ppc company delhi"],
     whyChoose: [
@@ -3154,7 +3154,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Page one isn't luck. It's engineered.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi-NCR has some of the most competitive search landscapes in India — millions of businesses fighting for the same keywords. TML delivers SEO that works: technically bulletproof, content-rich, and built for sustained organic growth. 500+ first-page rankings achieved for Indian businesses.",
-    metaTitle: "SEO Agency Delhi | Proven Rankings | TML",
+    metaTitle: "SEO Agency Delhi | Proven Rankings",
     metaDescription: "TML is an SEO agency for Delhi-NCR businesses. 500+ page-one rankings, technical SEO, content strategy, link building. Free SEO audit.",
     keywords: ["seo agency delhi", "seo company delhi ncr", "seo services gurgaon", "search engine optimization noida", "best seo agency delhi"],
     whyChoose: [
@@ -3185,7 +3185,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Your website should close deals while you sleep.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi's audience is impatient and spoiled for choice. If your site takes more than 3 seconds to load or looks like it was built in 2018, you're losing customers to competitors who invested in a proper website. TML builds fast, modern, conversion-optimised websites — 300+ delivered across India.",
-    metaTitle: "Web Development Delhi | TML Agency",
+    metaTitle: "Web Development Delhi",
     metaDescription: "TML builds high-performance websites for Delhi-NCR businesses. React, Next.js, WordPress, Shopify. 300+ sites delivered. Get a free quote.",
     keywords: ["website development delhi", "web design delhi ncr", "web development company gurgaon", "website design noida", "ecommerce development delhi"],
     whyChoose: [
@@ -3216,7 +3216,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Your audience is scrolling. Make them stop.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi-NCR has over 25 million active social media users — and they're bombarded with content every second. Breaking through requires more than posting pretty graphics. TML builds social media strategies that generate real engagement, real followers, and real business outcomes for Delhi brands.",
-    metaTitle: "Social Media Agency Delhi | TML Agency",
+    metaTitle: "Social Media Agency Delhi",
     metaDescription: "TML manages social media for Delhi-NCR businesses. Strategy, content creation, paid social, community management. Free consultation.",
     keywords: ["social media agency delhi", "social media marketing delhi ncr", "social media management gurgaon", "instagram marketing delhi", "social media company noida"],
     whyChoose: [
@@ -3247,7 +3247,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Leads that answer the phone. Deals that actually close.",
     heroBadge: delhiHeroBadge,
     heroDescription: "Delhi-NCR businesses don't need more 'awareness' — they need qualified leads that convert into revenue. TML builds multi-channel lead generation engines using Google Ads, Meta, LinkedIn, SEO, and landing pages — all tracked end-to-end so you know exactly what each lead costs.",
-    metaTitle: "Lead Generation Agency Delhi | TML Agency",
+    metaTitle: "Lead Generation Agency Delhi",
     metaDescription: "TML generates qualified leads for Delhi-NCR businesses. Google Ads, Meta, LinkedIn, landing pages. Pay for results. Free strategy session.",
     keywords: ["lead generation agency delhi", "lead generation delhi ncr", "b2b lead generation gurgaon", "lead gen company noida", "leads for business delhi"],
     whyChoose: [
@@ -3278,7 +3278,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that does the selling for you.",
     heroBadge: delhiHeroBadge,
     heroDescription: "From pitch decks that close Gurgaon boardroom deals to social media creatives that stop the Delhi scroll — TML delivers graphic design that performs. Fast turnarounds, unlimited revisions on retainer plans, and a dedicated designer who understands your brand.",
-    metaTitle: "Graphic Design Agency Delhi | TML Agency",
+    metaTitle: "Graphic Design Agency Delhi",
     metaDescription: "TML offers graphic design services for Delhi-NCR businesses. Social media, presentations, packaging, marketing collateral. Fast delivery.",
     keywords: ["graphic design agency delhi", "graphic designer delhi ncr", "design agency gurgaon", "creative design noida", "graphic design company delhi"],
     whyChoose: [
@@ -3311,7 +3311,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "In a city that never stops, your brand needs to be unforgettable.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai rewards boldness. From Nariman Point boardrooms to BKC high-rises to Andheri startup hubs — the brands that win here are the ones people recognise instantly. TML builds brand identities that match Mumbai's ambition: sharp, premium, and impossible to ignore.",
-    metaTitle: "Branding Agency Mumbai | TML Agency",
+    metaTitle: "Branding Agency Mumbai",
     metaDescription: "TML is a branding agency for Mumbai businesses. Logo design, brand identity, brand strategy & guidelines. 500+ brands built. Free consultation.",
     keywords: ["branding agency mumbai", "brand identity mumbai", "logo design mumbai", "branding company bkc", "brand strategy andheri"],
     whyChoose: [
@@ -3342,7 +3342,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Every rupee tracked. Every click accountable.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai's Google Ads market is cutthroat — CPCs are among the highest in India, and the margin for error is razor-thin. TML manages Google Ads campaigns that cut through the noise with precision targeting, compelling ad copy, and relentless optimisation. Average 3.5x ROAS for our Mumbai clients.",
-    metaTitle: "Google Ads Agency Mumbai | PPC Experts | TML",
+    metaTitle: "Google Ads Agency Mumbai | PPC Experts",
     metaDescription: "TML manages Google Ads for Mumbai businesses. Higher ROAS, lower CPCs, transparent dashboards. ₹25,000/mo starting. Free audit.",
     keywords: ["google ads agency mumbai", "ppc agency mumbai", "google ads management bkc", "adwords agency andheri", "ppc company mumbai"],
     whyChoose: [
@@ -3373,7 +3373,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Organic traffic that compounds while your competitors keep paying per click.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai's search results are dominated by well-funded brands with massive domain authority. Breaking through requires more than basic SEO — it demands technical excellence, strategic content, and sustained effort. TML has helped 500+ Indian businesses earn page-one rankings, including some of Mumbai's most competitive verticals.",
-    metaTitle: "SEO Agency Mumbai | Proven Rankings | TML",
+    metaTitle: "SEO Agency Mumbai | Proven Rankings",
     metaDescription: "TML is an SEO agency for Mumbai businesses. 500+ page-one rankings, technical SEO, content strategy, link building. Free SEO audit.",
     keywords: ["seo agency mumbai", "seo company mumbai", "seo services bkc", "search engine optimization mumbai", "best seo agency mumbai"],
     whyChoose: [
@@ -3404,7 +3404,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fast, beautiful, built to perform — like the city itself.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai's audience expects premium digital experiences. Your website is competing against some of the best-designed sites in India for attention and trust. TML builds websites that load fast, look exceptional, and convert visitors into customers — 300+ delivered and counting.",
-    metaTitle: "Web Development Mumbai | TML Agency",
+    metaTitle: "Web Development Mumbai",
     metaDescription: "TML builds fast, conversion-optimised websites for Mumbai businesses. React, Next.js, WordPress, Shopify. 300+ sites. Free quote.",
     keywords: ["website development mumbai", "web design mumbai", "web development company bkc", "website design andheri", "ecommerce website mumbai"],
     whyChoose: [
@@ -3435,7 +3435,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Make Mumbai talk about your brand.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai sets India's cultural trends — from fashion to food to finance. If your brand can win on social media here, it can win anywhere. TML creates social strategies that resonate with Mumbai's diverse, discerning, and trend-setting audiences across Instagram, LinkedIn, YouTube, and beyond.",
-    metaTitle: "Social Media Agency Mumbai | TML Agency",
+    metaTitle: "Social Media Agency Mumbai",
     metaDescription: "TML manages social media for Mumbai businesses. Strategy, content creation, paid social, community management. Free consultation.",
     keywords: ["social media agency mumbai", "social media marketing mumbai", "instagram marketing mumbai", "social media company bkc", "social media management andheri"],
     whyChoose: [
@@ -3466,7 +3466,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads. Real conversations. Closed deals.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai businesses need leads that convert — not spreadsheets full of junk contacts. TML builds multi-channel lead generation systems using Google Ads, Meta, LinkedIn, landing pages, and email nurture — all tracked to revenue so you know exactly what your investment is producing.",
-    metaTitle: "Lead Generation Agency Mumbai | TML Agency",
+    metaTitle: "Lead Generation Agency Mumbai",
     metaDescription: "TML generates qualified leads for Mumbai businesses. Google Ads, Meta, LinkedIn, landing pages. Transparent reporting. Free strategy session.",
     keywords: ["lead generation agency mumbai", "lead generation mumbai", "b2b lead generation bkc", "lead gen company mumbai", "qualified leads mumbai"],
     whyChoose: [
@@ -3497,7 +3497,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that matches Mumbai's visual standards.",
     heroBadge: mumbaiHeroBadge,
     heroDescription: "Mumbai is India's creative capital — the bar for visual quality is sky-high. From pitch decks that win BKC deals to social creatives that pop on Andheri timelines, TML delivers graphic design that meets the city's exacting standards. Fast turnarounds, dedicated designers, and pricing that makes sense.",
-    metaTitle: "Graphic Design Agency Mumbai | TML Agency",
+    metaTitle: "Graphic Design Agency Mumbai",
     metaDescription: "TML offers graphic design for Mumbai businesses. Social media, presentations, packaging, marketing collateral. 24-48hr delivery. Retainers from ₹18,000/mo.",
     keywords: ["graphic design agency mumbai", "graphic designer mumbai", "design agency bkc", "creative design andheri", "graphic design company mumbai"],
     whyChoose: [
@@ -3530,7 +3530,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Build a brand that scales as fast as your product.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore is India's startup capital — a city where a strong brand can be the difference between a ₹10-crore raise and a failed pitch. TML builds brand identities for tech companies, SaaS platforms, and ambitious businesses across Koramangala, HSR Layout, Whitefield, and beyond.",
-    metaTitle: "Branding Agency Bangalore | TML Agency",
+    metaTitle: "Branding Agency Bangalore",
     metaDescription: "TML is a branding agency for Bangalore businesses. Logo, identity, strategy & guidelines for startups and enterprises. 500+ brands. Free consult.",
     keywords: ["branding agency bangalore", "brand identity bangalore", "logo design bangalore", "startup branding koramangala", "brand strategy whitefield"],
     whyChoose: [
@@ -3561,7 +3561,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Data-driven ads for a data-driven city.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore's tech-savvy audience knows when they're being sold to — and they don't tolerate lazy ads. TML runs Google Ads campaigns built on deep keyword research, surgical targeting, and constant optimisation. Our Bangalore clients average 3.8x ROAS because we treat every rupee like it's our own.",
-    metaTitle: "Google Ads Agency Bangalore | PPC | TML",
+    metaTitle: "Google Ads Agency Bangalore | PPC",
     metaDescription: "TML manages Google Ads for Bangalore businesses. 3.8x avg ROAS, lower CPCs, data-driven optimisation. ₹25,000/mo. Free audit.",
     keywords: ["google ads agency bangalore", "ppc agency bangalore", "google ads koramangala", "adwords company whitefield", "ppc management bangalore"],
     whyChoose: [
@@ -3592,7 +3592,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Rank where Bangalore's smartest buyers are searching.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore's search landscape is dominated by well-funded startups with dedicated SEO teams. Competing requires technical precision, content depth, and strategic patience. TML delivers SEO that earns rankings in India's toughest digital market — 500+ first-page positions achieved and growing.",
-    metaTitle: "SEO Agency Bangalore | Rankings | TML",
+    metaTitle: "SEO Agency Bangalore | Rankings",
     metaDescription: "TML is an SEO agency for Bangalore businesses. Technical SEO, content strategy, link building. 500+ page-one rankings. Free audit.",
     keywords: ["seo agency bangalore", "seo company bangalore", "seo services koramangala", "search engine optimization bangalore", "seo experts whitefield"],
     whyChoose: [
@@ -3623,7 +3623,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Websites built by engineers, designed for conversion.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore has some of the most technically demanding audiences in the world. Your website needs to be fast, clean, and built on a modern stack — anything less and you lose credibility before the first scroll. TML builds websites that Bangalore's tech community respects and that your customers actually use.",
-    metaTitle: "Web Development Bangalore | TML Agency",
+    metaTitle: "Web Development Bangalore",
     metaDescription: "TML builds fast, modern websites for Bangalore businesses. React, Next.js, WordPress, Shopify. 300+ sites delivered. Get a free quote.",
     keywords: ["website development bangalore", "web design bangalore", "web development koramangala", "website design whitefield", "react developer bangalore"],
     whyChoose: [
@@ -3654,7 +3654,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Content that resonates with India's most discerning audience.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore's audience is educated, tech-savvy, and has zero patience for mediocre content. They'll call out inauthenticity in seconds. TML builds social media strategies that earn respect — thought leadership on LinkedIn, engaging reels on Instagram, and community-driven content across platforms.",
-    metaTitle: "Social Media Agency Bangalore | TML",
+    metaTitle: "Social Media Agency Bangalore",
     metaDescription: "TML manages social media for Bangalore businesses. Strategy, content, paid social, community management. Built for tech audiences. Free consult.",
     keywords: ["social media agency bangalore", "social media marketing bangalore", "linkedin marketing bangalore", "social media management koramangala", "instagram agency bangalore"],
     whyChoose: [
@@ -3685,7 +3685,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Fuel your pipeline. Scale your revenue.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore companies measure everything — and your lead generation should be no different. TML builds multi-channel lead gen systems with full attribution, CRM integration, and cost-per-qualified-lead tracking. Whether you're selling SaaS globally or services locally, we fill pipelines that convert.",
-    metaTitle: "Lead Gen Agency Bangalore | TML Agency",
+    metaTitle: "Lead Gen Agency Bangalore",
     metaDescription: "TML generates qualified leads for Bangalore businesses. Google Ads, LinkedIn, content marketing, landing pages. Full attribution. Free strategy call.",
     keywords: ["lead generation bangalore", "b2b lead generation bangalore", "lead gen agency koramangala", "demand generation bangalore", "qualified leads bangalore"],
     whyChoose: [
@@ -3716,7 +3716,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Ship-speed design for a ship-speed city.",
     heroBadge: bangaloreHeroBadge,
     heroDescription: "Bangalore's startups and tech companies need design that moves as fast as their product cycles. TML offers dedicated designers, 24-hour turnarounds, and retainer plans built for the pace of India's tech capital. From SaaS marketing assets to social content — we handle it all.",
-    metaTitle: "Graphic Design Agency Bangalore | TML",
+    metaTitle: "Graphic Design Agency Bangalore",
     metaDescription: "TML offers graphic design for Bangalore businesses. Social media, SaaS marketing assets, presentations, packaging. 24hr turnaround. Retainers from ₹15,000/mo.",
     keywords: ["graphic design agency bangalore", "graphic designer bangalore", "design agency koramangala", "startup design bangalore", "creative agency whitefield"],
     whyChoose: [
@@ -3749,7 +3749,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "A city on the rise deserves brands that match its ambition.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Hyderabad is booming — HITEC City is expanding, Genome Valley is attracting global pharma investment, and the city's consumer market is growing faster than any other South Indian metro. TML builds brand identities that capture this momentum for startups, enterprises, and everything between.",
-    metaTitle: "Branding Agency Hyderabad | TML Agency",
+    metaTitle: "Branding Agency Hyderabad",
     metaDescription: "TML is a branding agency for Hyderabad businesses. Logo design, brand identity, strategy & guidelines. 500+ brands built. Free consultation.",
     keywords: ["branding agency hyderabad", "brand identity hyderabad", "logo design hitec city", "branding company gachibowli", "brand strategy hyderabad"],
     whyChoose: [
@@ -3780,7 +3780,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Smart ads for a city that's getting smarter every year.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Hyderabad's digital ad market is growing 42% year-on-year — and so is the competition. TML runs Google Ads campaigns that capture high-intent searches across HITEC City, Gachibowli, Banjara Hills, and beyond. Precision targeting, relentless optimisation, and full transparency on every rupee spent.",
-    metaTitle: "Google Ads Agency Hyderabad | PPC | TML",
+    metaTitle: "Google Ads Agency Hyderabad | PPC",
     metaDescription: "TML manages Google Ads for Hyderabad businesses. Lower CPCs, higher conversions, full transparency. ₹20,000/mo starting. Free audit.",
     keywords: ["google ads agency hyderabad", "ppc agency hyderabad", "google ads hitec city", "adwords company gachibowli", "ppc management hyderabad"],
     whyChoose: [
@@ -3811,7 +3811,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Plant the seeds now. Own the search results later.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Hyderabad's organic search landscape is still maturing — which means the businesses that invest in serious SEO now will dominate for years. TML builds SEO strategies that combine technical excellence with Hyderabad market insight, earning rankings that compound while your competitors keep paying per click.",
-    metaTitle: "SEO Agency Hyderabad | Rankings | TML",
+    metaTitle: "SEO Agency Hyderabad | Rankings",
     metaDescription: "TML is an SEO agency for Hyderabad businesses. Technical SEO, content strategy, local SEO. 500+ page-one rankings. Free audit.",
     keywords: ["seo agency hyderabad", "seo company hyderabad", "seo services hitec city", "search engine optimization hyderabad", "local seo hyderabad"],
     whyChoose: [
@@ -3842,7 +3842,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "A website that works as hard as HITEC City.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Whether you're an IT company in Gachibowli, a pharma enterprise near Genome Valley, or a retail brand expanding across Hyderabad — your website needs to be fast, modern, and built to convert. TML delivers high-performance websites that match the standards of India's fastest-growing tech city.",
-    metaTitle: "Web Development Hyderabad | TML Agency",
+    metaTitle: "Web Development Hyderabad",
     metaDescription: "TML builds fast, modern websites for Hyderabad businesses. React, Next.js, WordPress, Shopify. 300+ sites delivered. Free quote.",
     keywords: ["website development hyderabad", "web design hyderabad", "web development hitec city", "website design gachibowli", "ecommerce website hyderabad"],
     whyChoose: [
@@ -3873,7 +3873,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "From Charminar to your customer's feed — be everywhere that matters.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Hyderabad's social media audience is young, growing, and highly engaged. From HITEC City professionals scrolling LinkedIn to Jubilee Hills foodies on Instagram — TML builds social media strategies that reach the right people with content that actually resonates. Strategy, content creation, and paid social under one roof.",
-    metaTitle: "Social Media Agency Hyderabad | TML",
+    metaTitle: "Social Media Agency Hyderabad",
     metaDescription: "TML manages social media for Hyderabad businesses. Strategy, content, paid social, community management. Growing local & national audiences.",
     keywords: ["social media agency hyderabad", "social media marketing hyderabad", "instagram marketing hyderabad", "social media management hitec city", "linkedin marketing hyderabad"],
     whyChoose: [
@@ -3904,7 +3904,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Qualified leads, not vanity metrics.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "Hyderabad's growth is creating demand across every industry — from IT staffing to real estate, healthcare to education. TML builds lead generation systems that capture this demand through Google Ads, Meta, LinkedIn, and organic channels — all tracked to cost-per-qualified-lead and ROI.",
-    metaTitle: "Lead Gen Agency Hyderabad | TML Agency",
+    metaTitle: "Lead Gen Agency Hyderabad",
     metaDescription: "TML generates qualified leads for Hyderabad businesses. Multi-channel campaigns, CRM integration, full tracking. Free strategy session.",
     keywords: ["lead generation hyderabad", "lead generation agency hyderabad", "b2b leads hitec city", "lead gen company hyderabad", "qualified leads hyderabad"],
     whyChoose: [
@@ -3935,7 +3935,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Design that elevates your brand in India's fastest-growing city.",
     heroBadge: hyderabadHeroBadge,
     heroDescription: "From HITEC City corporate presentations to Jubilee Hills event invitations to Secunderabad retail marketing — TML delivers graphic design that matches Hyderabad's growing ambitions. Dedicated designers, fast turnarounds, and retainer plans that make scaling your creative output effortless.",
-    metaTitle: "Graphic Design Agency Hyderabad | TML",
+    metaTitle: "Graphic Design Agency Hyderabad",
     metaDescription: "TML offers graphic design for Hyderabad businesses. Social media, presentations, packaging, marketing collateral. 24-48hr turnaround. Retainers from ₹12,000/mo.",
     keywords: ["graphic design agency hyderabad", "graphic designer hyderabad", "design agency hitec city", "creative design gachibowli", "graphic design company hyderabad"],
     whyChoose: [
@@ -3968,7 +3968,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Built for a city that values substance over flash.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's audience is educated, value-conscious, and deeply skeptical of surface-level marketing. The brands that win here are the ones with genuine substance behind their identity. TML builds brand systems that earn trust in Hinjewadi's tech corridor, Koregaon Park's lifestyle market, and Pimpri-Chinchwad's industrial belt alike.",
-    metaTitle: "Branding Agency Pune | TML Agency",
+    metaTitle: "Branding Agency Pune",
     metaDescription: "TML is a branding agency for Pune businesses. Logo, identity, strategy & guidelines. 500+ brands built. Substance-first branding. Free consult.",
     keywords: ["branding agency pune", "brand identity pune", "logo design hinjewadi", "branding company koregaon park", "brand strategy pune"],
     whyChoose: [
@@ -3999,7 +3999,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Every click measured. Every rupee justified.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's Google Ads market is heating up — CPCs are rising as more businesses discover paid search. TML helps Pune companies stay ahead with expertly managed campaigns that maximise every rupee: sharp keyword targeting, compelling ad copy, and conversion-optimised landing pages.",
-    metaTitle: "Google Ads Agency Pune | PPC | TML",
+    metaTitle: "Google Ads Agency Pune | PPC",
     metaDescription: "TML manages Google Ads for Pune businesses. Higher conversions, lower waste, transparent reporting. ₹20,000/mo starting. Free audit.",
     keywords: ["google ads agency pune", "ppc agency pune", "google ads hinjewadi", "adwords company pune", "ppc management pune"],
     whyChoose: [
@@ -4030,7 +4030,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Compound your growth. Reduce your ad dependency.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's organic search landscape still has massive gaps — businesses that invest in structured SEO now will own page one for years. TML builds SEO strategies combining technical rigour with content depth, earning rankings for Pune businesses across IT, education, real estate, automotive, and more.",
-    metaTitle: "SEO Agency Pune | Proven Rankings | TML",
+    metaTitle: "SEO Agency Pune | Proven Rankings",
     metaDescription: "TML is an SEO agency for Pune businesses. Technical SEO, content strategy, local SEO. 500+ page-one rankings. Free audit.",
     keywords: ["seo agency pune", "seo company pune", "seo services hinjewadi", "search engine optimization pune", "local seo pune"],
     whyChoose: [
@@ -4061,7 +4061,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Clean code, clear thinking, real results.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's market rewards quality and substance. Your website needs to load fast, communicate clearly, and guide visitors toward action — whether you're a Hinjewadi SaaS company, a Pimpri-Chinchwad manufacturer, or a Koregaon Park lifestyle brand. TML builds websites that do exactly that.",
-    metaTitle: "Web Development Pune | TML Agency",
+    metaTitle: "Web Development Pune",
     metaDescription: "TML builds fast, conversion-optimised websites for Pune businesses. React, Next.js, WordPress, Shopify. 300+ delivered. Free quote.",
     keywords: ["website development pune", "web design pune", "web development hinjewadi", "website design kharadi", "ecommerce website pune"],
     whyChoose: [
@@ -4092,7 +4092,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Smart content for a city that thinks before it clicks.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's social media audience is educated, discerning, and rewards substance over hype. They engage with content that teaches, entertains intelligently, or offers genuine value — not generic motivational posts. TML creates social strategies calibrated for the way Pune actually scrolls.",
-    metaTitle: "Social Media Agency Pune | TML Agency",
+    metaTitle: "Social Media Agency Pune",
     metaDescription: "TML manages social media for Pune businesses. Strategy, content, paid social, community management. Built for Pune's smart audience.",
     keywords: ["social media agency pune", "social media marketing pune", "instagram marketing pune", "social media management hinjewadi", "linkedin agency pune"],
     whyChoose: [
@@ -4123,7 +4123,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Leads that convert. Pipelines that grow.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune's diverse economy — IT in Hinjewadi, automotive in Pimpri-Chinchwad, education near the university — means lead generation looks different for every business. TML builds customised lead gen systems with Google Ads, Meta, LinkedIn, and organic channels, all tracked to cost-per-qualified-lead.",
-    metaTitle: "Lead Gen Agency Pune | TML Agency",
+    metaTitle: "Lead Gen Agency Pune",
     metaDescription: "TML generates qualified leads for Pune businesses. Google Ads, Meta, LinkedIn, landing pages. Industry-specific funnels. Free strategy session.",
     keywords: ["lead generation pune", "lead generation agency pune", "b2b leads hinjewadi", "lead gen company pune", "qualified leads pune"],
     whyChoose: [
@@ -4154,7 +4154,7 @@ const cityServiceContentMap: Record<string, CityServiceContent> = {
     tagline: "Clean, purposeful design — no fluff.",
     heroBadge: puneHeroBadge,
     heroDescription: "Pune values clarity, craft, and substance — and your design should reflect that. TML provides dedicated designers, 24-48 hour turnarounds, and retainer plans built for businesses across Hinjewadi tech parks, Koregaon Park retail, and Pimpri-Chinchwad manufacturing.",
-    metaTitle: "Graphic Design Agency Pune | TML Agency",
+    metaTitle: "Graphic Design Agency Pune",
     metaDescription: "TML offers graphic design for Pune businesses. Social media, presentations, packaging, marketing collateral. 24-48hr turnaround. Retainers from ₹12,000/mo.",
     keywords: ["graphic design agency pune", "graphic designer pune", "design agency hinjewadi", "creative design koregaon park", "graphic design company pune"],
     whyChoose: [

@@ -330,11 +330,22 @@ function generateMetaDescription(
   location: LocationInfo,
   seed: number,
 ): string {
+  const svc = serviceName.toLowerCase();
+  const city = location.name;
+  const state = location.state;
+  const ind = location.industries.slice(0, 2).join(" & ");
+
   const patterns = [
-    `Professional ${serviceName.toLowerCase()} services in ${location.name}. TML Agency delivers results-driven strategies for ${location.industries.slice(0, 2).join(" & ")} businesses. Get a free consultation.`,
-    `TML is ${location.name}'s trusted ${serviceName.toLowerCase()} agency. We help businesses across ${location.state} grow with data-driven strategies. Contact us today.`,
-    `Expert ${serviceName.toLowerCase()} in ${location.name}, ${location.state}. TML Agency combines local market knowledge with proven expertise to drive growth. Free audit available.`,
-    `Looking for ${serviceName.toLowerCase()} in ${location.name}? TML Agency offers strategic solutions for ${location.name} businesses. 500+ brands served. Get started today.`,
+    `Looking for ${svc} in ${city}? TML Agency delivers data-driven strategies that grow traffic, leads & revenue. 500+ brands served. Get a free audit today.`,
+    `${serviceName} agency serving ${city} businesses. We combine proven expertise with local market knowledge to drive measurable growth. Book a free consultation.`,
+    `TML Agency offers expert ${svc} services in ${city}, ${state}. From strategy to execution, we help businesses dominate their market. Free audit available.`,
+    `Need ${svc} in ${city}? TML Agency has helped 500+ brands achieve real growth with custom strategies built for ${state} markets. Get started today.`,
+    `Top-rated ${svc} agency in ${city}. TML Agency creates tailored campaigns for ${ind} businesses that deliver lasting ROI. Book a consultation now.`,
+    `${city}'s trusted ${svc} partner. TML Agency brings ${state}-focused strategies and hands-on expertise to every campaign. Request your free audit today.`,
+    `Professional ${svc} services in ${city}, ${state}. TML Agency turns clicks into customers with proven frameworks and transparent reporting. Get a free consultation.`,
+    `Searching for a ${svc} agency in ${city}? TML Agency drives results with strategies backed by data and 500+ successful brand partnerships. Free audit available.`,
+    `TML Agency provides results-driven ${svc} in ${city}. Our team builds custom campaigns designed for ${state} markets that scale your business. Book a free consultation.`,
+    `Expert ${svc} solutions for ${city} businesses. TML Agency blends creative strategy with performance analytics to deliver real growth. Get started with a free audit.`,
   ];
   const result = pick(patterns, seed);
   return result.length <= 160 ? result : result.slice(0, 157) + "...";
@@ -348,17 +359,38 @@ function generateKeywords(
   location: LocationInfo,
 ): string[] {
   const sn = serviceName.toLowerCase();
-  return [
-    `${sn} ${location.name.toLowerCase()}`,
-    `${sn} agency ${location.name.toLowerCase()}`,
-    `${sn} services ${location.name.toLowerCase()}`,
-    `${sn} company ${location.name.toLowerCase()}`,
-    `best ${sn} ${location.name.toLowerCase()}`,
-    `${serviceSlug} ${location.name.toLowerCase()}`,
-    `${sn} ${location.state.toLowerCase()}`,
+  const city = location.name.toLowerCase();
+  const state = location.state.toLowerCase();
+
+  const keywords = [
+    // Core patterns
+    `${sn} ${city}`,
+    `${sn} agency ${city}`,
+    `${sn} company ${city}`,
+    `best ${sn} ${city}`,
+    `${sn} services in ${city}`,
+    `${sn} ${city} ${state}`,
+    `top ${sn} agency ${city}`,
+    `affordable ${sn} ${city}`,
+    `${sn} for business ${city}`,
+    `${sn} expert ${city}`,
+    `${city} ${sn} services`,
+    `professional ${sn} ${city}`,
+    // Slug & broader geo variants
+    `${serviceSlug} ${city}`,
     `${sn} ${location.country.toLowerCase()}`,
-    `${location.name.toLowerCase()} ${sn} agency`,
+    `${city} ${sn} agency`,
   ];
+
+  // Industry-specific keywords (2-3 from location's top industries)
+  const industries = (location.industries || []).slice(0, 3);
+  for (const industry of industries) {
+    const ind = industry.toLowerCase();
+    keywords.push(`${sn} for ${ind} ${city}`);
+    keywords.push(`${ind} ${sn} ${city}`);
+  }
+
+  return keywords;
 }
 
 // ─── Why Choose (4 items, 8 options per slot = 4,096 combos) ─────────────────

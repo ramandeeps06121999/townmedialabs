@@ -5,6 +5,7 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MicrosoftClarity from "@/components/analytics/MicrosoftClarity";
 import { DeferredSmoothScroll } from "@/components/providers/DeferredSmoothScroll";
 import LayoutExtras from "@/components/layout/LayoutExtras";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s | TML Agency",
   },
   description:
-    "TML is a full-service branding and digital marketing agency with 15+ years of experience. We specialize in branding, web development, SEO, Google Ads, social media marketing, and performance marketing. 500+ brands scaled, 98% client retention.",
+    "TML Agency — global digital marketing & branding agency. 500+ brands scaled across India, USA, UK, Canada & UAE. SEO, Google Ads, web development & social media.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
@@ -377,6 +378,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <MicrosoftClarity />
         {children}
+        <Analytics />
         <DeferredSmoothScroll />
         <LayoutExtras />
       </body>

@@ -6,7 +6,7 @@ const siteUrl = "https://townmedialabs.com";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Discover TML Agency — Chandigarh's top digital marketing, branding & web development agency. 500+ clients, 70+ experts, 15+ years delivering SEO, social media & creative solutions.",
+    "TML Agency — Chandigarh's top digital marketing & branding agency. 500+ clients, 70+ experts, 15+ years of SEO, web development & creative excellence.",
   keywords: [
     "about tml",
     "digital marketing agency chandigarh",

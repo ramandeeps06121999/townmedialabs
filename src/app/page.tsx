@@ -5,32 +5,32 @@ import { ClientLogos } from "@/components/sections/ClientLogos";
 import BelowFoldSections from "@/components/sections/BelowFoldSections";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency in Chandigarh | SEO, Branding & Ads",
+  title: "TML Agency | Global Digital Marketing & Branding Agency",
   description:
-    "TML Agency is Chandigarh's top digital marketing agency. SEO, Google Ads, branding, web development & social media marketing. 500+ brands scaled. Get a free audit.",
+    "TML Agency is a global digital marketing agency serving 500+ brands across India, USA, UK, Canada, Australia & UAE. SEO, Google Ads, branding & web development.",
   keywords: [
-    "digital marketing agency Chandigarh",
-    "SEO agency Chandigarh",
+    "digital marketing agency",
+    "global branding agency",
+    "SEO agency",
     "Google Ads agency",
-    "branding agency Chandigarh",
-    "web development Chandigarh",
-    "social media marketing",
+    "branding agency",
+    "web development company",
+    "social media marketing agency",
     "performance marketing agency",
     "lead generation agency",
-    "Meta Ads agency",
-    "content writing services",
-    "link building services",
-    "technical SEO",
-    "GMB listing optimization",
-    "best digital marketing company Chandigarh",
+    "digital marketing agency India",
+    "digital marketing agency USA",
+    "digital marketing agency UK",
+    "best digital marketing company",
+    "full service marketing agency",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Digital Marketing Agency in Chandigarh | SEO, Branding & Ads",
+    title: "TML Agency | Global Digital Marketing & Branding Agency",
     description:
-      "Chandigarh's top digital marketing agency. SEO, Google Ads, branding, web development & social media marketing. 500+ brands scaled.",
+      "Global digital marketing agency serving 500+ brands across India, USA, UK, Canada, Australia & UAE. SEO, Google Ads, branding & web development.",
     url: "https://townmedialabs.com",
     siteName: "TML Agency",
     type: "website",
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "TML Agency - Digital Marketing Agency in Chandigarh | SEO, Branding & Ads",
+        alt: "TML Agency - Global Digital Marketing & Branding Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@tmlagency",
-    title: "Digital Marketing Agency in Chandigarh | SEO, Branding & Ads",
+    title: "TML Agency | Global Digital Marketing & Branding Agency",
     description:
-      "Chandigarh's top digital marketing agency. SEO, Google Ads, branding, web development & social media marketing. 500+ brands scaled.",
+      "Global digital marketing agency serving 500+ brands across India, USA, UK, Canada, Australia & UAE. SEO, Google Ads, branding & web development.",
     images: ["/og-image.png"],
   },
 };

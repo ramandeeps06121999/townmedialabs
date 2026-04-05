@@ -1,9 +1,11 @@
 "use client";
 
 import { useRef, useState, useEffect, useCallback, useMemo } from "react";
-import { motion, useInView, useMotionValue, useTransform, useSpring } from "motion/react";
+import { motion, useInView, useMotionValue, useTransform, useSpring, AnimatePresence } from "motion/react";
 import { testimonials } from "@/data/testimonials";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+
+const CARDS_PER_PAGE = 3;
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -195,6 +197,13 @@ export function TestimonialsHome2() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const inView = useInView(sectionRef, { once: true, amount: 0.15 });
   const [activeDot, setActiveDot] = useState(0);
+  const [desktopPage, setDesktopPage] = useState(0);
+
+  const totalDesktopPages = Math.ceil(testimonials.length / CARDS_PER_PAGE);
+  const visibleTestimonials = testimonials.slice(
+    desktopPage * CARDS_PER_PAGE,
+    desktopPage * CARDS_PER_PAGE + CARDS_PER_PAGE,
+  );
 
   // Parallax for decorative quote
   const scrollY = useMotionValue(0);
@@ -212,7 +221,7 @@ export function TestimonialsHome2() {
 
   const quoteY = useSpring(scrollY, { stiffness: 50, damping: 20 });
 
-  // Auto-rotate indicator — advances every 6 seconds
+  // Auto-rotate — advances every 8 seconds on desktop, 6 on mobile
   const [autoProgress, setAutoProgress] = useState(0);
 
   useEffect(() => {
@@ -220,14 +229,15 @@ export function TestimonialsHome2() {
     const interval = setInterval(() => {
       setAutoProgress((p) => {
         if (p >= 100) {
+          setDesktopPage((d) => (d + 1) % totalDesktopPages);
           setActiveDot((d) => (d + 1) % testimonials.length);
           return 0;
         }
-        return p + 2;
+        return p + 1.5;
       });
     }, 120);
     return () => clearInterval(interval);
-  }, [inView]);
+  }, [inView, totalDesktopPages]);
 
   // Scroll to active dot on mobile
   useEffect(() => {
@@ -329,72 +339,121 @@ export function TestimonialsHome2() {
           className="w-full h-[1px] bg-gradient-to-r from-white/15 via-white/5 to-transparent mb-16 origin-left"
         />
 
-        {/* ── Testimonial Cards (horizontal scroll mobile / grid desktop) */}
+        {/* ── Testimonial Cards — Desktop: paginated grid / Mobile: horizontal scroll */}
+
+        {/* Mobile: horizontal scroll (all testimonials) */}
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-none pb-2 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0"
+          className="flex md:hidden gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-2 -mx-6 px-6"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {testimonials.map((t, i) => (
-            <SpotlightCard key={t.name} index={i} inView={inView}>
-              {/* Large quote mark */}
-              <motion.span
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{
-                  duration: 0.5,
-                  delay: 0.5 + i * 0.15,
-                  ease,
-                }}
-                className="text-5xl text-[#ff4500]/20 font-serif leading-none mb-4 select-none block"
-              >
-                &ldquo;
-              </motion.span>
-
-              {/* Stars - animated one by one */}
-              <div className="flex gap-1 mb-6">
+            <SpotlightCard key={t.name} index={i % 3} inView={inView}>
+              <span className="text-5xl text-[#ff4500]/20 font-serif leading-none mb-4 select-none block">&ldquo;</span>
+              <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.rating }).map((_, si) => (
-                  <AnimatedStar
-                    key={si}
-                    index={si}
-                    inView={inView}
-                    baseDelay={0.6 + i * 0.15}
-                  />
+                  <AnimatedStar key={si} index={si} inView={inView} baseDelay={0.6} />
                 ))}
               </div>
-
-              {/* Quote with word-by-word reveal */}
-              <p className="text-sm md:text-base text-white leading-relaxed flex-1 mb-8">
-                <WordReveal
-                  text={t.quote}
-                  inView={inView}
-                  delay={0.7 + i * 0.15}
-                />
-              </p>
-
-              {/* Attribution */}
-              <div className="pt-6 border-t border-white/[0.06]">
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 1.2 + i * 0.12, ease }}
-                  className="flex items-center gap-4"
-                >
-                  <AnimatedAvatar letter={t.name.charAt(0)} index={i} />
+              <p className="text-sm text-white leading-relaxed flex-1 mb-6">{t.quote}</p>
+              <div className="mt-auto pt-5 border-t border-white/[0.06]">
+                <div className="flex items-center gap-3">
+                  <AnimatedAvatar letter={t.name.charAt(0)} index={i % 3} />
                   <div>
-                    <p className="text-sm font-semibold text-white">
-                      {t.name}
-                    </p>
-                    <p className="text-xs text-white mt-0.5">{t.company}</p>
+                    <p className="text-sm font-semibold text-white">{t.name}</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{t.role}, {t.company}</p>
                   </div>
-                </motion.div>
+                </div>
+                <span className="inline-block mt-3 px-2 py-0.5 text-[10px] tracking-wide uppercase text-[#ff4500]/80 border border-[#ff4500]/20 rounded-full">
+                  {t.service}
+                </span>
               </div>
             </SpotlightCard>
           ))}
         </div>
 
-        {/* ── Navigation dots (mobile) ────────────────────────── */}
+        {/* Desktop: paginated 3-column grid */}
+        <div className="hidden md:block">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={desktopPage}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease }}
+              className="grid grid-cols-3 gap-6"
+            >
+              {visibleTestimonials.map((t, i) => (
+                <SpotlightCard key={t.name} index={i} inView={inView}>
+                  <span className="text-5xl text-[#ff4500]/20 font-serif leading-none mb-4 select-none block">&ldquo;</span>
+                  <div className="flex gap-1 mb-4">
+                    {Array.from({ length: t.rating }).map((_, si) => (
+                      <AnimatedStar key={si} index={si} inView={inView} baseDelay={0.3 + i * 0.1} />
+                    ))}
+                  </div>
+                  <p className="text-sm md:text-base text-white leading-relaxed flex-1 mb-6">
+                    <WordReveal text={t.quote} inView={true} delay={i * 0.08} />
+                  </p>
+                  <div className="mt-auto pt-5 border-t border-white/[0.06]">
+                    <motion.div
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 + i * 0.1, ease }}
+                      className="flex items-center gap-3"
+                    >
+                      <AnimatedAvatar letter={t.name.charAt(0)} index={i} />
+                      <div>
+                        <p className="text-sm font-semibold text-white">{t.name}</p>
+                        <p className="text-[11px] text-white/60 mt-0.5">{t.role}, {t.company}</p>
+                      </div>
+                    </motion.div>
+                    <span className="inline-block mt-3 px-2 py-0.5 text-[10px] tracking-wide uppercase text-[#ff4500]/80 border border-[#ff4500]/20 rounded-full">
+                      {t.service}
+                    </span>
+                  </div>
+                </SpotlightCard>
+              ))}
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Desktop navigation */}
+          <div className="flex items-center justify-between mt-10">
+            <div className="flex items-center gap-3">
+              {Array.from({ length: totalDesktopPages }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => { setDesktopPage(i); setAutoProgress(0); }}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${
+                    i === desktopPage ? "w-8 bg-[#ff4500]" : "w-1.5 bg-white/20 hover:bg-white/40"
+                  }`}
+                  aria-label={`Go to page ${i + 1}`}
+                />
+              ))}
+              <span className="text-[11px] text-white/40 ml-2">
+                {desktopPage + 1} / {totalDesktopPages}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => { setDesktopPage((p) => (p - 1 + totalDesktopPages) % totalDesktopPages); setAutoProgress(0); }}
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-white/30 transition-colors"
+                aria-label="Previous testimonials"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+              </button>
+              <button
+                onClick={() => { setDesktopPage((p) => (p + 1) % totalDesktopPages); setAutoProgress(0); }}
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-white/30 transition-colors"
+                aria-label="Next testimonials"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile navigation dots */}
         <NavDots
           count={testimonials.length}
           active={activeDot}
@@ -404,7 +463,7 @@ export function TestimonialsHome2() {
           }}
         />
 
-        {/* ── Auto-rotate progress bar (mobile) ──────────────── */}
+        {/* Mobile auto-rotate progress bar */}
         <div className="md:hidden mt-3 flex justify-center">
           <div className="w-16 h-[2px] rounded-full bg-white/[0.06] overflow-hidden">
             <motion.div
