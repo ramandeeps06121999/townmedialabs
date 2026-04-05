@@ -55,10 +55,10 @@ const contactPageSchema = {
     url: "https://townmedialabs.ca",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-98726-48209",
+      telephone: "+14036048692",
       email: "info@townmedialabs.ca",
       contactType: "customer service",
-      availableLanguage: ["English", "Hindi"],
+      availableLanguage: ["English", "French"],
     },
   },
 };
@@ -71,12 +71,12 @@ const localBusinessSchema = {
   description:
     "Edmonton's leading digital marketing agency specializing in branding, SEO, Google Ads, social media marketing & web development.",
   url: "https://townmedialabs.ca",
-  telephone: "+91-98726-48209",
+  telephone: "+14036048692",
   email: "info@townmedialabs.ca",
   image: "https://townmedialabs.ca/og-image.png",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "CO 112, Basement, Sector 34A",
+    streetAddress: "11930 104 St NW",
     addressLocality: "Chandigarh",
     addressRegion: "Chandigarh",
     postalCode: "160022",
@@ -120,7 +120,7 @@ const faqSchema = {
       name: "How do I get started with TML Agency?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Simply fill out our contact form or call us at +91 98726 48209. We offer a free 30-minute consultation where we discuss your goals, challenges, and how our services can help your brand grow.",
+        text: "Simply fill out our contact form or call us at +1 (403) 604-8692. We offer a free 30-minute consultation where we discuss your goals, challenges, and how our services can help your brand grow.",
       },
     },
     {

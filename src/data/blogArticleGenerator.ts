@@ -106,8 +106,8 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
-<tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
-<tr><td><strong>Location</strong></td><td>Chandigarh (serving ${city})</td></tr>
+<tr><td><strong>Phone</strong></td><td>+1 (403) 604-8692</td></tr>
+<tr><td><strong>Location</strong></td><td>Edmonton, AB (serving ${city})</td></tr>
 <tr><td><strong>Best For</strong></td><td>Complete branding + digital marketing</td></tr>
 </tbody>
 </table>
@@ -140,7 +140,7 @@ function generateBlogContent(city: string, state: string, industries: string[]):
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
-<tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
+<tr><td><strong>Phone</strong></td><td>+1 (403) 604-8692</td></tr>
 <tr><td><strong>Best For</strong></td><td>ROI-focused branding for ${city} businesses</td></tr>
 </tbody>
 </table>

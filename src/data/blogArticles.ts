@@ -126,7 +126,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
-<tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
+<tr><td><strong>Phone</strong></td><td>+1 (403) 604-8692</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh, India</td></tr>
 <tr><td><strong>Best For</strong></td><td>Complete branding + digital marketing under one roof</td></tr>
 </tbody>
@@ -183,7 +183,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
 <tbody>
 <tr><td><strong>Website</strong></td><td><a href="https://townmedialabs.ca" target="_blank" rel="noopener noreferrer">townmedialabs.ca</a></td></tr>
 <tr><td><strong>Email</strong></td><td>info@townmedialabs.ca</td></tr>
-<tr><td><strong>Phone</strong></td><td>+91 98726 48209</td></tr>
+<tr><td><strong>Phone</strong></td><td>+1 (403) 604-8692</td></tr>
 <tr><td><strong>Location</strong></td><td>Chandigarh, India</td></tr>
 <tr><td><strong>Best For</strong></td><td>ROI-focused branding &amp; performance marketing</td></tr>
 </tbody>

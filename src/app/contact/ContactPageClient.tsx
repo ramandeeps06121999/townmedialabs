@@ -32,9 +32,9 @@ const contactCards = [
     ),
   },
   {
-    label: "Phone (India)",
-    value: "+91 98726 48209",
-    href: "tel:+919872648209",
+    label: "Phone",
+    value: "+1 (403) 604-8692",
+    href: "tel:+14036048692",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -93,7 +93,7 @@ const faqs = [
   {
     question: "How do I get started with TML Agency?",
     answer:
-      "Simply fill out our contact form or call us at +91 98726 48209. We offer a free 30-minute consultation where we discuss your goals, challenges, and how our services can help your brand grow.",
+      "Simply fill out our contact form or call us at +1 (403) 604-8692. We offer a free 30-minute consultation where we discuss your goals, challenges, and how our services can help your brand grow.",
   },
   {
     question: "What is TML Agency\u2019s typical response time?",
@@ -373,7 +373,7 @@ export default function ContactPageClient() {
                         onChange={handleChange}
                         onFocus={() => setFocusedField("phone")}
                         onBlur={() => setFocusedField(null)}
-                        placeholder="+91 98726 48209"
+                        placeholder="+1 (403) 604-8692"
                         className={inputClasses("phone")}
                       />
                     </div>
@@ -757,7 +757,7 @@ export default function ContactPageClient() {
               through Saturday during business hours.
             </p>
             <motion.a
-              href="tel:+919872648209"
+              href="tel:+14036048692"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#ff4500] text-white font-semibold text-base hover:bg-[#ff5500] transition-colors shadow-[0_0_40px_rgba(255,69,0,0.3)]"
@@ -774,7 +774,7 @@ export default function ContactPageClient() {
               >
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              +91 98726 48209
+              +1 (403) 604-8692
             </motion.a>
           </motion.div>
         </div>

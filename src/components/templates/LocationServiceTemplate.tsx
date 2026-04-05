@@ -273,23 +273,23 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           <h1
             className="hero-fade-up hero-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight mb-6"
           >
-            {enrichment?.h1 ? (
-              <>
-                {enrichment.h1.replace(/\bin\s+\S+$/i, "").trim()}{" "}
-                <br />
-                <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
-                  in {cityName}
-                </span>
-              </>
-            ) : (
-              <>
-                Best {serviceName} Agency{" "}
-                <br />
-                <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
-                  in {cityName}
-                </span>
-              </>
-            )}
+            {(() => {
+              const raw = enrichment?.h1 || `Best ${serviceName} Agency`;
+              // Strip city name from H1 in any position/preposition to avoid duplication
+              // (the template always appends "in {cityName}" styled below)
+              const escaped = cityName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+              const cleaned = raw
+                .replace(new RegExp(`\\b(in|for|across|serving)\\s+${escaped}(,\\s*${location.state.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})?`, "i"), "")
+                .replace(new RegExp(`${escaped}'s\\s*`, "i"), "")
+                .replace(new RegExp(`\\b${escaped}\\b`, "i"), "")
+                .replace(/\s{2,}/g, " ")
+                .trim();
+              return cleaned;
+            })()}{" "}
+            <br />
+            <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
+              in {cityName}
+            </span>
           </h1>
 
           <p
@@ -1258,7 +1258,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
             <Link href="/contact" className="px-8 py-4 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_30px_rgba(255,69,0,0.3)]">
               Get Your Free Consultation
             </Link>
-            <a href="tel:+919872648209" className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors">
+            <a href="tel:+14036048692" className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors">
               Call Us Now
             </a>
           </div>

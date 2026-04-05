@@ -185,7 +185,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
           </div>
 
           <h1 className="hero-fade-up hero-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight mb-6">
-            {data.h1.replace("Chandigarh", "").replace("in ", "").trim()}
+            {data.h1}
             <br />
             <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
               in Chandigarh
@@ -471,7 +471,7 @@ export default function ChandigarhServiceTemplate({ data }: { data: ChandigarhSe
             <Link href="/contact" className="px-8 py-4 rounded-full bg-[#ff4500] text-white font-semibold text-sm hover:bg-[#ff5500] transition-colors shadow-[0_0_30px_rgba(255,69,0,0.3)]">
               Get Your Free Consultation
             </Link>
-            <a href="tel:+919872648209" className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors">
+            <a href="tel:+14036048692" className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold text-sm hover:bg-white/5 transition-colors">
               Call Us Now
             </a>
           </div>
