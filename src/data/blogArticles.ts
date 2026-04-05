@@ -24,7 +24,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
       "Top 10 Best Branding Agencies in Chandigarh (2025) — Detailed Guide",
     metaTitle: "Top 10 Best Branding Agencies in Chandigarh",
     metaDescription:
-      "Looking for the best branding agency in Chandigarh? Here are the top 10 branding agencies in Chandigarh with services, contact details, pricing & reviews. Find the perfect partner to build your brand.",
+      "Top 10 branding agencies in Chandigarh ranked with services, pricing & reviews. Find the perfect branding partner for your business.",
     keywords: [
       "best branding agency chandigarh",
       "top 10 branding agencies chandigarh",
@@ -453,7 +453,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "what-are-ai-influencers-how-to-create-earn-money": {
     title: "What Are AI Influencers? How to Create One, Best Tools & How to Earn Money (2025 Guide)",
     metaTitle: "AI Influencers: How to Create, Best Tools & Earn Money (2025)",
-    metaDescription: "Discover what AI influencers are, how to create your own AI influencer, the best tools to use, how to earn money, top AI influencers to follow, and all the categories explained.",
+    metaDescription: "What are AI influencers? Learn how to create one, the best tools, how to earn money, and top AI influencers to follow in 2025.",
     keywords: [
       "ai influencer",
       "how to create ai influencer",
@@ -676,7 +676,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "best-way-to-promote-song-online-free": {
     title: "Best Way to Promote Your Song Online for Free — Top Platforms & Strategies (2025)",
     metaTitle: "How to Promote Your Song Online Free — Best Platforms (2025)",
-    metaDescription: "Learn the best ways to promote your music online for free. Discover top platforms like TuneCore, DistroKid & Spotify for Artists, plus proven strategies to get your song heard.",
+    metaDescription: "Promote your music online for free using TuneCore, DistroKid & Spotify for Artists. Proven strategies to get your song heard.",
     keywords: [
       "how to promote song online",
       "promote music for free",
@@ -852,7 +852,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "how-to-make-song-trending-on-spotify": {
     title: "How to Make Your Song Trending on Spotify — Complete Strategy Guide (2025)",
     metaTitle: "How to Make Your Song Trending on Spotify (2025)",
-    metaDescription: "Want your song to trend on Spotify? Learn proven strategies for playlist placement, algorithm hacking, pre-save campaigns, and more to boost your Spotify streams in 2025.",
+    metaDescription: "Want to trend on Spotify? Proven strategies for playlist placement, algorithm hacking, and pre-save campaigns to boost streams.",
     keywords: [
       "how to trend on spotify",
       "spotify playlist submission",
@@ -1358,7 +1358,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "My Website Is Not Showing on Google — Here's How to Fix It",
     metaTitle: "Website Not Showing on Google? Here's the Fix",
     metaDescription:
-      "Is your website not showing on Google? Discover the exact reasons and step-by-step fixes to get your site indexed and ranking fast. Expert advice from TML Agency.",
+      "Website not showing on Google? Discover the exact reasons and step-by-step fixes to get your site indexed and ranking fast.",
     keywords: [
       "website not showing on google",
       "website not indexed by google",
@@ -2449,7 +2449,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
       "Why Your Website Is Not Ranking on Google — Complete Guide (2025)",
     metaTitle: "Why Your Website Is Not Ranking on Google — Full Guide",
     metaDescription:
-      "Find out exactly why your website isn't ranking on Google in 2025 and how to fix it. Covers technical SEO, content, backlinks, and Google's core ranking factors.",
+      "Why isn't your website ranking on Google? Covers technical SEO, content, backlinks, and core ranking factors with fixes.",
     keywords: [
       "website not ranking on google",
       "why is my website not ranking",
@@ -2685,7 +2685,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "ai-in-digital-marketing-2025": {
     title: "How AI Is Changing Digital Marketing in 2025 (What You Need to Know)",
     metaTitle: "AI in Digital Marketing 2025: What Actually Changed",
-    metaDescription: "AI is reshaping digital marketing fast. Here's what's actually changing in 2025 — and what your business needs to do to stay ahead of competitors using AI tools.",
+    metaDescription: "AI is reshaping digital marketing fast. Here's what's changing in 2025 and what your business must do to stay ahead of competitors.",
     keywords: [
       "AI in digital marketing",
       "AI marketing tools 2026",
@@ -3022,7 +3022,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "local-seo-guide-small-business": {
     title: "Local SEO for Small Business: The Complete 2025 Guide",
     metaTitle: "Local SEO for Small Business: Complete 2025 Guide",
-    metaDescription: "Want more local customers finding you on Google? This complete local SEO guide covers Google Business Profile, local citations, reviews & more — free to implement.",
+    metaDescription: "Get more local customers from Google. This local SEO guide covers Google Business Profile, citations, reviews & more.",
     keywords: [
       "local SEO small business",
       "local SEO guide 2026",
@@ -3221,7 +3221,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "content-marketing-roi-guide": {
     title: "Is Content Marketing Worth It? An Honest ROI Breakdown",
     metaTitle: "Content Marketing ROI: Is It Actually Worth It? (2025)",
-    metaDescription: "Honestly asking if content marketing is worth the investment? Real ROI data, timelines, and what it actually takes to make content work for your business in 2025.",
+    metaDescription: "Is content marketing worth it? Real ROI data, timelines, and what it takes to make content work for your business in 2025.",
     keywords: [
       "content marketing ROI",
       "is content marketing worth it",
@@ -3395,7 +3395,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "Website Looks Outdated? 11 Signs You Need a Redesign in 2026",
     metaTitle: "11 Signs You Need a Website Redesign in 2026",
     metaDescription:
-      "Is your website outdated? Here are 11 clear signs it is time for a redesign from slow load times and high bounce rates to poor mobile experience and low conversions.",
+      "Is your website outdated? 11 clear signs it's time for a redesign — from slow load times to poor mobile experience and low conversions.",
     keywords: [
       "website looks outdated",
       "website redesign",
@@ -7415,7 +7415,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Do Keyword Research: A Step-by-Step Guide for Beginners",
     metaTitle: "How to Do Keyword Research: Step-by-Step Guide",
     metaDescription:
-      "Learn how to do keyword research from scratch. This beginner-friendly guide covers free and paid tools, search intent, long-tail keywords, and competitor analysis.",
+      "Learn keyword research from scratch. Covers free and paid tools, search intent, long-tail keywords, and competitor analysis.",
     keywords: [
       "how to do keyword research",
       "keyword research for beginners",
@@ -7727,7 +7727,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Create and Optimize Your Google Business Profile (2026)",
     metaTitle: "How to Create & Optimize Google Business Profile",
     metaDescription:
-      "Step-by-step guide to creating and optimizing your Google Business Profile in 2026. Learn setup, categories, photos, reviews, posts, and common mistakes to avoid.",
+      "Create and optimize your Google Business Profile in 2026. Learn setup, categories, photos, reviews, posts, and mistakes to avoid.",
     keywords: [
       "how to create google business profile",
       "google business profile setup",
@@ -7970,7 +7970,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Write Blog Posts That Actually Rank on Google",
     metaTitle: "How to Write Blog Posts That Rank on Google",
     metaDescription:
-      "Learn how to write blog posts that rank on Google. This guide covers topic selection, SEO writing, on-page optimization, internal linking, and publishing workflow.",
+      "Write blog posts that rank on Google. Covers topic selection, SEO writing, on-page optimization, internal linking, and more.",
     keywords: [
       "how to write blog posts that rank",
       "SEO blog writing guide",
@@ -8217,7 +8217,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Run Facebook Ads: Complete Beginner's Guide",
     metaTitle: "How to Run Facebook Ads: Beginner's Guide (2026)",
     metaDescription:
-      "Learn how to run Facebook ads from scratch. This complete beginner guide covers account setup, targeting, ad formats, budgets, pixel setup, and optimization tips.",
+      "Run Facebook ads from scratch. Beginner guide covering account setup, targeting, ad formats, budgets, pixel setup, and optimization.",
     keywords: [
       "how to run facebook ads",
       "facebook ads for beginners",
@@ -8534,7 +8534,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Build an Email List from Scratch (Even with Zero Traffic)",
     metaTitle: "How to Build an Email List from Scratch (2026)",
     metaDescription:
-      "Learn how to build an email list from zero. This guide covers lead magnets, opt-in forms, landing pages, popups, content upgrades, and nurture sequence strategies.",
+      "Build an email list from zero. Covers lead magnets, opt-in forms, landing pages, popups, content upgrades, and nurture sequences.",
     keywords: [
       "how to build an email list",
       "build email list from scratch",
@@ -8794,7 +8794,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
     title: "How to Get More Google Reviews: 15 Proven Strategies",
     metaTitle: "How to Get More Google Reviews: 15 Strategies",
     metaDescription:
-      "Learn 15 proven strategies to get more Google reviews for your business. Covers asking techniques, timing, templates, QR codes, review responses, and Google guidelines.",
+      "15 proven strategies to get more Google reviews. Covers asking techniques, timing, templates, QR codes, and review responses.",
     keywords: [
       "how to get more google reviews",
       "get google reviews for business",
@@ -9097,7 +9097,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "digital-marketing-for-restaurants-guide": {
     title: "Digital Marketing for Restaurants: The Complete 2026 Guide",
     metaTitle: "Digital Marketing for Restaurants: 2026 Guide",
-    metaDescription: "Learn proven digital marketing strategies for restaurants including Google Business Profile, Instagram marketing, local SEO, online ordering, and review management.",
+    metaDescription: "Proven digital marketing strategies for restaurants: Google Business Profile, Instagram, local SEO, online ordering & reviews.",
     keywords: [
       "digital marketing for restaurants",
       "restaurant marketing strategies",
@@ -9681,7 +9681,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "digital-marketing-for-real-estate": {
     title: "Digital Marketing for Real Estate Agents: What Actually Works",
     metaTitle: "Digital Marketing for Real Estate Agents Guide",
-    metaDescription: "Proven digital marketing strategies for real estate agents including listing SEO, virtual tours, social media marketing, Google Ads, and lead generation funnels.",
+    metaDescription: "Digital marketing for real estate agents: listing SEO, virtual tours, social media, Google Ads, and lead generation funnels.",
     keywords: [
       "digital marketing for real estate agents",
       "real estate seo strategies",
@@ -10114,7 +10114,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "gym-marketing-strategies": {
     title: "Gym Marketing: 15 Strategies to Fill Your Membership",
     metaTitle: "Gym Marketing: 15 Strategies to Fill Members",
-    metaDescription: "Discover 15 proven gym marketing strategies including social proof, transformation content, local SEO, referral programs, Facebook Ads, and member retention tactics.",
+    metaDescription: "15 proven gym marketing strategies: social proof, transformation content, local SEO, referral programs, and Facebook Ads.",
     keywords: [
       "gym marketing strategies",
       "how to get more gym members",
@@ -10548,7 +10548,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "saas-marketing-guide": {
     title: "SaaS Marketing: How to Acquire Customers and Reduce Churn",
     metaTitle: "SaaS Marketing: Acquire Customers, Reduce Churn",
-    metaDescription: "Complete SaaS marketing guide covering content marketing, product-led growth, free trials, onboarding optimization, SEO for SaaS, and paid acquisition strategies.",
+    metaDescription: "SaaS marketing guide: content marketing, product-led growth, free trials, onboarding optimization, SEO, and paid acquisition.",
     keywords: [
       "saas marketing strategy",
       "saas customer acquisition tactics",
@@ -10804,7 +10804,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "healthcare-marketing-guide": {
     title: "Healthcare Marketing: HIPAA-Compliant Strategies That Work",
     metaTitle: "Healthcare Marketing: HIPAA-Compliant Strategies",
-    metaDescription: "Learn HIPAA-compliant healthcare marketing strategies including local SEO, patient education content, reputation management, and Google Ads for medical practices.",
+    metaDescription: "HIPAA-compliant healthcare marketing: local SEO, patient education, reputation management, and Google Ads for medical practices.",
     keywords: [
       "healthcare marketing strategies",
       "hipaa compliant digital marketing",
@@ -11036,7 +11036,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "digital-marketing-guide-small-business-2025": {
     title: "Complete Guide to Digital Marketing for Small Businesses in 2025",
     metaTitle: "Digital Marketing for Small Businesses (2025 Guide) — SEO, Ads, Social & More",
-    metaDescription: "The only digital marketing guide small businesses need in 2025. Learn SEO, Google Ads, social media, email marketing, content strategy, budget breakdowns, and step-by-step action plans.",
+    metaDescription: "The only digital marketing guide small businesses need. Learn SEO, Google Ads, social media, email, and content strategy with action plans.",
     keywords: [
       "digital marketing for small business",
       "small business marketing guide 2026",
@@ -11379,7 +11379,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "how-to-choose-branding-agency-checklist": {
     title: "How to Choose the Right Branding Agency: A Complete Checklist",
     metaTitle: "How to Choose the Right Branding Agency — Complete Checklist (2025)",
-    metaDescription: "Choosing a branding agency is one of the most important decisions for your business. Use this detailed checklist covering portfolio evaluation, pricing models, red flags, and the RFP process to find the perfect fit.",
+    metaDescription: "How to choose a branding agency: checklist covering portfolio evaluation, pricing models, red flags, and the RFP process.",
     keywords: [
       "how to choose branding agency",
       "branding agency checklist",
@@ -11689,7 +11689,7 @@ const handWrittenArticles: Record<string, BlogArticle> = {
   "seo-vs-google-ads-which-invest-first": {
     title: "SEO vs Google Ads: Which Should You Invest In First?",
     metaTitle: "SEO vs Google Ads: Which Should You Invest In First? (2025 Comparison)",
-    metaDescription: "SEO or Google Ads — which should your business invest in first? This detailed comparison covers costs, timelines, ROI, pros and cons, and a decision framework to help you choose the right strategy.",
+    metaDescription: "SEO or Google Ads first? Detailed comparison of costs, timelines, ROI, and a decision framework to choose the right strategy.",
     keywords: [
       "seo vs google ads",
       "seo or google ads",
@@ -11958,7 +11958,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "how-much-does-website-cost-india-2025": {
     title: "How Much Does a Website Cost in India? Complete Pricing Guide (2025)",
     metaTitle: "Website Development Cost in India 2025 — Complete Pricing Breakdown",
-    metaDescription: "Wondering how much a website costs in India? Here's the real pricing breakdown — from ₹5,000 portfolio sites to ₹25 lakh+ enterprise platforms. Freelancer vs agency vs DIY compared.",
+    metaDescription: "How much does a website cost in India? Real pricing from ₹5,000 to ₹25 lakh+. Freelancer vs agency vs DIY compared.",
     keywords: [
       "website cost india",
       "website development cost",
@@ -12132,7 +12132,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "instagram-reels-marketing-strategy-guide": {
     title: "Instagram Reels Marketing Strategy: The Complete Guide for Indian Businesses (2025)",
     metaTitle: "Instagram Reels Marketing Strategy — Complete Business Guide 2025",
-    metaDescription: "Learn how to use Instagram Reels to grow your business. Covers the algorithm, content types that work, shooting tips, editing tools, hashtag strategy, and ROI measurement for Indian brands.",
+    metaDescription: "Use Instagram Reels to grow your business. Covers the algorithm, content types, shooting tips, editing tools, and hashtag strategy.",
     keywords: [
       "instagram reels marketing",
       "reels strategy for business",
@@ -12309,7 +12309,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "google-ads-budget-mistakes": {
     title: "15 Google Ads Mistakes That Are Burning Your Budget (And How to Fix Them)",
     metaTitle: "15 Google Ads Mistakes Wasting Your Budget — Fix Them Now (2025)",
-    metaDescription: "Wasting money on Google Ads? These 15 common mistakes drain budgets without results. Learn how to fix each one with actionable tips from an agency that manages ₹2Cr+ in ad spend.",
+    metaDescription: "Wasting money on Google Ads? 15 common mistakes that drain budgets without results and how to fix each one.",
     keywords: [
       "google ads mistakes",
       "google ads wasting money",
@@ -12555,7 +12555,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "why-professional-branding-matters": {
     title: "Why Professional Branding Matters: The Real ROI of Branding vs DIY (2025)",
     metaTitle: "Professional Branding vs DIY — The Real ROI Comparison (2025)",
-    metaDescription: "Should you invest in professional branding or do it yourself? We compare costs, results, and real-world outcomes. See when DIY works and when it costs you more than you save.",
+    metaDescription: "Professional branding vs DIY: we compare costs, results, and outcomes. See when DIY works and when it costs you more.",
     keywords: [
       "professional branding",
       "branding ROI",
@@ -12709,7 +12709,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "local-seo-complete-guide-2025": {
     title: "Local SEO in India: The Complete Guide to Dominating Google Maps & Local Search (2025)",
     metaTitle: "Local SEO Guide India 2025 — Google Maps, GMB, Citations & More",
-    metaDescription: "Complete local SEO guide for Indian businesses. Covers Google Business Profile optimization, local citations (Justdial, Sulekha), review strategy, local schema, and ranking in the map pack.",
+    metaDescription: "Local SEO guide for Indian businesses. Covers Google Business Profile, local citations, review strategy, and map pack rankings.",
     keywords: [
       "local seo india",
       "local seo guide",
@@ -12899,7 +12899,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "ecommerce-seo-product-pages": {
     title: "E-Commerce SEO for Product Pages: The Technical Guide That Actually Ranks (2025)",
     metaTitle: "E-Commerce Product Page SEO — Technical Guide for Online Stores (2025)",
-    metaDescription: "Optimize your e-commerce product pages for search. Covers title tags, product schema, image optimization, URL structure, internal linking, pagination, and handling out-of-stock products.",
+    metaDescription: "Optimize e-commerce product pages for search. Covers title tags, product schema, image optimization, URL structure, and more.",
     keywords: [
       "ecommerce seo",
       "product page seo",
@@ -13107,7 +13107,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "social-media-content-calendar-2025": {
     title: "How to Create a Social Media Content Calendar That Actually Works (2025)",
     metaTitle: "Social Media Content Calendar 2025 — Templates, Strategy & Workflow",
-    metaDescription: "Build a social media content calendar that saves time and drives results. Includes content pillars, posting frequency by platform, batch creation workflow, and a 30-day template for Indian businesses.",
+    metaDescription: "Build a social media content calendar that saves time and drives results. Includes content pillars, posting frequency, and a 30-day template.",
     keywords: [
       "social media content calendar",
       "content calendar template",
@@ -13291,7 +13291,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "b2b-lead-generation-strategies-2025": {
     title: "12 B2B Lead Generation Strategies That Actually Work in 2025",
     metaTitle: "B2B Lead Generation Strategies 2025 — 12 Proven Methods",
-    metaDescription: "Stop struggling with B2B leads. These 12 strategies — from LinkedIn outreach to Google Ads to content marketing — are generating qualified leads for businesses across India right now.",
+    metaDescription: "Stop struggling with B2B leads. 12 strategies from LinkedIn outreach to Google Ads generating qualified leads right now.",
     keywords: [
       "b2b lead generation",
       "b2b lead generation strategies",
@@ -13498,7 +13498,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "website-speed-optimization-guide": {
     title: "Website Speed Optimization: The Complete Guide to Faster Load Times (2025)",
     metaTitle: "Website Speed Optimization Guide — Core Web Vitals & Performance (2025)",
-    metaDescription: "Slow website killing your conversions? Complete speed optimization guide covering Core Web Vitals, image compression, caching, CDN setup, JavaScript optimization, and performance testing.",
+    metaDescription: "Slow website killing conversions? Speed optimization guide covering Core Web Vitals, image compression, caching, and CDN setup.",
     keywords: [
       "website speed optimization",
       "page speed optimization",
@@ -13693,7 +13693,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "how-to-create-brand-identity-guide": {
     title: "How to Create a Brand Identity from Scratch: Step-by-Step Guide (2025)",
     metaTitle: "How to Create a Brand Identity — Step-by-Step Guide (2025)",
-    metaDescription: "Build a complete brand identity from scratch. Covers brand values, audience research, logo design, colour psychology, typography, brand voice, and creating brand guidelines that last.",
+    metaDescription: "Build a complete brand identity from scratch. Covers brand values, logo design, colour psychology, typography, and brand voice.",
     keywords: [
       "create brand identity",
       "brand identity guide",
@@ -13923,7 +13923,7 @@ Under ₹20,000 → SEO only (Google Ads is too thin at this budget to be effect
   "ai-digital-marketing-trends-2026": {
     title: "AI in Digital Marketing 2026 — Essential Trends Every Marketer Must Know",
     metaTitle: "AI Digital Marketing Trends 2026 | Essential Guide",
-    metaDescription: "Discover the top AI trends reshaping digital marketing in 2026. From personalization to predictive analytics, learn how AI is transforming marketing strategy and what you need to do to stay competitive.",
+    metaDescription: "Top AI trends reshaping digital marketing in 2026. From personalization to predictive analytics, stay ahead of the competition.",
     keywords: [
       "AI digital marketing 2026",
       "artificial intelligence marketing trends",

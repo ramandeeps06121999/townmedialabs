@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cityCount = Object.values(cities).reduce((sum, arr) => sum + arr.length, 0);
 
   return {
-    title: `Digital Marketing in ${config.name} | ${cityCount}+ Cities`,
+    title: `Best Digital Marketing Agency in ${config.name}`,
     description: config.description,
     keywords: [
       `digital marketing ${config.name.toLowerCase()}`,
@@ -71,17 +71,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       `TML Agency ${config.name.toLowerCase()}`,
     ],
     openGraph: {
-      title: `Digital Marketing in ${config.name}`,
+      title: `Best Digital Marketing Agency in ${config.name}`,
       description: config.description,
       url: `https://townmedialabs.com/locations/${config.slug}`,
       siteName: "TML Agency",
       type: "website",
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Digital Marketing in ${config.name} - TML Agency` }],
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Best Digital Marketing Agency in ${config.name} - TML Agency` }],
     },
     twitter: {
       card: "summary_large_image",
       site: "@tmlagency",
-      title: `Digital Marketing in ${config.name}`,
+      title: `Best Digital Marketing Agency in ${config.name}`,
       description: config.description,
       images: ["/og-image.png"],
     },

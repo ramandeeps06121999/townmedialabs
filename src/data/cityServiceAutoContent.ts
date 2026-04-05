@@ -77,87 +77,19 @@ function generateH1(
 ): string {
   const pool = getCountryPool(location.country);
 
-  // Shared patterns (work for all countries)
-  // NOTE: Patterns must NOT include cityName or state — the template appends "in {cityName}" separately.
-  const shared = [
-    `Professional ${serviceName} Services`,
-    `Premier ${serviceName} Partner`,
-    `Expert ${serviceName} Solutions`,
-    `${serviceName} That Drives Growth`,
-    `Results-Driven ${serviceName} Agency`,
-    `Elevate Your Brand with ${serviceName}`,
-    `Strategic ${serviceName} Agency`,
-    `Full-Service ${serviceName} Agency`,
-    `Growth-Focused ${serviceName}`,
-    `${serviceName} Experts You Can Trust`,
-    `High-Performance ${serviceName}`,
-    `Scalable ${serviceName} Solutions`,
+  // Simple, SEO-friendly patterns — template appends "in {cityName}" separately.
+  const patterns = [
+    `Best ${serviceName} Agency`,
+    `Top ${serviceName} Agency`,
+    `#1 ${serviceName} Agency`,
+    `Leading ${serviceName} Agency`,
     `Trusted ${serviceName} Agency`,
-    `Your ${serviceName} Growth Partner`,
+    `Best ${serviceName} Company`,
+    `Top-Rated ${serviceName} Agency`,
+    `Professional ${serviceName} Agency`,
   ];
 
-  // Country-specific patterns
-  const countryPatterns: Record<CountryPool, string[]> = {
-    india: [
-      `Leading ${serviceName} Agency`,
-      `Premier ${serviceName} Company`,
-      `Most Trusted ${serviceName} Agency`,
-      `Best ${serviceName} Services`,
-      `Proven ${serviceName} Agency`,
-      `End-to-End ${serviceName} Solutions`,
-    ],
-    usa: [
-      `Top-Rated ${serviceName} Agency`,
-      `#1 ${serviceName} Agency`,
-      `Top-Rated ${serviceName} Experts`,
-      `Best-in-Class ${serviceName}`,
-      `ROI-Focused ${serviceName} Agency`,
-      `Enterprise-Grade ${serviceName}`,
-    ],
-    uk: [
-      `Award-Winning ${serviceName}`,
-      `Trusted ${serviceName} Agency`,
-      `Award-Winning ${serviceName} Specialists`,
-      `Bespoke ${serviceName} Solutions`,
-      `${serviceName} Consultancy`,
-      `Specialist ${serviceName} Agency`,
-    ],
-    australia: [
-      `Top ${serviceName} Agency`,
-      `Leading ${serviceName} Specialists`,
-      `Trusted ${serviceName} Solutions`,
-      `${serviceName} Agency Powering Growth`,
-      `Premium ${serviceName} Services`,
-      `Performance-Driven ${serviceName}`,
-    ],
-    uae: [
-      `Premium ${serviceName} Agency`,
-      `Elite ${serviceName} Partner`,
-      `World-Class ${serviceName}`,
-      `Luxury ${serviceName} Solutions`,
-      `${serviceName} Excellence`,
-      `International ${serviceName} Agency`,
-    ],
-    nz: [
-      `Top ${serviceName} Agency`,
-      `Trusted ${serviceName} Specialists`,
-      `Leading ${serviceName} Solutions`,
-      `Innovative ${serviceName} Agency`,
-      `${serviceName} That Works`,
-      `Results-First ${serviceName}`,
-    ],
-    canada: [
-      `Top-Rated ${serviceName} Agency`,
-      `Trusted ${serviceName} Experts`,
-      `Leading ${serviceName} Agency`,
-      `Professional ${serviceName} Partner`,
-      `${serviceName} Solutions That Deliver`,
-      `Performance ${serviceName} Agency`,
-    ],
-  };
-
-  const combined = [...shared, ...countryPatterns[pool]];
-  return pick(combined, seed);
+  return pick(patterns, seed);
 }
 
 // ─── Tagline patterns (25+ with country pools) ───────────────────────────────
@@ -321,8 +253,8 @@ function generateHeroDescription(
 // ─── Meta title & description ──────────────────────────────────────────────────
 
 function generateMetaTitle(serviceName: string, cityName: string): string {
-  const base = `${serviceName} in ${cityName} | TML Agency`;
-  return base.length <= 60 ? base : `${serviceName} ${cityName} | TML Agency`;
+  const base = `Best ${serviceName} Agency in ${cityName}`;
+  return base.length <= 60 ? base : `${serviceName} Agency in ${cityName}`;
 }
 
 function generateMetaDescription(
