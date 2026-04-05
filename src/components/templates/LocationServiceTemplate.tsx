@@ -184,7 +184,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
   const serviceSchema = generateServiceSchema({
     name: `${serviceName} in ${cityName}`,
     description: `TML is a leading ${serviceName.toLowerCase()} agency serving businesses across ${location.region}.`,
-    url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}`,
+    url: `https://townmedialabs.ca/services/${getLocationServiceSlug(serviceSlug, location.slug)}`,
     areaServed: cityName,
     category: serviceName,
   });
@@ -194,7 +194,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
   const localBusinessSchema = isHeadquartersCity ? generateLocalBusinessSchema({
     name: `TML Agency - ${cityName}`,
     description: `Leading ${serviceName.toLowerCase()} agency in ${cityName}, ${location.state}.`,
-    url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}`,
+    url: `https://townmedialabs.ca/services/${getLocationServiceSlug(serviceSlug, location.slug)}`,
     city: cityName,
     state: location.state,
     services: serviceData ? serviceData.features.map((f) => f.title) : [serviceName],
@@ -205,7 +205,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
     { name: "Home", url: "https://townmedialabs.ca" },
     { name: "Services", url: "https://townmedialabs.ca/services" },
     { name: serviceName, url: `https://townmedialabs.ca/services/${serviceSlug}` },
-    { name: cityName, url: `https://townmedialabs.ca/services/${serviceSlug}/${location.slug}` },
+    { name: cityName, url: `https://townmedialabs.ca/services/${getLocationServiceSlug(serviceSlug, location.slug)}` },
   ]);
 
   const faqSchema = generateFAQSchema(
@@ -262,7 +262,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
           >
             {enrichment?.h1 ? (
               <>
-                {enrichment.h1.replace(/\bin\s+\S+$/i, "").trim()}
+                {enrichment.h1.replace(/\bin\s+\S+$/i, "").trim()}{" "}
                 <br />
                 <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
                   in {cityName}
@@ -270,7 +270,7 @@ export default function LocationServiceTemplate({ location, serviceSlug, service
               </>
             ) : (
               <>
-                Best {serviceName} Agency
+                Best {serviceName} Agency{" "}
                 <br />
                 <span className="bg-gradient-to-r from-[#ff4500] via-[#ff6b35] to-[#ff4500]/60 bg-clip-text text-transparent">
                   in {cityName}

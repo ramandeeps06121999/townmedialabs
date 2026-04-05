@@ -68,13 +68,7 @@ export function generateLocalBusinessSchema(params: {
     description: params.description,
     url: params.url,
     telephone: DEFAULT_PROVIDER.telephone,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: params.city,
-      addressRegion: params.state,
-      addressCountry: params.country || "CA",
-      postalCode: "T5G 2K1",
-    },
+    address: DEFAULT_PROVIDER.address,
     geo: {
       "@type": "GeoCoordinates",
       latitude: String(coords.latitude),
@@ -83,15 +77,18 @@ export function generateLocalBusinessSchema(params: {
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "18:00",
+      opens: "10:00",
+      closes: "19:00",
     },
-    ...(params.areaServed && {
-      areaServed: params.areaServed.map((area) => ({
-        "@type": area.type,
-        name: area.name,
-      })),
-    }),
+    areaServed: params.areaServed
+      ? params.areaServed.map((area) => ({
+          "@type": area.type,
+          name: area.name,
+        }))
+      : {
+          "@type": "City",
+          name: params.city,
+        },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Services",

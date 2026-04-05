@@ -1,6 +1,7 @@
 import { generateCityBlogArticles } from "./blogArticleGenerator";
 import { generateSeoArticles } from "./seoAgencyGenerator";
 import { generateGoogleAdsArticles } from "./googleAdsGenerator";
+import { newBlogPosts } from "./newBlogPosts";
 
 export interface BlogArticle {
   title: string;
@@ -14038,4 +14039,5 @@ export const blogArticles: Record<string, BlogArticle> = {
   ...generateSeoArticles(),
   ...generateGoogleAdsArticles(),
   ...handWrittenArticles,
+  ...newBlogPosts,
 };
