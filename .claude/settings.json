@@ -26,11 +26,36 @@
       "Bash(grep -n \"industries.*}\\\\],$\" src/data/locations.ts)",
       "Read(//Users/ramanmakkar/Desktop/tml-nextjs/**)",
       "Bash(grep -v \"^$\")",
-      "Bash(grep -v '^commit\\\\|^Author\\\\|^Date\\\\|^$\\\\|^    ')"
+      "Bash(grep -v '^commit\\\\|^Author\\\\|^Date\\\\|^$\\\\|^    ')",
+      "Bash(node -e ':*)",
+      "Bash(du -ch public/work/*.webp)",
+      "Read(//Users/ramanmakkar/Desktop/tml-nextjs/{total += $5} END {printf \"New files total size: %.1f MB\\\\n\", total/1024/**)",
+      "Bash(wc -l /Users/ramanmakkar/Desktop/tml-nextjs/src/app/blog/[slug]/BlogArticleClient.tsx /Users/ramanmakkar/Desktop/tml-nextjs/src/components/templates/LocationServiceTemplate.tsx)",
+      "Bash(node scripts/update-service-pages.mjs)"
     ],
     "additionalDirectories": [
-      "/Users/ramanmakkar/Desktop/tml-nextjs",
-      "/Users/ramanmakkar/Desktop"
+      "/Users/ramanmakkar/Desktop/tml-nextjs"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|Bash",
+        "command": "code-review-graph update --quiet",
+        "timeout": 5000
+      }
+    ],
+    "SessionStart": [
+      {
+        "command": "code-review-graph status --json",
+        "timeout": 3000
+      }
+    ],
+    "PreCommit": [
+      {
+        "command": "code-review-graph detect-changes --brief",
+        "timeout": 10000
+      }
     ]
   }
 }
