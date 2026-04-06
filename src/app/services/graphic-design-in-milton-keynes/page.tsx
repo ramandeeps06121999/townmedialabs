@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { locations } from "@/data/locations";
-import LocationServiceTemplate from "@/components/templates/LocationServiceTemplate";
+import LocationServicePage from "@/components/templates/LocationServicePage";
 
 const location = locations["milton_keynes"];
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function GraphicDesignInMiltonKeynesPage() {
   return (
-    <LocationServiceTemplate
+    <LocationServicePage
       location={location}
       serviceSlug="graphic-design"
       serviceName="Graphic Design"

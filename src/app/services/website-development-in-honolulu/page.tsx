@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { locations } from "@/data/locations";
-import LocationServiceTemplate from "@/components/templates/LocationServiceTemplate";
+import LocationServicePage from "@/components/templates/LocationServicePage";
 
 const location = locations["honolulu"];
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function WebsiteDevelopmentInHonoluluPage() {
   return (
-    <LocationServiceTemplate
+    <LocationServicePage
       location={location}
       serviceSlug="website-development"
       serviceName="Website Development"

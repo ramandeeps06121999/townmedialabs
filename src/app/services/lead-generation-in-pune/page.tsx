@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { locations } from "@/data/locations";
-import LocationServiceTemplate from "@/components/templates/LocationServiceTemplate";
+import LocationServicePage from "@/components/templates/LocationServicePage";
 
 const location = locations["pune"];
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function LeadgenerationInPunePage() {
   return (
-    <LocationServiceTemplate
+    <LocationServicePage
       location={location}
       serviceSlug="lead-generation"
       serviceName="Lead Generation"

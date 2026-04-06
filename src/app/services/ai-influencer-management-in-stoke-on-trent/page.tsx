@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { locations } from "@/data/locations";
-import LocationServiceTemplate from "@/components/templates/LocationServiceTemplate";
+import LocationServicePage from "@/components/templates/LocationServicePage";
 
 const location = locations["stoke_on_trent"];
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function AiInfluencerManagementInStokeOnTrentPage() {
   return (
-    <LocationServiceTemplate
+    <LocationServicePage
       location={location}
       serviceSlug="ai-influencer-management"
       serviceName="AI Influencer Management"

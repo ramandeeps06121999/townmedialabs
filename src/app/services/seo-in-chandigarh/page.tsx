@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { locations } from "@/data/locations";
 import { getCityServiceContent } from "@/data/cityServiceContent";
-import LocationServiceTemplate from "@/components/templates/LocationServiceTemplate";
+import LocationServicePage from "@/components/templates/LocationServicePage";
 
 const location = locations["chandigarh"];
 const enrichment = getCityServiceContent("seo", "chandigarh");
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function UseoUinUchandigarhPage() {
   return (
-    <LocationServiceTemplate
+    <LocationServicePage
       location={location}
       serviceSlug="seo"
       serviceName="SEO"

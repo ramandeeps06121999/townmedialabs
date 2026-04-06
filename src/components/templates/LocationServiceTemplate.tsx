@@ -165,6 +165,7 @@ interface Props {
   location: LocationInfo;
   serviceSlug: string;
   serviceName: string;
+  preparedData?: import("@/lib/locationServiceData").LocationServicePreparedData;
 }
 
 export default function LocationServiceTemplate({ location, serviceSlug, serviceName }: Props) {
