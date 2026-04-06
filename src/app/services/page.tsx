@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServicesPageClient from "./ServicesPageClient";
+import { servicePages } from "@/data/servicePages";
 
 const siteUrl = "https://townmedialabs.com";
 
@@ -97,6 +98,28 @@ const servicesBreadcrumbJsonLd = {
 };
 
 export default function ServicesPage() {
+  // Build minimal props on the server so the 1,593-line servicePages file
+  // stays out of the client JS bundle.
+  const serviceMap: Record<string, {
+    slug: string;
+    title: string;
+    description: string;
+    features: { title: string }[];
+  }> = {};
+  for (const [slug, s] of Object.entries(servicePages)) {
+    serviceMap[slug] = {
+      slug: s.slug,
+      title: s.title,
+      description: s.description,
+      features: s.features.map((f) => ({ title: f.title })),
+    };
+  }
+
+  const allServices = Object.values(servicePages).map((s) => ({
+    slug: s.slug,
+    title: s.title,
+  }));
+
   return (
     <>
       <script
@@ -111,7 +134,7 @@ export default function ServicesPage() {
           __html: JSON.stringify(servicesBreadcrumbJsonLd),
         }}
       />
-      <ServicesPageClient />
+      <ServicesPageClient serviceMap={serviceMap} allServices={allServices} />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ChandigarhPageClient from "./ChandigarhPageClient";
+import { servicePages } from "@/data/servicePages";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Agency in Chandigarh",
@@ -36,6 +37,19 @@ export const metadata: Metadata = {
   },
 };
 
+const topServiceSlugs = [
+  "branding", "seo", "google-ads", "website-development",
+  "social-media", "lead-generation", "graphic-design", "video-editing",
+];
+
 export default function ChandigarhPage() {
-  return <ChandigarhPageClient />;
+  const serviceMap: Record<string, { slug: string; title: string; description: string }> = {};
+  for (const slug of topServiceSlugs) {
+    const s = servicePages[slug];
+    if (s) {
+      serviceMap[slug] = { slug: s.slug, title: s.title, description: s.description };
+    }
+  }
+
+  return <ChandigarhPageClient serviceMap={serviceMap} />;
 }

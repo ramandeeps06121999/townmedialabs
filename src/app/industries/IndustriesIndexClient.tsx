@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { industries, industryPages, allIndustrySlugs, allIndustryPageSlugs } from "@/data/industries";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
@@ -79,10 +78,22 @@ const tier1Icons: Record<string, React.ReactNode> = {
   ),
 };
 
-function Tier1IndustryCard({ slug, index }: { slug: string; index: number }) {
-  const industry = industryPages[slug];
-  if (!industry) return null;
+interface Tier1IndustryData {
+  slug: string;
+  name: string;
+  heroSubtitle: string;
+  serviceNames: string[];
+}
 
+interface LegacyIndustryData {
+  slug: string;
+  name: string;
+  icon: string;
+  description: string;
+  serviceLabels: string[];
+}
+
+function Tier1IndustryCard({ industry, index }: { industry: Tier1IndustryData; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -96,7 +107,7 @@ function Tier1IndustryCard({ slug, index }: { slug: string; index: number }) {
       >
         <div className="flex items-start justify-between mb-5">
           <div className="w-12 h-12 rounded-xl bg-[#ff4500]/10 flex items-center justify-center group-hover:bg-[#ff4500]/20 transition-colors">
-            {tier1Icons[slug] ?? (
+            {tier1Icons[industry.slug] ?? (
               <div className="w-2.5 h-2.5 rounded-full bg-[#ff4500]" />
             )}
           </div>
@@ -114,12 +125,12 @@ function Tier1IndustryCard({ slug, index }: { slug: string; index: number }) {
           {industry.heroSubtitle}
         </p>
         <div className="flex flex-wrap gap-2 mb-5">
-          {industry.services.slice(0, 3).map((s) => (
+          {industry.serviceNames.map((name) => (
             <span
-              key={s.name}
+              key={name}
               className="text-[10px] px-2.5 py-1 rounded-full border border-white/[0.08] text-white"
             >
-              {s.name}
+              {name}
             </span>
           ))}
         </div>
@@ -131,10 +142,7 @@ function Tier1IndustryCard({ slug, index }: { slug: string; index: number }) {
   );
 }
 
-function IndustryCard({ slug, index }: { slug: string; index: number }) {
-  const industry = industries[slug];
-  if (!industry) return null;
-
+function IndustryCard({ industry, index }: { industry: LegacyIndustryData; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -159,12 +167,12 @@ function IndustryCard({ slug, index }: { slug: string; index: number }) {
           {industry.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-5">
-          {industry.services.slice(0, 3).map((s) => (
+          {industry.serviceLabels.map((label) => (
             <span
-              key={s}
+              key={label}
               className="text-[10px] px-2.5 py-1 rounded-full border border-white/[0.08] text-white capitalize"
             >
-              {s.replace(/-/g, " ")}
+              {label}
             </span>
           ))}
         </div>
@@ -176,7 +184,14 @@ function IndustryCard({ slug, index }: { slug: string; index: number }) {
   );
 }
 
-export default function IndustriesIndexClient() {
+export interface IndustriesIndexClientProps {
+  tier1Industries: Tier1IndustryData[];
+  legacyIndustries: LegacyIndustryData[];
+  tier1Count: number;
+  legacyCount: number;
+}
+
+export default function IndustriesIndexClient({ tier1Industries, legacyIndustries, tier1Count, legacyCount }: IndustriesIndexClientProps) {
   return (
     <main className="bg-[#050505] text-white min-h-screen">
       <InnerNavbar />
@@ -258,13 +273,13 @@ export default function IndustriesIndexClient() {
             </h2>
             <div className="flex-1 h-[1px] bg-white/[0.06]" />
             <span className="text-xs text-white font-mono">
-              {String(allIndustryPageSlugs.length).padStart(2, "0")} industries
+              {String(tier1Count).padStart(2, "0")} industries
             </span>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {allIndustryPageSlugs.map((slug, i) => (
-              <Tier1IndustryCard key={slug} slug={slug} index={i} />
+            {tier1Industries.map((industry, i) => (
+              <Tier1IndustryCard key={industry.slug} industry={industry} index={i} />
             ))}
           </div>
         </div>
@@ -285,13 +300,13 @@ export default function IndustriesIndexClient() {
             </h2>
             <div className="flex-1 h-[1px] bg-white/[0.06]" />
             <span className="text-xs text-white font-mono">
-              {String(allIndustrySlugs.length).padStart(2, "0")} industries
+              {String(legacyCount).padStart(2, "0")} industries
             </span>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {allIndustrySlugs.map((slug, i) => (
-              <IndustryCard key={slug} slug={slug} index={i} />
+            {legacyIndustries.map((industry, i) => (
+              <IndustryCard key={industry.slug} industry={industry} index={i} />
             ))}
           </div>
         </div>

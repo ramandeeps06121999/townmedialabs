@@ -6,8 +6,6 @@ import { motion, useInView } from "motion/react";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
-import { servicePages } from "@/data/servicePages";
-import { portfolioImages } from "@/data/portfolioImages";
 import Image from "next/image";
 
 const ease = [0.23, 1, 0.32, 1] as const;
@@ -56,10 +54,20 @@ const industriesServed = [
   "Sports",
 ];
 
-const topServices = [
+const topServiceSlugs = [
   "branding", "seo", "google-ads", "website-development",
   "social-media", "lead-generation", "graphic-design", "video-editing",
 ];
+
+interface ServiceInfo {
+  slug: string;
+  title: string;
+  description: string;
+}
+
+interface ChandigarhPageClientProps {
+  serviceMap: Record<string, ServiceInfo>;
+}
 
 const testimonials = [
   {
@@ -79,7 +87,7 @@ const testimonials = [
   },
 ];
 
-export default function ChandigarhPageClient() {
+export default function ChandigarhPageClient({ serviceMap }: ChandigarhPageClientProps) {
   const statsRef = useRef(null);
   const statsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
@@ -246,8 +254,8 @@ export default function ChandigarhPageClient() {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {topServices.map((slug, i) => {
-              const service = servicePages[slug];
+            {topServiceSlugs.map((slug, i) => {
+              const service = serviceMap[slug];
               if (!service) return null;
               return (
                 <motion.div

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { industries, industryPages, allIndustrySlugs, allIndustryPageSlugs } from "@/data/industries";
 import IndustriesIndexClient from "./IndustriesIndexClient";
 
 export const metadata: Metadata = {
@@ -35,5 +36,40 @@ export const metadata: Metadata = {
 };
 
 export default function IndustriesPage() {
-  return <IndustriesIndexClient />;
+  // Pre-compute industry data on the server to keep large data files out of the client bundle
+  const tier1Industries = allIndustryPageSlugs
+    .map((slug) => {
+      const ip = industryPages[slug];
+      if (!ip) return null;
+      return {
+        slug: ip.slug,
+        name: ip.name,
+        heroSubtitle: ip.heroSubtitle,
+        serviceNames: ip.services.slice(0, 3).map((s) => s.name),
+      };
+    })
+    .filter((x): x is NonNullable<typeof x> => x !== null);
+
+  const legacyIndustries = allIndustrySlugs
+    .map((slug) => {
+      const ind = industries[slug];
+      if (!ind) return null;
+      return {
+        slug: ind.slug,
+        name: ind.name,
+        icon: ind.icon,
+        description: ind.description,
+        serviceLabels: ind.services.slice(0, 3).map((s) => s.replace(/-/g, " ")),
+      };
+    })
+    .filter((x): x is NonNullable<typeof x> => x !== null);
+
+  return (
+    <IndustriesIndexClient
+      tier1Industries={tier1Industries}
+      legacyIndustries={legacyIndustries}
+      tier1Count={allIndustryPageSlugs.length}
+      legacyCount={allIndustrySlugs.length}
+    />
+  );
 }

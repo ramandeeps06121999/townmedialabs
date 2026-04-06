@@ -7,7 +7,6 @@ import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import { portfolioImages } from "@/data/portfolioImages";
 import Image from "next/image";
 
 const ease = [0.23, 1, 0.32, 1] as const;

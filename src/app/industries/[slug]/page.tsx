@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { industries, industryPages, allIndustrySlugs, allIndustryPageSlugs } from "@/data/industries";
 import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { blogArticles } from "@/data/blogArticles";
+import { servicePages } from "@/data/servicePages";
+import { industryRelatedBlogs } from "@/lib/internalLinks";
+import { getImagesForService } from "@/data/portfolioImages";
 import IndustryPageClient from "./IndustryPageClient";
 import IndustryPageV2Client from "./IndustryPageV2Client";
 
@@ -78,8 +82,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+// Helper: resolve related blogs for a given industry slug (server-only)
+function getRelatedBlogsForIndustry(industrySlug: string) {
+  const blogSlugs = industryRelatedBlogs[industrySlug] || [];
+  return blogSlugs
+    .map((s) => {
+      const article = blogArticles[s];
+      if (!article) return null;
+      return { slug: s, title: article.title, category: article.category, metaDescription: article.metaDescription };
+    })
+    .filter((b): b is NonNullable<typeof b> => b !== null);
+}
+
+// Helper: resolve portfolio images (server-only)
+function getPortfolioImagesForIndustry() {
+  return getImagesForService("branding", 4).map((img) => ({ src: img.src, alt: img.alt }));
+}
+
 export default async function IndustryPage({ params }: PageProps) {
   const { slug } = await params;
+
+  // Pre-compute shared data on the server
+  const relatedBlogs = getRelatedBlogsForIndustry(slug);
+  const portfolioImages = getPortfolioImagesForIndustry();
 
   // ── Tier 1 IndustryPage (v2) ────────────────────────────────────────────────
   const industryV2 = industryPages[slug];
@@ -115,7 +140,7 @@ export default async function IndustryPage({ params }: PageProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-        <IndustryPageV2Client industry={industryV2} />
+        <IndustryPageV2Client industry={industryV2} relatedBlogs={relatedBlogs} portfolioImages={portfolioImages} />
       </>
     );
   }
@@ -130,6 +155,15 @@ export default async function IndustryPage({ params }: PageProps) {
       </div>
     );
   }
+
+  // Resolve service details on the server
+  const serviceData = industry.services
+    .map((serviceSlug) => {
+      const sp = servicePages[serviceSlug];
+      if (!sp) return null;
+      return { slug: sp.slug, title: sp.title, description: sp.description };
+    })
+    .filter((s): s is NonNullable<typeof s> => s !== null);
 
   const serviceSchema = generateServiceSchema({
     name: `${industry.name} Digital Marketing Services`,
@@ -162,7 +196,7 @@ export default async function IndustryPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <IndustryPageClient industry={industry} />
+      <IndustryPageClient industry={industry} relatedBlogs={relatedBlogs} serviceData={serviceData} portfolioImages={portfolioImages} />
     </>
   );
 }

@@ -5,12 +5,23 @@ import { motion } from "motion/react";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import { servicePages } from "@/data/servicePages";
 import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
-const allServices = Object.values(servicePages);
+interface ServiceCardData {
+  slug: string;
+  title: string;
+  description: string;
+  features: { title: string }[];
+}
+
+interface ServicesPageClientProps {
+  /** Keyed by slug, for category-based rendering */
+  serviceMap: Record<string, ServiceCardData>;
+  /** Ordered list for the "All Services" section */
+  allServices: { slug: string; title: string }[];
+}
 
 const serviceCategories = [
   {
@@ -38,7 +49,7 @@ const stats = [
   { label: "Years Experience", value: "15+" },
 ];
 
-export default function ServicesPageClient() {
+export default function ServicesPageClient({ serviceMap, allServices }: ServicesPageClientProps) {
   // Comprehensive Service schema for the main services page
   const serviceSchema = generateServiceSchema({
     name: "Digital Marketing Services",
@@ -262,7 +273,7 @@ export default function ServicesPageClient() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {cat.services.map((slug, i) => {
-                const service = servicePages[slug];
+                const service = serviceMap[slug];
                 if (!service) return null;
                 return (
                   <motion.div

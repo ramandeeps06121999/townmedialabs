@@ -3,29 +3,37 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { locations, serviceList } from "@/data/locations";
-import type { LocationInfo } from "@/data/locations";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
-/* ── helpers ────────────────────────────────────────────────────────────────── */
+/* ── types (minimal, serializable from server) ─────────────────────────────── */
 
-function slugify(str: string): string {
-  return str
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+interface LocationMin {
+  slug: string;
+  name: string;
+  description: string;
 }
 
 interface CountryGroup {
   country: string;
   countrySlug: string;
-  states: Record<string, LocationInfo[]>;
+  states: Record<string, LocationMin[]>;
   cityCount: number;
+}
+
+interface ServiceListItem {
+  slug: string;
+  name: string;
+}
+
+interface LocationsIndexClientProps {
+  groups: CountryGroup[];
+  totalCities: number;
+  totalCountries: number;
+  serviceList: ServiceListItem[];
 }
 
 const countryDisplayMap: Record<string, string> = {
@@ -37,42 +45,6 @@ const countryDisplayMap: Record<string, string> = {
   "New Zealand": "New Zealand",
   UAE: "United Arab Emirates",
 };
-
-const countrySlugMap: Record<string, string> = {
-  India: "india",
-  Canada: "canada",
-  USA: "united-states",
-  UK: "united-kingdom",
-  Australia: "australia",
-  "New Zealand": "new-zealand",
-  UAE: "uae",
-};
-
-const countryOrder = ["India", "Canada", "USA", "UK", "Australia", "New Zealand", "UAE"];
-
-function groupByCountry(): CountryGroup[] {
-  const grouped: Record<string, Record<string, LocationInfo[]>> = {};
-
-  for (const loc of Object.values(locations)) {
-    if (!grouped[loc.country]) grouped[loc.country] = {};
-    if (!grouped[loc.country][loc.state]) grouped[loc.country][loc.state] = [];
-    grouped[loc.country][loc.state].push(loc);
-  }
-
-  return countryOrder
-    .filter((c) => grouped[c])
-    .map((country) => {
-      const states = grouped[country];
-      let cityCount = 0;
-      for (const s of Object.values(states)) cityCount += s.length;
-      return {
-        country,
-        countrySlug: countrySlugMap[country] ?? slugify(country),
-        states,
-        cityCount,
-      };
-    });
-}
 
 /* ── icons ──────────────────────────────────────────────────────────────────── */
 
@@ -115,7 +87,7 @@ function MapPinIcon() {
 
 /* ── components ─────────────────────────────────────────────────────────────── */
 
-function CityCard({ loc, index }: { loc: LocationInfo; index: number }) {
+function CityCard({ loc, index, serviceList }: { loc: LocationMin; index: number; serviceList: ServiceListItem[] }) {
   const firstServiceSlug = serviceList[0].slug;
   const citySlug = loc.slug.replace(/_/g, "-");
   const href = `/services/${firstServiceSlug === "social-media" ? "social-media-marketing" : firstServiceSlug}-in-${citySlug}`;
@@ -158,7 +130,7 @@ function CityCard({ loc, index }: { loc: LocationInfo; index: number }) {
   );
 }
 
-function CountrySection({ group, defaultOpen }: { group: CountryGroup; defaultOpen: boolean }) {
+function CountrySection({ group, defaultOpen, serviceList }: { group: CountryGroup; defaultOpen: boolean; serviceList: ServiceListItem[] }) {
   const [open, setOpen] = useState(defaultOpen);
   const stateEntries = Object.entries(group.states).sort((a, b) => a[0].localeCompare(b[0]));
 
@@ -214,7 +186,7 @@ function CountrySection({ group, defaultOpen }: { group: CountryGroup; defaultOp
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                     {cities.map((loc, i) => (
-                      <CityCard key={loc.slug} loc={loc} index={i} />
+                      <CityCard key={loc.slug} loc={loc} index={i} serviceList={serviceList} />
                     ))}
                   </div>
                 </div>
@@ -229,10 +201,7 @@ function CountrySection({ group, defaultOpen }: { group: CountryGroup; defaultOp
 
 /* ── page ────────────────────────────────────────────────────────────────────── */
 
-export default function LocationsIndexClient() {
-  const groups = groupByCountry();
-  const totalCities = Object.keys(locations).length;
-  const totalCountries = groups.length;
+export default function LocationsIndexClient({ groups, totalCities, totalCountries, serviceList }: LocationsIndexClientProps) {
 
   return (
     <main className="bg-[#050505] text-white min-h-screen">
@@ -344,7 +313,7 @@ export default function LocationsIndexClient() {
 
           <div className="space-y-4">
             {groups.map((group, i) => (
-              <CountrySection key={group.country} group={group} defaultOpen={i === 0} />
+              <CountrySection key={group.country} group={group} defaultOpen={i === 0} serviceList={serviceList} />
             ))}
           </div>
         </div>

@@ -1,5 +1,56 @@
 import type { Metadata } from "next";
 import LocationsIndexClient from "./LocationsIndexClient";
+import { locations, serviceList } from "@/data/locations";
+
+/* ── Server-side grouping (keeps 1,230-line locations file out of client JS) ── */
+
+function slugify(str: string): string {
+  return str
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+const countrySlugMap: Record<string, string> = {
+  India: "india",
+  Canada: "canada",
+  USA: "united-states",
+  UK: "united-kingdom",
+  Australia: "australia",
+  "New Zealand": "new-zealand",
+  UAE: "uae",
+};
+
+const countryOrder = ["India", "Canada", "USA", "UK", "Australia", "New Zealand", "UAE"];
+
+function buildGroups() {
+  const grouped: Record<string, Record<string, { slug: string; name: string; description: string }[]>> = {};
+
+  for (const loc of Object.values(locations)) {
+    if (!grouped[loc.country]) grouped[loc.country] = {};
+    if (!grouped[loc.country][loc.state]) grouped[loc.country][loc.state] = [];
+    grouped[loc.country][loc.state].push({
+      slug: loc.slug,
+      name: loc.name,
+      description: loc.description,
+    });
+  }
+
+  return countryOrder
+    .filter((c) => grouped[c])
+    .map((country) => {
+      const states = grouped[country];
+      let cityCount = 0;
+      for (const s of Object.values(states)) cityCount += s.length;
+      return {
+        country,
+        countrySlug: countrySlugMap[country] ?? slugify(country),
+        states,
+        cityCount,
+      };
+    });
+}
 
 export const metadata: Metadata = {
   title: "Our Locations",
@@ -35,5 +86,17 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsPage() {
-  return <LocationsIndexClient />;
+  const groups = buildGroups();
+  const totalCities = Object.keys(locations).length;
+  const totalCountries = groups.length;
+  const svcList = serviceList.map((s) => ({ slug: s.slug, name: s.name }));
+
+  return (
+    <LocationsIndexClient
+      groups={groups}
+      totalCities={totalCities}
+      totalCountries={totalCountries}
+      serviceList={svcList}
+    />
+  );
 }

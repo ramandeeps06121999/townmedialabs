@@ -4,10 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import type { IndustryPage } from "@/data/industries";
-import { blogArticles } from "@/data/blogArticles";
-import { industryRelatedBlogs } from "@/lib/internalLinks";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
-import { getImagesForService } from "@/data/portfolioImages";
 import Image from "next/image";
 import InnerNavbar from "@/components/layout/InnerNavbar";
 import { FooterHome2 } from "@/components/sections/FooterHome2";
@@ -144,7 +141,25 @@ function FAQItem({
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 
-export default function IndustryPageV2Client({ industry }: { industry: IndustryPage }) {
+interface RelatedBlog {
+  slug: string;
+  title: string;
+  category: string;
+  metaDescription: string;
+}
+
+interface PortfolioImg {
+  src: string;
+  alt: string;
+}
+
+export interface IndustryPageV2ClientProps {
+  industry: IndustryPage;
+  relatedBlogs: RelatedBlog[];
+  portfolioImages: PortfolioImg[];
+}
+
+export default function IndustryPageV2Client({ industry, relatedBlogs, portfolioImages }: IndustryPageV2ClientProps) {
   const statsRef = useRef(null);
   const statsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
@@ -385,7 +400,7 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
             Our Work in {industry.name}<span className="text-[#ff4500]">.</span>
           </motion.h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {getImagesForService("branding", 4).map((img) => (
+            {portfolioImages.map((img) => (
               <div key={img.src} className="relative aspect-square overflow-hidden rounded-xl border border-white/[0.06] group">
                 <Image
                   src={img.src}
@@ -529,67 +544,60 @@ export default function IndustryPageV2Client({ industry }: { industry: IndustryP
       </section>
 
       {/* Related Reading */}
-      {(() => {
-        const blogSlugs = industryRelatedBlogs[industry.slug] || [];
-        const relatedBlogs = blogSlugs
-          .map((slug) => ({ slug, article: blogArticles[slug] }))
-          .filter((b) => b.article);
-        if (relatedBlogs.length === 0) return null;
-        return (
-          <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
-            <div className="relative mx-auto max-w-7xl">
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, ease }}
-                className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4"
-              >
-                From Our Blog
-              </motion.p>
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, ease }}
-                className="text-2xl sm:text-3xl font-medium text-white mb-10"
-              >
-                Related Reading
-                <span className="text-[#ff4500]">.</span>
-              </motion.h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                {relatedBlogs.map(({ slug, article }, i) => (
-                  <motion.div
-                    key={slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.1, ease }}
+      {relatedBlogs.length > 0 && (
+        <section className="relative w-full px-6 py-16 md:py-24 lg:px-12 bg-[#080808] overflow-hidden">
+          <div className="relative mx-auto max-w-7xl">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease }}
+              className="text-[10px] md:text-xs text-white tracking-[0.25em] uppercase mb-4"
+            >
+              From Our Blog
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease }}
+              className="text-2xl sm:text-3xl font-medium text-white mb-10"
+            >
+              Related Reading
+              <span className="text-[#ff4500]">.</span>
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {relatedBlogs.map((blog, i) => (
+                <motion.div
+                  key={blog.slug}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                >
+                  <Link
+                    href={`/blog/${blog.slug}`}
+                    className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
                   >
-                    <Link
-                      href={`/blog/${slug}`}
-                      className="group block p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#ff4500]/20 transition-all duration-500 h-full"
-                    >
-                      <span className="inline-block text-[10px] tracking-wider uppercase bg-[#ff4500]/10 text-[#ff4500] rounded-full px-3 py-1 font-semibold mb-4">
-                        {article.category}
-                      </span>
-                      <h3 className="text-base font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors leading-snug">
-                        {article.title}
-                      </h3>
-                      <p className="text-sm text-white leading-relaxed mb-4 line-clamp-2">
-                        {article.metaDescription}
-                      </p>
-                      <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
-                        Read Article &rarr;
-                      </span>
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
+                    <span className="inline-block text-[10px] tracking-wider uppercase bg-[#ff4500]/10 text-[#ff4500] rounded-full px-3 py-1 font-semibold mb-4">
+                      {blog.category}
+                    </span>
+                    <h3 className="text-base font-semibold text-white mb-3 group-hover:text-[#ff4500] transition-colors leading-snug">
+                      {blog.title}
+                    </h3>
+                    <p className="text-sm text-white leading-relaxed mb-4 line-clamp-2">
+                      {blog.metaDescription}
+                    </p>
+                    <span className="text-xs text-[#ff4500] font-medium tracking-wide group-hover:underline">
+                      Read Article &rarr;
+                    </span>
+                  </Link>
+                </motion.div>
+              ))}
             </div>
-          </section>
-        );
-      })()}
+          </div>
+        </section>
+      )}
 
       <FooterHome2 />
 

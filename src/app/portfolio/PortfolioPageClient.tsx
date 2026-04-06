@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -180,6 +180,169 @@ function WorkImageCard({
   );
 }
 
+// Video production showcase data
+const videoShowcase = [
+  { src: "/ad-creative-techvault.mp4", label: "Ad Creative" },
+  { src: "/brand-motion-luxe-interiors.mp4", label: "Brand Motion" },
+  { src: "/campaign-film-atlas-digital.mp4", label: "Campaign Film" },
+  { src: "/product-story-vero-fashion.mp4", label: "Product Story" },
+  { src: "/social-content-meridian-co.mp4", label: "Social Content" },
+  { src: "/visual-identity-nova-studios.mp4", label: "Visual Identity" },
+];
+
+// Social media reels data
+const socialReels = [
+  "pinsnap-10485011674239898-story1.mp4",
+  "pinsnap-10836855347530297-story1.mp4",
+  "pinsnap-1196337404607782.mp4",
+  "pinsnap-127578601939309129.mp4",
+  "pinsnap-1688918606022011.mp4",
+  "pinsnap-2462974793234671-story1.mp4",
+  "pinsnap-3025924746542362-story1.mp4",
+  "pinsnap-3025924746677281-story1.mp4",
+  "pinsnap-41939840274991568-story1.mp4",
+  "pinsnap-505036545736344319.mp4",
+  "pinsnap-6966574418672863.mp4",
+  "pinsnap-710091066292364090.mp4",
+  "pinsnap-939141328554627497-story1.mp4",
+  "pinsnap-970525788468350000.mp4",
+];
+
+function VideoCard({
+  video,
+  delay,
+}: {
+  video: (typeof videoShowcase)[number];
+  delay: number;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isLoaded) {
+          setIsLoaded(true);
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [isLoaded]);
+
+  const handleMouseEnter = () => {
+    videoRef.current?.play().catch(() => {});
+  };
+
+  const handleMouseLeave = () => {
+    const v = videoRef.current;
+    if (v) {
+      v.pause();
+      v.currentTime = 0;
+    }
+  };
+
+  return (
+    <motion.div
+      ref={containerRef}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, delay, ease }}
+      whileHover={{
+        scale: 1.02,
+        boxShadow: "0 25px 60px -12px rgba(255, 69, 0, 0.15)",
+        transition: { duration: 0.4, ease },
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="group relative overflow-hidden rounded-xl bg-[#111] cursor-pointer border border-white/[0.04] hover:border-[#ff4500]/20 transition-colors duration-500"
+    >
+      <div className="relative aspect-video overflow-hidden">
+        {isLoaded ? (
+          <video
+            ref={videoRef}
+            muted
+            playsInline
+            loop
+            preload="metadata"
+            className="w-full h-full object-cover"
+          >
+            <source src={video.src} type="video/mp4" />
+          </video>
+        ) : (
+          <div className="w-full h-full bg-[#1a1a1a]" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      </div>
+      <div className="absolute bottom-4 left-4 right-4">
+        <span className="inline-block text-[10px] uppercase tracking-[0.15em] bg-[#ff4500]/90 text-white rounded-full px-3 py-1 font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-400">
+          {video.label}
+        </span>
+      </div>
+    </motion.div>
+  );
+}
+
+function SocialReelCard({ filename, index }: { filename: string; index: number }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          videoRef.current?.play().catch(() => {});
+        } else {
+          const v = videoRef.current;
+          if (v) {
+            v.pause();
+          }
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <motion.div
+      ref={containerRef}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.6, delay: Math.min(index * 0.05, 0.3), ease }}
+      className="flex-shrink-0 w-[200px] md:w-[240px] snap-start"
+    >
+      <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-[#111] border border-white/[0.04] hover:border-[#ff4500]/20 transition-colors duration-500">
+        {isVisible ? (
+          <video
+            ref={videoRef}
+            muted
+            playsInline
+            loop
+            preload="metadata"
+            className="w-full h-full object-cover"
+          >
+            <source src={`/reels/${filename}`} type="video/mp4" />
+          </video>
+        ) : (
+          <div className="w-full h-full bg-[#1a1a1a]" />
+        )}
+      </div>
+    </motion.div>
+  );
+}
+
 export default function PortfolioPageClient() {
   const [activeClientCategory, setActiveClientCategory] = useState("All");
   const [activeWorkCategory, setActiveWorkCategory] = useState("All");
@@ -290,6 +453,28 @@ export default function PortfolioPageClient() {
         </div>
       </section>
 
+      {/* Video Production */}
+      <section className="px-4 pb-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#ff4500] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              Video Production
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Video Production<span className="text-[#ff4500]">.</span>
+            </h2>
+            <p className="text-white max-w-2xl mx-auto">
+              Campaign films, brand motion, and creative storytelling
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {videoShowcase.map((video, i) => (
+              <VideoCard key={video.src} video={video} delay={i * 0.08} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Creative Work Gallery */}
       <section className="px-4 pb-24">
         <div className="max-w-7xl mx-auto">
@@ -354,6 +539,28 @@ export default function PortfolioPageClient() {
               No work in this category yet.
             </p>
           )}
+        </div>
+      </section>
+
+      {/* Social Media Reels */}
+      <section className="px-4 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#ff4500] text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              Social Content
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Social Media Content<span className="text-[#ff4500]">.</span>
+            </h2>
+            <p className="text-white max-w-2xl mx-auto">
+              Short-form videos that drive engagement
+            </p>
+          </div>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}>
+            {socialReels.map((filename, i) => (
+              <SocialReelCard key={filename} filename={filename} index={i} />
+            ))}
+          </div>
         </div>
       </section>
 
